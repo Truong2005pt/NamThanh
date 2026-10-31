@@ -1,0 +1,735 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *):not(:where([data-theme="light"], [data-theme="light"] *)));
+
+/* FALLBACK FONT DEFINITION CHO BVP FALLBACK */
+@font-face {
+  font-family: "BVP Fallback";
+  src: local("Be Vietnam Pro"), local("Arial"), local("Segoe UI"), local("Roboto"), local("sans-serif");
+  font-display: swap;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", monospace;
+}
+
+/* TOÀN BỘ TEXT TRÊN WEBSITE ĐƯỢC CHỈ ĐỊNH DÙNG BE VIETNAM PRO & BVP FALLBACK */
+*, *::before, *::after {
+  font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span, a, div, li, ul, ol,
+table, thead, tbody, tfoot, tr, th, td,
+button, input, select, textarea, label,
+blockquote, figcaption, strong, b, em, i {
+  font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", sans-serif !important;
+}
+
+.font-mono {
+  font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", monospace !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/* VIETNAMESE TYPOGRAPHY OPTIMIZATION - KHẮC PHỤC TRIỆT ĐỂ CHỮ BỊ DÍNH NHAU */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.015em !important;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+@layer base {
+  :root,
+  [data-theme="dark"],
+  html.dark {
+    --eracex-bg: #09090d;
+    --eracex-bg-subtle: #0f0f14;
+    --eracex-surface: #141414;
+    --eracex-surface-hover: #1c1c24;
+    --eracex-border: rgba(255, 255, 255, 0.08);
+    --eracex-border-gold: rgba(246, 191, 74, 0.35);
+    --eracex-text: #ffffff;
+    --eracex-text-secondary: rgba(255, 255, 255, 0.65);
+    --eracex-text-muted: rgba(255, 255, 255, 0.45);
+    --eracex-gold: #f6bf4a;
+    --eracex-gold-hover: #f9cd6f;
+    --eracex-gold-glow: rgba(246, 191, 74, 0.3);
+    --eracex-sand: #e2d2b2;
+    --eracex-brown: #2e230d;
+    --eracex-green: #f6bf4a;
+    --eracex-red: #f6bf4a;
+    --eracex-card-inner: #0f0f14;
+    --glass-bg: rgba(9, 9, 13, 0.95);
+    --gold-gradient: linear-gradient(135deg, #ffffff 0%, #f6bf4a 55%, #c68a00 100%);
+    --card-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.85);
+  }
+
+  [data-theme="light"],
+  html.light {
+    --eracex-bg: #fafafa;
+    --eracex-bg-subtle: #f4f4f5;
+    --eracex-surface: #ffffff;
+    --eracex-surface-hover: #ffffff;
+    --eracex-border: #e4e4e7;
+    --eracex-border-gold: rgba(198, 138, 0, 0.35);
+    --eracex-text: #09090b;
+    --eracex-text-secondary: #334155;
+    --eracex-text-muted: #71717a;
+    --eracex-gold: #c68a00;
+    --eracex-gold-hover: #a87400;
+    --eracex-gold-glow: rgba(198, 138, 0, 0.15);
+    --eracex-sand: #e2d2b2;
+    --eracex-brown: #2e230d;
+    --eracex-green: #c68a00;
+    --eracex-red: #c68a00;
+    --eracex-card-inner: #fafafa;
+    --glass-bg: rgba(255, 255, 255, 0.96);
+    --gold-gradient: linear-gradient(135deg, #09090b 0%, #c68a00 60%, #c68a00 100%);
+    --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 10px 25px -5px rgba(15, 23, 42, 0.04);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--eracex-bg);
+    color: var(--eracex-text);
+    font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  body {
+    background-color: var(--eracex-bg);
+    color: var(--eracex-text);
+    font-family: var(--font-sans), "Be Vietnam Pro", "BVP Fallback", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+}
+
+/* Universal semantic theme utility classes */
+.app-bg {
+  background-color: var(--eracex-bg) !important;
+  color: var(--eracex-text);
+}
+
+.app-surface {
+  background-color: var(--eracex-surface) !important;
+  border-color: var(--eracex-border);
+  color: var(--eracex-text);
+}
+
+.app-subtle {
+  background-color: var(--eracex-bg-subtle) !important;
+  border-color: var(--eracex-border);
+  color: var(--eracex-text);
+}
+
+.app-card-inner {
+  background-color: var(--eracex-card-inner) !important;
+  border-color: var(--eracex-border);
+}
+
+.app-border {
+  border-color: var(--eracex-border) !important;
+}
+
+.app-border-gold {
+  border-color: var(--eracex-border-gold) !important;
+}
+
+.app-text {
+  color: var(--eracex-text) !important;
+}
+
+.app-text-secondary {
+  color: var(--eracex-text-secondary) !important;
+}
+
+.app-text-muted {
+  color: var(--eracex-text-muted) !important;
+}
+
+/* High Contrast Icon Masks (Guarantees black in light mode, white in dark mode) */
+.icon-contrast {
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* Custom Gold Button (Goat Funded Trader Signature Primary) */
+.btn-gold {
+  background: linear-gradient(135deg, #ffc501 0%, #f6bf4a 100%);
+  color: #000000 !important;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(246, 191, 74, 0.35);
+  border: 1px solid rgba(198, 138, 0, 0.2);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ffd700 0%, #f9cd6f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(246, 191, 74, 0.5);
+}
+
+/* ==========================================================================
+   LIGHT MODE CONTRAST & LUXURY REFINEMENT (KHẮC PHỤC TRIỆT ĐỂ VIBE AI NỀN TRẮNG)
+   ========================================================================== */
+[data-theme="light"],
+html.light {
+  /* TẤT CẢ CHỮ VÀNG NEON SẼ TỰ ĐỘNG CHUYỂN SANG VÀNG ĐỒNG KIM SẮC BÉN ĐẬM (AMBER-700/800) ĐỂ TƯƠNG PHẢN ĐỈNH CAO */
+  [class*="text-[#ffc501]"],
+  [class*="text-[#f6bf4a]"],
+  .text-\[\#ffc501\],
+  .text-\[\#f6bf4a\],
+  .unused-palette-class,
+  .unused-palette-class,
+  .unused-palette-class,
+  .unused-palette-class {
+    color: #c68a00 !important; /* Deep Royal Cognac Bronze Gold - 6.4:1 contrast ratio */
+  }
+
+  .unused-palette-class {
+    color: #c68a00 !important;
+  }
+
+  /* ==========================================================================
+     KHẮC PHỤC TRIỆT ĐỂ: LỖI CHỮ TỐI TRÊN NỀN TỐI (DARK TEXT ON DARK BACKGROUND)
+     Khi phần tử có nền đen/tối (bg-black, dark badges, dark pills), chữ BẮT BUỘC
+     phải là vàng kim sáng rực rỡ (#ffd700 / #ffc501) hoặc trắng tinh khiết,
+     tuyệt đối không bị ép sang màu nâu tối (#c68a00)!
+     ========================================================================== */
+  .bg-black,
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]),
+  .bg-zinc-900,
+  [class~="bg-zinc-900"],
+  .bg-slate-900,
+  [class*="bg-slate-900"],
+  .bg-gray-900,
+  [class~="bg-gray-900"] {
+    color: #ffffff;
+  }
+
+  /* Chữ vàng trên nền đen / tối trong Light Mode */
+  .bg-black [class*="text-[#ffc501]"],
+  .bg-black .text-\[\#ffc501\],
+  .bg-black [class*="text-[#f6bf4a]"],
+  .bg-black .text-\[\#f6bf4a\],
+  .bg-black [class*="text-amber-"],
+  .bg-black [class*="text-yellow-"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) [class*="text-[#ffc501]"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) .text-\[\#ffc501\],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) [class*="text-[#f6bf4a]"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) .text-\[\#f6bf4a\],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) [class*="text-amber-"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) [class*="text-yellow-"],
+  [class~="bg-zinc-900"] [class*="text-[#ffc501]"],
+  [class*="bg-slate-900"] [class*="text-[#ffc501]"],
+  [class~="bg-gray-900"] [class*="text-[#ffc501]"],
+  .bg-black[class*="text-[#ffc501]"],
+  .bg-black.text-\[\#ffc501\],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"])[class*="text-[#ffc501]"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]).text-\[\#ffc501\],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"])[class*="text-[#f6bf4a]"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"])[class*="text-amber-"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"])[class*="text-yellow-"] {
+    color: #ffd700 !important;
+  }
+
+  /* Đảm bảo text-white trên nền đen luôn giữ màu trắng */
+  .bg-black .text-white,
+  .bg-black[class*="text-white"],
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) .text-white,
+  :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"])[class*="text-white"] {
+    color: #ffffff !important;
+  }
+
+  /* Badge trong nút .btn-gold (như tab "2-Step GOAT [热门推荐]") */
+  .btn-gold .bg-black,
+  .btn-gold :is([class~="bg-black"], [class*=" bg-black/"], [class^="bg-black/"]) {
+    background-color: #000000 !important;
+    color: #ffd700 !important;
+  }
+
+  /* LOẠI BỎ CÁC MẢNG NỀN VÀNG ĐỤC Ố MÀU TRÊN NỀN TRẮNG (HIỆU ỨNG VIBE AI CŨ) */
+  .unused-palette-class,
+  .unused-palette-class,
+  .unused-palette-class {
+    --tw-gradient-from: #fafafa !important;
+  }
+
+  .unused-palette-class,
+  .unused-palette-class {
+    --tw-gradient-via: #ffffff !important;
+  }
+
+  .unused-palette-class,
+  .unused-palette-class {
+    --tw-gradient-to: #f4f4f5 !important;
+  }
+
+  /* KHỐI NỀN VÀNG TRONG LIGHT MODE ĐƯỢC LÀM TRONG VÀ TINH TẾ */
+  .unused-palette-class {
+    background-color: #fafafa !important;
+  }
+
+  .unused-palette-class,
+  .unused-palette-class {
+    background-color: #fef3c7 !important;
+    color: #78350f !important;
+  }
+
+  .unused-palette-class,
+  .unused-palette-class,
+  .unused-palette-class,
+  .unused-palette-class {
+    border-color: rgba(198, 138, 0, 0.22) !important;
+  }
+
+  /* NÚT BẤM VÀNG CHUẨN GIAO DIỆN SANG TRỌNG TRÊN NỀN TRẮNG */
+  .btn-gold {
+    background: linear-gradient(135deg, #ffc501 0%, #f6bf4a 100%) !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    border: 1px solid rgba(198, 138, 0, 0.28) !important;
+    box-shadow: 0 4px 14px -1px rgba(198, 138, 0, 0.35), 0 2px 4px -1px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .btn-gold:hover {
+    background: linear-gradient(135deg, #ffd700 0%, #f6bf4a 100%) !important;
+    box-shadow: 0 8px 24px -2px rgba(198, 138, 0, 0.45) !important;
+    transform: translateY(-2px);
+  }
+
+  /* BORDER & SURFACE CHO CÁC THẺ TRẮNG */
+  .app-surface {
+    background-color: #ffffff !important;
+    border-color: #e4e4e7 !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 6px 16px -2px rgba(15, 23, 42, 0.04) !important;
+  }
+
+  .app-subtle {
+    background-color: #f4f4f5 !important;
+    border-color: #e4e4e7 !important;
+  }
+
+  .app-border {
+    border-color: #e4e4e7 !important;
+  }
+
+}
+
+.btn-outline-gold {
+  border: 1.5px solid var(--eracex-border);
+  color: var(--eracex-text);
+  background: transparent;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-gold:hover {
+  border-color: var(--eracex-gold);
+  color: var(--eracex-gold);
+  background: transparent;
+  transform: translateY(-1px);
+}
+
+/* Glass & Card Surfaces */
+.glass-nav {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--eracex-border);
+}
+
+.card-surface {
+  background: var(--eracex-surface) !important;
+  border: 1px solid var(--eracex-border) !important;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-surface:hover {
+  border-color: var(--eracex-border-gold) !important;
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow);
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Candlestick Wave Animation */
+@keyframes candlePulse {
+  0%, 100% { opacity: 1; }
+
+  50% { opacity: 0.75; }
+
+}
+
+.candle-glow {
+  animation: candlePulse 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--eracex-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--eracex-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--eracex-gold);
+}
+
+/* Globe Continuous Rotation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.animate-spin-slow {
+  animation: spinSlow 32s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* 3D Continuous Coin Spin */
+@keyframes coinSpin3D {
+  0% {
+    transform: perspective(900px) rotateY(0deg) translateY(0px);
+  }
+
+  25% {
+    transform: perspective(900px) rotateY(90deg) translateY(-5px);
+  }
+
+  50% {
+    transform: perspective(900px) rotateY(180deg) translateY(0px);
+  }
+
+  75% {
+    transform: perspective(900px) rotateY(270deg) translateY(5px);
+  }
+
+  100% {
+    transform: perspective(900px) rotateY(360deg) translateY(0px);
+  }
+
+}
+
+.animate-coin-spin-3d {
+  animation: coinSpin3D 5.5s linear infinite;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* ==========================================================================
+   ULTRA-LUXURY SMOOTH SCROLL REVEAL & SLIDE ANIMATION SYSTEM
+   ========================================================================== */
+
+/* Base hidden state before scrolling into view */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-down {
+  opacity: 0;
+  transform: translateY(-48px);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-64px);
+  transition: opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1), transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(64px);
+  transition: opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1), transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* Revealed active state */
+.is-revealed,
+.reveal-up.is-revealed,
+.reveal-down.is-revealed,
+.reveal-left.is-revealed,
+.reveal-right.is-revealed,
+.reveal-scale.is-revealed {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+/* Stagger Delays for Grid Children */
+.stagger-1 { transition-delay: 0.1s; }
+
+.stagger-2 { transition-delay: 0.2s; }
+
+.stagger-3 { transition-delay: 0.3s; }
+
+.stagger-4 { transition-delay: 0.4s; }
+
+.stagger-5 { transition-delay: 0.5s; }
+
+.stagger-6 { transition-delay: 0.6s; }
+
+.stagger-7 { transition-delay: 0.7s; }
+
+.stagger-8 { transition-delay: 0.8s; }
+
+/* Interactive Hover Float & Glow */
+.hover-float {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.hover-float:hover {
+  transform: translateY(-6px);
+  border-color: var(--eracex-border-gold);
+}
+
+/* Gentle floating animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+/* Shimmer Light Sweep on Gold Buttons & Badges */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg);
+  animation: shimmerSweep 4s infinite linear;
+}
+
+@keyframes shimmerSweep {
+  0% { transform: translateX(-150%) rotate(25deg); }
+
+  35% { transform: translateX(150%) rotate(25deg); }
+
+  100% { transform: translateX(150%) rotate(25deg); }
+
+}
+
+/* Respect user accessibility motion settings */
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-motion="on"]) .reveal-up,
+  :root:not([data-motion="on"]) .reveal-down,
+  :root:not([data-motion="on"]) .reveal-left,
+  :root:not([data-motion="on"]) .reveal-right,
+  :root:not([data-motion="on"]) .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+}
+
+/* ============================================================ */
+/* RESPONSIVE NAVBAR: KHÔNG BAO GIỜ CHO PHÉP XUỐNG DÒNG         */
+/* KHI THU HẸP MÀN HÌNH (< 1360px), CHUYỂN THÀNH ICON 3 GẠCH SỔ */
+/* ============================================================ */
+.nav-desktop {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.nav-desktop * {
+  white-space: nowrap !important;
+}
+
+.nav-mobile-toggle {
+  display: none !important;
+}
+
+.nav-mobile-drawer {
+  display: block;
+}
+
+@media (max-width: 1359px) {
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .nav-mobile-toggle {
+    display: inline-flex !important;
+  }
+
+}
+
+@media (min-width: 1360px) {
+  .nav-mobile-drawer {
+    display: none !important;
+  }
+
+}
+
+
+
+/* ==========================================================================
+   CLASS CHUYÊN DỤNG: BADGE NỀN ĐEN CHỮ VÀNG KIM SÁNG / CHỮ TRẮNG
+   Đảm bảo độ tương phản hoàn hảo 15:1 trên mọi theme và mọi thiết bị
+   ========================================================================== */
+.badge-dark-gold {
+  background-color: #000000 !important;
+  color: #ffd700 !important;
+  border: 1px solid rgba(255, 215, 0, 0.5) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+.badge-dark-white {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+
+/* HERO BACKGROUND: flat theme colour only (black in dark, white in light), no glow or grid */
+.hero-bg {
+  display: none;
+}
+
+/* GFT-style display headings: heavy, uppercase, tight */
+.gft-title,
+.gft-home section h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.025em !important;
+  line-height: 1.02;
+}
+
+.gft-home section h2 {
+  font-size: clamp(1.75rem, 3.4vw, 3rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* Monochrome partner/payment logos: white on dark surfaces, black on light surfaces */
+.logo-mono {
+  filter: brightness(0) invert(1);
+}
+[data-theme="light"] .logo-mono,
+html.light .logo-mono {
+  filter: brightness(0);
+}
+
+/* Tint decorative 3D banners to the black / white / gold palette */
+.gold-tone {
+  filter: sepia(0.85) saturate(1.7) hue-rotate(-12deg) contrast(1.05);
+}
+
+
+/* Hero image mat: plain black frame in both themes (no gradient, no glow) */
+.hero-image-frame {
+  background: #0b0b0d;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.5);
+}
+[data-theme="light"] .hero-image-frame,
+html.light .hero-image-frame {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.35);
+}
+
+/* Section title that carries a long sentence: keep it in scale with the other section headings */
+.gft-home section h2.showcase-title {
+  font-size: clamp(1.75rem, 3.4vw, 3rem);
+  line-height: 1.1;
+}
+
+/* Page headlines: balanced wrapping so a title reads as at most two even lines */
+h1.gft-title {
+  text-wrap: balance;
+}
+
+/* Vietnamese stacked diacritics (Ẳ Ợ Ỵ Ể) need room: never let headings run tighter than 1.3 */
+h1, h2, h3, h4, h5, h6, .gft-title {
+  line-height: 1.3 !important;
+}

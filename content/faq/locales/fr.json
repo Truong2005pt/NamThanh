@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Défi en deux étapes — FAQ",
+    "subtitle": "Conditions de défi et de compte financé",
+    "categories": [
+      {
+        "category": "À propos du défi en deux étapes",
+        "items": [
+          {
+            "q": "Qu'est-ce que le défi en deux étapes ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Il s'agit d'une évaluation en deux phases. Passez les phases 1 et 2 et vous passez à un compte financé avec une répartition des bénéfices de 80 %."
+              }
+            ]
+          },
+          {
+            "q": "Quelles tailles de compte puis-je choisir ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cinq tailles : 5 000 $, 10 000 $, 25 000 $, 50 000 $ et 100 000 $. Toutes les règles sont le même pourcentage pour chaque taille ; seuls les montants en dollars changent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Objectifs de profit",
+        "items": [
+          {
+            "q": "De quel profit ai-je besoin pour réussir chaque phase ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La phase 1 nécessite 10 % de profit. La phase 2 nécessite 5 % de profit. Le compte financé n’a aucun objectif de profit."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Cible de la phase 1 (10 %)",
+                    "Cible de la phase 2 (5 %)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de perte",
+        "items": [
+          {
+            "q": "Quelles sont les limites de perte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Il y en a deux : une perte quotidienne maximale de 5 % de votre solde au début de chaque journée et une perte maximale de 10 % de la taille initiale du compte. Enfreindre l’un ou l’autre met fin au compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Perte quotidienne maximale (5 %, au solde de départ)",
+                    "Perte maximale (10 %)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Les montants de perte quotidienne ci-dessus s'appliquent lorsque votre solde est égal à la taille du compte. La limite quotidienne réelle est recalculée chaque jour à 5 % de votre solde à 00h00 UTC, elle augmente donc avec vos bénéfices et diminue après les pertes."
+              }
+            ]
+          },
+          {
+            "q": "Les limites de perte s’appliquent-elles à chaque phase ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Les mêmes limites s'appliquent en Phase 1, Phase 2 et sur le compte financé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Comment le prélèvement est calculé",
+        "items": [
+          {
+            "q": "Le tirage est-il mesuré au bilan ou sur les capitaux propres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sur les capitaux propres. Les capitaux propres correspondent à votre solde plus le profit ou la perte flottant de vos positions ouvertes, donc les transactions ouvertes sont prises en compte dans les deux limites de perte à tout moment, et pas seulement lorsque vous les fermez."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la Perte Journalière Maximale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La journée de négociation commence à 00h00 UTC. Votre solde à ce moment-là, provenant uniquement des transactions clôturées, est le point de départ de la journée. Votre limite quotidienne est de 5 % de ce solde de départ. Au cours de la journée, vos capitaux propres, y compris les positions ouvertes, ne doivent pas chuter de plus de ce montant en dessous du point de départ. Si tel est le cas, le compte échoue."
+              },
+              {
+                "t": "p",
+                "x": "Exemple sur un compte de 10 000 $ : à 00h00 UTC, votre solde est de 10 200 $, votre limite quotidienne est donc de 510 $ (5 % × 10 200 $). Durant cette journée, vos capitaux propres doivent rester au-dessus de 9 690 $ (10 200 $ – 510 $), même si une transaction est toujours ouverte. À 00h00 UTC, le point de départ et la limite sont à nouveau définis à partir de votre solde à ce moment-là."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la perte maximale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Le niveau de perte maximale est fixe. Il est calculé une seule fois à partir de votre solde initial et ne change jamais, même lorsque vous réalisez des bénéfices. Si vos capitaux propres tombent à ce niveau ou en dessous à tout moment, le compte échoue."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Perte maximale (10 %)",
+                    "Les capitaux propres doivent rester au-dessus"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemple : sur un compte de 10 000 $, vous augmentez les capitaux propres à 10 800 $. Le niveau de perte maximale reste à 9 000 $ ; cela n’augmente pas avec votre profit."
+              }
+            ]
+          },
+          {
+            "q": "Comment les deux limites fonctionnent-elles ensemble ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ce sont des limites distinctes vérifiées en même temps. Le compte échoue lorsque l’un ou l’autre est atteint en premier. Une journée avec une perte importante compte toujours dans la perte maximale, vous pouvez donc atteindre la perte maximale sans jamais dépasser la limite quotidienne."
+              }
+            ]
+          },
+          {
+            "q": "Où puis-je voir mes limites actuelles ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Votre tableau de bord affiche les niveaux en direct des deux limites pour votre compte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jours de bourse et délais",
+        "items": [
+          {
+            "q": "De combien de jours de bourse ai-je besoin ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Au moins 5 jours de négociation en phase 1 et au moins 5 en phase 2. Le compte financé n'a pas de jours de négociation minimum."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une limite de temps pour relever le défi ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. La période de trading est illimitée, vous pouvez donc prendre le temps nécessaire pour atteindre l'objectif de profit, à condition que le compte reste actif (voir ci-dessous)."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une activité minimale requise ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. S'il n'y a aucune transaction sur votre compte pendant 30 jours calendaires consécutifs, le compte est automatiquement fermé et les frais ne sont pas remboursés. Cela s'applique à chaque phase, y compris le compte financé, alors assurez-vous d'effectuer au moins une transaction tous les 30 jours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Compte financé",
+        "items": [
+          {
+            "q": "Que se passe-t-il une fois que j'ai réussi les deux phases ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous recevez un compte financé de la même taille. Les mêmes limites de perte restent en place, il n'y a pas de nombre minimum de jours de trading et l'effet de levier est inférieur à celui des phases de défi (voir Conditions de trading)."
+              }
+            ]
+          },
+          {
+            "q": "Quelle est la répartition des bénéfices ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20% : vous conservez 80% des bénéfices que vous réalisez sur le compte Funded."
+              }
+            ]
+          },
+          {
+            "q": "À quelle fréquence puis-je demander un paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sur le compte financé, vous pouvez demander un paiement tous les 5 jours."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un montant minimum de paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Le paiement minimum est de 1 % de la taille du compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Paiement minimum (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un nombre maximum de paiements ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Un compte financé est limité à 5 paiements. Après le cinquième paiement, le compte est fermé et pour continuer à trader, vous devez acheter un nouveau défi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Conditions commerciales",
+        "items": [
+          {
+            "q": "Quel effet de levier ai-je ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "L'effet de levier maximum est de 1:100 dans les phases 1 et 2. Sur le compte financé, l'effet de levier maximum est de 1:40. L'effet de levier pour chaque instrument est indiqué dans les détails des symboles sur la plateforme."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Effet de levier maximal"
+                  ],
+                  [
+                    "Phase 1 et Phase 2",
+                    "1:100"
+                  ],
+                  [
+                    "Financé",
+                    "1h40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Puis-je effectuer des transactions la nuit et le week-end ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La détention de nuit est autorisée. La détention le week-end n'est pas autorisée, les positions doivent donc être fermées avant la fermeture du marché pour le week-end. Ceci s'applique à la phase 1, à la phase 2 et au compte financé."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je trader lors des communiqués de presse majeurs ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "En phase 1 et phase 2, oui. Sur le compte financé, le trading d'actualités n'est pas autorisé : vous ne pouvez pas ouvrir ou exécuter des transactions dans les 5 minutes avant ou 5 minutes après des communiqués de presse économiques majeurs, des annonces de la banque centrale, des événements géopolitiques ou d'autres événements à fort impact."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pratiques commerciales interdites",
+        "items": [
+          {
+            "q": "Quelles pratiques commerciales ne sont pas autorisées ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tout trading qui exploite, abuse ou contourne le programme, la plateforme de trading ou l'environnement de trading simulé est interdit. Cela comprend, sans limitation :"
+              },
+              {
+                "t": "p",
+                "x": "Exploitation d'erreurs ou de retards : utilisation d'erreurs de prix, d'inexactitudes de données, de dysfonctionnements du système, de latence ou de mises à jour tardives des prix, ou d'informations non publiques ou privilégiées, que ce soit sciemment ou inconsciemment."
+              },
+              {
+                "t": "p",
+                "x": "Données externes ou différées : négociation sur des flux de données externes, différés, non standards ou tiers, des signaux ou des stratégies qui ne sont pas disponibles au sein de la plateforme ou qui ne sont pas destinés à être utilisés avec celle-ci."
+              },
+              {
+                "t": "p",
+                "x": "Couverture et trading coordonné : trading manipulateur, trompeur ou coordonné, seul ou avec d'autres, y compris entre comptes liés ; ouvrir simultanément des positions opposées, compensatoires ou couvertes ; et toute forme d'arbitrage de compte contre d'autres comptes chez nous ou auprès de toute autre société."
+              },
+              {
+                "t": "p",
+                "x": "Même stratégie entre les comptes : effectuer des transactions identiques ou sensiblement similaires au même ou presque au même moment sur plusieurs comptes, seul ou avec d'autres traders, sauf si nous l'avons approuvé par écrit au préalable."
+              },
+              {
+                "t": "p",
+                "x": "Même adresse IP ou même appareil : négocier ou accéder aux comptes de différents traders à partir de la même adresse IP ou du même appareil. Les comptes partageant une adresse IP ou un appareil sont traités comme des comptes liés et les règles relatives au trading coordonné et aux comptes multiples s'appliquent à eux."
+              },
+              {
+                "t": "p",
+                "x": "Gestion de compte tiers : recours à tout tiers, qu'il s'agisse d'une personne privée, d'un gestionnaire de compte, d'un service de trading ou d'un « service de passage », pour négocier, gérer ou exploiter votre compte. Tout ce qui concerne le compte, y compris le trading, la gestion des ordres et les demandes de paiement, doit être effectué personnellement par le titulaire du compte."
+              },
+              {
+                "t": "p",
+                "x": "Services de signaux : utilisation des signaux de trading de n'importe quel service de signaux, groupe de signaux, canal ou fournisseur, qu'ils soient gratuits ou payants, pour effectuer des transactions sur votre compte. Toutes les décisions commerciales doivent vous appartenir."
+              },
+              {
+                "t": "p",
+                "x": "Front-running : transactions de premier plan effectuées ailleurs, y compris auprès d'autres courtiers, sites ou comptes de trading."
+              },
+              {
+                "t": "p",
+                "x": "Bots et exploitation automatisée : utilisation de logiciels, de scripts, d'algorithmes, d'outils d'IA, de techniques à ultra haute fréquence, de systèmes de trading automatisés, de stratégies d'ordres de masse ou de stratégies de tiers et commercialisées (y compris celles annoncées comme conçues pour relever des défis) pour manipuler, abuser, contourner les règles ou obtenir un avantage injuste."
+              },
+              {
+                "t": "p",
+                "x": "Changer votre trading après le passage : utiliser des stratégies, des profils de risque ou un comportement d'exécution sensiblement différents sur le compte financé par rapport au défi."
+              },
+              {
+                "t": "p",
+                "x": "Exploitation des écarts et des événements : négociation qui s'écarte sensiblement des pratiques normales du marché, comme l'ouverture ou le maintien de positions pour exploiter des écarts proches de l'ouverture ou la publication de résultats (par exemple, la détention de CFD sur actions uniques dans le cadre d'une annonce de résultats)."
+              },
+              {
+                "t": "p",
+                "x": "Risque disproportionné : tailles de positions d'ouverture, ou nombre de positions, sensiblement en dehors de votre trading habituel, où cela indique une tentative d'exploiter le programme ou de contourner ses limites de risque. Une gestion des risques conforme aux normes du marché est attendue à tout moment."
+              },
+              {
+                "t": "p",
+                "x": "Violation de la plateforme ou des conditions d'exécution : négociation en violation des conditions de la plateforme de négociation, du courtier, des systèmes de liquidité ou d'exécution, ou d'une manière qui met ces relations en danger."
+              },
+              {
+                "t": "p",
+                "x": "Trading d'actualités sur le compte financé : ouverture ou exécution de transactions dans les 5 minutes avant ou 5 minutes après les données économiques majeures, les annonces de la banque centrale, les événements géopolitiques ou autres événements à fort impact. Seuls les ordres exécutés dans cette fenêtre comptent ; une position ouverte avant la fenêtre et fermée après celle-ci n'est pas une violation. Le commerce de nouvelles est autorisé dans les phases 1 et 2."
+              }
+            ]
+          },
+          {
+            "q": "Quelqu'un d'autre peut-il trader sur mon compte, ou puis-je trader pour d'autres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Votre compte est destiné à votre usage personnel uniquement et tout ce qui s'y trouve doit être fait par vous en tant que titulaire du compte. Vous ne pouvez laisser personne d'autre accéder, gérer ou échanger votre compte, qu'il s'agisse d'une personne privée ou d'un service professionnel, vous ne pouvez pas utiliser de services de signal pour l'échanger, et vous ne pouvez pas échanger ou gérer des comptes enregistrés auprès d'autres utilisateurs ou fournir des services de signal, de copie-trading ou de gestion de compte au sein du programme."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je avoir plus d’un compte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chaque trader ne peut détenir qu'un seul compte dans le cadre du programme, sauf accord contraire de notre part par écrit au préalable. Les comptes de différents traders ne peuvent pas être gérés à partir de la même adresse IP ou du même appareil. Les comptes supplémentaires peuvent être suspendus, bloqués ou restreints de manière permanente. Les comptes ne peuvent pas être partagés, vendus, transférés ou donnés."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je utiliser un copieur professionnel ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous pouvez utiliser un copieur commercial pour vos propres transactions. Les comptes sont vérifiés avant les paiements, et la copie des stratégies d'autres traders peut entraîner le refus de votre paiement."
+              }
+            ]
+          },
+          {
+            "q": "Que se passe-t-il si une pratique interdite est détectée ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nous pouvons exclure les transactions concernées de vos résultats, les ignorer lors du calcul de l'éligibilité aux bénéfices ou aux paiements, refuser ou annuler un paiement, et suspendre ou résilier le compte et votre participation au programme. Lorsque la pratique implique plusieurs comptes, des traders liés ou une activité coordonnée, ces mesures peuvent s'appliquer à tous les comptes concernés, et le capital alloué à ces comptes peut être réduit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tarifs",
+        "items": [
+          {
+            "q": "Combien coûte le défi ?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Prix ​​défi"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "Défi en une étape — FAQ",
+    "subtitle": "Conditions de défi et de compte financé",
+    "categories": [
+      {
+        "category": "À propos du défi en une étape",
+        "items": [
+          {
+            "q": "Qu'est-ce que le défi en une étape ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Il s'agit d'une évaluation en une seule phase. Atteignez l'objectif de profit en une seule phase et vous passez à un compte financé avec une répartition des bénéfices de 80 %."
+              }
+            ]
+          },
+          {
+            "q": "Quelles tailles de compte puis-je choisir ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cinq tailles : 5 000 $, 10 000 $, 25 000 $, 50 000 $ et 100 000 $. Toutes les règles sont le même pourcentage pour chaque taille ; seuls les montants en dollars changent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Objectif de profit",
+        "items": [
+          {
+            "q": "Quel bénéfice dois-je transmettre ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La phase de défi nécessite 10 % de profit. Le compte financé n’a aucun objectif de profit."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Objectif de profit (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de perte",
+        "items": [
+          {
+            "q": "Quelles sont les limites de perte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Il y en a deux : une perte quotidienne maximale de 3 % de votre solde au début de chaque journée et une perte maximale de 6 % de la taille initiale du compte. Enfreindre l’un ou l’autre met fin au compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Perte quotidienne maximale (3 %, au solde de départ)",
+                    "Perte maximale (6%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Les montants de perte quotidienne ci-dessus s'appliquent lorsque votre solde est égal à la taille du compte. La limite quotidienne réelle est recalculée chaque jour à 3 % de votre solde à 00h00 UTC, elle augmente donc avec vos bénéfices et diminue après les pertes."
+              }
+            ]
+          },
+          {
+            "q": "Les limites de perte s’appliquent-elles à chaque phase ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Les mêmes limites s'appliquent en phase de challenge et sur le compte financé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Comment le prélèvement est calculé",
+        "items": [
+          {
+            "q": "Le tirage est-il mesuré au bilan ou sur les capitaux propres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sur les capitaux propres. Les capitaux propres correspondent à votre solde plus le profit ou la perte flottant de vos positions ouvertes, donc les transactions ouvertes sont prises en compte dans les deux limites de perte à tout moment, et pas seulement lorsque vous les fermez."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la Perte Journalière Maximale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La journée de négociation commence à 00h00 UTC. Votre solde à ce moment-là, provenant uniquement des transactions clôturées, est le point de départ de la journée. Votre limite quotidienne est de 3 % de ce solde de départ. Au cours de la journée, vos capitaux propres, y compris les positions ouvertes, ne doivent pas chuter de plus de ce montant en dessous du point de départ. Si tel est le cas, le compte échoue."
+              },
+              {
+                "t": "p",
+                "x": "Exemple sur un compte de 10 000 $ : à 00h00 UTC, votre solde est de 10 200 $, votre limite quotidienne est donc de 306 $ (3 % × 10 200 $). Durant cette journée, vos capitaux propres doivent rester au-dessus de 9 894 $ (10 200 $ − 306 $), même si une transaction est toujours ouverte. À 00h00 UTC, le point de départ et la limite sont à nouveau définis à partir de votre solde à ce moment-là."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la perte maximale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Le niveau de perte maximale est fixe. Il est calculé une seule fois à partir de votre solde initial et ne change jamais, même lorsque vous réalisez des bénéfices. Si vos capitaux propres tombent à ce niveau ou en dessous à tout moment, le compte échoue."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Perte maximale (6%)",
+                    "Les capitaux propres doivent rester au-dessus"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemple : sur un compte de 10 000 $, vous augmentez les capitaux propres à 10 800 $. Le niveau de perte maximale reste à 9 400 $ ; cela n’augmente pas avec votre profit."
+              }
+            ]
+          },
+          {
+            "q": "Comment les deux limites fonctionnent-elles ensemble ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ce sont des limites distinctes vérifiées en même temps. Le compte échoue lorsque l’un ou l’autre est atteint en premier. Une journée avec une perte importante compte toujours dans la perte maximale, vous pouvez donc atteindre la perte maximale sans jamais dépasser la limite quotidienne."
+              }
+            ]
+          },
+          {
+            "q": "Où puis-je voir mes limites actuelles ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Votre tableau de bord affiche les niveaux en direct des deux limites pour votre compte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jours de bourse et délais",
+        "items": [
+          {
+            "q": "De combien de jours de bourse ai-je besoin ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Au moins 5 jours de bourse en phase de challenge. Le compte financé n’a pas de jours de négociation minimum."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une limite de temps pour relever le défi ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. La période de trading est illimitée, vous pouvez donc prendre le temps nécessaire pour atteindre l'objectif de profit, à condition que le compte reste actif (voir ci-dessous)."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une activité minimale requise ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. S'il n'y a aucune transaction sur votre compte pendant 30 jours calendaires consécutifs, le compte est automatiquement fermé et les frais ne sont pas remboursés. Cela s'applique à chaque phase, y compris le compte financé, alors assurez-vous d'effectuer au moins une transaction tous les 30 jours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Compte financé",
+        "items": [
+          {
+            "q": "Que se passe-t-il une fois le défi réussi ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous recevez un compte financé de la même taille. Les mêmes limites de perte restent en place, il n'y a pas de nombre minimum de jours de négociation et l'effet de levier est inférieur à celui de la phase de défi (voir Conditions de négociation)."
+              }
+            ]
+          },
+          {
+            "q": "Quelle est la répartition des bénéfices ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20% : vous conservez 80% des bénéfices que vous réalisez sur le compte Funded."
+              }
+            ]
+          },
+          {
+            "q": "À quelle fréquence puis-je demander un paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sur le compte financé, vous pouvez demander un paiement tous les 5 jours."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un montant minimum de paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Le paiement minimum est de 1 % de la taille du compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Paiement minimum (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un nombre maximum de paiements ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Un compte financé est limité à 5 paiements. Après le cinquième paiement, le compte est fermé et pour continuer à trader, vous devez acheter un nouveau défi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Conditions commerciales",
+        "items": [
+          {
+            "q": "Quel effet de levier ai-je ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "L'effet de levier maximum est de 1:50 dans la phase de défi. Sur le compte financé, l'effet de levier maximum est de 1:40. L'effet de levier pour chaque instrument est indiqué dans les détails des symboles sur la plateforme."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Effet de levier maximal"
+                  ],
+                  [
+                    "Phase de défi",
+                    "1:50"
+                  ],
+                  [
+                    "Financé",
+                    "1h40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Puis-je effectuer des transactions la nuit et le week-end ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La détention de nuit est autorisée. La détention le week-end n'est pas autorisée, les positions doivent donc être fermées avant la fermeture du marché pour le week-end. Ceci s'applique dans la phase de challenge et sur le compte financé."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je trader lors des communiqués de presse majeurs ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "En phase de défi, oui. Sur le compte financé, le trading d'actualités n'est pas autorisé : vous ne pouvez pas ouvrir ou exécuter des transactions dans les 5 minutes avant ou 5 minutes après des communiqués de presse économiques majeurs, des annonces de la banque centrale, des événements géopolitiques ou d'autres événements à fort impact."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pratiques commerciales interdites",
+        "items": [
+          {
+            "q": "Quelles pratiques commerciales ne sont pas autorisées ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tout trading qui exploite, abuse ou contourne le programme, la plateforme de trading ou l'environnement de trading simulé est interdit. Cela comprend, sans limitation :"
+              },
+              {
+                "t": "p",
+                "x": "Exploitation d'erreurs ou de retards : utilisation d'erreurs de prix, d'inexactitudes de données, de dysfonctionnements du système, de latence ou de mises à jour tardives des prix, ou d'informations non publiques ou privilégiées, que ce soit sciemment ou inconsciemment."
+              },
+              {
+                "t": "p",
+                "x": "Données externes ou différées : négociation sur des flux de données externes, différés, non standards ou tiers, des signaux ou des stratégies qui ne sont pas disponibles au sein de la plateforme ou qui ne sont pas destinés à être utilisés avec celle-ci."
+              },
+              {
+                "t": "p",
+                "x": "Couverture et trading coordonné : trading manipulateur, trompeur ou coordonné, seul ou avec d'autres, y compris entre comptes liés ; ouvrir simultanément des positions opposées, compensatoires ou couvertes ; et toute forme d'arbitrage de compte contre d'autres comptes chez nous ou auprès de toute autre société."
+              },
+              {
+                "t": "p",
+                "x": "Même stratégie entre les comptes : effectuer des transactions identiques ou sensiblement similaires au même ou presque au même moment sur plusieurs comptes, seul ou avec d'autres traders, sauf si nous l'avons approuvé par écrit au préalable."
+              },
+              {
+                "t": "p",
+                "x": "Même adresse IP ou même appareil : négocier ou accéder aux comptes de différents traders à partir de la même adresse IP ou du même appareil. Les comptes partageant une adresse IP ou un appareil sont traités comme des comptes liés et les règles relatives au trading coordonné et aux comptes multiples s'appliquent à eux."
+              },
+              {
+                "t": "p",
+                "x": "Gestion de compte tiers : recours à tout tiers, qu'il s'agisse d'une personne privée, d'un gestionnaire de compte, d'un service de trading ou d'un « service de passage », pour négocier, gérer ou exploiter votre compte. Tout ce qui concerne le compte, y compris le trading, la gestion des ordres et les demandes de paiement, doit être effectué personnellement par le titulaire du compte."
+              },
+              {
+                "t": "p",
+                "x": "Services de signaux : utilisation des signaux de trading de n'importe quel service de signaux, groupe de signaux, canal ou fournisseur, qu'ils soient gratuits ou payants, pour effectuer des transactions sur votre compte. Toutes les décisions commerciales doivent vous appartenir."
+              },
+              {
+                "t": "p",
+                "x": "Front-running : transactions de premier plan effectuées ailleurs, y compris auprès d'autres courtiers, sites ou comptes de trading."
+              },
+              {
+                "t": "p",
+                "x": "Bots et exploitation automatisée : utilisation de logiciels, de scripts, d'algorithmes, d'outils d'IA, de techniques à ultra haute fréquence, de systèmes de trading automatisés, de stratégies d'ordres de masse ou de stratégies de tiers et commercialisées (y compris celles annoncées comme conçues pour relever des défis) pour manipuler, abuser, contourner les règles ou obtenir un avantage injuste."
+              },
+              {
+                "t": "p",
+                "x": "Changer votre trading après le passage : utiliser des stratégies, des profils de risque ou un comportement d'exécution sensiblement différents sur le compte financé par rapport au défi."
+              },
+              {
+                "t": "p",
+                "x": "Exploitation des écarts et des événements : négociation qui s'écarte sensiblement des pratiques normales du marché, comme l'ouverture ou le maintien de positions pour exploiter des écarts proches de l'ouverture ou la publication de résultats (par exemple, la détention de CFD sur actions uniques dans le cadre d'une annonce de résultats)."
+              },
+              {
+                "t": "p",
+                "x": "Risque disproportionné : tailles de positions d'ouverture, ou nombre de positions, sensiblement en dehors de votre trading habituel, où cela indique une tentative d'exploiter le programme ou de contourner ses limites de risque. Une gestion des risques conforme aux normes du marché est attendue à tout moment."
+              },
+              {
+                "t": "p",
+                "x": "Violation de la plateforme ou des conditions d'exécution : négociation en violation des conditions de la plateforme de négociation, du courtier, des systèmes de liquidité ou d'exécution, ou d'une manière qui met ces relations en danger."
+              },
+              {
+                "t": "p",
+                "x": "Trading d'actualités sur le compte financé : ouverture ou exécution de transactions dans les 5 minutes avant ou 5 minutes après les données économiques majeures, les annonces de la banque centrale, les événements géopolitiques ou autres événements à fort impact. Seuls les ordres exécutés dans cette fenêtre comptent ; une position ouverte avant la fenêtre et fermée après celle-ci n'est pas une violation. Le trading de nouvelles est autorisé pendant la phase de défi."
+              }
+            ]
+          },
+          {
+            "q": "Quelqu'un d'autre peut-il trader sur mon compte, ou puis-je trader pour d'autres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Votre compte est destiné à votre usage personnel uniquement et tout ce qui s'y trouve doit être fait par vous en tant que titulaire du compte. Vous ne pouvez laisser personne d'autre accéder, gérer ou échanger votre compte, qu'il s'agisse d'une personne privée ou d'un service professionnel, vous ne pouvez pas utiliser de services de signal pour l'échanger, et vous ne pouvez pas échanger ou gérer des comptes enregistrés auprès d'autres utilisateurs ou fournir des services de signal, de copie-trading ou de gestion de compte au sein du programme."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je avoir plus d’un compte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chaque trader ne peut détenir qu'un seul compte dans le cadre du programme, sauf accord contraire de notre part par écrit au préalable. Les comptes de différents traders ne peuvent pas être gérés à partir de la même adresse IP ou du même appareil. Les comptes supplémentaires peuvent être suspendus, bloqués ou restreints de manière permanente. Les comptes ne peuvent pas être partagés, vendus, transférés ou donnés."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je utiliser un copieur professionnel ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous pouvez utiliser un copieur commercial pour vos propres transactions. Les comptes sont vérifiés avant les paiements, et la copie des stratégies d'autres traders peut entraîner le refus de votre paiement."
+              }
+            ]
+          },
+          {
+            "q": "Que se passe-t-il si une pratique interdite est détectée ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nous pouvons exclure les transactions concernées de vos résultats, les ignorer lors du calcul de l'éligibilité aux bénéfices ou aux paiements, refuser ou annuler un paiement, et suspendre ou résilier le compte et votre participation au programme. Lorsque la pratique implique plusieurs comptes, des traders liés ou une activité coordonnée, ces mesures peuvent s'appliquer à tous les comptes concernés, et le capital alloué à ces comptes peut être réduit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tarifs",
+        "items": [
+          {
+            "q": "Combien coûte le défi ?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Prix ​​défi"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Financement instantané – FAQ",
+    "subtitle": "Conditions du compte financé – Financement instantané et financement instantané léger",
+    "categories": [
+      {
+        "category": "À propos du financement instantané",
+        "items": [
+          {
+            "q": "Qu’est-ce que le financement instantané ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Le financement instantané vous offre immédiatement un compte financé, sans phase d'évaluation ni objectif de profit. Vous négociez selon les règles du compte dès le premier jour et conservez 80 % des bénéfices que vous réalisez."
+              }
+            ]
+          },
+          {
+            "q": "Quelle est la différence entre le financement instantané et le financement instantané léger ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Les deux ont les mêmes limites de perte, le même effet de levier et le même calendrier de paiement. Instant Funding Light est disponible dans des tailles plus petites à un prix inférieur et ajoute une règle de cohérence de 25 % qui est vérifiée lorsque vous demandez un paiement."
+              }
+            ]
+          },
+          {
+            "q": "Quelles tailles de compte puis-je choisir ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Financement instantané : 5 000 $, 10 000 $, 25 000 $, 50 000 $ et 100 000 $. Financement instantané : 5 000 $, 10 000 $ et 25 000 $. Toutes les règles sont le même pourcentage pour chaque taille ; seuls les montants en dollars changent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Objectif de profit",
+        "items": [
+          {
+            "q": "Y a-t-il un objectif de profit ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Il n’y a aucun objectif de profit sur les comptes Instant Funding ou Instant Funding Light."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de perte",
+        "items": [
+          {
+            "q": "Quelles sont les limites de perte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Il y en a deux : une perte quotidienne maximale de 3 % de votre solde au début de chaque journée et une perte maximale finale de 5 % qui suit vos capitaux propres les plus élevés. Enfreindre l’un ou l’autre met fin au compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Compte",
+                    "Perte quotidienne maximale (3 %, au début",
+                    "Perte maximale (5 %,"
+                  ],
+                  [
+                    "taille",
+                    "équilibre)",
+                    "à la fin)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Les montants de perte quotidienne ci-dessus s'appliquent lorsque votre solde est égal à la taille du compte. La limite quotidienne réelle est recalculée chaque jour à 3 % de votre solde à 00h00 UTC, elle augmente donc avec vos bénéfices et diminue après les pertes. Les tailles de 50 000 $ et 100 000 $ sont disponibles uniquement sur financement instantané."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Comment le prélèvement est calculé",
+        "items": [
+          {
+            "q": "Le tirage est-il mesuré au bilan ou sur les capitaux propres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sur les capitaux propres. Les capitaux propres correspondent à votre solde plus le profit ou la perte flottant de vos positions ouvertes, donc les transactions ouvertes sont prises en compte dans les deux limites de perte à tout moment, et pas seulement lorsque vous les fermez."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la Perte Journalière Maximale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La journée de négociation commence à 00h00 UTC. Votre solde à ce moment-là, provenant uniquement des transactions clôturées, est le point de départ de la journée. Votre limite quotidienne est de 3 % de ce solde de départ. Au cours de la journée, vos capitaux propres, y compris les positions ouvertes, ne doivent pas chuter de plus de ce montant en dessous du point de départ. Si tel est le cas, le compte échoue."
+              },
+              {
+                "t": "p",
+                "x": "Exemple sur un compte de 10 000 $ : à 00h00 UTC, votre solde est de 10 200 $, votre limite quotidienne est donc de 306 $ (3 % × 10 200 $). Durant cette journée, vos capitaux propres doivent rester au-dessus de 9 894 $ (10 200 $ − 306 $), même si une transaction est toujours ouverte. À 00h00 UTC, le point de départ et la limite sont à nouveau définis à partir de votre solde à ce moment-là."
+              }
+            ]
+          },
+          {
+            "q": "Comment fonctionne la perte maximale finale ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La perte maximale est un montant fixe (5 % de la taille initiale du compte), mais son niveau est inférieur à vos capitaux propres. Chaque fois que vos capitaux propres atteignent un nouveau sommet, le niveau augmente du même montant ; il ne descend jamais. Si vos capitaux propres chutent au niveau ou en dessous à tout moment, y compris sur les positions ouvertes, le compte échoue."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Perte maximale (5%)",
+                    "Niveau de départ (les capitaux propres doivent rester au-dessus)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemple : sur un compte de 10 000 $, vos capitaux propres atteignent 10 300 $, donc le niveau de perte maximale passe à 9 800 $ (10 300 $ − 500 $). Si vos capitaux propres chutent ultérieurement à 9 800 $ ou moins, y compris les pertes sur les transactions ouvertes, le compte échoue."
+              }
+            ]
+          },
+          {
+            "q": "Le niveau de perte maximale diminue-t-il après un paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Le niveau reste exactement là où vos résultats de trading l'ont amené et n'est pas abaissé après un paiement."
+              }
+            ]
+          },
+          {
+            "q": "Comment les deux limites fonctionnent-elles ensemble ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ce sont des limites distinctes vérifiées en même temps. Le compte échoue lorsque l’un ou l’autre est atteint en premier. Une journée avec une perte importante compte toujours dans la perte maximale, vous pouvez donc atteindre la perte maximale sans jamais dépasser la limite quotidienne."
+              }
+            ]
+          },
+          {
+            "q": "Où puis-je voir mes limites actuelles ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Votre tableau de bord affiche les niveaux en direct des deux limites pour votre compte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jours de bourse et délais",
+        "items": [
+          {
+            "q": "De combien de jours de bourse ai-je besoin ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Les comptes Instant Funding et Instant Funding Light ont un minimum de 5 jours de bourse."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une limite de temps ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Il n'y a pas de limite de durée sur le compte, à condition qu'il reste actif (voir ci-dessous)."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il une activité minimale requise ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. S'il n'y a aucune transaction sur votre compte pendant 30 jours calendaires consécutifs, le compte est automatiquement fermé et les frais ne sont pas remboursés. Cela s'applique à chaque phase, y compris le compte financé, alors assurez-vous d'effectuer au moins une transaction tous les 30 jours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Paiements",
+        "items": [
+          {
+            "q": "Quelle est la répartition des bénéfices ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20% : vous conservez 80% du bénéfice que vous réalisez."
+              }
+            ]
+          },
+          {
+            "q": "À quelle fréquence puis-je demander un paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous pouvez demander un paiement tous les 14 jours."
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un montant minimum de paiement ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Le paiement minimum est de 1 % de la taille du compte."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Paiement minimum (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Y a-t-il un nombre maximum de paiements ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Oui. Un compte de financement instantané est limité à 5 paiements. Après le cinquième paiement, le compte est fermé et pour continuer à trader, vous devez acheter un nouveau compte."
+              }
+            ]
+          },
+          {
+            "q": "Quelle est la règle de cohérence sur Instant Funding Light ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Aucun jour de bourse ne peut représenter plus de 25 % de votre bénéfice total. La règle est vérifiée lorsque vous demandez un paiement et s'applique uniquement à Instant Funding Light ; Le financement instantané standard n’a pas de règle de cohérence."
+              },
+              {
+                "t": "p",
+                "x": "% de cohérence = (bénéfice journalier le plus élevé ÷ profit total) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Exemple : votre meilleure journée a rapporté 600 $ et votre bénéfice total est de 2 000 $. La cohérence est de 30 % (600 $ ÷ 2 000 $), ce qui est supérieur à 25 %, vous ne pouvez donc pas encore demander de paiement. Une fois que votre bénéfice total atteint 2 400 $, le meilleur jour est exactement de 25 % et vous pouvez demander un paiement."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Conditions commerciales",
+        "items": [
+          {
+            "q": "Quel effet de levier ai-je ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "L'effet de levier maximum est de 1:40. L'effet de levier pour chaque instrument est indiqué dans les détails des symboles sur la plateforme."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je effectuer des transactions la nuit et le week-end ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "La détention de nuit est autorisée. La détention le week-end n'est pas autorisée, les positions doivent donc être fermées avant la fermeture du marché pour le week-end."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je trader lors des communiqués de presse majeurs ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Les comptes à financement instantané sont des comptes financés, le trading d'actualités n'est donc pas autorisé : vous ne pouvez pas ouvrir ou exécuter des transactions dans les 5 minutes précédant ou 5 minutes après les principaux communiqués de presse économiques."
+              },
+              {
+                "t": "p",
+                "x": "annonces bancaires, événements géopolitiques ou autres événements à fort impact."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pratiques commerciales interdites",
+        "items": [
+          {
+            "q": "Quelles pratiques commerciales ne sont pas autorisées ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tout trading qui exploite, abuse ou contourne le programme, la plateforme de trading ou l'environnement de trading simulé est interdit. Cela comprend, sans limitation :"
+              },
+              {
+                "t": "p",
+                "x": "Exploitation d'erreurs ou de retards : utilisation d'erreurs de prix, d'inexactitudes de données, de dysfonctionnements du système, de latence ou de mises à jour tardives des prix, ou d'informations non publiques ou privilégiées, que ce soit sciemment ou inconsciemment."
+              },
+              {
+                "t": "p",
+                "x": "Données externes ou différées : négociation sur des flux de données externes, différés, non standards ou tiers, des signaux ou des stratégies qui ne sont pas disponibles au sein de la plateforme ou qui ne sont pas destinés à être utilisés avec celle-ci."
+              },
+              {
+                "t": "p",
+                "x": "Couverture et trading coordonné : trading manipulateur, trompeur ou coordonné, seul ou avec d'autres, y compris entre comptes liés ; ouvrir simultanément des positions opposées, compensatoires ou couvertes ; et toute forme d'arbitrage de compte contre d'autres comptes chez nous ou auprès de toute autre société."
+              },
+              {
+                "t": "p",
+                "x": "Même stratégie entre les comptes : effectuer des transactions identiques ou sensiblement similaires au même ou presque au même moment sur plusieurs comptes, seul ou avec d'autres traders, sauf si nous l'avons approuvé par écrit au préalable."
+              },
+              {
+                "t": "p",
+                "x": "Même adresse IP ou même appareil : négocier ou accéder aux comptes de différents traders à partir de la même adresse IP ou du même appareil. Les comptes partageant une adresse IP ou un appareil sont traités comme des comptes liés et les règles relatives au trading coordonné et aux comptes multiples s'appliquent à eux."
+              },
+              {
+                "t": "p",
+                "x": "Gestion de compte tiers : recours à tout tiers, qu'il s'agisse d'une personne privée, d'un gestionnaire de compte, d'un service de trading ou d'un « service de passage », pour négocier, gérer ou exploiter votre compte. Tout ce qui concerne le compte, y compris le trading, la gestion des ordres et les demandes de paiement, doit être effectué personnellement par le titulaire du compte."
+              },
+              {
+                "t": "p",
+                "x": "Services de signaux : utilisation des signaux de trading de n'importe quel service de signaux, groupe de signaux, canal ou fournisseur, qu'ils soient gratuits ou payants, pour effectuer des transactions sur votre compte. Toutes les décisions commerciales doivent vous appartenir."
+              },
+              {
+                "t": "p",
+                "x": "Front-running : transactions de premier plan effectuées ailleurs, y compris auprès d'autres courtiers, sites ou comptes de trading."
+              },
+              {
+                "t": "p",
+                "x": "Bots et exploitation automatisée : utilisation de logiciels, de scripts, d'algorithmes, d'outils d'IA, de techniques à ultra haute fréquence, de systèmes de trading automatisés, de stratégies d'ordres de masse ou de stratégies de tiers et commercialisées (y compris celles annoncées comme conçues pour relever des défis) pour manipuler, abuser, contourner les règles ou obtenir un avantage injuste."
+              },
+              {
+                "t": "p",
+                "x": "Changer votre trading après le passage : utiliser des stratégies, des profils de risque ou un comportement d'exécution sensiblement différents sur le compte financé par rapport au défi."
+              },
+              {
+                "t": "p",
+                "x": "Exploitation des écarts et des événements : négociation qui s'écarte sensiblement des pratiques normales du marché, comme l'ouverture ou le maintien de positions pour exploiter des écarts proches de l'ouverture ou la publication de résultats (par exemple, la détention de CFD sur actions uniques dans le cadre d'une annonce de résultats)."
+              },
+              {
+                "t": "p",
+                "x": "Risque disproportionné : tailles de positions d'ouverture, ou nombre de positions, sensiblement en dehors de votre trading habituel, où cela indique une tentative d'exploiter le programme ou de contourner son risque."
+              },
+              {
+                "t": "p",
+                "x": "limites. Une gestion des risques conforme aux normes du marché est attendue à tout moment."
+              },
+              {
+                "t": "p",
+                "x": "Violation de la plateforme ou des conditions d'exécution : négociation en violation des conditions de la plateforme de négociation, du courtier, des systèmes de liquidité ou d'exécution, ou d'une manière qui met ces relations en danger."
+              },
+              {
+                "t": "p",
+                "x": "Trading d'actualités : ouverture ou exécution de transactions dans les 5 minutes avant ou 5 minutes après des données économiques majeures, des annonces de banques centrales, des événements géopolitiques ou d'autres événements à fort impact. Seuls les ordres exécutés dans cette fenêtre comptent ; une position ouverte avant la fenêtre et fermée après celle-ci n'est pas une violation."
+              }
+            ]
+          },
+          {
+            "q": "Quelqu'un d'autre peut-il trader sur mon compte, ou puis-je trader pour d'autres ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Non. Votre compte est destiné à votre usage personnel uniquement et tout ce qui s'y trouve doit être fait par vous en tant que titulaire du compte. Vous ne pouvez laisser personne d'autre accéder, gérer ou échanger votre compte, qu'il s'agisse d'une personne privée ou d'un service professionnel, vous ne pouvez pas utiliser de services de signal pour l'échanger, et vous ne pouvez pas échanger ou gérer des comptes enregistrés auprès d'autres utilisateurs ou fournir des services de signal, de copie-trading ou de gestion de compte au sein du programme."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je avoir plus d’un compte ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chaque trader ne peut détenir qu'un seul compte dans le cadre du programme, sauf accord contraire de notre part par écrit au préalable. Les comptes de différents traders ne peuvent pas être gérés à partir de la même adresse IP ou du même appareil. Les comptes supplémentaires peuvent être suspendus, bloqués ou restreints de manière permanente. Les comptes ne peuvent pas être partagés, vendus, transférés ou donnés."
+              }
+            ]
+          },
+          {
+            "q": "Puis-je utiliser un copieur professionnel ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Vous pouvez utiliser un copieur commercial pour vos propres transactions. Les comptes sont vérifiés avant les paiements, et la copie des stratégies d'autres traders peut entraîner le refus de votre paiement."
+              }
+            ]
+          },
+          {
+            "q": "Que se passe-t-il si une pratique interdite est détectée ?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nous pouvons exclure les transactions concernées de vos résultats, les ignorer lors du calcul de l'éligibilité aux bénéfices ou aux paiements, refuser ou annuler un paiement, et suspendre ou résilier le compte et votre participation au programme. Lorsque la pratique implique plusieurs comptes, des traders liés ou une activité coordonnée, ces mesures peuvent s'appliquer à tous les comptes concernés, et le capital alloué à ces comptes peut être réduit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tarifs",
+        "items": [
+          {
+            "q": "Combien ça coûte?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Taille du compte",
+                    "Financement instantané",
+                    "Lumière de financement instantané"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "—"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "—"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

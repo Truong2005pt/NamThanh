@@ -1,0 +1,15 @@
+node_modules
+.next
+*.tsbuildinfo
+.env*
+scratch/
+.claude/
+# tai lieu hop dong chua thong tin ca nhan: khong dua len git
+*.pdf
+contract_clean.txt
+extracted_contract.txt
+.next-build/
+docs/
+image/
+logo/
+globe_and_coin_check.png

@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Thử thách hai bước - Câu hỏi thường gặp",
+    "subtitle": "Điều kiện tài khoản thử thách và tài trợ",
+    "categories": [
+      {
+        "category": "Thông Tin Về Gói Thử Thách 2 Bước",
+        "items": [
+          {
+            "q": "Gói Thử Thách 2 Bước là gì?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đó là một đánh giá hai giai đoạn. Vượt qua Giai đoạn 1 và Giai đoạn 2 và bạn chuyển sang tài khoản Được cấp vốn với mức chia lợi nhuận 80%."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể chọn những quy mô tài khoản nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Năm kích cỡ: 5.000 USD, 10.000 USD, 25.000 USD, 50.000 USD và 100.000 USD. Tất cả các quy tắc đều có tỷ lệ phần trăm như nhau cho mọi kích thước; chỉ có số tiền đô la thay đổi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Mục Tiêu Lợi Nhuận",
+        "items": [
+          {
+            "q": "Tôi cần đạt bao nhiêu lợi nhuận để vượt qua từng vòng?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Giai đoạn 1 yêu cầu lợi nhuận 10%. Giai đoạn 2 yêu cầu lợi nhuận 5%. Tài khoản được tài trợ không có mục tiêu lợi nhuận."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Mục tiêu Vòng 1 (10%)",
+                    "Mục tiêu Vòng 2 (5%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Giới Hạn Lỗ & Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Các giới hạn sụt giảm lỗ là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Có hai mức: Khoản lỗ tối đa hàng ngày là 5% số dư của bạn vào đầu mỗi ngày và Khoản lỗ tối đa là 10% kích thước tài khoản ban đầu. Vi phạm một trong hai sẽ kết thúc tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Lỗ tối đa ngày (5%, theo số dư đầu ngày)",
+                    "Lỗ tối đa tổng (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Số tiền thua lỗ hàng ngày ở trên áp dụng khi số dư của bạn bằng với quy mô tài khoản. Giới hạn thực tế hàng ngày được tính toán lại hàng ngày thành 5% số dư của bạn lúc 00:00 UTC, do đó, nó tăng lên cùng với lợi nhuận của bạn và giảm đi sau khi thua lỗ."
+              }
+            ]
+          },
+          {
+            "q": "Các mức giới hạn lỗ có áp dụng cho mọi vòng không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Các giới hạn tương tự được áp dụng trong Giai đoạn 1, Giai đoạn 2 và trên tài khoản được cấp vốn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cách Tính Toán Mức Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Mức sụt giảm Drawdown được tính theo số dư (Balance) hay vốn thực tế (Equity)?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Về vốn chủ sở hữu. Vốn chủ sở hữu là số dư của bạn cộng với lãi hoặc lỗ thả nổi của các vị thế mở của bạn, vì vậy các giao dịch mở sẽ được tính vào cả hai giới hạn thua lỗ tại mọi thời điểm, không chỉ khi bạn đóng chúng."
+              }
+            ]
+          },
+          {
+            "q": "Giới hạn lỗ tối đa trong ngày (Daily Loss) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ngày giao dịch bắt đầu lúc 00:00 UTC. Số dư của bạn tại thời điểm đó, chỉ từ các giao dịch đã đóng, là điểm khởi đầu trong ngày. Giới hạn hàng ngày của bạn là 5% số dư ban đầu đó. Trong ngày, vốn chủ sở hữu của bạn, bao gồm cả các vị thế mở, không được giảm nhiều hơn số tiền này dưới điểm bắt đầu. Nếu có thì tài khoản đó bị lỗi."
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ về tài khoản 10.000 USD: lúc 00:00 UTC số dư của bạn là 10.200 USD, do đó giới hạn hàng ngày của bạn là 510 USD (5% × 10.200 USD). Trong ngày đó, vốn chủ sở hữu của bạn phải ở trên $9.690 ($10.200 - $510), ngay cả khi giao dịch vẫn mở. Vào lúc 00:00 UTC tiếp theo, điểm bắt đầu và giới hạn sẽ được đặt lại từ số dư của bạn tại thời điểm đó."
+              }
+            ]
+          },
+          {
+            "q": "Giới hạn lỗ tối đa tổng (Maximum Loss) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mức tổn thất tối đa được cố định. Nó được tính một lần từ số dư ban đầu của bạn và không bao giờ thay đổi, ngay cả khi bạn có lãi. Nếu vốn chủ sở hữu của bạn giảm xuống hoặc thấp hơn mức này bất kỳ lúc nào, tài khoản sẽ không thành công."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Lỗ tối đa tổng (10%)",
+                    "Vốn thực tế (Equity) phải trên mức"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ: trên tài khoản 10.000 USD, bạn tăng vốn chủ sở hữu lên 10.800 USD. Mức tổn thất tối đa vẫn ở mức 9.000 USD; nó không tăng lên cùng với lợi nhuận của bạn."
+              }
+            ]
+          },
+          {
+            "q": "Hai giới hạn lỗ này phối hợp với nhau ra sao?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng là các giới hạn riêng biệt được kiểm tra cùng một lúc. Tài khoản không thành công khi một trong hai tài khoản được truy cập trước. Một ngày có mức lỗ lớn vẫn được tính vào Mức lỗ tối đa, vì vậy bạn có thể đạt mức Lỗ tối đa mà không bao giờ vi phạm giới hạn hàng ngày."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể xem các mức giới hạn hiện tại của mình ở đâu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trang tổng quan hiển thị mức độ trực tiếp của cả hai giới hạn cho tài khoản của bạn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Ngày Giao Dịch & Giới Hạn Thời Gian",
+        "items": [
+          {
+            "q": "Tôi cần giao dịch tối thiểu bao nhiêu ngày?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ít nhất 5 ngày giao dịch trong Giai đoạn 1 và ít nhất 5 ngày giao dịch trong Giai đoạn 2. Tài khoản được cấp vốn không có ngày giao dịch tối thiểu."
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn thời gian để hoàn thành thử thách không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Thời gian giao dịch là không giới hạn, vì vậy bạn có thể mất bao lâu tùy thích để đạt được mục tiêu lợi nhuận, miễn là tài khoản vẫn hoạt động (xem bên dưới)."
+              }
+            ]
+          },
+          {
+            "q": "Có yêu cầu hoạt động tối thiểu để giữ tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Nếu không có giao dịch nào trên tài khoản của bạn trong 30 ngày liên tiếp, tài khoản sẽ tự động bị đóng và phí sẽ không được hoàn lại. Điều này áp dụng trong mọi giai đoạn, bao gồm cả tài khoản Đã nạp tiền, vì vậy hãy đảm bảo bạn thực hiện ít nhất một giao dịch trong vòng 30 ngày một lần."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tài Khoản Cấp Vốn (Funded Account)",
+        "items": [
+          {
+            "q": "Điều gì xảy ra sau khi tôi vượt qua cả hai vòng?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn nhận được một tài khoản được nạp tiền có cùng quy mô. Các giới hạn thua lỗ tương tự được giữ nguyên, không có số ngày giao dịch tối thiểu và đòn bẩy thấp hơn so với các giai đoạn thử thách (xem Điều kiện giao dịch)."
+              }
+            ]
+          },
+          {
+            "q": "Tỷ lệ chia sẻ lợi nhuận là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: bạn giữ 80% lợi nhuận bạn kiếm được trên tài khoản Đã nạp tiền."
+              }
+            ]
+          },
+          {
+            "q": "Bao lâu tôi có thể yêu cầu rút tiền một lần?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trên tài khoản Đã nạp tiền, bạn có thể yêu cầu thanh toán 5 ngày một lần."
+              }
+            ]
+          },
+          {
+            "q": "Có số tiền rút lợi nhuận tối thiểu không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Khoản thanh toán tối thiểu là 1% kích thước tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Số tiền rút tối thiểu (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn số lần rút lợi nhuận tối đa không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Một tài khoản được nạp tiền được giới hạn ở 5 lần thanh toán. Sau lần thanh toán thứ năm, tài khoản sẽ bị đóng và để tiếp tục giao dịch, bạn cần mua một thử thách mới."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Điều Kiện & Quy Định Giao Dịch",
+        "items": [
+          {
+            "q": "Tôi được sử dụng đòn bẩy bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đòn bẩy tối đa là 1:100 trong Giai đoạn 1 và Giai đoạn 2. Đòn bẩy tối đa trên tài khoản được cấp vốn là 1:40. Đòn bẩy cho mọi công cụ được hiển thị trong chi tiết ký hiệu trên nền tảng."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Giai đoạn",
+                    "Đòn bẩy tối đa"
+                  ],
+                  [
+                    "Giai đoạn 1 và Giai đoạn 2",
+                    "1:100"
+                  ],
+                  [
+                    "Được tài trợ",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giữ lệnh qua đêm và qua cuối tuần không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cho phép giữ qua đêm. Việc nắm giữ cuối tuần không được phép, vì vậy các vị thế phải được đóng trước khi thị trường đóng cửa vào cuối tuần. Điều này áp dụng trong Giai đoạn 1, Giai đoạn 2 và trên tài khoản được cấp vốn."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giao dịch trong thời điểm ra tin tức lớn không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ở Giai đoạn 1 và Giai đoạn 2, vâng. Trên tài khoản được cấp vốn, giao dịch tin tức không được phép: bạn không được mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi có các tin tức kinh tế quan trọng, thông báo của ngân hàng trung ương, sự kiện địa chính trị hoặc các sự kiện có tác động lớn khác."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Các Hành Vi Giao Dịch Bị Cấm",
+        "items": [
+          {
+            "q": "Những hành vi giao dịch nào không được phép?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bất kỳ giao dịch nào khai thác, lạm dụng hoặc phá hoại chương trình, nền tảng giao dịch hoặc môi trường giao dịch mô phỏng đều bị cấm. Điều này bao gồm, không giới hạn:"
+              },
+              {
+                "t": "p",
+                "x": "Khai thác lỗi hoặc sự chậm trễ: sử dụng lỗi về giá, dữ liệu không chính xác, trục trặc hệ thống, độ trễ hoặc cập nhật giá bị trì hoãn hoặc thông tin không công khai hoặc nội bộ, dù cố ý hay vô tình."
+              },
+              {
+                "t": "p",
+                "x": "Dữ liệu bên ngoài hoặc bị trì hoãn: giao dịch trên các nguồn cấp dữ liệu, tín hiệu hoặc chiến lược bên ngoài, bị trì hoãn, không chuẩn hoặc của bên thứ ba không có sẵn bên trong hoặc không nhằm mục đích sử dụng với nền tảng."
+              },
+              {
+                "t": "p",
+                "x": "Phòng ngừa rủi ro và giao dịch phối hợp: giao dịch lôi kéo, lừa đảo hoặc phối hợp, một mình hoặc với người khác, kể cả giữa các tài khoản liên quan; mở các vị thế đối lập, bù đắp hoặc phòng ngừa rủi ro cùng một lúc; và bất kỳ hình thức chênh lệch tài khoản nào với các tài khoản khác của chúng tôi hoặc với bất kỳ công ty nào khác."
+              },
+              {
+                "t": "p",
+                "x": "Chiến lược giống nhau trên các tài khoản: thực hiện các giao dịch giống nhau hoặc về cơ bản tương tự nhau vào cùng một thời điểm hoặc gần như giống nhau trên nhiều tài khoản, một mình hoặc cùng với các nhà giao dịch khác, trừ khi chúng tôi đã chấp thuận trước bằng văn bản."
+              },
+              {
+                "t": "p",
+                "x": "Cùng một địa chỉ IP hoặc thiết bị: giao dịch hoặc truy cập vào tài khoản của các nhà giao dịch khác nhau từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản chia sẻ địa chỉ IP hoặc thiết bị được coi là tài khoản có liên quan và các quy tắc về giao dịch phối hợp và nhiều tài khoản sẽ áp dụng cho chúng."
+              },
+              {
+                "t": "p",
+                "x": "Quản lý tài khoản của bên thứ ba: sử dụng bất kỳ bên thứ ba nào, cho dù là cá nhân, người quản lý tài khoản, dịch vụ giao dịch hay \"dịch vụ chuyển tiếp\", để giao dịch, quản lý hoặc vận hành tài khoản của bạn. Mọi thứ trên tài khoản, bao gồm giao dịch, quản lý đơn hàng và yêu cầu thanh toán, phải được chủ tài khoản đích thân thực hiện."
+              },
+              {
+                "t": "p",
+                "x": "Dịch vụ tín hiệu: sử dụng tín hiệu giao dịch từ bất kỳ dịch vụ tín hiệu, nhóm tín hiệu, kênh hoặc nhà cung cấp nào, dù miễn phí hay trả phí, để thực hiện giao dịch trên tài khoản của bạn. Tất cả các quyết định giao dịch phải là của riêng bạn."
+              },
+              {
+                "t": "p",
+                "x": "Chạy trước: các giao dịch chạy trước được thực hiện ở nơi khác, bao gồm với các nhà môi giới, địa điểm hoặc tài khoản giao dịch khác."
+              },
+              {
+                "t": "p",
+                "x": "Bot và khai thác tự động: sử dụng phần mềm, tập lệnh, thuật toán, công cụ AI, kỹ thuật tần số cực cao, hệ thống giao dịch tự động, chiến lược đặt hàng hàng loạt hoặc chiến lược tiếp thị thương mại và của bên thứ ba (bao gồm cả những chiến lược được quảng cáo là được thiết kế để vượt qua thử thách) để thao túng, lạm dụng, lách luật hoặc đạt được lợi thế không công bằng."
+              },
+              {
+                "t": "p",
+                "x": "Thay đổi giao dịch của bạn sau khi vượt qua: sử dụng các chiến lược, hồ sơ rủi ro hoặc hành vi thực hiện khác biệt đáng kể trên tài khoản Được cấp vốn so với thử thách."
+              },
+              {
+                "t": "p",
+                "x": "Khai thác khoảng trống và sự kiện: giao dịch khác biệt đáng kể so với thông lệ thị trường thông thường, chẳng hạn như mở hoặc giữ các vị thế để khai thác các khoảng trống giá gần mở hoặc công bố thu nhập (ví dụ: giữ CFD cổ phiếu đơn lẻ trong thông báo thu nhập)."
+              },
+              {
+                "t": "p",
+                "x": "Rủi ro không cân xứng: kích thước vị thế mở hoặc một số vị trí không phù hợp về mặt thực chất với giao dịch thông thường của bạn, trong đó nó cho thấy nỗ lực khai thác chương trình hoặc bỏ qua các giới hạn rủi ro của chương trình. Quản lý rủi ro theo tiêu chuẩn thị trường luôn được mong đợi."
+              },
+              {
+                "t": "p",
+                "x": "Vi phạm nền tảng hoặc điều khoản thực hiện: giao dịch vi phạm các điều khoản của nền tảng giao dịch, nhà môi giới, tính thanh khoản hoặc hệ thống thực thi hoặc theo cách khiến các mối quan hệ đó gặp rủi ro."
+              },
+              {
+                "t": "p",
+                "x": "Giao dịch tin tức trên tài khoản được cấp vốn: mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi có dữ liệu kinh tế quan trọng, thông báo của ngân hàng trung ương, sự kiện địa chính trị hoặc các sự kiện có tác động lớn khác. Chỉ các lệnh được thực hiện bên trong cửa sổ này mới được tính; một vị trí được mở trước cửa sổ và đóng sau đó không phải là vi phạm. Giao dịch tin tức được phép trong Giai đoạn 1 và Giai đoạn 2."
+              }
+            ]
+          },
+          {
+            "q": "Người khác có thể giao dịch trên tài khoản của tôi hoặc tôi giao dịch hộ người khác không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Tài khoản của bạn chỉ dành cho mục đích sử dụng cá nhân của bạn và mọi thứ trên đó phải do bạn với tư cách là chủ tài khoản thực hiện. Bạn không được để bất kỳ ai khác truy cập, quản lý hoặc giao dịch tài khoản của mình, dù là cá nhân hay dịch vụ chuyên nghiệp, bạn không được sử dụng dịch vụ tín hiệu để giao dịch và bạn không được giao dịch hoặc quản lý tài khoản đã đăng ký cho người dùng khác hoặc cung cấp dịch vụ tín hiệu, giao dịch sao chép hoặc quản lý tài khoản trong chương trình."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sở hữu nhiều hơn một tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mỗi nhà giao dịch chỉ có thể nắm giữ một tài khoản theo chương trình trừ khi chúng tôi chấp thuận trước bằng văn bản. Tài khoản của các nhà giao dịch khác nhau không thể được vận hành từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản bổ sung có thể bị đình chỉ, chặn hoặc hạn chế vĩnh viễn. Tài khoản không được phép chia sẻ, bán, chuyển nhượng hoặc cho đi."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sử dụng công cụ sao chép lệnh (Trade Copier) không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn có thể sử dụng máy photocopy thương mại cho các giao dịch của riêng mình. Tài khoản được kiểm tra trước khi thanh toán và việc sao chép chiến lược của các nhà giao dịch khác có thể khiến khoản thanh toán của bạn bị từ chối."
+              }
+            ]
+          },
+          {
+            "q": "Điều gì xảy ra nếu phát hiện hành vi giao dịch bị cấm?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng tôi có thể loại trừ các giao dịch bị ảnh hưởng khỏi kết quả của bạn, bỏ qua chúng khi tính toán lợi nhuận hoặc khả năng đủ điều kiện thanh toán, từ chối hoặc hủy khoản thanh toán cũng như đình chỉ hoặc chấm dứt tài khoản và việc bạn tham gia vào chương trình. Trong trường hợp hoạt động này liên quan đến nhiều tài khoản, nhà giao dịch có liên quan hoặc hoạt động phối hợp, các biện pháp này có thể áp dụng cho tất cả các tài khoản bị ảnh hưởng và vốn được phân bổ của các tài khoản đó có thể bị giảm."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Chi Phí & Hoàn Phí",
+        "items": [
+          {
+            "q": "Chi phí tham gia thử thách là bao nhiêu?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Phí tham gia thử thách"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "Thử thách một bước - Câu hỏi thường gặp",
+    "subtitle": "Điều kiện tài khoản thử thách và tài trợ",
+    "categories": [
+      {
+        "category": "Thông Tin Về Gói Thử Thách 1 Bước",
+        "items": [
+          {
+            "q": "Gói Thử Thách 1 Bước là gì?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đây là một đánh giá một giai đoạn. Đạt được mục tiêu lợi nhuận trong một giai đoạn và bạn chuyển sang tài khoản Được cấp vốn với mức chia lợi nhuận 80%."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể chọn những quy mô tài khoản nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Năm kích cỡ: 5.000 USD, 10.000 USD, 25.000 USD, 50.000 USD và 100.000 USD. Tất cả các quy tắc đều có tỷ lệ phần trăm như nhau cho mọi kích thước; chỉ có số tiền đô la thay đổi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Mục Tiêu Lợi Nhuận",
+        "items": [
+          {
+            "q": "Tôi cần đạt bao nhiêu lợi nhuận để vượt qua?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Giai đoạn thử thách yêu cầu lợi nhuận 10%. Tài khoản được tài trợ không có mục tiêu lợi nhuận."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Mục tiêu lợi nhuận (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Giới Hạn Lỗ & Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Các giới hạn sụt giảm lỗ là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Có hai mức: Khoản lỗ tối đa hàng ngày là 3% số dư của bạn vào đầu mỗi ngày và Khoản lỗ tối đa là 6% kích thước tài khoản ban đầu. Vi phạm một trong hai sẽ kết thúc tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Lỗ tối đa ngày (3%, theo số dư đầu ngày)",
+                    "Lỗ tối đa tổng (6%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Số tiền thua lỗ hàng ngày ở trên áp dụng khi số dư của bạn bằng với quy mô tài khoản. Giới hạn thực tế hàng ngày được tính toán lại mỗi ngày thành 3% số dư của bạn lúc 00:00 UTC, do đó, nó tăng lên cùng với lợi nhuận của bạn và giảm đi sau khi thua lỗ."
+              }
+            ]
+          },
+          {
+            "q": "Các mức giới hạn lỗ có áp dụng cho mọi vòng không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Các giới hạn tương tự được áp dụng trong giai đoạn thử thách và trên tài khoản được cấp vốn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cách Tính Toán Mức Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Mức sụt giảm Drawdown được tính theo số dư (Balance) hay vốn thực tế (Equity)?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Về vốn chủ sở hữu. Vốn chủ sở hữu là số dư của bạn cộng với lãi hoặc lỗ thả nổi của các vị thế mở của bạn, vì vậy các giao dịch mở sẽ được tính vào cả hai giới hạn thua lỗ tại mọi thời điểm, không chỉ khi bạn đóng chúng."
+              }
+            ]
+          },
+          {
+            "q": "Giới hạn lỗ tối đa trong ngày (Daily Loss) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ngày giao dịch bắt đầu lúc 00:00 UTC. Số dư của bạn tại thời điểm đó, chỉ từ các giao dịch đã đóng, là điểm khởi đầu trong ngày. Giới hạn hàng ngày của bạn là 3% số dư ban đầu đó. Trong ngày, vốn chủ sở hữu của bạn, bao gồm cả các vị thế mở, không được giảm nhiều hơn số tiền này dưới điểm bắt đầu. Nếu có thì tài khoản đó bị lỗi."
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ về tài khoản 10.000 USD: lúc 00:00 UTC số dư của bạn là 10.200 USD, do đó giới hạn hàng ngày của bạn là 306 USD (3% × 10.200 USD). Trong ngày đó, vốn chủ sở hữu của bạn phải ở trên mức $9,894 ($10,200 - $306), ngay cả khi giao dịch vẫn mở. Vào lúc 00:00 UTC tiếp theo, điểm bắt đầu và giới hạn sẽ được đặt lại từ số dư của bạn tại thời điểm đó."
+              }
+            ]
+          },
+          {
+            "q": "Giới hạn lỗ tối đa tổng (Maximum Loss) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mức tổn thất tối đa được cố định. Nó được tính một lần từ số dư ban đầu của bạn và không bao giờ thay đổi, ngay cả khi bạn có lãi. Nếu vốn chủ sở hữu của bạn giảm xuống hoặc thấp hơn mức này bất kỳ lúc nào, tài khoản sẽ không thành công."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Lỗ tối đa tổng (6%)",
+                    "Vốn thực tế (Equity) phải trên mức"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ: trên tài khoản 10.000 USD, bạn tăng vốn chủ sở hữu lên 10.800 USD. Mức tổn thất tối đa vẫn ở mức 9.400 USD; nó không tăng lên cùng với lợi nhuận của bạn."
+              }
+            ]
+          },
+          {
+            "q": "Hai giới hạn lỗ này phối hợp với nhau ra sao?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng là các giới hạn riêng biệt được kiểm tra cùng một lúc. Tài khoản không thành công khi một trong hai tài khoản được truy cập trước. Một ngày có mức lỗ lớn vẫn được tính vào Mức lỗ tối đa, vì vậy bạn có thể đạt mức Lỗ tối đa mà không bao giờ vi phạm giới hạn hàng ngày."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể xem các mức giới hạn hiện tại của mình ở đâu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trang tổng quan hiển thị mức độ trực tiếp của cả hai giới hạn cho tài khoản của bạn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Ngày Giao Dịch & Giới Hạn Thời Gian",
+        "items": [
+          {
+            "q": "Tôi cần giao dịch tối thiểu bao nhiêu ngày?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ít nhất 5 ngày giao dịch trong giai đoạn thử thách. Tài khoản được cấp vốn không có ngày giao dịch tối thiểu."
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn thời gian để hoàn thành thử thách không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Thời gian giao dịch là không giới hạn, vì vậy bạn có thể mất bao lâu tùy thích để đạt được mục tiêu lợi nhuận, miễn là tài khoản vẫn hoạt động (xem bên dưới)."
+              }
+            ]
+          },
+          {
+            "q": "Có yêu cầu hoạt động tối thiểu để giữ tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Nếu không có giao dịch nào trên tài khoản của bạn trong 30 ngày liên tiếp, tài khoản sẽ tự động bị đóng và phí sẽ không được hoàn lại. Điều này áp dụng trong mọi giai đoạn, bao gồm cả tài khoản Đã nạp tiền, vì vậy hãy đảm bảo bạn thực hiện ít nhất một giao dịch trong vòng 30 ngày một lần."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tài Khoản Cấp Vốn (Funded Account)",
+        "items": [
+          {
+            "q": "Điều gì xảy ra sau khi tôi vượt qua thử thách?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn nhận được một tài khoản được nạp tiền có cùng quy mô. Các giới hạn thua lỗ tương tự được giữ nguyên, không có số ngày giao dịch tối thiểu và đòn bẩy thấp hơn so với giai đoạn thử thách (xem Điều kiện giao dịch)."
+              }
+            ]
+          },
+          {
+            "q": "Tỷ lệ chia sẻ lợi nhuận là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: bạn giữ 80% lợi nhuận bạn kiếm được trên tài khoản Đã nạp tiền."
+              }
+            ]
+          },
+          {
+            "q": "Bao lâu tôi có thể yêu cầu rút tiền một lần?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trên tài khoản Đã nạp tiền, bạn có thể yêu cầu thanh toán 5 ngày một lần."
+              }
+            ]
+          },
+          {
+            "q": "Có số tiền rút lợi nhuận tối thiểu không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Khoản thanh toán tối thiểu là 1% kích thước tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Số tiền rút tối thiểu (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn số lần rút lợi nhuận tối đa không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Một tài khoản được nạp tiền được giới hạn ở 5 lần thanh toán. Sau lần thanh toán thứ năm, tài khoản sẽ bị đóng và để tiếp tục giao dịch, bạn cần mua một thử thách mới."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Điều Kiện & Quy Định Giao Dịch",
+        "items": [
+          {
+            "q": "Tôi được sử dụng đòn bẩy bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đòn bẩy tối đa là 1:50 trong giai đoạn thử thách. Đòn bẩy tối đa của tài khoản được cấp vốn là 1:40. Đòn bẩy cho mọi công cụ được hiển thị trong chi tiết ký hiệu trên nền tảng."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Giai đoạn",
+                    "Đòn bẩy tối đa"
+                  ],
+                  [
+                    "Giai đoạn thử thách",
+                    "1:50"
+                  ],
+                  [
+                    "Được tài trợ",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giữ lệnh qua đêm và qua cuối tuần không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cho phép giữ qua đêm. Việc nắm giữ cuối tuần không được phép, vì vậy các vị thế phải được đóng trước khi thị trường đóng cửa vào cuối tuần. Điều này áp dụng trong giai đoạn thử thách và trên tài khoản được cấp vốn."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giao dịch trong thời điểm ra tin tức lớn không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trong giai đoạn thử thách, vâng. Trên tài khoản được cấp vốn, giao dịch tin tức không được phép: bạn không được mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi có các tin tức kinh tế quan trọng, thông báo của ngân hàng trung ương, sự kiện địa chính trị hoặc các sự kiện có tác động lớn khác."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Các Hành Vi Giao Dịch Bị Cấm",
+        "items": [
+          {
+            "q": "Những hành vi giao dịch nào không được phép?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bất kỳ giao dịch nào khai thác, lạm dụng hoặc phá hoại chương trình, nền tảng giao dịch hoặc môi trường giao dịch mô phỏng đều bị cấm. Điều này bao gồm, không giới hạn:"
+              },
+              {
+                "t": "p",
+                "x": "Khai thác lỗi hoặc sự chậm trễ: sử dụng lỗi về giá, dữ liệu không chính xác, trục trặc hệ thống, độ trễ hoặc cập nhật giá bị trì hoãn hoặc thông tin không công khai hoặc nội bộ, dù cố ý hay vô tình."
+              },
+              {
+                "t": "p",
+                "x": "Dữ liệu bên ngoài hoặc bị trì hoãn: giao dịch trên các nguồn cấp dữ liệu, tín hiệu hoặc chiến lược bên ngoài, bị trì hoãn, không chuẩn hoặc của bên thứ ba không có sẵn bên trong hoặc không nhằm mục đích sử dụng với nền tảng."
+              },
+              {
+                "t": "p",
+                "x": "Phòng ngừa rủi ro và giao dịch phối hợp: giao dịch lôi kéo, lừa đảo hoặc phối hợp, một mình hoặc với người khác, kể cả giữa các tài khoản liên quan; mở các vị thế đối lập, bù đắp hoặc phòng ngừa rủi ro cùng một lúc; và bất kỳ hình thức chênh lệch tài khoản nào với các tài khoản khác của chúng tôi hoặc với bất kỳ công ty nào khác."
+              },
+              {
+                "t": "p",
+                "x": "Chiến lược giống nhau trên các tài khoản: thực hiện các giao dịch giống nhau hoặc về cơ bản tương tự nhau vào cùng một thời điểm hoặc gần như giống nhau trên nhiều tài khoản, một mình hoặc cùng với các nhà giao dịch khác, trừ khi chúng tôi đã chấp thuận trước bằng văn bản."
+              },
+              {
+                "t": "p",
+                "x": "Cùng một địa chỉ IP hoặc thiết bị: giao dịch hoặc truy cập vào tài khoản của các nhà giao dịch khác nhau từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản chia sẻ địa chỉ IP hoặc thiết bị được coi là tài khoản có liên quan và các quy tắc về giao dịch phối hợp và nhiều tài khoản sẽ áp dụng cho chúng."
+              },
+              {
+                "t": "p",
+                "x": "Quản lý tài khoản của bên thứ ba: sử dụng bất kỳ bên thứ ba nào, cho dù là cá nhân, người quản lý tài khoản, dịch vụ giao dịch hay \"dịch vụ chuyển tiếp\", để giao dịch, quản lý hoặc vận hành tài khoản của bạn. Mọi thứ trên tài khoản, bao gồm giao dịch, quản lý đơn hàng và yêu cầu thanh toán, phải được chủ tài khoản đích thân thực hiện."
+              },
+              {
+                "t": "p",
+                "x": "Dịch vụ tín hiệu: sử dụng tín hiệu giao dịch từ bất kỳ dịch vụ tín hiệu, nhóm tín hiệu, kênh hoặc nhà cung cấp nào, dù miễn phí hay trả phí, để thực hiện giao dịch trên tài khoản của bạn. Tất cả các quyết định giao dịch phải là của riêng bạn."
+              },
+              {
+                "t": "p",
+                "x": "Chạy trước: các giao dịch chạy trước được thực hiện ở nơi khác, bao gồm với các nhà môi giới, địa điểm hoặc tài khoản giao dịch khác."
+              },
+              {
+                "t": "p",
+                "x": "Bot và khai thác tự động: sử dụng phần mềm, tập lệnh, thuật toán, công cụ AI, kỹ thuật tần số cực cao, hệ thống giao dịch tự động, chiến lược đặt hàng hàng loạt hoặc chiến lược tiếp thị thương mại và của bên thứ ba (bao gồm cả những chiến lược được quảng cáo là được thiết kế để vượt qua thử thách) để thao túng, lạm dụng, lách luật hoặc đạt được lợi thế không công bằng."
+              },
+              {
+                "t": "p",
+                "x": "Thay đổi giao dịch của bạn sau khi vượt qua: sử dụng các chiến lược, hồ sơ rủi ro hoặc hành vi thực hiện khác biệt đáng kể trên tài khoản Được cấp vốn so với thử thách."
+              },
+              {
+                "t": "p",
+                "x": "Khai thác khoảng trống và sự kiện: giao dịch khác biệt đáng kể so với thông lệ thị trường thông thường, chẳng hạn như mở hoặc giữ các vị thế để khai thác các khoảng trống giá gần mở hoặc công bố thu nhập (ví dụ: giữ CFD cổ phiếu đơn lẻ trong thông báo thu nhập)."
+              },
+              {
+                "t": "p",
+                "x": "Rủi ro không cân xứng: kích thước vị thế mở hoặc một số vị trí không phù hợp về mặt thực chất với giao dịch thông thường của bạn, trong đó nó cho thấy nỗ lực khai thác chương trình hoặc bỏ qua các giới hạn rủi ro của chương trình. Quản lý rủi ro theo tiêu chuẩn thị trường luôn được mong đợi."
+              },
+              {
+                "t": "p",
+                "x": "Vi phạm nền tảng hoặc điều khoản thực hiện: giao dịch vi phạm các điều khoản của nền tảng giao dịch, nhà môi giới, tính thanh khoản hoặc hệ thống thực thi hoặc theo cách khiến các mối quan hệ đó gặp rủi ro."
+              },
+              {
+                "t": "p",
+                "x": "Giao dịch tin tức trên tài khoản được cấp vốn: mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi có dữ liệu kinh tế quan trọng, thông báo của ngân hàng trung ương, sự kiện địa chính trị hoặc các sự kiện có tác động lớn khác. Chỉ các lệnh được thực hiện bên trong cửa sổ này mới được tính; một vị trí được mở trước cửa sổ và đóng sau đó không phải là vi phạm. Giao dịch tin tức được cho phép trong giai đoạn thử thách."
+              }
+            ]
+          },
+          {
+            "q": "Người khác có thể giao dịch trên tài khoản của tôi hoặc tôi giao dịch hộ người khác không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Tài khoản của bạn chỉ dành cho mục đích sử dụng cá nhân của bạn và mọi thứ trên đó phải do bạn với tư cách là chủ tài khoản thực hiện. Bạn không được để bất kỳ ai khác truy cập, quản lý hoặc giao dịch tài khoản của mình, dù là cá nhân hay dịch vụ chuyên nghiệp, bạn không được sử dụng dịch vụ tín hiệu để giao dịch và bạn không được giao dịch hoặc quản lý tài khoản đã đăng ký cho người dùng khác hoặc cung cấp dịch vụ tín hiệu, giao dịch sao chép hoặc quản lý tài khoản trong chương trình."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sở hữu nhiều hơn một tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mỗi nhà giao dịch chỉ có thể nắm giữ một tài khoản theo chương trình trừ khi chúng tôi chấp thuận trước bằng văn bản. Tài khoản của các nhà giao dịch khác nhau không thể được vận hành từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản bổ sung có thể bị đình chỉ, chặn hoặc hạn chế vĩnh viễn. Tài khoản không được phép chia sẻ, bán, chuyển nhượng hoặc cho đi."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sử dụng công cụ sao chép lệnh (Trade Copier) không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn có thể sử dụng máy photocopy thương mại cho các giao dịch của riêng mình. Tài khoản được kiểm tra trước khi thanh toán và việc sao chép chiến lược của các nhà giao dịch khác có thể khiến khoản thanh toán của bạn bị từ chối."
+              }
+            ]
+          },
+          {
+            "q": "Điều gì xảy ra nếu phát hiện hành vi giao dịch bị cấm?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng tôi có thể loại trừ các giao dịch bị ảnh hưởng khỏi kết quả của bạn, bỏ qua chúng khi tính toán lợi nhuận hoặc khả năng đủ điều kiện thanh toán, từ chối hoặc hủy khoản thanh toán cũng như đình chỉ hoặc chấm dứt tài khoản và việc bạn tham gia vào chương trình. Trong trường hợp hoạt động này liên quan đến nhiều tài khoản, nhà giao dịch có liên quan hoặc hoạt động phối hợp, các biện pháp này có thể áp dụng cho tất cả các tài khoản bị ảnh hưởng và vốn được phân bổ của các tài khoản đó có thể bị giảm."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Chi Phí & Hoàn Phí",
+        "items": [
+          {
+            "q": "Chi phí tham gia thử thách là bao nhiêu?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Phí tham gia thử thách"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Cấp vốn tức thì - Câu hỏi thường gặp",
+    "subtitle": "Điều kiện tài khoản được cấp vốn — Cấp vốn tức thì & Cấp vốn tức thì",
+    "categories": [
+      {
+        "category": "Thông Tin Về Cấp Vốn Trực Tiếp",
+        "items": [
+          {
+            "q": "Gói Cấp Vốn Trực Tiếp (Instant Funding) là gì?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tài trợ tức thì cung cấp cho bạn tài khoản Được tài trợ ngay lập tức, không có giai đoạn đánh giá và không có mục tiêu lợi nhuận. Bạn giao dịch theo quy tắc tài khoản ngay từ ngày đầu tiên và giữ 80% lợi nhuận bạn kiếm được."
+              }
+            ]
+          },
+          {
+            "q": "Sự khác biệt giữa Cấp Vốn Trực Tiếp và Cấp Vốn Tiết Kiệm (Light) là gì?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cả hai đều có cùng giới hạn thua lỗ, đòn bẩy và lịch thanh toán. Instant Funding Light có sẵn ở các kích thước nhỏ hơn với mức giá thấp hơn và thêm quy tắc nhất quán 25% được kiểm tra khi bạn yêu cầu thanh toán."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể chọn những quy mô tài khoản nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tài trợ ngay lập tức: 5.000 USD, 10.000 USD, 25.000 USD, 50.000 USD và 100.000 USD. Nguồn vốn tức thì nhẹ: 5.000 USD, 10.000 USD và 25.000 USD. Tất cả các quy tắc đều có tỷ lệ phần trăm như nhau cho mọi kích thước; chỉ có số tiền đô la thay đổi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Mục Tiêu Lợi Nhuận",
+        "items": [
+          {
+            "q": "Có mục tiêu lợi nhuận bắt buộc không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Không có mục tiêu lợi nhuận đối với tài khoản Cấp vốn tức thì hoặc Tài trợ tức thì nhẹ."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Giới Hạn Lỗ & Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Các giới hạn sụt giảm lỗ là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Có hai loại: Khoản lỗ tối đa hàng ngày là 3% số dư của bạn vào đầu mỗi ngày và khoản lỗ tối đa kéo dài là 5% theo số vốn sở hữu cao nhất của bạn. Vi phạm một trong hai sẽ kết thúc tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tài khoản",
+                    "Tổn thất hàng ngày tối đa (3%, lúc bắt đầu",
+                    "Tổn thất tối đa (5%,"
+                  ],
+                  [
+                    "kích cỡ",
+                    "THĂNG BẰNG)",
+                    "theo sau)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Số tiền thua lỗ hàng ngày ở trên áp dụng khi số dư của bạn bằng với quy mô tài khoản. Giới hạn thực tế hàng ngày được tính toán lại mỗi ngày thành 3% số dư của bạn lúc 00:00 UTC, do đó, nó tăng lên cùng với lợi nhuận của bạn và giảm đi sau khi thua lỗ. Các kích cỡ 50.000 USD và 100.000 USD chỉ có sẵn trên Tài trợ tức thì."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cách Tính Toán Mức Sụt Giảm (Drawdown)",
+        "items": [
+          {
+            "q": "Mức sụt giảm Drawdown được tính theo số dư (Balance) hay vốn thực tế (Equity)?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Về vốn chủ sở hữu. Vốn chủ sở hữu là số dư của bạn cộng với lãi hoặc lỗ thả nổi của các vị thế mở của bạn, vì vậy các giao dịch mở sẽ được tính vào cả hai giới hạn thua lỗ tại mọi thời điểm, không chỉ khi bạn đóng chúng."
+              }
+            ]
+          },
+          {
+            "q": "Giới hạn lỗ tối đa trong ngày (Daily Loss) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ngày giao dịch bắt đầu lúc 00:00 UTC. Số dư của bạn tại thời điểm đó, chỉ từ các giao dịch đã đóng, là điểm khởi đầu trong ngày. Giới hạn hàng ngày của bạn là 3% số dư ban đầu đó. Trong ngày, vốn chủ sở hữu của bạn, bao gồm cả các vị thế mở, không được giảm nhiều hơn số tiền này dưới điểm bắt đầu. Nếu có thì tài khoản đó bị lỗi."
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ về tài khoản 10.000 USD: lúc 00:00 UTC số dư của bạn là 10.200 USD, do đó giới hạn hàng ngày của bạn là 306 USD (3% × 10.200 USD). Trong ngày đó, vốn chủ sở hữu của bạn phải ở trên mức $9,894 ($10,200 - $306), ngay cả khi giao dịch vẫn mở. Vào lúc 00:00 UTC tiếp theo, điểm bắt đầu và giới hạn sẽ được đặt lại từ số dư của bạn tại thời điểm đó."
+              }
+            ]
+          },
+          {
+            "q": "Mức lỗ tối đa trượt (Trailing Drawdown) hoạt động như thế nào?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Khoản lỗ tối đa là một số tiền cố định (5% kích thước tài khoản ban đầu), nhưng mức của nó thấp hơn vốn chủ sở hữu của bạn. Mỗi khi vốn sở hữu của bạn đạt đến mức cao mới, cấp độ sẽ tăng lên cùng một lượng; nó không bao giờ di chuyển xuống. Nếu vốn chủ sở hữu của bạn giảm xuống hoặc thấp hơn mức này bất kỳ lúc nào, kể cả ở các vị thế mở, thì tài khoản sẽ không thành công."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Lỗ tối đa (5%)",
+                    "Mức bảo vệ ban đầu (Equity phải trên mức)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ: trên tài khoản 10.000 USD, vốn chủ sở hữu của bạn đạt 10.300 USD, do đó mức Tổn thất Tối đa sẽ tăng lên 9.800 USD (10.300 USD - 500 USD). Nếu vốn chủ sở hữu của bạn sau đó giảm xuống còn 9.800 USD hoặc thấp hơn, bao gồm cả khoản lỗ trong các giao dịch đang mở thì tài khoản sẽ không thành công."
+              }
+            ]
+          },
+          {
+            "q": "Mức lỗ tối đa có hạ xuống sau khi tôi rút tiền không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Mức này vẫn giữ nguyên chính xác ở vị trí mà kết quả giao dịch của bạn đã di chuyển và không bị hạ xuống sau khi thanh toán."
+              }
+            ]
+          },
+          {
+            "q": "Hai giới hạn lỗ này phối hợp với nhau ra sao?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng là các giới hạn riêng biệt được kiểm tra cùng một lúc. Tài khoản không thành công khi một trong hai tài khoản được truy cập trước. Một ngày có mức lỗ lớn vẫn được tính vào Mức lỗ tối đa, vì vậy bạn có thể đạt mức Lỗ tối đa mà không bao giờ vi phạm giới hạn hàng ngày."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể xem các mức giới hạn hiện tại của mình ở đâu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Trang tổng quan hiển thị mức độ trực tiếp của cả hai giới hạn cho tài khoản của bạn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Ngày Giao Dịch & Giới Hạn Thời Gian",
+        "items": [
+          {
+            "q": "Tôi cần giao dịch tối thiểu bao nhiêu ngày?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tài khoản cấp vốn tức thì và tài khoản nhẹ cấp vốn tức thì có tối thiểu 5 ngày giao dịch."
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn thời gian nào không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Không có giới hạn thời gian đối với tài khoản, miễn là tài khoản vẫn hoạt động (xem bên dưới)."
+              }
+            ]
+          },
+          {
+            "q": "Có yêu cầu hoạt động tối thiểu để giữ tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Nếu không có giao dịch nào trên tài khoản của bạn trong 30 ngày liên tiếp, tài khoản sẽ tự động bị đóng và phí sẽ không được hoàn lại. Điều này áp dụng trong mọi giai đoạn, bao gồm cả tài khoản Đã nạp tiền, vì vậy hãy đảm bảo bạn thực hiện ít nhất một giao dịch trong vòng 30 ngày một lần."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Chi Trả & Rút Lợi Nhuận",
+        "items": [
+          {
+            "q": "Tỷ lệ chia sẻ lợi nhuận là bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80%/20%: bạn giữ 80% lợi nhuận bạn kiếm được."
+              }
+            ]
+          },
+          {
+            "q": "Bao lâu tôi có thể yêu cầu rút tiền một lần?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn có thể yêu cầu thanh toán cứ sau 14 ngày."
+              }
+            ]
+          },
+          {
+            "q": "Có số tiền rút lợi nhuận tối thiểu không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Khoản thanh toán tối thiểu là 1% kích thước tài khoản."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Số tiền rút tối thiểu (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Có giới hạn số lần rút lợi nhuận tối đa không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đúng. Tài khoản Nạp tiền tức thì được giới hạn ở 5 khoản thanh toán. Sau lần thanh toán thứ năm, tài khoản sẽ bị đóng và để tiếp tục giao dịch, bạn cần mua một tài khoản mới."
+              }
+            ]
+          },
+          {
+            "q": "Quy tắc nhất quán trên gói Cấp Vốn Tiết Kiệm (Light) là gì?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không một ngày giao dịch nào có thể chiếm hơn 25% tổng lợi nhuận của bạn. Quy tắc được kiểm tra khi bạn yêu cầu thanh toán và chỉ áp dụng cho Instant Funding Light; Tài trợ tức thì tiêu chuẩn không có quy tắc nhất quán."
+              },
+              {
+                "t": "p",
+                "x": "Tỷ lệ nhất quán % = (lợi nhuận trong một ngày cao nhất/tổng ​​lợi nhuận) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Ví dụ: ngày tốt nhất của bạn kiếm được 600 USD và tổng lợi nhuận của bạn là 2.000 USD. Tỷ lệ nhất quán là 30% ($600 ~ $2.000), cao hơn 25%, do đó bạn chưa thể yêu cầu thanh toán. Khi tổng lợi nhuận của bạn đạt 2.400 USD, ngày tốt nhất là chính xác 25% và bạn có thể yêu cầu thanh toán."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Điều Kiện & Quy Định Giao Dịch",
+        "items": [
+          {
+            "q": "Tôi được sử dụng đòn bẩy bao nhiêu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Đòn bẩy tối đa là 1:40. Đòn bẩy cho mọi công cụ được hiển thị trong chi tiết ký hiệu trên nền tảng."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giữ lệnh qua đêm và qua cuối tuần không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cho phép giữ qua đêm. Việc nắm giữ cuối tuần không được phép, vì vậy các vị thế phải được đóng trước khi thị trường đóng cửa vào cuối tuần."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể giao dịch trong thời điểm ra tin tức lớn không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Tài khoản Cấp vốn tức thì là tài khoản được cấp vốn, vì vậy giao dịch tin tức không được phép: bạn không được mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi phát hành các tin tức kinh tế lớn, trung tâm"
+              },
+              {
+                "t": "p",
+                "x": "thông báo của ngân hàng, sự kiện địa chính trị hoặc các sự kiện có tác động lớn khác."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Các Hành Vi Giao Dịch Bị Cấm",
+        "items": [
+          {
+            "q": "Những hành vi giao dịch nào không được phép?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bất kỳ giao dịch nào khai thác, lạm dụng hoặc phá hoại chương trình, nền tảng giao dịch hoặc môi trường giao dịch mô phỏng đều bị cấm. Điều này bao gồm, không giới hạn:"
+              },
+              {
+                "t": "p",
+                "x": "Khai thác lỗi hoặc sự chậm trễ: sử dụng lỗi về giá, dữ liệu không chính xác, trục trặc hệ thống, độ trễ hoặc cập nhật giá bị trì hoãn hoặc thông tin không công khai hoặc nội bộ, dù cố ý hay vô tình."
+              },
+              {
+                "t": "p",
+                "x": "Dữ liệu bên ngoài hoặc bị trì hoãn: giao dịch trên các nguồn cấp dữ liệu, tín hiệu hoặc chiến lược bên ngoài, bị trì hoãn, không chuẩn hoặc của bên thứ ba không có sẵn bên trong hoặc không nhằm mục đích sử dụng với nền tảng."
+              },
+              {
+                "t": "p",
+                "x": "Phòng ngừa rủi ro và giao dịch phối hợp: giao dịch lôi kéo, lừa đảo hoặc phối hợp, một mình hoặc với người khác, kể cả giữa các tài khoản liên quan; mở các vị thế đối lập, bù đắp hoặc phòng ngừa rủi ro cùng một lúc; và bất kỳ hình thức chênh lệch tài khoản nào với các tài khoản khác của chúng tôi hoặc với bất kỳ công ty nào khác."
+              },
+              {
+                "t": "p",
+                "x": "Chiến lược giống nhau trên các tài khoản: thực hiện các giao dịch giống nhau hoặc về cơ bản tương tự nhau vào cùng một thời điểm hoặc gần như giống nhau trên nhiều tài khoản, một mình hoặc cùng với các nhà giao dịch khác, trừ khi chúng tôi đã chấp thuận trước bằng văn bản."
+              },
+              {
+                "t": "p",
+                "x": "Cùng một địa chỉ IP hoặc thiết bị: giao dịch hoặc truy cập vào tài khoản của các nhà giao dịch khác nhau từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản chia sẻ địa chỉ IP hoặc thiết bị được coi là tài khoản có liên quan và các quy tắc về giao dịch phối hợp và nhiều tài khoản sẽ áp dụng cho chúng."
+              },
+              {
+                "t": "p",
+                "x": "Quản lý tài khoản của bên thứ ba: sử dụng bất kỳ bên thứ ba nào, cho dù là cá nhân, người quản lý tài khoản, dịch vụ giao dịch hay \"dịch vụ chuyển tiếp\", để giao dịch, quản lý hoặc vận hành tài khoản của bạn. Mọi thứ trên tài khoản, bao gồm giao dịch, quản lý đơn hàng và yêu cầu thanh toán, phải được chủ tài khoản đích thân thực hiện."
+              },
+              {
+                "t": "p",
+                "x": "Dịch vụ tín hiệu: sử dụng tín hiệu giao dịch từ bất kỳ dịch vụ tín hiệu, nhóm tín hiệu, kênh hoặc nhà cung cấp nào, dù miễn phí hay trả phí, để thực hiện giao dịch trên tài khoản của bạn. Tất cả các quyết định giao dịch phải là của riêng bạn."
+              },
+              {
+                "t": "p",
+                "x": "Chạy trước: các giao dịch chạy trước được thực hiện ở nơi khác, bao gồm với các nhà môi giới, địa điểm hoặc tài khoản giao dịch khác."
+              },
+              {
+                "t": "p",
+                "x": "Bot và khai thác tự động: sử dụng phần mềm, tập lệnh, thuật toán, công cụ AI, kỹ thuật tần số cực cao, hệ thống giao dịch tự động, chiến lược đặt hàng hàng loạt hoặc chiến lược tiếp thị thương mại và của bên thứ ba (bao gồm cả những chiến lược được quảng cáo là được thiết kế để vượt qua thử thách) để thao túng, lạm dụng, lách luật hoặc đạt được lợi thế không công bằng."
+              },
+              {
+                "t": "p",
+                "x": "Thay đổi giao dịch của bạn sau khi vượt qua: sử dụng các chiến lược, hồ sơ rủi ro hoặc hành vi thực hiện khác biệt đáng kể trên tài khoản Được cấp vốn so với thử thách."
+              },
+              {
+                "t": "p",
+                "x": "Khai thác khoảng trống và sự kiện: giao dịch khác biệt đáng kể so với thông lệ thị trường thông thường, chẳng hạn như mở hoặc giữ các vị thế để khai thác các khoảng trống giá gần mở hoặc công bố thu nhập (ví dụ: giữ CFD cổ phiếu đơn lẻ trong thông báo thu nhập)."
+              },
+              {
+                "t": "p",
+                "x": "Rủi ro không cân xứng: kích thước vị thế mở hoặc một số vị trí không phù hợp về mặt thực chất với giao dịch thông thường của bạn, trong đó nó cho thấy nỗ lực khai thác chương trình hoặc bỏ qua rủi ro của chương trình"
+              },
+              {
+                "t": "p",
+                "x": "giới hạn. Quản lý rủi ro theo tiêu chuẩn thị trường luôn được mong đợi."
+              },
+              {
+                "t": "p",
+                "x": "Vi phạm nền tảng hoặc điều khoản thực hiện: giao dịch vi phạm các điều khoản của nền tảng giao dịch, nhà môi giới, tính thanh khoản hoặc hệ thống thực thi hoặc theo cách khiến các mối quan hệ đó gặp rủi ro."
+              },
+              {
+                "t": "p",
+                "x": "Giao dịch theo tin tức: mở hoặc thực hiện giao dịch trong vòng 5 phút trước hoặc 5 phút sau khi có dữ liệu kinh tế quan trọng, thông báo của ngân hàng trung ương, địa chính trị hoặc các sự kiện có tác động lớn khác. Chỉ các lệnh được thực hiện bên trong cửa sổ này mới được tính; một vị trí được mở trước cửa sổ và đóng sau đó không phải là vi phạm."
+              }
+            ]
+          },
+          {
+            "q": "Người khác có thể giao dịch trên tài khoản của tôi hoặc tôi giao dịch hộ người khác không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Không. Tài khoản của bạn chỉ dành cho mục đích sử dụng cá nhân của bạn và mọi thứ trên đó phải do bạn với tư cách là chủ tài khoản thực hiện. Bạn không được để bất kỳ ai khác truy cập, quản lý hoặc giao dịch tài khoản của mình, dù là cá nhân hay dịch vụ chuyên nghiệp, bạn không được sử dụng dịch vụ tín hiệu để giao dịch và bạn không được giao dịch hoặc quản lý tài khoản đã đăng ký cho người dùng khác hoặc cung cấp dịch vụ tín hiệu, giao dịch sao chép hoặc quản lý tài khoản trong chương trình."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sở hữu nhiều hơn một tài khoản không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mỗi nhà giao dịch chỉ có thể nắm giữ một tài khoản theo chương trình trừ khi chúng tôi chấp thuận trước bằng văn bản. Tài khoản của các nhà giao dịch khác nhau không thể được vận hành từ cùng một địa chỉ IP hoặc cùng một thiết bị. Các tài khoản bổ sung có thể bị đình chỉ, chặn hoặc hạn chế vĩnh viễn. Tài khoản không được phép chia sẻ, bán, chuyển nhượng hoặc cho đi."
+              }
+            ]
+          },
+          {
+            "q": "Tôi có thể sử dụng công cụ sao chép lệnh (Trade Copier) không?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Bạn có thể sử dụng máy photocopy thương mại cho các giao dịch của riêng mình. Tài khoản được kiểm tra trước khi thanh toán và việc sao chép chiến lược của các nhà giao dịch khác có thể khiến khoản thanh toán của bạn bị từ chối."
+              }
+            ]
+          },
+          {
+            "q": "Điều gì xảy ra nếu phát hiện hành vi giao dịch bị cấm?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Chúng tôi có thể loại trừ các giao dịch bị ảnh hưởng khỏi kết quả của bạn, bỏ qua chúng khi tính toán lợi nhuận hoặc khả năng đủ điều kiện thanh toán, từ chối hoặc hủy khoản thanh toán cũng như đình chỉ hoặc chấm dứt tài khoản và việc bạn tham gia vào chương trình. Trong trường hợp hoạt động này liên quan đến nhiều tài khoản, nhà giao dịch có liên quan hoặc hoạt động phối hợp, các biện pháp này có thể áp dụng cho tất cả các tài khoản bị ảnh hưởng và vốn được phân bổ của các tài khoản đó có thể bị giảm."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Chi Phí & Hoàn Phí",
+        "items": [
+          {
+            "q": "Gói này có chi phí bao nhiêu?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Quy mô tài khoản",
+                    "Cấp Vốn Trực Tiếp",
+                    "Cấp Vốn Tiết Kiệm (Light)"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "—"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "—"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Zweistufige Herausforderung – FAQ",
+    "subtitle": "Konditionen für Herausforderung und finanziertes Konto",
+    "categories": [
+      {
+        "category": "Über die Two-Step-Challenge",
+        "items": [
+          {
+            "q": "Was ist die Two-Step-Challenge?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es handelt sich um eine zweistufige Evaluierung. Wenn Sie Phase 1 und Phase 2 bestehen, gelangen Sie zu einem Guthabenkonto mit einer Gewinnaufteilung von 80 %."
+              }
+            ]
+          },
+          {
+            "q": "Welche Kontogrößen kann ich wählen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Fünf Größen: 5.000 $, 10.000 $, 25.000 $, 50.000 $ und 100.000 $. Alle Regeln gelten für jede Größe mit demselben Prozentsatz. nur die Dollarbeträge ändern sich."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Gewinnziele",
+        "items": [
+          {
+            "q": "Welchen Gewinn benötige ich, um jede Phase zu bestehen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Phase 1 erfordert 10 % Gewinn. Phase 2 erfordert 5 % Gewinn. Das Guthabenkonto hat kein Gewinnziel."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Ziel der Phase 1 (10 %)",
+                    "Phase-2-Ziel (5 %)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verlustgrenzen",
+        "items": [
+          {
+            "q": "Wie hoch sind die Verlustgrenzen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es gibt zwei Möglichkeiten: einen maximalen täglichen Verlust von 5 % Ihres Guthabens zu Beginn jedes Tages und einen maximalen Verlust von 10 % der ursprünglichen Kontogröße. Bei einem Verstoß gegen einen dieser Punkte endet das Konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Maximaler täglicher Verlust (5 %, beim Startguthaben)",
+                    "Maximaler Verlust (10 %)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Die oben genannten täglichen Verlustbeträge gelten, wenn Ihr Guthaben der Kontogröße entspricht. Das tatsächliche Tageslimit wird jeden Tag um 00:00 UTC mit 5 % Ihres Guthabens neu berechnet, sodass es mit Ihren Gewinnen wächst und nach Verlusten sinkt."
+              }
+            ]
+          },
+          {
+            "q": "Gelten die Verlustgrenzen in jeder Phase?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Die gleichen Limits gelten in Phase 1, Phase 2 und für das Guthabenkonto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "So wird der Drawdown berechnet",
+        "items": [
+          {
+            "q": "Wird die Inanspruchnahme per Saldo oder am Eigenkapital gemessen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Auf Gerechtigkeit. Eigenkapital ist Ihr Guthaben plus der schwankende Gewinn oder Verlust Ihrer offenen Positionen, sodass offene Geschäfte zu jedem Zeitpunkt auf beide Verlustgrenzen angerechnet werden, nicht nur, wenn Sie sie schließen."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der maximale Tagesverlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der Handelstag beginnt um 00:00 UTC. Ihr aktueller Kontostand, ausschließlich aus geschlossenen Trades, ist der Ausgangspunkt für den Tag. Ihr Tageslimit beträgt 5 % dieses Startguthabens. Im Laufe des Tages darf Ihr Eigenkapital inklusive offener Positionen um nicht mehr als diesen Betrag unter den Startpunkt fallen. Wenn dies der Fall ist, ist das Konto fehlgeschlagen."
+              },
+              {
+                "t": "p",
+                "x": "Beispiel für ein 10.000-Dollar-Konto: Um 00:00 UTC beträgt Ihr Guthaben 10.200 Dollar, Ihr Tageslimit beträgt also 510 Dollar (5 % × 10.200 Dollar). An diesem Tag muss Ihr Eigenkapital über 9.690 $ (10.200 $ − 510 $) bleiben, auch wenn noch ein Trade offen ist. Um 00:00 UTC werden der Startpunkt und das Limit erneut von Ihrem aktuellen Guthaben festgelegt."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der maximale Verlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Das maximale Verlustniveau ist festgelegt. Es wird einmalig von Ihrem Anfangssaldo berechnet und ändert sich nie, auch nicht, wenn Sie im Gewinn sind. Wenn Ihr Eigenkapital zu irgendeinem Zeitpunkt auf oder unter dieses Niveau fällt, ist das Konto gescheitert."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Maximaler Verlust (10 %)",
+                    "Das Eigenkapital muss oben bleiben"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Beispiel: Auf einem 10.000-Dollar-Konto erhöhen Sie das Eigenkapital auf 10.800 Dollar. Der maximale Verlust liegt weiterhin bei 9.000 $; es steigt nicht mit Ihrem Gewinn."
+              }
+            ]
+          },
+          {
+            "q": "Wie wirken die beiden Grenzwerte zusammen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es handelt sich dabei um separate Grenzwerte, die gleichzeitig überprüft werden. Das Konto ist fehlgeschlagen, wenn eines der beiden zuerst erreicht wird. Ein Tag mit einem großen Verlust zählt immer noch zum Maximalverlust, sodass Sie den Maximalverlust erreichen können, ohne jemals das Tageslimit zu überschreiten."
+              }
+            ]
+          },
+          {
+            "q": "Wo kann ich meine aktuellen Limits sehen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ihr Dashboard zeigt die Live-Stufen beider Limits für Ihr Konto an."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelstage und Fristen",
+        "items": [
+          {
+            "q": "Wie viele Handelstage benötige ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mindestens 5 Handelstage in Phase 1 und mindestens 5 in Phase 2. Das Guthabenkonto hat keine Mindesthandelstage."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es ein Zeitlimit für den Abschluss der Herausforderung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Der Handelszeitraum ist unbegrenzt, Sie können sich also so lange Zeit lassen, wie Sie benötigen, um das Gewinnziel zu erreichen, sofern das Konto aktiv bleibt (siehe unten)."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Mindestaktivitätsanforderung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Wenn auf Ihrem Konto 30 Kalendertage hintereinander keine Geschäfte getätigt werden, wird das Konto automatisch geschlossen und die Gebühr wird nicht zurückerstattet. Dies gilt in jeder Phase, einschließlich des Guthabenkontos. Stellen Sie daher sicher, dass Sie alle 30 Tage mindestens einen Trade tätigen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Guthabenkonto",
+        "items": [
+          {
+            "q": "Was passiert, nachdem ich beide Phasen bestanden habe?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sie erhalten ein Guthabenkonto in der gleichen Größe. Es bleiben die gleichen Verlustlimits bestehen, es gibt keine Mindestanzahl an Handelstagen und die Hebelwirkung ist geringer als in den Challenge-Phasen (siehe Handelsbedingungen)."
+              }
+            ]
+          },
+          {
+            "q": "Wie hoch ist die Gewinnaufteilung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80 % / 20 %: Sie behalten 80 % des Gewinns, den Sie auf dem Guthabenkonto erzielen."
+              }
+            ]
+          },
+          {
+            "q": "Wie oft kann ich eine Auszahlung beantragen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Auf dem Funded-Konto können Sie alle 5 Tage eine Auszahlung beantragen."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es einen Mindestauszahlungsbetrag?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Die Mindestauszahlung beträgt 1 % der Kontogröße."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Mindestauszahlung (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Höchstzahl an Auszahlungen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Ein Guthabenkonto ist auf 5 Auszahlungen begrenzt. Nach der fünften Auszahlung wird das Konto geschlossen und um den Handel fortzusetzen, müssen Sie eine neue Herausforderung erwerben."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelsbedingungen",
+        "items": [
+          {
+            "q": "Welche Hebelwirkung erhalte ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der maximale Hebel beträgt 1:100 in Phase 1 und Phase 2. Auf dem finanzierten Konto beträgt der maximale Hebel 1:40. Der Hebel für jedes Instrument wird in den Symboldetails auf der Plattform angezeigt."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Maximale Hebelwirkung"
+                  ],
+                  [
+                    "Phase 1 und Phase 2",
+                    "1:100"
+                  ],
+                  [
+                    "Gefördert",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Kann ich Trades über Nacht und am Wochenende durchführen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Das Halten über Nacht ist zulässig. Das Halten am Wochenende ist nicht erlaubt, daher müssen Positionen geschlossen werden, bevor der Markt am Wochenende schließt. Dies gilt in Phase 1, Phase 2 und auf dem Guthabenkonto."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich während wichtiger Pressemitteilungen handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "In Phase 1 und Phase 2 ja. Auf dem finanzierten Konto ist der Handel mit Nachrichten nicht gestattet: Sie dürfen keine Geschäfte innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsnachrichten, Ankündigungen der Zentralbank, geopolitischen Ereignissen oder anderen Ereignissen mit großer Tragweite eröffnen oder ausführen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verbotene Handelspraktiken",
+        "items": [
+          {
+            "q": "Welche Handelspraktiken sind nicht erlaubt?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeglicher Handel, der das Programm, die Handelsplattform oder die simulierte Handelsumgebung ausnutzt, missbraucht oder umgeht, ist verboten. Hierzu zählen ohne Einschränkung:"
+              },
+              {
+                "t": "p",
+                "x": "Ausnutzung von Fehlern oder Verzögerungen: Nutzung von Preisfehlern, Datenungenauigkeiten, Systemstörungen, Latenz oder verzögerten Preisaktualisierungen oder nicht öffentlichen oder Insiderinformationen, ob wissentlich oder unwissentlich."
+              },
+              {
+                "t": "p",
+                "x": "Externe oder verzögerte Daten: Handel mit externen, verzögerten, nicht standardmäßigen Datenfeeds, Signalen oder Strategien Dritter, die nicht auf der Plattform verfügbar oder nicht für die Verwendung mit der Plattform vorgesehen sind."
+              },
+              {
+                "t": "p",
+                "x": "Absicherung und koordinierter Handel: manipulativer, irreführender oder koordinierter Handel allein oder mit anderen, auch zwischen verbundenen Konten; gleichzeitige Eröffnung gegenläufiger, gegenläufiger oder abgesicherter Positionen; und jede Form der Kontoarbitrage gegen andere Konten bei uns oder einer anderen Firma."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche Strategie für alle Konten: Platzieren derselben oder im Wesentlichen ähnlicher Geschäfte zur gleichen oder fast gleichzeitigen Zeit über mehrere Konten hinweg, allein oder zusammen mit anderen Händlern, es sei denn, wir haben dies im Voraus schriftlich genehmigt."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche IP-Adresse oder dasselbe Gerät: Handel oder Zugriff auf Konten verschiedener Händler über dieselbe IP-Adresse oder dasselbe Gerät. Konten, die eine IP-Adresse oder ein Gerät teilen, werden als verwandte Konten behandelt und es gelten für sie die Regeln für koordinierten Handel und mehrere Konten."
+              },
+              {
+                "t": "p",
+                "x": "Kontoverwaltung durch Dritte: Nutzung eines Dritten, sei es eine Privatperson, ein Account Manager, ein Handelsdienstleister oder ein „Passing Service“, um mit Ihrem Konto zu handeln, es zu verwalten oder zu betreiben. Alles auf dem Konto, einschließlich Handel, Auftragsverwaltung und Auszahlungsanfragen, muss vom Kontoinhaber persönlich erledigt werden."
+              },
+              {
+                "t": "p",
+                "x": "Signaldienste: Nutzung von Handelssignalen von beliebigen Signaldiensten, Signalgruppen, Kanälen oder Anbietern, ob kostenlos oder kostenpflichtig, um Geschäfte auf Ihrem Konto zu tätigen. Alle Handelsentscheidungen müssen Sie selbst treffen."
+              },
+              {
+                "t": "p",
+                "x": "Front-Running: Front-Running-Geschäfte, die an anderer Stelle platziert werden, einschließlich mit anderen Brokern, Handelsplätzen oder Handelskonten."
+              },
+              {
+                "t": "p",
+                "x": "Bots und automatisierte Ausbeutung: Verwendung von Software, Skripten, Algorithmen, KI-Tools, Ultrahochfrequenztechniken, automatisierten Handelssystemen, Massenauftragsstrategien oder von Dritten und kommerziell vermarkteten Strategien (einschließlich solcher, die als zum Bestehen von Herausforderungen konzipiert beworben werden) zur Manipulation, zum Missbrauch, zur Umgehung der Regeln oder zur Erlangung eines unfairen Vorteils."
+              },
+              {
+                "t": "p",
+                "x": "Ändern Sie Ihren Handel nach dem Bestehen: Verwenden Sie wesentlich andere Strategien, Risikoprofile oder Ausführungsverhalten auf dem finanzierten Konto im Vergleich zur Herausforderung."
+              },
+              {
+                "t": "p",
+                "x": "Lücken- und Ereignisausnutzung: Handel, der wesentlich von der normalen Marktpraxis abweicht, wie z. B. das Öffnen oder Halten von Positionen, um nahezu offene Lücken oder Gewinnveröffentlichungen auszunutzen (z. B. das Halten von Einzelaktien-CFDs in einer Gewinnmitteilung)."
+              },
+              {
+                "t": "p",
+                "x": "Unverhältnismäßiges Risiko: Die Größe einer Eröffnungsposition oder mehrerer Positionen weicht erheblich von Ihrem üblichen Handelsgeschäft ab und deutet auf einen Versuch hin, das Programm auszunutzen oder seine Risikogrenzen zu umgehen. Es wird jederzeit ein marktübliches Risikomanagement erwartet."
+              },
+              {
+                "t": "p",
+                "x": "Verstoß gegen Plattform- oder Ausführungsbedingungen: Handel unter Verstoß gegen die Bedingungen der Handelsplattform, des Brokers, der Liquidität oder der Ausführungssysteme oder in einer Weise, die diese Beziehungen gefährdet."
+              },
+              {
+                "t": "p",
+                "x": "Nachrichtenhandel auf dem Funded-Konto: Eröffnung oder Ausführung von Geschäften innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsdaten, Zentralbankankündigungen, geopolitischen oder anderen Ereignissen mit großer Tragweite. Es zählen nur Aufträge, die innerhalb dieses Fensters ausgeführt werden; Eine Position, die vor dem Fenster geöffnet und danach geschlossen wird, stellt keinen Verstoß dar. Der Nachrichtenhandel ist in Phase 1 und Phase 2 erlaubt."
+              }
+            ]
+          },
+          {
+            "q": "Kann jemand anderes auf meinem Konto handeln oder kann ich für andere handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Ihr Konto ist nur für Ihren persönlichen Gebrauch bestimmt und alle darin enthaltenen Aufgaben müssen von Ihnen als Kontoinhaber erledigt werden. Sie dürfen nicht zulassen, dass jemand anderes auf Ihr Konto zugreift, es verwaltet oder handelt, sei es eine Privatperson oder eine professionelle Dienstleistung, Sie dürfen keine Signaldienste für den Handel nutzen und Sie dürfen keine Konten handeln oder verwalten, die bei anderen Benutzern registriert sind, oder Signal-, Copy-Trading- oder Kontoverwaltungsdienste innerhalb des Programms anbieten."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich mehr als ein Konto haben?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeder Händler darf nur ein Konto im Rahmen des Programms besitzen, es sei denn, wir genehmigen im Voraus schriftlich etwas anderes. Konten verschiedener Händler dürfen nicht von derselben IP-Adresse oder demselben Gerät aus betrieben werden. Zusätzliche Konten können gesperrt, gesperrt oder dauerhaft eingeschränkt werden. Accounts dürfen nicht geteilt, verkauft, übertragen oder verschenkt werden."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich einen kommerziellen Kopierer verwenden?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Für Ihre eigenen Geschäfte können Sie einen Gewerbekopierer nutzen. Konten werden vor Auszahlungen überprüft und das Kopieren der Strategien anderer Händler kann dazu führen, dass Ihre Auszahlung verweigert wird."
+              }
+            ]
+          },
+          {
+            "q": "Was passiert, wenn eine verbotene Praxis festgestellt wird?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Wir können die betroffenen Trades von Ihren Ergebnissen ausschließen, sie bei der Berechnung des Gewinns oder der Auszahlungsberechtigung außer Acht lassen, eine Auszahlung verweigern oder stornieren und das Konto und Ihre Teilnahme am Programm sperren oder kündigen. Wenn die Praxis mehrere Konten, verbundene Händler oder koordinierte Aktivitäten umfasst, können diese Maßnahmen für alle betroffenen Konten gelten und das zugewiesene Kapital dieser Konten kann reduziert werden."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preise",
+        "items": [
+          {
+            "q": "Wie viel kostet die Challenge?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Challenge-Preis"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "One-Step-Challenge – FAQ",
+    "subtitle": "Konditionen für Herausforderung und finanziertes Konto",
+    "categories": [
+      {
+        "category": "Über die One-Step-Challenge",
+        "items": [
+          {
+            "q": "Was ist die One-Step-Challenge?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es handelt sich um eine einphasige Bewertung. Erreichen Sie das Gewinnziel in einer Phase und Sie wechseln zu einem Guthabenkonto mit einer Gewinnaufteilung von 80 %."
+              }
+            ]
+          },
+          {
+            "q": "Welche Kontogrößen kann ich wählen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Fünf Größen: 5.000 $, 10.000 $, 25.000 $, 50.000 $ und 100.000 $. Alle Regeln gelten für jede Größe mit demselben Prozentsatz. nur die Dollarbeträge ändern sich."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Gewinnziel",
+        "items": [
+          {
+            "q": "Welchen Gewinn muss ich weitergeben?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Die Herausforderungsphase erfordert 10 % Gewinn. Das Guthabenkonto hat kein Gewinnziel."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Gewinnziel (10 %)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verlustgrenzen",
+        "items": [
+          {
+            "q": "Wie hoch sind die Verlustgrenzen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es gibt zwei Möglichkeiten: einen maximalen täglichen Verlust von 3 % Ihres Guthabens zu Beginn jedes Tages und einen maximalen Verlust von 6 % der ursprünglichen Kontogröße. Bei einem Verstoß gegen einen dieser Punkte endet das Konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Maximaler täglicher Verlust (3 %, beim Startguthaben)",
+                    "Maximaler Verlust (6%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Die oben genannten täglichen Verlustbeträge gelten, wenn Ihr Guthaben der Kontogröße entspricht. Das tatsächliche Tageslimit wird jeden Tag um 00:00 UTC mit 3 % Ihres Guthabens neu berechnet, sodass es mit Ihren Gewinnen wächst und nach Verlusten sinkt."
+              }
+            ]
+          },
+          {
+            "q": "Gelten die Verlustgrenzen in jeder Phase?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. In der Challenge-Phase und auf dem Guthabenkonto gelten die gleichen Limits."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "So wird der Drawdown berechnet",
+        "items": [
+          {
+            "q": "Wird die Inanspruchnahme per Saldo oder am Eigenkapital gemessen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Auf Gerechtigkeit. Eigenkapital ist Ihr Guthaben plus der schwankende Gewinn oder Verlust Ihrer offenen Positionen, sodass offene Geschäfte zu jedem Zeitpunkt auf beide Verlustgrenzen angerechnet werden, nicht nur, wenn Sie sie schließen."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der maximale Tagesverlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der Handelstag beginnt um 00:00 UTC. Ihr aktueller Kontostand, ausschließlich aus geschlossenen Trades, ist der Ausgangspunkt für den Tag. Ihr Tageslimit beträgt 3 % dieses Startguthabens. Im Laufe des Tages darf Ihr Eigenkapital inklusive offener Positionen um nicht mehr als diesen Betrag unter den Startpunkt fallen. Wenn dies der Fall ist, ist das Konto fehlgeschlagen."
+              },
+              {
+                "t": "p",
+                "x": "Beispiel für ein 10.000-Dollar-Konto: Um 00:00 UTC beträgt Ihr Guthaben 10.200 Dollar, Ihr Tageslimit beträgt also 306 Dollar (3 % × 10.200 Dollar). An diesem Tag muss Ihr Eigenkapital über 9.894 $ (10.200 $ − 306 $) bleiben, auch wenn noch ein Trade offen ist. Um 00:00 UTC werden der Startpunkt und das Limit erneut von Ihrem aktuellen Guthaben festgelegt."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der maximale Verlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Das maximale Verlustniveau ist festgelegt. Es wird einmalig von Ihrem Anfangssaldo berechnet und ändert sich nie, auch nicht, wenn Sie im Gewinn sind. Wenn Ihr Eigenkapital zu irgendeinem Zeitpunkt auf oder unter dieses Niveau fällt, ist das Konto gescheitert."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Maximaler Verlust (6%)",
+                    "Das Eigenkapital muss oben bleiben"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Beispiel: Auf einem 10.000-Dollar-Konto erhöhen Sie das Eigenkapital auf 10.800 Dollar. Der maximale Verlust liegt weiterhin bei 9.400 $; es steigt nicht mit Ihrem Gewinn."
+              }
+            ]
+          },
+          {
+            "q": "Wie wirken die beiden Grenzwerte zusammen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es handelt sich dabei um separate Grenzwerte, die gleichzeitig überprüft werden. Das Konto ist fehlgeschlagen, wenn eines der beiden zuerst erreicht wird. Ein Tag mit einem großen Verlust zählt immer noch zum Maximalverlust, sodass Sie den Maximalverlust erreichen können, ohne jemals das Tageslimit zu überschreiten."
+              }
+            ]
+          },
+          {
+            "q": "Wo kann ich meine aktuellen Limits sehen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ihr Dashboard zeigt die Live-Stufen beider Limits für Ihr Konto an."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelstage und Fristen",
+        "items": [
+          {
+            "q": "Wie viele Handelstage benötige ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mindestens 5 Handelstage in der Challenge-Phase. Für das finanzierte Konto gibt es keine Mindesthandelstage."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es ein Zeitlimit für den Abschluss der Herausforderung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Der Handelszeitraum ist unbegrenzt, Sie können sich also so lange Zeit lassen, wie Sie benötigen, um das Gewinnziel zu erreichen, sofern das Konto aktiv bleibt (siehe unten)."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Mindestaktivitätsanforderung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Wenn auf Ihrem Konto 30 Kalendertage hintereinander keine Geschäfte getätigt werden, wird das Konto automatisch geschlossen und die Gebühr wird nicht zurückerstattet. Dies gilt in jeder Phase, einschließlich des Guthabenkontos. Stellen Sie daher sicher, dass Sie alle 30 Tage mindestens einen Trade tätigen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Guthabenkonto",
+        "items": [
+          {
+            "q": "Was passiert, nachdem ich die Herausforderung bestanden habe?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sie erhalten ein Guthabenkonto in der gleichen Größe. Die gleichen Verlustlimits bleiben bestehen, es gibt keine Mindestanzahl an Handelstagen und der Hebel ist geringer als in der Challenge-Phase (siehe Handelsbedingungen)."
+              }
+            ]
+          },
+          {
+            "q": "Wie hoch ist die Gewinnaufteilung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80 % / 20 %: Sie behalten 80 % des Gewinns, den Sie auf dem Guthabenkonto erzielen."
+              }
+            ]
+          },
+          {
+            "q": "Wie oft kann ich eine Auszahlung beantragen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Auf dem Funded-Konto können Sie alle 5 Tage eine Auszahlung beantragen."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es einen Mindestauszahlungsbetrag?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Die Mindestauszahlung beträgt 1 % der Kontogröße."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Mindestauszahlung (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Höchstzahl an Auszahlungen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Ein Guthabenkonto ist auf 5 Auszahlungen begrenzt. Nach der fünften Auszahlung wird das Konto geschlossen und um den Handel fortzusetzen, müssen Sie eine neue Herausforderung erwerben."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelsbedingungen",
+        "items": [
+          {
+            "q": "Welche Hebelwirkung erhalte ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der maximale Hebel beträgt in der Challenge-Phase 1:50. Auf dem finanzierten Konto beträgt der maximale Hebel 1:40. Der Hebel für jedes Instrument wird in den Symboldetails auf der Plattform angezeigt."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Maximale Hebelwirkung"
+                  ],
+                  [
+                    "Challenge-Phase",
+                    "1:50"
+                  ],
+                  [
+                    "Gefördert",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Kann ich Trades über Nacht und am Wochenende durchführen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Das Halten über Nacht ist zulässig. Das Halten am Wochenende ist nicht erlaubt, daher müssen Positionen geschlossen werden, bevor der Markt am Wochenende schließt. Dies gilt in der Challenge-Phase und auf dem Funded-Konto."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich während wichtiger Pressemitteilungen handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "In der Challenge-Phase ja. Auf dem finanzierten Konto ist der Handel mit Nachrichten nicht gestattet: Sie dürfen keine Geschäfte innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsnachrichten, Ankündigungen der Zentralbank, geopolitischen Ereignissen oder anderen Ereignissen mit großer Tragweite eröffnen oder ausführen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verbotene Handelspraktiken",
+        "items": [
+          {
+            "q": "Welche Handelspraktiken sind nicht erlaubt?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeglicher Handel, der das Programm, die Handelsplattform oder die simulierte Handelsumgebung ausnutzt, missbraucht oder umgeht, ist verboten. Hierzu zählen ohne Einschränkung:"
+              },
+              {
+                "t": "p",
+                "x": "Ausnutzung von Fehlern oder Verzögerungen: Nutzung von Preisfehlern, Datenungenauigkeiten, Systemstörungen, Latenz oder verzögerten Preisaktualisierungen oder nicht öffentlichen oder Insiderinformationen, ob wissentlich oder unwissentlich."
+              },
+              {
+                "t": "p",
+                "x": "Externe oder verzögerte Daten: Handel mit externen, verzögerten, nicht standardmäßigen Datenfeeds, Signalen oder Strategien Dritter, die nicht auf der Plattform verfügbar oder nicht für die Verwendung mit der Plattform vorgesehen sind."
+              },
+              {
+                "t": "p",
+                "x": "Absicherung und koordinierter Handel: manipulativer, irreführender oder koordinierter Handel allein oder mit anderen, auch zwischen verbundenen Konten; gleichzeitige Eröffnung gegenläufiger, gegenläufiger oder abgesicherter Positionen; und jede Form der Kontoarbitrage gegen andere Konten bei uns oder einer anderen Firma."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche Strategie für alle Konten: Platzieren derselben oder im Wesentlichen ähnlicher Geschäfte zur gleichen oder fast gleichzeitigen Zeit über mehrere Konten hinweg, allein oder zusammen mit anderen Händlern, es sei denn, wir haben dies im Voraus schriftlich genehmigt."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche IP-Adresse oder dasselbe Gerät: Handel oder Zugriff auf Konten verschiedener Händler über dieselbe IP-Adresse oder dasselbe Gerät. Konten, die eine IP-Adresse oder ein Gerät teilen, werden als verwandte Konten behandelt und es gelten für sie die Regeln für koordinierten Handel und mehrere Konten."
+              },
+              {
+                "t": "p",
+                "x": "Kontoverwaltung durch Dritte: Nutzung eines Dritten, sei es eine Privatperson, ein Account Manager, ein Handelsdienstleister oder ein „Passing Service“, um mit Ihrem Konto zu handeln, es zu verwalten oder zu betreiben. Alles auf dem Konto, einschließlich Handel, Auftragsverwaltung und Auszahlungsanfragen, muss vom Kontoinhaber persönlich erledigt werden."
+              },
+              {
+                "t": "p",
+                "x": "Signaldienste: Nutzung von Handelssignalen von beliebigen Signaldiensten, Signalgruppen, Kanälen oder Anbietern, ob kostenlos oder kostenpflichtig, um Geschäfte auf Ihrem Konto zu tätigen. Alle Handelsentscheidungen müssen Sie selbst treffen."
+              },
+              {
+                "t": "p",
+                "x": "Front-Running: Front-Running-Geschäfte, die an anderer Stelle platziert werden, einschließlich mit anderen Brokern, Handelsplätzen oder Handelskonten."
+              },
+              {
+                "t": "p",
+                "x": "Bots und automatisierte Ausbeutung: Verwendung von Software, Skripten, Algorithmen, KI-Tools, Ultrahochfrequenztechniken, automatisierten Handelssystemen, Massenauftragsstrategien oder von Dritten und kommerziell vermarkteten Strategien (einschließlich solcher, die als zum Bestehen von Herausforderungen konzipiert beworben werden) zur Manipulation, zum Missbrauch, zur Umgehung der Regeln oder zur Erlangung eines unfairen Vorteils."
+              },
+              {
+                "t": "p",
+                "x": "Ändern Sie Ihren Handel nach dem Bestehen: Verwenden Sie wesentlich andere Strategien, Risikoprofile oder Ausführungsverhalten auf dem finanzierten Konto im Vergleich zur Herausforderung."
+              },
+              {
+                "t": "p",
+                "x": "Lücken- und Ereignisausnutzung: Handel, der wesentlich von der normalen Marktpraxis abweicht, wie z. B. das Öffnen oder Halten von Positionen, um nahezu offene Lücken oder Gewinnveröffentlichungen auszunutzen (z. B. das Halten von Einzelaktien-CFDs in einer Gewinnmitteilung)."
+              },
+              {
+                "t": "p",
+                "x": "Unverhältnismäßiges Risiko: Die Größe einer Eröffnungsposition oder mehrerer Positionen weicht erheblich von Ihrem üblichen Handelsgeschäft ab und deutet auf einen Versuch hin, das Programm auszunutzen oder seine Risikogrenzen zu umgehen. Es wird jederzeit ein marktübliches Risikomanagement erwartet."
+              },
+              {
+                "t": "p",
+                "x": "Verstoß gegen Plattform- oder Ausführungsbedingungen: Handel unter Verstoß gegen die Bedingungen der Handelsplattform, des Brokers, der Liquidität oder der Ausführungssysteme oder in einer Weise, die diese Beziehungen gefährdet."
+              },
+              {
+                "t": "p",
+                "x": "Nachrichtenhandel auf dem Funded-Konto: Eröffnung oder Ausführung von Geschäften innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsdaten, Zentralbankankündigungen, geopolitischen oder anderen Ereignissen mit großer Tragweite. Es zählen nur Aufträge, die innerhalb dieses Fensters ausgeführt werden; Eine Position, die vor dem Fenster geöffnet und danach geschlossen wird, stellt keinen Verstoß dar. Der Nachrichtenhandel ist in der Challenge-Phase erlaubt."
+              }
+            ]
+          },
+          {
+            "q": "Kann jemand anderes auf meinem Konto handeln oder kann ich für andere handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Ihr Konto ist nur für Ihren persönlichen Gebrauch bestimmt und alle darin enthaltenen Aufgaben müssen von Ihnen als Kontoinhaber erledigt werden. Sie dürfen nicht zulassen, dass jemand anderes auf Ihr Konto zugreift, es verwaltet oder handelt, sei es eine Privatperson oder eine professionelle Dienstleistung, Sie dürfen keine Signaldienste für den Handel nutzen und Sie dürfen keine Konten handeln oder verwalten, die bei anderen Benutzern registriert sind, oder Signal-, Copy-Trading- oder Kontoverwaltungsdienste innerhalb des Programms anbieten."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich mehr als ein Konto haben?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeder Händler darf nur ein Konto im Rahmen des Programms besitzen, es sei denn, wir genehmigen im Voraus schriftlich etwas anderes. Konten verschiedener Händler dürfen nicht von derselben IP-Adresse oder demselben Gerät aus betrieben werden. Zusätzliche Konten können gesperrt, gesperrt oder dauerhaft eingeschränkt werden. Accounts dürfen nicht geteilt, verkauft, übertragen oder verschenkt werden."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich einen kommerziellen Kopierer verwenden?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Für Ihre eigenen Geschäfte können Sie einen Gewerbekopierer nutzen. Konten werden vor Auszahlungen überprüft und das Kopieren der Strategien anderer Händler kann dazu führen, dass Ihre Auszahlung verweigert wird."
+              }
+            ]
+          },
+          {
+            "q": "Was passiert, wenn eine verbotene Praxis festgestellt wird?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Wir können die betroffenen Trades von Ihren Ergebnissen ausschließen, sie bei der Berechnung des Gewinns oder der Auszahlungsberechtigung außer Acht lassen, eine Auszahlung verweigern oder stornieren und das Konto und Ihre Teilnahme am Programm sperren oder kündigen. Wenn die Praxis mehrere Konten, verbundene Händler oder koordinierte Aktivitäten umfasst, können diese Maßnahmen für alle betroffenen Konten gelten und das zugewiesene Kapital dieser Konten kann reduziert werden."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preise",
+        "items": [
+          {
+            "q": "Wie viel kostet die Challenge?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Challenge-Preis"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Sofortfinanzierung – FAQ",
+    "subtitle": "Bedingungen für ein finanziertes Konto – Instant Funding und Instant Funding Light",
+    "categories": [
+      {
+        "category": "Über Sofortfinanzierung",
+        "items": [
+          {
+            "q": "Was ist Sofortfinanzierung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Mit Instant Funding erhalten Sie sofort ein Guthabenkonto, ohne Bewertungsphase und ohne Gewinnziel. Sie handeln vom ersten Tag an nach den Kontoregeln und behalten 80 % des erzielten Gewinns."
+              }
+            ]
+          },
+          {
+            "q": "Was ist der Unterschied zwischen Instant Funding und Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Beide haben die gleichen Verlustlimits, den gleichen Hebel und den gleichen Auszahlungsplan. Instant Funding Light ist in kleineren Größen zu einem günstigeren Preis erhältlich und verfügt über eine Konsistenzregel von 25 %, die überprüft wird, wenn Sie eine Auszahlung beantragen."
+              }
+            ]
+          },
+          {
+            "q": "Welche Kontogrößen kann ich wählen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sofortfinanzierung: 5.000 $, 10.000 $, 25.000 $, 50.000 $ und 100.000 $. Instant Funding Light: 5.000 $, 10.000 $ und 25.000 $. Alle Regeln gelten für jede Größe mit demselben Prozentsatz. nur die Dollarbeträge ändern sich."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Gewinnziel",
+        "items": [
+          {
+            "q": "Gibt es ein Gewinnziel?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Für Instant Funding- und Instant Funding Light-Konten gibt es kein Gewinnziel."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verlustgrenzen",
+        "items": [
+          {
+            "q": "Wie hoch sind die Verlustgrenzen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es gibt zwei Möglichkeiten: einen maximalen täglichen Verlust von 3 % Ihres Guthabens zu Beginn jedes Tages und einen nachlaufenden maximalen Verlust von 5 %, der Ihrem höchsten Eigenkapital folgt. Bei einem Verstoß gegen einen dieser Punkte endet das Konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Konto",
+                    "Maximaler täglicher Verlust (3 %, zu Beginn).",
+                    "Maximaler Verlust (5 %,"
+                  ],
+                  [
+                    "Größe",
+                    "Gleichgewicht)",
+                    "nachlaufend)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Die oben genannten täglichen Verlustbeträge gelten, wenn Ihr Guthaben der Kontogröße entspricht. Das tatsächliche Tageslimit wird jeden Tag um 00:00 UTC mit 3 % Ihres Guthabens neu berechnet, sodass es mit Ihren Gewinnen wächst und nach Verlusten sinkt. Die Größen 50.000 $ und 100.000 $ sind nur bei Instant Funding verfügbar."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "So wird der Drawdown berechnet",
+        "items": [
+          {
+            "q": "Wird die Inanspruchnahme per Saldo oder am Eigenkapital gemessen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Auf Gerechtigkeit. Eigenkapital ist Ihr Guthaben plus der schwankende Gewinn oder Verlust Ihrer offenen Positionen, sodass offene Geschäfte zu jedem Zeitpunkt auf beide Verlustgrenzen angerechnet werden, nicht nur, wenn Sie sie schließen."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der maximale Tagesverlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der Handelstag beginnt um 00:00 UTC. Ihr aktueller Kontostand, ausschließlich aus geschlossenen Trades, ist der Ausgangspunkt für den Tag. Ihr Tageslimit beträgt 3 % dieses Startguthabens. Im Laufe des Tages darf Ihr Eigenkapital inklusive offener Positionen um nicht mehr als diesen Betrag unter den Startpunkt fallen. Wenn dies der Fall ist, ist das Konto fehlgeschlagen."
+              },
+              {
+                "t": "p",
+                "x": "Beispiel für ein 10.000-Dollar-Konto: Um 00:00 UTC beträgt Ihr Guthaben 10.200 Dollar, Ihr Tageslimit beträgt also 306 Dollar (3 % × 10.200 Dollar). An diesem Tag muss Ihr Eigenkapital über 9.894 $ (10.200 $ − 306 $) bleiben, auch wenn noch ein Trade offen ist. Um 00:00 UTC werden der Startpunkt und das Limit erneut von Ihrem aktuellen Guthaben festgelegt."
+              }
+            ]
+          },
+          {
+            "q": "Wie funktioniert der nachlaufende Maximalverlust?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der maximale Verlust ist ein fester Dollarbetrag (5 % der ursprünglichen Kontogröße), dessen Höhe jedoch hinter Ihrem Eigenkapital zurückbleibt. Jedes Mal, wenn Ihr Eigenkapital einen neuen Höchststand erreicht, steigt das Niveau um denselben Betrag; es bewegt sich nie nach unten. Wenn Ihr Eigenkapital zu irgendeinem Zeitpunkt auf oder unter dieses Niveau fällt, auch bei offenen Positionen, ist das Konto fehlgeschlagen."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Maximaler Verlust (5%)",
+                    "Ausgangsniveau (Eigenkapital muss darüber bleiben)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Beispiel: Auf einem Konto im Wert von 10.000 $ erreicht Ihr Eigenkapital 10.300 $, sodass sich der maximale Verlust auf 9.800 $ erhöht (10.300 $ − 500 $). Wenn Ihr Eigenkapital später auf 9.800 $ oder weniger sinkt, einschließlich Verlusten aus offenen Geschäften, ist das Konto gescheitert."
+              }
+            ]
+          },
+          {
+            "q": "Sinkt der maximale Verlust nach einer Auszahlung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Das Niveau bleibt genau dort, wo Ihre Handelsergebnisse es bewegt haben, und wird nach einer Auszahlung nicht gesenkt."
+              }
+            ]
+          },
+          {
+            "q": "Wie wirken die beiden Grenzwerte zusammen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Es handelt sich dabei um separate Grenzwerte, die gleichzeitig überprüft werden. Das Konto ist fehlgeschlagen, wenn eines der beiden zuerst erreicht wird. Ein Tag mit einem großen Verlust zählt immer noch zum Maximalverlust, sodass Sie den Maximalverlust erreichen können, ohne jemals das Tageslimit zu überschreiten."
+              }
+            ]
+          },
+          {
+            "q": "Wo kann ich meine aktuellen Limits sehen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ihr Dashboard zeigt die Live-Stufen beider Limits für Ihr Konto an."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelstage und Fristen",
+        "items": [
+          {
+            "q": "Wie viele Handelstage benötige ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Instant Funding- und Instant Funding Light-Konten haben eine Mindestlaufzeit von 5 Handelstagen."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Frist?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Es gibt keine zeitliche Begrenzung für das Konto, sofern es aktiv bleibt (siehe unten)."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Mindestaktivitätsanforderung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Wenn auf Ihrem Konto 30 Kalendertage hintereinander keine Geschäfte getätigt werden, wird das Konto automatisch geschlossen und die Gebühr wird nicht zurückerstattet. Dies gilt in jeder Phase, einschließlich des Guthabenkontos. Stellen Sie daher sicher, dass Sie alle 30 Tage mindestens einen Trade tätigen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Auszahlungen",
+        "items": [
+          {
+            "q": "Wie hoch ist die Gewinnaufteilung?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80 % / 20 %: Sie behalten 80 % des erzielten Gewinns."
+              }
+            ]
+          },
+          {
+            "q": "Wie oft kann ich eine Auszahlung beantragen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sie können alle 14 Tage eine Auszahlung beantragen."
+              }
+            ]
+          },
+          {
+            "q": "Gibt es einen Mindestauszahlungsbetrag?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Die Mindestauszahlung beträgt 1 % der Kontogröße."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Mindestauszahlung (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Gibt es eine Höchstzahl an Auszahlungen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ja. Ein Instant Funding-Konto ist auf 5 Auszahlungen begrenzt. Nach der fünften Auszahlung wird das Konto geschlossen und um den Handel fortzusetzen, müssen Sie ein neues Konto eröffnen."
+              }
+            ]
+          },
+          {
+            "q": "Was ist die Konsistenzregel für Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Kein einzelner Handelstag darf mehr als 25 % Ihres Gesamtgewinns ausmachen. Die Regel wird überprüft, wenn Sie eine Auszahlung beantragen, und gilt nur für Instant Funding Light. Bei der Standard-Sofortfinanzierung gibt es keine Konsistenzregel."
+              },
+              {
+                "t": "p",
+                "x": "Konsistenz % = (höchster Tagesgewinn ÷ Gesamtgewinn) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Beispiel: Ihr bester Tag hat 600 $ eingebracht und Ihr Gesamtgewinn beträgt 2.000 $. Die Konsistenz liegt bei 30 % (600 $ ÷ 2.000 $), also über 25 %, sodass Sie noch keine Auszahlung beantragen können. Sobald Ihr Gesamtgewinn 2.400 $ erreicht, beträgt der beste Tag genau 25 % und Sie können eine Auszahlung beantragen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Handelsbedingungen",
+        "items": [
+          {
+            "q": "Welche Hebelwirkung erhalte ich?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Der maximale Hebel beträgt 1:40. Der Hebel für jedes Instrument wird in den Symboldetails auf der Plattform angezeigt."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich Trades über Nacht und am Wochenende durchführen?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Das Halten über Nacht ist zulässig. Das Halten am Wochenende ist nicht zulässig, daher müssen Positionen geschlossen werden, bevor der Markt am Wochenende schließt."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich während wichtiger Pressemitteilungen handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Instant Funding-Konten sind finanzierte Konten, daher ist der Nachrichtenhandel nicht erlaubt: Sie dürfen keine Geschäfte innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsnachrichten eröffnen oder ausführen, zentral"
+              },
+              {
+                "t": "p",
+                "x": "Bankankündigungen, geopolitische Ereignisse oder andere Ereignisse mit großer Tragweite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Verbotene Handelspraktiken",
+        "items": [
+          {
+            "q": "Welche Handelspraktiken sind nicht erlaubt?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeglicher Handel, der das Programm, die Handelsplattform oder die simulierte Handelsumgebung ausnutzt, missbraucht oder umgeht, ist verboten. Hierzu zählen ohne Einschränkung:"
+              },
+              {
+                "t": "p",
+                "x": "Ausnutzung von Fehlern oder Verzögerungen: Nutzung von Preisfehlern, Datenungenauigkeiten, Systemstörungen, Latenz oder verzögerten Preisaktualisierungen oder nicht öffentlichen oder Insiderinformationen, ob wissentlich oder unwissentlich."
+              },
+              {
+                "t": "p",
+                "x": "Externe oder verzögerte Daten: Handel mit externen, verzögerten, nicht standardmäßigen Datenfeeds, Signalen oder Strategien Dritter, die nicht auf der Plattform verfügbar oder nicht für die Verwendung mit der Plattform vorgesehen sind."
+              },
+              {
+                "t": "p",
+                "x": "Absicherung und koordinierter Handel: manipulativer, irreführender oder koordinierter Handel allein oder mit anderen, auch zwischen verbundenen Konten; gleichzeitige Eröffnung gegenläufiger, gegenläufiger oder abgesicherter Positionen; und jede Form der Kontoarbitrage gegen andere Konten bei uns oder einer anderen Firma."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche Strategie für alle Konten: Platzieren derselben oder im Wesentlichen ähnlicher Geschäfte zur gleichen oder fast gleichzeitigen Zeit über mehrere Konten hinweg, allein oder zusammen mit anderen Händlern, es sei denn, wir haben dies im Voraus schriftlich genehmigt."
+              },
+              {
+                "t": "p",
+                "x": "Gleiche IP-Adresse oder dasselbe Gerät: Handel oder Zugriff auf Konten verschiedener Händler über dieselbe IP-Adresse oder dasselbe Gerät. Konten, die eine IP-Adresse oder ein Gerät teilen, werden als verwandte Konten behandelt und es gelten für sie die Regeln für koordinierten Handel und mehrere Konten."
+              },
+              {
+                "t": "p",
+                "x": "Kontoverwaltung durch Dritte: Nutzung eines Dritten, sei es eine Privatperson, ein Account Manager, ein Handelsdienstleister oder ein „Passing Service“, um mit Ihrem Konto zu handeln, es zu verwalten oder zu betreiben. Alles auf dem Konto, einschließlich Handel, Auftragsverwaltung und Auszahlungsanfragen, muss vom Kontoinhaber persönlich erledigt werden."
+              },
+              {
+                "t": "p",
+                "x": "Signaldienste: Nutzung von Handelssignalen von beliebigen Signaldiensten, Signalgruppen, Kanälen oder Anbietern, ob kostenlos oder kostenpflichtig, um Geschäfte auf Ihrem Konto zu tätigen. Alle Handelsentscheidungen müssen Sie selbst treffen."
+              },
+              {
+                "t": "p",
+                "x": "Front-Running: Front-Running-Geschäfte, die an anderer Stelle platziert werden, einschließlich mit anderen Brokern, Handelsplätzen oder Handelskonten."
+              },
+              {
+                "t": "p",
+                "x": "Bots und automatisierte Ausbeutung: Verwendung von Software, Skripten, Algorithmen, KI-Tools, Ultrahochfrequenztechniken, automatisierten Handelssystemen, Massenauftragsstrategien oder von Dritten und kommerziell vermarkteten Strategien (einschließlich solcher, die als zum Bestehen von Herausforderungen konzipiert beworben werden) zur Manipulation, zum Missbrauch, zur Umgehung der Regeln oder zur Erlangung eines unfairen Vorteils."
+              },
+              {
+                "t": "p",
+                "x": "Ändern Sie Ihren Handel nach dem Bestehen: Verwenden Sie wesentlich andere Strategien, Risikoprofile oder Ausführungsverhalten auf dem finanzierten Konto im Vergleich zur Herausforderung."
+              },
+              {
+                "t": "p",
+                "x": "Lücken- und Ereignisausnutzung: Handel, der wesentlich von der normalen Marktpraxis abweicht, wie z. B. das Öffnen oder Halten von Positionen, um nahezu offene Lücken oder Gewinnveröffentlichungen auszunutzen (z. B. das Halten von Einzelaktien-CFDs in einer Gewinnmitteilung)."
+              },
+              {
+                "t": "p",
+                "x": "Unverhältnismäßiges Risiko: Die Größe einer Eröffnungsposition oder einer Anzahl von Positionen weicht erheblich von Ihrem üblichen Handel ab und deutet auf einen Versuch hin, das Programm auszunutzen oder sein Risiko zu umgehen"
+              },
+              {
+                "t": "p",
+                "x": "Grenzen. Es wird jederzeit ein marktübliches Risikomanagement erwartet."
+              },
+              {
+                "t": "p",
+                "x": "Verstoß gegen Plattform- oder Ausführungsbedingungen: Handel unter Verstoß gegen die Bedingungen der Handelsplattform, des Brokers, der Liquidität oder der Ausführungssysteme oder in einer Weise, die diese Beziehungen gefährdet."
+              },
+              {
+                "t": "p",
+                "x": "Nachrichtenhandel: Eröffnung oder Ausführung von Geschäften innerhalb von 5 Minuten vor oder 5 Minuten nach wichtigen Wirtschaftsdaten, Zentralbankankündigungen, geopolitischen oder anderen einflussreichen Ereignissen. Es zählen nur Aufträge, die innerhalb dieses Fensters ausgeführt werden; Eine Position, die vor dem Fenster geöffnet und danach geschlossen wird, stellt keinen Verstoß dar."
+              }
+            ]
+          },
+          {
+            "q": "Kann jemand anderes auf meinem Konto handeln oder kann ich für andere handeln?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nein. Ihr Konto ist nur für Ihren persönlichen Gebrauch bestimmt und alle darin enthaltenen Aufgaben müssen von Ihnen als Kontoinhaber erledigt werden. Sie dürfen nicht zulassen, dass jemand anderes auf Ihr Konto zugreift, es verwaltet oder handelt, sei es eine Privatperson oder eine professionelle Dienstleistung, Sie dürfen keine Signaldienste für den Handel nutzen und Sie dürfen keine Konten handeln oder verwalten, die bei anderen Benutzern registriert sind, oder Signal-, Copy-Trading- oder Kontoverwaltungsdienste innerhalb des Programms anbieten."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich mehr als ein Konto haben?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jeder Händler darf nur ein Konto im Rahmen des Programms besitzen, es sei denn, wir genehmigen im Voraus schriftlich etwas anderes. Konten verschiedener Händler dürfen nicht von derselben IP-Adresse oder demselben Gerät aus betrieben werden. Zusätzliche Konten können gesperrt, gesperrt oder dauerhaft eingeschränkt werden. Accounts dürfen nicht geteilt, verkauft, übertragen oder verschenkt werden."
+              }
+            ]
+          },
+          {
+            "q": "Kann ich einen kommerziellen Kopierer verwenden?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Für Ihre eigenen Geschäfte können Sie einen Gewerbekopierer nutzen. Konten werden vor Auszahlungen überprüft und das Kopieren der Strategien anderer Händler kann dazu führen, dass Ihre Auszahlung verweigert wird."
+              }
+            ]
+          },
+          {
+            "q": "Was passiert, wenn eine verbotene Praxis festgestellt wird?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Wir können die betroffenen Trades von Ihren Ergebnissen ausschließen, sie bei der Berechnung des Gewinns oder der Auszahlungsberechtigung außer Acht lassen, eine Auszahlung verweigern oder stornieren und das Konto und Ihre Teilnahme am Programm sperren oder kündigen. Wenn die Praxis mehrere Konten, verbundene Händler oder koordinierte Aktivitäten umfasst, können diese Maßnahmen für alle betroffenen Konten gelten und das zugewiesene Kapital dieser Konten kann reduziert werden."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preise",
+        "items": [
+          {
+            "q": "Wie viel kostet es?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Kontogröße",
+                    "Sofortige Finanzierung",
+                    "Sofortige Finanzierung Light"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "—"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "—"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

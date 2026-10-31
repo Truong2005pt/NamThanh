@@ -1,0 +1,96 @@
+[
+ {
+  "t": "p",
+  "x": "<b>Restricted jurisdictions (territories)</b>",
+  "center": true
+ },
+ {
+  "t": "p",
+  "x": "FX-EDGE V Ltd does not provide services to citizens and/or residents of the following:",
+  "center": false
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "1.",
+  "x": "Afghanistan"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "2.",
+  "x": "Belarus"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "3.",
+  "x": "Crimea / Donetsk / Luhansk / Kherson / Zaporizhzhia / Sevastopol region"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "4.",
+  "x": "Cuba"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "5.",
+  "x": "Democratic Republic of Korea"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "6.",
+  "x": "Gaza"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "7.",
+  "x": "Iran"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "8.",
+  "x": "Libya"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "9.",
+  "x": "Myanmar"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "10.",
+  "x": "Russian Federation"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "11.",
+  "x": "South Sudan"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "12.",
+  "x": "North Korea"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "13.",
+  "x": "Syria"
+ },
+ {
+  "t": "li",
+  "lvl": 0,
+  "label": "14.",
+  "x": "Venezuela"
+ }
+]

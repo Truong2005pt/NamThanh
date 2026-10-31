@@ -1,0 +1,54 @@
+import React from 'react';
+
+export type LegalBlock =
+  | { t: 'p'; x: string; center?: boolean }
+  | { t: 'li'; x: string; label: string; lvl: number }
+  | { t: 'table'; rows: string[][] };
+
+const INDENT = ['pl-0', 'pl-6 sm:pl-8', 'pl-12 sm:pl-16', 'pl-[4.5rem] sm:pl-24', 'pl-24 sm:pl-32'];
+
+/** A policy document straight from the signed Word files: numbering, bold, italics and tables kept as written. */
+export const LegalDocument: React.FC<{ blocks: LegalBlock[] }> = ({ blocks }) => {
+  const [first, ...rest] = blocks;
+  return (
+    <article className="legal-doc max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-sm sm:text-[15px] leading-relaxed app-text-secondary">
+      {first && first.t === 'p' && (
+        <h1 className="gft-title text-2xl sm:text-4xl font-black app-text mb-8 text-center" dangerouslySetInnerHTML={{ __html: first.x.replace(/<\/?b>/g, '') }} />
+      )}
+      <div className="space-y-3">
+        {rest.map((b, i) => {
+          if (b.t === 'table') {
+            return (
+              <div key={i} className="overflow-x-auto my-4 rounded-xl border app-border">
+                <table className="w-full text-left text-xs sm:text-sm">
+                  <tbody>
+                    {b.rows.map((r, ri) => (
+                      <tr key={ri} className="border-b app-border last:border-0 align-top">
+                        {r.map((c, ci) => (
+                          <td key={ci} className={`p-3 ${ci === 0 ? 'font-bold app-text w-1/4' : ''}`}>{c}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          }
+          if (b.t === 'li') {
+            const heading = b.lvl === 0 && /^<b>.*<\/b>$/.test(b.x);
+            return (
+              <div key={i} className={`flex gap-3 ${INDENT[Math.min(b.lvl, INDENT.length - 1)]} ${heading ? 'pt-6' : ''}`}>
+                <span className={`shrink-0 tabular-nums ${heading ? 'font-black app-text' : 'app-text-muted'}`}>{b.label}</span>
+                <span
+                  className={heading ? 'text-base sm:text-lg app-text' : ''}
+                  dangerouslySetInnerHTML={{ __html: b.x }}
+                />
+              </div>
+            );
+          }
+          return <p key={i} className={b.center ? 'text-center' : ''} dangerouslySetInnerHTML={{ __html: b.x }} />;
+        })}
+      </div>
+    </article>
+  );
+};

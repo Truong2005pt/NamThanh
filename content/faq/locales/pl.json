@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Wyzwanie dwuetapowe — często zadawane pytania",
+    "subtitle": "Wyzwanie i warunki konta zasilanego",
+    "categories": [
+      {
+        "category": "O wyzwaniu dwuetapowym",
+        "items": [
+          {
+            "q": "Na czym polega wyzwanie dwuetapowe?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jest to ocena dwuetapowa. Przejdź Fazę 1 i Fazę 2, a przejdziesz na konto Zasilone z 80% podziałem zysków."
+              }
+            ]
+          },
+          {
+            "q": "Jakie rozmiary kont mogę wybrać?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Pięć rozmiarów: 5000 USD, 10 000 USD, 25 000 USD, 50 000 USD i 100 000 USD. Wszystkie reguły mają taki sam procent dla każdego rozmiaru; zmieniają się tylko kwoty w dolarach."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cele zysku",
+        "items": [
+          {
+            "q": "Jakiego zysku potrzebuję, aby przejść każdą fazę?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Faza 1 wymaga 10% zysku. Faza 2 wymaga 5% zysku. Konto Zasilone nie ma docelowego zysku."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Cel fazy 1 (10%)",
+                    "Cel fazy 2 (5%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limity strat",
+        "items": [
+          {
+            "q": "Jakie są limity strat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Istnieją dwa rodzaje strat: maksymalna dzienna strata wynosząca 5% salda na początku każdego dnia oraz maksymalna strata wynosząca 10% początkowej wielkości konta. Naruszenie któregokolwiek z nich kończy konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Maksymalna dzienna strata (5%, przy saldzie początkowym)",
+                    "Maksymalna strata (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Powyższe kwoty dziennych strat mają zastosowanie, gdy saldo jest równe wielkości konta. Rzeczywisty limit dzienny jest przeliczany codziennie na 5% Twojego salda o godzinie 00:00 UTC, więc rośnie wraz z Twoimi zyskami i maleje po stratach."
+              }
+            ]
+          },
+          {
+            "q": "Czy limity strat obowiązują na każdym etapie?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Te same limity obowiązują w Fazie 1, Fazie 2 i na rachunku Zasilonym."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jak obliczana jest wypłata",
+        "items": [
+          {
+            "q": "Czy wypłatę mierzy się bilansem czy kapitałem własnym?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na kapitale własnym. Kapitał własny to saldo plus zmienny zysk lub strata z otwartych pozycji, dlatego otwarte transakcje wliczają się do obu limitów strat w każdym momencie, a nie tylko po ich zamknięciu."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa maksymalna dzienna strata?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dzień handlowy rozpoczyna się o godzinie 00:00 UTC. Twoje saldo w tym momencie, tylko z zamkniętych transakcji, jest punktem wyjścia dla dnia. Twój dzienny limit wynosi 5% salda początkowego. W ciągu dnia Twój kapitał, włączając otwarte pozycje, nie może spaść o więcej niż tę kwotę poniżej punktu początkowego. Jeśli tak, konto nie działa."
+              },
+              {
+                "t": "p",
+                "x": "Przykład dla konta o wartości 10 000 USD: o godzinie 00:00 UTC Twoje saldo wynosi 10 200 USD, więc Twój dzienny limit wynosi 510 USD (5% × 10 200 USD). W tym dniu Twój kapitał musi pozostać powyżej 9 690 USD (10 200 USD – 510 USD), nawet jeśli transakcja jest nadal otwarta. O godzinie 00:00 UTC punkt początkowy i limit zostaną ponownie ustawione z Twojego salda w tym momencie."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa maksymalna strata?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalny poziom straty jest stały. Jest ona obliczana jednorazowo na podstawie salda początkowego i nigdy się nie zmienia, nawet jeśli osiągasz zysk. Jeśli w dowolnym momencie Twój kapitał spadnie do lub poniżej tego poziomu, konto zostanie zniszczone."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Maksymalna strata (10%)",
+                    "Kapitał własny musi pozostać powyżej"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Przykład: na koncie o wartości 10 000 USD zwiększasz kapitał do 10 800 USD. Maksymalny poziom straty pozostaje na poziomie 9 000 USD; nie rośnie wraz z Twoim zyskiem."
+              }
+            ]
+          },
+          {
+            "q": "Jak te dwa limity współpracują ze sobą?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Są to osobne limity sprawdzane w tym samym czasie. Konto kończy się niepowodzeniem, gdy którekolwiek z nich zostanie osiągnięte jako pierwsze. Dzień z dużą stratą nadal wlicza się do straty maksymalnej, więc możesz osiągnąć maksymalną stratę bez przekraczania dziennego limitu."
+              }
+            ]
+          },
+          {
+            "q": "Gdzie mogę zobaczyć moje aktualne limity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Twój pulpit nawigacyjny pokazuje aktualne poziomy obu limitów dla Twojego konta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dni handlowe i limity czasowe",
+        "items": [
+          {
+            "q": "Ile dni handlowych potrzebuję?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Co najmniej 5 dni handlowych w Fazie 1 i co najmniej 5 w Fazie 2. Konto Zasilone nie ma minimalnej liczby dni handlowych."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje limit czasu na ukończenie wyzwania?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Okres handlowy jest nieograniczony, więc możesz potrzebować tyle czasu, ile potrzebujesz, aby osiągnąć docelowy zysk, pod warunkiem, że konto pozostaje aktywne (patrz poniżej)."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje wymóg dotyczący minimalnej aktywności?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Jeśli przez 30 dni kalendarzowych z rzędu na Twoim koncie nie zostaną przeprowadzone żadne transakcje, konto zostanie automatycznie zamknięte, a opłata nie zostanie zwrócona. Dotyczy to każdej fazy, łącznie z kontem Zasilonym, więc upewnij się, że dokonujesz co najmniej jednej transakcji w ciągu każdych 30 dni."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Zasilone konto",
+        "items": [
+          {
+            "q": "Co się stanie po przejściu obu faz?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Otrzymujesz konto Zasilone o tej samej wielkości. Niezmienione są te same limity strat, nie ma minimalnej liczby dni handlowych, a dźwignia jest niższa niż w fazach wyzwania (patrz Warunki handlu)."
+              }
+            ]
+          },
+          {
+            "q": "Jaki jest podział zysków?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: zatrzymujesz 80% zysku osiągniętego na koncie Zasilonym."
+              }
+            ]
+          },
+          {
+            "q": "Jak często mogę żądać wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na koncie Zasilonym możesz zażądać wypłaty co 5 dni."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje minimalna kwota wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Minimalna wypłata wynosi 1% wielkości konta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Minimalna wypłata (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje maksymalna liczba wypłat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Zasilone konto jest ograniczone do 5 wypłat. Po piątej wypłacie konto zostaje zamknięte i aby kontynuować handel musisz wykupić nowe wyzwanie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Warunki handlowe",
+        "items": [
+          {
+            "q": "Jaką dźwignię uzyskam?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalna dźwignia wynosi 1:100 w Fazie 1 i Fazie 2. Na rachunku Zasilonym maksymalna dźwignia wynosi 1:40. Dźwignia dla każdego instrumentu jest pokazana w szczegółach symboli na platformie."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Faza",
+                    "Maksymalna dźwignia"
+                  ],
+                  [
+                    "Faza 1 i Faza 2",
+                    "1:100"
+                  ],
+                  [
+                    "Finansowane",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę zawierać transakcje przez noc i weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dozwolone jest przetrzymywanie przez noc. Trzymanie pozycji w weekendy jest niedozwolone, dlatego pozycje muszą zostać zamknięte przed zamknięciem rynku na weekend. Ma to zastosowanie w Fazie 1, Fazie 2 i na rachunku Zasilonym."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę handlować podczas ważnych publikacji wiadomości?",
+            "a": [
+              {
+                "t": "p",
+                "x": "W fazie 1 i fazie 2 tak. Na rachunku Zasilonym handel wiadomościami jest zabroniony: nie można otwierać ani realizować transakcji w ciągu 5 minut przed lub 5 minut po najważniejszych publikacjach wiadomości gospodarczych, ogłoszeniach banku centralnego, wydarzeniach geopolitycznych lub innych wydarzeniach o dużym wpływie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Zakazane praktyki handlowe",
+        "items": [
+          {
+            "q": "Jakie praktyki handlowe są niedozwolone?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Zabrania się wszelkich transakcji wykorzystujących, nadużywających lub obchodzących program, platformę transakcyjną lub symulowane środowisko handlowe. Obejmuje to między innymi:"
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie błędów lub opóźnień: wykorzystywanie błędów cenowych, niedokładności danych, nieprawidłowego działania systemu, opóźnień lub opóźnionych aktualizacji cen, a także informacji niepublicznych lub poufnych, świadomie lub nieświadomie."
+              },
+              {
+                "t": "p",
+                "x": "Dane zewnętrzne lub opóźnione: handel na zewnętrznych, opóźnionych, niestandardowych lub pochodzących od stron trzecich źródłach danych, sygnałach lub strategiach, które nie są dostępne na platformie lub nie są przeznaczone do użytku z platformą."
+              },
+              {
+                "t": "p",
+                "x": "Handel zabezpieczający i skoordynowany: handel manipulacyjny, oszukańczy lub skoordynowany, prowadzony samodzielnie lub z innymi osobami, w tym między powiązanymi rachunkami; jednoczesne otwieranie pozycji przeciwstawnych, kompensujących lub zabezpieczanych; oraz wszelkie formy arbitrażu kont w stosunku do innych rachunków u nas lub w jakiejkolwiek innej firmie."
+              },
+              {
+                "t": "p",
+                "x": "Ta sama strategia na różnych kontach: zawieranie tych samych lub zasadniczo podobnych transakcji w tym samym lub prawie tym samym czasie na wielu rachunkach, samodzielnie lub razem z innymi inwestorami, chyba że wcześniej zatwierdziliśmy to na piśmie."
+              },
+              {
+                "t": "p",
+                "x": "Ten sam adres IP lub urządzenie: handel lub dostęp do kont różnych traderów z tego samego adresu IP lub tego samego urządzenia. Konta współdzielące adres IP lub urządzenie są traktowane jako konta powiązane i mają do nich zastosowanie zasady dotyczące handlu skoordynowanego i wielu kont."
+              },
+              {
+                "t": "p",
+                "x": "Zarządzanie kontem przez stronę trzecią: korzystanie z jakiejkolwiek strony trzeciej, niezależnie od tego, czy jest to osoba prywatna, menedżer konta, usługa handlowa czy „usługa przekazująca”, w celu handlu, zarządzania lub obsługi Twojego konta. Wszystko na koncie, w tym handel, zarządzanie zamówieniami i żądania wypłat, musi być wykonywane osobiście przez właściciela konta."
+              },
+              {
+                "t": "p",
+                "x": "Usługi sygnałowe: wykorzystywanie sygnałów transakcyjnych z dowolnej usługi sygnałowej, grupy sygnałów, kanału lub dostawcy, bezpłatnych lub płatnych, w celu zawierania transakcji na swoim koncie. Wszystkie decyzje handlowe muszą być Twoje."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: transakcje front-running zawarte gdzie indziej, w tym u innych brokerów, platform lub rachunków handlowych."
+              },
+              {
+                "t": "p",
+                "x": "Boty i zautomatyzowane wykorzystywanie: używanie oprogramowania, skryptów, algorytmów, narzędzi sztucznej inteligencji, technik ultrawysokiej częstotliwości, zautomatyzowanych systemów transakcyjnych, strategii zamówień masowych lub strategii stron trzecich i strategii oferowanych na rynku komercyjnym (w tym tych reklamowanych jako zaprojektowane do pokonywania wyzwań) w celu manipulacji, nadużyć, obejścia zasad lub uzyskania nieuczciwej przewagi."
+              },
+              {
+                "t": "p",
+                "x": "Zmiana transakcji po przejściu: użycie znacząco odmiennych strategii, profili ryzyka lub zachowań wykonawczych na koncie Zasilonym w porównaniu z wyzwaniem."
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie luk i zdarzeń: handel istotnie odbiegający od normalnej praktyki rynkowej, taki jak otwieranie lub utrzymywanie pozycji w celu wykorzystania luk bliskich do otwartych lub publikacja zysków (na przykład trzymanie kontraktów CFD na akcje na akcje w ogłoszeniu o wynikach)."
+              },
+              {
+                "t": "p",
+                "x": "Nieproporcjonalne ryzyko: wielkość pozycji otwarcia lub liczba pozycji znacznie odbiegająca od zwykłego handlu, co wskazuje na próbę wykorzystania programu lub obejścia jego limitów ryzyka. Zawsze oczekuje się zarządzania ryzykiem na poziomie standardów rynkowych."
+              },
+              {
+                "t": "p",
+                "x": "Naruszenie warunków platformy lub realizacji transakcji: handel z naruszeniem warunków platformy transakcyjnej, brokera, systemów płynności lub realizacji lub w sposób, który naraża te relacje na ryzyko."
+              },
+              {
+                "t": "p",
+                "x": "Handel wiadomościami na rachunku Zasilonym: otwieranie lub realizowanie transakcji w ciągu 5 minut przed lub 5 minut po ważnych danych ekonomicznych, ogłoszeniach banku centralnego, wydarzeniach geopolitycznych lub innych wydarzeniach o dużym wpływie. Liczą się tylko zamówienia zrealizowane w tym oknie; pozycja otwarta przed oknem i zamknięta po nim nie jest naruszeniem. Handel wiadomościami jest dozwolony w fazie 1 i fazie 2."
+              }
+            ]
+          },
+          {
+            "q": "Czy ktoś inny może handlować na moim koncie lub czy mogę handlować za innych?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Twoje konto jest przeznaczone wyłącznie do Twojego użytku osobistego i wszystko na nim musi być wykonane przez Ciebie jako właściciela konta. Nie możesz pozwolić nikomu innemu na dostęp do swojego konta, zarządzanie nim ani handel nim, niezależnie od tego, czy jest to osoba prywatna czy profesjonalna usługa, nie możesz używać usług sygnałowych do handlu nim, nie możesz handlować ani zarządzać kontami zarejestrowanymi dla innych użytkowników ani świadczyć usług związanych z sygnałami, kopiowaniem transakcji lub zarządzaniem kontami w ramach programu."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę mieć więcej niż jedno konto?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Każdy przedsiębiorca może posiadać tylko jedno konto w ramach programu, chyba że wcześniej wyrazimy na to zgodę na piśmie. Konta różnych handlowców nie mogą być obsługiwane z tego samego adresu IP lub tego samego urządzenia. Dodatkowe konta mogą zostać zawieszone, zablokowane lub trwale ograniczone. Konta nie można udostępniać, sprzedawać, przenosić ani oddawać."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę skorzystać z kopiarki handlowej?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możesz użyć kopiarki handlowej do własnych transakcji. Konta są sprawdzane przed wypłatą, a kopiowanie strategii innych traderów może skutkować odmową wypłaty."
+              }
+            ]
+          },
+          {
+            "q": "Co się stanie w przypadku wykrycia zabronionej praktyki?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możemy wykluczyć transakcje, których to dotyczy, z Twoich wyników, zignorować je przy obliczaniu zysku lub kwalifikowalności wypłaty, odmówić lub anulować wypłatę oraz zawiesić lub zamknąć konto i Twój udział w programie. Jeżeli praktyka obejmuje kilka rachunków, powiązanych handlowców lub skoordynowaną działalność, środki te można zastosować do wszystkich dotkniętych rachunków, a przydzielony kapitał na te rachunki może zostać zmniejszony."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Wycena",
+        "items": [
+          {
+            "q": "Ile kosztuje wyzwanie?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Cena wyzwanie"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "Wyzwanie jednoetapowe — często zadawane pytania",
+    "subtitle": "Wyzwanie i warunki konta zasilanego",
+    "categories": [
+      {
+        "category": "O wyzwaniu One-Step",
+        "items": [
+          {
+            "q": "Na czym polega wyzwanie jednoetapowe?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Jest to ocena jednofazowa. Osiągnij docelowy zysk w jednej fazie, a następnie przejdziesz na konto Zasilone z 80% podziałem zysku."
+              }
+            ]
+          },
+          {
+            "q": "Jakie rozmiary kont mogę wybrać?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Pięć rozmiarów: 5000 USD, 10 000 USD, 25 000 USD, 50 000 USD i 100 000 USD. Wszystkie reguły mają taki sam procent dla każdego rozmiaru; zmieniają się tylko kwoty w dolarach."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cel zysku",
+        "items": [
+          {
+            "q": "Jaki zysk muszę przekazać?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Faza wyzwań wymaga 10% zysku. Konto Zasilone nie ma docelowego zysku."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Docelowy zysk (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limity strat",
+        "items": [
+          {
+            "q": "Jakie są limity strat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Są dwa rodzaje strat: maksymalna dzienna strata wynosząca 3% salda na początku każdego dnia i maksymalna strata wynosząca 6% początkowej wielkości konta. Naruszenie któregokolwiek z nich kończy konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Maksymalna dzienna strata (3%, przy saldzie początkowym)",
+                    "Maksymalna strata (6%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Powyższe kwoty dziennych strat mają zastosowanie, gdy saldo jest równe wielkości konta. Rzeczywisty limit dzienny jest przeliczany codziennie na 3% Twojego salda o godzinie 00:00 UTC, więc rośnie wraz z Twoimi zyskami i maleje po stratach."
+              }
+            ]
+          },
+          {
+            "q": "Czy limity strat obowiązują na każdym etapie?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Te same limity obowiązują w fazie wyzwania i na koncie Zasilone."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jak obliczana jest wypłata",
+        "items": [
+          {
+            "q": "Czy wypłatę mierzy się bilansem czy kapitałem własnym?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na kapitale własnym. Kapitał własny to saldo plus zmienny zysk lub strata z otwartych pozycji, dlatego otwarte transakcje wliczają się do obu limitów strat w każdym momencie, a nie tylko po ich zamknięciu."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa maksymalna dzienna strata?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dzień handlowy rozpoczyna się o godzinie 00:00 UTC. Twoje saldo w tym momencie, tylko z zamkniętych transakcji, jest punktem wyjścia dla dnia. Twój dzienny limit wynosi 3% salda początkowego. W ciągu dnia Twój kapitał, włączając otwarte pozycje, nie może spaść o więcej niż tę kwotę poniżej punktu początkowego. Jeśli tak, konto nie działa."
+              },
+              {
+                "t": "p",
+                "x": "Przykład dla konta o wartości 10 000 USD: o godzinie 00:00 UTC Twoje saldo wynosi 10 200 USD, więc Twój dzienny limit wynosi 306 USD (3% × 10 200 USD). W tym dniu Twój kapitał musi pozostać powyżej 9894 USD (10 200 USD – 306 USD), nawet jeśli transakcja jest nadal otwarta. O godzinie 00:00 UTC punkt początkowy i limit zostaną ponownie ustawione z Twojego salda w tym momencie."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa maksymalna strata?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalny poziom straty jest stały. Jest ona obliczana jednorazowo na podstawie salda początkowego i nigdy się nie zmienia, nawet jeśli osiągasz zysk. Jeśli w dowolnym momencie Twój kapitał spadnie do lub poniżej tego poziomu, konto zostanie zniszczone."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Maksymalna strata (6%)",
+                    "Kapitał własny musi pozostać powyżej"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Przykład: na koncie o wartości 10 000 USD zwiększasz kapitał do 10 800 USD. Poziom maksymalnej straty pozostaje na poziomie 9400 dolarów; nie rośnie wraz z Twoim zyskiem."
+              }
+            ]
+          },
+          {
+            "q": "Jak te dwa limity współpracują ze sobą?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Są to osobne limity sprawdzane w tym samym czasie. Konto kończy się niepowodzeniem, gdy którekolwiek z nich zostanie osiągnięte jako pierwsze. Dzień z dużą stratą nadal wlicza się do straty maksymalnej, więc możesz osiągnąć maksymalną stratę bez przekraczania dziennego limitu."
+              }
+            ]
+          },
+          {
+            "q": "Gdzie mogę zobaczyć moje aktualne limity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Twój pulpit nawigacyjny pokazuje aktualne poziomy obu limitów dla Twojego konta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dni handlowe i limity czasowe",
+        "items": [
+          {
+            "q": "Ile dni handlowych potrzebuję?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Co najmniej 5 dni handlowych w fazie wyzwania. Konto Zasilone nie ma minimalnej liczby dni handlowych."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje limit czasu na ukończenie wyzwania?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Okres handlowy jest nieograniczony, więc możesz potrzebować tyle czasu, ile potrzebujesz, aby osiągnąć docelowy zysk, pod warunkiem, że konto pozostaje aktywne (patrz poniżej)."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje wymóg dotyczący minimalnej aktywności?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Jeśli przez 30 dni kalendarzowych z rzędu na Twoim koncie nie zostaną przeprowadzone żadne transakcje, konto zostanie automatycznie zamknięte, a opłata nie zostanie zwrócona. Dotyczy to każdej fazy, łącznie z kontem Zasilonym, więc upewnij się, że dokonujesz co najmniej jednej transakcji w ciągu każdych 30 dni."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Zasilone konto",
+        "items": [
+          {
+            "q": "Co się stanie, gdy zaliczę wyzwanie?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Otrzymujesz konto Zasilone o tej samej wielkości. Niezmienione pozostają te same limity strat, nie ma minimalnej liczby dni handlowych, a dźwignia jest niższa niż w fazie wyzwania (patrz Warunki handlu)."
+              }
+            ]
+          },
+          {
+            "q": "Jaki jest podział zysków?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: zatrzymujesz 80% zysku osiągniętego na koncie Zasilonym."
+              }
+            ]
+          },
+          {
+            "q": "Jak często mogę żądać wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na koncie Zasilonym możesz zażądać wypłaty co 5 dni."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje minimalna kwota wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Minimalna wypłata wynosi 1% wielkości konta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Minimalna wypłata (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje maksymalna liczba wypłat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Zasilone konto jest ograniczone do 5 wypłat. Po piątej wypłacie konto zostaje zamknięte i aby kontynuować handel musisz wykupić nowe wyzwanie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Warunki handlowe",
+        "items": [
+          {
+            "q": "Jaką dźwignię uzyskam?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalna dźwignia wynosi 1:50 w fazie wyzwania. Na koncie Zasilonym maksymalna dźwignia wynosi 1:40. Dźwignia dla każdego instrumentu jest pokazana w szczegółach symboli na platformie."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Faza",
+                    "Maksymalna dźwignia"
+                  ],
+                  [
+                    "Faza wyzwań",
+                    "1:50"
+                  ],
+                  [
+                    "Finansowane",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę zawierać transakcje przez noc i weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dozwolone jest przetrzymywanie przez noc. Trzymanie pozycji w weekendy jest niedozwolone, dlatego pozycje muszą zostać zamknięte przed zamknięciem rynku na weekend. Dotyczy to fazy wyzwania i konta Zasilone."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę handlować podczas ważnych publikacji wiadomości?",
+            "a": [
+              {
+                "t": "p",
+                "x": "W fazie wyzwań tak. Na rachunku Zasilonym handel wiadomościami jest zabroniony: nie można otwierać ani realizować transakcji w ciągu 5 minut przed lub 5 minut po najważniejszych publikacjach wiadomości gospodarczych, ogłoszeniach banku centralnego, wydarzeniach geopolitycznych lub innych wydarzeniach o dużym wpływie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Zakazane praktyki handlowe",
+        "items": [
+          {
+            "q": "Jakie praktyki handlowe są niedozwolone?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Zabrania się wszelkich transakcji wykorzystujących, nadużywających lub obchodzących program, platformę transakcyjną lub symulowane środowisko handlowe. Obejmuje to między innymi:"
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie błędów lub opóźnień: wykorzystywanie błędów cenowych, niedokładności danych, nieprawidłowego działania systemu, opóźnień lub opóźnionych aktualizacji cen, a także informacji niepublicznych lub poufnych, świadomie lub nieświadomie."
+              },
+              {
+                "t": "p",
+                "x": "Dane zewnętrzne lub opóźnione: handel na zewnętrznych, opóźnionych, niestandardowych lub pochodzących od stron trzecich źródłach danych, sygnałach lub strategiach, które nie są dostępne na platformie lub nie są przeznaczone do użytku z platformą."
+              },
+              {
+                "t": "p",
+                "x": "Handel zabezpieczający i skoordynowany: handel manipulacyjny, oszukańczy lub skoordynowany, prowadzony samodzielnie lub z innymi osobami, w tym między powiązanymi rachunkami; jednoczesne otwieranie pozycji przeciwstawnych, kompensujących lub zabezpieczanych; oraz wszelkie formy arbitrażu kont w stosunku do innych rachunków u nas lub w jakiejkolwiek innej firmie."
+              },
+              {
+                "t": "p",
+                "x": "Ta sama strategia na różnych kontach: zawieranie tych samych lub zasadniczo podobnych transakcji w tym samym lub prawie tym samym czasie na wielu rachunkach, samodzielnie lub razem z innymi inwestorami, chyba że wcześniej zatwierdziliśmy to na piśmie."
+              },
+              {
+                "t": "p",
+                "x": "Ten sam adres IP lub urządzenie: handel lub dostęp do kont różnych traderów z tego samego adresu IP lub tego samego urządzenia. Konta współdzielące adres IP lub urządzenie są traktowane jako konta powiązane i mają do nich zastosowanie zasady dotyczące handlu skoordynowanego i wielu kont."
+              },
+              {
+                "t": "p",
+                "x": "Zarządzanie kontem przez stronę trzecią: korzystanie z jakiejkolwiek strony trzeciej, niezależnie od tego, czy jest to osoba prywatna, menedżer konta, usługa handlowa czy „usługa przekazująca”, w celu handlu, zarządzania lub obsługi Twojego konta. Wszystko na koncie, w tym handel, zarządzanie zamówieniami i żądania wypłat, musi być wykonywane osobiście przez właściciela konta."
+              },
+              {
+                "t": "p",
+                "x": "Usługi sygnałowe: wykorzystywanie sygnałów transakcyjnych z dowolnej usługi sygnałowej, grupy sygnałów, kanału lub dostawcy, bezpłatnych lub płatnych, w celu zawierania transakcji na swoim koncie. Wszystkie decyzje handlowe muszą być Twoje."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: transakcje front-running zawarte gdzie indziej, w tym u innych brokerów, platform lub rachunków handlowych."
+              },
+              {
+                "t": "p",
+                "x": "Boty i zautomatyzowane wykorzystywanie: używanie oprogramowania, skryptów, algorytmów, narzędzi sztucznej inteligencji, technik ultrawysokiej częstotliwości, zautomatyzowanych systemów transakcyjnych, strategii zamówień masowych lub strategii stron trzecich i strategii oferowanych na rynku komercyjnym (w tym tych reklamowanych jako zaprojektowane do pokonywania wyzwań) w celu manipulacji, nadużyć, obejścia zasad lub uzyskania nieuczciwej przewagi."
+              },
+              {
+                "t": "p",
+                "x": "Zmiana transakcji po przejściu: użycie znacząco odmiennych strategii, profili ryzyka lub zachowań wykonawczych na koncie Zasilonym w porównaniu z wyzwaniem."
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie luk i zdarzeń: handel istotnie odbiegający od normalnej praktyki rynkowej, taki jak otwieranie lub utrzymywanie pozycji w celu wykorzystania luk bliskich do otwartych lub publikacja zysków (na przykład trzymanie kontraktów CFD na akcje na akcje w ogłoszeniu o wynikach)."
+              },
+              {
+                "t": "p",
+                "x": "Nieproporcjonalne ryzyko: wielkość pozycji otwarcia lub liczba pozycji znacznie odbiegająca od zwykłego handlu, co wskazuje na próbę wykorzystania programu lub obejścia jego limitów ryzyka. Zawsze oczekuje się zarządzania ryzykiem na poziomie standardów rynkowych."
+              },
+              {
+                "t": "p",
+                "x": "Naruszenie warunków platformy lub realizacji transakcji: handel z naruszeniem warunków platformy transakcyjnej, brokera, systemów płynności lub realizacji lub w sposób, który naraża te relacje na ryzyko."
+              },
+              {
+                "t": "p",
+                "x": "Handel wiadomościami na rachunku Zasilonym: otwieranie lub realizowanie transakcji w ciągu 5 minut przed lub 5 minut po ważnych danych ekonomicznych, ogłoszeniach banku centralnego, wydarzeniach geopolitycznych lub innych wydarzeniach o dużym wpływie. Liczą się tylko zamówienia zrealizowane w tym oknie; pozycja otwarta przed oknem i zamknięta po nim nie jest naruszeniem. Handel wiadomościami jest dozwolony w fazie wyzwania."
+              }
+            ]
+          },
+          {
+            "q": "Czy ktoś inny może handlować na moim koncie lub czy mogę handlować za innych?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Twoje konto jest przeznaczone wyłącznie do Twojego użytku osobistego i wszystko na nim musi być wykonane przez Ciebie jako właściciela konta. Nie możesz pozwolić nikomu innemu na dostęp do swojego konta, zarządzanie nim ani handel nim, niezależnie od tego, czy jest to osoba prywatna czy profesjonalna usługa, nie możesz używać usług sygnałowych do handlu nim, nie możesz handlować ani zarządzać kontami zarejestrowanymi dla innych użytkowników ani świadczyć usług związanych z sygnałami, kopiowaniem transakcji lub zarządzaniem kontami w ramach programu."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę mieć więcej niż jedno konto?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Każdy przedsiębiorca może posiadać tylko jedno konto w ramach programu, chyba że wcześniej wyrazimy na to zgodę na piśmie. Konta różnych handlowców nie mogą być obsługiwane z tego samego adresu IP lub tego samego urządzenia. Dodatkowe konta mogą zostać zawieszone, zablokowane lub trwale ograniczone. Konta nie można udostępniać, sprzedawać, przenosić ani oddawać."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę skorzystać z kopiarki handlowej?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możesz użyć kopiarki handlowej do własnych transakcji. Konta są sprawdzane przed wypłatą, a kopiowanie strategii innych traderów może skutkować odmową wypłaty."
+              }
+            ]
+          },
+          {
+            "q": "Co się stanie w przypadku wykrycia zabronionej praktyki?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możemy wykluczyć transakcje, których to dotyczy, z Twoich wyników, zignorować je przy obliczaniu zysku lub kwalifikowalności wypłaty, odmówić lub anulować wypłatę oraz zawiesić lub zamknąć konto i Twój udział w programie. Jeżeli praktyka obejmuje kilka rachunków, powiązanych handlowców lub skoordynowaną działalność, środki te można zastosować do wszystkich dotkniętych rachunków, a przydzielony kapitał na te rachunki może zostać zmniejszony."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Wycena",
+        "items": [
+          {
+            "q": "Ile kosztuje wyzwanie?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Cena wyzwanie"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Natychmiastowe finansowanie — często zadawane pytania",
+    "subtitle": "Warunki konta zasilonego — Natychmiastowe finansowanie i Natychmiastowe finansowanie",
+    "categories": [
+      {
+        "category": "O natychmiastowym finansowaniu",
+        "items": [
+          {
+            "q": "Co to jest natychmiastowe finansowanie?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Natychmiastowe finansowanie zapewnia natychmiastowe zasilenie konta, bez fazy oceny i bez docelowego zysku. Handlujesz zgodnie z zasadami konta od pierwszego dnia i zatrzymujesz 80% wypracowanego zysku."
+              }
+            ]
+          },
+          {
+            "q": "Jaka jest różnica między natychmiastowym finansowaniem a natychmiastowym finansowaniem?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Obydwa mają te same limity strat, dźwignię finansową i harmonogram wypłat. Instant Funding Light jest dostępny w mniejszych rozmiarach i niższej cenie i dodaje regułę spójności 25%, która jest sprawdzana przy żądaniu wypłaty."
+              }
+            ]
+          },
+          {
+            "q": "Jakie rozmiary kont mogę wybrać?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Natychmiastowe finansowanie: 5000 USD, 10 000 USD, 25 000 USD, 50 000 USD i 100 000 USD. Natychmiastowe finansowanie: 5000 USD, 10 000 USD i 25 000 USD. Wszystkie reguły mają taki sam procent dla każdego rozmiaru; zmieniają się tylko kwoty w dolarach."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Cel zysku",
+        "items": [
+          {
+            "q": "Czy istnieje cel zysku?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Na kontach Instant Funding i Instant Funding Light nie ma docelowego zysku."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limity strat",
+        "items": [
+          {
+            "q": "Jakie są limity strat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Są dwa rodzaje strat: maksymalna dzienna strata wynosząca 3% salda na początku każdego dnia oraz końcowa maksymalna strata wynosząca 5%, która następuje po najwyższym kapitale własnym. Naruszenie któregokolwiek z nich kończy konto."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Konto",
+                    "Maksymalna dzienna strata (3% na początku",
+                    "Maksymalna strata (5%,"
+                  ],
+                  [
+                    "rozmiar",
+                    "balansować)",
+                    "końcowy)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Powyższe kwoty dziennych strat mają zastosowanie, gdy saldo jest równe wielkości konta. Rzeczywisty limit dzienny jest przeliczany codziennie na 3% Twojego salda o godzinie 00:00 UTC, więc rośnie wraz z Twoimi zyskami i maleje po stratach. Rozmiary 50 000 USD i 100 000 USD są dostępne wyłącznie w trybie natychmiastowego finansowania."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Jak obliczana jest wypłata",
+        "items": [
+          {
+            "q": "Czy wypłatę mierzy się bilansem czy kapitałem własnym?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na kapitale własnym. Kapitał własny to saldo plus zmienny zysk lub strata z otwartych pozycji, dlatego otwarte transakcje wliczają się do obu limitów strat w każdym momencie, a nie tylko po ich zamknięciu."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa maksymalna dzienna strata?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dzień handlowy rozpoczyna się o godzinie 00:00 UTC. Twoje saldo w tym momencie, tylko z zamkniętych transakcji, jest punktem wyjścia dla dnia. Twój dzienny limit wynosi 3% salda początkowego. W ciągu dnia Twój kapitał, włączając otwarte pozycje, nie może spaść o więcej niż tę kwotę poniżej punktu początkowego. Jeśli tak, konto nie działa."
+              },
+              {
+                "t": "p",
+                "x": "Przykład dla konta o wartości 10 000 USD: o godzinie 00:00 UTC Twoje saldo wynosi 10 200 USD, więc Twój dzienny limit wynosi 306 USD (3% × 10 200 USD). W tym dniu Twój kapitał musi pozostać powyżej 9894 USD (10 200 USD – 306 USD), nawet jeśli transakcja jest nadal otwarta. O godzinie 00:00 UTC punkt początkowy i limit zostaną ponownie ustawione z Twojego salda w tym momencie."
+              }
+            ]
+          },
+          {
+            "q": "Jak działa końcowa strata maksymalna?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalna strata to stała kwota w dolarach (5% początkowej wielkości konta), ale jej poziom jest niższy od Twojego kapitału własnego. Za każdym razem, gdy Twój kapitał osiągnie nowy szczyt, jego poziom wzrasta o tę samą kwotę; nigdy nie opada. Jeśli w dowolnym momencie Twój kapitał spadnie do lub poniżej poziomu, także w przypadku otwartych pozycji, konto zostanie zniszczone."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Maksymalna strata (5%)",
+                    "Poziom początkowy (kapitał musi pozostać powyżej)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Przykład: na koncie o wartości 10 000 USD Twój kapitał osiąga 10 300 USD, więc poziom maksymalnej straty wzrasta do 9800 USD (10 300 USD - 500 USD). Jeśli później Twój kapitał spadnie do 9800 USD lub mniej, włączając straty na otwartych transakcjach, konto zostanie zniszczone."
+              }
+            ]
+          },
+          {
+            "q": "Czy poziom maksymalnej straty spada po wypłacie?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Poziom pozostaje dokładnie tam, gdzie przesunęły go wyniki handlu i nie jest obniżany po wypłacie."
+              }
+            ]
+          },
+          {
+            "q": "Jak te dwa limity współpracują ze sobą?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Są to osobne limity sprawdzane w tym samym czasie. Konto kończy się niepowodzeniem, gdy którekolwiek z nich zostanie osiągnięte jako pierwsze. Dzień z dużą stratą nadal wlicza się do straty maksymalnej, więc możesz osiągnąć maksymalną stratę bez przekraczania dziennego limitu."
+              }
+            ]
+          },
+          {
+            "q": "Gdzie mogę zobaczyć moje aktualne limity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Twój pulpit nawigacyjny pokazuje aktualne poziomy obu limitów dla Twojego konta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dni handlowe i limity czasowe",
+        "items": [
+          {
+            "q": "Ile dni handlowych potrzebuję?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Konta Instant Funding i Instant Funding Light mają minimum 5 dni handlowych."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje limit czasu?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Konto nie ma limitu czasowego, pod warunkiem, że pozostaje aktywne (patrz poniżej)."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje wymóg dotyczący minimalnej aktywności?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Jeśli przez 30 dni kalendarzowych z rzędu na Twoim koncie nie zostaną przeprowadzone żadne transakcje, konto zostanie automatycznie zamknięte, a opłata nie zostanie zwrócona. Dotyczy to każdej fazy, łącznie z kontem Zasilonym, więc upewnij się, że dokonujesz co najmniej jednej transakcji w ciągu każdych 30 dni."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Wypłaty",
+        "items": [
+          {
+            "q": "Jaki jest podział zysków?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: zatrzymujesz 80% wypracowanego zysku."
+              }
+            ]
+          },
+          {
+            "q": "Jak często mogę żądać wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możesz poprosić o wypłatę co 14 dni."
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje minimalna kwota wypłaty?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Minimalna wypłata wynosi 1% wielkości konta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Minimalna wypłata (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Czy istnieje maksymalna liczba wypłat?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Tak. Konto Natychmiastowego Finansowania jest ograniczone do 5 wypłat. Po piątej wypłacie konto zostaje zamknięte i aby kontynuować handel, musisz kupić nowe konto."
+              }
+            ]
+          },
+          {
+            "q": "Jaka jest zasada spójności dotycząca Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Żaden pojedynczy dzień handlowy nie może stanowić więcej niż 25% Twojego całkowitego zysku. Reguła jest sprawdzana, gdy żądasz wypłaty i ma zastosowanie tylko do Instant Funding Light; Standardowe finansowanie natychmiastowe nie ma reguły spójności."
+              },
+              {
+                "t": "p",
+                "x": "Spójność % = (najwyższy zysk jednodniowy ÷ zysk całkowity) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Przykład: w Twoim najlepszym dniu zarobiłeś 600 USD, a Twój całkowity zysk wyniósł 2000 USD. Spójność wynosi 30% (600 $ ÷ 2000 $), co stanowi ponad 25%, więc nie możesz jeszcze poprosić o wypłatę. Gdy Twój całkowity zysk osiągnie 2400 USD, najlepszy dzień to dokładnie 25% i możesz poprosić o wypłatę."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Warunki handlowe",
+        "items": [
+          {
+            "q": "Jaką dźwignię uzyskam?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksymalna dźwignia wynosi 1:40. Dźwignia dla każdego instrumentu jest pokazana w szczegółach symboli na platformie."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę zawierać transakcje przez noc i weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Dozwolone jest przetrzymywanie przez noc. Trzymanie pozycji w weekendy jest niedozwolone, dlatego pozycje muszą zostać zamknięte przed zamknięciem rynku na weekend."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę handlować podczas ważnych publikacji wiadomości?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Konta z natychmiastowym finansowaniem są kontami finansowanymi, więc handel wiadomościami nie jest dozwolony: nie możesz otwierać ani realizować transakcji w ciągu 5 minut przed lub 5 minut po głównych komunikatach ekonomicznych, centralnych"
+              },
+              {
+                "t": "p",
+                "x": "ogłoszenia bankowe, wydarzenia geopolityczne lub inne wydarzenia o dużym wpływie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Zakazane praktyki handlowe",
+        "items": [
+          {
+            "q": "Jakie praktyki handlowe są niedozwolone?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Zabrania się wszelkich transakcji wykorzystujących, nadużywających lub obchodzących program, platformę transakcyjną lub symulowane środowisko handlowe. Obejmuje to między innymi:"
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie błędów lub opóźnień: wykorzystywanie błędów cenowych, niedokładności danych, nieprawidłowego działania systemu, opóźnień lub opóźnionych aktualizacji cen, a także informacji niepublicznych lub poufnych, świadomie lub nieświadomie."
+              },
+              {
+                "t": "p",
+                "x": "Dane zewnętrzne lub opóźnione: handel na zewnętrznych, opóźnionych, niestandardowych lub pochodzących od stron trzecich źródłach danych, sygnałach lub strategiach, które nie są dostępne na platformie lub nie są przeznaczone do użytku z platformą."
+              },
+              {
+                "t": "p",
+                "x": "Handel zabezpieczający i skoordynowany: handel manipulacyjny, oszukańczy lub skoordynowany, prowadzony samodzielnie lub z innymi osobami, w tym między powiązanymi rachunkami; jednoczesne otwieranie pozycji przeciwstawnych, kompensujących lub zabezpieczanych; oraz wszelkie formy arbitrażu kont w stosunku do innych rachunków u nas lub w jakiejkolwiek innej firmie."
+              },
+              {
+                "t": "p",
+                "x": "Ta sama strategia na różnych kontach: zawieranie tych samych lub zasadniczo podobnych transakcji w tym samym lub prawie tym samym czasie na wielu rachunkach, samodzielnie lub razem z innymi inwestorami, chyba że wcześniej zatwierdziliśmy to na piśmie."
+              },
+              {
+                "t": "p",
+                "x": "Ten sam adres IP lub urządzenie: handel lub dostęp do kont różnych traderów z tego samego adresu IP lub tego samego urządzenia. Konta współdzielące adres IP lub urządzenie są traktowane jako konta powiązane i mają do nich zastosowanie zasady dotyczące handlu skoordynowanego i wielu kont."
+              },
+              {
+                "t": "p",
+                "x": "Zarządzanie kontem przez stronę trzecią: korzystanie z jakiejkolwiek strony trzeciej, niezależnie od tego, czy jest to osoba prywatna, menedżer konta, usługa handlowa czy „usługa przekazująca”, w celu handlu, zarządzania lub obsługi Twojego konta. Wszystko na koncie, w tym handel, zarządzanie zamówieniami i żądania wypłat, musi być wykonywane osobiście przez właściciela konta."
+              },
+              {
+                "t": "p",
+                "x": "Usługi sygnałowe: wykorzystywanie sygnałów transakcyjnych z dowolnej usługi sygnałowej, grupy sygnałów, kanału lub dostawcy, bezpłatnych lub płatnych, w celu zawierania transakcji na swoim koncie. Wszystkie decyzje handlowe muszą być Twoje."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: transakcje front-running zawarte gdzie indziej, w tym u innych brokerów, platform lub rachunków handlowych."
+              },
+              {
+                "t": "p",
+                "x": "Boty i zautomatyzowane wykorzystywanie: używanie oprogramowania, skryptów, algorytmów, narzędzi sztucznej inteligencji, technik ultrawysokiej częstotliwości, zautomatyzowanych systemów transakcyjnych, strategii zamówień masowych lub strategii stron trzecich i strategii oferowanych na rynku komercyjnym (w tym tych reklamowanych jako zaprojektowane do pokonywania wyzwań) w celu manipulacji, nadużyć, obejścia zasad lub uzyskania nieuczciwej przewagi."
+              },
+              {
+                "t": "p",
+                "x": "Zmiana transakcji po przejściu: użycie znacząco odmiennych strategii, profili ryzyka lub zachowań wykonawczych na koncie Zasilonym w porównaniu z wyzwaniem."
+              },
+              {
+                "t": "p",
+                "x": "Wykorzystywanie luk i zdarzeń: handel istotnie odbiegający od normalnej praktyki rynkowej, taki jak otwieranie lub utrzymywanie pozycji w celu wykorzystania luk bliskich do otwartych lub publikacja zysków (na przykład trzymanie kontraktów CFD na akcje na akcje w ogłoszeniu o wynikach)."
+              },
+              {
+                "t": "p",
+                "x": "Nieproporcjonalne ryzyko: wielkość pozycji otwarcia lub liczba pozycji znacznie odbiegająca od zwykłego handlu, co wskazuje na próbę wykorzystania programu lub obejścia związanego z nim ryzyka"
+              },
+              {
+                "t": "p",
+                "x": "limity. Zawsze oczekuje się zarządzania ryzykiem na poziomie standardów rynkowych."
+              },
+              {
+                "t": "p",
+                "x": "Naruszenie warunków platformy lub realizacji transakcji: handel z naruszeniem warunków platformy transakcyjnej, brokera, systemów płynności lub realizacji lub w sposób, który naraża te relacje na ryzyko."
+              },
+              {
+                "t": "p",
+                "x": "Handel wiadomościami: otwieranie lub realizowanie transakcji w ciągu 5 minut przed lub 5 minut po ważnych danych ekonomicznych, ogłoszeniach banku centralnego, wydarzeniach geopolitycznych lub innych wydarzeniach o dużym wpływie. Liczą się tylko zamówienia zrealizowane w tym oknie; pozycja otwarta przed oknem i zamknięta po nim nie jest naruszeniem."
+              }
+            ]
+          },
+          {
+            "q": "Czy ktoś inny może handlować na moim koncie lub czy mogę handlować za innych?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nie. Twoje konto jest przeznaczone wyłącznie do Twojego użytku osobistego i wszystko na nim musi być wykonane przez Ciebie jako właściciela konta. Nie możesz pozwolić nikomu innemu na dostęp do swojego konta, zarządzanie nim ani handel nim, niezależnie od tego, czy jest to osoba prywatna czy profesjonalna usługa, nie możesz używać usług sygnałowych do handlu nim, nie możesz handlować ani zarządzać kontami zarejestrowanymi dla innych użytkowników ani świadczyć usług związanych z sygnałami, kopiowaniem transakcji lub zarządzaniem kontami w ramach programu."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę mieć więcej niż jedno konto?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Każdy przedsiębiorca może posiadać tylko jedno konto w ramach programu, chyba że wcześniej wyrazimy na to zgodę na piśmie. Konta różnych handlowców nie mogą być obsługiwane z tego samego adresu IP lub tego samego urządzenia. Dodatkowe konta mogą zostać zawieszone, zablokowane lub trwale ograniczone. Konta nie można udostępniać, sprzedawać, przenosić ani oddawać."
+              }
+            ]
+          },
+          {
+            "q": "Czy mogę skorzystać z kopiarki handlowej?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możesz użyć kopiarki handlowej do własnych transakcji. Konta są sprawdzane przed wypłatą, a kopiowanie strategii innych traderów może skutkować odmową wypłaty."
+              }
+            ]
+          },
+          {
+            "q": "Co się stanie w przypadku wykrycia zabronionej praktyki?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Możemy wykluczyć transakcje, których to dotyczy, z Twoich wyników, zignorować je przy obliczaniu zysku lub kwalifikowalności wypłaty, odmówić lub anulować wypłatę oraz zawiesić lub zamknąć konto i Twój udział w programie. Jeżeli praktyka obejmuje kilka rachunków, powiązanych handlowców lub skoordynowaną działalność, środki te można zastosować do wszystkich dotkniętych rachunków, a przydzielony kapitał na te rachunki może zostać zmniejszony."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Wycena",
+        "items": [
+          {
+            "q": "Ile to kosztuje?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Rozmiar konta",
+                    "Natychmiastowe finansowanie",
+                    "Natychmiastowe światło finansowania"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "—"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "—"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

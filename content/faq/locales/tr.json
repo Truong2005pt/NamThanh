@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Two-Step Challenge — FAQ",
+    "subtitle": "Challenge & Funded Account Conditions",
+    "categories": [
+      {
+        "category": "About the Two-Step Challenge",
+        "items": [
+          {
+            "q": "What is the Two-Step Challenge?",
+            "a": [
+              {
+                "t": "p",
+                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+              }
+            ]
+          },
+          {
+            "q": "Hangi hesap boyutlarını seçebilirim?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Profit Targets",
+        "items": [
+          {
+            "q": "Her aşamayı geçmek için ne kadar kar elde etmem gerekiyor?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Aşama 1 %10 kar gerektirir. Aşama 2 %5 kar gerektirir. Fonlanan hesabın kar hedefi yoktur."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Phase 1 target (10%)",
+                    "Phase 2 target (5%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Loss Limits",
+        "items": [
+          {
+            "q": "What are the loss limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Maximum Daily Loss (5%, at starting balance)",
+                    "Maksimum Kayıp (%10)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+              }
+            ]
+          },
+          {
+            "q": "Do the loss limits apply in every phase?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "How Drawdown Is Calculated",
+        "items": [
+          {
+            "q": "Is drawdown measured on balance or on equity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+              }
+            ]
+          },
+          {
+            "q": "How does the Maximum Daily Loss work?",
+            "a": [
+              {
+                "t": "p",
+                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+              },
+              {
+                "t": "p",
+                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+              }
+            ]
+          },
+          {
+            "q": "How does the Maximum Loss work?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıçtaki bakiyenizden bir kez hesaplanır ve kârda olsanız bile asla değişmez. Herhangi bir zamanda özsermayeniz bu seviyeye düşerse veya bu seviyenin altına düşerse hesap başarısız olur."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Maksimum Kayıp (%10)",
+                    "Özkaynaklar yukarıda kalmalı"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+              }
+            ]
+          },
+          {
+            "q": "How do the two limits work together?",
+            "a": [
+              {
+                "t": "p",
+                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+              }
+            ]
+          },
+          {
+            "q": "Where can I see my current limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Your dashboard shows the live levels of both limits for your account."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "İşlem Günleri ve Zaman Sınırları",
+        "items": [
+          {
+            "q": "How many trading days do I need?",
+            "a": [
+              {
+                "t": "p",
+                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+              }
+            ]
+          },
+          {
+            "q": "Mücadeleyi tamamlamak için bir zaman sınırı var mı?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum activity requirement?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Funded Account",
+        "items": [
+          {
+            "q": "What happens after I pass both phases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+              }
+            ]
+          },
+          {
+            "q": "What is the profit split?",
+            "a": [
+              {
+                "t": "p",
+                "x": "%80 / %20: Fonlu hesapta elde ettiğiniz kârın %80'i sizde kalır."
+              }
+            ]
+          },
+          {
+            "q": "How often can I request a payout?",
+            "a": [
+              {
+                "t": "p",
+                "x": "On the Funded account you can request a payout every 5 days."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum payout amount?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. The minimum payout is 1% of the account size."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Minimum ödeme (%1)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Is there a maximum number of payouts?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Trading Conditions",
+        "items": [
+          {
+            "q": "What leverage do I get?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Maximum leverage"
+                  ],
+                  [
+                    "Phase 1 and Phase 2",
+                    "1:100"
+                  ],
+                  [
+                    "Funded",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Can I hold trades overnight and over the weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+              }
+            ]
+          },
+          {
+            "q": "Can I trade during major news releases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Forbidden Trading Practices",
+        "items": [
+          {
+            "q": "What trading practices are not allowed?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+              },
+              {
+                "t": "p",
+                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+              },
+              {
+                "t": "p",
+                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+              },
+              {
+                "t": "p",
+                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+              },
+              {
+                "t": "p",
+                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+              },
+              {
+                "t": "p",
+                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+              },
+              {
+                "t": "p",
+                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+              },
+              {
+                "t": "p",
+                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+              },
+              {
+                "t": "p",
+                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+              },
+              {
+                "t": "p",
+                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+              },
+              {
+                "t": "p",
+                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+              },
+              {
+                "t": "p",
+                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+              },
+              {
+                "t": "p",
+                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+              },
+              {
+                "t": "p",
+                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+              }
+            ]
+          },
+          {
+            "q": "Can someone else trade on my account, or can I trade for others?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+              }
+            ]
+          },
+          {
+            "q": "Can I have more than one account?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+              }
+            ]
+          },
+          {
+            "q": "Can I use a trade copier?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+              }
+            ]
+          },
+          {
+            "q": "What happens if a forbidden practice is detected?",
+            "a": [
+              {
+                "t": "p",
+                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pricing",
+        "items": [
+          {
+            "q": "How much does the challenge cost?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Challenge price"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "One-Step Challenge — FAQ",
+    "subtitle": "Challenge & Funded Account Conditions",
+    "categories": [
+      {
+        "category": "Tek Adım Mücadelesi Hakkında",
+        "items": [
+          {
+            "q": "What is the One-Step Challenge?",
+            "a": [
+              {
+                "t": "p",
+                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+              }
+            ]
+          },
+          {
+            "q": "Hangi hesap boyutlarını seçebilirim?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Profit Target",
+        "items": [
+          {
+            "q": "What profit do I need to pass?",
+            "a": [
+              {
+                "t": "p",
+                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Profit target (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Loss Limits",
+        "items": [
+          {
+            "q": "What are the loss limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Maximum Daily Loss (3%, at starting balance)",
+                    "Maksimum Kayıp (%6)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+              }
+            ]
+          },
+          {
+            "q": "Do the loss limits apply in every phase?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "How Drawdown Is Calculated",
+        "items": [
+          {
+            "q": "Is drawdown measured on balance or on equity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+              }
+            ]
+          },
+          {
+            "q": "How does the Maximum Daily Loss work?",
+            "a": [
+              {
+                "t": "p",
+                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+              },
+              {
+                "t": "p",
+                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+              }
+            ]
+          },
+          {
+            "q": "How does the Maximum Loss work?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıçtaki bakiyenizden bir kez hesaplanır ve kârda olsanız bile asla değişmez. Herhangi bir zamanda özsermayeniz bu seviyeye düşerse veya bu seviyenin altına düşerse hesap başarısız olur."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Maksimum Kayıp (%6)",
+                    "Özkaynaklar yukarıda kalmalı"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+              }
+            ]
+          },
+          {
+            "q": "How do the two limits work together?",
+            "a": [
+              {
+                "t": "p",
+                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+              }
+            ]
+          },
+          {
+            "q": "Where can I see my current limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Your dashboard shows the live levels of both limits for your account."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "İşlem Günleri ve Zaman Sınırları",
+        "items": [
+          {
+            "q": "How many trading days do I need?",
+            "a": [
+              {
+                "t": "p",
+                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+              }
+            ]
+          },
+          {
+            "q": "Mücadeleyi tamamlamak için bir zaman sınırı var mı?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum activity requirement?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Funded Account",
+        "items": [
+          {
+            "q": "Mücadeleyi geçtikten sonra ne olacak?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+              }
+            ]
+          },
+          {
+            "q": "What is the profit split?",
+            "a": [
+              {
+                "t": "p",
+                "x": "%80 / %20: Fonlu hesapta elde ettiğiniz kârın %80'i sizde kalır."
+              }
+            ]
+          },
+          {
+            "q": "How often can I request a payout?",
+            "a": [
+              {
+                "t": "p",
+                "x": "On the Funded account you can request a payout every 5 days."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum payout amount?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. The minimum payout is 1% of the account size."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Minimum ödeme (%1)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Is there a maximum number of payouts?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Trading Conditions",
+        "items": [
+          {
+            "q": "What leverage do I get?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Phase",
+                    "Maximum leverage"
+                  ],
+                  [
+                    "Challenge phase",
+                    "1:50"
+                  ],
+                  [
+                    "Funded",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Can I hold trades overnight and over the weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+              }
+            ]
+          },
+          {
+            "q": "Can I trade during major news releases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Forbidden Trading Practices",
+        "items": [
+          {
+            "q": "What trading practices are not allowed?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+              },
+              {
+                "t": "p",
+                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+              },
+              {
+                "t": "p",
+                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+              },
+              {
+                "t": "p",
+                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+              },
+              {
+                "t": "p",
+                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+              },
+              {
+                "t": "p",
+                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+              },
+              {
+                "t": "p",
+                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+              },
+              {
+                "t": "p",
+                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+              },
+              {
+                "t": "p",
+                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+              },
+              {
+                "t": "p",
+                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+              },
+              {
+                "t": "p",
+                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+              },
+              {
+                "t": "p",
+                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+              },
+              {
+                "t": "p",
+                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+              },
+              {
+                "t": "p",
+                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+              }
+            ]
+          },
+          {
+            "q": "Can someone else trade on my account, or can I trade for others?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+              }
+            ]
+          },
+          {
+            "q": "Can I have more than one account?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+              }
+            ]
+          },
+          {
+            "q": "Can I use a trade copier?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+              }
+            ]
+          },
+          {
+            "q": "What happens if a forbidden practice is detected?",
+            "a": [
+              {
+                "t": "p",
+                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pricing",
+        "items": [
+          {
+            "q": "How much does the challenge cost?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Challenge price"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Instant Funding — FAQ",
+    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "categories": [
+      {
+        "category": "About Instant Funding",
+        "items": [
+          {
+            "q": "What is Instant Funding?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+              }
+            ]
+          },
+          {
+            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+              }
+            ]
+          },
+          {
+            "q": "Hangi hesap boyutlarını seçebilirim?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Profit Target",
+        "items": [
+          {
+            "q": "Is there a profit target?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Loss Limits",
+        "items": [
+          {
+            "q": "What are the loss limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account",
+                    "Maximum Daily Loss (3%, at starting",
+                    "Maximum Loss (5%,"
+                  ],
+                  [
+                    "size",
+                    "balance)",
+                    "trailing)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "How Drawdown Is Calculated",
+        "items": [
+          {
+            "q": "Is drawdown measured on balance or on equity?",
+            "a": [
+              {
+                "t": "p",
+                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+              }
+            ]
+          },
+          {
+            "q": "How does the Maximum Daily Loss work?",
+            "a": [
+              {
+                "t": "p",
+                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+              },
+              {
+                "t": "p",
+                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+              }
+            ]
+          },
+          {
+            "q": "Sondaki Maksimum Kayıp nasıl çalışır?",
+            "a": [
+              {
+                "t": "p",
+                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Maximum Loss (5%)",
+                    "Starting level (equity must stay above)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+              }
+            ]
+          },
+          {
+            "q": "Ödeme yapıldıktan sonra Maksimum Kayıp seviyesi düşer mi?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+              }
+            ]
+          },
+          {
+            "q": "How do the two limits work together?",
+            "a": [
+              {
+                "t": "p",
+                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+              }
+            ]
+          },
+          {
+            "q": "Where can I see my current limits?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Your dashboard shows the live levels of both limits for your account."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "İşlem Günleri ve Zaman Sınırları",
+        "items": [
+          {
+            "q": "How many trading days do I need?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+              }
+            ]
+          },
+          {
+            "q": "Is there a time limit?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum activity requirement?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Ödemeler",
+        "items": [
+          {
+            "q": "What is the profit split?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: you keep 80% of the profit you make."
+              }
+            ]
+          },
+          {
+            "q": "How often can I request a payout?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You can request a payout every 14 days."
+              }
+            ]
+          },
+          {
+            "q": "Is there a minimum payout amount?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. The minimum payout is 1% of the account size."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Minimum ödeme (%1)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Is there a maximum number of payouts?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+              }
+            ]
+          },
+          {
+            "q": "What is the consistency rule on Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+              },
+              {
+                "t": "p",
+                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Trading Conditions",
+        "items": [
+          {
+            "q": "What leverage do I get?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+              }
+            ]
+          },
+          {
+            "q": "Can I hold trades overnight and over the weekend?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+              }
+            ]
+          },
+          {
+            "q": "Can I trade during major news releases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+              },
+              {
+                "t": "p",
+                "x": "bank announcements, geopolitical events or other high-impact events."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Forbidden Trading Practices",
+        "items": [
+          {
+            "q": "What trading practices are not allowed?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+              },
+              {
+                "t": "p",
+                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+              },
+              {
+                "t": "p",
+                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+              },
+              {
+                "t": "p",
+                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+              },
+              {
+                "t": "p",
+                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+              },
+              {
+                "t": "p",
+                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+              },
+              {
+                "t": "p",
+                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+              },
+              {
+                "t": "p",
+                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+              },
+              {
+                "t": "p",
+                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+              },
+              {
+                "t": "p",
+                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+              },
+              {
+                "t": "p",
+                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+              },
+              {
+                "t": "p",
+                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+              },
+              {
+                "t": "p",
+                "x": "sınırlar. Piyasa standardında risk yönetimi her zaman beklenir."
+              },
+              {
+                "t": "p",
+                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+              },
+              {
+                "t": "p",
+                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+              }
+            ]
+          },
+          {
+            "q": "Can someone else trade on my account, or can I trade for others?",
+            "a": [
+              {
+                "t": "p",
+                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+              }
+            ]
+          },
+          {
+            "q": "Can I have more than one account?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+              }
+            ]
+          },
+          {
+            "q": "Can I use a trade copier?",
+            "a": [
+              {
+                "t": "p",
+                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+              }
+            ]
+          },
+          {
+            "q": "What happens if a forbidden practice is detected?",
+            "a": [
+              {
+                "t": "p",
+                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pricing",
+        "items": [
+          {
+            "q": "How much does it cost?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Account size",
+                    "Instant Funding",
+                    "Instant Funding Light"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "—"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "—"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

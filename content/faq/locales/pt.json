@@ -1,0 +1,1594 @@
+{
+  "two": {
+    "title": "Desafio em duas etapas – Perguntas frequentes",
+    "subtitle": "Condições de desafio e conta financiada",
+    "categories": [
+      {
+        "category": "Sobre o Desafio em Duas Etapas",
+        "items": [
+          {
+            "q": "O que é o Desafio de Duas Etapas?",
+            "a": [
+              {
+                "t": "p",
+                "x": "É uma avaliação em duas fases. Passe a Fase 1 e a Fase 2 e você passará para uma conta financiada com uma divisão de lucro de 80%."
+              }
+            ]
+          },
+          {
+            "q": "Quais tamanhos de conta posso escolher?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cinco tamanhos: $ 5.000, $ 10.000, $ 25.000, $ 50.000 e $ 100.000. Todas as regras têm a mesma porcentagem para todos os tamanhos; apenas os valores em dólares mudam."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Metas de lucro",
+        "items": [
+          {
+            "q": "Qual lucro eu preciso para passar cada fase?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A Fase 1 requer 10% de lucro. A fase 2 requer 5% de lucro. A conta financiada não tem meta de lucro."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Meta da Fase 1 (10%)",
+                    "Meta da Fase 2 (5%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$5,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de Perda",
+        "items": [
+          {
+            "q": "Quais são os limites de perda?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Existem dois: uma perda máxima diária de 5% do seu saldo no início de cada dia e uma perda máxima de 10% do tamanho inicial da conta. A violação de qualquer um deles encerra a conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Perda Diária Máxima (5%, no saldo inicial)",
+                    "Perda Máxima (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$10,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Os valores de perda diária acima se aplicam quando o seu saldo é igual ao tamanho da conta. O limite diário real é recalculado todos os dias como 5% do seu saldo às 00:00 UTC, por isso aumenta com os seus lucros e diminui após as perdas."
+              }
+            ]
+          },
+          {
+            "q": "Os limites de perda se aplicam em todas as fases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Os mesmos limites se aplicam na Fase 1, Fase 2 e na conta Financiada."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Como o rebaixamento é calculado",
+        "items": [
+          {
+            "q": "O saque é medido pelo saldo ou pelo patrimônio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na equidade. O patrimônio líquido é o seu saldo mais o lucro ou perda flutuante de suas posições abertas, portanto, as negociações abertas contam para ambos os limites de perda a cada momento, não apenas quando você as fecha."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima Diária?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O dia de negociação começa às 00:00 UTC. O seu saldo naquele momento, apenas das negociações fechadas, é o ponto de partida do dia. Seu limite diário é de 5% desse saldo inicial. Durante o dia, o seu patrimônio, incluindo as posições abertas, não deve cair mais do que esse valor abaixo do ponto inicial. Se isso acontecer, a conta falhou."
+              },
+              {
+                "t": "p",
+                "x": "Exemplo em uma conta de US$ 10.000: às 00:00 UTC seu saldo é de US$ 10.200, então seu limite diário é de US$ 510 (5% × US$ 10.200). Durante esse dia, seu patrimônio deve ficar acima de US$ 9.690 (US$ 10.200 - US$ 510), mesmo que a negociação ainda esteja aberta. Na próxima 00:00 UTC o ponto de partida e o limite serão definidos novamente a partir do seu saldo naquele momento."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O nível de perda máxima é fixo. É calculado uma vez a partir do seu saldo inicial e nunca muda, mesmo quando você tem lucro. Se o seu patrimônio cair para ou abaixo desse nível a qualquer momento, a conta falhará."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Perda Máxima (10%)",
+                    "O patrimônio líquido deve ficar acima"
+                  ],
+                  [
+                    "$5,000",
+                    "$500",
+                    "$4,500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000",
+                    "$9,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500",
+                    "$22,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000",
+                    "$45,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000",
+                    "$90,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemplo: em uma conta de US$ 10.000, você aumenta o patrimônio para US$ 10.800. O nível de perda máxima permanece em US$ 9.000; não aumenta com o seu lucro."
+              }
+            ]
+          },
+          {
+            "q": "Como os dois limites funcionam juntos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "São limites separados verificados ao mesmo tempo. A conta falha quando qualquer uma delas é acessada primeiro. Um dia com grande perda ainda conta para a Perda Máxima, então você pode atingir a Perda Máxima sem nunca ultrapassar o limite diário."
+              }
+            ]
+          },
+          {
+            "q": "Onde posso ver meus limites atuais?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Seu painel mostra os níveis ao vivo de ambos os limites da sua conta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dias de negociação e limites de tempo",
+        "items": [
+          {
+            "q": "Quantos dias de negociação eu preciso?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Pelo menos 5 dias de negociação na Fase 1 e pelo menos 5 na Fase 2. A conta Financiada não tem dias mínimos de negociação."
+              }
+            ]
+          },
+          {
+            "q": "Existe um limite de tempo para completar o desafio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O período de negociação é ilimitado, portanto você pode levar o tempo que for necessário para atingir a meta de lucro, desde que a conta permaneça ativa (veja abaixo)."
+              }
+            ]
+          },
+          {
+            "q": "Existe um requisito mínimo de atividade?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Se não houver negociações em sua conta por 30 dias consecutivos, a conta será automaticamente encerrada e a taxa não será reembolsada. Isto se aplica a todas as fases, incluindo a conta financiada, portanto, certifique-se de realizar pelo menos uma negociação a cada 30 dias."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Conta Financiada",
+        "items": [
+          {
+            "q": "O que acontece depois que eu passar nas duas fases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você recebe uma conta financiada do mesmo tamanho. Os mesmos limites de perda permanecem em vigor, não há número mínimo de dias de negociação e a alavancagem é menor do que nas fases de desafio (ver Condições de Negociação)."
+              }
+            ]
+          },
+          {
+            "q": "Qual é a divisão do lucro?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: você fica com 80% do lucro obtido na conta Financiada."
+              }
+            ]
+          },
+          {
+            "q": "Com que frequência posso solicitar um pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na conta Financiada você pode solicitar um pagamento a cada 5 dias."
+              }
+            ]
+          },
+          {
+            "q": "Existe um valor mínimo de pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. O pagamento mínimo é de 1% do tamanho da conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Pagamento mínimo (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Existe um número máximo de pagamentos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Uma conta financiada está limitada a 5 pagamentos. Após o quinto pagamento a conta é encerrada e para continuar negociando você precisa adquirir um novo desafio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Condições de Negociação",
+        "items": [
+          {
+            "q": "Que vantagem eu obtenho?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A alavancagem máxima é de 1:100 na Fase 1 e na Fase 2. Na conta financiada, a alavancagem máxima é de 1:40. A alavancagem de cada instrumento é mostrada nos detalhes do símbolo na plataforma."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Fase",
+                    "Alavancagem máxima"
+                  ],
+                  [
+                    "Fase 1 e Fase 2",
+                    "1:100"
+                  ],
+                  [
+                    "Financiado",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Posso realizar negociações durante a noite e no fim de semana?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A retenção durante a noite é permitida. A retenção no fim de semana não é permitida, portanto as posições devem ser fechadas antes do fechamento do mercado no fim de semana. Isto se aplica na Fase 1, Fase 2 e na conta Financiada."
+              }
+            ]
+          },
+          {
+            "q": "Posso negociar durante os principais comunicados de imprensa?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na Fase 1 e na Fase 2, sim. Na conta financiada, a negociação de notícias não é permitida: você não pode abrir ou executar negociações dentro de 5 minutos antes ou 5 minutos depois de grandes comunicados de notícias econômicas, anúncios do banco central, eventos geopolíticos ou outros eventos de alto impacto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Práticas comerciais proibidas",
+        "items": [
+          {
+            "q": "Quais práticas comerciais não são permitidas?",
+            "a": [
+              {
+                "t": "p",
+                "x": "É proibida qualquer negociação que explore, abuse ou contorne o programa, a plataforma de negociação ou o ambiente de negociação simulado. Isto inclui, sem limitação:"
+              },
+              {
+                "t": "p",
+                "x": "Explorar erros ou atrasos: utilizar erros de preços, imprecisões de dados, mau funcionamento do sistema, latência ou atrasos nas atualizações de preços, ou informações não públicas ou privilegiadas, consciente ou inconscientemente."
+              },
+              {
+                "t": "p",
+                "x": "Dados externos ou atrasados: negociação em feeds de dados, sinais ou estratégias externos, atrasados, não padronizados ou de terceiros que não estão disponíveis ou não se destinam ao uso com a plataforma."
+              },
+              {
+                "t": "p",
+                "x": "Hedge e negociação coordenada: negociação manipulativa, enganosa ou coordenada, isoladamente ou com terceiros, inclusive entre contas relacionadas; abrir posições opostas, compensadoras ou cobertas ao mesmo tempo; e qualquer forma de arbitragem de contas contra outras contas conosco ou com qualquer outra empresa."
+              },
+              {
+                "t": "p",
+                "x": "A mesma estratégia em todas as contas: colocar negociações iguais ou substancialmente semelhantes ao mesmo tempo ou quase ao mesmo tempo em várias contas, sozinho ou em conjunto com outros traders, a menos que tenhamos aprovado antecipadamente por escrito."
+              },
+              {
+                "t": "p",
+                "x": "Mesmo endereço IP ou dispositivo: negociar ou acessar contas de diferentes traders a partir do mesmo endereço IP ou do mesmo dispositivo. As contas que compartilham um endereço IP ou um dispositivo são tratadas como contas relacionadas, e as regras sobre negociação coordenada e contas múltiplas se aplicam a elas."
+              },
+              {
+                "t": "p",
+                "x": "Gestão de contas de terceiros: utilizar qualquer terceiro, seja uma pessoa privada, gestor de conta, serviço de negociação ou “serviço de passagem”, para negociar, gerir ou operar a sua conta. Tudo na conta, incluindo negociação, gestão de ordens e pedidos de pagamento, deve ser feito pessoalmente pelo titular da conta."
+              },
+              {
+                "t": "p",
+                "x": "Serviços de sinais: utilização de sinais de negociação de qualquer serviço de sinais, grupo de sinais, canal ou provedor, seja gratuito ou pago, para realizar negociações em sua conta. Todas as decisões comerciais devem ser suas."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: negociações front-running realizadas em outros lugares, inclusive com outras corretoras, locais ou contas de negociação."
+              },
+              {
+                "t": "p",
+                "x": "Bots e exploração automatizada: utilização de software, scripts, algoritmos, ferramentas de IA, técnicas de ultra-alta frequência, sistemas de negociação automatizados, estratégias de encomendas em massa ou estratégias de terceiros e comercialmente comercializadas (incluindo aquelas anunciadas como concebidas para superar desafios) para manipular, abusar, contornar as regras ou obter uma vantagem injusta."
+              },
+              {
+                "t": "p",
+                "x": "Alterar sua negociação após aprovação: usar estratégias, perfis de risco ou comportamento de execução materialmente diferentes na conta financiada em comparação com o desafio."
+              },
+              {
+                "t": "p",
+                "x": "Exploração de gaps e eventos: negociação que se desvia materialmente da prática normal de mercado, como a abertura ou manutenção de posições para explorar gaps quase abertos ou divulgação de lucros (por exemplo, manter CFDs de ações individuais num anúncio de lucros)."
+              },
+              {
+                "t": "p",
+                "x": "Risco desproporcional: abertura de tamanhos de posição, ou de um número de posições, materialmente fora de linha com a sua negociação habitual, onde indica uma tentativa de explorar o programa ou contornar os seus limites de risco. Espera-se sempre uma gestão de risco padrão de mercado."
+              },
+              {
+                "t": "p",
+                "x": "Violação da plataforma ou dos termos de execução: negociação em violação dos termos da plataforma de negociação, corretora, liquidez ou sistemas de execução, ou de uma forma que coloque essas relações em risco."
+              },
+              {
+                "t": "p",
+                "x": "Negociação de notícias na conta financiada: abertura ou execução de negociações 5 minutos antes ou 5 minutos depois dos principais dados económicos, anúncios do banco central, eventos geopolíticos ou outros eventos de alto impacto. Somente as ordens executadas dentro desta janela contam; uma posição aberta antes da janela e fechada depois dela não é uma violação. A negociação de notícias é permitida na Fase 1 e na Fase 2."
+              }
+            ]
+          },
+          {
+            "q": "Outra pessoa pode negociar na minha conta ou posso negociar por terceiros?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. Sua conta é apenas para uso pessoal e tudo nela deve ser feito por você, como titular da conta. Você não pode permitir que ninguém acesse, gerencie ou negocie sua conta, seja uma pessoa física ou um serviço profissional, você não pode usar serviços de sinalização para negociá-la e não pode negociar ou gerenciar contas registradas para outros usuários ou fornecer sinais, copy-trading ou serviços de gerenciamento de contas dentro do programa."
+              }
+            ]
+          },
+          {
+            "q": "Posso ter mais de uma conta?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cada trader pode manter apenas uma conta no programa, a menos que aprovemos o contrário por escrito e com antecedência. Contas de diferentes traders não podem ser operadas a partir do mesmo endereço IP ou do mesmo dispositivo. Contas adicionais podem ser suspensas, bloqueadas ou restringidas permanentemente. As contas não podem ser compartilhadas, vendidas, transferidas ou doadas."
+              }
+            ]
+          },
+          {
+            "q": "Posso usar uma copiadora comercial?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você pode usar uma copiadora comercial para suas próprias negociações. As contas são verificadas antes dos pagamentos, e copiar as estratégias de outros traders pode resultar na negação do seu pagamento."
+              }
+            ]
+          },
+          {
+            "q": "O que acontece se for detectada uma prática proibida?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Poderemos excluir as negociações afetadas dos seus resultados, desconsiderá-las ao calcular o lucro ou a elegibilidade para pagamentos, negar ou cancelar um pagamento e suspender ou encerrar a conta e a sua participação no programa. Quando a prática envolve várias contas, comerciantes relacionados ou atividades coordenadas, estas medidas podem aplicar-se a todas as contas afetadas e o capital atribuído a essas contas pode ser reduzido."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preços",
+        "items": [
+          {
+            "q": "Quanto custa o desafio?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Preço do desafio"
+                  ],
+                  [
+                    "$5,000",
+                    "$44"
+                  ],
+                  [
+                    "$10,000",
+                    "$75"
+                  ],
+                  [
+                    "$25,000",
+                    "$150"
+                  ],
+                  [
+                    "$50,000",
+                    "$250"
+                  ],
+                  [
+                    "$100,000",
+                    "$500"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "one": {
+    "title": "Desafio de uma etapa – Perguntas frequentes",
+    "subtitle": "Condições de desafio e conta financiada",
+    "categories": [
+      {
+        "category": "Sobre o Desafio de Uma Etapa",
+        "items": [
+          {
+            "q": "O que é o Desafio de Uma Etapa?",
+            "a": [
+              {
+                "t": "p",
+                "x": "É uma avaliação monofásica. Alcance a meta de lucro em uma fase e você passará para uma conta financiada com uma divisão de lucro de 80%."
+              }
+            ]
+          },
+          {
+            "q": "Quais tamanhos de conta posso escolher?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cinco tamanhos: $ 5.000, $ 10.000, $ 25.000, $ 50.000 e $ 100.000. Todas as regras têm a mesma porcentagem para todos os tamanhos; apenas os valores em dólares mudam."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Meta de lucro",
+        "items": [
+          {
+            "q": "Qual lucro eu preciso passar?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A fase de desafio requer 10% de lucro. A conta financiada não tem meta de lucro."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Meta de lucro (10%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$500"
+                  ],
+                  [
+                    "$10,000",
+                    "$1,000"
+                  ],
+                  [
+                    "$25,000",
+                    "$2,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$5,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$10,000"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de Perda",
+        "items": [
+          {
+            "q": "Quais são os limites de perda?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Existem dois: uma perda máxima diária de 3% do seu saldo no início de cada dia e uma perda máxima de 6% do tamanho inicial da conta. A violação de qualquer um deles encerra a conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Perda Diária Máxima (3%, no saldo inicial)",
+                    "Perda Máxima (6%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$300"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$600"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$3,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$6,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Os valores de perda diária acima se aplicam quando o seu saldo é igual ao tamanho da conta. O limite diário real é recalculado todos os dias como 3% do seu saldo às 00:00 UTC, por isso aumenta com os seus lucros e diminui após as perdas."
+              }
+            ]
+          },
+          {
+            "q": "Os limites de perda se aplicam em todas as fases?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Os mesmos limites se aplicam na fase de desafio e na conta financiada."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Como o rebaixamento é calculado",
+        "items": [
+          {
+            "q": "O saque é medido pelo saldo ou pelo patrimônio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na equidade. O patrimônio líquido é o seu saldo mais o lucro ou perda flutuante de suas posições abertas, portanto, as negociações abertas contam para ambos os limites de perda a cada momento, não apenas quando você as fecha."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima Diária?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O dia de negociação começa às 00:00 UTC. O seu saldo naquele momento, apenas das negociações fechadas, é o ponto de partida do dia. Seu limite diário é de 3% desse saldo inicial. Durante o dia, o seu patrimônio, incluindo as posições abertas, não deve cair mais do que esse valor abaixo do ponto inicial. Se isso acontecer, a conta falhou."
+              },
+              {
+                "t": "p",
+                "x": "Exemplo em uma conta de US$ 10.000: às 00:00 UTC seu saldo é de US$ 10.200, então seu limite diário é de US$ 306 (3% × US$ 10.200). Durante esse dia, seu patrimônio deve ficar acima de US$ 9.894 (US$ 10.200 - US$ 306), mesmo que a negociação ainda esteja aberta. Na próxima 00:00 UTC o ponto de partida e o limite serão definidos novamente a partir do seu saldo naquele momento."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O nível de perda máxima é fixo. É calculado uma vez a partir do seu saldo inicial e nunca muda, mesmo quando você tem lucro. Se o seu patrimônio cair para ou abaixo desse nível a qualquer momento, a conta falhará."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Perda Máxima (6%)",
+                    "O patrimônio líquido deve ficar acima"
+                  ],
+                  [
+                    "$5,000",
+                    "$300",
+                    "$4,700"
+                  ],
+                  [
+                    "$10,000",
+                    "$600",
+                    "$9,400"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,500",
+                    "$23,500"
+                  ],
+                  [
+                    "$50,000",
+                    "$3,000",
+                    "$47,000"
+                  ],
+                  [
+                    "$100,000",
+                    "$6,000",
+                    "$94,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemplo: em uma conta de US$ 10.000, você aumenta o patrimônio para US$ 10.800. O nível de perda máxima permanece em US$ 9.400; não aumenta com o seu lucro."
+              }
+            ]
+          },
+          {
+            "q": "Como os dois limites funcionam juntos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "São limites separados verificados ao mesmo tempo. A conta falha quando qualquer uma delas é acessada primeiro. Um dia com grande perda ainda conta para a Perda Máxima, então você pode atingir a Perda Máxima sem nunca ultrapassar o limite diário."
+              }
+            ]
+          },
+          {
+            "q": "Onde posso ver meus limites atuais?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Seu painel mostra os níveis ao vivo de ambos os limites da sua conta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dias de negociação e limites de tempo",
+        "items": [
+          {
+            "q": "Quantos dias de negociação eu preciso?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Pelo menos 5 dias de negociação na fase de desafio. A conta financiada não tem dias mínimos de negociação."
+              }
+            ]
+          },
+          {
+            "q": "Existe um limite de tempo para completar o desafio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O período de negociação é ilimitado, portanto você pode levar o tempo que for necessário para atingir a meta de lucro, desde que a conta permaneça ativa (veja abaixo)."
+              }
+            ]
+          },
+          {
+            "q": "Existe um requisito mínimo de atividade?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Se não houver negociações em sua conta por 30 dias consecutivos, a conta será automaticamente encerrada e a taxa não será reembolsada. Isto se aplica a todas as fases, incluindo a conta financiada, portanto, certifique-se de realizar pelo menos uma negociação a cada 30 dias."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Conta Financiada",
+        "items": [
+          {
+            "q": "O que acontece depois que eu passar no desafio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você recebe uma conta financiada do mesmo tamanho. Os mesmos limites de perda permanecem em vigor, não há número mínimo de dias de negociação e a alavancagem é menor do que na fase de desafio (ver Condições de Negociação)."
+              }
+            ]
+          },
+          {
+            "q": "Qual é a divisão do lucro?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: você fica com 80% do lucro obtido na conta Financiada."
+              }
+            ]
+          },
+          {
+            "q": "Com que frequência posso solicitar um pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na conta Financiada você pode solicitar um pagamento a cada 5 dias."
+              }
+            ]
+          },
+          {
+            "q": "Existe um valor mínimo de pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. O pagamento mínimo é de 1% do tamanho da conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Pagamento mínimo (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Existe um número máximo de pagamentos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Uma conta financiada está limitada a 5 pagamentos. Após o quinto pagamento a conta é encerrada e para continuar negociando você precisa adquirir um novo desafio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Condições de Negociação",
+        "items": [
+          {
+            "q": "Que vantagem eu obtenho?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A alavancagem máxima é de 1:50 na fase de desafio. Na conta financiada, a alavancagem máxima é de 1:40. A alavancagem de cada instrumento é mostrada nos detalhes do símbolo na plataforma."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Fase",
+                    "Alavancagem máxima"
+                  ],
+                  [
+                    "Fase de desafio",
+                    "1:50"
+                  ],
+                  [
+                    "Financiado",
+                    "1:40"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Posso realizar negociações durante a noite e no fim de semana?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A retenção durante a noite é permitida. A retenção no fim de semana não é permitida, portanto as posições devem ser fechadas antes do fechamento do mercado no fim de semana. Isto se aplica na fase de desafio e na conta financiada."
+              }
+            ]
+          },
+          {
+            "q": "Posso negociar durante os principais comunicados de imprensa?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na fase de desafio, sim. Na conta financiada, a negociação de notícias não é permitida: você não pode abrir ou executar negociações dentro de 5 minutos antes ou 5 minutos depois de grandes comunicados de notícias econômicas, anúncios do banco central, eventos geopolíticos ou outros eventos de alto impacto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Práticas comerciais proibidas",
+        "items": [
+          {
+            "q": "Quais práticas comerciais não são permitidas?",
+            "a": [
+              {
+                "t": "p",
+                "x": "É proibida qualquer negociação que explore, abuse ou contorne o programa, a plataforma de negociação ou o ambiente de negociação simulado. Isto inclui, sem limitação:"
+              },
+              {
+                "t": "p",
+                "x": "Explorar erros ou atrasos: utilizar erros de preços, imprecisões de dados, mau funcionamento do sistema, latência ou atrasos nas atualizações de preços, ou informações não públicas ou privilegiadas, consciente ou inconscientemente."
+              },
+              {
+                "t": "p",
+                "x": "Dados externos ou atrasados: negociação em feeds de dados, sinais ou estratégias externos, atrasados, não padronizados ou de terceiros que não estão disponíveis ou não se destinam ao uso com a plataforma."
+              },
+              {
+                "t": "p",
+                "x": "Hedge e negociação coordenada: negociação manipulativa, enganosa ou coordenada, isoladamente ou com terceiros, inclusive entre contas relacionadas; abrir posições opostas, compensadoras ou cobertas ao mesmo tempo; e qualquer forma de arbitragem de contas contra outras contas conosco ou com qualquer outra empresa."
+              },
+              {
+                "t": "p",
+                "x": "A mesma estratégia em todas as contas: colocar negociações iguais ou substancialmente semelhantes ao mesmo tempo ou quase ao mesmo tempo em várias contas, sozinho ou em conjunto com outros traders, a menos que tenhamos aprovado antecipadamente por escrito."
+              },
+              {
+                "t": "p",
+                "x": "Mesmo endereço IP ou dispositivo: negociar ou acessar contas de diferentes traders a partir do mesmo endereço IP ou do mesmo dispositivo. As contas que compartilham um endereço IP ou um dispositivo são tratadas como contas relacionadas, e as regras sobre negociação coordenada e contas múltiplas se aplicam a elas."
+              },
+              {
+                "t": "p",
+                "x": "Gestão de contas de terceiros: utilizar qualquer terceiro, seja uma pessoa privada, gestor de conta, serviço de negociação ou “serviço de passagem”, para negociar, gerir ou operar a sua conta. Tudo na conta, incluindo negociação, gestão de ordens e pedidos de pagamento, deve ser feito pessoalmente pelo titular da conta."
+              },
+              {
+                "t": "p",
+                "x": "Serviços de sinais: utilização de sinais de negociação de qualquer serviço de sinais, grupo de sinais, canal ou provedor, seja gratuito ou pago, para realizar negociações em sua conta. Todas as decisões comerciais devem ser suas."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: negociações front-running realizadas em outros lugares, inclusive com outras corretoras, locais ou contas de negociação."
+              },
+              {
+                "t": "p",
+                "x": "Bots e exploração automatizada: utilização de software, scripts, algoritmos, ferramentas de IA, técnicas de ultra-alta frequência, sistemas de negociação automatizados, estratégias de encomendas em massa ou estratégias de terceiros e comercialmente comercializadas (incluindo aquelas anunciadas como concebidas para superar desafios) para manipular, abusar, contornar as regras ou obter uma vantagem injusta."
+              },
+              {
+                "t": "p",
+                "x": "Alterar sua negociação após aprovação: usar estratégias, perfis de risco ou comportamento de execução materialmente diferentes na conta financiada em comparação com o desafio."
+              },
+              {
+                "t": "p",
+                "x": "Exploração de gaps e eventos: negociação que se desvia materialmente da prática normal de mercado, como a abertura ou manutenção de posições para explorar gaps quase abertos ou divulgação de lucros (por exemplo, manter CFDs de ações individuais num anúncio de lucros)."
+              },
+              {
+                "t": "p",
+                "x": "Risco desproporcional: abertura de tamanhos de posição, ou de um número de posições, materialmente fora de linha com a sua negociação habitual, onde indica uma tentativa de explorar o programa ou contornar os seus limites de risco. Espera-se sempre uma gestão de risco padrão de mercado."
+              },
+              {
+                "t": "p",
+                "x": "Violação da plataforma ou dos termos de execução: negociação em violação dos termos da plataforma de negociação, corretora, liquidez ou sistemas de execução, ou de uma forma que coloque essas relações em risco."
+              },
+              {
+                "t": "p",
+                "x": "Negociação de notícias na conta financiada: abertura ou execução de negociações 5 minutos antes ou 5 minutos depois dos principais dados económicos, anúncios do banco central, eventos geopolíticos ou outros eventos de alto impacto. Somente as ordens executadas dentro desta janela contam; uma posição aberta antes da janela e fechada depois dela não é uma violação. A negociação de notícias é permitida na fase de desafio."
+              }
+            ]
+          },
+          {
+            "q": "Outra pessoa pode negociar na minha conta ou posso negociar por terceiros?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. Sua conta é apenas para uso pessoal e tudo nela deve ser feito por você, como titular da conta. Você não pode permitir que ninguém acesse, gerencie ou negocie sua conta, seja uma pessoa física ou um serviço profissional, você não pode usar serviços de sinalização para negociá-la e não pode negociar ou gerenciar contas registradas para outros usuários ou fornecer sinais, copy-trading ou serviços de gerenciamento de contas dentro do programa."
+              }
+            ]
+          },
+          {
+            "q": "Posso ter mais de uma conta?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cada trader pode manter apenas uma conta no programa, a menos que aprovemos o contrário por escrito e com antecedência. Contas de diferentes traders não podem ser operadas a partir do mesmo endereço IP ou do mesmo dispositivo. Contas adicionais podem ser suspensas, bloqueadas ou restringidas permanentemente. As contas não podem ser compartilhadas, vendidas, transferidas ou doadas."
+              }
+            ]
+          },
+          {
+            "q": "Posso usar uma copiadora comercial?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você pode usar uma copiadora comercial para suas próprias negociações. As contas são verificadas antes dos pagamentos, e copiar as estratégias de outros traders pode resultar na negação do seu pagamento."
+              }
+            ]
+          },
+          {
+            "q": "O que acontece se for detectada uma prática proibida?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Poderemos excluir as negociações afetadas dos seus resultados, desconsiderá-las ao calcular o lucro ou a elegibilidade para pagamentos, negar ou cancelar um pagamento e suspender ou encerrar a conta e a sua participação no programa. Quando a prática envolve várias contas, comerciantes relacionados ou atividades coordenadas, estas medidas podem aplicar-se a todas as contas afetadas e o capital atribuído a essas contas pode ser reduzido."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preços",
+        "items": [
+          {
+            "q": "Quanto custa o desafio?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Preço do desafio"
+                  ],
+                  [
+                    "$5,000",
+                    "$58"
+                  ],
+                  [
+                    "$10,000",
+                    "$99"
+                  ],
+                  [
+                    "$25,000",
+                    "$180"
+                  ],
+                  [
+                    "$50,000",
+                    "$320"
+                  ],
+                  [
+                    "$100,000",
+                    "$550"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "instant": {
+    "title": "Financiamento Instantâneo – Perguntas Frequentes",
+    "subtitle": "Condições da conta financiada – Financiamento Instantâneo e Financiamento Instantâneo Light",
+    "categories": [
+      {
+        "category": "Sobre o financiamento instantâneo",
+        "items": [
+          {
+            "q": "O que é financiamento instantâneo?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O Financiamento Instantâneo oferece uma conta financiada imediatamente, sem fase de avaliação e sem meta de lucro. Você negocia de acordo com as regras da conta desde o primeiro dia e fica com 80% do lucro obtido."
+              }
+            ]
+          },
+          {
+            "q": "Qual é a diferença entre o Financiamento Instantâneo e o Financiamento Instantâneo Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Ambos têm os mesmos limites de perda, alavancagem e cronograma de pagamento. O Instant Funding Light está disponível em tamanhos menores a um preço mais baixo e adiciona uma regra de consistência de 25% que é verificada quando você solicita um pagamento."
+              }
+            ]
+          },
+          {
+            "q": "Quais tamanhos de conta posso escolher?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Financiamento instantâneo: $ 5.000, $ 10.000, $ 25.000, $ 50.000 e $ 100.000. Luz de financiamento instantâneo: $ 5.000, $ 10.000 e $ 25.000. Todas as regras têm a mesma porcentagem para todos os tamanhos; apenas os valores em dólares mudam."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Meta de lucro",
+        "items": [
+          {
+            "q": "Existe uma meta de lucro?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. Não há meta de lucro nas contas Instant Funding ou Instant Funding Light."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Limites de Perda",
+        "items": [
+          {
+            "q": "Quais são os limites de perda?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Existem dois: uma Perda Diária Máxima de 3% do seu saldo no início de cada dia e uma Perda Máxima de 5% que segue o seu patrimônio mais alto. A violação de qualquer um deles encerra a conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Conta",
+                    "Perda Diária Máxima (3%, no início",
+                    "Perda Máxima (5%,"
+                  ],
+                  [
+                    "tamanho",
+                    "equilíbrio)",
+                    "à direita)"
+                  ],
+                  [
+                    "$5,000",
+                    "$150",
+                    "$250"
+                  ],
+                  [
+                    "$10,000",
+                    "$300",
+                    "$500"
+                  ],
+                  [
+                    "$25,000",
+                    "$750",
+                    "$1,250"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,500",
+                    "$2,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,000",
+                    "$5,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Os valores de perda diária acima se aplicam quando o seu saldo é igual ao tamanho da conta. O limite diário real é recalculado todos os dias como 3% do seu saldo às 00:00 UTC, por isso aumenta com os seus lucros e diminui após as perdas. Os tamanhos de US$ 50.000 e US$ 100.000 estão disponíveis apenas no Financiamento Instantâneo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Como o rebaixamento é calculado",
+        "items": [
+          {
+            "q": "O saque é medido pelo saldo ou pelo patrimônio?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Na equidade. O patrimônio líquido é o seu saldo mais o lucro ou perda flutuante de suas posições abertas, portanto, as negociações abertas contam para ambos os limites de perda a cada momento, não apenas quando você as fecha."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima Diária?",
+            "a": [
+              {
+                "t": "p",
+                "x": "O dia de negociação começa às 00:00 UTC. O seu saldo naquele momento, apenas das negociações fechadas, é o ponto de partida do dia. Seu limite diário é de 3% desse saldo inicial. Durante o dia, o seu patrimônio, incluindo as posições abertas, não deve cair mais do que esse valor abaixo do ponto inicial. Se isso acontecer, a conta falhou."
+              },
+              {
+                "t": "p",
+                "x": "Exemplo em uma conta de US$ 10.000: às 00:00 UTC seu saldo é de US$ 10.200, então seu limite diário é de US$ 306 (3% × US$ 10.200). Durante esse dia, seu patrimônio deve ficar acima de US$ 9.894 (US$ 10.200 - US$ 306), mesmo que a negociação ainda esteja aberta. Na próxima 00:00 UTC o ponto de partida e o limite serão definidos novamente a partir do seu saldo naquele momento."
+              }
+            ]
+          },
+          {
+            "q": "Como funciona a Perda Máxima à direita?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A Perda Máxima é um valor fixo em dólares (5% do tamanho inicial da conta), mas seu nível acompanha o seu patrimônio. Cada vez que o seu patrimônio atinge um novo máximo, o nível sobe na mesma proporção; nunca desce. Se o seu patrimônio cair para ou abaixo do nível a qualquer momento, inclusive em posições abertas, a conta falhará."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Perda Máxima (5%)",
+                    "Nível inicial (o patrimônio deve permanecer acima)"
+                  ],
+                  [
+                    "$5,000",
+                    "$250",
+                    "$4,750"
+                  ],
+                  [
+                    "$10,000",
+                    "$500",
+                    "$9,500"
+                  ],
+                  [
+                    "$25,000",
+                    "$1,250",
+                    "$23,750"
+                  ],
+                  [
+                    "$50,000",
+                    "$2,500",
+                    "$47,500"
+                  ],
+                  [
+                    "$100,000",
+                    "$5,000",
+                    "$95,000"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "x": "Exemplo: em uma conta de US$ 10.000, seu patrimônio atinge US$ 10.300, então o nível de Perda Máxima sobe para US$ 9.800 (US$ 10.300 - US$ 500). Se o seu patrimônio cair posteriormente para US$ 9.800 ou menos, incluindo perdas em negociações abertas, a conta falhará."
+              }
+            ]
+          },
+          {
+            "q": "O nível de Perda Máxima diminui após um pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. O nível permanece exatamente onde seus resultados de negociação o moveram e não diminui após um pagamento."
+              }
+            ]
+          },
+          {
+            "q": "Como os dois limites funcionam juntos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "São limites separados verificados ao mesmo tempo. A conta falha quando qualquer uma delas é acessada primeiro. Um dia com grande perda ainda conta para a Perda Máxima, então você pode atingir a Perda Máxima sem nunca ultrapassar o limite diário."
+              }
+            ]
+          },
+          {
+            "q": "Onde posso ver meus limites atuais?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Seu painel mostra os níveis ao vivo de ambos os limites da sua conta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Dias de negociação e limites de tempo",
+        "items": [
+          {
+            "q": "Quantos dias de negociação eu preciso?",
+            "a": [
+              {
+                "t": "p",
+                "x": "As contas Instant Funding e Instant Funding Light têm um mínimo de 5 dias de negociação."
+              }
+            ]
+          },
+          {
+            "q": "Existe um limite de tempo?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. Não há limite de tempo para a conta, desde que ela permaneça ativa (veja abaixo)."
+              }
+            ]
+          },
+          {
+            "q": "Existe um requisito mínimo de atividade?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Se não houver negociações em sua conta por 30 dias consecutivos, a conta será automaticamente encerrada e a taxa não será reembolsada. Isto se aplica a todas as fases, incluindo a conta financiada, portanto, certifique-se de realizar pelo menos uma negociação a cada 30 dias."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Pagamentos",
+        "items": [
+          {
+            "q": "Qual é a divisão do lucro?",
+            "a": [
+              {
+                "t": "p",
+                "x": "80% / 20%: você fica com 80% do lucro que obtém."
+              }
+            ]
+          },
+          {
+            "q": "Com que frequência posso solicitar um pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você pode solicitar um pagamento a cada 14 dias."
+              }
+            ]
+          },
+          {
+            "q": "Existe um valor mínimo de pagamento?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. O pagamento mínimo é de 1% do tamanho da conta."
+              },
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Pagamento mínimo (1%)"
+                  ],
+                  [
+                    "$5,000",
+                    "$50"
+                  ],
+                  [
+                    "$10,000",
+                    "$100"
+                  ],
+                  [
+                    "$25,000",
+                    "$250"
+                  ],
+                  [
+                    "$50,000",
+                    "$500"
+                  ],
+                  [
+                    "$100,000",
+                    "$1,000"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Existe um número máximo de pagamentos?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Sim. Uma conta de financiamento instantâneo está limitada a 5 pagamentos. Após o quinto pagamento, a conta é encerrada e, para continuar negociando, você precisa adquirir uma nova conta."
+              }
+            ]
+          },
+          {
+            "q": "Qual é a regra de consistência no Instant Funding Light?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Nenhum dia de negociação pode representar mais de 25% do seu lucro total. A regra é verificada quando você solicita um pagamento e se aplica apenas ao Instant Funding Light; O Financiamento Instantâneo padrão não tem regra de consistência."
+              },
+              {
+                "t": "p",
+                "x": "% de consistência = (maior lucro em um único dia ÷ lucro total) × 100."
+              },
+              {
+                "t": "p",
+                "x": "Exemplo: seu melhor dia rendeu US$ 600 e seu lucro total é de US$ 2.000. A consistência é de 30% (US$ 600 ÷ US$ 2.000), que está acima de 25%, portanto você não pode solicitar um pagamento ainda. Quando seu lucro total atingir US$ 2.400, o melhor dia será exatamente 25% e você poderá solicitar um pagamento."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Condições de Negociação",
+        "items": [
+          {
+            "q": "Que vantagem eu obtenho?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A alavancagem máxima é 1:40. A alavancagem de cada instrumento é mostrada nos detalhes do símbolo na plataforma."
+              }
+            ]
+          },
+          {
+            "q": "Posso realizar negociações durante a noite e no fim de semana?",
+            "a": [
+              {
+                "t": "p",
+                "x": "A retenção durante a noite é permitida. A retenção no fim de semana não é permitida, portanto as posições devem ser fechadas antes do fechamento do mercado no fim de semana."
+              }
+            ]
+          },
+          {
+            "q": "Posso negociar durante os principais comunicados de imprensa?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. As contas de financiamento instantâneo são contas financiadas, portanto, a negociação de notícias não é permitida: você não pode abrir ou executar negociações dentro de 5 minutos antes ou 5 minutos depois dos principais comunicados de notícias econômicas, central"
+              },
+              {
+                "t": "p",
+                "x": "anúncios bancários, eventos geopolíticos ou outros eventos de alto impacto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Práticas comerciais proibidas",
+        "items": [
+          {
+            "q": "Quais práticas comerciais não são permitidas?",
+            "a": [
+              {
+                "t": "p",
+                "x": "É proibida qualquer negociação que explore, abuse ou contorne o programa, a plataforma de negociação ou o ambiente de negociação simulado. Isto inclui, sem limitação:"
+              },
+              {
+                "t": "p",
+                "x": "Explorar erros ou atrasos: utilizar erros de preços, imprecisões de dados, mau funcionamento do sistema, latência ou atrasos nas atualizações de preços, ou informações não públicas ou privilegiadas, consciente ou inconscientemente."
+              },
+              {
+                "t": "p",
+                "x": "Dados externos ou atrasados: negociação em feeds de dados, sinais ou estratégias externos, atrasados, não padronizados ou de terceiros que não estão disponíveis ou não se destinam ao uso com a plataforma."
+              },
+              {
+                "t": "p",
+                "x": "Hedge e negociação coordenada: negociação manipulativa, enganosa ou coordenada, isoladamente ou com terceiros, inclusive entre contas relacionadas; abrir posições opostas, compensadoras ou cobertas ao mesmo tempo; e qualquer forma de arbitragem de contas contra outras contas conosco ou com qualquer outra empresa."
+              },
+              {
+                "t": "p",
+                "x": "A mesma estratégia em todas as contas: colocar negociações iguais ou substancialmente semelhantes ao mesmo tempo ou quase ao mesmo tempo em várias contas, sozinho ou em conjunto com outros traders, a menos que tenhamos aprovado antecipadamente por escrito."
+              },
+              {
+                "t": "p",
+                "x": "Mesmo endereço IP ou dispositivo: negociar ou acessar contas de diferentes traders a partir do mesmo endereço IP ou do mesmo dispositivo. As contas que compartilham um endereço IP ou um dispositivo são tratadas como contas relacionadas, e as regras sobre negociação coordenada e contas múltiplas se aplicam a elas."
+              },
+              {
+                "t": "p",
+                "x": "Gestão de contas de terceiros: utilizar qualquer terceiro, seja uma pessoa privada, gestor de conta, serviço de negociação ou “serviço de passagem”, para negociar, gerir ou operar a sua conta. Tudo na conta, incluindo negociação, gestão de ordens e pedidos de pagamento, deve ser feito pessoalmente pelo titular da conta."
+              },
+              {
+                "t": "p",
+                "x": "Serviços de sinais: utilização de sinais de negociação de qualquer serviço de sinais, grupo de sinais, canal ou provedor, seja gratuito ou pago, para realizar negociações em sua conta. Todas as decisões comerciais devem ser suas."
+              },
+              {
+                "t": "p",
+                "x": "Front-running: negociações front-running realizadas em outros lugares, inclusive com outras corretoras, locais ou contas de negociação."
+              },
+              {
+                "t": "p",
+                "x": "Bots e exploração automatizada: utilização de software, scripts, algoritmos, ferramentas de IA, técnicas de ultra-alta frequência, sistemas de negociação automatizados, estratégias de encomendas em massa ou estratégias de terceiros e comercialmente comercializadas (incluindo aquelas anunciadas como concebidas para superar desafios) para manipular, abusar, contornar as regras ou obter uma vantagem injusta."
+              },
+              {
+                "t": "p",
+                "x": "Alterar sua negociação após aprovação: usar estratégias, perfis de risco ou comportamento de execução materialmente diferentes na conta financiada em comparação com o desafio."
+              },
+              {
+                "t": "p",
+                "x": "Exploração de gaps e eventos: negociação que se desvia materialmente da prática normal de mercado, como a abertura ou manutenção de posições para explorar gaps quase abertos ou divulgação de lucros (por exemplo, manter CFDs de ações individuais num anúncio de lucros)."
+              },
+              {
+                "t": "p",
+                "x": "Risco desproporcional: abertura de tamanhos de posição, ou um número de posições, materialmente fora de linha com a sua negociação habitual, onde indica uma tentativa de explorar o programa ou contornar o seu risco"
+              },
+              {
+                "t": "p",
+                "x": "limites. Espera-se sempre uma gestão de risco padrão de mercado."
+              },
+              {
+                "t": "p",
+                "x": "Violação da plataforma ou dos termos de execução: negociação em violação dos termos da plataforma de negociação, corretora, liquidez ou sistemas de execução, ou de uma forma que coloque essas relações em risco."
+              },
+              {
+                "t": "p",
+                "x": "Negociação de notícias: abertura ou execução de negociações 5 minutos antes ou 5 minutos depois dos principais dados económicos, anúncios do banco central, eventos geopolíticos ou outros eventos de alto impacto. Somente as ordens executadas dentro desta janela contam; uma posição aberta antes da janela e fechada depois dela não é uma violação."
+              }
+            ]
+          },
+          {
+            "q": "Outra pessoa pode negociar na minha conta ou posso negociar por terceiros?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Não. Sua conta é apenas para uso pessoal e tudo nela deve ser feito por você, como titular da conta. Você não pode permitir que ninguém acesse, gerencie ou negocie sua conta, seja uma pessoa física ou um serviço profissional, você não pode usar serviços de sinalização para negociá-la e não pode negociar ou gerenciar contas registradas para outros usuários ou fornecer sinais, copy-trading ou serviços de gerenciamento de contas dentro do programa."
+              }
+            ]
+          },
+          {
+            "q": "Posso ter mais de uma conta?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Cada trader pode manter apenas uma conta no programa, a menos que aprovemos o contrário por escrito e com antecedência. Contas de diferentes traders não podem ser operadas a partir do mesmo endereço IP ou do mesmo dispositivo. Contas adicionais podem ser suspensas, bloqueadas ou restringidas permanentemente. As contas não podem ser compartilhadas, vendidas, transferidas ou doadas."
+              }
+            ]
+          },
+          {
+            "q": "Posso usar uma copiadora comercial?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Você pode usar uma copiadora comercial para suas próprias negociações. As contas são verificadas antes dos pagamentos, e copiar as estratégias de outros traders pode resultar na negação do seu pagamento."
+              }
+            ]
+          },
+          {
+            "q": "O que acontece se for detectada uma prática proibida?",
+            "a": [
+              {
+                "t": "p",
+                "x": "Poderemos excluir as negociações afetadas dos seus resultados, desconsiderá-las ao calcular o lucro ou a elegibilidade para pagamentos, negar ou cancelar um pagamento e suspender ou encerrar a conta e a sua participação no programa. Quando a prática envolve várias contas, comerciantes relacionados ou atividades coordenadas, estas medidas podem aplicar-se a todas as contas afetadas e o capital atribuído a essas contas pode ser reduzido."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Preços",
+        "items": [
+          {
+            "q": "Quanto custa isso?",
+            "a": [
+              {
+                "t": "table",
+                "rows": [
+                  [
+                    "Tamanho da conta",
+                    "Financiamento Instantâneo",
+                    "Luz de financiamento instantâneo"
+                  ],
+                  [
+                    "$5,000",
+                    "$197",
+                    "$85"
+                  ],
+                  [
+                    "$10,000",
+                    "$395",
+                    "$160"
+                  ],
+                  [
+                    "$25,000",
+                    "$987",
+                    "$345"
+                  ],
+                  [
+                    "$50,000",
+                    "$1,975",
+                    "-"
+                  ],
+                  [
+                    "$100,000",
+                    "$3,950",
+                    "-"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
