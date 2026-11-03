@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Be_Vietnam_Pro } from 'next/font/google';
+import { Be_Vietnam_Pro, DM_Sans } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/eracex/ThemeContext';
 import { LanguageProvider } from '@/components/eracex/LanguageContext';
@@ -22,6 +22,13 @@ const beVietnamPro = Be_Vietnam_Pro({
   fallback: ['BVP Fallback', 'sans-serif'],
 });
 
+const dmSans = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-dm',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+});
+
 export const metadata: Metadata = {
   title: 'ERACEX | Simulated Trading Evaluation Programs | Thử Thách Giao Dịch Mô Phỏng',
   description: 'Chương trình đánh giá giao dịch mô phỏng ERACEX: tài khoản từ $5,000 đến $100,000, chia sẻ lợi nhuận cao, quy tắc hiển thị rõ ràng trước khi thanh toán.',
@@ -37,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" data-theme="dark" className={`${beVietnamPro.variable} dark`} suppressHydrationWarning>
+    <html lang="vi" data-theme="dark" className={`${beVietnamPro.variable} ${dmSans.variable} dark`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
