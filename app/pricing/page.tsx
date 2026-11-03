@@ -6,7 +6,7 @@ import { useLanguage } from '@/components/eracex/LanguageContext';
 import { PageHeroBanner } from '@/components/eracex/PageHeroBanner';
 import { ChallengePricing } from '@/components/eracex/ChallengePricing';
 import { FaqSection } from '@/components/eracex/FaqSection';
-import { CheckCircle2, Shield, Zap, Layers } from 'lucide-react';
+import { CheckCircle2, Shield, Zap, Layers, BadgeDollarSign } from 'lucide-react';
 import { ImageBand } from '@/components/eracex/ImageBand';
 
 export default function PricingPage() {
@@ -382,7 +382,7 @@ export default function PricingPage() {
       {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER */}
       <PageHeroBanner
         badgeText={d.badgeText}
-        badgeIcon={<Zap className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
+        badgeIcon={<BadgeDollarSign className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
         title={d.title}
         subtitle={d.subtitle}
         breadcrumbs={[
@@ -392,7 +392,7 @@ export default function PricingPage() {
         primaryCta={{
           label: d.primaryCta,
           href: '#pricing',
-          icon: <Zap className="w-5 h-5 fill-black" />,
+          icon: <Zap className="w-5 h-5" />,
         }}
         secondaryCta={{
           label: d.secondaryCta,
@@ -426,7 +426,7 @@ export default function PricingPage() {
 
       {/* 3. WHY CHOOSE ERACEX PRICING HIGHLIGHTS */}
       <section className="py-16 border-t border-b app-border app-subtle w-full">
-        <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 rounded-2xl card-surface">
               <div className="w-10 h-10 rounded-xl bg-[#f6bf4a]/15 dark:bg-[#ffc501]/10 flex items-center justify-center text-[#c68a00] dark:text-[#ffc501] mb-4">

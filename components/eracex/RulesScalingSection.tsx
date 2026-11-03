@@ -70,7 +70,7 @@ export const RulesScalingSection: React.FC = () => {
 
   return (
     <section className="min-h-[calc(100vh-80px)] min-h-[100dvh] flex flex-col justify-center py-16 sm:py-20 relative app-bg" id="rules">
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         
         {/* HEADER */}
         <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16 reveal-up">

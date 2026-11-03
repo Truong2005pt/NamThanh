@@ -602,7 +602,7 @@ es: {
         primaryCta={{
           label: d.primaryCta,
           href: '/pricing',
-          icon: <Award className="w-5 h-5 fill-black" />,
+          icon: <Award className="w-5 h-5" />,
         }}
         secondaryCta={{
           label: d.secondaryCta,
@@ -629,7 +629,7 @@ es: {
 
       {/* 2. INSTITUTIONAL METRICS SUMMARY BAR */}
       <section className="py-12 border-b app-border app-surface">
-        <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="p-6 rounded-2xl app-subtle border app-border hover-float">
               <div className="text-3xl font-black font-mono app-text">{getHighShareWord(currentLang)}</div>
@@ -686,7 +686,7 @@ es: {
 
       {/* 5. CALL TO ACTION BAR */}
       <section className="py-20 relative overflow-hidden">
-        <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           <div className="rounded-3xl border-2 border-[#f6bf4a]/40 dark:border-[#ffc501]/50 p-8 sm:p-14 text-center app-surface shadow-2xl relative overflow-hidden">
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl sm:text-5xl font-black app-text mb-6">

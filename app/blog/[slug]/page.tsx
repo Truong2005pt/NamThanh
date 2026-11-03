@@ -299,7 +299,7 @@ export default function BlogPostDetailPage() {
               href="/pricing"
               className="px-6 py-3 rounded-xl btn-gold text-xs font-bold inline-flex items-center gap-2 flex-shrink-0"
             >
-              <Zap className="w-4 h-4 fill-black" />
+              <Zap className="w-4 h-4" />
               <span>{d.ctaButton}</span>
             </Link>
           </div>

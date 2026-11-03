@@ -454,7 +454,7 @@ export default function BlogListingPage() {
         primaryCta={{
           label: d.readArticles,
           href: '#articles',
-          icon: <BookOpen className="w-5 h-5 fill-black text-[#f6bf4a]" />,
+          icon: <BookOpen className="w-5 h-5 text-[#f6bf4a]" />,
         }}
         secondaryCta={{
           label: d.startEvaluation,
@@ -482,7 +482,7 @@ export default function BlogListingPage() {
       <ImageBand caption="markets" variant="accent" images={[{ src: '/images/trader-phone-laptop.jpg', alt: 'Trading on laptop and phone' }]} />
 
       {/* 2. CATEGORIES FILTER & ARTICLE LIST (ID: articles) */}
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="articles">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="articles">
         {/* CATEGORIES */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           {categories.map((c) => (

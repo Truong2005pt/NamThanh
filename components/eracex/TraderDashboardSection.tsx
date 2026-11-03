@@ -1248,7 +1248,7 @@ export const TraderDashboardSection: React.FC = () => {
 
   return (
     <section className="py-20 sm:py-24 relative overflow-hidden app-bg border-t app-border" id="dashboard">
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         
         {/* SECTION HEADER */}
         <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">

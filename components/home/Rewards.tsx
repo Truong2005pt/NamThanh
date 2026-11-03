@@ -10,7 +10,7 @@ export function Rewards() {
       <p className="sk-intro sk-center">Khám phá cách trình bày khoản thưởng theo từng chương trình. Chọn một thẻ để xem quy mô tài khoản và phép tính.</p>
 
       <div className="sk-card sk-ledger" id="ledger">
-        <div className="head"><div><b>Bảng thưởng</b><small>Thời điểm hiển thị theo UTC+7</small></div><em>8 HỒ SƠ / 5 VIỆT NAM</em></div>
+        <div className="head"><div><b>Bảng thưởng</b><small>Thời điểm hiển thị theo UTC+7</small></div></div>
         <div className="scroll">
           <table>
             <thead><tr><th>Thời điểm</th><th>Người nhận</th><th>Thưởng (USD)</th><th>Quốc gia</th><th>Chương trình</th><th>Quy mô</th></tr></thead>
@@ -28,7 +28,7 @@ export function Rewards() {
             </tbody>
           </table>
         </div>
-        <p className="foot">Số tiền bằng 80% lợi nhuận đủ điều kiện; bấm tên hồ sơ để xem phép tính tương ứng.</p>
+        <p className="foot">Số tiền bằng 80% lợi nhuận đủ điều kiện; bấm mã hồ sơ để xem phép tính tương ứng.</p>
       </div>
 
       <div className="sk-pgrid">

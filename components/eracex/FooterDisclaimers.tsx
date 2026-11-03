@@ -18,13 +18,13 @@ export const FooterDisclaimers: React.FC = () => {
   const blocks = data.blocks;
 
   return (
-    <section aria-label="Legal disclaimers" className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 border-b app-border">
-      <div className="space-y-2 text-[11px] leading-relaxed app-text-muted">
+    <section aria-label="Legal disclaimers" className="w-full pt-6 pb-10 border-b app-border">
+      <div className="space-y-2.5 text-xs leading-relaxed app-text-muted">
         {blocks.map((b, i) =>
           b.t === 'h4' ? (
             <h4
               key={i}
-              className="pt-3 first:pt-0 font-bold uppercase tracking-wide app-text-secondary"
+              className="pt-4 first:pt-0 text-[13px] font-semibold app-text"
             >
               {b.x}
             </h4>

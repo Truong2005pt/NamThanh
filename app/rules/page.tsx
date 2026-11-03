@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { PageHeroBanner } from '@/components/eracex/PageHeroBanner';
 import { RulesScalingSection } from '@/components/eracex/RulesScalingSection';
-import { ShieldAlert, CheckCircle2, XCircle, ArrowRight, Zap, Award, Check, X } from 'lucide-react';
+import { ShieldAlert, CheckCircle2, XCircle, ArrowRight, Zap, Award, Check, X, Scale } from 'lucide-react';
 import { ImageBand } from '@/components/eracex/ImageBand';
 
 interface RuleDictionary {
@@ -896,7 +896,7 @@ export default function RulesPage() {
       {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER WITH 3D ILLUSTRATION */}
       <PageHeroBanner
         badgeText={d.badge}
-        badgeIcon={<ShieldAlert className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
+        badgeIcon={<Scale className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
         title={title}
         subtitle={d.subtitle}
         breadcrumbs={[
@@ -906,7 +906,7 @@ export default function RulesPage() {
         primaryCta={{
           label: d.viewMatrix,
           href: '#rules',
-          icon: <CheckCircle2 className="w-5 h-5 fill-black text-[#f6bf4a]" />,
+          icon: <CheckCircle2 className="w-5 h-5 text-[#f6bf4a]" />,
         }}
         secondaryCta={{
           label: d.startChallenge,
@@ -940,7 +940,7 @@ export default function RulesPage() {
 
       {/* 3. IN-DEPTH DRAWDOWN EXPLANATION (ALTERNATING SESSION: UNROUNDED / SHARP EDGES) */}
       <section className="py-16 border-t app-border w-full">
-        <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-4xl font-extrabold mb-3 app-text">
               {d.ddSectionTitle}
@@ -1028,7 +1028,7 @@ export default function RulesPage() {
               href="/pricing"
               className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl btn-gold text-sm font-bold shadow-lg hover:scale-105 transition-all"
             >
-              <Zap className="w-4 h-4 fill-black" />
+              <Zap className="w-4 h-4" />
               <span>{d.ctaButton}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>

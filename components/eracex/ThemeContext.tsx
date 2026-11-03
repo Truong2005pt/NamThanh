@@ -27,6 +27,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     } catch (e) {}
 
     const root = document.documentElement;
+    // Freeze every transition for the instant of the swap so nothing fades at its own speed and shows an edge.
+    root.classList.add('theme-switching');
     root.setAttribute('data-theme', mode);
     document.body?.setAttribute('data-theme', mode);
 
@@ -41,6 +43,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       document.body?.classList.remove('dark');
       document.body?.classList.add('light');
     }
+
+    window.requestAnimationFrame(() => window.requestAnimationFrame(() => root.classList.remove('theme-switching')));
   }, []);
 
   const applyTheme = useCallback((mode: ThemeMode) => {

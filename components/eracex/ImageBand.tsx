@@ -99,7 +99,7 @@ export const ImageBand: React.FC<ImageBandProps> = ({ variant = 'wide', images =
   if (inline) return <div className={className}>{body}</div>;
   return (
     <section className={`py-10 sm:py-14 app-bg ${className}`}>
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">{body}</div>
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">{body}</div>
     </section>
   );
 };

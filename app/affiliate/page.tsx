@@ -4,7 +4,7 @@ import React from 'react';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { PageHeroBanner } from '@/components/eracex/PageHeroBanner';
 import { AffiliateSection } from '@/components/eracex/AffiliateSection';
-import { Users, ArrowUpRight } from 'lucide-react';
+import { Users, ArrowUpRight, Handshake } from 'lucide-react';
 import { ImageBand } from '@/components/eracex/ImageBand';
 import { CryptoCurrencyGrid } from '@/components/eracex/CryptoCurrencyGrid';
 
@@ -133,7 +133,7 @@ export default function AffiliatePage() {
     <div className="pb-16 app-bg app-text">
       <PageHeroBanner
         badgeText={d.badgeText}
-        badgeIcon={<Users className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
+        badgeIcon={<Handshake className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
         title={d.title}
         subtitle={d.subtitle}
         breadcrumbs={[

@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, CalendarClock, Globe, Layers, Percent, Trophy } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Globe, HandCoins, Star, Trophy, Users } from "lucide-react";
 import { IMG } from "./utils";
 
 export function Hero() {
@@ -15,11 +15,22 @@ export function Hero() {
         </div>
 
         <div className="sk-stats">
-          <div className="sk-stat"><i><Trophy size={18} /></i><div><b>$100K</b><span>Quy mô tài khoản tối đa</span></div></div>
-          <div className="sk-stat"><i><Percent size={18} /></i><div><b>80%</b><span>Tỷ lệ chia lợi nhuận</span></div></div>
-          <div className="sk-stat"><i><Layers size={18} /></i><div><b>4</b><span>Chương trình</span></div></div>
-          <div className="sk-stat"><i><CalendarClock size={18} /></i><div><b>5 / 14 ngày</b><span>Chu kỳ yêu cầu thưởng</span></div></div>
-          <div className="sk-stat"><i><Globe size={18} /></i><div><span>Phạm vi phục vụ</span><a href="/restricted-jurisdictions">Xem khu vực hạn chế <ArrowUpRight size={11} /></a></div></div>
+          <div className="sk-stats-l">
+            <div className="sk-stat"><i><Trophy size={22} /></i><div><b>$5M+</b><span>Tổng thưởng đã chi trả</span></div></div>
+            <div className="sk-stat"><i><Users size={22} /></i><div><b>100K+</b><span>Người giao dịch toàn cầu</span></div></div>
+            <div className="sk-stat"><i><Globe size={22} /></i><div><b>180+</b><span>Quốc gia được phục vụ</span></div></div>
+          </div>
+          <div className="sk-stats-r">
+            <div className="sk-rate">
+              <b>Xuất sắc</b>
+              <span>41.738 lượt đánh giá</span>
+              <span className="sk-stars" aria-label="5 trên 5 sao">{[0, 1, 2, 3, 4].map((i) => <Star key={i} size={15} fill="currentColor" strokeWidth={0} />)}</span>
+            </div>
+            <div className="sk-stat sk-cycle">
+            <i><HandCoins size={22} /></i>
+            <div><b>5 ngày</b><span>Chơi có thưởng lớn</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

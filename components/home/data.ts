@@ -59,14 +59,14 @@ export const PROGRAMS: Program[] = [
 export const usd = (n: number) => "$" + n.toLocaleString("en-US");
 
 export const PAYOUTS = [
-  { id: "EX-01", when: "01/11/2026 · 18:47", name: "Nguyễn M.", amount: "$1,347.72", flag: "🇻🇳", country: "Việt Nam", program: "Two-Step", size: "$25,000" },
-  { id: "EX-02", when: "01/11/2026 · 16:12", name: "Alex R.", amount: "$3,917.08", flag: "🇺🇸", country: "Hoa Kỳ", program: "One-Step", size: "$100,000" },
-  { id: "EX-03", when: "31/10/2026 · 20:36", name: "Trần A.", amount: "$1,035.08", flag: "🇻🇳", country: "Việt Nam", program: "Instant Light", size: "$10,000" },
-  { id: "EX-04", when: "31/10/2026 · 13:24", name: "Lê H.", amount: "$2,891.40", flag: "🇻🇳", country: "Việt Nam", program: "Two-Step", size: "$50,000" },
-  { id: "EX-05", when: "30/10/2026 · 19:18", name: "James W.", amount: "$675.00", flag: "🇬🇧", country: "Vương quốc Anh", program: "One-Step", size: "$25,000" },
-  { id: "EX-06", when: "30/10/2026 · 10:52", name: "Phạm T.", amount: "$1,750.04", flag: "🇻🇳", country: "Việt Nam", program: "Instant Funding", size: "$50,000" },
-  { id: "EX-07", when: "29/10/2026 · 16:09", name: "Kenji S.", amount: "$739.72", flag: "🇯🇵", country: "Nhật Bản", program: "Two-Step", size: "$10,000" },
-  { id: "EX-08", when: "29/10/2026 · 08:43", name: "Hoàng K.", amount: "$333.48", flag: "🇻🇳", country: "Việt Nam", program: "One-Step", size: "$5,000" },
+  { id: "EX-01", when: "01/11/2026 · 18:47", name: "Trader", amount: "$1,347.72", flag: "🇻🇳", country: "Việt Nam", program: "Two-Step", size: "$25,000" },
+  { id: "EX-02", when: "01/11/2026 · 16:12", name: "Trader", amount: "$3,917.08", flag: "🇺🇸", country: "Hoa Kỳ", program: "One-Step", size: "$100,000" },
+  { id: "EX-03", when: "31/10/2026 · 20:36", name: "Trader", amount: "$1,035.08", flag: "🇻🇳", country: "Việt Nam", program: "Instant Light", size: "$10,000" },
+  { id: "EX-04", when: "31/10/2026 · 13:24", name: "Trader", amount: "$2,891.40", flag: "🇻🇳", country: "Việt Nam", program: "Two-Step", size: "$50,000" },
+  { id: "EX-05", when: "30/10/2026 · 19:18", name: "Trader", amount: "$675.00", flag: "🇬🇧", country: "Vương quốc Anh", program: "One-Step", size: "$25,000" },
+  { id: "EX-06", when: "30/10/2026 · 10:52", name: "Trader", amount: "$1,750.04", flag: "🇻🇳", country: "Việt Nam", program: "Instant Funding", size: "$50,000" },
+  { id: "EX-07", when: "29/10/2026 · 16:09", name: "Trader", amount: "$739.72", flag: "🇯🇵", country: "Nhật Bản", program: "Two-Step", size: "$10,000" },
+  { id: "EX-08", when: "29/10/2026 · 08:43", name: "Trader", amount: "$333.48", flag: "🇩🇪", country: "Đức", program: "One-Step", size: "$5,000" },
 ];
 
 export const FAQ = [

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Be_Vietnam_Pro, DM_Sans } from 'next/font/google';
+import { Be_Vietnam_Pro, DM_Sans, Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/eracex/ThemeContext';
 import { LanguageProvider } from '@/components/eracex/LanguageContext';
@@ -20,6 +20,13 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: '--font-sans',
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   fallback: ['BVP Fallback', 'sans-serif'],
+});
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext', 'vietnamese'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
 });
 
 const dmSans = DM_Sans({
@@ -44,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" data-theme="dark" className={`${beVietnamPro.variable} ${dmSans.variable} dark`} suppressHydrationWarning>
+    <html lang="vi" data-theme="dark" className={`${beVietnamPro.variable} ${dmSans.variable} ${inter.variable} dark`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

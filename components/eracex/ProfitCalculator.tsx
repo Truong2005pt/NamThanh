@@ -21,7 +21,7 @@ export const ProfitCalculator: React.FC = () => {
 
   return (
     <section className="py-24 relative app-bg" id="calculator">
-      <div className="w-full max-w-[1560px] 2xl:max-w-[1760px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
+      <div className="w-full max-w-[1560px] 2xl:max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16 reveal-up">
           <h2 className="text-3xl sm:text-5xl font-black tracking-normal app-text mb-4">
             {t.calculator.title}

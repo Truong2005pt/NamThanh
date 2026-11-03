@@ -20,7 +20,7 @@ const TARGETS = [
   '.sk-card',
   '.sk-pcard',
   '.sk-mini > div',
-  '.sk-feats span',
+  '.sk-feat',
   '.sk-rows a',
   '.sk-crit li',
   '.sk-support .list a',
@@ -29,6 +29,7 @@ const TARGETS = [
   '.sk-desk',
   '.sk-cta',
   '.sk-why-banner',
+  '.sk-slides',
 ].join(',');
 
 const STEP_MS = 70;

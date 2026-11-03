@@ -48,18 +48,18 @@ export const Navbar: React.FC = () => {
   }
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl border-b ${
-        scrolled 
-          ? 'bg-white/95 dark:bg-[#09090d]/95 border-neutral-200/90 dark:border-white/10 shadow-sm dark:shadow-2xl' 
-          : 'bg-white/85 dark:bg-[#09090d]/85 border-neutral-200/70 dark:border-white/8 shadow-xs dark:shadow-lg'
-      }`}
-    >
+    <header className="fixed top-3 left-0 right-0 z-50 px-3 sm:px-8 pointer-events-none" style={{ fontFamily: "var(--font-inter), var(--font-sans), system-ui, sans-serif" }}>
       {/* MAIN NAVBAR CONTAINER */}
-      <div className="max-w-[1760px] mx-auto px-3 sm:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
+      <div
+        className={`pointer-events-auto max-w-[1408px] mx-auto px-3 sm:px-4 py-1.5 sm:py-2 flex items-center justify-between gap-2 sm:gap-4 rounded-xl border backdrop-blur-xl transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 dark:bg-[#0f1115]/95 border-neutral-200/80 dark:border-white/10 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.25)]'
+            : 'bg-white/90 dark:bg-[#0f1115]/85 border-neutral-200/60 dark:border-white/10 shadow-[0_6px_24px_-14px_rgba(0,0,0,0.2)]'
+        }`}
+      >
         {/* LOGO */}
         <Link href="/" className="flex items-center shrink-0">
-          <BrandLogo size="md" showText={true} />
+          <BrandLogo size="sm" showText={true} />
         </Link>
 
         {/* DESKTOP MENU LINKS */}
@@ -254,7 +254,7 @@ export const Navbar: React.FC = () => {
       {mobileMenuOpen && (
         <>
           <div 
-            className="fixed inset-0 top-[65px] bg-black/40 backdrop-blur-xs z-40 nav-mobile-drawer"
+            className="fixed inset-0 top-[76px] bg-black/40 backdrop-blur-xs z-40 nav-mobile-drawer"
             onClick={() => setMobileMenuOpen(false)}
           />
           <div className="nav-mobile-drawer border-t p-6 space-y-4 backdrop-blur-2xl bg-white/98 dark:bg-[#09090d]/98 border-neutral-200 dark:border-white/10 text-neutral-800 dark:text-white shadow-2xl relative z-50 animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto">

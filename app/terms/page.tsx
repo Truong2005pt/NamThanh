@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { PageHeroBanner } from '@/components/eracex/PageHeroBanner';
-import { FileText, Shield, CheckCircle2 } from 'lucide-react';
+import { FileText, Shield, CheckCircle2, ScrollText } from 'lucide-react';
 
 interface TermsDictionary {
   badge: string;
@@ -539,7 +539,7 @@ export default function TermsPage() {
       {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER WITH 3D ILLUSTRATION */}
       <PageHeroBanner
         badgeText={d.badge}
-        badgeIcon={<Shield className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
+        badgeIcon={<ScrollText className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
         title={
           <>
             {d.titlePrefix}<span className="text-[#c68a00] dark:text-[#ffc501]">{d.titleHighlight}</span>
@@ -553,7 +553,7 @@ export default function TermsPage() {
         primaryCta={{
           label: d.readDoc,
           href: '#document-content',
-          icon: <FileText className="w-5 h-5 fill-black text-[#f6bf4a]" />,
+          icon: <FileText className="w-5 h-5 text-[#f6bf4a]" />,
         }}
         secondaryCta={{
           label: d.privacyLink,
@@ -578,7 +578,7 @@ export default function TermsPage() {
       />
 
       {/* 2. DOCUMENT BODY */}
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="document-content">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="document-content">
         <div className="max-w-5xl mx-auto p-8 sm:p-14 rounded-3xl border app-border-gold app-surface shadow-2xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-[#f6bf4a]/15 dark:bg-[#ffc501]/10 flex items-center justify-center text-[#c68a00] dark:text-[#ffc501]">

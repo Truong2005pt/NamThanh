@@ -56,7 +56,7 @@ export const AboutView: React.FC = () => {
 
   return (
     <div className="min-h-screen py-10">
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 space-y-16">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 space-y-16">
         
         {/* HERO SECTION */}
         <section className="relative rounded-3xl overflow-hidden border border-neutral-200/80 dark:border-white/10 bg-white dark:bg-[#0b0b0d] p-6 sm:p-10 lg:p-14 text-center space-y-6 shadow-sm dark:shadow-2xl">

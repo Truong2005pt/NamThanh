@@ -101,7 +101,7 @@ export const AffiliateSection: React.FC = () => {
 
   return (
     <section className="min-h-[calc(100vh-80px)] min-h-[100dvh] flex flex-col justify-center py-16 sm:py-24 relative app-bg" id="affiliate">
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         {/* HERO PROMO CARD */}
         <div className="w-full mb-16 sm:mb-20 p-8 sm:p-12 rounded-3xl border app-border app-surface shadow-2xl relative overflow-hidden reveal-up">
 

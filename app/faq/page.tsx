@@ -368,7 +368,7 @@ export default function FaqPage() {
         primaryCta={{
           label: d.browseFaq,
           href: '#faq',
-          icon: <HelpCircle className="w-5 h-5 fill-black text-[#f6bf4a]" />,
+          icon: <HelpCircle className="w-5 h-5 text-[#f6bf4a]" />,
         }}
         features={[
           { icon: <MessageSquare className="w-4 h-4" />, text: d.feature1 },

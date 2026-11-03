@@ -513,7 +513,7 @@ export default function PrivacyPage() {
         primaryCta={{
           label: d.readPolicy,
           href: '#privacy-content',
-          icon: <Lock className="w-5 h-5 fill-black text-[#f6bf4a]" />,
+          icon: <Lock className="w-5 h-5 text-[#f6bf4a]" />,
         }}
         secondaryCta={{
           label: d.termsLink,
@@ -538,7 +538,7 @@ export default function PrivacyPage() {
       />
 
       {/* 2. DOCUMENT BODY */}
-      <div className="w-full max-w-[1760px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="privacy-content">
+      <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="privacy-content">
         <div className="max-w-5xl mx-auto p-8 sm:p-14 rounded-3xl border app-border-gold app-surface shadow-2xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-[#f6bf4a]/15 dark:bg-[#ffc501]/10 flex items-center justify-center text-[#c68a00] dark:text-[#ffc501]">
