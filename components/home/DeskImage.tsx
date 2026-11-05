@@ -1,6 +1,7 @@
 "use client";
 
 import { useT } from "./i18n";
+import Logo from "./Logo";
 
 /**
  * Laptop photo (body, keyboard, bezel) with the app drawn on its screen as real HTML/SVG, warped with a CSS
@@ -28,7 +29,7 @@ function Screen() {
   return (
     <>
       <aside className="lp-side">
-        <b className="lp-logo"><i />ERACEX</b>
+        <b className="lp-logo"><Logo size={44} color="#f2c230" />ERACEX</b>
         {SIDE.map((s, i) => <span key={s} className={i === 0 ? "on" : ""}>{t(s)}</span>)}
       </aside>
       <div className="lp-main">

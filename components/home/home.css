@@ -1005,7 +1005,7 @@
 .home .lp-scr strong{font-weight:700}
 .home .lp-side{display:flex;flex-direction:column;gap:8px;padding:30px 18px;background:var(--lp-side);border-right:1px solid var(--lp-line);min-width:0}
 .home .lp-logo{display:flex;align-items:center;gap:12px;margin:0 0 26px 6px;font-size:26px;font-weight:800;letter-spacing:.06em}
-.home .lp-logo i{width:34px;height:26px;flex:none;border-radius:4px;background:linear-gradient(180deg,#f2c230 0 30%,transparent 30% 38%,#f2c230 38% 68%,transparent 68% 76%,#f2c230 76%)}
+.home .lp-logo svg{flex:none;display:block}
 .home .lp-side>span{padding:14px 16px;border-radius:12px;font-size:22px;font-weight:500;color:var(--lp-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .home .lp-side>span.on{background:var(--lp-act);color:var(--lp-fg);font-weight:600}
 .home .lp-main{display:flex;flex-direction:column;gap:20px;padding:30px 36px 28px;min-width:0;min-height:0;height:100%}
