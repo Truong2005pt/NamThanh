@@ -343,3 +343,30 @@
 .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form label, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form label { display: grid; gap: 8px; margin-bottom: 0; }
 .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form select, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form textarea, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form select { width: 100%; box-sizing: border-box; padding: 12px 14px; min-width: 0; }
 .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form input { font-size: 14px; padding: 12px 14px; }
+
+/* ===== program-information: program gallery (one cinematic photo per program) ===== */
+.ref-scope .pg-gallery .co-section-heading { margin-bottom: 36px; }
+.ref-scope .pg-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.ref-scope .pg-card { display: flex; flex-direction: column; overflow: hidden; border-radius: 22px; background: var(--pdu-side); border: 1px solid var(--pdu-line); box-shadow: var(--pdu-shadow); color: var(--pdu-text); text-decoration: none; transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .25s, box-shadow .35s; }
+.ref-scope .pg-card:hover { transform: translateY(-4px); border-color: var(--b-accent); }
+.ref-scope .pg-card.is-selected { border-color: var(--b-accent); box-shadow: 0 0 0 1px var(--b-accent), var(--pdu-shadow); }
+.ref-scope .pg-media { position: relative; margin: 0; aspect-ratio: 16 / 8; overflow: hidden; background: #0b0b0e; }
+.ref-scope .pg-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.ref-scope .pg-card:hover .pg-media img { transform: scale(1.05); }
+.ref-scope .pg-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,8,11,.38) 0%, rgba(8,8,11,0) 38%, rgba(8,8,11,.55) 100%); pointer-events: none; }
+.ref-scope .pg-num, .ref-scope .pg-from { position: absolute; z-index: 1; display: inline-flex; align-items: baseline; gap: 6px; padding: 7px 14px; border-radius: 999px; font-size: 12.5px; line-height: 1; color: #fff; background: rgba(12,12,16,.55); border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.ref-scope .pg-num { top: 16px; left: 16px; font-weight: 700; letter-spacing: .08em; }
+.ref-scope .pg-from { right: 16px; bottom: 16px; }
+.ref-scope .pg-from small { font-size: 12px; color: rgba(255,255,255,.75); }
+.ref-scope .pg-from b { font-size: 15px; font-weight: 700; color: #f6d35a; }
+.ref-scope .pg-body { display: flex; flex-direction: column; gap: 10px; padding: 24px 26px 26px; flex: 1; }
+.ref-scope .pg-body h3 { margin: 0; font-size: 22px; line-height: 1.3; font-weight: 650; letter-spacing: -.4px; color: var(--pdu-text); }
+.ref-scope .pg-body p { margin: 0; font-size: 14.5px; line-height: 1.7; color: var(--pdu-muted); }
+.ref-scope .pg-link { display: inline-flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 6px; font-size: 14px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope .pg-card:hover .pg-link { color: var(--b-accent); }
+@media (max-width: 760px) { .ref-scope .pg-grid { grid-template-columns: 1fr; gap: 18px; } .ref-scope .pg-media { aspect-ratio: 16 / 9; } .ref-scope .pg-body { padding: 20px 20px 22px; } }
+@media (prefers-reduced-motion: reduce) { .ref-scope .pg-card, .ref-scope .pg-media img { transition: none; } .ref-scope .pg-card:hover { transform: none; } .ref-scope .pg-card:hover .pg-media img { transform: none; } }
+/* chips sit on a photo, so they stay light in both themes (a global light-theme rule would turn them dark) */
+.ref-scope .pg-num, .ref-scope .pg-from { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+.ref-scope .pg-from small { color: rgba(255,255,255,.78) !important; -webkit-text-fill-color: rgba(255,255,255,.78) !important; }
+.ref-scope .pg-from b { color: #f6d35a !important; -webkit-text-fill-color: #f6d35a !important; }
