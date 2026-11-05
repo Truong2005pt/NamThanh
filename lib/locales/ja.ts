@@ -307,7 +307,7 @@ export const ja: TranslationDictionary = {
     "paymentMethodsTitle": "お支払い方法",
     "riskTitle": "リスク開示および運営の性質",
     "riskText": "ERACEXが提供するすべてのアカウントはシミュレーションです(シミュレーショントレード環境)。ERACEXはブローカーでも銀行でもなく、投資預金を受け付けず、投資サービスも提供しません。トレードには高いリスクが伴います。プログラム料金は、アカウントへのアクセス付与後は返金されません。",
-    "copyright": "© 2026 ERACEX. All rights reserved.",
+    "copyright": "© 2026 ERACEX. 無断転載を禁じます。",
     "terms": "利用規約",
     "privacy": "プライバシーポリシー",
     "riskDisclosure": "リスク開示文書",
