@@ -187,7 +187,7 @@ const L: Record<string, string> = {
   "Ví dụ phép tính: $2,803.00 × 80% = $2,242.40.": "Halimbawa ng kalkulasyon: $2,803.00 × 80% = $2,242.40.",
   "Vòng 1: 10% · Vòng 2: 5%": "Yugto 1: 10% · Yugto 2: 5%",
   "Vòng {n}": "Yugto {n}",
-  "Vương quốc Anh": "United Kingdom",
+  "Vương quốc Anh": "Reyno Unido",
   "Xem gói và phí": "Tingnan ang mga plan at bayad",
   "Xem gói đã chọn": "Tingnan ang napiling plan",
   "Xem quy tắc": "Tingnan ang mga patakaran",

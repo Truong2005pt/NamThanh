@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
   const navText = getNavTranslations(currentLang);
   const vi = currentLang === 'vi';
   const productsLabel = vi ? 'Sản phẩm' : 'Products';
-  const programInfoLabel = vi ? 'Thông Tin Chương Trình' : 'Program Information';
+  const programInfoLabel = getUiStr(currentLang).programInfo;
   const PRODUCTS = [
     { href: '/programs/two-step', name: 'Two-Step', sub: vi ? 'Hai vòng đánh giá' : 'Two evaluation phases' },
     { href: '/programs/one-step', name: 'One-Step', sub: vi ? 'Một vòng đánh giá' : 'One evaluation phase' },

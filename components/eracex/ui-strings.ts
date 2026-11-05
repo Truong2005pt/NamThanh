@@ -4,7 +4,7 @@
 // (vi/en blocks live in FooterDisclaimers.tsx).
 export interface UiStr {
   changeLanguage: string; toggleTheme: string; themeAria: string; toDark: string; toLight: string; toggleMenu: string;
-  legal: string; payment: string; brand: string; preview: string;
+  legal: string; payment: string; brand: string; preview: string; programInfo: string;
   extra?: { t: string; x: string }[];
 }
 
@@ -20,6 +20,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Métodos de pago",
     "brand": "ERACEX, firma de trading propietario",
     "preview": "ERACEX / VISTA PREVIA",
+    "programInfo": "Información del programa",
     "extra": [
       {
         "t": "h4",
@@ -50,6 +51,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Formas de pagamento",
     "brand": "ERACEX, empresa de trading proprietário",
     "preview": "ERACEX / PRÉVIA",
+    "programInfo": "Informações do programa",
     "extra": [
       {
         "t": "h4",
@@ -80,6 +82,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "भुगतान के तरीके",
     "brand": "ERACEX प्रोप्राइटरी ट्रेडिंग फ़र्म",
     "preview": "ERACEX / पूर्वावलोकन",
+    "programInfo": "प्रोग्राम की जानकारी",
     "extra": [
       {
         "t": "h4",
@@ -110,6 +113,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Metode pembayaran",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / PRATINJAU",
+    "programInfo": "Informasi Program",
     "extra": [
       {
         "t": "h4",
@@ -140,6 +144,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Moyens de paiement",
     "brand": "ERACEX, société de trading pour compte propre",
     "preview": "ERACEX / APERÇU",
+    "programInfo": "Informations sur le programme",
     "extra": [
       {
         "t": "h4",
@@ -170,6 +175,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Zahlungsmethoden",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / VORSCHAU",
+    "programInfo": "Programminformationen",
     "extra": [
       {
         "t": "h4",
@@ -200,6 +206,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Metodi di pagamento",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / ANTEPRIMA",
+    "programInfo": "Informazioni sul programma",
     "extra": [
       {
         "t": "h4",
@@ -230,6 +237,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Metody płatności",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / PODGLĄD",
+    "programInfo": "Informacje o programie",
     "extra": [
       {
         "t": "h4",
@@ -260,6 +268,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Ödeme yöntemleri",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / ÖNİZLEME",
+    "programInfo": "Program Bilgileri",
     "extra": [
       {
         "t": "h4",
@@ -290,6 +299,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "วิธีการชำระเงิน",
     "brand": "ERACEX บริษัทเทรดด้วยเงินทุนของบริษัท",
     "preview": "ERACEX / ตัวอย่าง",
+    "programInfo": "ข้อมูลโปรแกรม",
     "extra": [
       {
         "t": "h4",
@@ -320,6 +330,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "Mga paraan ng pagbabayad",
     "brand": "ERACEX Proprietary Trading Firm",
     "preview": "ERACEX / PREVIEW",
+    "programInfo": "Impormasyon ng Programa",
     "extra": [
       {
         "t": "h4",
@@ -350,6 +361,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "お支払い方法",
     "brand": "ERACEX プロップトレーディング会社",
     "preview": "ERACEX / プレビュー",
+    "programInfo": "プログラム情報",
     "extra": [
       {
         "t": "h4",
@@ -380,6 +392,7 @@ export const UI_STR: Record<string, UiStr> = {
     "payment": "支付方式",
     "brand": "ERACEX 自营交易公司",
     "preview": "ERACEX / 预览",
+    "programInfo": "项目信息",
     "extra": [
       {
         "t": "h4",
@@ -409,7 +422,8 @@ export const UI_STR: Record<string, UiStr> = {
     "legal": "Tuyên bố miễn trừ pháp lý",
     "payment": "Phương thức thanh toán",
     "brand": "ERACEX Proprietary Trading Firm",
-    "preview": "ERACEX / BẢN XEM TRƯỚC"
+    "preview": "ERACEX / BẢN XEM TRƯỚC",
+    "programInfo": "Thông Tin Chương Trình"
   },
   "en": {
     "changeLanguage": "Change Language",
@@ -421,7 +435,8 @@ export const UI_STR: Record<string, UiStr> = {
     "legal": "Legal disclaimers",
     "payment": "Payment methods",
     "brand": "ERACEX Proprietary Trading Firm",
-    "preview": "ERACEX / PREVIEW"
+    "preview": "ERACEX / PREVIEW",
+    "programInfo": "Program Information"
   }
 };
 
