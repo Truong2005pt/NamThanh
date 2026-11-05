@@ -308,7 +308,7 @@ export const TransparencyView: React.FC = () => {
           </p>
         </section>
 
-        <ImageBand caption="rules" variant="wide" inline images={[{ src: '/images/eracex-f1-banner.jpg', alt: 'ERACEX simulated trading programs' }]} />
+        <ImageBand caption="rules" variant="wide" inline images={[{ src: '/images/eracex-f1-banner.jpg', alt: 'ERACEX trading evaluation programs' }]} />
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((s) => (

@@ -201,7 +201,7 @@ export const ReviewsSection: React.FC = () => {
       id: 'rev-1',
       name: 'Two-Step',
       flag: '',
-      country: 'Simulated evaluation',
+      country: 'Evaluation program',
       model: '$5,000 to $100,000',
       rating: 0,
       title: {
@@ -262,7 +262,7 @@ export const ReviewsSection: React.FC = () => {
       id: 'rev-2',
       name: 'One-Step',
       flag: '',
-      country: 'Simulated evaluation',
+      country: 'Evaluation program',
       model: '$5,000 to $100,000',
       rating: 0,
       title: {
@@ -323,7 +323,7 @@ export const ReviewsSection: React.FC = () => {
       id: 'rev-3',
       name: 'Instant Funding',
       flag: '',
-      country: 'Simulated funded account',
+      country: 'Funded account',
       model: '$5,000 to $100,000',
       rating: 0,
       title: {

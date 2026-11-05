@@ -24,7 +24,7 @@ const DICTIONARY: Record<string, SlugDictionary> = {
     backToBlog: 'Quay lại danh sách Blog',
     backToAllArticles: 'Quay lại tất cả bài viết',
     ctaTitle: 'Bắt Đầu Chương Trình Đánh Giá',
-    ctaDesc: 'Tài khoản mô phỏng từ $5,000 đến $100,000, chia sẻ lợi nhuận cao và quy tắc rõ ràng trước khi thanh toán.',
+    ctaDesc: 'Tài khoản từ $5,000 đến $100,000, chia sẻ lợi nhuận cao và quy tắc rõ ràng trước khi thanh toán.',
     ctaButton: 'Xem Gói Challenge',
   },
   zh: {
@@ -51,7 +51,7 @@ const DICTIONARY: Record<string, SlugDictionary> = {
     backToBlog: 'Back to Blog',
     backToAllArticles: 'Back to all articles',
     ctaTitle: 'Begin Your Evaluation Journey',
-    ctaDesc: 'Simulated accounts from $5,000 to $100,000, a high profit share and clear rules before you pay.',
+    ctaDesc: 'Accounts from $5,000 to $100,000, a high profit share and clear rules before you pay.',
     ctaButton: 'View Challenges',
   },
   es: {
@@ -96,7 +96,7 @@ const DICTIONARY: Record<string, SlugDictionary> = {
       "backToBlog": "Torna al Blog",
       "backToAllArticles": "Torna a tutti gli articoli",
       "ctaTitle": "Inizia il Tuo Percorso di Valutazione",
-      "ctaDesc": "Conti simulati da $5,000 a $100,000, ripartizione degli utili alta e regole chiare prima del pagamento.",
+      "ctaDesc": "Conti da $5,000 a $100,000, ripartizione degli utili alta e regole chiare prima del pagamento.",
       "ctaButton": "Esplora le Challenge"
   },
   pl: {
@@ -141,7 +141,7 @@ const DICTIONARY: Record<string, SlugDictionary> = {
       "backToBlog": "Bumalik sa Blog",
       "backToAllArticles": "Bumalik sa lahat ng artikulo",
       "ctaTitle": "Simulan ang Iyong Evaluation Journey",
-      "ctaDesc": "Mga simulated na account mula $5,000 hanggang $100,000, mataas na hatian ng kita, at malinaw na mga patakaran bago magbayad.",
+      "ctaDesc": "Mga account mula $5,000 hanggang $100,000, mataas na hatian ng kita, at malinaw na mga patakaran bago magbayad.",
       "ctaButton": "Tingnan ang Challenges"
   },
   hi: {

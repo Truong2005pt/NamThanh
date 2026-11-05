@@ -29,7 +29,7 @@ export const AboutView: React.FC = () => {
     heroTitle1: 'Trao Quyền Cho Trader.',
     heroHighlight: 'Chuẩn Mực Prop Firm',
     heroTitle2: 'Định Nghĩa Lại',
-    heroDesc: 'ERACEX cung cấp các chương trình đánh giá giao dịch mô phỏng với quy tắc được công bố rõ ràng trước khi thanh toán.',
+    heroDesc: 'ERACEX cung cấp các chương trình đánh giá giao dịch với quy tắc được công bố rõ ràng trước khi thanh toán.',
     btnExplore: 'Khám Phá Các Gói',
     btnReviews: 'Xem Quy Tắc',
     statCapital: 'Quy Mô Tài Khoản Tối Đa',
@@ -41,8 +41,8 @@ export const AboutView: React.FC = () => {
     p1Desc: 'Giới hạn lỗ theo ngày và tổng lỗ tối đa dựa trên equity, được hiển thị rõ cho từng chương trình.',
     p2Title: 'Điều Kiện Rút Tiền Rõ Ràng',
     p2Desc: 'Rút tối thiểu 1% lợi nhuận. Phí chương trình không được hoàn lại sau khi cấp quyền truy cập.',
-    p3Title: 'Môi Trường Mô Phỏng',
-    p3Desc: 'Mọi giao dịch diễn ra trên tài khoản mô phỏng, không dùng vốn thật của khách hàng.',
+    p3Title: 'Môi Trường Đánh Giá',
+    p3Desc: 'Mọi giao dịch diễn ra trên tài khoản, không dùng vốn thật của khách hàng.',
     p4Title: 'Hỗ Trợ Khách Hàng',
     p4Desc: 'Đội ngũ hỗ trợ tiếp nhận yêu cầu qua Live Chat và Email.',
     teamTitle: 'Đội Ngũ ERACEX',
@@ -89,7 +89,7 @@ export const AboutView: React.FC = () => {
           </div>
         </section>
 
-        <ImageBand caption="simulated" variant="wide" inline images={[{ src: '/images/eracex-f1-banner.jpg', alt: 'ERACEX simulated trading programs' }]} />
+        <ImageBand caption="simulated" variant="wide" inline images={[{ src: '/images/eracex-f1-banner.jpg', alt: 'ERACEX trading evaluation programs' }]} />
 
         {/* METRICS BAR */}
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">

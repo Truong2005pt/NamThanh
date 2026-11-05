@@ -29,8 +29,8 @@ export interface BlogPostData {
 export const BLOG_POSTS: BlogPostData[] = [
   {
     "slug": "risk-management-prop-firm",
-    "title": "Kỷ Luật Quản Trị Rủi Ro Trong Chương Trình Đánh Giá Mô Phỏng",
-    "excerpt": "Quản lý khối lượng lệnh và tuân thủ giới hạn lỗ theo ngày là nền tảng khi giao dịch trong một chương trình đánh giá mô phỏng...",
+    "title": "Kỷ Luật Quản Trị Rủi Ro Trong Chương Trình Đánh Giá",
+    "excerpt": "Quản lý khối lượng lệnh và tuân thủ giới hạn lỗ theo ngày là nền tảng khi giao dịch trong một chương trình đánh giá...",
     "author": "ERACEX Team",
     "authorRole": "Đội ngũ ERACEX",
     "date": "27/10/2026",
@@ -61,8 +61,8 @@ export const BLOG_POSTS: BlogPostData[] = [
     ],
     "translations": {
       "en": {
-        "title": "Risk Management Discipline in a Simulated Evaluation Program",
-        "excerpt": "Managing position size and respecting the daily loss limit are the foundation of trading in a simulated evaluation program...",
+        "title": "Risk Management Discipline in a Evaluation Program",
+        "excerpt": "Managing position size and respecting the daily loss limit are the foundation of trading in a evaluation program...",
         "category": "Risk Management",
         "readTime": "5 min read",
         "authorRole": "ERACEX Team",
@@ -264,8 +264,8 @@ export const BLOG_POSTS: BlogPostData[] = [
         ]
       },
       "it": {
-        "title": "La disciplina di gestione del rischio in un programma di valutazione simulato",
-        "excerpt": "Gestire la dimensione delle posizioni e rispettare il limite di perdita giornaliera sono le basi del trading in un programma di valutazione simulato...",
+        "title": "La disciplina di gestione del rischio in un programma di valutazione",
+        "excerpt": "Gestire la dimensione delle posizioni e rispettare il limite di perdita giornaliera sono le basi del trading in un programma di valutazione...",
         "category": "Gestione del rischio",
         "readTime": "5 min di lettura",
         "authorRole": "Team ERACEX",
@@ -409,8 +409,8 @@ export const BLOG_POSTS: BlogPostData[] = [
         ]
       },
       "fil": {
-        "title": "Disiplina sa Pamamahala ng Panganib sa isang Simulated Evaluation Program",
-        "excerpt": "Ang pamamahala sa laki ng posisyon at ang paggalang sa daily loss limit ang pundasyon ng trading sa isang simulated evaluation program...",
+        "title": "Disiplina sa Pamamahala ng Panganib sa isang Evaluation Program",
+        "excerpt": "Ang pamamahala sa laki ng posisyon at ang paggalang sa daily loss limit ang pundasyon ng trading sa isang evaluation program...",
         "category": "Pamamahala ng Panganib",
         "readTime": "5 min na basahin",
         "authorRole": "ERACEX Team",
