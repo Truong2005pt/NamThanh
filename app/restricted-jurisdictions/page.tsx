@@ -4,6 +4,7 @@ import React from 'react';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { LegalDocument, type LegalBlock } from '@/components/eracex/LegalDocument';
 import rawBlocks from '@/content/legal/restricted-jurisdictions.json';
+import countryNames from '@/content/legal/restricted-jurisdictions-i18n.json';
 
 const INTRO_I18N: Record<string, { title: string; desc: string }> = {
   vi: {
@@ -91,7 +92,8 @@ export default function Page() {
   const blocks: LegalBlock[] = (rawBlocks as LegalBlock[]).map((b, idx) => {
     if (idx === 0) return { ...b, x: intro.title };
     if (idx === 1) return { ...b, x: intro.desc };
-    return b;
+    const names = (countryNames as Record<string, string[]>)[currentLang];
+    return names && names[idx - 2] ? { ...b, x: names[idx - 2] } : b;
   });
 
   return (
