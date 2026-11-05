@@ -216,14 +216,19 @@ const FOOTER_EXTRA_DICT: Record<string, {
 /** Social profiles. Paste the real address into `url`; an empty one renders as a placeholder link. */
 const SOCIALS: { name: string; url: string; icon: React.ReactNode }[] = [
   {
+    name: "YouTube",
+    url: "",
+    icon: (
+      <g>
+        <path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77C22 15.2 22 12 22 12s0-3.2-.4-4.8z" />
+        <path className="fill-white dark:fill-[#0f1115]" d="M10 15l5-3-5-3z" />
+      </g>
+    ),
+  },
+  {
     name: "Facebook",
     url: "",
     icon: <path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z" />,
-  },
-  {
-    name: "X",
-    url: "",
-    icon: <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />,
   },
   {
     name: "Instagram",
@@ -237,14 +242,19 @@ const SOCIALS: { name: string; url: string; icon: React.ReactNode }[] = [
     ),
   },
   {
-    name: "YouTube",
+    name: "X",
     url: "",
-    icon: (
-      <g>
-        <path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77C22 15.2 22 12 22 12s0-3.2-.4-4.8z" />
-        <path className="fill-white dark:fill-[#0f1115]" d="M10 15l5-3-5-3z" />
-      </g>
-    ),
+    icon: <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />,
+  },
+  {
+    name: "LinkedIn",
+    url: "",
+    icon: <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />,
+  },
+  {
+    name: "TikTok",
+    url: "",
+    icon: <path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12V9.66a5.7 5.7 0 0 0-.77-.05 5.69 5.69 0 1 0 5.69 5.69V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.25-1.48z" />,
   },
 ];
 
@@ -2173,25 +2183,25 @@ const DISCLAIMER_TITLE: Record<string, string> = {
 };
 
 const SLOGAN: Record<string, string> = {
-  "vi": "All-in-one — Nền tảng giao dịch thế hệ mới",
-  "en": "All-in-one — Next-generation trading platform",
-  "zh": "全方位一体化 — 次世代自营交易平台",
-  "ja": "オールインワン — 次世代プロップトレードプラットフォーム",
-  "es": "Todo en uno — Plataforma de trading de última generación",
-  "pt": "Tudo em um — Plataforma de trading de última geração",
-  "fr": "Tout-en-un — Plateforme de trading de nouvelle génération",
-  "de": "All-in-One — Trading-Plattform der nächsten Generation",
-  "it": "Tutto in uno — Piattaforma di trading di nuova generazione",
-  "pl": "Wszystko w jednym — Platforma handlowa nowej generacji",
-  "tr": "Hepsi bir arada — Yeni nesil işlem platformu",
-  "id": "Semua dalam satu — Platform trading generasi berikutnya",
-  "th": "ครบจบในที่เดียว — แพลตฟอร์มการเทรดยุคใหม่",
-  "fil": "Lahat-sa-isa — Makabagong plataporma sa trading",
-  "hi": "ऑल-इन-वन — अगली पीढ़ी का ट्रेडिंग प्लेटफ़ॉर्म",
-  "ko": "올인원 — 차세대 프랍 트레이딩 플랫폼",
-  "ru": "Все в одном — Торговая платформа нового поколения",
-  "ar": "منصة تداول شاملة من الجيل الجديد",
-  "nl": "Alles-in-één — Handelsplatform van de volgende generatie"
+  "vi": "All-in-one — Nền tảng đánh giá & cấp vốn thế hệ mới",
+  "en": "All-in-one — Next-generation evaluation & funding platform",
+  "zh": "全方位一体化 — 次世代评估与资金支持平台",
+  "ja": "オールインワン — 次世代の評価・資金提供プラットフォーム",
+  "es": "Todo en uno — Plataforma de evaluación y financiación de nueva generación",
+  "pt": "Tudo em um — Plataforma de avaliação e financiamento de nova geração",
+  "fr": "Tout-en-un — Plateforme d'évaluation et de financement nouvelle génération",
+  "de": "All-in-One — Evaluierungs- und Finanzierungsplattform der nächsten Generation",
+  "it": "Tutto in uno — Piattaforma di valutazione e finanziamento di nuova generazione",
+  "pl": "Wszystko w jednym — Platforma oceny i finansowania nowej generacji",
+  "tr": "Hepsi bir arada — Yeni nesil değerlendirme ve fonlama platformu",
+  "id": "Semua dalam satu — Platform evaluasi & pendanaan generasi berikutnya",
+  "th": "ครบจบในที่เดียว — แพลตฟอร์มประเมินและสนับสนุนเงินทุนยุคใหม่",
+  "fil": "Lahat-sa-isa — Makabagong plataporma sa pagsusuri at pagpopondo",
+  "hi": "ऑल-इन-वन — अगली पीढ़ी का मूल्यांकन और फंडिंग प्लेटफ़ॉर्म",
+  "ko": "올인원 — 차세대 평가 및 펀딩 플랫폼",
+  "ru": "Все в одном — Платформа оценки и финансирования нового поколения",
+  "ar": "الكل في واحد — منصة تقييم وتمويل من الجيل الجديد",
+  "nl": "Alles-in-één — Evaluatie- en financieringsplatform van de volgende generatie"
 };
 
 

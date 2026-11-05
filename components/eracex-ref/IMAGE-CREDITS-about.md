@@ -61,3 +61,6 @@ public/eracex-ref/assets/fh-hero-bg.webp: the hero background supplied by the cl
 
 ## Login / sign-up side panel
 | public/eracex-ref/assets/auth-panel.webp | 1767424412548-1a1ac7f4b9bc | trading charts on a monitor, laptop and tablet (multi-platform trading); resized and converted to WebP, no recolouring |
+
+- `public/eracex-ref/assets/uae-c1-building.webp`: photo of C1 Building, Ajman Free Zone (source: citysearch.ae listing, found via image search). Used on Contact.
+- `public/eracex-ref/assets/uae-afz-offices.webp`: Ajman Free Zone office buildings (source: afz.gov.ae press kit gallery). Used on About.

@@ -22,7 +22,7 @@ export function Rewards() {
               {PAYOUTS.map((x) => (
                 <tr key={x.id}>
                   <td>{x.when}</td>
-                  <td><b>{t(x.name)}</b><small>{x.id}</small></td>
+                  <td><b>{x.name}</b><small>{x.id}</small></td>
                   <td className="amt">{x.amount}</td>
                   <td><span className="ctry"><Flag country={x.country} />{t(x.country)}</span></td>
                   <td>{x.program}</td>
@@ -42,7 +42,7 @@ export function Rewards() {
             <small>{t("THƯỞNG")}</small>
             <strong>{x.amount}</strong>
             <span className="sz">{t("Quy mô")} {x.size}</span>
-            <div className="foot"><Flag country={x.country} /><div><b>{t(x.name)}</b><small>{t(x.country)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
+            <div className="foot"><Flag country={x.country} /><div><b>{x.name}</b><small>{t(x.country)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
           </a>
         ))}
       </div>
