@@ -989,3 +989,6 @@
 [data-theme="dark"] .home .sk-support>img{filter:brightness(.8) saturate(1.15) contrast(1.04)}
 [data-theme="dark"] .home .sk-hero-img{filter:brightness(.9) saturate(1.12) contrast(1.05)}
 .home .sk-hero-img,.home .sk-dark img,.home .sk-panel-r>img,.home .sk-support>img{transition:none}
+
+/* program tabs: the selected tab uses the system gold in both themes (not the dark ink) */
+.home .sk-tabs button.on,[data-theme="dark"] .home .sk-tabs button.on{background:var(--gold);color:var(--ink);box-shadow:0 8px 20px -10px rgba(217,164,6,.7)}
