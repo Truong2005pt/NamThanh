@@ -37,9 +37,6 @@
   "exclude": [
     "node_modules",
     "hairline",
-    "fundingpips-ui",
-    "audit-fundingpips",
-    "scratch",
-    "components/_legacy_backup"
+    "scratch"
   ]
 }
