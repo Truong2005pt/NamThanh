@@ -130,7 +130,7 @@ export const th: Dict = {
     "title": "สิ่งที่อนุญาตและไม่อนุญาต",
     "shownOnEveryPackage": 'ทุกแพ็กเกจ',
     "allowed": 'อนุญาต',
-    "notAllowed": 'ไม่อนุญาต',
+    "notAllowed": 'ห้าม',
     "weekendHolding": 'การถือสถานะข้ามสุดสัปดาห์',
     "weekendHoldingDesc": 'ปิดทุกสถานะก่อนสุดสัปดาห์',
     "newsTradingEval": 'การซื้อขายช่วงข่าว: การประเมิน',

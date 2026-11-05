@@ -14,9 +14,6 @@ const nextConfig = {
   async redirects() {
     return [
       { source: '/legal/refund-policy', destination: '/refund-policy', permanent: true },
-      // Legal pages now come word for word from the signed Word documents
-      { source: '/terms', destination: '/terms-and-conditions', permanent: true },
-      { source: '/privacy', destination: '/privacy-policy', permanent: true },
       { source: '/funded-account-disclaimer', destination: '/funded-terms', permanent: true },
       { source: '/complaints-policy', destination: '/terms-and-conditions', permanent: true },
     ];

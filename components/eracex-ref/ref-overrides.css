@@ -1,0 +1,96 @@
+/* Site chrome (floating Navbar, Footer) belongs to the main site; keep concept pages clear of it. */
+.ref-scope.sub-page { padding-top: 88px; min-height: 60vh; }
+
+/* IB partnerships hero artwork: dark and light variants follow the site theme. */
+.ref-scope .co-ib-art { width: 100%; }
+.ref-scope .co-ib-art img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.ref-scope .co-ib-art .ib-art-light { display: none; }
+:root[data-theme='light'] .ref-scope .co-ib-art .ib-art-dark { display: none; }
+:root[data-theme='light'] .ref-scope .co-ib-art .ib-art-light { display: block; }
+
+/* One-Step hero: its own dark/light artwork (carries its own title, so the overlay labels are hidden). */
+.ref-scope .pd-hero-themed .pd-theme-light { display: none; }
+.ref-scope .pd-hero-themed > img { width: 100%; height: auto; aspect-ratio: 1024 / 361; object-fit: cover; }
+.ref-scope .pd-hero-themed .pd-photo-shade,
+.ref-scope .pd-hero-themed .pd-hero-badge,
+.ref-scope .pd-hero-themed .pd-hero-product { display: none; }
+:root[data-theme='light'] .ref-scope .pd-hero-themed .pd-theme-dark { display: none; }
+:root[data-theme='light'] .ref-scope .pd-hero-themed .pd-theme-light { display: block; }
+.ref-scope .pd-hero-themed { height: auto !important; min-height: 0 !important; aspect-ratio: auto !important; }
+.ref-scope .pd-visual:has(.pd-hero-themed) { height: auto !important; min-height: 0 !important; aspect-ratio: auto !important; }
+.ref-scope .pd-hero-themed { position: relative !important; inset: auto !important; width: 100%; }
+/* One-Step hero: only the artwork, no frame, gold shadow, stacked cards or side tools. */
+.ref-scope .pd-hero-themed { border: 0 !important; box-shadow: none !important; background: none !important; transform: none !important; inset: auto !important; }
+.ref-scope .pd-hero-themed::before,
+.ref-scope .pd-hero-themed::after { display: none !important; content: none !important; }
+.ref-scope .pd-hero-themed > img { animation: none !important; }
+.ref-scope .pd-hero-themed .pd-hero-tools { display: none !important; }
+.ref-scope .pd-visual:has(.pd-hero-themed) { width: 100% !important; max-width: 1100px; }
+
+/* Page background comes from the site itself (same in both themes), not from the concept stylesheet. */
+.ref-scope.sub-page { background: transparent !important; }
+
+/* One-Step hero artwork blends into the page background instead of showing as a pasted rectangle. */
+.ref-scope .pd-visual:has(.pd-hero-themed) { isolation: auto !important; }
+.ref-scope .pd-hero-themed > img {
+  border-radius: 0 !important;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+                      linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+              linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);
+  mask-composite: intersect;
+}
+.ref-scope .pd-hero-themed .pd-theme-dark { mix-blend-mode: lighten; }
+:root[data-theme='light'] .ref-scope .pd-hero-themed .pd-theme-light { mix-blend-mode: multiply; }
+
+/* One-Step hero: no caption under the artwork and no "ERACEX products / ..." kicker. */
+.ref-scope .pd-visual:has(.pd-hero-themed) .pd-art-caption,
+.ref-scope .pd-intro:has(.pd-hero-themed) .pd-intro-copy > .eyebrow { display: none !important; }
+
+/* "All-in-one technology" artwork: dark and light versions follow the site theme. */
+.ref-scope .pd-art-themed { background: none !important; overflow: hidden; }
+.ref-scope .pd-art-themed::before { display: none !important; }
+.ref-scope .pd-art-themed > img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  -webkit-mask-image: radial-gradient(ellipse 72% 72% at 50% 50%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 72% 72% at 50% 50%, #000 55%, transparent 100%);
+}
+.ref-scope .pd-art-themed .pd-theme-light { display: none; }
+.ref-scope .pd-art-themed .pd-theme-dark { mix-blend-mode: lighten; }
+:root[data-theme='light'] .ref-scope .pd-art-themed .pd-theme-dark { display: none; }
+:root[data-theme='light'] .ref-scope .pd-art-themed .pd-theme-light { display: block; mix-blend-mode: multiply; }
+.ref-scope .pd-art-themed { isolation: auto; }
+/* Whole artwork stays visible inside its frame (no cropping at any width). */
+.ref-scope .pd-art-themed > img { object-fit: contain !important; object-position: center; padding: 4px; box-sizing: border-box; }
+
+/* Instant Funding / Instant Light: stock photograph banner (own photo per program). */
+.ref-scope .pd-visual:has(.pd-hero-photo) { height: auto !important; min-height: 0 !important; aspect-ratio: auto !important; width: 100% !important; max-width: 1100px; isolation: auto !important; }
+.ref-scope .pd-hero-photo {
+  position: relative !important; inset: auto !important; width: 100%; transform: none !important;
+  border: 1px solid #ffffff1f !important; border-radius: 22px !important; overflow: hidden;
+  background: #0d0d11 !important; box-shadow: 0 40px 80px -48px #000a !important; aspect-ratio: 21 / 9;
+}
+:root[data-theme='light'] .ref-scope .pd-hero-photo { border-color: #e6e2d2 !important; box-shadow: 0 40px 80px -48px #8a6a1050 !important; }
+.ref-scope .pd-hero-photo::before, .ref-scope .pd-hero-photo::after { display: none !important; content: none !important; }
+.ref-scope .pd-hero-photo > img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 52%; border-radius: 0 !important; animation: none !important; display: block; }
+.ref-scope .pd-hero-photo .pd-photo-shade { background: linear-gradient(0deg, #08080b55, transparent 45%) !important; }
+.ref-scope .pd-hero-photo .pd-hero-badge,
+.ref-scope .pd-hero-photo .pd-hero-product,
+.ref-scope .pd-hero-photo .pd-hero-tools { display: none !important; }
+.ref-scope .pd-visual:has(.pd-hero-photo) .pd-art-caption,
+.ref-scope .pd-intro:has(.pd-hero-photo) .pd-intro-copy > .eyebrow { display: none !important; }
+.ref-scope .pd-hero-photo { aspect-ratio: 11 / 5; }
+.ref-scope[data-page$='instant-light'] .pd-hero-photo > img { object-position: 50% 30%; }
+.ref-scope[data-page$='instant-funding'] .pd-hero-photo > img { object-position: 50% 50%; }
+
+/* Instant Funding hero: gold-graded photo, black-gold in dark theme and white-gold in light theme. */
+.ref-scope .pd-hero-photo .pd-theme-light { display: none; }
+:root[data-theme='light'] .ref-scope .pd-hero-photo .pd-theme-dark { display: none; }
+:root[data-theme='light'] .ref-scope .pd-hero-photo .pd-theme-light { display: block; }
+.ref-scope[data-page$='instant-funding'] .pd-hero-photo > img { object-position: 50% 40%; }
+
+/* Lucide icons inside text and buttons */
+.ref-scope .lu { display: inline-block; vertical-align: -0.2em; flex: none; }
+.ref-scope .pd-phase-number .lu { vertical-align: middle; }
+.ref-scope .button > span .lu { vertical-align: middle; }

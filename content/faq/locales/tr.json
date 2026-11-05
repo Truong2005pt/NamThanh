@@ -1,17 +1,17 @@
 {
   "two": {
-    "title": "Two-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "2 Aşamalı Değerlendirme — SSS",
+    "subtitle": "Değerlendirme ve Fonlanan Hesap Koşulları",
     "categories": [
       {
-        "category": "About the Two-Step Challenge",
+        "category": "2 Aşamalı Değerlendirme Hakkında",
         "items": [
           {
-            "q": "What is the Two-Step Challenge?",
+            "q": "2 Aşamalı Değerlendirme nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+                "x": "İki aşamalı bir değerlendirme sürecidir. 1. Aşama ve 2. Aşamayı başarıyla tamamlayın, %80 kâr paylaşımlı Fonlanan hesaba geçiş yapın."
               }
             ]
           },
@@ -20,29 +20,29 @@
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Beş boyut: $5.000, $10.000, $25.000, $50.000 ve $100.000. Tüm kurallar her boyut için aynı yüzdedir; yalnızca dolar tutarları değişir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Targets",
+        "category": "Kâr Hedefleri",
         "items": [
           {
-            "q": "Her aşamayı geçmek için ne kadar kar elde etmem gerekiyor?",
+            "q": "Her aşamayı geçmek için ne kadar kâr elde etmem gerekir?",
             "a": [
               {
                 "t": "p",
-                "x": "Aşama 1 %10 kar gerektirir. Aşama 2 %5 kar gerektirir. Fonlanan hesabın kar hedefi yoktur."
+                "x": "1. Aşama %10 kâr gerektirir. 2. Aşama %5 kâr gerektirir. Fonlanan hesapta herhangi bir kâr hedefi yoktur."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Phase 1 target (10%)",
-                    "Phase 2 target (5%)"
+                    "Hesap boyutu",
+                    "1. Aşama hedefi (%10)",
+                    "2. Aşama hedefi (%5)"
                   ],
                   [
                     "$5,000",
@@ -76,21 +76,21 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Kayıp Limitleri",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Kayıp limitleri nelerdir?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+                "x": "İki sınır vardır: Her günün başlangıcındaki bakiyenizin %5'i kadar Maksimum Günlük Kayıp ve başlangıç hesap boyutunun %10'u kadar Maksimum Toplam Kayıp. Herhangi birinin ihlali hesabı sonlandırır."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (5%, at starting balance)",
+                    "Hesap boyutu",
+                    "Maksimum Günlük Kayıp (Başlangıç bakiyesinde %5)",
                     "Maksimum Kayıp (%10)"
                   ],
                   [
@@ -122,60 +122,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Yukarıdaki günlük kayıp tutarları bakiyeniz hesap boyutuna eşit olduğunda geçerlidir. Gerçek günlük limit, her gün 00:00 UTC'deki bakiyenizin %5'i olarak yeniden hesaplanır; dolayısıyla kârlarınızla büyür, kayıplardan sonra küçülür."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Kayıp limitleri her aşamada geçerli midir?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+                "x": "Evet. Aynı limitler 1. Aşama, 2. Aşama ve Fonlanan hesapta geçerlidir."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Drawdown (Düşüş) Nasıl Hesaplanır",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown bakiye üzerinden mi yoksa özkaynak (equity) üzerinden mi hesaplanır?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Özkaynak (equity) üzerinden hesaplanır. Özkaynak, bakiyeniz artı açık pozisyonlarınızın anlık kâr/zararıdır; dolayısıyla açık işlemler yalnızca kapattığınızda değil, her an her iki kayıp limitine de dahil edilir."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Maksimum Günlük Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "İşlem günü 00:00 UTC'de başlar. Yalnızca kapanmış işlemlerden oluşan o anki bakiyeniz günün başlangıç noktasıdır. Günlük limitiniz bu başlangıç bakiyesinin %5'idir. Gün boyunca açık pozisyonlar dahil özkaynağınız bu tutarın altına düşmemelidir. Düşerse hesap başarısız olur."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "$10.000'lık bir hesap örneği: 00:00 UTC'de bakiyeniz $10.200 ise günlük limitiniz $510'dur (%5 × $10.200). Gün boyunca özkaynağınız işlem açık olsa bile $9.690'ın ($10.200 − $510) üzerinde kalmalıdır. Sonraki 00:00 UTC'de başlangıç noktası ve limit o andaki bakiyenizden tekrar belirlenir."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Maksimum Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıçtaki bakiyenizden bir kez hesaplanır ve kârda olsanız bile asla değişmez. Herhangi bir zamanda özsermayeniz bu seviyeye düşerse veya bu seviyenin altına düşerse hesap başarısız olur."
+                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıç bakiyenizden bir kez hesaplanır ve kârda olsanız dahi asla değişmez. Özkaynağınız herhangi bir anda bu seviyeye veya altına düşerse hesap başarısız olur."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
+                    "Hesap boyutu",
                     "Maksimum Kayıp (%10)",
-                    "Özkaynaklar yukarıda kalmalı"
+                    "Özkaynak şu seviyenin üzerinde kalmalıdır"
                   ],
                   [
                     "$5,000",
@@ -206,104 +206,104 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+                "x": "Örnek: $10.000'lık bir hesapta özkaynağınızı $10.800'a çıkardınız. Maksimum Kayıp seviyesi $9.000'da sabit kalır; kârınızla birlikte yukarı hareket etmez."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "İki limit birlikte nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Aynı anda kontrol edilen ayrı limitlerdir. Hangisine önce ulaşılırsa hesap başarısız olur. Büyük kayıplı bir gün Maksimum Kayıp hesabına da dahil edilir, böylece günlük limiti aşmadan da Maksimum Kayba ulaşabilirsiniz."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Mevcut limitlerimi nerede görebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Kontrol paneliniz (dashboard), hesabınız için her iki limitin canlı seviyelerini gösterir."
               }
             ]
           }
         ]
       },
       {
-        "category": "İşlem Günleri ve Zaman Sınırları",
+        "category": "İşlem Günleri ve Zaman Limitleri",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Kaç işlem gününe ihtiyacım var?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+                "x": "1. Aşamada en az 5 işlem günü ve 2. Aşamada en az 5 işlem günü. Fonlanan hesapta minimum işlem günü zorunluluğu yoktur."
               }
             ]
           },
           {
-            "q": "Mücadeleyi tamamlamak için bir zaman sınırı var mı?",
+            "q": "Meydan okumayı tamamlamak için bir zaman sınırı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Hayır. İşlem süresi sınırsızdır; hesap aktif kaldığı sürece kâr hedefine ulaşmak için dilediğiniz kadar zaman kullanabilirsiniz (aşağıya bakın)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Minimum aktivite şartı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Evet. Hesabınızda art arda 30 takvim günü boyunca hiçbir işlem yapılmazsa hesap otomatik olarak kapatılır ve ücret iade edilmez. Bu, Fonlanan hesap dahil her aşamada geçerlidir, bu nedenle her 30 günde en az bir işlem yaptığınızdan emin olun."
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "Fonlanan Hesap",
         "items": [
           {
-            "q": "What happens after I pass both phases?",
+            "q": "Her iki aşamayı da geçtikten sonra ne olur?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+                "x": "Aynı boyutta bir Fonlanan hesap alırsınız. Aynı kayıp limitleri geçerliliğini korur, minimum işlem günü yoktur ve kaldıraç değerlendirme aşamalarına göre daha düşüktür (İşlem Koşullarına bakın)."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Kâr paylaşım oranı nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "%80 / %20: Fonlu hesapta elde ettiğiniz kârın %80'i sizde kalır."
+                "x": "%80 / %20: Fonlanan hesapta elde ettiğiniz kârın %80'i sizde kalır."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Ne sıklıkla kâr çekimi talep edebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Fonlanan hesapta her 5 günde bir ödeme talep edebilirsiniz."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Minimum kâr çekim tutarı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Evet. Minimum ödeme tutarı hesap boyutunun %1'idir."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
+                    "Hesap boyutu",
                     "Minimum ödeme (%1)"
                   ],
                   [
@@ -331,39 +331,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Maksimum ödeme sayısı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Evet. Bir Fonlanan hesap 5 ödeme ile sınırlıdır. Beşinci ödemeden sonra hesap kapatılır ve işlem yapmaya devam etmek için yeni bir değerlendirme satın almanız gerekir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "İşlem Koşulları",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Hangi kaldıraç oranını alırım?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "1. Aşama ve 2. Aşamada maksimum kaldıraç 1:100'dür. Fonlanan hesapta maksimum kaldıraç 1:40'tır. Her enstrümanın kaldıracı platformdaki sembol detaylarında gösterilir."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Aşama",
+                    "Maksimum kaldıraç"
                   ],
                   [
-                    "Phase 1 and Phase 2",
+                    "1. Aşama ve 2. Aşama",
                     "1:100"
                   ],
                   [
-                    "Funded",
+                    "Fonlanan Hesap",
                     "1:40"
                   ]
                 ]
@@ -371,143 +371,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Pozisyonları gecelik ve hafta sonu taşıyabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+                "x": "Gecelik pozisyon tutmaya izin verilir. Hafta sonu pozisyon tutmaya izin verilmez, bu nedenle hafta sonu piyasa kapanmadan önce pozisyonlar kapatılmalıdır. Bu kural 1. Aşama, 2. Aşama ve Fonlanan hesapta geçerlidir."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Önemli haber bültenleri sırasında işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "1. Aşama ve 2. Aşamada evet. Fonlanan hesapta haber ticareti yasaktır: önemli ekonomik veri açıklamalarından, merkez bankası duyurularından, jeopolitik olaylardan veya diğer yüksek etkili olaylardan 5 dakika önce veya 5 dakika sonra işlem açamaz veya kapatamazsınız."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Yasaklanmış İşlem Uygulamaları",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Hangi işlem uygulamalarına izin verilmez?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Programı, işlem platformunu veya simüle edilmiş işlem ortamını istismar eden, kötüye kullanan veya kurallarını atlatan her türlü işlem yasaktır. Bunlar sınırlama olmaksızın şunları içerir:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Hataları veya gecikmeleri istismar etme: Fiyatlandırma hatalarını, veri yanlışlıklarını, sistem arızalarını, gecikmeli fiyat güncellemelerini veya kamuya açık olmayan bilgileri bilerek veya bilmeyerek kullanmak."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Harici veya gecikmeli veri: Platformda bulunmayan veya platformla kullanılması amaçlanmayan harici, gecikmeli, standart dışı veri akışları veya sinyaller üzerinden işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedge ve koordineli işlem: Tek başına veya başkalarıyla manipülatif, aldatıcı veya koordineli işlemler; ilişkili hesaplar arasında ters/karşıt pozisyonlar açmak; diğer firmalarla veya şirketimizdeki hesaplar arasında arbitraj yapmak."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Hesaplar arasında aynı strateji: Önceden yazılı iznimiz olmadan birden fazla hesapta aynı veya neredeyse aynı anda benzer işlemler açmak."
               },
               {
                 "t": "p",
-                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+                "x": "Aynı IP adresi veya cihaz: Farklı yatırımcıların hesaplarına aynı IP adresinden veya aynı cihazdan erişim sağlamak. Aynı IP veya cihazı paylaşan hesaplar ilişkili hesap sayılır."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Üçüncü taraf hesap yönetimi: Hesabınızı yönetmek veya işlem yapmak için herhangi bir üçüncü şahsı, hesap yöneticisini veya \"hesap geçirme hizmetini\" kullanmak kesinlikle yasaktır. Her şey bizzat hesap sahibi tarafından yapılmalıdır."
               },
               {
                 "t": "p",
-                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+                "x": "Sinyal servisleri: Hesabınızda işlem yapmak için ücretli veya ücretsiz sinyal sağlayıcılarından, kanallarından sinyal kullanmak. Tüm işlem kararları size ait olmalıdır."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: Diğer aracı kurumlarda veya işlem hesaplarında verilen emirlerin önüne geçerek işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Botlar ve otomatik istismar: Kuralları atlatmak veya haksız avantaj elde etmek amacıyla yüksek frekanslı yazılımlar, yapay zeka araçları, toplu emir stratejileri veya meydan okuma geçirme botları kullanmak."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Geçtikten sonra işlem tarzını değiştirme: Fonlanan hesapta, değerlendirme aşamasına kıyasla önemli ölçüde farklı stratejiler, risk profilleri veya işlem davranışları sergilemek."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Fiyat boşlukları (Gap) ve haber istismarı: Piyasa açılış kapanış boşluklarını veya bilanço açıklamalarını istismar etmek amacıyla pozisyon açmak veya tutmak."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Orantısız risk: Olağan işlemlerinizle bariz tutarsız olan, risk limitlerini aşmaya veya kuralları istismar etmeye yönelik anormal büyüklükte pozisyonlar açmak."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Platform veya yürütme şartlarını ihlal etme: İşlem platformunun, likidite sağlayıcısının veya aracı kurumun kurallarını ihlal edecek şekilde işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+                "x": "Fonlanan hesapta haber ticareti: Yüksek etkili ekonomik verilerden, merkez bankası duyurularından 5 dakika önce veya 5 dakika sonra işlem açmak veya kapatmak. Yalnızca bu pencere içinde yürütülen emirler ihlal sayılır. Haber ticareti 1. ve 2. Aşamada serbesttir."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Başkası benim hesabımda işlem yapabilir mi veya ben başkaları için işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hayır. Hesabınız yalnızca kişisel kullanımınız içindir ve üzerindeki her şey hesap sahibi olarak sizin tarafınızdan yapılmalıdır. Başkasının hesabınıza erişmesine izin veremezsiniz, sinyal hizmeti kullanamazsınız ve başkalarının hesaplarını yönetemezsiniz."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Birden fazla hesabım olabilir mi?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Önceden yazılı izin verilmedikçe her yatırımcı program kapsamında yalnızca bir hesaba sahip olabilir. Ek hesaplar askıya alınabilir veya engellenebilir. Hesaplar satılamaz, devredilemez veya paylaşılamaz."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "İşlem kopyalayıcı (trade copier) kullanabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Yalnızca kendi işlemleriniz için bir kopyalayıcı kullanabilirsiniz. Ödemelerden önce hesaplar kontrol edilir ve diğer yatırımcıların stratejilerini kopyalamak ödemenizin reddedilmesine neden olabilir."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Yasak bir uygulama tespit edilirse ne olur?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Etkilenen işlemleri sonuçlarınızdan hariç tutabilir, kâr veya ödeme hesaplamasında yok sayabilir, ödemeyi iptal edebilir ve hesabı kapatabiliriz. Koordineli durumlarda bu tedbirler tüm ilişkili hesaplara uygulanabilir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Fiyatlandırma",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Meydan okumanın ücreti ne kadar?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Hesap boyutu",
+                    "Meydan okuma fiyatı"
                   ],
                   [
                     "$5,000",
@@ -538,18 +538,18 @@
     ]
   },
   "one": {
-    "title": "One-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "1 Aşamalı Değerlendirme — SSS",
+    "subtitle": "Değerlendirme ve Fonlanan Hesap Koşulları",
     "categories": [
       {
-        "category": "Tek Adım Mücadelesi Hakkında",
+        "category": "1 Aşamalı Değerlendirme Hakkında",
         "items": [
           {
-            "q": "What is the One-Step Challenge?",
+            "q": "1 Aşamalı Değerlendirme nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+                "x": "Tek aşamalı bir değerlendirme sürecidir. Kâr hedefine tek bir aşamada ulaşın, %80 kâr paylaşımlı Fonlanan hesaba geçiş yapın."
               }
             ]
           },
@@ -558,28 +558,28 @@
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Beş boyut: $5.000, $10.000, $25.000, $50.000 ve $100.000. Tüm kurallar her boyut için aynı yüzdedir; yalnızca dolar tutarları değişir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Kâr Hedefi",
         "items": [
           {
-            "q": "What profit do I need to pass?",
+            "q": "Geçmek için ne kadar kâr elde etmem gerekir?",
             "a": [
               {
                 "t": "p",
-                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+                "x": "Değerlendirme aşaması %10 kâr gerektirir. Fonlanan hesapta herhangi bir kâr hedefi yoktur."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Profit target (10%)"
+                    "Hesap boyutu",
+                    "Kâr hedefi (%10)"
                   ],
                   [
                     "$5,000",
@@ -608,21 +608,21 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Kayıp Limitleri",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Kayıp limitleri nelerdir?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+                "x": "İki limit vardır: Günlük %3 Maksimum Günlük Kayıp ve başlangıç hesap boyutunun %6'sı kadar Maksimum Toplam Kayıp. Herhangi birinin ihlali hesabı sonlandırır."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (3%, at starting balance)",
+                    "Hesap boyutu",
+                    "Maksimum Günlük Kayıp (Başlangıç bakiyesinde %3)",
                     "Maksimum Kayıp (%6)"
                   ],
                   [
@@ -654,60 +654,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Yukarıdaki günlük kayıp tutarları bakiyeniz hesap boyutuna eşit olduğunda geçerlidir. Gerçek günlük limit, her gün 00:00 UTC'deki bakiyenizin %3'ü olarak yeniden hesaplanır; dolayısıyla kârlarınızla büyür, kayıplardan sonra küçülür."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Kayıp limitleri her aşamada geçerli midir?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+                "x": "Evet. Aynı limitler değerlendirme aşamasında ve Fonlanan hesapta geçerlidir."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Drawdown (Düşüş) Nasıl Hesaplanır",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown bakiye üzerinden mi yoksa özkaynak (equity) üzerinden mi hesaplanır?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Özkaynak (equity) üzerinden hesaplanır. Özkaynak, bakiyeniz artı açık pozisyonlarınızın anlık kâr/zararıdır; dolayısıyla açık işlemler yalnızca kapattığınızda değil, her an her iki kayıp limitine de dahil edilir."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Maksimum Günlük Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "İşlem günü 00:00 UTC'de başlar. Başlangıç bakiyenizin %3'ü günlük limitinizdir. Gün boyunca açık pozisyonlar dahil özkaynağınız bu tutarın altına düşmemelidir. Düşerse hesap başarısız olur."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "$10.000'lık bir hesap örneği: 00:00 UTC'de bakiyeniz $10.200 ise günlük limitiniz $306'dır (%3 × $10.200). Gün boyunca özkaynağınız $9.894'ün üzerinde kalmalıdır. Sonraki 00:00 UTC'de limit o anki bakiyeden yeniden belirlenir."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Maksimum Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıçtaki bakiyenizden bir kez hesaplanır ve kârda olsanız bile asla değişmez. Herhangi bir zamanda özsermayeniz bu seviyeye düşerse veya bu seviyenin altına düşerse hesap başarısız olur."
+                "x": "Maksimum Kayıp seviyesi sabittir. Başlangıç bakiyenizden bir kez hesaplanır ve kârda olsanız dahi asla değişmez. Özkaynağınız herhangi bir anda bu seviyeye veya altına düşerse hesap başarısız olur."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
+                    "Hesap boyutu",
                     "Maksimum Kayıp (%6)",
-                    "Özkaynaklar yukarıda kalmalı"
+                    "Özkaynak şu seviyenin üzerinde kalmalıdır"
                   ],
                   [
                     "$5,000",
@@ -738,104 +738,104 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+                "x": "Örnek: $10.000'lık bir hesapta özkaynağınızı $10.800'a çıkardınız. Maksimum Kayıp seviyesi $9.400'da sabit kalır; kârınızla birlikte yukarı hareket etmez."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "İki limit birlikte nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Aynı anda kontrol edilen ayrı limitlerdir. Hangisine önce ulaşılırsa hesap başarısız olur. Büyük kayıplı bir gün Maksimum Kayıp hesabına da dahil edilir, böylece günlük limiti aşmadan da Maksimum Kayba ulaşabilirsiniz."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Mevcut limitlerimi nerede görebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Kontrol paneliniz (dashboard), hesabınız için her iki limitin canlı seviyelerini gösterir."
               }
             ]
           }
         ]
       },
       {
-        "category": "İşlem Günleri ve Zaman Sınırları",
+        "category": "İşlem Günleri ve Zaman Limitleri",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Kaç işlem gününe ihtiyacım var?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+                "x": "Değerlendirme aşamasında en az 5 işlem günü. Fonlanan hesapta minimum işlem günü şartı yoktur."
               }
             ]
           },
           {
-            "q": "Mücadeleyi tamamlamak için bir zaman sınırı var mı?",
+            "q": "Meydan okumayı tamamlamak için bir zaman sınırı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Hayır. İşlem süresi sınırsızdır; hesap aktif kaldığı sürece kâr hedefine ulaşmak için dilediğiniz kadar zaman kullanabilirsiniz (aşağıya bakın)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Minimum aktivite şartı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Evet. Hesabınızda art arda 30 takvim günü boyunca hiçbir işlem yapılmazsa hesap otomatik olarak kapatılır ve ücret iade edilmez. Bu, Fonlanan hesap dahil her aşamada geçerlidir, bu nedenle her 30 günde en az bir işlem yaptığınızdan emin olun."
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "Fonlanan Hesap",
         "items": [
           {
-            "q": "Mücadeleyi geçtikten sonra ne olacak?",
+            "q": "Değerlendirmeyi geçtikten sonra ne olur?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+                "x": "Aynı boyutta bir Fonlanan hesap alırsınız. Aynı kayıp limitleri geçerlidir, minimum işlem günü yoktur ve kaldıraç değerlendirme aşamasına göre daha düşüktür (İşlem Koşullarına bakın)."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Kâr paylaşım oranı nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "%80 / %20: Fonlu hesapta elde ettiğiniz kârın %80'i sizde kalır."
+                "x": "%80 / %20: Fonlanan hesapta elde ettiğiniz kârın %80'i sizde kalır."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Ne sıklıkla kâr çekimi talep edebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Fonlanan hesapta her 5 günde bir ödeme talep edebilirsiniz."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Minimum kâr çekim tutarı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Evet. Minimum ödeme tutarı hesap boyutunun %1'idir."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
+                    "Hesap boyutu",
                     "Minimum ödeme (%1)"
                   ],
                   [
@@ -863,39 +863,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Maksimum ödeme sayısı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Evet. Bir Fonlanan hesap 5 ödeme ile sınırlıdır. Beşinci ödemeden sonra hesap kapatılır ve işlem yapmaya devam etmek için yeni bir değerlendirme satın almanız gerekir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "İşlem Koşulları",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Hangi kaldıraç oranını alırım?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Değerlendirme aşamasında maksimum kaldıraç 1:50'dir. Fonlanan hesapta maksimum kaldıraç 1:40'tır. Her enstrümanın kaldıracı platformda sembol detaylarında gösterilir."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Aşama",
+                    "Maksimum kaldıraç"
                   ],
                   [
-                    "Challenge phase",
+                    "Değerlendirme aşaması",
                     "1:50"
                   ],
                   [
-                    "Funded",
+                    "Fonlanan Hesap",
                     "1:40"
                   ]
                 ]
@@ -903,143 +903,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Pozisyonları gecelik ve hafta sonu taşıyabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+                "x": "Gecelik pozisyon tutmaya izin verilir. Hafta sonu pozisyon tutmaya izin verilmez, bu nedenle hafta sonu piyasa kapanmadan önce pozisyonlar kapatılmalıdır. Bu değerlendirme aşamasında ve Fonlanan hesapta geçerlidir."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Önemli haber bültenleri sırasında işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "Değerlendirme aşamasında evet. Fonlanan hesapta haber ticareti yasaktır: önemli haber açıklamalarından 5 dakika önce veya 5 dakika sonra işlem açamaz veya kapatamazsınız."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Yasaklanmış İşlem Uygulamaları",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Hangi işlem uygulamalarına izin verilmez?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Programı, işlem platformunu veya simüle edilmiş işlem ortamını istismar eden, kötüye kullanan veya kurallarını atlatan her türlü işlem yasaktır. Bunlar sınırlama olmaksızın şunları içerir:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Hataları veya gecikmeleri istismar etme: Fiyatlandırma hatalarını, veri yanlışlıklarını, sistem arızalarını, gecikmeli fiyat güncellemelerini veya kamuya açık olmayan bilgileri bilerek veya bilmeyerek kullanmak."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Harici veya gecikmeli veri: Platformda bulunmayan veya platformla kullanılması amaçlanmayan harici, gecikmeli, standart dışı veri akışları veya sinyaller üzerinden işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedge ve koordineli işlem: Tek başına veya başkalarıyla manipülatif, aldatıcı veya koordineli işlemler; ilişkili hesaplar arasında ters/karşıt pozisyonlar açmak; diğer firmalarla veya şirketimizdeki hesaplar arasında arbitraj yapmak."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Hesaplar arasında aynı strateji: Önceden yazılı iznimiz olmadan birden fazla hesapta aynı veya neredeyse aynı anda benzer işlemler açmak."
               },
               {
                 "t": "p",
-                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+                "x": "Aynı IP adresi veya cihaz: Farklı yatırımcıların hesaplarına aynı IP adresinden veya aynı cihazdan erişim sağlamak. Aynı IP veya cihazı paylaşan hesaplar ilişkili hesap sayılır."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Üçüncü taraf hesap yönetimi: Hesabınızı yönetmek veya işlem yapmak için herhangi bir üçüncü şahsı, hesap yöneticisini veya \"hesap geçirme hizmetini\" kullanmak kesinlikle yasaktır. Her şey bizzat hesap sahibi tarafından yapılmalıdır."
               },
               {
                 "t": "p",
-                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+                "x": "Sinyal servisleri: Hesabınızda işlem yapmak için ücretli veya ücretsiz sinyal sağlayıcılarından, kanallarından sinyal kullanmak. Tüm işlem kararları size ait olmalıdır."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: Diğer aracı kurumlarda veya işlem hesaplarında verilen emirlerin önüne geçerek işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Botlar ve otomatik istismar: Kuralları atlatmak veya haksız avantaj elde etmek amacıyla yüksek frekanslı yazılımlar, yapay zeka araçları, toplu emir stratejileri veya meydan okuma geçirme botları kullanmak."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Geçtikten sonra işlem tarzını değiştirme: Fonlanan hesapta, değerlendirme aşamasına kıyasla önemli ölçüde farklı stratejiler, risk profilleri veya işlem davranışları sergilemek."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Fiyat boşlukları (Gap) ve haber istismarı: Piyasa açılış kapanış boşluklarını veya bilanço açıklamalarını istismar etmek amacıyla pozisyon açmak veya tutmak."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Orantısız risk: Olağan işlemlerinizle bariz tutarsız olan, risk limitlerini aşmaya veya kuralları istismar etmeye yönelik anormal büyüklükte pozisyonlar açmak."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Platform veya yürütme şartlarını ihlal etme: İşlem platformunun, likidite sağlayıcısının veya aracı kurumun kurallarını ihlal edecek şekilde işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+                "x": "Fonlanan hesapta haber ticareti: Yüksek etkili haber açıklamalarından 5 dakika önce veya 5 dakika sonra işlem yapmak yasaktır. Değerlendirme aşamasında haber ticareti serbesttir."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Başkası benim hesabımda işlem yapabilir mi veya ben başkaları için işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hayır. Hesabınız yalnızca kişisel kullanımınız içindir ve üzerindeki her şey hesap sahibi olarak sizin tarafınızdan yapılmalıdır. Başkasının hesabınıza erişmesine izin veremezsiniz, sinyal hizmeti kullanamazsınız ve başkalarının hesaplarını yönetemezsiniz."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Birden fazla hesabım olabilir mi?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Önceden yazılı izin verilmedikçe her yatırımcı program kapsamında yalnızca bir hesaba sahip olabilir. Ek hesaplar askıya alınabilir veya engellenebilir. Hesaplar satılamaz, devredilemez veya paylaşılamaz."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "İşlem kopyalayıcı (trade copier) kullanabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Yalnızca kendi işlemleriniz için bir kopyalayıcı kullanabilirsiniz. Ödemelerden önce hesaplar kontrol edilir ve diğer yatırımcıların stratejilerini kopyalamak ödemenizin reddedilmesine neden olabilir."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Yasak bir uygulama tespit edilirse ne olur?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Etkilenen işlemleri sonuçlarınızdan hariç tutabilir, kâr veya ödeme hesaplamasında yok sayabilir, ödemeyi iptal edebilir ve hesabı kapatabiliriz. Koordineli durumlarda bu tedbirler tüm ilişkili hesaplara uygulanabilir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Fiyatlandırma",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Meydan okumanın ücreti ne kadar?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Hesap boyutu",
+                    "Meydan okuma fiyatı"
                   ],
                   [
                     "$5,000",
@@ -1070,27 +1070,27 @@
     ]
   },
   "instant": {
-    "title": "Instant Funding — FAQ",
-    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "title": "Anında Fonlama — SSS",
+    "subtitle": "Fonlanan Hesap Koşulları — Anında Fonlama & Instant Light",
     "categories": [
       {
-        "category": "About Instant Funding",
+        "category": "Anında Fonlama Hakkında",
         "items": [
           {
-            "q": "What is Instant Funding?",
+            "q": "Anında Fonlama nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+                "x": "Anında Fonlama, herhangi bir değerlendirme aşaması ve kâr hedefi olmadan size doğrudan Fonlanan hesap sunar. İlk günden itibaren kurallara göre işlem yapar ve kârın %80'ini alırsınız."
               }
             ]
           },
           {
-            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "q": "Instant Funding ile Instant Funding Light arasındaki fark nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+                "x": "Her ikisi de aynı kayıp limitlerine, kaldıraca ve ödeme takvimine sahiptir. Instant Funding Light daha küçük boyutlarda ve daha uygun fiyata sunulur; ayrıca ödeme talep ettiğinizde kontrol edilen %25 tutarlılık kuralı içerir."
               }
             ]
           },
@@ -1099,47 +1099,47 @@
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Instant Funding: $5.000, $10.000, $25.000, $50.000 ve $100.000. Instant Funding Light: $5.000, $10.000 ve $25.000. Tüm kurallar her boyut için aynı yüzdedir; yalnızca dolar tutarları değişir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Kâr Hedefi",
         "items": [
           {
-            "q": "Is there a profit target?",
+            "q": "Bir kâr hedefi var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+                "x": "Hayır. Instant Funding veya Instant Funding Light hesaplarında kâr hedefi yoktur."
               }
             ]
           }
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Kayıp Limitleri",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Kayıp limitleri nelerdir?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+                "x": "İki limit vardır: Günlük %3 Maksimum Günlük Kayıp ve en yüksek özkaynağınızı takip eden %5 takip eden (trailing) Maksimum Kayıp. Herhangi birinin ihlali hesabı sonlandırır."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account",
-                    "Maximum Daily Loss (3%, at starting",
-                    "Maximum Loss (5%,"
+                    "Hesap",
+                    "Maksimum Günlük Kayıp (Başlangıçta %3,",
+                    "Maksimum Kayıp (%5,"
                   ],
                   [
-                    "size",
-                    "balance)",
+                    "boyutu",
+                    "bakiye)",
                     "trailing)"
                   ],
                   [
@@ -1171,51 +1171,51 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+                "x": "Yukarıdaki günlük kayıp tutarları bakiyeniz hesap boyutuna eşit olduğunda geçerlidir. Günlük limit her gün 00:00 UTC'deki bakiyenizin %3'ü olarak yeniden hesaplanır. $50.000 ve $100.000 boyutları yalnızca standart Instant Funding paketinde mevcuttur."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Drawdown (Düşüş) Nasıl Hesaplanır",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown bakiye üzerinden mi yoksa özkaynak (equity) üzerinden mi hesaplanır?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Özkaynak (equity) üzerinden hesaplanır. Özkaynak, bakiyeniz artı açık pozisyonlarınızın anlık kâr/zararıdır; dolayısıyla açık işlemler yalnızca kapattığınızda değil, her an her iki kayıp limitine de dahil edilir."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Maksimum Günlük Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "İşlem günü 00:00 UTC'de başlar. Başlangıç bakiyenizin %3'ü günlük limitinizdir. Gün boyunca açık pozisyonlar dahil özkaynağınız bu tutarın altına düşmemelidir. Düşerse hesap başarısız olur."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "$10.000'lık bir hesap örneği: 00:00 UTC'de bakiyeniz $10.200 ise günlük limitiniz $306'dır (%3 × $10.200). Gün boyunca özkaynağınız $9.894'ün üzerinde kalmalıdır. Sonraki 00:00 UTC'de limit o anki bakiyeden yeniden belirlenir."
               }
             ]
           },
           {
-            "q": "Sondaki Maksimum Kayıp nasıl çalışır?",
+            "q": "Takip eden (trailing) Maksimum Kayıp nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+                "x": "Maksimum Kayıp sabit bir dolar tutarıdır (başlangıç hesap boyutunun %5'i), ancak seviyesi özkaynağınızı takip eder. Özkaynağınız yeni bir zirveye ulaştığında bu seviye de aynı miktarda yukarı çıkar; asla aşağı inmez. Açık pozisyonlar dahil özkaynağınız bu seviyeye düşerse hesap başarısız olur."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (5%)",
-                    "Starting level (equity must stay above)"
+                    "Hesap boyutu",
+                    "Maksimum Kayıp (%5)",
+                    "Başlangıç seviyesi (özkaynak üzerinde kalmalıdır)"
                   ],
                   [
                     "$5,000",
@@ -1246,104 +1246,104 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+                "x": "Örnek: $10.000'lık bir hesapta özkaynağınız $10.300'a ulaşırsa Maksimum Kayıp seviyesi $9.800'a ($10.300 − $500) yükselir. Açık işlemler dahil özkaynağınız $9.800'a veya altına düşerse hesap başarısız olur."
               }
             ]
           },
           {
-            "q": "Ödeme yapıldıktan sonra Maksimum Kayıp seviyesi düşer mi?",
+            "q": "Ödemeden sonra Maksimum Kayıp seviyesi aşağı iner mi?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+                "x": "Hayır. Seviye işlem sonuçlarınızın taşıdığı yerde sabit kalır ve kâr çekiminden sonra aşağı çekilmez."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "İki limit birlikte nasıl çalışır?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Aynı anda kontrol edilen ayrı limitlerdir. Hangisine önce ulaşılırsa hesap başarısız olur. Büyük kayıplı bir gün Maksimum Kayıp hesabına da dahil edilir, böylece günlük limiti aşmadan da Maksimum Kayba ulaşabilirsiniz."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Mevcut limitlerimi nerede görebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Kontrol paneliniz (dashboard), hesabınız için her iki limitin canlı seviyelerini gösterir."
               }
             ]
           }
         ]
       },
       {
-        "category": "İşlem Günleri ve Zaman Sınırları",
+        "category": "İşlem Günleri ve Zaman Limitleri",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Kaç işlem gününe ihtiyacım var?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+                "x": "Instant Funding ve Instant Funding Light hesaplarında minimum 5 işlem günü şartı vardır."
               }
             ]
           },
           {
-            "q": "Is there a time limit?",
+            "q": "Bir zaman sınırı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+                "x": "Hayır. Hesap aktif kaldığı sürece herhangi bir zaman sınırı yoktur (aşağıya bakın)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Minimum aktivite şartı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Evet. Hesabınızda art arda 30 takvim günü boyunca hiçbir işlem yapılmazsa hesap otomatik olarak kapatılır ve ücret iade edilmez. Bu, Fonlanan hesap dahil her aşamada geçerlidir, bu nedenle her 30 günde en az bir işlem yaptığınızdan emin olun."
               }
             ]
           }
         ]
       },
       {
-        "category": "Ödemeler",
+        "category": "Kâr Çekimleri / Ödemeler",
         "items": [
           {
-            "q": "What is the profit split?",
+            "q": "Kâr paylaşım oranı nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make."
+                "x": "%80 / %20: Elde ettiğiniz kârın %80'i sizde kalır."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Ne sıklıkla kâr çekimi talep edebilirim?",
             "a": [
               {
                 "t": "p",
-                "x": "You can request a payout every 14 days."
+                "x": "Her 14 günde bir ödeme talep edebilirsiniz."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Minimum kâr çekim tutarı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Evet. Minimum ödeme tutarı hesap boyutunun %1'idir."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
+                    "Hesap boyutu",
                     "Minimum ödeme (%1)"
                   ],
                   [
@@ -1371,192 +1371,192 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Maksimum ödeme sayısı var mı?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+                "x": "Evet. Bir Anında Fonlama hesabı 5 ödeme ile sınırlıdır. Beşinci ödemeden sonra hesap kapatılır ve işlem yapmaya devam etmek için yeni bir hesap satın almanız gerekir."
               }
             ]
           },
           {
-            "q": "What is the consistency rule on Instant Funding Light?",
+            "q": "Instant Funding Light paketindeki tutarlılık kuralı nedir?",
             "a": [
               {
                 "t": "p",
-                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+                "x": "Hiçbir işlem günü toplam kârınızın %25'inden fazlasını oluşturamaz. Bu kural ödeme talep ettiğinizde kontrol edilir ve yalnızca Instant Funding Light için geçerlidir; standart Instant Funding'de tutarlılık kuralı yoktur."
               },
               {
                 "t": "p",
-                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+                "x": "Tutarlılık % = (en yüksek tek gün kârı ÷ toplam kâr) × 100."
               },
               {
                 "t": "p",
-                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+                "x": "Örnek: En iyi gününüz $600 kâr getirdi ve toplam kârınız $2.000. Tutarlılık %30'dur ($600 ÷ $2.000); bu %25'in üzerinde olduğundan henüz ödeme talep edemezsiniz. Toplam kârınız $2.400'a ulaştığında en iyi gün tam olarak %25 olur ve ödeme talep edebilirsiniz."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "İşlem Koşulları",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Hangi kaldıraç oranını alırım?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Maksimum kaldıraç 1:40'tır. Her enstrümanın kaldıracı platformda sembol detaylarında gösterilir."
               }
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Pozisyonları gecelik ve hafta sonu taşıyabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+                "x": "Gecelik pozisyon tutmaya izin verilir. Hafta sonu pozisyon tutmaya izin verilmez, bu nedenle pozisyonlar hafta sonu piyasa kapanmadan önce kapatılmalıdır."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Önemli haber bültenleri sırasında işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+                "x": "Hayır. Anında Fonlama hesapları Fonlanan hesap statüsündedir, dolayısıyla haber ticareti yasaktır: önemli ekonomik veri açıklamalarından, merkez bankası duyurularından,"
               },
               {
                 "t": "p",
-                "x": "bank announcements, geopolitical events or other high-impact events."
+                "x": "jeopolitik veya diğer yüksek etkili olaylardan 5 dakika önce veya 5 dakika sonra işlem açamaz veya kapatamazsınız."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Yasaklanmış İşlem Uygulamaları",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Hangi işlem uygulamalarına izin verilmez?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Programı, işlem platformunu veya simüle edilmiş işlem ortamını istismar eden, kötüye kullanan veya kurallarını atlatan her türlü işlem yasaktır. Bunlar sınırlama olmaksızın şunları içerir:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Hataları veya gecikmeleri istismar etme: Fiyatlandırma hatalarını, veri yanlışlıklarını, sistem arızalarını, gecikmeli fiyat güncellemelerini veya kamuya açık olmayan bilgileri bilerek veya bilmeyerek kullanmak."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Harici veya gecikmeli veri: Platformda bulunmayan veya platformla kullanılması amaçlanmayan harici, gecikmeli, standart dışı veri akışları veya sinyaller üzerinden işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedge ve koordineli işlem: Tek başına veya başkalarıyla manipülatif, aldatıcı veya koordineli işlemler; ilişkili hesaplar arasında ters/karşıt pozisyonlar açmak; diğer firmalarla veya şirketimizdeki hesaplar arasında arbitraj yapmak."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Hesaplar arasında aynı strateji: Önceden yazılı iznimiz olmadan birden fazla hesapta aynı veya neredeyse aynı anda benzer işlemler açmak."
               },
               {
                 "t": "p",
-                "x": "Aynı IP adresi veya cihaz: Aynı IP adresinden veya aynı cihazdan farklı yatırımcıların hesaplarına işlem yapmak veya bunlara erişmek. Bir IP adresini veya cihazı paylaşan hesaplar, ilgili hesaplar olarak kabul edilir ve bunlar için koordineli ticaret ve birden fazla hesapla ilgili kurallar uygulanır."
+                "x": "Aynı IP adresi veya cihaz: Farklı yatırımcıların hesaplarına aynı IP adresinden veya aynı cihazdan erişim sağlamak. Aynı IP veya cihazı paylaşan hesaplar ilişkili hesap sayılır."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Üçüncü taraf hesap yönetimi: Hesabınızı yönetmek veya işlem yapmak için herhangi bir üçüncü şahsı, hesap yöneticisini veya \"hesap geçirme hizmetini\" kullanmak kesinlikle yasaktır. Her şey bizzat hesap sahibi tarafından yapılmalıdır."
               },
               {
                 "t": "p",
-                "x": "Sinyal hizmetleri: Hesabınızda işlem yapmak için ücretsiz veya ücretli herhangi bir sinyal hizmetinden, sinyal grubundan, kanaldan veya sağlayıcıdan alım satım sinyallerini kullanmak. Tüm ticaret kararları size ait olmalıdır."
+                "x": "Sinyal servisleri: Hesabınızda işlem yapmak için ücretli veya ücretsiz sinyal sağlayıcılarından, kanallarından sinyal kullanmak. Tüm işlem kararları size ait olmalıdır."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: Diğer aracı kurumlarda veya işlem hesaplarında verilen emirlerin önüne geçerek işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Botlar ve otomatik istismar: Kuralları atlatmak veya haksız avantaj elde etmek amacıyla yüksek frekanslı yazılımlar, yapay zeka araçları, toplu emir stratejileri veya meydan okuma geçirme botları kullanmak."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Geçtikten sonra işlem tarzını değiştirme: Fonlanan hesapta, değerlendirme aşamasına kıyasla önemli ölçüde farklı stratejiler, risk profilleri veya işlem davranışları sergilemek."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Fiyat boşlukları (Gap) ve haber istismarı: Piyasa açılış kapanış boşluklarını veya bilanço açıklamalarını istismar etmek amacıyla pozisyon açmak veya tutmak."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+                "x": "Orantısız risk: Olağan işlemlerinizle bariz tutarsız olan, risk limitlerini aşmaya veya kuralları istismar etmeye yönelik"
               },
               {
                 "t": "p",
-                "x": "sınırlar. Piyasa standardında risk yönetimi her zaman beklenir."
+                "x": "anormal pozisyon büyüklükleri açmak. Her zaman piyasa standartlarında risk yönetimi beklenir."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Platform veya yürütme şartlarını ihlal etme: İşlem platformunun, likidite sağlayıcısının veya aracı kurumun kurallarını ihlal edecek şekilde işlem yapmak."
               },
               {
                 "t": "p",
-                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+                "x": "Haber ticareti: Yüksek etkili ekonomik verilerden, merkez bankası duyurularından 5 dakika önce veya sonra işlem açmak veya yürütmek. Yalnızca bu pencere içinde yürütülen emirler sayılır; pencereden önce açılıp sonra kapatılan bir pozisyon ihlal teşkil etmez."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Başkası benim hesabımda işlem yapabilir mi veya ben başkaları için işlem yapabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hayır. Hesabınız yalnızca kişisel kullanımınız içindir ve üzerindeki her şey hesap sahibi olarak sizin tarafınızdan yapılmalıdır. Başkasının hesabınıza erişmesine izin veremezsiniz, sinyal hizmeti kullanamazsınız ve başkalarının hesaplarını yönetemezsiniz."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Birden fazla hesabım olabilir mi?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Önceden yazılı izin verilmedikçe her yatırımcı program kapsamında yalnızca bir hesaba sahip olabilir. Ek hesaplar askıya alınabilir veya engellenebilir. Hesaplar satılamaz, devredilemez veya paylaşılamaz."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "İşlem kopyalayıcı (trade copier) kullanabilir miyim?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Yalnızca kendi işlemleriniz için bir kopyalayıcı kullanabilirsiniz. Ödemelerden önce hesaplar kontrol edilir ve diğer yatırımcıların stratejilerini kopyalamak ödemenizin reddedilmesine neden olabilir."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Yasak bir uygulama tespit edilirse ne olur?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Etkilenen işlemleri sonuçlarınızdan hariç tutabilir, kâr veya ödeme hesaplamasında yok sayabilir, ödemeyi iptal edebilir ve hesabı kapatabiliriz. Koordineli durumlarda bu tedbirler tüm ilişkili hesaplara uygulanabilir."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Fiyatlandırma",
         "items": [
           {
-            "q": "How much does it cost?",
+            "q": "Ücreti ne kadar?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Instant Funding",
-                    "Instant Funding Light"
+                    "Hesap boyutu",
+                    "Anında Fonlama",
+                    "Anında Fonlama Light"
                   ],
                   [
                     "$5,000",

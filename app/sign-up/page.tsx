@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { useTheme } from '@/components/eracex/ThemeContext';
-import { BrandLogo } from '@/components/eracex/BrandLogo';
+import { AuthShell, AuthField, AuthGoogle, authInputCls, authPrimaryCls, useAuthCopy } from '@/components/eracex/AuthShell';
 import { Eye, EyeOff, ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 interface SignUpDictionary {
@@ -412,11 +412,28 @@ const DICTIONARY: Record<string, SignUpDictionary> = {
   },
 };
 
+const COUNTRY_CODES = 'AE AR AT AU BD BE BG BR CA CH CL CN CO CY CZ DE DK DZ EC EE EG ES FI FR GB GE GH GR HK HR HU ID IE IL IN IQ IT JO JP KE KR KW KZ LB LK LT LU LV MA MX MY NG NL NO NP NZ OM PE PH PK PL PT QA RO RS RU SA SE SG SI SK TH TN TR TW TZ UA UG US UY UZ VN ZA ZM ZW'.split(' ');
+
 export default function SignUpPage() {
   const router = useRouter();
   const { currentLang } = useLanguage();
   const { theme } = useTheme();
   const d = DICTIONARY[currentLang] || DICTIONARY.en;
+  const a = useAuthCopy();
+  const [countries, setCountries] = useState<[string, string][]>([]);
+  React.useEffect(() => {
+    const loc = currentLang === 'fil' ? 'tl' : currentLang;
+    let names: Intl.DisplayNames | null = null;
+    try { names = new Intl.DisplayNames([loc], { type: 'region' }); } catch { names = null; }
+    setCountries(COUNTRY_CODES.map((c) => [c, names?.of(c) || c] as [string, string]).sort((x, y) => x[1].localeCompare(y[1], loc)));
+  }, [currentLang]);
+  const [honorific, setHonorific] = useState('');
+  const [dob, setDob] = useState('');
+  const [country, setCountry] = useState('');
+  const [phone, setPhone] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [referral, setReferral] = useState('');
+  const [agreeName, setAgreeName] = useState(false);
 
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -424,14 +441,14 @@ export default function SignUpPage() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const [agreeTerms, setAgreeTerms] = useState(true);
-  const [agreeMarketing, setAgreeMarketing] = useState(true);
+  const [agreeTerms, setAgreeTerms] = useState(false);
+  const [agreeMarketing, setAgreeMarketing] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent, viaGoogle = false) => {
     e.preventDefault();
-    if (!firstName || !lastName || !email || !password || !agreeTerms) return;
+    if (!viaGoogle && (!firstName || !lastName || !email || !password || password !== confirm || !country || !dob || !agreeTerms || !agreeName)) return;
 
     setSubmitting(true);
     setTimeout(() => {
@@ -444,189 +461,108 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] dark:bg-black text-neutral-900 dark:text-white flex flex-col justify-between items-center p-4 relative font-sans transition-colors duration-200 selection:bg-[#ffc501] selection:text-black">
-      {/* TOP HEADER: ONLY THE BACK BUTTON AS REQUESTED */}
-      <header className="w-full max-w-5xl mx-auto py-4 flex items-center justify-start z-10">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 text-xs font-mono font-bold text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-all shadow-xs"
-        >
-          <ArrowLeft className="w-3.5 h-3.5 text-[#c68a00] dark:text-[#f6bf4a]" />
-          <span>{d.backToHome}</span>
-        </Link>
-      </header>
-
-      {/* CENTER SIGN-UP CARD - CREATE ACCOUNT FORM */}
-      <main className="w-full flex items-center justify-center my-auto py-6 z-10">
-        <div className="w-full max-w-[430px] rounded-[28px] bg-white dark:bg-[#0c0d12] border border-neutral-200 dark:border-white/[0.08] p-7 sm:p-9 shadow-xl dark:shadow-2xl relative transition-colors duration-200">
-          
-          {/* LOGO: OFFICIAL ERACEX PROP TRADING */}
-          <div className="flex flex-col items-center justify-center mb-2">
-            <Link href="/" className="transition-transform hover:scale-105 duration-200">
-              <BrandLogo size="lg" showText={true} forceWhiteText={false} />
-            </Link>
-
-            {/* BOLD UPPERCASE TITLE */}
-            <h1 className="text-2xl sm:text-3xl font-black uppercase tracking-wider text-neutral-900 dark:text-white text-center mt-6 mb-6 font-sans">
-              {d.createAccount}
-            </h1>
+    <AuthShell title={a.createTitle}>
+      {success ? (
+        <div className="py-8 text-center space-y-4">
+          <div className="w-14 h-14 rounded-full border-2 border-neutral-900 dark:border-white flex items-center justify-center mx-auto">
+            <CheckCircle2 className="w-7 h-7" />
           </div>
-
-          {success ? (
-            <div className="py-8 text-center space-y-4 animate-in fade-in zoom-in-95 duration-200">
-              <div className="w-14 h-14 rounded-full bg-[#f6bf4a]/20 border-2 border-[#f6bf4a] text-[#f6bf4a] dark:text-[#f6bf4a] flex items-center justify-center mx-auto shadow-lg">
-                <CheckCircle2 className="w-7 h-7" />
-              </div>
-              <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
-                {d.successTitle}
-              </h2>
-              <p className="text-xs text-neutral-600 dark:text-neutral-400 font-mono">
-                {d.successDesc}
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-3.5">
-              
-              {/* ROW 1: FIRST NAME & LAST NAME (2 COLUMNS) */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="relative">
-                  <input
-                    required
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="w-full h-12 px-4 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                  />
-                  {!firstName && (
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                      {d.firstName} <span className="text-[#f6bf4a] font-bold">*</span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="relative">
-                  <input
-                    required
-                    type="text"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    className="w-full h-12 px-4 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                  />
-                  {!lastName && (
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                      {d.lastName} <span className="text-[#f6bf4a] font-bold">*</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* ROW 2: EMAIL FULL WIDTH */}
-              <div className="relative">
-                <input
-                  required
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full h-12 px-4 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                />
-                {!email && (
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                    {d.email} <span className="text-[#f6bf4a] font-bold">*</span>
-                  </div>
-                )}
-              </div>
-
-              {/* ROW 3: PASSWORD FULL WIDTH WITH EYE TOGGLE */}
-              <div className="relative">
-                <input
-                  required
-                  type={showPassword ? 'text' : 'password'}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full h-12 px-4 pr-11 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                />
-                {!password && (
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                    {d.password} <span className="text-[#f6bf4a] font-bold">*</span>
-                  </div>
-                )}
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 dark:hover:text-white transition-colors p-1"
-                >
-                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                </button>
-              </div>
-
-              {/* ROW 4: TWO CHECKBOXES */}
-              <div className="space-y-2.5 pt-1 text-xs select-none">
-                {/* CHECKBOX 1: TERMS & CONDITIONS */}
-                <label className="flex items-start gap-2.5 cursor-pointer text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors leading-snug">
-                  <input
-                    required
-                    type="checkbox"
-                    checked={agreeTerms}
-                    onChange={(e) => setAgreeTerms(e.target.checked)}
-                    className="w-4 h-4 mt-0.5 rounded bg-neutral-100 dark:bg-[#171717] border-neutral-300 dark:border-white/20 text-[#c68a00] dark:text-[#f6bf4a] focus:ring-0 focus:ring-offset-0 cursor-pointer accent-[#ffc501] shrink-0"
-                  />
-                  <span>
-                    {d.agreeTermsPrefix}{' '}
-                    <Link href="/terms" className="text-[#c68a00] dark:text-[#f6bf4a] font-bold hover:underline">
-                      {d.termsAndConditions}
-                    </Link>
-                  </span>
-                </label>
-
-                {/* CHECKBOX 2: MARKETING & UPDATES */}
-                <label className="flex items-start gap-2.5 cursor-pointer text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors leading-snug">
-                  <input
-                    type="checkbox"
-                    checked={agreeMarketing}
-                    onChange={(e) => setAgreeMarketing(e.target.checked)}
-                    className="w-4 h-4 mt-0.5 rounded bg-neutral-100 dark:bg-[#171717] border-neutral-300 dark:border-white/20 text-[#c68a00] dark:text-[#f6bf4a] focus:ring-0 focus:ring-offset-0 cursor-pointer accent-[#ffc501] shrink-0"
-                  />
-                  <span>{d.marketingConsent}</span>
-                </label>
-              </div>
-
-              {/* SIGN UP TODAY BUTTON */}
-              <button
-                type="submit"
-                disabled={submitting}
-                className="w-full h-12 rounded-xl text-sm font-extrabold tracking-wide text-black bg-[#ffc501] hover:bg-[#e6b200] active:scale-[0.99] transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75 mt-4"
-              >
-                {submitting ? (
-                  <>
-                    <div className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                    <span>{d.submittingText}</span>
-                  </>
-                ) : (
-                  <span>{d.signUpBtn}</span>
-                )}
-              </button>
-
-              {/* FOOTER LINK: ALREADY HAVE AN ACCOUNT? SIGN IN */}
-              <div className="pt-3 text-center text-xs font-medium text-neutral-600 dark:text-white">
-                <span>{d.alreadyHaveAccount} </span>
-                <Link
-                  href="/login"
-                  className="text-[#c68a00] dark:text-[#f6bf4a] hover:underline font-bold transition-colors ml-1"
-                >
-                  {d.signIn}
-                </Link>
-              </div>
-
-            </form>
-          )}
-
+          <h2 className="text-xl font-bold">{d.successTitle}</h2>
+          <p className="text-xs text-neutral-600 dark:text-neutral-400">{d.successDesc}</p>
         </div>
-      </main>
+      ) : (
+        <>
+          <AuthGoogle onClick={() => handleSubmit({ preventDefault() {} } as React.FormEvent, true)} />
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-2 gap-3">
+              <AuthField label={d.firstName} required>
+                <input required type="text" autoComplete="given-name" value={firstName} onChange={(e) => setFirstName(e.target.value)} className={authInputCls} />
+              </AuthField>
+              <AuthField label={d.lastName} required>
+                <input required type="text" autoComplete="family-name" value={lastName} onChange={(e) => setLastName(e.target.value)} className={authInputCls} />
+              </AuthField>
+            </div>
 
-      {/* FOOTER */}
-      <footer className="w-full text-center py-3 text-[11px] font-mono text-neutral-500 dark:text-neutral-500 z-10">
-        <span>© 2026 ERACEX Institutional Proprietary Trading · Client Portal</span>
-      </footer>
-    </div>
+            <div className="grid grid-cols-2 gap-3">
+              <AuthField label={a.title}>
+                <select value={honorific} onChange={(e) => setHonorific(e.target.value)} className={authInputCls}>
+                  <option value="">{a.selectTitle}</option>
+                  <option value="mr">{a.mr}</option>
+                  <option value="ms">{a.ms}</option>
+                </select>
+              </AuthField>
+              <AuthField label={a.dob} required>
+                <input required type="date" value={dob} max={new Date().toISOString().slice(0, 10)} onChange={(e) => setDob(e.target.value)} className={authInputCls} />
+              </AuthField>
+            </div>
+
+            <AuthField label={a.country} required>
+              <select required value={country} onChange={(e) => setCountry(e.target.value)} className={authInputCls}>
+                <option value="">{a.selectCountry}</option>
+                {countries.map(([code, name]) => <option key={code} value={code}>{name}</option>)}
+              </select>
+            </AuthField>
+
+            <AuthField label={a.emailAddress} required>
+              <input required type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className={authInputCls} />
+            </AuthField>
+
+            <AuthField label={a.phone}>
+              <input type="tel" autoComplete="tel" inputMode="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+__ ___ ___ ____" className={authInputCls} />
+            </AuthField>
+
+            <div className="grid grid-cols-2 gap-3">
+              <AuthField label={d.password} required>
+                <div className="relative">
+                  <input required minLength={8} type={showPassword ? 'text' : 'password'} autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} className={authInputCls + ' pr-10'} />
+                  <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-neutral-900 dark:hover:text-white p-1 cursor-pointer" aria-label={d.password}>
+                    {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
+                </div>
+              </AuthField>
+              <AuthField label={a.confirmPassword} required>
+                <input required type={showPassword ? 'text' : 'password'} autoComplete="new-password" value={confirm} onChange={(e) => setConfirm(e.target.value)} className={authInputCls} />
+              </AuthField>
+            </div>
+            {confirm && confirm !== password && <p role="alert" className="-mt-2 text-xs font-semibold text-red-500">{a.mismatch}</p>}
+
+            <AuthField label={a.referral} optional={a.optional}>
+              <input type="text" value={referral} onChange={(e) => setReferral(e.target.value)} className={authInputCls} />
+            </AuthField>
+
+            <div className="space-y-2.5 pt-1 text-xs leading-snug text-neutral-700 dark:text-neutral-300 select-none">
+              <label className="flex items-start gap-2.5 cursor-pointer">
+                <input required type="checkbox" checked={agreeTerms} onChange={(e) => setAgreeTerms(e.target.checked)} className="w-4 h-4 mt-0.5 rounded accent-[#ffc501] cursor-pointer" />
+                <span>{a.cert18} <Link href="/terms" className="font-bold text-neutral-900 dark:text-white hover:underline">{d.termsAndConditions}</Link></span>
+              </label>
+              <label className="flex items-start gap-2.5 cursor-pointer">
+                <input required type="checkbox" checked={agreeName} onChange={(e) => setAgreeName(e.target.checked)} className="w-4 h-4 mt-0.5 rounded accent-[#ffc501] cursor-pointer" />
+                <span>{a.certName}</span>
+              </label>
+              <label className="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" checked={agreeMarketing} onChange={(e) => setAgreeMarketing(e.target.checked)} className="w-4 h-4 mt-0.5 rounded accent-[#ffc501] cursor-pointer" />
+                <span>{a.marketing}</span>
+              </label>
+            </div>
+
+            <button type="submit" disabled={submitting} className={authPrimaryCls}>
+              {submitting ? (
+                <>
+                  <div className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                  <span>{d.submittingText}</span>
+                </>
+              ) : (
+                <span>{d.signUpBtn}</span>
+              )}
+            </button>
+
+            <p className="pt-1 text-center text-xs text-neutral-600 dark:text-neutral-300">
+              {d.alreadyHaveAccount}{' '}
+              <Link href="/login" className="font-bold text-neutral-900 dark:text-white hover:underline">{d.signIn}</Link>
+            </p>
+          </form>
+        </>
+      )}
+    </AuthShell>
   );
 }

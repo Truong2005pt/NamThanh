@@ -1,48 +1,48 @@
 {
   "two": {
-    "title": "Two-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "दो-चरणीय मूल्यांकन (Two-Step) — अक्सर पूछे जाने वाले प्रश्न",
+    "subtitle": "मूल्यांकन और फंडेड खाता शर्तें",
     "categories": [
       {
-        "category": "About the Two-Step Challenge",
+        "category": "दो-चरणीय मूल्यांकन के बारे में",
         "items": [
           {
-            "q": "What is the Two-Step Challenge?",
+            "q": "दो-चरणीय मूल्यांकन (Two-Step Challenge) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+                "x": "यह दो चरणों का मूल्यांकन है। चरण 1 और चरण 2 पास करें, और आप 80% लाभ विभाजन (Profit Split) के साथ फंडेड खाते में आगे बढ़ेंगे।"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "मैं कौन से खाता आकार चुन सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "पाँच आकार: $5,000, $10,000, $25,000, $50,000 और $100,000। सभी नियम प्रत्येक आकार के लिए समान प्रतिशत हैं; केवल डॉलर की राशि बदलती है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Targets",
+        "category": "लाभ लक्ष्य (Profit Targets)",
         "items": [
           {
-            "q": "What profit do I need to pass each phase?",
+            "q": "प्रत्येक चरण को पार करने के लिए मुझे कितने लाभ की आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Phase 1 requires 10% profit. Phase 2 requires 5% profit. The Funded account has no profit target."
+                "x": "चरण 1 में 10% लाभ आवश्यक है। चरण 2 में 5% लाभ आवश्यक है। फंडेड खाते का कोई लाभ लक्ष्य नहीं होता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Phase 1 target (10%)",
-                    "Phase 2 target (5%)"
+                    "खाता आकार",
+                    "चरण 1 लक्ष्य (10%)",
+                    "चरण 2 लक्ष्य (5%)"
                   ],
                   [
                     "$5,000",
@@ -76,22 +76,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "हानि सीमाएं (Loss Limits)",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "हानि सीमाएं क्या हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+                "x": "दो सीमाएं हैं: प्रत्येक दिन की शुरुआत में आपके बैलेंस का 5% अधिकतम दैनिक हानि, और प्रारंभिक खाता आकार का 10% अधिकतम हानि। किसी भी नियम का उल्लंघन करने पर खाता समाप्त हो जाता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (5%, at starting balance)",
-                    "Maximum Loss (10%)"
+                    "खाता आकार",
+                    "अधिकतम दैनिक हानि (प्रारंभिक बैलेंस पर 5%)",
+                    "अधिकतम हानि (10%)"
                   ],
                   [
                     "$5,000",
@@ -122,60 +122,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "उपरोक्त दैनिक हानि राशि तब लागू होती है जब आपका बैलेंस खाते के आकार के बराबर होता है। वास्तविक दैनिक सीमा की पुनर्गणना प्रत्येक दिन 00:00 UTC पर आपके बैलेंस के 5% के रूप में की जाती है।"
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "क्या हानि सीमाएं प्रत्येक चरण में लागू होती हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+                "x": "हाँ। समान सीमाएं चरण 1, चरण 2 और फंडेड खाते पर लागू होती हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "ड्रॉडাউন (Drawdown) की गणना कैसे की जाती है",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "क्या ड्रॉडাউন की गणना बैलेंस पर की जाती है या इक्विटी पर?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "इक्विटी पर। इक्विटी आपका बैलेंस और आपकी खुली पोजीशनों का फ्लोटिंग लाभ या हानि है, इसलिए खुले ट्रेड हर क्षण दोनों हानि सीमाओं में गिने जाते हैं।"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "अधिकतम दैनिक हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "ट्रेडिंग दिन 00:00 UTC पर शुरू होता है। उस समय आपका बैलेंस दिन का शुरुआती बिंदु होता है। आपकी दैनिक सीमा उस शुरुआती बैलेंस का 5% है। दिन के दौरान आपकी इक्विटी इस सीमा से नीचे नहीं गिरनी चाहिए। यदि ऐसा होता है, तो खाता विफल हो जाता है।"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "$10,000 के खाते पर उदाहरण: 00:00 UTC पर आपका बैलेंस $10,200 है, इसलिए आपकी दैनिक सीमा $510 (5% × $10,200) है। उस दिन आपकी इक्विटी $9,690 ($10,200 − $510) से ऊपर रहनी चाहिए। अगले 00:00 UTC पर शुरुआती बिंदु फिर से सेट किया जाता है।"
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "अधिकतम हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "अधिकतम हानि स्तर निश्चित होता है। इसकी गणना आपके प्रारंभिक बैलेंस से एक बार की जाती है और यह कभी नहीं बदलता है। यदि आपकी इक्विटी किसी भी समय इस स्तर तक या उससे नीचे गिरती है, तो खाता विफल हो जाता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (10%)",
-                    "Equity must stay above"
+                    "खाता आकार",
+                    "अधिकतम हानि (10%)",
+                    "इक्विटी इससे ऊपर रहनी चाहिए"
                   ],
                   [
                     "$5,000",
@@ -206,105 +206,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+                "x": "उदाहरण: $10,000 के खाते पर आप इक्विटी बढ़ाकर $10,800 करते हैं। अधिकतम हानि स्तर $9,000 पर ही रहता है; यह आपके लाभ के साथ ऊपर नहीं जाता।"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "दोनों सीमाएं एक साथ कैसे काम करती हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "वे एक ही समय में जांची जाने वाली अलग-अलग सीमाएं हैं। जो भी सीमा पहले पहुंचती है, खाता विफल हो जाता है।"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "मैं अपनी वर्तमान सीमाएं कहां देख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "आपका डैशबोर्ड आपके खाते के लिए दोनों सीमाओं के लाइव स्तर दिखाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "ट्रेडिंग दिन और समय सीमाएं",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "मुझे कितने ट्रेडिंग दिनों की आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+                "x": "चरण 1 में कम से कम 5 ट्रेडिंग दिन और चरण 2 में कम से कम 5 ट्रेडिंग दिन। फंडेड खाते में न्यूनतम ट्रेडिंग दिनों की कोई आवश्यकता नहीं है।"
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "क्या मूल्यांकन पूरा करने की कोई समय सीमा है?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "नहीं। ट्रेडिंग अवधि असीमित है, इसलिए जब तक खाता सक्रिय रहता है, आप लाभ लक्ष्य तक पहुंचने के लिए जितना चाहें उतना समय ले सकते हैं।"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "क्या कोई न्यूनतम गतिविधि आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "हाँ। यदि आपके खाते पर लगातार 30 कैलेंडर दिनों तक कोई ट्रेड नहीं होता है, तो खाता स्वचालित रूप से बंद हो जाता है और शुल्क वापस नहीं किया जाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "फंडेड खाता (Funded Account)",
         "items": [
           {
-            "q": "What happens after I pass both phases?",
+            "q": "दोनों चरणों को पार करने के बाद क्या होता है?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+                "x": "आपको समान आकार का एक फंडेड खाता प्राप्त होता है। समान हानि सीमाएं बनी रहती हैं, कोई न्यूनतम ट्रेडिंग दिन नहीं होते, और लीवरेज मूल्यांकन चरणों की तुलना में कम होता है।"
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "लाभ विभाजन (Profit Split) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: फंडेड खाते पर आप जो लाभ कमाते हैं उसका 80% अपने पास रखते हैं।"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "मैं कितनी बार पेआउट (निकासी) का अनुरोध कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "फंडेड खाते पर आप हर 5 दिनों में पेआउट का अनुरोध कर सकते हैं।"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "क्या न्यूनतम पेआउट राशि है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "हाँ। न्यूनतम पेआउट खाता आकार का 1% है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "खाता आकार",
+                    "न्यूनतम पेआउट (1%)"
                   ],
                   [
                     "$5,000",
@@ -331,39 +331,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "क्या पेआउट की अधिकतम संख्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "हाँ। एक फंडेड खाता 5 पेआउट तक सीमित है। पांचवें पेआउट के बाद खाता बंद हो जाता है, और ट्रेडिंग जारी रखने के लिए आपको एक नया मूल्यांकन खरीदना होगा।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "ट्रेडिंग शर्तें",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "मुझे क्या लीवरेज मिलता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "चरण 1 और चरण 2 में अधिकतम लीवरेज 1:100 है। फंडेड खाते पर अधिकतम लीवरेज 1:40 है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "चरण",
+                    "अधिकतम लीवरेज"
                   ],
                   [
-                    "Phase 1 and Phase 2",
+                    "चरण 1 और चरण 2",
                     "1:100"
                   ],
                   [
-                    "Funded",
+                    "फंडेड",
                     "1:40"
                   ]
                 ]
@@ -371,143 +371,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "क्या मैं ट्रेड को रात भर और सप्ताहांत (वीकेंड) में खुला रख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+                "x": "रात भर (Overnight) होल्ड करने की अनुमति है। सप्ताहांत (Weekend) में होल्ड करने की अनुमति नहीं है, इसलिए सप्ताहांत के लिए बाजार बंद होने से पहले पोजीशन बंद होनी चाहिए।"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "क्या मैं प्रमुख समाचार रिलीज के दौरान ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "चरण 1 और 2 में, हाँ। फंडेड खाते पर समाचार ट्रेडिंग की अनुमति नहीं है: आप प्रमुख आर्थिक समाचार विज्ञप्तियों के 5 मिनट पहले या 5 मिनट बाद ट्रेड नहीं कर सकते।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "प्रतिबंधित ट्रेडिंग पद्धतियां",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "किन ट्रेडिंग पद्धतियों की अनुमति नहीं है?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "कोई भी ट्रेडिंग जो प्रोग्राम, ट्रेडिंग प्लेटफॉर्म या सिम्युलेटेड ट्रेडिंग वातावरण का दुरुपयोग करती है या नियमों से बचने का प्रयास करती है, प्रतिबंधित है। इसमें शामिल हैं:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "त्रुटियों या देरी का दुरुपयोग: मूल्य निर्धारण त्रुटियों, डेटा अशुद्धियों, सिस्टम की खराबी, विलंबता या गैर-सार्वजनिक जानकारी का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "बाहरी या विलंबित डेटा: बाहरी या गैर-मानक डेटा फीड या तीसरे पक्ष के संकेतों का उपयोग करके ट्रेडिंग करना जो प्लेटफॉर्म पर उपलब्ध नहीं हैं।"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "हेजिंग और समन्वित ट्रेडिंग: संबंधित खातों के बीच एक ही समय में विपरीत या हेज्ड पोजीशन खोलना; और आर्बिट्रेज के किसी भी रूप का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "खातों में समान रणनीति: बिना पूर्व लिखित अनुमति के कई खातों में एक ही समय पर समान ट्रेड लगाना।"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "समान आईपी पता या उपकरण: एक ही आईपी पते या एक ही उपकरण से विभिन्न ट्रेडरों के खातों तक पहुंच प्राप्त करना।"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "तृतीय-पक्ष खाता प्रबंधन: अपने खाते को प्रबंधित करने के लिए खाता प्रबंधक या \"पासिंग सेवा\" का उपयोग करना। सब कुछ खाताधारक द्वारा व्यक्तिगत रूप से किया जाना चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "सिग्नल सेवाएं: अपने खाते पर ट्रेड लगाने के लिए सिग्नल समूहों से संकेतों का उपयोग करना। सभी ट्रेडिंग निर्णय आपके अपने होने चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "फ्रंट-रनिंग: अन्य ब्रोकरों या स्थानों पर लगाए गए ट्रेडों से पहले लाभ उठाने की कोशिश करना।"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "बॉट्स और स्वचालित दुरुपयोग: नियमों से बचने या अनुचित लाभ प्राप्त करने के लिए एचएफटी सॉफ्टवेयर, एआई टूल्स या चैलेंज पास कराने वाले बॉट्स का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "पास होने के बाद ट्रेडिंग बदलना: मूल्यांकन की तुलना में फंडेड खाते पर बहुत भिन्न रणनीतियों या जोखिम प्रोफाइल का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "गैप और इवेंट का दुरुपयोग: मार्केट क्लोज-टू-ओपन गैप या आय विज्ञप्तियों का फायदा उठाने के लिए पोजीशन होल्ड करना।"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "असंगत जोखिम: असामान्य रूप से बड़े पोजीशन आकार खोलना जो आपके सामान्य ट्रेडिंग व्यवहार से मेल नहीं खाते हों।"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "प्लेटफ़ॉर्म शर्तों का उल्लंघन: ट्रेडिंग प्लेटफ़ॉर्म या लिक्विडिटी प्रदाता की शर्तों का उल्लंघन करके ट्रेड करना।"
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+                "x": "फंडेड खाते पर समाचार ट्रेडिंग: प्रमुख समाचारों से 5 मिनट पहले या 5 मिनट बाद ट्रेड खोलना या निष्पादित करना प्रतिबंधित है।"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "क्या कोई अन्य व्यक्ति मेरे खाते पर ट्रेड कर सकता है, या क्या मैं दूसरों के लिए ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "नहीं। आपका खाता केवल आपके व्यक्तिगत उपयोग के लिए है, और इस पर सब कुछ आपके द्वारा किया जाना चाहिए। आप किसी अन्य को अपने खाते तक पहुंचने या ट्रेड करने की अनुमति नहीं दे सकते।"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "क्या मेरे पास एक से अधिक खाते हो सकते हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "प्रत्येक ट्रेडर प्रोग्राम के तहत केवल एक खाता रख सकता है जब तक कि अग्रिम लिखित अनुमति न दी जाए।"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "क्या मैं ट्रेड कॉपियर का उपयोग कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "आप अपने स्वयं के ट्रेडों के लिए ट्रेड कॉपियर का उपयोग कर सकते हैं। अन्य ट्रेडरों की नकल करने पर पेआउट अस्वीकार किया जा सकता है।"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "यदि कोई प्रतिबंधित पद्धति पाई जाती है तो क्या होता है?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "हम प्रभावित ट्रेडों को बाहर कर सकते हैं, पेआउट रद्द कर सकते हैं, और खाते को तुरंत समाप्त कर सकते हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "मूल्य और शुल्क",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "मूल्यांकन की लागत कितनी है?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "खाता आकार",
+                    "मूल्यांकन शुल्क"
                   ],
                   [
                     "$5,000",
@@ -538,48 +538,48 @@
     ]
   },
   "one": {
-    "title": "One-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "एक-चरणीय मूल्यांकन (One-Step) — अक्सर पूछे जाने वाले प्रश्न",
+    "subtitle": "मूल्यांकन और फंडेड खाता शर्तें",
     "categories": [
       {
-        "category": "About the One-Step Challenge",
+        "category": "एक-चरणीय मूल्यांकन के बारे में",
         "items": [
           {
-            "q": "What is the One-Step Challenge?",
+            "q": "एक-चरणीय मूल्यांकन (One-Step Challenge) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+                "x": "यह एक एकल-चरणीय मूल्यांकन है। एक चरण में लाभ लक्ष्य तक पहुँचें, और आप 80% लाभ विभाजन के साथ फंडेड खाते में आगे बढ़ेंगे।"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "मैं कौन से खाता आकार चुन सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "पाँच आकार: $5,000, $10,000, $25,000, $50,000 और $100,000। सभी नियम प्रत्येक आकार के लिए समान प्रतिशत हैं; केवल डॉलर की राशि बदलती है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "लाभ लक्ष्य",
         "items": [
           {
-            "q": "What profit do I need to pass?",
+            "q": "पास होने के लिए मुझे कितने लाभ की आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+                "x": "मूल्यांकन चरण में 10% लाभ आवश्यक है। फंडेड खाते का कोई लाभ लक्ष्य नहीं होता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Profit target (10%)"
+                    "खाता आकार",
+                    "लाभ लक्ष्य (10%)"
                   ],
                   [
                     "$5,000",
@@ -608,22 +608,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "हानि सीमाएं (Loss Limits)",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "हानि सीमाएं क्या हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+                "x": "दो सीमाएं हैं: बैलेंस पर 3% अधिकतम दैनिक हानि, और प्रारंभिक आकार का 6% अधिकतम कुल हानि।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (3%, at starting balance)",
-                    "Maximum Loss (6%)"
+                    "खाता आकार",
+                    "अधिकतम दैनिक हानि (प्रारंभिक बैलेंस पर 3%)",
+                    "अधिकतम हानि (6%)"
                   ],
                   [
                     "$5,000",
@@ -654,60 +654,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "दैनिक सीमा की पुनर्गणना प्रत्येक दिन 00:00 UTC पर आपके बैलेंस के 3% के रूप में की जाती है।"
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "क्या हानि सीमाएं प्रत्येक चरण में लागू होती हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+                "x": "हाँ। समान सीमाएं मूल्यांकन चरण और फंडेड खाते पर लागू होती हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "ड्रॉडাউন (Drawdown) की गणना कैसे की जाती है",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "क्या ड्रॉडাউন की गणना बैलेंस पर की जाती है या इक्विटी पर?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "इक्विटी पर। इक्विटी आपका बैलेंस और आपकी खुली पोजीशनों का फ्लोटिंग लाभ या हानि है, इसलिए खुले ट्रेड हर क्षण दोनों हानि सीमाओं में गिने जाते हैं।"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "अधिकतम दैनिक हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "ट्रेडिंग दिन 00:00 UTC पर शुरू होता है। आपकी दैनिक सीमा शुरुआती बैलेंस का 3% है।"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "उदाहरण: $10,000 के खाते पर 00:00 UTC पर बैलेंस $10,200 है, इसलिए दैनिक सीमा $306 है। इक्विटी $9,894 से ऊपर रहनी चाहिए।"
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "अधिकतम हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "अधिकतम हानि स्तर निश्चित होता है। इसकी गणना आपके प्रारंभिक बैलेंस से एक बार की जाती है और यह कभी नहीं बदलता है। यदि आपकी इक्विटी किसी भी समय इस स्तर तक या उससे नीचे गिरती है, तो खाता विफल हो जाता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (6%)",
-                    "Equity must stay above"
+                    "खाता आकार",
+                    "अधिकतम हानि (6%)",
+                    "इक्विटी इससे ऊपर रहनी चाहिए"
                   ],
                   [
                     "$5,000",
@@ -738,105 +738,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+                "x": "उदाहरण: $10,000 के खाते पर इक्विटी $10,800 होने पर भी अधिकतम हानि स्तर $9,400 पर ही रहता है।"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "दोनों सीमाएं एक साथ कैसे काम करती हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "वे एक ही समय में जांची जाने वाली अलग-अलग सीमाएं हैं। जो भी सीमा पहले पहुंचती है, खाता विफल हो जाता है।"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "मैं अपनी वर्तमान सीमाएं कहां देख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "आपका डैशबोर्ड आपके खाते के लिए दोनों सीमाओं के लाइव स्तर दिखाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "ट्रेडिंग दिन और समय सीमाएं",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "मुझे कितने ट्रेडिंग दिनों की आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+                "x": "मूल्यांकन चरण में कम से कम 5 ट्रेडिंग दिन। फंडेड खाते में कोई न्यूनतम दिन नहीं हैं।"
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "क्या मूल्यांकन पूरा करने की कोई समय सीमा है?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "नहीं। ट्रेडिंग अवधि असीमित है, इसलिए जब तक खाता सक्रिय रहता है, आप लाभ लक्ष्य तक पहुंचने के लिए जितना चाहें उतना समय ले सकते हैं।"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "क्या कोई न्यूनतम गतिविधि आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "हाँ। यदि आपके खाते पर लगातार 30 कैलेंडर दिनों तक कोई ट्रेड नहीं होता है, तो खाता स्वचालित रूप से बंद हो जाता है और शुल्क वापस नहीं किया जाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "फंडेड खाता (Funded Account)",
         "items": [
           {
-            "q": "What happens after I pass the challenge?",
+            "q": "मूल्यांकन पास करने के बाद क्या होता है?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+                "x": "आपको उसी आकार का एक फंडेड खाता प्राप्त होता है। समान सीमाएं बनी रहती हैं और लीवरेज समायोजित किया जाता है।"
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "लाभ विभाजन (Profit Split) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: फंडेड खाते पर आप जो लाभ कमाते हैं उसका 80% अपने पास रखते हैं।"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "मैं कितनी बार पेआउट (निकासी) का अनुरोध कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "फंडेड खाते पर आप हर 5 दिनों में पेआउट का अनुरोध कर सकते हैं।"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "क्या न्यूनतम पेआउट राशि है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "हाँ। न्यूनतम पेआउट खाता आकार का 1% है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "खाता आकार",
+                    "न्यूनतम पेआउट (1%)"
                   ],
                   [
                     "$5,000",
@@ -863,39 +863,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "क्या पेआउट की अधिकतम संख्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "हाँ। एक फंडेड खाता 5 पेआउट तक सीमित है। पांचवें पेआउट के बाद खाता बंद हो जाता है, और ट्रेडिंग जारी रखने के लिए आपको एक नया मूल्यांकन खरीदना होगा।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "ट्रेडिंग शर्तें",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "मुझे क्या लीवरेज मिलता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "मूल्यांकन चरण में अधिकतम लीवरेज 1:50 है और फंडेड खाते पर 1:40 है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "चरण",
+                    "अधिकतम लीवरेज"
                   ],
                   [
-                    "Challenge phase",
+                    "मूल्यांकन चरण",
                     "1:50"
                   ],
                   [
-                    "Funded",
+                    "फंडेड",
                     "1:40"
                   ]
                 ]
@@ -903,143 +903,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "क्या मैं ट्रेड को रात भर और सप्ताहांत (वीकेंड) में खुला रख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+                "x": "रात भर होल्ड करने की अनुमति है। सप्ताहांत में होल्ड करने की अनुमति नहीं है।"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "क्या मैं प्रमुख समाचार रिलीज के दौरान ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "मूल्यांकन चरण में समाचार ट्रेडिंग की अनुमति है। फंडेड खाते पर समाचारों से 5 मिनट पहले या बाद में ट्रेडिंग प्रतिबंधित है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "प्रतिबंधित ट्रेडिंग पद्धतियां",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "किन ट्रेडिंग पद्धतियों की अनुमति नहीं है?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "कोई भी ट्रेडिंग जो प्रोग्राम, ट्रेडिंग प्लेटफॉर्म या सिम्युलेटेड ट्रेडिंग वातावरण का दुरुपयोग करती है या नियमों से बचने का प्रयास करती है, प्रतिबंधित है। इसमें शामिल हैं:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "त्रुटियों या देरी का दुरुपयोग: मूल्य निर्धारण त्रुटियों, डेटा अशुद्धियों, सिस्टम की खराबी, विलंबता या गैर-सार्वजनिक जानकारी का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "बाहरी या विलंबित डेटा: बाहरी या गैर-मानक डेटा फीड या तीसरे पक्ष के संकेतों का उपयोग करके ट्रेडिंग करना जो प्लेटफॉर्म पर उपलब्ध नहीं हैं।"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "हेजिंग और समन्वित ट्रेडिंग: संबंधित खातों के बीच एक ही समय में विपरीत या हेज्ड पोजीशन खोलना; और आर्बिट्रेज के किसी भी रूप का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "खातों में समान रणनीति: बिना पूर्व लिखित अनुमति के कई खातों में एक ही समय पर समान ट्रेड लगाना।"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "समान आईपी पता या उपकरण: एक ही आईपी पते या एक ही उपकरण से विभिन्न ट्रेडरों के खातों तक पहुंच प्राप्त करना।"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "तृतीय-पक्ष खाता प्रबंधन: अपने खाते को प्रबंधित करने के लिए खाता प्रबंधक या \"पासिंग सेवा\" का उपयोग करना। सब कुछ खाताधारक द्वारा व्यक्तिगत रूप से किया जाना चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "सिग्नल सेवाएं: अपने खाते पर ट्रेड लगाने के लिए सिग्नल समूहों से संकेतों का उपयोग करना। सभी ट्रेडिंग निर्णय आपके अपने होने चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "फ्रंट-रनिंग: अन्य ब्रोकरों या स्थानों पर लगाए गए ट्रेडों से पहले लाभ उठाने की कोशिश करना।"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "बॉट्स और स्वचालित दुरुपयोग: नियमों से बचने या अनुचित लाभ प्राप्त करने के लिए एचएफटी सॉफ्टवेयर, एआई टूल्स या चैलेंज पास कराने वाले बॉट्स का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "पास होने के बाद ट्रेडिंग बदलना: मूल्यांकन की तुलना में फंडेड खाते पर बहुत भिन्न रणनीतियों या जोखिम प्रोफाइल का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "गैप और इवेंट का दुरुपयोग: मार्केट क्लोज-टू-ओपन गैप या आय विज्ञप्तियों का फायदा उठाने के लिए पोजीशन होल्ड करना।"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "असंगत जोखिम: असामान्य रूप से बड़े पोजीशन आकार खोलना जो आपके सामान्य ट्रेडिंग व्यवहार से मेल नहीं खाते हों।"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "प्लेटफ़ॉर्म शर्तों का उल्लंघन: ट्रेडिंग प्लेटफ़ॉर्म या लिक्विडिटी प्रदाता की शर्तों का उल्लंघन करके ट्रेड करना।"
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+                "x": "फंडेड खाते पर समाचार ट्रेडिंग: समाचारों के 5 मिनट के भीतर कोई नया ट्रेड नहीं खोला जा सकता।"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "क्या कोई अन्य व्यक्ति मेरे खाते पर ट्रेड कर सकता है, या क्या मैं दूसरों के लिए ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "नहीं। आपका खाता केवल आपके व्यक्तिगत उपयोग के लिए है, और इस पर सब कुछ आपके द्वारा किया जाना चाहिए। आप किसी अन्य को अपने खाते तक पहुंचने या ट्रेड करने की अनुमति नहीं दे सकते।"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "क्या मेरे पास एक से अधिक खाते हो सकते हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "प्रत्येक ट्रेडर प्रोग्राम के तहत केवल एक खाता रख सकता है जब तक कि अग्रिम लिखित अनुमति न दी जाए।"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "क्या मैं ट्रेड कॉपियर का उपयोग कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "आप अपने स्वयं के ट्रेडों के लिए ट्रेड कॉपियर का उपयोग कर सकते हैं। अन्य ट्रेडरों की नकल करने पर पेआउट अस्वीकार किया जा सकता है।"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "यदि कोई प्रतिबंधित पद्धति पाई जाती है तो क्या होता है?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "हम प्रभावित ट्रेडों को बाहर कर सकते हैं, पेआउट रद्द कर सकते हैं, और खाते को तुरंत समाप्त कर सकते हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "मूल्य और शुल्क",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "मूल्यांकन की लागत कितनी है?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "खाता आकार",
+                    "मूल्यांकन शुल्क"
                   ],
                   [
                     "$5,000",
@@ -1070,77 +1070,77 @@
     ]
   },
   "instant": {
-    "title": "Instant Funding — FAQ",
-    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "title": "तत्काल फंडिंग (Instant Funding) — अक्सर पूछे जाने वाले प्रश्न",
+    "subtitle": "फंडेड खाता शर्तें — तत्काल फंडिंग और इंस्टेंट लाइट",
     "categories": [
       {
-        "category": "About Instant Funding",
+        "category": "तत्काल फंडिंग (Instant Funding) के बारे में",
         "items": [
           {
-            "q": "What is Instant Funding?",
+            "q": "तत्काल फंडिंग (Instant Funding) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+                "x": "तत्काल फंडिंग आपको बिना किसी मूल्यांकन चरण और बिना किसी लाभ लक्ष्य के तुरंत एक फंडेड खाता प्रदान करती है। पहले दिन से ट्रेड करें और 80% लाभ अपने पास रखें।"
               }
             ]
           },
           {
-            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "q": "Instant Funding और Instant Funding Light में क्या अंतर है?",
             "a": [
               {
                 "t": "p",
-                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+                "x": "दोनों में समान हानि सीमाएं, लीवरेज और पेआउट शेड्यूल हैं। Instant Funding Light कम कीमत पर उपलब्ध है और इसमें पेआउट के समय 25% स्थिरता नियम जोड़ा जाता है।"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "मैं कौन से खाता आकार चुन सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 और $100,000। Instant Funding Light: $5,000, $10,000 और $25,000।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "लाभ लक्ष्य",
         "items": [
           {
-            "q": "Is there a profit target?",
+            "q": "क्या कोई लाभ लक्ष्य है?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+                "x": "नहीं। Instant Funding या Instant Funding Light खातों पर कोई लाभ लक्ष्य नहीं है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "हानि सीमाएं (Loss Limits)",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "हानि सीमाएं क्या हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+                "x": "दो सीमाएं हैं: 3% की अधिकतम दैनिक हानि, और 5% की ट्रेलिंग अधिकतम हानि जो आपकी उच्चतम इक्विटी का अनुसरण करती है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account",
-                    "Maximum Daily Loss (3%, at starting",
-                    "Maximum Loss (5%,"
+                    "खाता",
+                    "अधिकतम दैनिक हानि (3%, शुरुआत में",
+                    "अधिकतम हानि (5%,"
                   ],
                   [
-                    "size",
-                    "balance)",
-                    "trailing)"
+                    "आकार",
+                    "बैलेंस)",
+                    "ट्रेलिंग)"
                   ],
                   [
                     "$5,000",
@@ -1171,51 +1171,51 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+                "x": "दैनिक सीमा की गणना 00:00 UTC पर बैलेंस के 3% के रूप में की जाती है। $50,000 और $100,000 के आकार केवल मानक Instant Funding पर उपलब्ध हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "ड्रॉडাউন (Drawdown) की गणना कैसे की जाती है",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "क्या ड्रॉडাউন की गणना बैलेंस पर की जाती है या इक्विटी पर?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "इक्विटी पर। इक्विटी आपका बैलेंस और आपकी खुली पोजीशनों का फ्लोटिंग लाभ या हानि है, इसलिए खुले ट्रेड हर क्षण दोनों हानि सीमाओं में गिने जाते हैं।"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "अधिकतम दैनिक हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "ट्रेडिंग दिन 00:00 UTC पर शुरू होता है। आपकी दैनिक सीमा शुरुआती बैलेंस का 3% है।"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "उदाहरण: $10,000 के खाते पर 00:00 UTC पर बैलेंस $10,200 है, इसलिए दैनिक सीमा $306 है। इक्विटी $9,894 से ऊपर रहनी चाहिए।"
               }
             ]
           },
           {
-            "q": "How does the trailing Maximum Loss work?",
+            "q": "ट्रेलिंग अधिकतम हानि कैसे काम करती है?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+                "x": "अधिकतम हानि आपकी इक्विटी के उच्चतम स्तर के साथ ऊपर बढ़ती है, लेकिन कभी नीचे नहीं आती। यदि इक्विटी इस स्तर तक गिरती है, तो खाता विफल हो जाता है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (5%)",
-                    "Starting level (equity must stay above)"
+                    "खाता आकार",
+                    "अधिकतम हानि (5%)",
+                    "प्रारंभिक स्तर (इक्विटी इससे ऊपर रहनी चाहिए)"
                   ],
                   [
                     "$5,000",
@@ -1246,105 +1246,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+                "x": "उदाहरण: $10,000 के खाते पर यदि इक्विटी $10,300 तक पहुंचती है, तो अधिकतम हानि स्तर $9,800 ($10,300 − $500) पर आ जाता है।"
               }
             ]
           },
           {
-            "q": "Does the Maximum Loss level go down after a payout?",
+            "q": "क्या पेआउट के बाद अधिकतम हानि का स्तर नीचे जाता है?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+                "x": "नहीं। यह स्तर वहीं बना रहता है जहां आपके ट्रेडिंग परिणामों ने इसे पहुंचाया था।"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "दोनों सीमाएं एक साथ कैसे काम करती हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "वे एक ही समय में जांची जाने वाली अलग-अलग सीमाएं हैं। जो भी सीमा पहले पहुंचती है, खाता विफल हो जाता है।"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "मैं अपनी वर्तमान सीमाएं कहां देख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "आपका डैशबोर्ड आपके खाते के लिए दोनों सीमाओं के लाइव स्तर दिखाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "ट्रेडिंग दिन और समय सीमाएं",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "मुझे कितने ट्रेडिंग दिनों की आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+                "x": "खातों में न्यूनतम 5 ट्रेडिंग दिन आवश्यक हैं।"
               }
             ]
           },
           {
-            "q": "Is there a time limit?",
+            "q": "क्या कोई समय सीमा है?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+                "x": "नहीं। जब तक खाता सक्रिय रहता है तब तक कोई समय सीमा नहीं है।"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "क्या कोई न्यूनतम गतिविधि आवश्यकता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "हाँ। यदि आपके खाते पर लगातार 30 कैलेंडर दिनों तक कोई ट्रेड नहीं होता है, तो खाता स्वचालित रूप से बंद हो जाता है और शुल्क वापस नहीं किया जाता है।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Payouts",
+        "category": "पेआउट / निकासी (Payouts)",
         "items": [
           {
-            "q": "What is the profit split?",
+            "q": "लाभ विभाजन (Profit Split) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make."
+                "x": "80% / 20%: आप अपने द्वारा कमाए गए लाभ का 80% अपने पास रखते हैं।"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "मैं कितनी बार पेआउट (निकासी) का अनुरोध कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "You can request a payout every 14 days."
+                "x": "आप हर 14 दिनों में पेआउट का अनुरोध कर सकते हैं।"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "क्या न्यूनतम पेआउट राशि है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "हाँ। न्यूनतम पेआउट खाता आकार का 1% है।"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "खाता आकार",
+                    "न्यूनतम पेआउट (1%)"
                   ],
                   [
                     "$5,000",
@@ -1371,192 +1371,192 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "क्या पेआउट की अधिकतम संख्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+                "x": "हाँ। खाता 5 पेआउट तक सीमित है। पांचवें पेआउट के बाद खाता बंद हो जाता है।"
               }
             ]
           },
           {
-            "q": "What is the consistency rule on Instant Funding Light?",
+            "q": "Instant Funding Light पर स्थिरता नियम (Consistency Rule) क्या है?",
             "a": [
               {
                 "t": "p",
-                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+                "x": "कोई भी एकल ट्रेडिंग दिन आपके कुल लाभ के 25% से अधिक नहीं हो सकता है। यह नियम केवल Instant Funding Light पर लागू होता है।"
               },
               {
                 "t": "p",
-                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+                "x": "स्थिरता % = (उच्चतम एकल-दिवसीय लाभ ÷ कुल लाभ) × 100"
               },
               {
                 "t": "p",
-                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+                "x": "उदाहरण: आपके सबसे अच्छे दिन में $600 का लाभ हुआ और आपका कुल लाभ $2,000 है। स्थिरता 30% है, जो 25% से ऊपर है, इसलिए आप अभी पेआउट का अनुरोध नहीं कर सकते। कुल लाभ $2,400 तक पहुंचने पर आप अनुरोध कर सकते हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "ट्रेडिंग शर्तें",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "मुझे क्या लीवरेज मिलता है?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "अधिकतम लीवरेज 1:40 है।"
               }
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "क्या मैं ट्रेड को रात भर और सप्ताहांत (वीकेंड) में खुला रख सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+                "x": "रात भर पोजीशन रखने की अनुमति है। सप्ताहांत में पोजीशन रखने की अनुमति नहीं है।"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "क्या मैं प्रमुख समाचार रिलीज के दौरान ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+                "x": "नहीं। ये फंडेड खाते हैं, इसलिए समाचार ट्रेडिंग की अनुमति नहीं है: आप प्रमुख आर्थिक समाचारों, केंद्रीय बैंक की घोषणाओं"
               },
               {
                 "t": "p",
-                "x": "bank announcements, geopolitical events or other high-impact events."
+                "x": "या अन्य उच्च-प्रभाव वाली घटनाओं के 5 मिनट पहले या बाद में ट्रेड नहीं कर सकते।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "प्रतिबंधित ट्रेडिंग पद्धतियां",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "किन ट्रेडिंग पद्धतियों की अनुमति नहीं है?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "कोई भी ट्रेडिंग जो प्रोग्राम, ट्रेडिंग प्लेटफॉर्म या सिम्युलेटेड ट्रेडिंग वातावरण का दुरुपयोग करती है या नियमों से बचने का प्रयास करती है, प्रतिबंधित है। इसमें शामिल हैं:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "त्रुटियों या देरी का दुरुपयोग: मूल्य निर्धारण त्रुटियों, डेटा अशुद्धियों, सिस्टम की खराबी, विलंबता या गैर-सार्वजनिक जानकारी का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "बाहरी या विलंबित डेटा: बाहरी या गैर-मानक डेटा फीड या तीसरे पक्ष के संकेतों का उपयोग करके ट्रेडिंग करना जो प्लेटफॉर्म पर उपलब्ध नहीं हैं।"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "हेजिंग और समन्वित ट्रेडिंग: संबंधित खातों के बीच एक ही समय में विपरीत या हेज्ड पोजीशन खोलना; और आर्बिट्रेज के किसी भी रूप का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "खातों में समान रणनीति: बिना पूर्व लिखित अनुमति के कई खातों में एक ही समय पर समान ट्रेड लगाना।"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "समान आईपी पता या उपकरण: एक ही आईपी पते या एक ही उपकरण से विभिन्न ट्रेडरों के खातों तक पहुंच प्राप्त करना।"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "तृतीय-पक्ष खाता प्रबंधन: अपने खाते को प्रबंधित करने के लिए खाता प्रबंधक या \"पासिंग सेवा\" का उपयोग करना। सब कुछ खाताधारक द्वारा व्यक्तिगत रूप से किया जाना चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "सिग्नल सेवाएं: अपने खाते पर ट्रेड लगाने के लिए सिग्नल समूहों से संकेतों का उपयोग करना। सभी ट्रेडिंग निर्णय आपके अपने होने चाहिए।"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "फ्रंट-रनिंग: अन्य ब्रोकरों या स्थानों पर लगाए गए ट्रेडों से पहले लाभ उठाने की कोशिश करना।"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "बॉट्स और स्वचालित दुरुपयोग: नियमों से बचने या अनुचित लाभ प्राप्त करने के लिए एचएफटी सॉफ्टवेयर, एआई टूल्स या चैलेंज पास कराने वाले बॉट्स का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "पास होने के बाद ट्रेडिंग बदलना: मूल्यांकन की तुलना में फंडेड खाते पर बहुत भिन्न रणनीतियों या जोखिम प्रोफाइल का उपयोग करना।"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "गैप और इवेंट का दुरुपयोग: मार्केट क्लोज-टू-ओपन गैप या आय विज्ञप्तियों का फायदा उठाने के लिए पोजीशन होल्ड करना।"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+                "x": "असंगत जोखिम: असामान्य रूप से बड़े पोजीशन आकार खोलना जो आपके सामान्य ट्रेडिंग व्यवहार से मेल नहीं खाते हों,"
               },
               {
                 "t": "p",
-                "x": "limits. Market-standard risk management is expected at all times."
+                "x": "ताकि प्रोग्राम की जोखिम सीमाओं से बचा जा सके।"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "प्लेटफ़ॉर्म शर्तों का उल्लंघन: ट्रेडिंग प्लेटफ़ॉर्म या लिक्विडिटी प्रदाता की शर्तों का उल्लंघन करके ट्रेड करना।"
               },
               {
                 "t": "p",
-                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+                "x": "समाचार ट्रेडिंग: समाचार जारी होने के 5 मिनट के भीतर कोई नया ट्रेड निष्पादित करना प्रतिबंधित है।"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "क्या कोई अन्य व्यक्ति मेरे खाते पर ट्रेड कर सकता है, या क्या मैं दूसरों के लिए ट्रेड कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "नहीं। आपका खाता केवल आपके व्यक्तिगत उपयोग के लिए है, और इस पर सब कुछ आपके द्वारा किया जाना चाहिए। आप किसी अन्य को अपने खाते तक पहुंचने या ट्रेड करने की अनुमति नहीं दे सकते।"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "क्या मेरे पास एक से अधिक खाते हो सकते हैं?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "प्रत्येक ट्रेडर प्रोग्राम के तहत केवल एक खाता रख सकता है जब तक कि अग्रिम लिखित अनुमति न दी जाए।"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "क्या मैं ट्रेड कॉपियर का उपयोग कर सकता हूँ?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "आप अपने स्वयं के ट्रेडों के लिए ट्रेड कॉपियर का उपयोग कर सकते हैं। अन्य ट्रेडरों की नकल करने पर पेआउट अस्वीकार किया जा सकता है।"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "यदि कोई प्रतिबंधित पद्धति पाई जाती है तो क्या होता है?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "हम प्रभावित ट्रेडों को बाहर कर सकते हैं, पेआउट रद्द कर सकते हैं, और खाते को तुरंत समाप्त कर सकते हैं।"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "मूल्य और शुल्क",
         "items": [
           {
-            "q": "How much does it cost?",
+            "q": "इसकी लागत कितनी है?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Instant Funding",
-                    "Instant Funding Light"
+                    "खाता आकार",
+                    "तत्काल फंडिंग (Instant Funding)",
+                    "तत्काल फंडिंग लाइट (Instant Funding Light)"
                   ],
                   [
                     "$5,000",

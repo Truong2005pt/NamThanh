@@ -1,0 +1,140 @@
+/* Program pages: account-size picker, phase table, reward cycle and order bar.
+   Layout follows the clean "white card" comparison style; colours stay on the ERACEX palette:
+   light = white + gold, dark = black + gold. */
+
+.ref-scope {
+  --pdu-gold: #f3c633;
+  --pdu-gold-deep: #c99a1d;
+  --pdu-card: #101014;
+  --pdu-side: #0b0b0f;
+  --pdu-line: #26262d;
+  --pdu-text: #f4f3ec;
+  --pdu-muted: #9a9ba6;
+  --pdu-pill: #17171c;
+  --pdu-shadow: 0 24px 70px -30px #000c;
+  --pdu-funded: linear-gradient(165deg, #f4d35e 0%, #e0b02b 52%, #a87a0e 100%);
+  --pdu-funded-text: #1f1602;
+  --pdu-funded-line: #00000026;
+}
+:root[data-theme='light'] .ref-scope {
+  --pdu-gold: #e8b923;
+  --pdu-gold-deep: #b8860b;
+  --pdu-card: #ffffff;
+  --pdu-side: #faf8f1;
+  --pdu-line: #e6e2d3;
+  --pdu-text: #1b1a14;
+  --pdu-muted: #7a7766;
+  --pdu-pill: #f1eee2;
+  --pdu-shadow: 0 24px 60px -28px #8a6a1030;
+  --pdu-funded: linear-gradient(165deg, #f2cf5c 0%, #d9a826 52%, #b98410 100%);
+  --pdu-funded-text: #2a1e03;
+  --pdu-funded-line: #ffffff66;
+}
+
+/* ---- size picker: one rounded track, active size filled with gold ---- */
+.ref-scope .pd-config .pd-size-picker {
+  display: flex; width: fit-content; max-width: 100%; margin: 0 auto 26px;
+  gap: 2px; padding: 5px; border-radius: 999px; overflow-x: auto;
+  background: var(--pdu-pill); border: 1px solid var(--pdu-line);
+}
+.ref-scope .pd-config .pd-size-picker button {
+  border: 0; background: transparent; color: var(--pdu-muted); box-shadow: none;
+  padding: 10px 20px; border-radius: 999px; font-size: 13px; font-weight: 600; white-space: nowrap;
+  transition: background .2s, color .2s;
+}
+.ref-scope .pd-config .pd-size-picker button:hover { color: var(--pdu-text); }
+.ref-scope .pd-config .pd-size-picker button[aria-pressed='true'] {
+  background: linear-gradient(135deg, #f6d35a, var(--pdu-gold)); color: #231a02;
+  box-shadow: 0 6px 18px -8px #c99a1daa;
+}
+
+/* ---- phase table card ---- */
+.ref-scope .pd-config .pd-table-scroll {
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 20px;
+  box-shadow: var(--pdu-shadow); overflow: hidden;
+}
+.ref-scope .pd-config .pd-phase-table { border-collapse: separate; border-spacing: 0; width: 100%; background: transparent; }
+.ref-scope .pd-config .pd-phase-table th,
+.ref-scope .pd-config .pd-phase-table td { border: 0; color: var(--pdu-text); background: transparent; }
+/* label column */
+.ref-scope .pd-config .pd-phase-table thead th:first-child,
+.ref-scope .pd-config .pd-phase-table tbody th { background: var(--pdu-side); border-right: 1px solid var(--pdu-line); text-align: left; }
+.ref-scope .pd-config .pd-phase-table tbody th .metric-trigger { color: var(--pdu-muted); font-weight: 500; }
+.ref-scope .pd-config .pd-phase-table tbody th .metric-trigger i { opacity: .55; }
+.ref-scope .pd-config .pd-phase-table tbody td { font-size: 14px; font-weight: 600; text-align: center; height: 48px; }
+.ref-scope .pd-config .pd-phase-table tbody tr + tr th,
+.ref-scope .pd-config .pd-phase-table tbody tr + tr td:not(.pd-funded) { border-top: 1px solid color-mix(in srgb, var(--pdu-line) 55%, transparent); }
+
+/* stage header */
+.ref-scope .pd-config .pd-stage-groups th { font-size: 12px; font-weight: 600; letter-spacing: .3px; color: var(--pdu-muted); text-align: center; padding-top: 18px; background: transparent; }
+.ref-scope .pd-config .pd-stage-groups th:first-child { background: var(--pdu-side); }
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th { text-align: center; vertical-align: top; padding: 10px 12px 18px; }
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th:first-child { text-align: left; padding-left: 22px; }
+.ref-scope .pd-config .pd-phase-table thead th strong { display: block; font-size: 15px; font-weight: 700; margin-top: 12px; }
+.ref-scope .pd-config .pd-phase-table thead th small { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--pdu-muted); }
+.ref-scope .pd-config .pd-phase-table thead th:first-child strong { font-size: 24px; margin-top: 4px; letter-spacing: -.5px; }
+
+/* numbered circles joined by a line (phase 1 --- phase 2) */
+.ref-scope .pd-config .pd-phase-table .pd-evaluation { position: relative; }
+.ref-scope .pd-config .pd-phase-table .pd-phase-number {
+  display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto; border-radius: 50%;
+  background: var(--pdu-pill); border: 1px solid var(--pdu-line); color: var(--pdu-text);
+  font-size: 14px; font-weight: 700; position: relative; z-index: 1;
+}
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(2)::after,
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(3)::before {
+  content: ''; position: absolute; top: 34px; height: 2px; background: var(--pdu-line); z-index: 0;
+}
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(2)::after { left: calc(50% + 24px); right: 0; }
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(3)::before { right: calc(50% + 24px); left: 0; }
+
+/* funded column: the accent of the card */
+.ref-scope .pd-config .pd-phase-table .pd-funded { background: var(--pdu-funded); color: var(--pdu-funded-text); border-left: 0; }
+.ref-scope .pd-config .pd-phase-table td.pd-funded { font-weight: 700; border-top: 1px solid var(--pdu-funded-line); color: var(--pdu-funded-text); }
+.ref-scope .pd-config .pd-phase-table th.pd-funded strong,
+.ref-scope .pd-config .pd-phase-table th.pd-funded small { color: var(--pdu-funded-text); }
+.ref-scope .pd-config .pd-phase-table th.pd-funded small { opacity: .75; }
+.ref-scope .pd-config .pd-phase-table th.pd-funded .pd-phase-number {
+  background: #1f1602; color: #f6d35a; border: 0;
+  box-shadow: 0 8px 18px -8px #0007;
+}
+.ref-scope .pd-config .pd-stage-groups th:last-child { background: var(--pdu-funded); color: var(--pdu-funded-text); }
+
+/* ---- reward cycle chip row ---- */
+.ref-scope .pd-config .pd-cycle-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 22px 0 6px; flex-wrap: wrap; }
+.ref-scope .pd-config .pd-cycle-row > span { font-size: 15px; font-weight: 500; color: var(--pdu-text); }
+.ref-scope .pd-config .pd-cycle-row > button {
+  border: 0; border-radius: 999px; padding: 7px 14px; font-size: 12px; font-weight: 700;
+  background: linear-gradient(135deg, #f6d35a, var(--pdu-gold)); color: #231a02;
+}
+.ref-scope .pd-config .pd-cycle-row > small { font-size: 12px; color: var(--pdu-muted); background: var(--pdu-pill); border: 1px solid var(--pdu-line); padding: 6px 12px; border-radius: 999px; }
+
+/* ---- order bar ---- */
+.ref-scope .pd-config .pd-order-bar { border-top: 1px solid var(--pdu-line); margin-top: 18px; padding-top: 26px; align-items: center; }
+.ref-scope .pd-config .pd-order-bar span { color: var(--pdu-muted); font-size: 13px; }
+.ref-scope .pd-config .pd-order-bar strong { color: var(--pdu-text); font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -1.4px; font-weight: 700; }
+.ref-scope .pd-config .pd-order-fee strong { color: var(--pdu-gold-deep); }
+:root:not([data-theme='light']) .ref-scope .pd-config .pd-order-fee strong { color: var(--pdu-gold); }
+.ref-scope .pd-config .pd-order-bar .button {
+  background: linear-gradient(135deg, #f6d35a, var(--pdu-gold)); color: #231a02; border-radius: 12px;
+  padding: 16px 28px; font-weight: 800; box-shadow: 0 14px 30px -14px #c99a1daa;
+}
+.ref-scope .pd-config .pd-order-bar .button:hover { filter: brightness(1.05); transform: translateY(-2px); }
+.ref-scope .pd-config .pd-fee-note { color: var(--pdu-muted); }
+.ref-scope .pd-config .pd-more-settings { border-color: var(--pdu-line); }
+
+@media (max-width: 720px) {
+  .ref-scope .pd-config .pd-size-picker button { padding: 9px 14px; font-size: 12px; }
+  .ref-scope .pd-config .pd-phase-table thead th:first-child strong { font-size: 19px; }
+}
+
+/* ---- polish: header cell carries no duplicate size, no captions under phase names ---- */
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th:first-child > * {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th small { display: none; }
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th { padding-bottom: 22px; }
+.ref-scope .pd-config .pd-phase-table tbody th { padding-left: 24px; }
+.ref-scope .pd-config .pd-phase-table tbody th .metric-trigger { font-size: 13px; }
+.ref-scope .pd-config .pd-phase-table td.pd-funded { border-top-color: var(--pdu-funded-line); }
+.ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th { height: 112px !important; }

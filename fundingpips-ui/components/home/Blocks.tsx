@@ -144,14 +144,14 @@ export function Programs() {
   );
 }
 
-/** Điều kiện giao dịch: các thẻ xếp chồng lệch nhau như một chồng giấy, cạnh khung ảnh nổi. */
+/** Điều kiện giao dịch: bảng một khối, mỗi dòng một điều kiện kèm trạng thái được phép hoặc không, cạnh khung ảnh nổi. */
 export function Conditions() {
   const { dict } = useLang();
-  const rows: { ok: boolean; icon: any; t: string; d: string }[] = [
-    { ok: false, icon: CalendarX, t: dict.conditions.weekendHolding, d: dict.conditions.weekendHoldingDesc },
-    { ok: true, icon: Newspaper, t: dict.conditions.newsTradingEval, d: dict.conditions.newsTradingEvalDesc },
-    { ok: false, icon: Newspaper, t: dict.conditions.newsTradingFunded, d: dict.conditions.newsTradingFundedDesc },
-    { ok: true, icon: SlidersHorizontal, t: dict.conditions.optionalAddons, d: dict.conditions.optionalAddonsDesc },
+  const rows: { ok: boolean; t: string; d: string }[] = [
+    { ok: false, t: dict.conditions.weekendHolding, d: dict.conditions.weekendHoldingDesc },
+    { ok: true, t: dict.conditions.newsTradingEval, d: dict.conditions.newsTradingEvalDesc },
+    { ok: false, t: dict.conditions.newsTradingFunded, d: dict.conditions.newsTradingFundedDesc },
+    { ok: true, t: dict.conditions.optionalAddons, d: dict.conditions.optionalAddonsDesc },
   ];
 
   return (
@@ -165,12 +165,17 @@ export function Conditions() {
             <div className={`absolute -right-6 -bottom-8 z-10 rounded-2xl ${NAVY} px-5 py-4 shadow-2xl`}><div className="text-xs text-white/70">Shown on</div><div className="text-2xl font-extrabold">{dict.conditions.shownOnEveryPackage}</div></div>
           </div>
         </div>
-        <ul className="relative grid gap-0">
-          {rows.map((r, i) => (
-            <li key={r.t} className="relative card p-5 grid grid-cols-[48px_1fr_auto] gap-4 items-start shadow-[0_24px_50px_-30px_rgba(10,26,79,.5)]" style={{ marginLeft: i % 2 ? 40 : 0, marginRight: i % 2 ? 0 : 40, marginTop: i ? -10 : 0, zIndex: 10 - i }}>
-              <span className={`w-12 h-12 rounded-xl grid place-items-center ${r.ok ? 'bg-good/10 text-good' : 'bg-red-500/10 text-red-500'}`}><r.icon className="w-6 h-6" /></span>
-              <div><h3 className="font-extrabold">{r.t}</h3><p className="text-sm text-muted mt-1 leading-relaxed">{r.d}</p></div>
-              <span className={`inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full ${r.ok ? 'bg-good/10 text-good' : 'bg-red-500/10 text-red-500'}`}>{r.ok ? <Check className="w-3.5 h-3.5" /> : <X className="w-3.5 h-3.5" />}{r.ok ? dict.conditions.allowed : dict.conditions.notAllowed}</span>
+        <ul className="rounded-2xl border border-line bg-card overflow-hidden shadow-[0_40px_90px_-60px_rgba(10,26,79,.55)]">
+          {rows.map((r) => (
+            <li key={r.t} className={`flex items-center gap-5 px-6 sm:px-8 py-6 border-l-4 border-b border-b-line last:border-b-0 ${r.ok ? 'border-l-accent' : 'border-l-muted/50'}`}>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-extrabold text-lg leading-snug">{r.t}</h3>
+                <p className="text-muted mt-1 leading-relaxed">{r.d}</p>
+              </div>
+              <span className={`shrink-0 inline-flex items-center gap-2 font-bold ${r.ok ? 'text-accent' : 'text-muted'}`}>
+                <span className={`w-6 h-6 rounded-full grid place-items-center ${r.ok ? 'bg-accent text-white' : 'border-2 border-muted/60'}`}>{r.ok ? <Check className="w-3.5 h-3.5" strokeWidth={3} /> : <X className="w-3.5 h-3.5" strokeWidth={3} />}</span>
+                <span className="hidden sm:inline">{r.ok ? dict.conditions.allowed : dict.conditions.notAllowed}</span>
+              </span>
             </li>
           ))}
         </ul>

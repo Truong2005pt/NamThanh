@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BrandLogo } from './BrandLogo';
@@ -24,11 +24,49 @@ export const Navbar: React.FC = () => {
   const { currentLang, setLanguage, t } = useLanguage();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileGroup, setMobileGroup] = useState<'products' | 'company' | null>(null);
+  // Desktop: parent tabs also open on hover (with a short grace period so the pointer can reach the panel).
+  const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hoverOpen = (which: 'products' | 'company') => {
+    if (hoverTimer.current) clearTimeout(hoverTimer.current);
+    setTradingDropdownOpen(which === 'products');
+    setCompanyDropdownOpen(which === 'company');
+  };
+  const hoverClose = () => {
+    if (hoverTimer.current) clearTimeout(hoverTimer.current);
+    hoverTimer.current = setTimeout(() => {
+      setTradingDropdownOpen(false);
+      setCompanyDropdownOpen(false);
+    }, 180);
+  };
+  // Click outside a dropdown closes it.
+  useEffect(() => {
+    const onDown = (e: PointerEvent) => {
+      if ((e.target as Element | null)?.closest?.('[data-nav-dropdown]')) return;
+      setTradingDropdownOpen(false);
+      setCompanyDropdownOpen(false);
+    };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, []);
+  const closeMobile = () => {
+    setMobileMenuOpen(false);
+    setMobileGroup(null);
+  };
   const [tradingDropdownOpen, setTradingDropdownOpen] = useState(false);
   const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const navText = getNavTranslations(currentLang);
+  const vi = currentLang === 'vi';
+  const productsLabel = vi ? 'Sản phẩm' : 'Products';
+  const programInfoLabel = vi ? 'Thông Tin Chương Trình' : 'Program Information';
+  const PRODUCTS = [
+    { href: '/programs/two-step', name: 'Two-Step', sub: vi ? 'Hai vòng đánh giá' : 'Two evaluation phases' },
+    { href: '/programs/one-step', name: 'One-Step', sub: vi ? 'Một vòng đánh giá' : 'One evaluation phase' },
+    { href: '/programs/instant-funding', name: 'Instant Funding', sub: vi ? 'Không qua đánh giá' : 'No evaluation' },
+    { href: '/programs/instant-light', name: 'Instant Light', sub: vi ? 'Không qua đánh giá · Light' : 'No evaluation · Light' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +81,7 @@ export const Navbar: React.FC = () => {
   const currentLangMeta = SUPPORTED_LANGUAGES.find((l) => l.code === currentLang) || SUPPORTED_LANGUAGES[0];
 
   // Dedicated auth portals (/login, /sign-up) render their own minimal header
-  if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup') {
+  if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup' || pathname === '/reset-password') {
     return null;
   }
 
@@ -65,72 +103,62 @@ export const Navbar: React.FC = () => {
         {/* DESKTOP MENU LINKS */}
         <nav className="nav-desktop items-center gap-1 xl:gap-2">
           {/* TRADING DROPDOWN */}
-          <div className="relative shrink-0">
+          <div data-nav-dropdown className="relative shrink-0" onMouseEnter={() => hoverOpen('products')} onMouseLeave={hoverClose}>
             <button
               type="button"
               onClick={() => {
                 setTradingDropdownOpen(!tradingDropdownOpen);
                 setCompanyDropdownOpen(false);
               }}
-              className="flex items-center gap-1 px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-[#c68a00] hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-[#f6bf4a] dark:hover:bg-white/5"
+              className="flex items-center gap-1 px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-black hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-white dark:hover:bg-white/5"
             >
-              <span>{navText.trading}</span>
+              <span>{productsLabel}</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${tradingDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
 
             {tradingDropdownOpen && (
               <>
-                <div className="fixed inset-0 z-40" onClick={() => setTradingDropdownOpen(false)} />
-                <div className="absolute left-0 top-full mt-2 z-50 w-48 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
-                  <Link
-                    href="/how-it-works"
-                    onClick={() => setTradingDropdownOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-[#f6bf4a]"
-                  >
-                    {navText.howItWorks}
-                  </Link>
-                  <Link
-                    href="/rules"
-                    onClick={() => setTradingDropdownOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-[#f6bf4a]"
-                  >
-                    {navText.rules}
-                  </Link>
-                  <Link
-                    href="/pricing"
-                    onClick={() => setTradingDropdownOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-[#f6bf4a]"
-                  >
-                    {navText.pricing}
-                  </Link>
+                
+                <div onMouseEnter={() => hoverOpen('products')} className="absolute left-0 top-full mt-2 z-50 w-64 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
+                  {PRODUCTS.map((p) => (
+                    <Link
+                      key={p.href}
+                      href={p.href}
+                      onClick={() => setTradingDropdownOpen(false)}
+                      className="block px-3 py-2.5 rounded-lg transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-black dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-white"
+                    >
+                      <span className="block text-xs font-bold">{p.name}</span>
+                      <span className="block text-[11px] font-normal opacity-60">{p.sub}</span>
+                    </Link>
+                  ))}
                 </div>
               </>
             )}
           </div>
 
           <Link
-            href="/reviews"
-            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-[#c68a00] hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-[#f6bf4a] dark:hover:bg-white/5"
+            href="/program-information"
+            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-black hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-white dark:hover:bg-white/5"
           >
-            {navText.reviews}
+            {programInfoLabel}
           </Link>
 
           <Link
             href="/affiliate"
-            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-[#c68a00] hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-[#f6bf4a] dark:hover:bg-white/5"
+            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-black hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-white dark:hover:bg-white/5"
           >
             {navText.affiliate}
           </Link>
 
           {/* COMPANY DROPDOWN */}
-          <div className="relative shrink-0">
+          <div data-nav-dropdown className="relative shrink-0" onMouseEnter={() => hoverOpen('company')} onMouseLeave={hoverClose}>
             <button
               type="button"
               onClick={() => {
                 setCompanyDropdownOpen(!companyDropdownOpen);
                 setTradingDropdownOpen(false);
               }}
-              className="flex items-center gap-1 px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-[#c68a00] hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-[#f6bf4a] dark:hover:bg-white/5"
+              className="flex items-center gap-1 px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-black hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-white dark:hover:bg-white/5"
             >
               <span>{navText.company}</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${companyDropdownOpen ? 'rotate-180' : ''}`} />
@@ -138,19 +166,19 @@ export const Navbar: React.FC = () => {
 
             {companyDropdownOpen && (
               <>
-                <div className="fixed inset-0 z-40" onClick={() => setCompanyDropdownOpen(false)} />
-                <div className="absolute left-0 top-full mt-2 z-50 w-44 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
+                
+                <div onMouseEnter={() => hoverOpen('company')} className="absolute left-0 top-full mt-2 z-50 w-44 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
                   <Link
                     href="/about"
                     onClick={() => setCompanyDropdownOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-[#f6bf4a]"
+                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-black dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-white"
                   >
                     {navText.about}
                   </Link>
                   <Link
                     href="/contact"
                     onClick={() => setCompanyDropdownOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-[#f6bf4a]"
+                    className="block px-3 py-2 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap text-neutral-700 hover:bg-neutral-100 hover:text-black dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-white"
                   >
                     {navText.contact}
                   </Link>
@@ -161,7 +189,7 @@ export const Navbar: React.FC = () => {
 
           <Link
             href="/faq"
-            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-[#c68a00] hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-[#f6bf4a] dark:hover:bg-white/5"
+            className="px-2.5 xl:px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 text-neutral-800 hover:text-black hover:bg-neutral-100/70 dark:text-neutral-200 dark:hover:text-white dark:hover:bg-white/5"
           >
             {navText.faq}
           </Link>
@@ -215,7 +243,7 @@ export const Navbar: React.FC = () => {
           <button
             type="button"
             onClick={toggleTheme}
-            className="p-1.5 sm:p-2 rounded-lg border transition-all bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-300 text-neutral-800 hover:text-[#c68a00] dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-[#f6bf4a]"
+            className="p-1.5 sm:p-2 rounded-lg border transition-all bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-300 text-neutral-800 hover:text-black dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-[#f6bf4a]"
             title={isLight ? 'Chuyển sang Chế độ Tối' : 'Chuyển sang Chế độ Sáng'}
             aria-label="Chuyển đổi giao diện sáng tối"
           >
@@ -254,65 +282,55 @@ export const Navbar: React.FC = () => {
       {mobileMenuOpen && (
         <>
           <div 
-            className="fixed inset-0 top-[76px] bg-black/40 backdrop-blur-xs z-40 nav-mobile-drawer"
+            className="pointer-events-auto fixed inset-0 top-[76px] bg-black/40 backdrop-blur-xs z-40 nav-mobile-drawer"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="nav-mobile-drawer border-t p-6 space-y-4 backdrop-blur-2xl bg-white/98 dark:bg-[#09090d]/98 border-neutral-200 dark:border-white/10 text-neutral-800 dark:text-white shadow-2xl relative z-50 animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto">
-          <div className="flex flex-col space-y-2">
-            <Link
-              href="/how-it-works"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.howItWorks}
+          <div className="pointer-events-auto nav-mobile-drawer border-t p-6 space-y-4 backdrop-blur-2xl bg-white/98 dark:bg-[#09090d]/98 border-neutral-200 dark:border-white/10 text-neutral-800 dark:text-white shadow-2xl relative z-50 animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto">
+          <div className="flex flex-col space-y-1">
+            {/* Group: products */}
+            <div>
+              <button type="button" aria-expanded={mobileGroup === 'products'} onClick={() => setMobileGroup(mobileGroup === 'products' ? null : 'products')} className="w-full flex items-center justify-between px-3 py-3 text-sm font-semibold rounded-lg transition-colors text-neutral-800 hover:bg-neutral-100 dark:text-neutral-100 dark:hover:bg-white/5">
+                <span>{productsLabel}</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileGroup === 'products' ? 'rotate-180' : ''}`} />
+              </button>
+              <div className={`grid transition-all duration-200 ease-out ${mobileGroup === 'products' ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                <div className="overflow-hidden">
+                  <div className="py-1 border-l border-neutral-200 dark:border-white/10 ml-4">
+                    {PRODUCTS.map((p) => (
+                      <Link key={p.href} href={p.href} onClick={closeMobile} tabIndex={mobileGroup === 'products' ? 0 : -1} className="block pl-6 pr-3 py-2.5 rounded-lg text-sm transition-colors text-neutral-700 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-amber-300">
+                        <span className="block font-semibold">{p.name}</span>
+                        <span className="block text-xs opacity-60">{p.sub}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Link href="/program-information" onClick={closeMobile} className="px-3 py-3 text-sm font-semibold transition-colors rounded-lg text-neutral-800 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-100 dark:hover:bg-white/5 dark:hover:text-amber-300">
+              {programInfoLabel}
             </Link>
-            <Link
-              href="/pricing"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.pricing}
-            </Link>
-            <Link
-              href="/rules"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.rules}
-            </Link>
-            <Link
-              href="/reviews"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.reviews}
-            </Link>
-            <Link
-              href="/affiliate"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
+            <Link href="/affiliate" onClick={closeMobile} className="px-3 py-3 text-sm font-semibold transition-colors rounded-lg text-neutral-800 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-100 dark:hover:bg-white/5 dark:hover:text-amber-300">
               {navText.affiliate}
             </Link>
-            <Link
-              href="/about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.about}
-            </Link>
-            <Link
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
-              {navText.contact}
-            </Link>
-            <Link
-              href="/faq"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 text-sm font-semibold transition-colors text-neutral-700 hover:text-[#c68a00] dark:text-neutral-200 dark:hover:text-[#f6bf4a]"
-            >
+
+            {/* Group: company */}
+            <div>
+              <button type="button" aria-expanded={mobileGroup === 'company'} onClick={() => setMobileGroup(mobileGroup === 'company' ? null : 'company')} className="w-full flex items-center justify-between px-3 py-3 text-sm font-semibold rounded-lg transition-colors text-neutral-800 hover:bg-neutral-100 dark:text-neutral-100 dark:hover:bg-white/5">
+                <span>{navText.company}</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileGroup === 'company' ? 'rotate-180' : ''}`} />
+              </button>
+              <div className={`grid transition-all duration-200 ease-out ${mobileGroup === 'company' ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                <div className="overflow-hidden">
+                  <div className="py-1 border-l border-neutral-200 dark:border-white/10 ml-4">
+                    <Link href="/about" onClick={closeMobile} tabIndex={mobileGroup === 'company' ? 0 : -1} className="block pl-6 pr-3 py-2.5 rounded-lg text-sm transition-colors text-neutral-700 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-amber-300">{navText.about}</Link>
+                    <Link href="/contact" onClick={closeMobile} tabIndex={mobileGroup === 'company' ? 0 : -1} className="block pl-6 pr-3 py-2.5 rounded-lg text-sm transition-colors text-neutral-700 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-amber-300">{navText.contact}</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Link href="/faq" onClick={closeMobile} className="px-3 py-3 text-sm font-semibold transition-colors rounded-lg text-neutral-800 hover:bg-neutral-100 hover:text-amber-700 dark:text-neutral-100 dark:hover:bg-white/5 dark:hover:text-amber-300">
               {navText.faq}
             </Link>
           </div>

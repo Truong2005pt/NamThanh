@@ -1,0 +1,117 @@
+/* /faq: one frame, one rhythm; no gold wash, no floating decorations */
+.ref-scope[data-page='faq'] .fh-hub { max-width: 1344px; margin: 0 auto; }
+
+/* hero: photo blended into the page, same idea as the contact banner */
+.ref-scope[data-page='faq'] .fh-hero,
+:root[data-theme='light'] .ref-scope[data-page='faq'] .fh-hero,
+:root:not([data-theme='light']) .ref-scope[data-page='faq'] .fh-hero {
+  position: relative; background: transparent !important; background-image: none !important; border: 0 !important; margin-top: -88px; padding-top: 88px; overflow: visible;
+}
+.ref-scope[data-page='faq'] .fh-hero::before {
+  content: ''; position: absolute; inset: 0; background: url('/eracex-ref/assets/fh-hero-bg.webp') 62% center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 30%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in; mask-composite: intersect, intersect; pointer-events: none;
+}
+:root[data-theme='light'] .ref-scope[data-page='faq'] .fh-hero::before { background-image: url('/eracex-ref/assets/fh-hero-bg-light.webp'); }
+.ref-scope[data-page='faq'] .fh-hero .fh-candle { display: none !important; }
+.ref-scope[data-page='faq'] .fh-hero-grid { position: relative; z-index: 1; padding-top: 56px; padding-bottom: 64px; padding-left: 48px; padding-right: 48px; }
+.ref-scope[data-page='faq'] .fh-top { background: transparent; }
+
+/* sections share one frame and are separated by a hairline, not by full-bleed colour bands */
+.ref-scope[data-page='faq'] .fh-band { background: transparent !important; border: 0 !important; }
+.ref-scope[data-page='faq'] .fh-section { padding-left: 48px; padding-right: 48px; }
+.ref-scope[data-page='faq'] .fh-hub > .fh-section, .ref-scope[data-page='faq'] .fh-band > .fh-section { border-top: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.2)); padding-top: 64px; padding-bottom: 64px; }
+
+/* onboarding: an open three-step timeline instead of a boxed card */
+.ref-scope[data-page='faq'] .fh-onboarding { border: 0 !important; background: transparent !important; padding: 0 !important; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 48px; }
+.ref-scope[data-page='faq'] .fh-onboarding > article { border-top: 2px solid currentColor; padding: 22px 0 0; }
+.ref-scope[data-page='faq'] .fh-onboarding > article strong { display: block; font-family: var(--ref-head); font-size: 44px; font-weight: 600; letter-spacing: -0.04em; margin-bottom: 14px; }
+.ref-scope[data-page='faq'] .fh-onboarding > article h3 { margin: 0 0 8px; }
+.ref-scope[data-page='faq'] .fh-onboard-link { grid-column: 1 / -1; margin-top: 28px; border: 0 !important; padding: 0 !important; text-align: left; }
+
+/* "before you join": flat panel, photo on the left */
+.ref-scope[data-page='faq'] .fh-before { background: transparent !important; background-image: none !important; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); padding: 0 !important; overflow: hidden; }
+.ref-scope[data-page='faq'] .fh-before-intro {
+  background: linear-gradient(90deg, rgba(8, 8, 11, 0.86), rgba(8, 8, 11, 0.55)), url('/eracex-ref/assets/fh-before.webp') center / cover no-repeat !important; padding: 40px;
+}
+.ref-scope[data-page='faq'] .fh-before-intro, .ref-scope[data-page='faq'] .fh-before-intro * { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+@media (max-width: 900px) {
+  .ref-scope[data-page='faq'] .fh-hero-grid, .ref-scope[data-page='faq'] .fh-section { padding-left: 20px; padding-right: 20px; }
+  .ref-scope[data-page='faq'] .fh-onboarding { grid-template-columns: 1fr; gap: 28px; }
+  .ref-scope[data-page='faq'] .fh-before { grid-template-columns: 1fr; }
+}
+
+/* icons kept to the functional minimum: search, chevrons and the accordion plus */
+.ref-scope[data-page='faq'] .fh-icon,
+.ref-scope[data-page='faq'] .fh-mini > svg, .ref-scope[data-page='faq'] .fh-mini > i,
+.ref-scope[data-page='faq'] .fh-reward-rows svg,
+.ref-scope[data-page='faq'] .fh-support svg { display: none !important; }
+.ref-scope[data-page='faq'] .fh-card h3 { margin-top: 0; }
+
+/* ---- "Choose your starting point": one panel, four columns divided by hairlines ---- */
+.ref-scope[data-page='faq'] .fh-model-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 !important; border: 1px solid var(--ref-card-line); border-radius: 18px; overflow: hidden; margin-top: 4px; }
+.ref-scope[data-page='faq'] .fh-model-grid > .fh-card { border: 0 !important; border-radius: 0 !important; background: transparent !important; padding: 28px 26px 26px !important; min-height: 0; display: flex; flex-direction: column; }
+.ref-scope[data-page='faq'] .fh-model-grid > .fh-card + .fh-card { border-left: 1px solid var(--ref-card-line) !important; }
+.ref-scope[data-page='faq'] .fh-card h3 { font-size: 13px !important; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.65; margin: 0 0 12px !important; }
+.ref-scope[data-page='faq'] .fh-card strong { display: block; font-family: var(--ref-head); font-size: 23px; font-weight: 600; line-height: 1.2; letter-spacing: -0.03em; margin: 0 0 12px; }
+.ref-scope[data-page='faq'] .fh-card p { font-size: 14px; line-height: 1.6; opacity: 0.8; margin: 0 0 18px; flex: 1; }
+.ref-scope[data-page='faq'] .fh-card .fh-more, .ref-scope[data-page='faq'] .fh-card button { font-size: 13px; font-weight: 600; margin-top: auto; text-decoration: underline; text-underline-offset: 4px; background: transparent; border: 0; padding: 0; text-align: left; }
+.ref-scope[data-page='faq'] .fh-model-toolbar { margin-bottom: 18px; }
+.ref-scope[data-page='faq'] .fh-model-toolbar .fh-more { font-size: 13px; }
+
+/* ---- "Before you join": photo + plain list ---- */
+.ref-scope[data-page='faq'] .fh-before { margin-top: 24px; border: 1px solid var(--ref-card-line) !important; border-radius: 18px; }
+.ref-scope[data-page='faq'] .fh-before-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; padding: 18px 36px !important; align-content: center; background: transparent !important; }
+.ref-scope[data-page='faq'] .fh-before-grid > .fh-mini { border: 0 !important; border-radius: 0 !important; background: transparent !important; padding: 18px 0 !important; border-bottom: 1px solid var(--ref-card-line) !important; }
+.ref-scope[data-page='faq'] .fh-before-grid > .fh-mini:nth-last-child(-n+2) { border-bottom: 0 !important; }
+.ref-scope[data-page='faq'] .fh-mini b, .ref-scope[data-page='faq'] .fh-mini strong { font-size: 16px; }
+.ref-scope[data-page='faq'] .fh-mini small, .ref-scope[data-page='faq'] .fh-mini span { font-size: 13.5px; line-height: 1.55; opacity: 0.78; }
+.ref-scope[data-page='faq'] .fh-before-intro h2 { font-size: clamp(26px, 2.8vw, 34px) !important; }
+.ref-scope[data-page='faq'] .fh-before-intro p { font-size: 15px; }
+
+/* ---- Rewards: a clean ledger ---- */
+.ref-scope[data-page='faq'] .fh-reward-rows { border: 1px solid var(--ref-card-line) !important; border-radius: 18px !important; overflow: hidden; background: transparent !important; }
+.ref-scope[data-page='faq'] .fh-reward-rows > * { background: transparent !important; background-image: none !important; border-radius: 0 !important; padding: 22px 28px !important; }
+.ref-scope[data-page='faq'] .fh-reward-rows > * + * { border-top: 1px solid var(--ref-card-line) !important; }
+.ref-scope[data-page='faq'] .fh-reward-rows b { font-size: 16px; }
+.ref-scope[data-page='faq'] .fh-reward-rows small { font-size: 13px; opacity: 0.7; }
+.ref-scope[data-page='faq'] .fh-reward-rows strong, .ref-scope[data-page='faq'] .fh-reward-rows em { font-family: var(--ref-head); font-size: 22px; font-style: normal; letter-spacing: -0.02em; }
+.ref-scope[data-page='faq'] .fh-rewards p { font-size: 15px; }
+.ref-scope[data-page='faq'] .fh-more { font-size: 13px; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .ref-scope[data-page='faq'] .fh-model-grid { grid-template-columns: 1fr 1fr; }
+  .ref-scope[data-page='faq'] .fh-model-grid > .fh-card:nth-child(3) { border-left: 0 !important; }
+  .ref-scope[data-page='faq'] .fh-model-grid > .fh-card:nth-child(n+3) { border-top: 1px solid var(--ref-card-line) !important; }
+  .ref-scope[data-page='faq'] .fh-before-grid { grid-template-columns: 1fr; padding: 8px 20px !important; }
+}
+
+/* light theme: the hero photo stays solid enough against the white page */
+:root[data-theme='light'] .ref-scope[data-page='faq'] .fh-hero::before {
+  background-position: 66% center;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 24%), linear-gradient(270deg, transparent 0%, #000 8%), linear-gradient(180deg, #000 72%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 24%), linear-gradient(270deg, transparent 0%, #000 8%), linear-gradient(180deg, #000 72%, transparent 100%);
+}
+:root[data-theme='light'] .ref-scope[data-page='faq'] .fh-hero::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(250, 248, 244, 0.78) 0%, rgba(250, 248, 244, 0.38) 48%, transparent 80%);
+  -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
+}
+
+/* ---- support section: three even cards ---- */
+.ref-scope[data-page='faq'] .fh-support { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.ref-scope[data-page='faq'] .fh-support > article {
+  display: flex; flex-direction: column; gap: 10px; padding: 28px !important; border: 1px solid var(--ref-card-line) !important; border-radius: 18px !important; background: transparent !important; min-height: 0;
+}
+.ref-scope[data-page='faq'] .fh-support h3 { margin: 0; font-size: clamp(19px, 1.8vw, 22px); }
+.ref-scope[data-page='faq'] .fh-support p { margin: 0; font-size: 15px; line-height: 1.6; opacity: 0.85; flex: 1; word-break: break-word; }
+.ref-scope[data-page='faq'] .fh-support .fh-more {
+  display: inline-flex; align-items: center; justify-content: center; height: 46px; padding: 0 18px; margin-top: 12px; border: 1.5px solid var(--ref-card-line); border-radius: 12px; font-size: 14px; font-weight: 600; text-decoration: none; background: transparent;
+}
+.ref-scope[data-page='faq'] .fh-support > article:nth-child(2) .fh-more { background: #f6c83d; border-color: #f6c83d; }
+.ref-scope[data-page='faq'] .fh-support > article:nth-child(2) .fh-more, .ref-scope[data-page='faq'] .fh-support > article:nth-child(2) .fh-more * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+@media (max-width: 900px) { .ref-scope[data-page='faq'] .fh-support { grid-template-columns: 1fr; } }
+
+/* ---- FAQ library empty state ---- */
+.ref-scope[data-page='faq'] .fh-library [class*='empty'], .ref-scope[data-page='faq'] .sp-empty { border: 1px dashed var(--ref-card-line); border-radius: 16px; padding: 40px 24px; text-align: center; }

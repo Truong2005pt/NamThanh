@@ -1,0 +1,50 @@
+/* Product FAQ: header row on top (title + help card), then the switcher and the questions as two columns of framed cards.
+   Same elements and order as before; only the presentation changes (it was a narrow sticky side column). */
+.ref-scope .pd-product-faq {
+  display: block; width: calc(100% - 64px); max-width: 1240px; padding: 72px 0 96px; border-top: 1px solid var(--pdu-line);
+}
+.ref-scope .pd-faq-intro {
+  position: static; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr); gap: 16px 48px; align-items: end; margin-bottom: 36px;
+}
+.ref-scope .pd-faq-intro > .eyebrow { grid-column: 1; font-size: 12px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; opacity: .65; }
+.ref-scope .pd-faq-intro h2 { grid-column: 1; margin: 0; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.12; letter-spacing: -.025em; font-weight: 600; }
+.ref-scope .pd-faq-intro h2 br { display: none; }
+.ref-scope .pd-faq-intro h2 em { display: inline; margin: 0 0 0 .28em; font-style: normal; }
+.ref-scope .pd-faq-intro > p { grid-column: 1; margin: 0; max-width: 60ch; font-size: 16px; line-height: 1.65; opacity: .75; }
+
+.ref-scope .pd-faq-help {
+  grid-column: 2; grid-row: 1 / span 3; margin: 0; padding: 22px 24px; border-radius: 16px;
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); display: grid; gap: 6px;
+}
+:root[data-theme='light'] .ref-scope .pd-faq-help { border-color: #d9d4c4; }
+.ref-scope .pd-faq-help > span { display: none; }
+.ref-scope .pd-faq-help h3 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
+.ref-scope .pd-faq-help p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; opacity: .75; }
+.ref-scope .pd-faq-help a {
+  display: flex; align-items: center; justify-content: space-between; margin: 0; padding: 10px 14px; border: 1px solid var(--pdu-line); border-radius: 10px;
+  font-size: 14px; font-weight: 600; color: var(--ref-ink); text-decoration: none; transition: background-color .2s;
+}
+.ref-scope .pd-faq-help a:hover { background: var(--pdu-pill); }
+
+.ref-scope .pd-faq-content { display: block; }
+.ref-scope .pd-faq-scope { margin: 14px 0 20px; font-size: 14px; opacity: .65; }
+
+/* questions: two columns of framed cards */
+.ref-scope #productFaqList { column-count: 2; column-gap: 20px; }
+.ref-scope .pd-faq-item {
+  break-inside: avoid; margin: 0 0 14px; border: 1px solid var(--pdu-line); border-radius: 14px; background: var(--pdu-card); overflow: hidden;
+  transition: border-color .2s, background-color .2s;
+}
+:root[data-theme='light'] .ref-scope .pd-faq-item { border-color: #d9d4c4; }
+.ref-scope .pd-faq-item:hover { border-color: color-mix(in srgb, var(--ref-ink) 40%, transparent); }
+.ref-scope .pd-faq-item[open] { border-color: color-mix(in srgb, var(--ref-ink) 60%, transparent); }
+.ref-scope .pd-faq-item > summary { padding: 18px 20px; font-size: 15px; font-weight: 600; line-height: 1.5; color: var(--ref-ink) !important; }
+.ref-scope .pd-faq-item > summary > i { color: var(--ref-ink) !important; font-size: 22px; }
+.ref-scope .pd-faq-item > div { padding: 0 20px 20px; border-top: 1px solid var(--pdu-line); }
+.ref-scope .pd-faq-item > div > p { margin: 14px 0 0; font-size: 15px; line-height: 1.7; opacity: .85; }
+
+@media (max-width: 900px) {
+  .ref-scope .pd-faq-intro { grid-template-columns: 1fr; }
+  .ref-scope .pd-faq-help { grid-column: 1; grid-row: auto; }
+  .ref-scope #productFaqList { column-count: 1; }
+}

@@ -1,48 +1,48 @@
 {
   "two": {
-    "title": "Two-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "ความท้าทาย 2 ขั้นตอน — คำถามที่พบบ่อย",
+    "subtitle": "เงื่อนไขบัญชีประเมินและบัญชีที่ได้รับทุน (Funded)",
     "categories": [
       {
-        "category": "About the Two-Step Challenge",
+        "category": "เกี่ยวกับความท้าทาย 2 ขั้นตอน",
         "items": [
           {
-            "q": "What is the Two-Step Challenge?",
+            "q": "ความท้าทาย 2 ขั้นตอนคืออะไร?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+                "x": "เป็นการประเมิน 2 ขั้นตอน เมื่อผ่านเฟส 1 และเฟส 2 คุณจะได้รับบัญชี Funded พร้อมส่วนแบ่งกำไร 80%"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "ฉันสามารถเลือกขนาดบัญชีใดได้บ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "มี 5 ขนาด: $5,000, $10,000, $25,000, $50,000 และ $100,000 กฎเกณฑ์ทั้งหมดเป็นสัดส่วนเปอร์เซ็นต์เดียวกันในทุกขนาดบัญชี แตกต่างกันเพียงจำนวนเงินดอลลาร์เท่านั้น"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Targets",
+        "category": "เป้าหมายกำไร",
         "items": [
           {
-            "q": "What profit do I need to pass each phase?",
+            "q": "ฉันต้องทำกำไรเท่าใดจึงจะผ่านแต่ละเฟส?",
             "a": [
               {
                 "t": "p",
-                "x": "Phase 1 requires 10% profit. Phase 2 requires 5% profit. The Funded account has no profit target."
+                "x": "เฟส 1 ต้องการกำไร 10% เฟส 2 ต้องการกำไร 5% ส่วนบัญชี Funded จริงไม่มีเป้าหมายกำไรที่บังคับ"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Phase 1 target (10%)",
-                    "Phase 2 target (5%)"
+                    "ขนาดบัญชี",
+                    "เป้าหมายเฟส 1 (10%)",
+                    "เป้าหมายเฟส 2 (5%)"
                   ],
                   [
                     "$5,000",
@@ -76,22 +76,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "ขีดจำกัดการขาดทุน",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "ขีดจำกัดการขาดทุนมีอะไรบ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+                "x": "มีสองข้อ: ขาดทุนสูงสุดรายวัน 5% จากยอดเงินคงเหลือ ณ ต้นวัน และขาดทุนสูงสุดโดยรวม 10% จากขนาดบัญชีเริ่มต้น หากละเมิดข้อใดข้อหนึ่งบัญชีจะถูกยุติทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (5%, at starting balance)",
-                    "Maximum Loss (10%)"
+                    "ขนาดบัญชี",
+                    "ขาดทุนสูงสุดรายวัน (5% จากยอดเริ่มต้นของวัน)",
+                    "ขาดทุนสูงสุดโดยรวม (10%)"
                   ],
                   [
                     "$5,000",
@@ -122,60 +122,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "จำนวนขาดทุนรายวันข้างต้นมีผลเมื่อยอดเงินเท่ากับขนาดบัญชี วงเงินจำกัดรายวันจริงจะคำนวณใหม่ทุกวันเวลา 00:00 UTC เป็น 5% ของยอดเงินคงเหลือ ดังนั้นวงเงินจะเพิ่มขึ้นตามกำไรและลดลงตามการขาดทุน"
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "ขีดจำกัดการขาดทุนมีผลบังคับใช้ในทุกเฟสหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+                "x": "ใช่ กฎและขีดจำกัดเดียวกันนี้มีผลบังคับใช้ทั้งในเฟส 1, เฟส 2 และบัญชี Funded"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "วิธีการคำนวณ Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown วัดจากยอดเงินคงเหลือ (Balance) หรืออิควิตี้ (Equity)?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "วัดจากอิควิตี้ (Equity) โดยอิควิตี้คือยอดเงินคงเหลือบวกกำไรหรือขาดทุนที่ยังไม่ปิดของออเดอร์ที่เปิดอยู่ ดังนั้นออเดอร์ที่เปิดอยู่จะถูกนับรวมในขีดจำกัดการขาดทุนตลอดเวลา ไม่ใช่เฉพาะตอนปิดออเดอร์"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "การขาดทุนสูงสุดรายวันทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "วันเทรดเริ่มต้นเวลา 00:00 UTC ยอดเงินคงเหลือ ณ เวลานั้น (จากออเดอร์ที่ปิดแล้วเท่านั้น) คือจุดเริ่มต้นของวัน วงเงินขาดทุนรายวันคือ 5% ของยอดเริ่มต้น ระหว่างวันอิควิตี้รวมออเดอร์ที่เปิดอยู่ต้องไม่ลดลงต่ำกว่าจุดนี้ หากลดลงเกินกำหนด บัญชีจะถือว่าไม่ผ่านเกณฑ์"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "ตัวอย่างในบัญชี $10,000: ณ เวลา 00:00 UTC ยอดเงินของคุณคือ $10,200 วงเงินขาดทุนรายวันคือ $510 (5% × $10,200) ระหว่างวันนั้นอิควิตี้ของคุณต้องอยู่เหนือ $9,690 ($10,200 − $510) เสมอ แม้จะมีออเดอร์เปิดอยู่ และในเวลา 00:00 UTC ถัดไป จุดเริ่มต้นและวงเงินจะถูกรีเซ็ตใหม่"
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "การขาดทุนสูงสุดโดยรวมทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "ระดับขาดทุนสูงสุดโดยรวมจะคงที่ คำนวณเพียงครั้งเดียวจากยอดเริ่มต้นและไม่มีวันเปลี่ยนแปลง แม้คุณจะมีกำไรก็ตาม หากอิควิตี้ลดลงมาแตะหรือต่ำกว่าระดับนี้เมื่อใด บัญชีจะถือว่าไม่ผ่านเกณฑ์ทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (10%)",
-                    "Equity must stay above"
+                    "ขนาดบัญชี",
+                    "ขาดทุนสูงสุดโดยรวม (10%)",
+                    "อิควิตี้ต้องอยู่เหนือระดับ"
                   ],
                   [
                     "$5,000",
@@ -206,105 +206,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+                "x": "ตัวอย่าง: ในบัญชี $10,000 คุณทำกำไรจนอิควิตี้เพิ่มเป็น $10,800 ระดับขาดทุนสูงสุดจะยังคงอยู่ที่ $9,000 ไม่ได้ขยับขึ้นตามกำไรของคุณ"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "ขีดจำกัดทั้งสองข้อทำงานร่วมกันอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "ทั้งสองข้อเป็นขีดจำกัดแยกกันแต่ตรวจสอบไปพร้อมกัน บัญชีจะถูกปรับตกทันทีหากแตะขีดจำกัดใดข้อหนึ่งก่อน การขาดทุนในวันเดียวจะนับสะสมในยอดขาดทุนรวมด้วย"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "ฉันสามารถดูขีดจำกัดปัจจุบันได้ที่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "แดชบอร์ดของคุณจะแสดงระดับขีดจำกัดทั้งสองแบบเรียลไทม์อย่างชัดเจน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "วันเทรดและข้อกำหนดด้านเวลา",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "ฉันต้องเทรดกี่วันเป็นอย่างน้อย?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+                "x": "อย่างน้อย 5 วันทำการในเฟส 1 และอย่างน้อย 5 วันในเฟส 2 ส่วนบัญชี Funded ไม่มีข้อกำหนดวันเทรดขั้นต่ำ"
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "มีจำกัดเวลาในการสอบให้ผ่านหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "ไม่มี ระยะเวลาการเทรดไม่จำกัด คุณสามารถใช้เวลาได้นานเท่าที่ต้องการเพื่อพิชิตเป้าหมายกำไร ตราบใดที่บัญชียังคงมีความเคลื่อนไหว (ดูรายละเอียดด้านล่าง)"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "มีข้อกำหนดความเคลื่อนไหวขั้นต่ำของบัญชีหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "มี หากไม่มีการเปิดออเดอร์ในบัญชีติดต่อกัน 30 วันตามปฏิทิน บัญชีจะถูกปิดโดยอัตโนมัติและไม่คืนค่าธรรมเนียม มีผลบังคับใช้ทุกเฟสรวมถึงบัญชี Funded ดังนั้นโปรดเปิดอย่างน้อยหนึ่งออเดอร์ในทุก 30 วัน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "บัญชีที่ได้รับทุน (Funded Account)",
         "items": [
           {
-            "q": "What happens after I pass both phases?",
+            "q": "จะเกิดอะไรขึ้นหลังจากฉันสอบผ่านทั้งสองเฟส?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+                "x": "คุณจะได้รับบัญชี Funded ขนาดเท่าเดิม ขีดจำกัดการขาดทุนยังคงเดิม ไม่มีวันเทรดขั้นต่ำ และเลเวอเรจจะปรับลดลงตามเงื่อนไข (ดูเงื่อนไขการเทรด)"
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "อัตราส่วนแบ่งกำไรเป็นอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: คุณจะได้รับกำไร 80% ของกำไรทั้งหมดที่คุณทำได้ในบัญชี Funded"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "ฉันสามารถส่งคำขอถอนกำไรได้บ่อยแค่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "ในบัญชี Funded คุณสามารถส่งคำขอถอนกำไรได้ทุกๆ 5 วัน"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "มียอดถอนขั้นต่ำหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "มี ยอดถอนขั้นต่ำคือ 1% ของขนาดบัญชี"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "ขนาดบัญชี",
+                    "ยอดถอนขั้นต่ำ (1%)"
                   ],
                   [
                     "$5,000",
@@ -331,39 +331,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "มีจำกัดจำนวนครั้งในการถอนหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "มี บัญชี Funded จำกัดการถอนไว้ที่ 5 ครั้ง หลังจากการถอนครั้งที่ 5 บัญชีจะปิดลง และคุณสามารถซื้อแพ็กเกจใหม่เพื่อเริ่มเทรดต่อได้"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "เงื่อนไขการเทรด",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "ฉันจะได้รับเลเวอเรจเท่าใด?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "เลเวอเรจสูงสุดคือ 1:100 ในเฟส 1 และ 2 ส่วนบัญชี Funded เลเวอเรจสูงสุดคือ 1:40 โดยเลเวอเรจของแต่ละสินทรัพย์จะแสดงในรายละเอียดบนแพลตฟอร์ม"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "เฟส",
+                    "เลเวอเรจสูงสุด"
                   ],
                   [
-                    "Phase 1 and Phase 2",
+                    "เฟส 1 และ เฟส 2",
                     "1:100"
                   ],
                   [
-                    "Funded",
+                    "บัญชี Funded",
                     "1:40"
                   ]
                 ]
@@ -371,143 +371,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "ฉันสามารถถือออเดอร์ข้ามคืนและข้ามสัปดาห์ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+                "x": "อนุญาตให้ถือข้ามคืนได้ ไม่อนุญาตให้ถือข้ามสุดสัปดาห์ ออเดอร์ทั้งหมดต้องปิดก่อนตลาดปิดสุดสัปดาห์ กฎนี้มีผลทั้งเฟส 1, เฟส 2 และบัญชี Funded"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "ฉันสามารถเทรดช่วงมีข่าวเศรษฐกิจสำคัญได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "ในเฟส 1 และเฟส 2 เทรดได้ ส่วนในบัญชี Funded ไม่อนุญาตให้เทรดข่าว: ห้ามเปิดหรือส่งคำสั่งซื้อขายภายใน 5 นาทีก่อนและ 5 นาทีหลังการประกาศตัวเลขเศรษฐกิจสำคัญ แถลงการณ์ธนาคารกลาง หรือเหตุการณ์รุนแรง"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "ข้อห้ามและพฤติกรรมการเทรดที่ไม่อนุญาต",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "พฤติกรรมการเทรดแบบใดที่ไม่ได้รับอนุญาต?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "การเทรดใดๆ ที่เป็นการเอาเปรียบ ละเมิด หรือหลีกเลี่ยงกฎเกณฑ์ของแพลตฟอร์มการเทรดหรือระบบจำลองถือเป็นสิ่งต้องห้าม ซึ่งรวมถึงแต่ไม่จำกัดเพียง:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "การแสวงหาประโยชน์จากข้อผิดพลาดหรือความล่าช้า: การใช้ประโยชน์จากราคาคลาดเคลื่อน ข้อผิดพลาดของระบบ ความล่าช้าในการส่งข้อมูล หรือข้อมูลภายใน"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "การใช้ข้อมูลภายนอกหรือข้อมูลล่าช้า: การเทรดโดยอิงจากฟีดข้อมูลหรือสัญญาณจากบุคคลภายนอกที่ไม่ได้รับอนุญาตบนแพลตฟอร์ม"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "การ Hedging และการเทรดแบบประสานงาน: การเทรดชี้นำหลอกลวง ร่วมมือกับบุคคลอื่น หรือเปิดออเดอร์ตรงข้ามกันระหว่างบัญชีเพื่อทำ Arbitrage ข้ามบัญชีหรือข้ามบริษัท"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "การใช้กลยุทธ์เดียวกันข้ามบัญชี: การเปิดออเดอร์เหมือนกันในเวลาเดียวกันในหลายบัญชี เว้นแต่จะได้รับความยินยอมเป็นลายลักษณ์อักษรล่วงหน้า"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "การใช้ IP หรืออุปกรณ์เดียวกัน: การเทรดหรือเข้าใช้งานบัญชีของเทรดเดอร์คนละคนจาก IP หรืออุปกรณ์เดียวกัน บัญชีเหล่านี้จะถือว่าเกี่ยวข้องกันและอยู่ภายใต้กฎการตรวจสอบเข้มงวด"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "การให้บุคคลภายนอกจัดการบัญชี: การจ้างวานผู้จัดการบัญชี บริการรับสอบผ่าน (passing service) หรือบุคคลอื่นมาเทรดแทน การเทรดและการขอถอนเงินต้องกระทำโดยเจ้าของบัญชีเท่านั้น"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "การใช้บริการส่งสัญญาณ: การคัดลอกสัญญาณจากกลุ่มสัญญาณหรือผู้ให้บริการภายนอก การตัดสินใจในการเทรดทั้งหมดต้องเป็นของคุณเอง"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: การดักเปิดออเดอร์เพื่อเอาเปรียบคำสั่งซื้อขายที่ส่งมาจากที่อื่นหรือโบรกเกอร์อื่น"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "บอทและการเอาเปรียบด้วยระบบอัตโนมัติ: การใช้บอท HFT เครื่องมือ AI หรือระบบอัตโนมัติที่โฆษณาว่าสร้างมาเพื่อสอบผ่านโดยเฉพาะในการหาประโยชน์อย่างไม่เป็นธรรม"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "การเปลี่ยนสไตล์การเทรดหลังสอบผ่าน: การใช้กลยุทธ์ ความเสี่ยง หรือพฤติกรรมการเทรดที่แตกต่างอย่างสิ้นเชิงในบัญชี Funded เมื่อเทียบกับช่วงทดสอบ"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "การเก็งกำไรช่วงตลาดเปิดกระโดด (Gap): การถือครองออเดอร์เพื่อจงใจเอาเปรียบช่วงตลาดปิด-เปิด หรือการประกาศผลประกอบการของหุ้นรายตัว"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "การเสี่ยงเกินสัดส่วนปกติ (All-in): การเปิดขนาดล็อตใหญ่ผิดปกติอย่างชัดเจนเพื่อวัดดวงหรือหลีกเลี่ยงกฎความเสี่ยงของโปรแกรม"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "การละเมิดเงื่อนไขของแพลตฟอร์มหรือระบบส่งคำสั่ง: การเทรดที่ขัดต่อเงื่อนไขของผู้ให้บริการสภาพคล่องหรือโบรกเกอร์"
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+                "x": "การเทรดข่าวในบัญชี Funded: การเปิดหรือส่งคำสั่งซื้อขายภายใน 5 นาทีก่อนหรือหลังข่าวสำคัญ นับเฉพาะออเดอร์ที่ถูกจับคู่ในช่วงเวลานี้เท่านั้น"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "คนอื่นสามารถเทรดในบัญชีของฉันได้หรือไม่ หรือฉันสามารถเทรดให้ผู้อื่นได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "ไม่ได้ บัญชีมีไว้สำหรับการใช้งานส่วนบุคคลของคุณเท่านั้น และทุกอย่างต้องทำโดยเจ้าของบัญชี ห้ามอนุญาตให้ผู้อื่นเข้าใช้งาน จัดการ หรือเทรดแทนโดยเด็ดขาด"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "ฉันสามารถมีหลายบัญชีได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "เทรดเดอร์แต่ละคนสามารถถือได้เพียงบัญชีเดียวในโปรแกรม เว้นแต่จะได้รับการอนุมัติล่วงหน้า ห้ามเปิดใช้งานบัญชีร่วมกัน ขอยืม ขายต่อ หรือโอนสิทธิ์ให้ผู้อื่น"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "ฉันสามารถใช้โปรแกรมคัดลอกคำสั่งซื้อขาย (Trade Copier) ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "คุณสามารถใช้ trade copier สำหรับการเทรดระหว่างบัญชีของตัวคุณเองได้ แต่การคัดลอกการเทรดจากผู้อื่นอาจส่งผลให้การขอถอนเงินถูกปฏิเสธ"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "จะเกิดอะไรขึ้นหากตรวจพบพฤติกรรมต้องห้าม?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "เราอาจตัดผลลัพธ์ของออเดอร์ดังกล่าวออก ไม่นำมานับคำนวณกำไร ปฏิเสธการถอนเงิน และระงับหรือยกเลิกบัญชีของคุณทันที"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "ราคาและค่าธรรมเนียม",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "ค่าธรรมเนียมการประเมินราคาเท่าใด?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "ขนาดบัญชี",
+                    "ราคาค่าสอบ"
                   ],
                   [
                     "$5,000",
@@ -538,48 +538,48 @@
     ]
   },
   "one": {
-    "title": "One-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "ความท้าทาย 1 ขั้นตอน — คำถามที่พบบ่อย",
+    "subtitle": "เงื่อนไขบัญชีประเมินและบัญชีที่ได้รับทุน (Funded)",
     "categories": [
       {
-        "category": "About the One-Step Challenge",
+        "category": "เกี่ยวกับความท้าทาย 1 ขั้นตอน",
         "items": [
           {
-            "q": "What is the One-Step Challenge?",
+            "q": "ความท้าทาย 1 ขั้นตอนคืออะไร?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+                "x": "เป็นการประเมินขั้นตอนเดียว เพียงพิชิตเป้าหมายกำไรในเฟสเดียว คุณจะได้รับบัญชี Funded พร้อมส่วนแบ่งกำไร 80%"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "ฉันสามารถเลือกขนาดบัญชีใดได้บ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "มี 5 ขนาด: $5,000, $10,000, $25,000, $50,000 และ $100,000 กฎเกณฑ์ทั้งหมดเป็นสัดส่วนเปอร์เซ็นต์เดียวกันในทุกขนาดบัญชี แตกต่างกันเพียงจำนวนเงินดอลลาร์เท่านั้น"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "เป้าหมายกำไร",
         "items": [
           {
-            "q": "What profit do I need to pass?",
+            "q": "ฉันต้องทำกำไรเท่าใดจึงจะผ่าน?",
             "a": [
               {
                 "t": "p",
-                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+                "x": "เฟสประเมินต้องการกำไร 10% บัญชี Funded ไม่มีเป้าหมายกำไรที่บังคับ"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Profit target (10%)"
+                    "ขนาดบัญชี",
+                    "เป้าหมายกำไร (10%)"
                   ],
                   [
                     "$5,000",
@@ -608,22 +608,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "ขีดจำกัดการขาดทุน",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "ขีดจำกัดการขาดทุนมีอะไรบ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+                "x": "มีสองข้อ: ขาดทุนสูงสุดรายวัน 3% จากยอดคงเหลือต้นวัน และขาดทุนสูงสุดโดยรวม 6% จากขนาดบัญชีเริ่มต้น หากละเมิดข้อใดข้อหนึ่งบัญชีจะถูกยุติทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (3%, at starting balance)",
-                    "Maximum Loss (6%)"
+                    "ขนาดบัญชี",
+                    "ขาดทุนสูงสุดรายวัน (3% จากยอดเริ่มต้นของวัน)",
+                    "ขาดทุนสูงสุดโดยรวม (6%)"
                   ],
                   [
                     "$5,000",
@@ -654,60 +654,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "จำนวนขาดทุนรายวันจะคำนวณใหม่ทุกวันเวลา 00:00 UTC เป็น 3% ของยอดเงินคงเหลือ"
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "ขีดจำกัดการขาดทุนมีผลบังคับใช้ในทุกเฟสหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+                "x": "ใช่ ขีดจำกัดเดียวกันนี้มีผลบังคับใช้ทั้งในเฟสประเมินและบัญชี Funded"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "วิธีการคำนวณ Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown วัดจากยอดเงินคงเหลือ (Balance) หรืออิควิตี้ (Equity)?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "วัดจากอิควิตี้ (Equity) โดยอิควิตี้คือยอดเงินคงเหลือบวกกำไรหรือขาดทุนที่ยังไม่ปิดของออเดอร์ที่เปิดอยู่ ดังนั้นออเดอร์ที่เปิดอยู่จะถูกนับรวมในขีดจำกัดการขาดทุนตลอดเวลา ไม่ใช่เฉพาะตอนปิดออเดอร์"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "การขาดทุนสูงสุดรายวันทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "วันเทรดเริ่มต้นเวลา 00:00 UTC วงเงินขาดทุนรายวันคือ 3% ของยอดคงเหลือต้นวัน ระหว่างวันอิควิตี้ต้องไม่ลดลงต่ำกว่าเกณฑ์นี้"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "ตัวอย่างในบัญชี $10,000: ณ เวลา 00:00 UTC ยอดเงินคือ $10,200 วงเงินขาดทุนรายวันคือ $306 (3% × $10,200) อิควิตี้ต้องอยู่เหนือ $9,894 ($10,200 − $306)"
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "การขาดทุนสูงสุดโดยรวมทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "ระดับขาดทุนสูงสุดโดยรวมจะคงที่ คำนวณเพียงครั้งเดียวจากยอดเริ่มต้นและไม่มีวันเปลี่ยนแปลง แม้คุณจะมีกำไรก็ตาม หากอิควิตี้ลดลงมาแตะหรือต่ำกว่าระดับนี้เมื่อใด บัญชีจะถือว่าไม่ผ่านเกณฑ์ทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (6%)",
-                    "Equity must stay above"
+                    "ขนาดบัญชี",
+                    "ขาดทุนสูงสุดโดยรวม (6%)",
+                    "อิควิตี้ต้องอยู่เหนือระดับ"
                   ],
                   [
                     "$5,000",
@@ -738,105 +738,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+                "x": "ตัวอย่าง: ในบัญชี $10,000 คุณทำกำไรจนอิควิตี้เป็น $10,800 ระดับขาดทุนสูงสุดจะคงอยู่ที่ $9,400 ไม่ได้ปรับสูงขึ้นตามกำไร"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "ขีดจำกัดทั้งสองข้อทำงานร่วมกันอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "ทั้งสองข้อเป็นขีดจำกัดแยกกันแต่ตรวจสอบไปพร้อมกัน บัญชีจะถูกปรับตกทันทีหากแตะขีดจำกัดใดข้อหนึ่งก่อน การขาดทุนในวันเดียวจะนับสะสมในยอดขาดทุนรวมด้วย"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "ฉันสามารถดูขีดจำกัดปัจจุบันได้ที่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "แดชบอร์ดของคุณจะแสดงระดับขีดจำกัดทั้งสองแบบเรียลไทม์อย่างชัดเจน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "วันเทรดและข้อกำหนดด้านเวลา",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "ฉันต้องเทรดกี่วันเป็นอย่างน้อย?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+                "x": "อย่างน้อย 5 วันทำการในเฟสประเมิน บัญชี Funded ไม่มีวันเทรดขั้นต่ำ"
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "มีจำกัดเวลาในการสอบให้ผ่านหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "ไม่มี ระยะเวลาการเทรดไม่จำกัด คุณสามารถใช้เวลาได้นานเท่าที่ต้องการเพื่อพิชิตเป้าหมายกำไร ตราบใดที่บัญชียังคงมีความเคลื่อนไหว (ดูรายละเอียดด้านล่าง)"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "มีข้อกำหนดความเคลื่อนไหวขั้นต่ำของบัญชีหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "มี หากไม่มีการเปิดออเดอร์ในบัญชีติดต่อกัน 30 วันตามปฏิทิน บัญชีจะถูกปิดโดยอัตโนมัติและไม่คืนค่าธรรมเนียม มีผลบังคับใช้ทุกเฟสรวมถึงบัญชี Funded ดังนั้นโปรดเปิดอย่างน้อยหนึ่งออเดอร์ในทุก 30 วัน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "บัญชีที่ได้รับทุน (Funded Account)",
         "items": [
           {
-            "q": "What happens after I pass the challenge?",
+            "q": "จะเกิดอะไรขึ้นหลังจากฉันสอบผ่าน?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+                "x": "คุณจะได้รับบัญชี Funded ขนาดเท่าเดิม ขีดจำกัดการขาดทุนยังคงเดิม ไม่มีวันเทรดขั้นต่ำ และเลเวอเรจจะปรับลดลง"
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "อัตราส่วนแบ่งกำไรเป็นอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: คุณจะได้รับกำไร 80% ของกำไรทั้งหมดที่คุณทำได้ในบัญชี Funded"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "ฉันสามารถส่งคำขอถอนกำไรได้บ่อยแค่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "ในบัญชี Funded คุณสามารถส่งคำขอถอนกำไรได้ทุกๆ 5 วัน"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "มียอดถอนขั้นต่ำหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "มี ยอดถอนขั้นต่ำคือ 1% ของขนาดบัญชี"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "ขนาดบัญชี",
+                    "ยอดถอนขั้นต่ำ (1%)"
                   ],
                   [
                     "$5,000",
@@ -863,39 +863,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "มีจำกัดจำนวนครั้งในการถอนหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "มี บัญชี Funded จำกัดการถอนไว้ที่ 5 ครั้ง หลังจากการถอนครั้งที่ 5 บัญชีจะปิดลง และคุณสามารถซื้อแพ็กเกจใหม่เพื่อเริ่มเทรดต่อได้"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "เงื่อนไขการเทรด",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "ฉันจะได้รับเลเวอเรจเท่าใด?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "เลเวอเรจสูงสุดคือ 1:50 ในเฟสประเมิน และ 1:40 ในบัญชี Funded"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "เฟส",
+                    "เลเวอเรจสูงสุด"
                   ],
                   [
-                    "Challenge phase",
+                    "เฟสประเมิน",
                     "1:50"
                   ],
                   [
-                    "Funded",
+                    "บัญชี Funded",
                     "1:40"
                   ]
                 ]
@@ -903,143 +903,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "ฉันสามารถถือออเดอร์ข้ามคืนและข้ามสัปดาห์ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+                "x": "อนุญาตให้ถือข้ามคืนได้ ไม่อนุญาตให้ถือข้ามสุดสัปดาห์ ต้องปิดออเดอร์ก่อนตลาดปิดสุดสัปดาห์"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "ฉันสามารถเทรดช่วงมีข่าวเศรษฐกิจสำคัญได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "ในเฟสประเมินเทรดข่าวได้ ในบัญชี Funded ไม่อนุญาตให้เทรดข่าวก่อนและหลัง 5 นาที"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "ข้อห้ามและพฤติกรรมการเทรดที่ไม่อนุญาต",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "พฤติกรรมการเทรดแบบใดที่ไม่ได้รับอนุญาต?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "การเทรดใดๆ ที่เป็นการเอาเปรียบ ละเมิด หรือหลีกเลี่ยงกฎเกณฑ์ของแพลตฟอร์มการเทรดหรือระบบจำลองถือเป็นสิ่งต้องห้าม ซึ่งรวมถึงแต่ไม่จำกัดเพียง:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "การแสวงหาประโยชน์จากข้อผิดพลาดหรือความล่าช้า: การใช้ประโยชน์จากราคาคลาดเคลื่อน ข้อผิดพลาดของระบบ ความล่าช้าในการส่งข้อมูล หรือข้อมูลภายใน"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "การใช้ข้อมูลภายนอกหรือข้อมูลล่าช้า: การเทรดโดยอิงจากฟีดข้อมูลหรือสัญญาณจากบุคคลภายนอกที่ไม่ได้รับอนุญาตบนแพลตฟอร์ม"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "การ Hedging และการเทรดแบบประสานงาน: การเทรดชี้นำหลอกลวง ร่วมมือกับบุคคลอื่น หรือเปิดออเดอร์ตรงข้ามกันระหว่างบัญชีเพื่อทำ Arbitrage ข้ามบัญชีหรือข้ามบริษัท"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "การใช้กลยุทธ์เดียวกันข้ามบัญชี: การเปิดออเดอร์เหมือนกันในเวลาเดียวกันในหลายบัญชี เว้นแต่จะได้รับความยินยอมเป็นลายลักษณ์อักษรล่วงหน้า"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "การใช้ IP หรืออุปกรณ์เดียวกัน: การเทรดหรือเข้าใช้งานบัญชีของเทรดเดอร์คนละคนจาก IP หรืออุปกรณ์เดียวกัน บัญชีเหล่านี้จะถือว่าเกี่ยวข้องกันและอยู่ภายใต้กฎการตรวจสอบเข้มงวด"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "การให้บุคคลภายนอกจัดการบัญชี: การจ้างวานผู้จัดการบัญชี บริการรับสอบผ่าน (passing service) หรือบุคคลอื่นมาเทรดแทน การเทรดและการขอถอนเงินต้องกระทำโดยเจ้าของบัญชีเท่านั้น"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "การใช้บริการส่งสัญญาณ: การคัดลอกสัญญาณจากกลุ่มสัญญาณหรือผู้ให้บริการภายนอก การตัดสินใจในการเทรดทั้งหมดต้องเป็นของคุณเอง"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: การดักเปิดออเดอร์เพื่อเอาเปรียบคำสั่งซื้อขายที่ส่งมาจากที่อื่นหรือโบรกเกอร์อื่น"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "บอทและการเอาเปรียบด้วยระบบอัตโนมัติ: การใช้บอท HFT เครื่องมือ AI หรือระบบอัตโนมัติที่โฆษณาว่าสร้างมาเพื่อสอบผ่านโดยเฉพาะในการหาประโยชน์อย่างไม่เป็นธรรม"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "การเปลี่ยนสไตล์การเทรดหลังสอบผ่าน: การใช้กลยุทธ์ ความเสี่ยง หรือพฤติกรรมการเทรดที่แตกต่างอย่างสิ้นเชิงในบัญชี Funded เมื่อเทียบกับช่วงทดสอบ"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "การเก็งกำไรช่วงตลาดเปิดกระโดด (Gap): การถือครองออเดอร์เพื่อจงใจเอาเปรียบช่วงตลาดปิด-เปิด หรือการประกาศผลประกอบการของหุ้นรายตัว"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "การเสี่ยงเกินสัดส่วนปกติ (All-in): การเปิดขนาดล็อตใหญ่ผิดปกติอย่างชัดเจนเพื่อวัดดวงหรือหลีกเลี่ยงกฎความเสี่ยงของโปรแกรม"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "การละเมิดเงื่อนไขของแพลตฟอร์มหรือระบบส่งคำสั่ง: การเทรดที่ขัดต่อเงื่อนไขของผู้ให้บริการสภาพคล่องหรือโบรกเกอร์"
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+                "x": "การเทรดข่าวในบัญชี Funded: ห้ามเปิดหรือส่งคำสั่งซื้อขายในช่วง 5 นาทีก่อนและหลังข่าวสำคัญ อนุญาตให้เทรดข่าวได้ในเฟสประเมิน"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "คนอื่นสามารถเทรดในบัญชีของฉันได้หรือไม่ หรือฉันสามารถเทรดให้ผู้อื่นได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "ไม่ได้ บัญชีมีไว้สำหรับการใช้งานส่วนบุคคลของคุณเท่านั้น และทุกอย่างต้องทำโดยเจ้าของบัญชี ห้ามอนุญาตให้ผู้อื่นเข้าใช้งาน จัดการ หรือเทรดแทนโดยเด็ดขาด"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "ฉันสามารถมีหลายบัญชีได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "เทรดเดอร์แต่ละคนสามารถถือได้เพียงบัญชีเดียวในโปรแกรม เว้นแต่จะได้รับการอนุมัติล่วงหน้า ห้ามเปิดใช้งานบัญชีร่วมกัน ขอยืม ขายต่อ หรือโอนสิทธิ์ให้ผู้อื่น"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "ฉันสามารถใช้โปรแกรมคัดลอกคำสั่งซื้อขาย (Trade Copier) ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "คุณสามารถใช้ trade copier สำหรับการเทรดระหว่างบัญชีของตัวคุณเองได้ แต่การคัดลอกการเทรดจากผู้อื่นอาจส่งผลให้การขอถอนเงินถูกปฏิเสธ"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "จะเกิดอะไรขึ้นหากตรวจพบพฤติกรรมต้องห้าม?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "เราอาจตัดผลลัพธ์ของออเดอร์ดังกล่าวออก ไม่นำมานับคำนวณกำไร ปฏิเสธการถอนเงิน และระงับหรือยกเลิกบัญชีของคุณทันที"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "ราคาและค่าธรรมเนียม",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "ค่าธรรมเนียมการประเมินราคาเท่าใด?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "ขนาดบัญชี",
+                    "ราคาค่าสอบ"
                   ],
                   [
                     "$5,000",
@@ -1070,77 +1070,77 @@
     ]
   },
   "instant": {
-    "title": "Instant Funding — FAQ",
-    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "title": "การระดมทุนทันที — คำถามที่พบบ่อย",
+    "subtitle": "เงื่อนไขบัญชี Funded — Instant Funding & Instant Funding Light",
     "categories": [
       {
-        "category": "About Instant Funding",
+        "category": "เกี่ยวกับการระดมทุนทันที (Instant Funding)",
         "items": [
           {
-            "q": "What is Instant Funding?",
+            "q": "Instant Funding คืออะไร?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+                "x": "Instant Funding มอบบัญชี Funded ให้คุณทันทีโดยไม่ต้องผ่านการสอบประเมินและไม่มีเป้าหมายกำไร คุณสามารถเทรดตามกฎตั้งแต่วันแรกและรับส่วนแบ่งกำไร 80%"
               }
             ]
           },
           {
-            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "q": "Instant Funding กับ Instant Funding Light ต่างกันอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+                "x": "ทั้งสองแบบมีขีดจำกัดการขาดทุน เลเวอเรจ และรอบการเบิกจ่ายเท่ากัน แต่ Instant Funding Light มีขนาดเล็กกว่าในราคาที่ประหยัดกว่า และเพิ่มกฎความสม่ำเสมอ 25% เมื่อขอถอนกำไร"
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "ฉันสามารถเลือกขนาดบัญชีใดได้บ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 และ $100,000 ส่วน Instant Funding Light: $5,000, $10,000 และ $25,000"
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "เป้าหมายกำไร",
         "items": [
           {
-            "q": "Is there a profit target?",
+            "q": "มีเป้าหมายกำไรหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+                "x": "ไม่มี ไม่มีเป้าหมายกำไรที่บังคับสำหรับบัญชี Instant Funding หรือ Instant Funding Light"
               }
             ]
           }
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "ขีดจำกัดการขาดทุน",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "ขีดจำกัดการขาดทุนมีอะไรบ้าง?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+                "x": "มีสองข้อ: ขาดทุนสูงสุดรายวัน 3% จากยอดคงเหลือต้นวัน และขาดทุนสูงสุดแบบ Trailing 5% ซึ่งจะขยับตามอิควิตี้สูงสุดของคุณ หากละเมิดข้อใดข้อหนึ่งบัญชีจะยุติทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account",
-                    "Maximum Daily Loss (3%, at starting",
-                    "Maximum Loss (5%,"
+                    "บัญชี",
+                    "ขาดทุนสูงสุดรายวัน (3% จากยอด",
+                    "ขาดทุนสูงสุด (5%,"
                   ],
                   [
-                    "size",
-                    "balance)",
-                    "trailing)"
+                    "ขนาด",
+                    "เริ่มต้น)",
+                    "Trailing)"
                   ],
                   [
                     "$5,000",
@@ -1171,51 +1171,51 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+                "x": "วงเงินขาดทุนรายวันจะคำนวณใหม่ทุกวันเวลา 00:00 UTC เป็น 3% ของยอดเงินคงเหลือ ขนาด $50,000 และ $100,000 มีเฉพาะในแพ็กเกจ Instant Funding มาตรฐานเท่านั้น"
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "วิธีการคำนวณ Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Drawdown วัดจากยอดเงินคงเหลือ (Balance) หรืออิควิตี้ (Equity)?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "วัดจากอิควิตี้ (Equity) โดยอิควิตี้คือยอดเงินคงเหลือบวกกำไรหรือขาดทุนที่ยังไม่ปิดของออเดอร์ที่เปิดอยู่ ดังนั้นออเดอร์ที่เปิดอยู่จะถูกนับรวมในขีดจำกัดการขาดทุนตลอดเวลา ไม่ใช่เฉพาะตอนปิดออเดอร์"
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "การขาดทุนสูงสุดรายวันทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "วันเทรดเริ่มต้นเวลา 00:00 UTC วงเงินขาดทุนรายวันคือ 3% ของยอดคงเหลือต้นวัน ระหว่างวันอิควิตี้ต้องไม่ลดลงต่ำกว่าเกณฑ์นี้"
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "ตัวอย่างในบัญชี $10,000: ณ เวลา 00:00 UTC ยอดเงินคือ $10,200 วงเงินขาดทุนรายวันคือ $306 (3% × $10,200) อิควิตี้ต้องอยู่เหนือ $9,894 ($10,200 − $306)"
               }
             ]
           },
           {
-            "q": "How does the trailing Maximum Loss work?",
+            "q": "การขาดทุนสูงสุดแบบ Trailing ทำงานอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+                "x": "การขาดทุนสูงสุดเป็นจำนวนเงินคงที่ (5% ของขนาดบัญชีเริ่มต้น) แต่ระดับจะขยับตามอิควิตี้ของคุณ ทุกครั้งที่อิควิตี้ทำจุดสูงสุดใหม่ ระดับนี้จะขยับขึ้นตามและจะไม่ขยับลดลง หากอิควิตี้ลดลงมาแตะระดับนี้ บัญชีจะถือว่าไม่ผ่านทันที"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (5%)",
-                    "Starting level (equity must stay above)"
+                    "ขนาดบัญชี",
+                    "ขาดทุนสูงสุด (5%)",
+                    "ระดับเริ่มต้น (อิควิตี้ต้องอยู่เหนือระดับนี้)"
                   ],
                   [
                     "$5,000",
@@ -1246,105 +1246,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+                "x": "ตัวอย่าง: ในบัญชี $10,000 หากอิควิตี้ของคุณขึ้นไปแตะ $10,300 ระดับขาดทุนสูงสุดจะขยับขึ้นเป็น $9,800 ($10,300 − $500) หากอิควิตี้ลดลงมาแตะหรือต่ำกว่า $9,800 บัญชีจะถูกปรับตก"
               }
             ]
           },
           {
-            "q": "Does the Maximum Loss level go down after a payout?",
+            "q": "ระดับขาดทุนสูงสุดจะปรับลดลงหลังจากการถอนกำไรหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+                "x": "ไม่ ระดับจะยังคงอยู่ที่จุดสูงสุดเดิมที่ผลการเทรดของคุณทำไว้ และไม่มีการปรับลดลงหลังจากการถอนกำไร"
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "ขีดจำกัดทั้งสองข้อทำงานร่วมกันอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "ทั้งสองข้อเป็นขีดจำกัดแยกกันแต่ตรวจสอบไปพร้อมกัน บัญชีจะถูกปรับตกทันทีหากแตะขีดจำกัดใดข้อหนึ่งก่อน การขาดทุนในวันเดียวจะนับสะสมในยอดขาดทุนรวมด้วย"
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "ฉันสามารถดูขีดจำกัดปัจจุบันได้ที่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "แดชบอร์ดของคุณจะแสดงระดับขีดจำกัดทั้งสองแบบเรียลไทม์อย่างชัดเจน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "วันเทรดและข้อกำหนดด้านเวลา",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "ฉันต้องเทรดกี่วันเป็นอย่างน้อย?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+                "x": "บัญชี Instant Funding และ Instant Funding Light มีข้อกำหนดวันเทรดขั้นต่ำ 5 วัน"
               }
             ]
           },
           {
-            "q": "Is there a time limit?",
+            "q": "มีจำกัดเวลาหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+                "x": "ไม่มี ไม่มีจำกัดเวลาในบัญชี ตราบใดที่บัญชียังมีความเคลื่อนไหว"
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "มีข้อกำหนดความเคลื่อนไหวขั้นต่ำของบัญชีหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "มี หากไม่มีการเปิดออเดอร์ในบัญชีติดต่อกัน 30 วันตามปฏิทิน บัญชีจะถูกปิดโดยอัตโนมัติและไม่คืนค่าธรรมเนียม มีผลบังคับใช้ทุกเฟสรวมถึงบัญชี Funded ดังนั้นโปรดเปิดอย่างน้อยหนึ่งออเดอร์ในทุก 30 วัน"
               }
             ]
           }
         ]
       },
       {
-        "category": "Payouts",
+        "category": "การเบิกจ่ายกำไร (Payouts)",
         "items": [
           {
-            "q": "What is the profit split?",
+            "q": "อัตราส่วนแบ่งกำไรเป็นอย่างไร?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make."
+                "x": "80% / 20%: คุณจะได้รับกำไร 80% ของกำไรทั้งหมดที่คุณทำได้"
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "ฉันสามารถส่งคำขอถอนกำไรได้บ่อยแค่ไหน?",
             "a": [
               {
                 "t": "p",
-                "x": "You can request a payout every 14 days."
+                "x": "คุณสามารถส่งคำขอถอนกำไรได้ทุกๆ 14 วัน"
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "มียอดถอนขั้นต่ำหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "มี ยอดถอนขั้นต่ำคือ 1% ของขนาดบัญชี"
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "ขนาดบัญชี",
+                    "ยอดถอนขั้นต่ำ (1%)"
                   ],
                   [
                     "$5,000",
@@ -1371,192 +1371,192 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "มีจำกัดจำนวนครั้งในการถอนหรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+                "x": "มี บัญชี Instant Funding จำกัดการถอนไว้ที่ 5 ครั้ง หลังการถอนครั้งที่ 5 บัญชีจะปิดลง และคุณสามารถซื้อบัญชีใหม่เพื่อเทรดต่อได้"
               }
             ]
           },
           {
-            "q": "What is the consistency rule on Instant Funding Light?",
+            "q": "กฎความสม่ำเสมอใน Instant Funding Light คืออะไร?",
             "a": [
               {
                 "t": "p",
-                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+                "x": "กำไรในวันใดวันหนึ่งต้องไม่เกิน 25% ของกำไรทั้งหมดของคุณ กฎนี้จะถูกตรวจสอบเมื่อคุณส่งคำขอถอนเงิน และมีผลเฉพาะ Instant Funding Light เท่านั้น"
               },
               {
                 "t": "p",
-                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+                "x": "% ความสม่ำเสมอ = (กำไรสูงสุดในวันเดียว ÷ กำไรทั้งหมด) × 100"
               },
               {
                 "t": "p",
-                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+                "x": "ตัวอย่าง: วันที่ดีที่สุดของคุณทำกำไรได้ $600 และกำไรทั้งหมดคือ $2,000 ค่าความสม่ำเสมอคือ 30% ($600 ÷ $2,000) ซึ่งเกิน 25% คุณจึงยังขอถอนไม่ได้ เมื่อกำไรทั้งหมดของคุณถึง $2,400 วันที่ดีที่สุดจะเป็น 25% พอดี และคุณจะสามารถขอถอนได้"
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "เงื่อนไขการเทรด",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "ฉันจะได้รับเลเวอเรจเท่าใด?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "เลเวอเรจสูงสุดคือ 1:40 โดยเลเวอเรจของแต่ละสินทรัพย์จะแสดงในรายละเอียดบนแพลตฟอร์ม"
               }
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "ฉันสามารถถือออเดอร์ข้ามคืนและข้ามสัปดาห์ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+                "x": "อนุญาตให้ถือข้ามคืนได้ ไม่อนุญาตให้ถือข้ามสุดสัปดาห์ ออเดอร์ทั้งหมดต้องปิดก่อนตลาดปิดสุดสัปดาห์"
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "ฉันสามารถเทรดช่วงมีข่าวเศรษฐกิจสำคัญได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+                "x": "ไม่ บัญชี Instant Funding เป็นบัญชี Funded จึงไม่อนุญาตให้เทรดข่าว: ห้ามเปิดหรือส่งคำสั่งซื้อขายภายใน 5 นาทีก่อนและหลังการประกาศตัวเลขเศรษฐกิจสำคัญ แถลงการณ์ธนาคารกลาง"
               },
               {
                 "t": "p",
-                "x": "bank announcements, geopolitical events or other high-impact events."
+                "x": "หรือเหตุการณ์ความผันผวนสูงอื่นๆ"
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "ข้อห้ามและพฤติกรรมการเทรดที่ไม่อนุญาต",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "พฤติกรรมการเทรดแบบใดที่ไม่ได้รับอนุญาต?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "การเทรดใดๆ ที่เป็นการเอาเปรียบ ละเมิด หรือหลีกเลี่ยงกฎเกณฑ์ของแพลตฟอร์มการเทรดหรือระบบจำลองถือเป็นสิ่งต้องห้าม ซึ่งรวมถึงแต่ไม่จำกัดเพียง:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "การแสวงหาประโยชน์จากข้อผิดพลาดหรือความล่าช้า: การใช้ประโยชน์จากราคาคลาดเคลื่อน ข้อผิดพลาดของระบบ ความล่าช้าในการส่งข้อมูล หรือข้อมูลภายใน"
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "การใช้ข้อมูลภายนอกหรือข้อมูลล่าช้า: การเทรดโดยอิงจากฟีดข้อมูลหรือสัญญาณจากบุคคลภายนอกที่ไม่ได้รับอนุญาตบนแพลตฟอร์ม"
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "การ Hedging และการเทรดแบบประสานงาน: การเทรดชี้นำหลอกลวง ร่วมมือกับบุคคลอื่น หรือเปิดออเดอร์ตรงข้ามกันระหว่างบัญชีเพื่อทำ Arbitrage ข้ามบัญชีหรือข้ามบริษัท"
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "การใช้กลยุทธ์เดียวกันข้ามบัญชี: การเปิดออเดอร์เหมือนกันในเวลาเดียวกันในหลายบัญชี เว้นแต่จะได้รับความยินยอมเป็นลายลักษณ์อักษรล่วงหน้า"
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "การใช้ IP หรืออุปกรณ์เดียวกัน: การเทรดหรือเข้าใช้งานบัญชีของเทรดเดอร์คนละคนจาก IP หรืออุปกรณ์เดียวกัน บัญชีเหล่านี้จะถือว่าเกี่ยวข้องกันและอยู่ภายใต้กฎการตรวจสอบเข้มงวด"
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "การให้บุคคลภายนอกจัดการบัญชี: การจ้างวานผู้จัดการบัญชี บริการรับสอบผ่าน (passing service) หรือบุคคลอื่นมาเทรดแทน การเทรดและการขอถอนเงินต้องกระทำโดยเจ้าของบัญชีเท่านั้น"
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "การใช้บริการส่งสัญญาณ: การคัดลอกสัญญาณจากกลุ่มสัญญาณหรือผู้ให้บริการภายนอก การตัดสินใจในการเทรดทั้งหมดต้องเป็นของคุณเอง"
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: การดักเปิดออเดอร์เพื่อเอาเปรียบคำสั่งซื้อขายที่ส่งมาจากที่อื่นหรือโบรกเกอร์อื่น"
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "บอทและการเอาเปรียบด้วยระบบอัตโนมัติ: การใช้บอท HFT เครื่องมือ AI หรือระบบอัตโนมัติที่โฆษณาว่าสร้างมาเพื่อสอบผ่านโดยเฉพาะในการหาประโยชน์อย่างไม่เป็นธรรม"
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "การเปลี่ยนสไตล์การเทรดหลังสอบผ่าน: การใช้กลยุทธ์ ความเสี่ยง หรือพฤติกรรมการเทรดที่แตกต่างอย่างสิ้นเชิงในบัญชี Funded เมื่อเทียบกับช่วงทดสอบ"
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "การเก็งกำไรช่วงตลาดเปิดกระโดด (Gap): การถือครองออเดอร์เพื่อจงใจเอาเปรียบช่วงตลาดปิด-เปิด หรือการประกาศผลประกอบการของหุ้นรายตัว"
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+                "x": "การเสี่ยงเกินสัดส่วนปกติ: การเปิดขนาดล็อตหรือจำนวนออเดอร์ที่ขัดต่อพฤติกรรมการเทรดปกติอย่างชัดเจน เพื่อหวังผลลัดวงจรหรือเลี่ยงกฎความเสี่ยง"
               },
               {
                 "t": "p",
-                "x": "limits. Market-standard risk management is expected at all times."
+                "x": "ทางเราคาดหวังให้มีการบริหารความเสี่ยงตามมาตรฐานตลาดอยู่เสมอ"
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "การละเมิดเงื่อนไขของแพลตฟอร์มหรือระบบส่งคำสั่ง: การเทรดที่ขัดต่อเงื่อนไขของผู้ให้บริการสภาพคล่องหรือโบรกเกอร์"
               },
               {
                 "t": "p",
-                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+                "x": "การเทรดข่าว: การเปิดหรือส่งคำสั่งซื้อขายภายใน 5 นาทีก่อนหรือหลังข่าวสำคัญ นับเฉพาะออเดอร์ที่ถูกจับคู่ภายในกรอบเวลานี้เท่านั้น"
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "คนอื่นสามารถเทรดในบัญชีของฉันได้หรือไม่ หรือฉันสามารถเทรดให้ผู้อื่นได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "ไม่ได้ บัญชีมีไว้สำหรับการใช้งานส่วนบุคคลของคุณเท่านั้น และทุกอย่างต้องทำโดยเจ้าของบัญชี ห้ามอนุญาตให้ผู้อื่นเข้าใช้งาน จัดการ หรือเทรดแทนโดยเด็ดขาด"
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "ฉันสามารถมีหลายบัญชีได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "เทรดเดอร์แต่ละคนสามารถถือได้เพียงบัญชีเดียวในโปรแกรม เว้นแต่จะได้รับการอนุมัติล่วงหน้า ห้ามเปิดใช้งานบัญชีร่วมกัน ขอยืม ขายต่อ หรือโอนสิทธิ์ให้ผู้อื่น"
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "ฉันสามารถใช้โปรแกรมคัดลอกคำสั่งซื้อขาย (Trade Copier) ได้หรือไม่?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "คุณสามารถใช้ trade copier สำหรับการเทรดระหว่างบัญชีของตัวคุณเองได้ แต่การคัดลอกการเทรดจากผู้อื่นอาจส่งผลให้การขอถอนเงินถูกปฏิเสธ"
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "จะเกิดอะไรขึ้นหากตรวจพบพฤติกรรมต้องห้าม?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "เราอาจตัดผลลัพธ์ของออเดอร์ดังกล่าวออก ไม่นำมานับคำนวณกำไร ปฏิเสธการถอนเงิน และระงับหรือยกเลิกบัญชีของคุณทันที"
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "ราคาและค่าธรรมเนียม",
         "items": [
           {
-            "q": "How much does it cost?",
+            "q": "ราคาเท่าใด?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Instant Funding",
-                    "Instant Funding Light"
+                    "ขนาดบัญชี",
+                    "การระดมทุนทันที (Instant Funding)",
+                    "Instant Funding Light (ทุนทันทีแบบประหยัด)"
                   ],
                   [
                     "$5,000",

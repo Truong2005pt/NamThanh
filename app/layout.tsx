@@ -7,6 +7,7 @@ import { ScrollRevealProvider } from '@/components/eracex/ScrollRevealProvider';
 import { Navbar } from '@/components/eracex/Navbar';
 import { Footer } from '@/components/eracex/Footer';
 import { CookieBanner } from '@/components/eracex/CookieBanner';
+import { NoLabelGlobal } from '@/components/eracex/NoLabelGlobal';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -30,15 +31,15 @@ const inter = Inter({
 });
 
 const dmSans = DM_Sans({
-  subsets: ['latin', 'latin-ext'],
+  subsets: ['latin'],
   display: 'swap',
   variable: '--font-dm',
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  fallback: ['sans-serif'],
 });
 
 export const metadata: Metadata = {
-  title: 'ERACEX | Simulated Trading Evaluation Programs | Thử Thách Giao Dịch Mô Phỏng',
-  description: 'Chương trình đánh giá giao dịch mô phỏng ERACEX: tài khoản từ $5,000 đến $100,000, chia sẻ lợi nhuận cao, quy tắc hiển thị rõ ràng trước khi thanh toán.',
+  title: 'ERACEX | Trading Evaluation Programs | Chương Trình Đánh Giá Giao Dịch',
+  description: 'Chương trình đánh giá giao dịch ERACEX: tài khoản từ $5,000 đến $100,000, chia sẻ lợi nhuận cao, quy tắc hiển thị rõ ràng trước khi thanh toán.',
   icons: {
     icon: '/brand/eracex-icon.png',
     apple: '/brand/eracex-icon.png',
@@ -92,6 +93,7 @@ export default function RootLayout({
 
               {/* DYNAMIC PAGE CONTENT */}
               <main className="flex-1 gft-home">
+                <NoLabelGlobal />
                 {children}
               </main>
 

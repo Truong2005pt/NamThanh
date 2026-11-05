@@ -129,8 +129,8 @@ export const tr: Dict = {
   "conditions": {
     "title": "Neye izin verilir, neye verilmez",
     "shownOnEveryPackage": 'her paket',
-    "allowed": 'İzin verilir',
-    "notAllowed": 'İzin verilmez',
+    "allowed": 'İzinli',
+    "notAllowed": 'Yasak',
     "weekendHolding": 'Hafta sonu pozisyon tutma',
     "weekendHoldingDesc": 'Hafta sonundan önce tüm pozisyonları kapatın.',
     "newsTradingEval": 'Haber işlemi: değerlendirme',

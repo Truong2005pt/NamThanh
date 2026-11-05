@@ -130,7 +130,7 @@ export const es: Dict = {
     "title": "Lo que está permitido y lo que no",
     "shownOnEveryPackage": 'cada paquete',
     "allowed": 'Permitido',
-    "notAllowed": 'No permitido',
+    "notAllowed": 'Prohibido',
     "weekendHolding": 'Posiciones durante el fin de semana',
     "weekendHoldingDesc": 'Cierre todas las posiciones antes del fin de semana.',
     "newsTradingEval": 'Trading de noticias: evaluación',

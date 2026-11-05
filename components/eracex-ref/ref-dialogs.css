@@ -1,0 +1,71 @@
+/* Detail dialogs (parameter explanations, previews): centred card, clear header, ink-coloured text, no glow. */
+.ref-scope dialog {
+  position: fixed; inset: 0; margin: auto; padding: 0; box-sizing: border-box;
+  width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 40px); overflow-y: auto;
+  background: var(--pdu-card); color: var(--ref-ink); border: 1px solid var(--pdu-line); border-radius: 20px; box-shadow: none;
+}
+:root[data-theme='light'] .ref-scope dialog { border-color: #cfc9b6; }
+.ref-scope dialog::backdrop { background: rgba(10, 10, 12, 0.58); backdrop-filter: blur(6px); }
+.ref-scope dialog[open] { animation: ref-dialog-in .24s cubic-bezier(.2, .8, .2, 1); }
+@keyframes ref-dialog-in { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+
+.ref-scope dialog .dialog-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 16px 20px 16px 24px; border-bottom: 1px solid var(--pdu-line); position: sticky; top: 0; background: var(--pdu-card); z-index: 1;
+}
+.ref-scope dialog .dialog-top .eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--ref-ink) !important; opacity: .65;
+}
+.ref-scope dialog .dialog-top button {
+  width: 36px; height: 36px; padding: 0; display: grid; place-items: center; border-radius: 50%;
+  border: 1px solid var(--pdu-line); background: transparent; color: var(--ref-ink); font-size: 20px; line-height: 1; cursor: pointer;
+  transition: background-color .2s;
+}
+.ref-scope dialog .dialog-top button:hover { background: var(--pdu-pill); }
+
+.ref-scope dialog > h2 {
+  margin: 24px 24px 10px; font-family: var(--ref-head); font-size: 28px; font-weight: 600; letter-spacing: -.02em; line-height: 1.2; color: var(--ref-ink);
+}
+.ref-scope dialog .metric-program {
+  display: inline-block; margin: 0 24px 20px; padding: 4px 12px; border: 1px solid var(--pdu-line); border-radius: 999px;
+  font-size: 13px; font-weight: 500; color: var(--ref-ink); opacity: .85;
+}
+.ref-scope dialog .metric-visual {
+  margin: 0 24px 20px; padding: 20px 24px; background: var(--pdu-side) !important; border: 1px solid var(--pdu-line); border-radius: 14px;
+}
+.ref-scope dialog .metric-visual > span { font-size: 12px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--ref-ink) !important; opacity: .6; }
+.ref-scope dialog .metric-visual > strong {
+  display: block; margin: 10px 0 6px; font: 600 40px/1.1 var(--ref-head); letter-spacing: -.03em; color: var(--ref-ink) !important;
+  -webkit-text-fill-color: var(--ref-ink);
+}
+.ref-scope dialog .metric-visual > strong > small { display: block; margin-top: 6px; font: 500 14px var(--ref-body); letter-spacing: 0; color: var(--ref-ink); opacity: .7; }
+.ref-scope dialog .metric-visual > small { font-size: 13px; color: var(--ref-ink); opacity: .7; }
+.ref-scope dialog .metric-body { margin: 0 24px; }
+.ref-scope dialog .metric-body p { margin: 0 0 14px; font-size: 15px; line-height: 1.7; color: var(--ref-ink); opacity: .88; }
+.ref-scope dialog .metric-source {
+  margin: 20px 24px 24px !important; padding-top: 16px; border-top: 1px solid var(--pdu-line); font-size: 12.5px !important; line-height: 1.6; color: var(--ref-ink) !important; opacity: .6;
+}
+#subDialogBody { margin: 0 24px 24px; font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 520px) {
+  .ref-scope dialog > h2 { font-size: 24px; }
+  .ref-scope dialog .metric-visual > strong { font-size: 34px; }
+}
+@media (prefers-reduced-motion: reduce) { .ref-scope dialog[open] { animation: none; } }
+
+.ref-scope #metricDialog, .ref-scope #subDialog { padding: 0 !important; max-width: 560px !important; width: min(560px, calc(100vw - 32px)) !important; }
+.ref-scope #metricDialog .dialog-top, .ref-scope #subDialog .dialog-top { padding: 16px 20px 16px 24px; }
+.ref-scope dialog > h2 { margin: 24px 24px 10px !important; }
+.ref-scope dialog .metric-program { margin: 0 24px 20px !important; }
+
+/* The dialog surface follows the theme (an id-level legacy rule kept it dark in the light theme). */
+.ref-scope #metricDialog, .ref-scope #subDialog {
+  background: var(--pdu-card) !important; color: var(--ref-ink) !important; border: 1px solid var(--pdu-line) !important;
+}
+:root[data-theme='light'] .ref-scope #metricDialog, :root[data-theme='light'] .ref-scope #subDialog { border-color: #cfc9b6 !important; }
+.ref-scope #metricDialog .dialog-top, .ref-scope #subDialog .dialog-top { background: var(--pdu-card); }
+
+/* Focus rings are neutral, not gold. */
+.ref-scope button:focus-visible, .ref-scope a:focus-visible, .ref-scope summary:focus-visible, .ref-scope input:focus-visible {
+  outline: 2px solid var(--ref-ink); outline-offset: 3px;
+}

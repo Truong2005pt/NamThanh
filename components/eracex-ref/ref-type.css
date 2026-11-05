@@ -1,0 +1,20 @@
+/* Typography for the concept pages, modelled on fundingpips.com:
+   headings in DM Sans (600, tight tracking), body in Inter at 15px, small text never below 11px.
+   DM Sans has no Vietnamese glyphs, so Vietnamese pages use Be Vietnam Pro for headings instead. */
+.ref-scope {
+  --ref-head: 'DM Sans', 'Be Vietnam Pro', system-ui, sans-serif;
+  --ref-body: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+  font-family: var(--ref-body);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.ref-scope[data-lang='vi'] { --ref-head: 'Be Vietnam Pro', 'DM Sans', system-ui, sans-serif; }
+
+.ref-scope h1, .ref-scope h2, .ref-scope h3, .ref-scope h4 { font-family: var(--ref-head); font-weight: 600; }
+.ref-scope h1 { letter-spacing: -0.03em; line-height: 1.12; }
+.ref-scope h2 { letter-spacing: -0.02em; line-height: 1.18; }
+.ref-scope h3 { letter-spacing: -0.015em; line-height: 1.28; }
+.ref-scope p, .ref-scope li { font-size: max(1em, 14px); }
+.ref-scope button, .ref-scope input, .ref-scope select, .ref-scope textarea { font-family: var(--ref-body); }

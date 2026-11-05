@@ -1,0 +1,44 @@
+/* Icons kept to the minimum: only functional ones (accordion plus/minus, info triggers, search field).
+   Decorative badges, row icons and button arrows are hidden so the pages stay clean and text-led. */
+.ref-scope .sp-card-ico,
+.ref-scope .pa-step-ico,
+.ref-scope .pa-rule-ico,
+.ref-scope .pa-note-ico,
+.ref-scope .pa-chip-ico,
+.ref-scope .pa-toc-ico,
+.ref-scope .pa-toc-go,
+.ref-scope .pa-arr,
+.ref-scope .ib-vi,
+.ref-scope .ib-si,
+.ref-scope .ib-gi,
+.ref-scope .ib-ci,
+.ref-scope .co-tile-icon,
+.ref-scope .co-envelope,
+.ref-scope .co-cc-icon,
+.ref-scope .co-ri,
+.ref-scope .co-pi,
+.ref-scope .co-disclaimer svg,
+.ref-scope .pd-simulation-note svg,
+.ref-scope .pd-param-hub,
+.ref-scope .button > span,
+.ref-scope .sp-link > span,
+.ref-scope .pd-topic-panel .button svg,
+.ref-scope .pd-proof-note svg,
+.ref-scope .pd-flow-row svg { display: none !important; }
+.ref-scope .button { gap: 0; justify-content: center; }
+
+/* Blanket rule: every Lucide icon is hidden except the functional ones listed below. */
+.ref-scope svg.lu { display: none !important; }
+.ref-scope .pa-faq-plus svg.lu,
+.ref-scope .pd-more-settings > summary svg.lu,
+.ref-scope .metric-trigger svg.lu,
+.ref-scope .pd-cycle-row svg.lu,
+.ref-scope .pd-art-core svg.lu { display: inline-block !important; }
+.ref-scope .ib-tier-top i,
+.ref-scope .workspace-float-icon,
+.ref-scope .pd-flow-row i { display: none !important; }
+
+/* Technology page: feature list without icon tiles, workspace mock without icon rail. */
+.ref-scope .technology-features > div > span,
+.ref-scope .workspace-sidebar > span { display: none !important; }
+.ref-scope .technology-features > div { grid-template-columns: 1fr; padding-left: 16px; }

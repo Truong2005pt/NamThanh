@@ -1,0 +1,29 @@
+/* Same type system as the home page: DM Sans 600 headings, Inter 16px body. */
+.ref-scope,
+.ref-scope[data-lang='vi'] {
+  --ref-head: 'DM Sans', sans-serif, 'Be Vietnam Pro';
+  --ref-body: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.ref-scope h1, .ref-scope h2, .ref-scope h3, .ref-scope h4 { font-family: var(--ref-head); font-weight: 600; }
+
+/* About, Contact and FAQ: heading scale of the home page */
+.ref-scope[data-page='about'] h1, .ref-scope[data-page='contact'] h1, .ref-scope[data-page='faq'] h1 {
+  font-size: clamp(38px, 5vw, 63px); line-height: 1.1; letter-spacing: -0.04em;
+}
+.ref-scope[data-page='about'] h2, .ref-scope[data-page='contact'] h2, .ref-scope[data-page='faq'] h2 {
+  font-size: clamp(26px, 3vw, 36px); line-height: 1.2; letter-spacing: -0.03em;
+}
+.ref-scope[data-page='about'] h3, .ref-scope[data-page='contact'] h3, .ref-scope[data-page='faq'] h3 {
+  font-size: clamp(18px, 1.8vw, 22px); line-height: 1.3; letter-spacing: -0.01em;
+}
+.ref-scope[data-page='about'] p, .ref-scope[data-page='contact'] p, .ref-scope[data-page='faq'] p,
+.ref-scope[data-page='about'] li, .ref-scope[data-page='contact'] li, .ref-scope[data-page='faq'] li {
+  font-size: 16px; line-height: 1.6;
+}
+
+/* keep the home-page heading weight (the concept CSS sets lighter weights on these headings) */
+.ref-scope[data-page='about'] :is(h1, h2, h3), .ref-scope[data-page='contact'] :is(h1, h2, h3), .ref-scope[data-page='faq'] :is(h1, h2, h3) {
+  font-weight: 600 !important;
+}

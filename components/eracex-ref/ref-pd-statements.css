@@ -1,0 +1,106 @@
+/* Reward "statement" cards (Every journey. A different result.)
+   Flat, structured cards with the official ERACEX logo; gold used as an accent only. */
+
+.ref-scope .pd-statements {
+  --st-bg: linear-gradient(180deg, #15151b 0%, #0d0d11 100%);
+  --st-line: #2b2b33;
+  --st-text: #f4f3ec;
+  --st-muted: #8d8e99;
+  --st-chip: #1a1a21;
+  --st-logo: #ffffff;
+  --st-amount: linear-gradient(180deg, #fff3b8 0%, #f3c633 55%, #c99a1d 100%);
+  --st-shadow: 0 30px 60px -34px #000d;
+  --st-feature-line: #c99a1d99;
+  --st-feature-glow: 0 34px 70px -32px #f3c63345;
+}
+:root[data-theme='light'] .ref-scope .pd-statements {
+  --st-bg: linear-gradient(180deg, #ffffff 0%, #fbf9f2 100%);
+  --st-line: #e7e2d2;
+  --st-text: #1b1a14;
+  --st-muted: #7d7967;
+  --st-chip: #f4f1e5;
+  --st-logo: #09090d;
+  --st-amount: linear-gradient(180deg, #d9a826 0%, #b8860b 60%, #8f6606 100%);
+  --st-shadow: 0 30px 60px -36px #8a6a1038;
+  --st-feature-line: #c99a1dcc;
+  --st-feature-glow: 0 34px 70px -34px #c99a1d55;
+}
+
+.ref-scope .pd-reward-section .pd-proof-cards.pd-statements {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;
+  max-width: 1040px; margin: 0 auto; padding: 18px 4px 26px; overflow: visible; align-items: stretch;
+}
+.ref-scope .pd-reward-section .pd-statements article.pd-statement {
+  position: relative; display: flex; flex-direction: column; min-width: 0;
+  padding: 26px 26px 22px; border-radius: 18px; overflow: hidden;
+  background: var(--st-bg); color: var(--st-text);
+  border: 1px solid var(--st-line); box-shadow: var(--st-shadow);
+  transform: none; transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.ref-scope .pd-reward-section .pd-statements article.pd-statement::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #f3c633 35%, #c99a1d 65%, transparent); opacity: .55;
+}
+.ref-scope .pd-reward-section .pd-statements article.pd-statement::after {
+  content: ''; position: absolute; right: -60px; top: -60px; width: 190px; height: 190px; border-radius: 50%;
+  background: radial-gradient(circle, #f3c63322, transparent 70%); pointer-events: none;
+}
+.ref-scope .pd-reward-section .pd-statements article.pd-statement.is-featured {
+  transform: translateY(-10px); border-color: var(--st-feature-line); box-shadow: var(--st-feature-glow);
+}
+.ref-scope .pd-reward-section .pd-statements article.pd-statement.is-featured::before { opacity: 1; }
+.ref-scope .pd-reward-section .pd-statements article.pd-statement:hover { transform: translateY(-6px); border-color: var(--st-feature-line); }
+
+/* header: official logo + illustrative tag */
+.ref-scope .pd-statement > .pd-stmt-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 34px; }
+.ref-scope .pd-stmt-logo { display: inline-flex; align-items: center; gap: 8px; }
+.ref-scope .pd-stmt-logo img { height: 17px; width: auto; display: block; }
+.ref-scope .pd-stmt-word {
+  display: block; height: 11px; width: 65px; background-color: var(--st-logo);
+  -webkit-mask: url(/brand/eracex-wordmark.png) center / 100% 100% no-repeat;
+  mask: url(/brand/eracex-wordmark.png) center / 100% 100% no-repeat;
+}
+.ref-scope .pd-statement > .pd-stmt-top small {
+  margin: 0; padding: 4px 10px; border: 1px solid var(--st-line); border-radius: 999px; background: var(--st-chip);
+  font-size: 9px; font-weight: 700; letter-spacing: 1.1px; color: var(--st-muted); white-space: nowrap;
+}
+
+/* body */
+.ref-scope .pd-statement > .pd-stmt-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; color: var(--st-muted); }
+.ref-scope .pd-statement > strong {
+  display: block; margin: 10px 0 14px; font: 600 clamp(36px, 4vw, 48px)/1.1 Manrope, 'Be Vietnam Pro', sans-serif;
+  letter-spacing: -1.6px; font-variant-numeric: tabular-nums; width: fit-content;
+  background: var(--st-amount); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+}
+.ref-scope .pd-statement > .pd-stmt-calc {
+  display: inline-block; width: fit-content; margin: 0; padding: 6px 11px; border-radius: 8px;
+  background: var(--st-chip); border: 1px solid var(--st-line);
+  font-size: 12px; font-weight: 600; color: var(--st-muted); font-variant-numeric: tabular-nums;
+}
+
+/* footer: program / size as a two-column spec row */
+.ref-scope .pd-statement > footer {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: auto; padding-top: 18px;
+  border-top: 1px solid var(--st-line); position: relative;
+}
+.ref-scope .pd-statement > footer { margin-top: 28px; }
+.ref-scope .pd-statement > footer > div + div { padding-left: 14px; border-left: 1px solid var(--st-line); }
+.ref-scope .pd-statement > footer small { display: block; font-size: 10px; letter-spacing: .8px; text-transform: uppercase; color: var(--st-muted); margin-bottom: 4px; }
+.ref-scope .pd-statement > footer b { font: 650 14px Manrope, 'Be Vietnam Pro', sans-serif; letter-spacing: -.2px; color: var(--st-text); }
+
+@media (max-width: 860px) {
+  .ref-scope .pd-reward-section .pd-proof-cards.pd-statements {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding: 16px 4px 22px; justify-content: flex-start;
+  }
+  .ref-scope .pd-reward-section .pd-statements article.pd-statement { flex: 0 0 82%; max-width: 320px; scroll-snap-align: center; padding: 22px 22px 18px; }
+  .ref-scope .pd-reward-section .pd-statements article.pd-statement.is-featured { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ref-scope .pd-reward-section .pd-statements article.pd-statement { transition: none; }
+}
+
+/* footer labels are plain text (reset the legacy badge styling of <small> inside proof cards) */
+.ref-scope .pd-statement > footer small {
+  border: 0; border-radius: 0; padding: 0; margin: 0 0 4px; font-size: 10px; white-space: normal; color: var(--st-muted);
+}
+.ref-scope .pd-statement > footer { background: none; border-left: 0; border-right: 0; border-bottom: 0; box-shadow: none; }

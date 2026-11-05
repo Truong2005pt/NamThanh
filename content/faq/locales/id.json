@@ -1,48 +1,48 @@
 {
   "two": {
-    "title": "Two-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "Tantangan 2 Langkah — FAQ",
+    "subtitle": "Ketentuan Akun Tantangan & Terdanai",
     "categories": [
       {
-        "category": "About the Two-Step Challenge",
+        "category": "Tentang Tantangan 2 Langkah",
         "items": [
           {
-            "q": "What is the Two-Step Challenge?",
+            "q": "Apa itu Tantangan 2 Langkah?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+                "x": "Ini adalah evaluasi dua tahap. Lulus Fase 1 dan Fase 2, dan Anda beralih ke akun Terdanai dengan pembagian keuntungan 80%."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Ukuran akun apa saja yang dapat saya pilih?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Lima ukuran: $5.000, $10.000, $25.000, $50.000, dan $100.000. Semua aturan memiliki persentase yang sama untuk setiap ukuran; hanya jumlah nominal dolar yang berbeda."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Targets",
+        "category": "Target Keuntungan",
         "items": [
           {
-            "q": "What profit do I need to pass each phase?",
+            "q": "Berapa keuntungan yang saya butuhkan untuk lulus setiap fase?",
             "a": [
               {
                 "t": "p",
-                "x": "Phase 1 requires 10% profit. Phase 2 requires 5% profit. The Funded account has no profit target."
+                "x": "Fase 1 membutuhkan keuntungan 10%. Fase 2 membutuhkan keuntungan 5%. Akun Terdanai tidak memiliki target keuntungan."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Phase 1 target (10%)",
-                    "Phase 2 target (5%)"
+                    "Ukuran akun",
+                    "Target Fase 1 (10%)",
+                    "Target Fase 2 (5%)"
                   ],
                   [
                     "$5,000",
@@ -76,22 +76,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Batas Kerugian",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Berapa batas kerugiannya?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+                "x": "Ada dua batas: Kerugian Harian Maksimum sebesar 5% dari saldo Anda pada awal setiap hari, dan Kerugian Maksimum sebesar 10% dari ukuran akun awal. Melanggar salah satunya akan mengakhiri akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (5%, at starting balance)",
-                    "Maximum Loss (10%)"
+                    "Ukuran akun",
+                    "Kerugian Harian Maksimum (5%, dari saldo awal)",
+                    "Kerugian Maksimum (10%)"
                   ],
                   [
                     "$5,000",
@@ -122,60 +122,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Nominal kerugian harian di atas berlaku saat saldo Anda sama dengan ukuran akun. Batas harian sebenarnya dihitung ulang setiap hari sebesar 5% dari saldo Anda pada pukul 00:00 UTC, sehingga bertambah seiring keuntungan Anda dan menyusut setelah kerugian."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Apakah batas kerugian berlaku di setiap fase?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+                "x": "Ya. Batas yang sama berlaku di Fase 1, Fase 2, dan pada akun Terdanai."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Cara Perhitungan Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Apakah drawdown diukur berdasarkan saldo atau ekuitas?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Berdasarkan ekuitas. Ekuitas adalah saldo Anda ditambah keuntungan atau kerugian mengambang (floating) dari posisi terbuka, sehingga transaksi terbuka dihitung dalam kedua batas kerugian setiap saat, bukan hanya saat Anda menutupnya."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Harian Maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Hari trading dimulai pukul 00:00 UTC. Saldo Anda pada saat itu, hanya dari posisi yang ditutup, adalah titik awal untuk hari tersebut. Batas harian Anda adalah 5% dari saldo awal tersebut. Sepanjang hari, ekuitas Anda, termasuk posisi terbuka, tidak boleh turun melebihi jumlah ini di bawah titik awal. Jika terjadi, akun dinyatakan gagal."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Contoh pada akun $10.000: pada pukul 00:00 UTC saldo Anda adalah $10.200, jadi batas harian Anda adalah $510 (5% × $10.200). Sepanjang hari tersebut ekuitas Anda harus tetap di atas $9.690 ($10.200 − $510), meskipun ada transaksi yang masih terbuka. Pada 00:00 UTC berikutnya, titik awal dan batas diatur kembali dari saldo Anda pada saat itu."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "Tingkat Kerugian Maksimum bersifat tetap. Ini dihitung sekali dari saldo awal Anda dan tidak pernah berubah, bahkan saat Anda memperoleh keuntungan. Jika ekuitas Anda turun ke atau di bawah tingkat ini kapan saja, akun dinyatakan gagal."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (10%)",
-                    "Equity must stay above"
+                    "Ukuran akun",
+                    "Kerugian Maksimum (10%)",
+                    "Ekuitas harus tetap di atas"
                   ],
                   [
                     "$5,000",
@@ -206,105 +206,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+                "x": "Contoh: pada akun $10.000 Anda meningkatkan ekuitas menjadi $10.800. Tingkat Kerugian Maksimum tetap di $9.000; tidak naik seiring keuntungan Anda."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Bagaimana kedua batas bekerja bersama?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Keduanya adalah batas terpisah yang diperiksa pada saat yang sama. Akun dinyatakan gagal jika salah satu batas tercapai lebih dahulu. Hari dengan kerugian besar tetap dihitung dalam Kerugian Maksimum, sehingga Anda dapat mencapai Kerugian Maksimum tanpa melanggar batas harian."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Di mana saya dapat melihat batas saya saat ini?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Dashboard Anda menampilkan level terkini secara langsung untuk kedua batas akun Anda."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Hari Trading dan Batas Waktu",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Berapa hari trading yang saya butuhkan?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+                "x": "Minimal 5 hari trading di Fase 1 dan minimal 5 hari di Fase 2. Akun Terdanai tidak memiliki ketentuan minimum hari trading."
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "Apakah ada batas waktu untuk menyelesaikan tantangan?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Tidak. Periode trading tidak terbatas, sehingga Anda dapat meluangkan waktu sebanyak yang Anda perlukan untuk mencapai target keuntungan, asalkan akun tetap aktif (lihat di bawah)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Apakah ada ketentuan aktivitas minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Ya. Jika tidak ada transaksi di akun Anda selama 30 hari kalender berturut-turut, akun akan ditutup secara otomatis dan biaya tidak dapat dikembalikan. Ini berlaku di setiap fase, termasuk akun Terdanai, jadi pastikan Anda melakukan setidaknya satu transaksi dalam setiap 30 hari."
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "Akun Terdanai (Funded)",
         "items": [
           {
-            "q": "What happens after I pass both phases?",
+            "q": "Apa yang terjadi setelah saya lulus kedua fase?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+                "x": "Anda menerima akun Terdanai dengan ukuran yang sama. Batas kerugian yang sama tetap berlaku, tidak ada jumlah minimum hari trading, dan leverage lebih rendah dibandingkan fase evaluasi (lihat Kondisi Trading)."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Berapa pembagian keuntungannya (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: Anda mempertahankan 80% dari keuntungan yang Anda peroleh di akun Terdanai."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Seberapa sering saya dapat meminta pembayaran (payout)?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Pada akun Terdanai, Anda dapat meminta pembayaran setiap 5 hari."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Apakah ada jumlah pembayaran minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Ya. Pembayaran minimum adalah 1% dari ukuran akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Ukuran akun",
+                    "Pembayaran minimum (1%)"
                   ],
                   [
                     "$5,000",
@@ -331,39 +331,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Apakah ada jumlah pembayaran maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Ya. Akun Terdanai dibatasi hingga 5 kali pembayaran. Setelah pembayaran kelima, akun akan ditutup, dan untuk melanjutkan trading Anda perlu membeli tantangan baru."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Kondisi Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Berapa leverage yang saya dapatkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Leverage maksimum adalah 1:100 di Fase 1 dan Fase 2. Pada akun Terdanai leverage maksimum adalah 1:40. Leverage untuk setiap instrumen ditampilkan pada detail simbol di platform."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Fase",
+                    "Leverage maksimum"
                   ],
                   [
-                    "Phase 1 and Phase 2",
+                    "Fase 1 dan Fase 2",
                     "1:100"
                   ],
                   [
-                    "Funded",
+                    "Terdanai (Funded)",
                     "1:40"
                   ]
                 ]
@@ -371,143 +371,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Bisakah saya menahan transaksi semalaman (overnight) dan akhir pekan?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+                "x": "Menahan transaksi semalaman (overnight) diperbolehkan. Menahan transaksi akhir pekan tidak diperbolehkan, sehingga posisi harus ditutup sebelum pasar tutup di akhir pekan. Ini berlaku di Fase 1, Fase 2, dan akun Terdanai."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Bisakah saya melakukan trading saat rilis berita besar?",
             "a": [
               {
                 "t": "p",
-                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "Di Fase 1 dan Fase 2, ya. Pada akun Terdanai trading berita tidak diperbolehkan: Anda tidak boleh membuka atau mengeksekusi transaksi dalam waktu 5 menit sebelum atau 5 menit setelah rilis berita ekonomi besar, pengumuman bank sentral, atau peristiwa berdampak tinggi lainnya."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Praktik Trading yang Dilarang",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Praktik trading apa saja yang tidak diperbolehkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Setiap transaksi yang mengeksploitasi, menyalahgunakan, atau mengakali program, platform trading, atau lingkungan trading simulasi dilarang keras. Ini termasuk, tanpa batasan:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Mengeksploitasi kesalahan atau keterlambatan: menggunakan kesalahan harga, ketidakakuratan data, malfungsi sistem, latensi, atau pembaruan harga yang tertunda secara sengaja maupun tidak sengaja."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Data eksternal atau tertunda: melakukan trading dengan umpan data, sinyal, atau strategi eksternal, tertunda, non-standar, atau pihak ketiga yang tidak tersedia di dalam platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging dan trading terkoordinasi: trading manipulatif, menipu, atau terkoordinasi, sendiri atau bersama orang lain, termasuk antar akun terkait; membuka posisi berlawanan pada saat yang sama; dan arbitrase antar akun."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Strategi yang sama di berbagai akun: menempatkan transaksi yang sama atau sangat mirip pada waktu yang sama atau hampir bersamaan di beberapa akun tanpa persetujuan tertulis sebelumnya."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Alamat IP atau perangkat yang sama: trading atau mengakses akun trader yang berbeda dari alamat IP yang sama atau perangkat yang sama. Akun yang berbagi IP atau perangkat diperlakukan sebagai akun terkait."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pengelolaan akun pihak ketiga: menggunakan pihak ketiga mana pun, baik perorangan, manajer akun, atau \"layanan joki lolos tantangan\", untuk mengelola akun Anda. Semua aktivitas harus dilakukan sendiri oleh pemegang akun."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Layanan sinyal: menggunakan sinyal trading dari grup atau penyedia sinyal mana pun untuk menempatkan transaksi. Semua keputusan trading harus merupakan keputusan Anda sendiri."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: mendahului eksekusi pesanan yang ditempatkan di tempat lain, termasuk di broker atau akun lain."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Bot dan eksploitasi otomatis: menggunakan perangkat lunak, skrip, bot frekuensi sangat tinggi, atau strategi otomatis yang dirancang untuk mengakali aturan atau mencari keuntungan tidak adil."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Mengubah gaya trading setelah lulus: menggunakan strategi, profil risiko, atau perilaku eksekusi yang berbeda secara signifikan pada akun Terdanai dibandingkan dengan fase tantangan."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Eksploitasi gap dan peristiwa: trading yang menyimpang dari praktik pasar wajar, seperti menahan posisi untuk mengeksploitasi gap pembukaan pasar atau rilis laporan keuangan."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Risiko tidak proporsional: membuka ukuran posisi atau jumlah posisi yang sangat tidak sejalan dengan trading Anda biasanya, yang mengindikasikan upaya untuk mengakali batas risiko program."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Melanggar ketentuan platform atau eksekusi: melakukan trading yang melanggar ketentuan platform trading, broker, atau penyedia likuiditas."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+                "x": "Trading berita pada akun Terdanai: membuka atau mengeksekusi transaksi dalam waktu 5 menit sebelum atau 5 menit setelah peristiwa berdampak tinggi. Trading berita diperbolehkan di Fase 1 dan Fase 2."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Bisakah orang lain melakukan trading di akun saya, atau bisakah saya melakukan trading untuk orang lain?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Tidak. Akun Anda hanya untuk penggunaan pribadi Anda, dan segala aktivitas di dalamnya harus dilakukan oleh Anda sebagai pemegang akun. Anda tidak boleh mengizinkan orang lain mengelola akun Anda atau mengelola akun trader lain."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Bisakah saya memiliki lebih dari satu akun?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Setiap trader hanya boleh memiliki satu akun dalam program kecuali disetujui sebelumnya secara tertulis. Akun tambahan dapat ditangguhkan atau diblokir secara permanen. Akun tidak boleh diperjualbelikan atau dibagikan."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Bisakah saya menggunakan trade copier (penyalin transaksi)?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Anda dapat menggunakan trade copier untuk transaksi akun pribadi Anda sendiri. Menyalin strategi trader lain dapat menyebabkan pembayaran Anda ditolak."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Apa yang terjadi jika praktik terlarang terdeteksi?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Kami dapat mengecualikan transaksi yang terpengaruh, membatalkan permintaan pembayaran, dan menangguhkan atau mengakhiri akun serta partisipasi Anda dalam program."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Harga",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Berapa biaya tantangannya?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Ukuran akun",
+                    "Harga tantangan"
                   ],
                   [
                     "$5,000",
@@ -538,48 +538,48 @@
     ]
   },
   "one": {
-    "title": "One-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "Tantangan 1 Langkah — FAQ",
+    "subtitle": "Ketentuan Akun Tantangan & Terdanai",
     "categories": [
       {
-        "category": "About the One-Step Challenge",
+        "category": "Tentang Tantangan 1 Langkah",
         "items": [
           {
-            "q": "What is the One-Step Challenge?",
+            "q": "Apa itu Tantangan 1 Langkah?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+                "x": "Ini adalah evaluasi satu tahap. Capai target keuntungan dalam satu fase, dan Anda beralih ke akun Terdanai dengan pembagian keuntungan 80%."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Ukuran akun apa saja yang dapat saya pilih?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Lima ukuran: $5.000, $10.000, $25.000, $50.000, dan $100.000. Semua aturan memiliki persentase yang sama untuk setiap ukuran; hanya jumlah nominal dolar yang berbeda."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Target Keuntungan",
         "items": [
           {
-            "q": "What profit do I need to pass?",
+            "q": "Berapa keuntungan yang saya butuhkan untuk lulus?",
             "a": [
               {
                 "t": "p",
-                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+                "x": "Fase tantangan membutuhkan keuntungan 10%. Akun Terdanai tidak memiliki target keuntungan."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Profit target (10%)"
+                    "Ukuran akun",
+                    "Target keuntungan (10%)"
                   ],
                   [
                     "$5,000",
@@ -608,22 +608,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Batas Kerugian",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Berapa batas kerugiannya?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+                "x": "Ada dua batas: Kerugian Harian Maksimum sebesar 3% dari saldo awal hari Anda, dan Kerugian Maksimum sebesar 6% dari ukuran akun awal. Melanggar salah satunya akan mengakhiri akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (3%, at starting balance)",
-                    "Maximum Loss (6%)"
+                    "Ukuran akun",
+                    "Kerugian Harian Maksimum (3%, dari saldo awal)",
+                    "Kerugian Maksimum (6%)"
                   ],
                   [
                     "$5,000",
@@ -654,60 +654,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Nominal kerugian harian di atas berlaku saat saldo sama dengan ukuran akun. Batas harian dihitung ulang setiap hari sebesar 3% dari saldo Anda pada pukul 00:00 UTC."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Apakah batas kerugian berlaku di setiap fase?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+                "x": "Ya. Batas yang sama berlaku di fase tantangan dan pada akun Terdanai."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Cara Perhitungan Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Apakah drawdown diukur berdasarkan saldo atau ekuitas?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Berdasarkan ekuitas. Ekuitas adalah saldo Anda ditambah keuntungan atau kerugian mengambang (floating) dari posisi terbuka, sehingga transaksi terbuka dihitung dalam kedua batas kerugian setiap saat, bukan hanya saat Anda menutupnya."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Harian Maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Hari trading dimulai pukul 00:00 UTC. Batas harian Anda adalah 3% dari saldo awal hari tersebut. Sepanjang hari, ekuitas Anda tidak boleh turun melebihi jumlah ini di bawah titik awal."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Contoh pada akun $10.000: pada pukul 00:00 UTC saldo Anda adalah $10.200, jadi batas harian adalah $306 (3% × $10.200). Ekuitas Anda harus tetap di atas $9.894 ($10.200 − $306)."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "Tingkat Kerugian Maksimum bersifat tetap. Ini dihitung sekali dari saldo awal Anda dan tidak pernah berubah, bahkan saat Anda memperoleh keuntungan. Jika ekuitas Anda turun ke atau di bawah tingkat ini kapan saja, akun dinyatakan gagal."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (6%)",
-                    "Equity must stay above"
+                    "Ukuran akun",
+                    "Kerugian Maksimum (6%)",
+                    "Ekuitas harus tetap di atas"
                   ],
                   [
                     "$5,000",
@@ -738,105 +738,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+                "x": "Contoh: pada akun $10.000 Anda meningkatkan ekuitas menjadi $10.800. Tingkat Kerugian Maksimum tetap di $9.400; tidak naik seiring keuntungan Anda."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Bagaimana kedua batas bekerja bersama?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Keduanya adalah batas terpisah yang diperiksa pada saat yang sama. Akun dinyatakan gagal jika salah satu batas tercapai lebih dahulu. Hari dengan kerugian besar tetap dihitung dalam Kerugian Maksimum, sehingga Anda dapat mencapai Kerugian Maksimum tanpa melanggar batas harian."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Di mana saya dapat melihat batas saya saat ini?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Dashboard Anda menampilkan level terkini secara langsung untuk kedua batas akun Anda."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Hari Trading dan Batas Waktu",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Berapa hari trading yang saya butuhkan?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+                "x": "Minimal 5 hari trading di fase tantangan. Akun Terdanai tidak memiliki ketentuan minimum hari trading."
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "Apakah ada batas waktu untuk menyelesaikan tantangan?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Tidak. Periode trading tidak terbatas, sehingga Anda dapat meluangkan waktu sebanyak yang Anda perlukan untuk mencapai target keuntungan, asalkan akun tetap aktif (lihat di bawah)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Apakah ada ketentuan aktivitas minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Ya. Jika tidak ada transaksi di akun Anda selama 30 hari kalender berturut-turut, akun akan ditutup secara otomatis dan biaya tidak dapat dikembalikan. Ini berlaku di setiap fase, termasuk akun Terdanai, jadi pastikan Anda melakukan setidaknya satu transaksi dalam setiap 30 hari."
               }
             ]
           }
         ]
       },
       {
-        "category": "Funded Account",
+        "category": "Akun Terdanai (Funded)",
         "items": [
           {
-            "q": "What happens after I pass the challenge?",
+            "q": "Apa yang terjadi setelah saya lulus tantangan?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+                "x": "Anda menerima akun Terdanai dengan ukuran yang sama. Batas kerugian yang sama tetap berlaku, tidak ada batas hari trading minimum, dan leverage lebih rendah."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Berapa pembagian keuntungannya (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: Anda mempertahankan 80% dari keuntungan yang Anda peroleh di akun Terdanai."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Seberapa sering saya dapat meminta pembayaran (payout)?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Pada akun Terdanai, Anda dapat meminta pembayaran setiap 5 hari."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Apakah ada jumlah pembayaran minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Ya. Pembayaran minimum adalah 1% dari ukuran akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Ukuran akun",
+                    "Pembayaran minimum (1%)"
                   ],
                   [
                     "$5,000",
@@ -863,39 +863,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Apakah ada jumlah pembayaran maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Ya. Akun Terdanai dibatasi hingga 5 kali pembayaran. Setelah pembayaran kelima, akun akan ditutup, dan untuk melanjutkan trading Anda perlu membeli tantangan baru."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Kondisi Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Berapa leverage yang saya dapatkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Leverage maksimum adalah 1:50 di fase tantangan. Pada akun Terdanai leverage maksimum adalah 1:40."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Fase",
+                    "Leverage maksimum"
                   ],
                   [
-                    "Challenge phase",
+                    "Fase tantangan",
                     "1:50"
                   ],
                   [
-                    "Funded",
+                    "Terdanai (Funded)",
                     "1:40"
                   ]
                 ]
@@ -903,143 +903,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Bisakah saya menahan transaksi semalaman (overnight) dan akhir pekan?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+                "x": "Menahan posisi semalaman (overnight) diperbolehkan. Menahan posisi akhir pekan tidak diperbolehkan."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Bisakah saya melakukan trading saat rilis berita besar?",
             "a": [
               {
                 "t": "p",
-                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "Di fase tantangan, ya. Pada akun Terdanai trading berita tidak diperbolehkan dalam rentang 5 menit sebelum atau setelah berita besar."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Praktik Trading yang Dilarang",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Praktik trading apa saja yang tidak diperbolehkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Setiap transaksi yang mengeksploitasi, menyalahgunakan, atau mengakali program, platform trading, atau lingkungan trading simulasi dilarang keras. Ini termasuk, tanpa batasan:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Mengeksploitasi kesalahan atau keterlambatan: menggunakan kesalahan harga, ketidakakuratan data, malfungsi sistem, latensi, atau pembaruan harga yang tertunda secara sengaja maupun tidak sengaja."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Data eksternal atau tertunda: melakukan trading dengan umpan data, sinyal, atau strategi eksternal, tertunda, non-standar, atau pihak ketiga yang tidak tersedia di dalam platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging dan trading terkoordinasi: trading manipulatif, menipu, atau terkoordinasi, sendiri atau bersama orang lain, termasuk antar akun terkait; membuka posisi berlawanan pada saat yang sama; dan arbitrase antar akun."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Strategi yang sama di berbagai akun: menempatkan transaksi yang sama atau sangat mirip pada waktu yang sama atau hampir bersamaan di beberapa akun tanpa persetujuan tertulis sebelumnya."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Alamat IP atau perangkat yang sama: trading atau mengakses akun trader yang berbeda dari alamat IP yang sama atau perangkat yang sama. Akun yang berbagi IP atau perangkat diperlakukan sebagai akun terkait."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pengelolaan akun pihak ketiga: menggunakan pihak ketiga mana pun, baik perorangan, manajer akun, atau \"layanan joki lolos tantangan\", untuk mengelola akun Anda. Semua aktivitas harus dilakukan sendiri oleh pemegang akun."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Layanan sinyal: menggunakan sinyal trading dari grup atau penyedia sinyal mana pun untuk menempatkan transaksi. Semua keputusan trading harus merupakan keputusan Anda sendiri."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: mendahului eksekusi pesanan yang ditempatkan di tempat lain, termasuk di broker atau akun lain."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Bot dan eksploitasi otomatis: menggunakan perangkat lunak, skrip, bot frekuensi sangat tinggi, atau strategi otomatis yang dirancang untuk mengakali aturan atau mencari keuntungan tidak adil."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Mengubah gaya trading setelah lulus: menggunakan strategi, profil risiko, atau perilaku eksekusi yang berbeda secara signifikan pada akun Terdanai dibandingkan dengan fase tantangan."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Eksploitasi gap dan peristiwa: trading yang menyimpang dari praktik pasar wajar, seperti menahan posisi untuk mengeksploitasi gap pembukaan pasar atau rilis laporan keuangan."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Risiko tidak proporsional: membuka ukuran posisi atau jumlah posisi yang sangat tidak sejalan dengan trading Anda biasanya, yang mengindikasikan upaya untuk mengakali batas risiko program."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Melanggar ketentuan platform atau eksekusi: melakukan trading yang melanggar ketentuan platform trading, broker, atau penyedia likuiditas."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+                "x": "Trading berita pada akun Terdanai: membuka atau mengeksekusi transaksi dalam waktu 5 menit sebelum atau 5 menit setelah peristiwa berdampak tinggi. Trading berita diperbolehkan di fase tantangan."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Bisakah orang lain melakukan trading di akun saya, atau bisakah saya melakukan trading untuk orang lain?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Tidak. Akun Anda hanya untuk penggunaan pribadi Anda, dan segala aktivitas di dalamnya harus dilakukan oleh Anda sebagai pemegang akun. Anda tidak boleh mengizinkan orang lain mengelola akun Anda atau mengelola akun trader lain."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Bisakah saya memiliki lebih dari satu akun?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Setiap trader hanya boleh memiliki satu akun dalam program kecuali disetujui sebelumnya secara tertulis. Akun tambahan dapat ditangguhkan atau diblokir secara permanen. Akun tidak boleh diperjualbelikan atau dibagikan."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Bisakah saya menggunakan trade copier (penyalin transaksi)?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Anda dapat menggunakan trade copier untuk transaksi akun pribadi Anda sendiri. Menyalin strategi trader lain dapat menyebabkan pembayaran Anda ditolak."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Apa yang terjadi jika praktik terlarang terdeteksi?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Kami dapat mengecualikan transaksi yang terpengaruh, membatalkan permintaan pembayaran, dan menangguhkan atau mengakhiri akun serta partisipasi Anda dalam program."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Harga",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Berapa biaya tantangannya?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Ukuran akun",
+                    "Harga tantangan"
                   ],
                   [
                     "$5,000",
@@ -1070,76 +1070,76 @@
     ]
   },
   "instant": {
-    "title": "Instant Funding — FAQ",
-    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "title": "Pendanaan Instan — FAQ",
+    "subtitle": "Ketentuan Akun Terdanai — Pendanaan Instan & Pendanaan Instan Light",
     "categories": [
       {
-        "category": "About Instant Funding",
+        "category": "Tentang Pendanaan Instan",
         "items": [
           {
-            "q": "What is Instant Funding?",
+            "q": "Apa itu Pendanaan Instan?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+                "x": "Pendanaan Instan memberi Anda akun Terdanai langsung, tanpa fase evaluasi dan tanpa target keuntungan. Anda melakukan trading di bawah aturan akun sejak hari pertama dan mempertahankan 80% dari keuntungan yang Anda peroleh."
               }
             ]
           },
           {
-            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "q": "Apa perbedaan antara Pendanaan Instan dan Pendanaan Instan Light?",
             "a": [
               {
                 "t": "p",
-                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+                "x": "Keduanya memiliki batas kerugian, leverage, dan jadwal pembayaran yang sama. Pendanaan Instan Light tersedia dalam ukuran lebih kecil dengan harga lebih terjangkau dan menambahkan aturan konsistensi 25% saat meminta pembayaran."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Ukuran akun apa saja yang dapat saya pilih?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Pendanaan Instan: $5.000, $10.000, $25.000, $50.000, dan $100.000. Pendanaan Instan Light: $5.000, $10.000, dan $25.000. Semua aturan memiliki persentase yang sama untuk setiap ukuran."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Target Keuntungan",
         "items": [
           {
-            "q": "Is there a profit target?",
+            "q": "Apakah ada target keuntungan?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+                "x": "Tidak. Tidak ada target keuntungan pada akun Pendanaan Instan atau Pendanaan Instan Light."
               }
             ]
           }
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Batas Kerugian",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Berapa batas kerugiannya?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+                "x": "Ada dua batas: Kerugian Harian Maksimum sebesar 3% dari saldo awal hari Anda, dan Kerugian Maksimum trailing 5% yang mengikuti ekuitas tertinggi Anda. Melanggar salah satunya akan mengakhiri akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account",
-                    "Maximum Daily Loss (3%, at starting",
-                    "Maximum Loss (5%,"
+                    "Akun",
+                    "Kerugian Harian Maksimum (3%, dari saldo",
+                    "Kerugian Maksimum (5%,"
                   ],
                   [
-                    "size",
-                    "balance)",
+                    "ukuran",
+                    "awal)",
                     "trailing)"
                   ],
                   [
@@ -1171,51 +1171,51 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+                "x": "Nominal kerugian harian di atas berlaku saat saldo sama dengan ukuran akun. Ukuran $50.000 dan $100.000 hanya tersedia pada paket Pendanaan Instan standar."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Cara Perhitungan Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Apakah drawdown diukur berdasarkan saldo atau ekuitas?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Berdasarkan ekuitas. Ekuitas adalah saldo Anda ditambah keuntungan atau kerugian mengambang (floating) dari posisi terbuka, sehingga transaksi terbuka dihitung dalam kedua batas kerugian setiap saat, bukan hanya saat Anda menutupnya."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Harian Maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Hari trading dimulai pukul 00:00 UTC. Batas harian Anda adalah 3% dari saldo awal hari tersebut. Sepanjang hari, ekuitas Anda tidak boleh turun melebihi jumlah ini di bawah titik awal."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Contoh pada akun $10.000: pada pukul 00:00 UTC saldo Anda adalah $10.200, jadi batas harian adalah $306 (3% × $10.200). Ekuitas Anda harus tetap di atas $9.894 ($10.200 − $306)."
               }
             ]
           },
           {
-            "q": "How does the trailing Maximum Loss work?",
+            "q": "Bagaimana cara kerja Kerugian Maksimum trailing?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+                "x": "Kerugian Maksimum adalah nominal dolar tetap (5% dari ukuran akun awal), tetapi levelnya mengikuti ekuitas Anda. Setiap kali ekuitas Anda mencapai titik tertinggi baru, level tersebut naik dengan jumlah yang sama; level ini tidak pernah turun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (5%)",
-                    "Starting level (equity must stay above)"
+                    "Ukuran akun",
+                    "Kerugian Maksimum (5%)",
+                    "Level awal (ekuitas harus tetap di atas)"
                   ],
                   [
                     "$5,000",
@@ -1246,105 +1246,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+                "x": "Contoh: pada akun $10.000 ekuitas Anda mencapai $10.300, sehingga tingkat Kerugian Maksimum naik ke $9.800 ($10.300 − $500). Jika ekuitas Anda turun ke atau di bawah $9.800, akun dinyatakan gagal."
               }
             ]
           },
           {
-            "q": "Does the Maximum Loss level go down after a payout?",
+            "q": "Apakah tingkat Kerugian Maksimum turun setelah pembayaran?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+                "x": "Tidak. Level tersebut tetap berada tepat di posisi hasil trading Anda memindahkannya dan tidak diturunkan setelah pembayaran."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Bagaimana kedua batas bekerja bersama?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Keduanya adalah batas terpisah yang diperiksa pada saat yang sama. Akun dinyatakan gagal jika salah satu batas tercapai lebih dahulu. Hari dengan kerugian besar tetap dihitung dalam Kerugian Maksimum, sehingga Anda dapat mencapai Kerugian Maksimum tanpa melanggar batas harian."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Di mana saya dapat melihat batas saya saat ini?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Dashboard Anda menampilkan level terkini secara langsung untuk kedua batas akun Anda."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Hari Trading dan Batas Waktu",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Berapa hari trading yang saya butuhkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+                "x": "Akun Pendanaan Instan dan Pendanaan Instan Light memiliki ketentuan minimum 5 hari trading."
               }
             ]
           },
           {
-            "q": "Is there a time limit?",
+            "q": "Apakah ada batas waktu?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+                "x": "Tidak. Tidak ada batas waktu pada akun, asalkan tetap aktif (lihat di bawah)."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Apakah ada ketentuan aktivitas minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Ya. Jika tidak ada transaksi di akun Anda selama 30 hari kalender berturut-turut, akun akan ditutup secara otomatis dan biaya tidak dapat dikembalikan. Ini berlaku di setiap fase, termasuk akun Terdanai, jadi pastikan Anda melakukan setidaknya satu transaksi dalam setiap 30 hari."
               }
             ]
           }
         ]
       },
       {
-        "category": "Payouts",
+        "category": "Pembayaran / Penarikan (Payout)",
         "items": [
           {
-            "q": "What is the profit split?",
+            "q": "Berapa pembagian keuntungannya (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make."
+                "x": "80% / 20%: Anda mempertahankan 80% dari keuntungan yang Anda peroleh."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Seberapa sering saya dapat meminta pembayaran (payout)?",
             "a": [
               {
                 "t": "p",
-                "x": "You can request a payout every 14 days."
+                "x": "Anda dapat meminta pembayaran setiap 14 hari."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Apakah ada jumlah pembayaran minimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Ya. Pembayaran minimum adalah 1% dari ukuran akun."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Ukuran akun",
+                    "Pembayaran minimum (1%)"
                   ],
                   [
                     "$5,000",
@@ -1371,192 +1371,192 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Apakah ada jumlah pembayaran maksimum?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+                "x": "Ya. Akun Pendanaan Instan dibatasi hingga 5 kali pembayaran. Setelah pembayaran kelima, akun akan ditutup, dan untuk melanjutkan trading Anda perlu membeli akun baru."
               }
             ]
           },
           {
-            "q": "What is the consistency rule on Instant Funding Light?",
+            "q": "Apa aturan konsistensi pada Pendanaan Instan Light?",
             "a": [
               {
                 "t": "p",
-                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+                "x": "Tidak ada satu hari trading pun yang boleh menghasilkan lebih dari 25% dari total keuntungan Anda. Aturan ini diperiksa saat Anda meminta pembayaran dan hanya berlaku untuk Pendanaan Instan Light."
               },
               {
                 "t": "p",
-                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+                "x": "Konsistensi % = (keuntungan satu hari tertinggi ÷ total keuntungan) × 100."
               },
               {
                 "t": "p",
-                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+                "x": "Contoh: hari terbaik Anda menghasilkan $600 dan total keuntungan Anda adalah $2.000. Konsistensi adalah 30% ($600 ÷ $2.000), yang berada di atas 25%, jadi Anda belum dapat meminta pembayaran. Setelah total keuntungan Anda mencapai $2.400, hari terbaik tepat 25% dan Anda dapat meminta pembayaran."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Kondisi Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Berapa leverage yang saya dapatkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Leverage maksimum adalah 1:40. Leverage untuk setiap instrumen ditampilkan pada detail simbol di platform."
               }
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Bisakah saya menahan transaksi semalaman (overnight) dan akhir pekan?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+                "x": "Menahan posisi semalaman (overnight) diperbolehkan. Menahan posisi akhir pekan tidak diperbolehkan, sehingga posisi harus ditutup sebelum pasar tutup di akhir pekan."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Bisakah saya melakukan trading saat rilis berita besar?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+                "x": "Tidak. Akun Pendanaan Instan berstatus akun Terdanai, jadi trading berita tidak diperbolehkan: Anda tidak boleh membuka atau mengeksekusi transaksi dalam waktu 5 menit sebelum atau 5 menit setelah rilis berita ekonomi besar,"
               },
               {
                 "t": "p",
-                "x": "bank announcements, geopolitical events or other high-impact events."
+                "x": "pengumuman bank sentral, peristiwa geopolitik, atau peristiwa berdampak tinggi lainnya."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Praktik Trading yang Dilarang",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Praktik trading apa saja yang tidak diperbolehkan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Setiap transaksi yang mengeksploitasi, menyalahgunakan, atau mengakali program, platform trading, atau lingkungan trading simulasi dilarang keras. Ini termasuk, tanpa batasan:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Mengeksploitasi kesalahan atau keterlambatan: menggunakan kesalahan harga, ketidakakuratan data, malfungsi sistem, latensi, atau pembaruan harga yang tertunda secara sengaja maupun tidak sengaja."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Data eksternal atau tertunda: melakukan trading dengan umpan data, sinyal, atau strategi eksternal, tertunda, non-standar, atau pihak ketiga yang tidak tersedia di dalam platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging dan trading terkoordinasi: trading manipulatif, menipu, atau terkoordinasi, sendiri atau bersama orang lain, termasuk antar akun terkait; membuka posisi berlawanan pada saat yang sama; dan arbitrase antar akun."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Strategi yang sama di berbagai akun: menempatkan transaksi yang sama atau sangat mirip pada waktu yang sama atau hampir bersamaan di beberapa akun tanpa persetujuan tertulis sebelumnya."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Alamat IP atau perangkat yang sama: trading atau mengakses akun trader yang berbeda dari alamat IP yang sama atau perangkat yang sama. Akun yang berbagi IP atau perangkat diperlakukan sebagai akun terkait."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pengelolaan akun pihak ketiga: menggunakan pihak ketiga mana pun, baik perorangan, manajer akun, atau \"layanan joki lolos tantangan\", untuk mengelola akun Anda. Semua aktivitas harus dilakukan sendiri oleh pemegang akun."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Layanan sinyal: menggunakan sinyal trading dari grup atau penyedia sinyal mana pun untuk menempatkan transaksi. Semua keputusan trading harus merupakan keputusan Anda sendiri."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: mendahului eksekusi pesanan yang ditempatkan di tempat lain, termasuk di broker atau akun lain."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Bot dan eksploitasi otomatis: menggunakan perangkat lunak, skrip, bot frekuensi sangat tinggi, atau strategi otomatis yang dirancang untuk mengakali aturan atau mencari keuntungan tidak adil."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Mengubah gaya trading setelah lulus: menggunakan strategi, profil risiko, atau perilaku eksekusi yang berbeda secara signifikan pada akun Terdanai dibandingkan dengan fase tantangan."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Eksploitasi gap dan peristiwa: trading yang menyimpang dari praktik pasar wajar, seperti menahan posisi untuk mengeksploitasi gap pembukaan pasar atau rilis laporan keuangan."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+                "x": "Risiko tidak proporsional: membuka ukuran posisi, atau jumlah posisi, yang secara material tidak sejalan dengan trading harian Anda,"
               },
               {
                 "t": "p",
-                "x": "limits. Market-standard risk management is expected at all times."
+                "x": "di mana hal ini mengindikasikan upaya untuk mengakali batas risiko program. Manajemen risiko standar pasar diharapkan setiap saat."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Melanggar ketentuan platform atau eksekusi: melakukan trading yang melanggar ketentuan platform trading, broker, atau penyedia likuiditas."
               },
               {
                 "t": "p",
-                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+                "x": "Trading berita: membuka atau mengeksekusi transaksi dalam waktu 5 menit sebelum atau 5 menit setelah rilis berita ekonomi berdampak tinggi. Hanya pesanan yang dieksekusi di dalam jendela waktu ini yang dihitung sebagai pelanggaran."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Bisakah orang lain melakukan trading di akun saya, atau bisakah saya melakukan trading untuk orang lain?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Tidak. Akun Anda hanya untuk penggunaan pribadi Anda, dan segala aktivitas di dalamnya harus dilakukan oleh Anda sebagai pemegang akun. Anda tidak boleh mengizinkan orang lain mengelola akun Anda atau mengelola akun trader lain."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Bisakah saya memiliki lebih dari satu akun?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Setiap trader hanya boleh memiliki satu akun dalam program kecuali disetujui sebelumnya secara tertulis. Akun tambahan dapat ditangguhkan atau diblokir secara permanen. Akun tidak boleh diperjualbelikan atau dibagikan."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Bisakah saya menggunakan trade copier (penyalin transaksi)?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Anda dapat menggunakan trade copier untuk transaksi akun pribadi Anda sendiri. Menyalin strategi trader lain dapat menyebabkan pembayaran Anda ditolak."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Apa yang terjadi jika praktik terlarang terdeteksi?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Kami dapat mengecualikan transaksi yang terpengaruh, membatalkan permintaan pembayaran, dan menangguhkan atau mengakhiri akun serta partisipasi Anda dalam program."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Harga",
         "items": [
           {
-            "q": "How much does it cost?",
+            "q": "Berapa biayanya?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Instant Funding",
-                    "Instant Funding Light"
+                    "Ukuran akun",
+                    "Pendanaan Instan",
+                    "Pendanaan Instan Light"
                   ],
                   [
                     "$5,000",

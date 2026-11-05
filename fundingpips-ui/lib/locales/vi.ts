@@ -130,7 +130,7 @@ export const vi: Dict = {
     title: 'Những gì được phép và không được phép',
     shownOnEveryPackage: 'từng gói',
     allowed: 'Được phép',
-    notAllowed: 'Không được phép',
+    notAllowed: 'Bị cấm',
     weekendHolding: 'Giữ lệnh qua cuối tuần',
     weekendHoldingDesc: 'Đóng tất cả các vị thế trước khi thị trường đóng cửa cuối tuần.',
     newsTradingEval: 'Giao dịch tin tức: giai đoạn đánh giá',

@@ -1,0 +1,9 @@
+/* No transition effects: every click or selection shows its result immediately.
+   (Overrides the easing and fade-in added earlier in ref-motion.css and the legacy concept styles.) */
+.ref-scope, .ref-scope *, .ref-scope *::before, .ref-scope *::after {
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
+.ref-scope dialog[open] { animation: none !important; }
+.ref-scope .ref-flash { animation: none !important; }

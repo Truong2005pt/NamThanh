@@ -1,0 +1,345 @@
+/* Page group b (program-information, about, contact, affiliate). Owned by one agent; do not edit from elsewhere.
+   GENERATED from a template: ".ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate'])" expands to the four page scopes. Design language = program pages
+   (flat cards, hairline borders, gold accents, black-gold dark / white-gold light, no tilt, no glass). */
+
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) {
+  --b-accent: var(--pdu-gold);
+  --b-badge: color-mix(in srgb, var(--pdu-gold) 14%, transparent);
+  --b-badge-line: color-mix(in srgb, var(--pdu-gold) 38%, transparent);
+  --b-hover: color-mix(in srgb, var(--pdu-gold) 55%, var(--pdu-line));
+  --b-btn: linear-gradient(135deg, #f6d35a, var(--pdu-gold));
+}
+:root[data-theme='light'] .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) { --b-accent: var(--pdu-gold-deep); --b-badge: color-mix(in srgb, var(--pdu-gold) 20%, transparent); }
+
+/* ---------- shared icon treatment ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .lu { flex: none; display: inline-block; vertical-align: middle; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-ar { margin-left: 6px; vertical-align: -2px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile-icon, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-cc-icon, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-pi, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-si, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-vi, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gi, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-ri, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-ci {
+  display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--b-badge); border: 1px solid var(--b-badge-line); color: var(--b-accent);
+  font-style: normal; line-height: 1; margin: 0 0 20px;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-ci { width: 34px; height: 34px; margin: 0 0 12px; background: #ffffff14; border-color: #ffffff30; color: #f3cf5a; }
+
+/* link arrows produced by the shared link() helper become Lucide arrows */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) a.button > span, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) a.co-text-link > span {
+  display: inline-block; width: 16px; height: 16px; font-size: 0; line-height: 0; flex: none; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* ---------- buttons and links ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .button {
+  background: var(--b-btn); color: #231a02; border: 0; border-radius: 12px; font-weight: 800;
+  box-shadow: 0 14px 30px -14px #c99a1daa; transition: transform .2s ease, filter .2s ease;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .button:hover { filter: brightness(1.05); transform: translateY(-2px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-actions .button, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-center .button, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-final .button { font-size: 14px; padding: 15px 22px; gap: 12px; display: inline-flex; align-items: center; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-text-link { font-size: 14px; font-weight: 600; gap: 8px; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-text-link:hover { color: var(--pdu-text); }
+
+/* ---------- breadcrumb + hero ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-breadcrumb { font-size: 12px; color: var(--pdu-muted); gap: 10px; padding-top: 30px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-breadcrumb a { color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero { gap: clamp(32px, 5vw, 72px); padding-block: 44px 64px; min-height: 0; grid-template-columns: 1.05fr .95fr; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero-copy > .eyebrow, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-heading > .eyebrow, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .eyebrow {
+  font-size: 11px; letter-spacing: 1.4px; font-weight: 700; color: var(--b-accent);
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero h1 { font-size: clamp(34px, 4.4vw, 54px); line-height: 1.12; letter-spacing: -1.6px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero h1 em { font-style: normal; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero-copy > p { font-size: 16px; line-height: 1.8; color: var(--pdu-muted); max-width: 560px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-actions { margin-top: 30px; gap: 22px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-disclaimer { display: flex !important; align-items: center; gap: 9px; margin-top: 26px !important; font-size: 12px !important; color: var(--pdu-muted) !important; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-disclaimer .lu { color: var(--b-accent); }
+
+/* ---------- photo frame (all pages) ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-photo { margin: 0; border-radius: 22px; overflow: hidden; border: 1px solid var(--pdu-line); background: var(--pdu-side); box-shadow: var(--pdu-shadow); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* about hero: photo with a flat company card overlapping its lower edge */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-about-art { min-height: 0; display: flex; flex-direction: column; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-about-art .co-photo { aspect-ratio: 4 / 3; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-about-art .co-photo img { object-position: 50% 40%; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card {
+  position: relative; transform: none; margin: -64px 0 0 auto; width: min(86%, 400px);
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); border-top: 2px solid var(--pdu-gold);
+  border-radius: 16px; padding: 22px 24px; box-shadow: var(--pdu-shadow);
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card > .eyebrow { font-size: 10px; letter-spacing: 1.2px; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card > strong { font-size: 26px; margin: 10px 0 14px; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card dl > div { border-top: 1px solid var(--pdu-line); padding: 10px 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card dt { font-size: 12px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card dd { font-size: 14px; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-stamp { font-size: 11px; letter-spacing: 1.2px; align-items: center; color: var(--b-accent); margin-top: 8px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-stamp i { display: inline-flex; }
+
+/* contact hero: photo, round mail badge, flat message card */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art { position: relative; padding: 0; min-height: 0; display: flex; flex-direction: column; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art .co-photo { aspect-ratio: 4 / 3; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art .co-photo img { object-position: 60% 40%; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-envelope {
+  position: absolute; top: 16px; left: 16px; z-index: 2; width: 46px; height: 46px; transform: none; opacity: 1;
+  border-radius: 50%; background: var(--b-btn); color: #231a02; box-shadow: 0 10px 24px -10px #000a;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art > div {
+  position: relative; transform: none; margin: -54px 18px 0; background: var(--pdu-card); border: 1px solid var(--pdu-line);
+  border-top: 2px solid var(--pdu-gold); border-radius: 16px; padding: 22px 24px; box-shadow: var(--pdu-shadow);
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art small { font-size: 10px; letter-spacing: 1.2px; color: var(--b-accent); margin-bottom: 12px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art strong { font-size: 22px; margin-bottom: 10px; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art span:not(.co-envelope) { font-size: 13px; color: var(--pdu-muted); }
+
+/* program-information hero: photo + program list card */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art { transform: none; background: none; border: 0; box-shadow: none; padding: 0; display: flex; flex-direction: column; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art .co-photo { aspect-ratio: 4 / 3; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art .co-photo img { object-position: 50% 12%; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card { position: relative; margin: -44px 18px 0; padding: 20px 22px 16px; background: var(--pdu-card); border: 1px solid var(--pdu-line); border-top: 2px solid var(--pdu-gold); border-radius: 16px; box-shadow: var(--pdu-shadow); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-kicker { font-size: 10px; letter-spacing: 1.2px; color: var(--b-accent); margin-bottom: 8px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card > div { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-top: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card > div > span { font-size: 12px; color: var(--pdu-muted); font-variant-numeric: tabular-nums; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card strong { font-size: 15px; font-weight: 600; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card i { margin-left: auto; font-style: normal; color: var(--b-accent); display: inline-flex; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card > small { font-size: 10px; letter-spacing: .8px; color: var(--pdu-muted); margin-top: 6px; display: block; }
+
+/* ---------- section rhythm ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section { padding-block: 64px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section + .co-section { border-top: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-heading h2 { font-size: clamp(26px, 3vw, 38px); line-height: 1.2; letter-spacing: -1px; font-weight: 650; color: var(--pdu-text); margin: 12px 0 14px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-heading > p { font-size: 15px; line-height: 1.8; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-editorial > div > p, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-form-layout > div > p, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-location-panel p { font-size: 15px; line-height: 1.85; color: var(--pdu-muted); }
+
+/* sticky section nav: flat bar, no glass */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-nav {
+  gap: 6px; top: 92px; margin-inline: auto; width: fit-content; max-width: calc(100% - 32px); padding: 6px;
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 999px; backdrop-filter: none; box-shadow: var(--pdu-shadow);
+  font-size: 13px; overflow-x: auto;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-nav a { padding: 8px 16px; border-radius: 999px; color: var(--pdu-muted); white-space: nowrap; transition: background .2s, color .2s; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-nav a:hover { background: var(--b-badge); color: var(--pdu-text); }
+
+/* ---------- cards ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-role-panel, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip,
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-panel, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calculator, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts article, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values article, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-final, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps > article {
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); box-shadow: none;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease, background-color .3s ease;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile { border-radius: 18px; padding: 28px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile h3 { font-size: 19px; line-height: 1.4; font-weight: 650; color: var(--pdu-text); letter-spacing: -.3px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile p { font-size: 14px; line-height: 1.75; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts article:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values article:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier:hover { border-color: var(--b-hover); transform: translateY(-3px); box-shadow: var(--pdu-shadow); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps { gap: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps > article { padding: 26px; border-radius: 18px; border-top: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps > article > span { font: 650 32px Manrope, sans-serif; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps h3 { font-size: 18px; line-height: 1.45; font-weight: 650; color: var(--pdu-text); margin: 16px 0 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps p { font-size: 14px; line-height: 1.75; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip { border-radius: 16px; padding: 20px 24px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip strong { font-size: 18px; font-weight: 700; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip > span { font-size: 14px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip > a { font-size: 13px; font-weight: 600; color: var(--b-accent); display: inline-flex; align-items: center; }
+
+/* parameter buttons */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid { gap: 16px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button { border-radius: 18px; padding: 24px; min-height: 0; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button:hover { border-color: var(--b-hover); transform: translateY(-3px); box-shadow: var(--pdu-shadow); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-pi { width: 40px; height: 40px; margin-bottom: 18px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button > span { font-size: 13px; color: var(--pdu-muted); margin-bottom: 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid strong { font-size: 26px; font-weight: 650; letter-spacing: -.6px; color: var(--pdu-text); margin-bottom: 14px; line-height: 1.3; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid strong small { font-size: 12px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid strong .phase-value { font-size: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button > small { font-size: 12px; font-weight: 600; color: var(--b-accent); display: inline-flex; align-items: center; margin-top: auto; }
+
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-notice { border-radius: 16px; background: var(--b-badge); border: 1px solid var(--b-badge-line); padding: 22px 26px; gap: 22px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-notice b { font-size: 18px; font-weight: 700; color: var(--b-accent); display: inline-flex; align-items: center; gap: 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-notice p { font-size: 14px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-notice a { font-size: 13px; font-weight: 600; color: var(--b-accent); display: inline-flex; align-items: center; }
+
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band { border-radius: 20px; padding: 32px; gap: 28px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band > div { border-right: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-ri { margin-bottom: 16px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band > div > span, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band > div > strong { font: 700 clamp(34px, 4vw, 46px) Manrope, sans-serif; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band p { font-size: 14px; line-height: 1.75; color: var(--pdu-muted); margin-top: 14px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-resource-links { border-top: 1px solid var(--pdu-line); gap: 12px; font-size: 14px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-resource-links a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid var(--pdu-line); border-radius: 999px; background: var(--pdu-card); color: var(--pdu-text); transition: border-color .2s, color .2s; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-resource-links a:hover { border-color: var(--b-hover); color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-resource-links a .lu:first-child { color: var(--b-accent); }
+
+/* about panels */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-role-panel { border-radius: 20px; padding: clamp(24px, 4vw, 40px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-role-panel h3 { font-size: 20px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-role-panel p { font-size: 14px; line-height: 1.85; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-location-panel { border: 1px solid var(--pdu-line); border-radius: 20px; background: var(--pdu-card); padding: clamp(24px, 4vw, 40px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines { border-left: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines strong { font-size: 26px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines span { font-size: 14px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines small { font-size: 12px; color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines .co-ri { margin-bottom: 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-policy-note { border-left: 2px solid var(--pdu-gold); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-policy-note h3 { font-size: 17px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-policy-note p { font-size: 14px; color: var(--pdu-muted); }
+
+/* contact cards */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-grid { gap: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card { border-radius: 18px; padding: 28px; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-cc-icon { margin-bottom: 22px; width: 48px; height: 48px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card > small { font-size: 11px; letter-spacing: 1.2px; font-weight: 700; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card > strong { font-size: 22px; font-weight: 650; color: var(--pdu-text); letter-spacing: -.4px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card > p { font-size: 14px; line-height: 1.7; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card > i { position: absolute; top: 26px; right: 26px; color: var(--b-accent); font-style: normal; display: inline-flex; }
+
+/* forms (contact + affiliate) */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-form-layout .sp-form, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply .sp-form {
+  background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 20px; box-shadow: var(--pdu-shadow); padding: clamp(22px, 3vw, 32px);
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form label { font-size: 12px; font-weight: 600; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form input, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form textarea, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form select {
+  background: var(--pdu-side); border: 1px solid var(--pdu-line); border-radius: 10px; color: var(--pdu-text); font-size: 14px;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form input:focus-visible, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form textarea:focus-visible, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form select:focus-visible { outline: 2px solid var(--pdu-gold); outline-offset: 2px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form-note { font-size: 12px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-form-layout .sp-form .button, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply .sp-form .button { font-size: 14px; padding: 14px 22px; }
+
+/* ---------- FAQ accordions (affiliate) ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-list { display: grid; gap: 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-item { background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 14px; transition: border-color .2s; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-item[open], .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-item:hover { border-color: var(--b-hover); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-item summary { font-size: 15px; font-weight: 600; color: var(--pdu-text); padding: 18px 22px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-faq-item p { font-size: 14px; line-height: 1.8; color: var(--pdu-muted); padding: 0 22px 20px; margin: 0; }
+
+/* ---------- affiliate ---------- */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .co-hero { padding-bottom: 56px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats {
+  gap: 0; border: 1px solid var(--pdu-line); border-radius: 20px; background: var(--pdu-card); padding: 8px; overflow: hidden;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats > div { border-right: 1px solid var(--pdu-line); padding: 22px 18px; gap: 6px; justify-items: center; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-si { margin: 0 0 6px; width: 40px; height: 40px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats strong { font-size: clamp(26px, 3vw, 38px); font-weight: 700; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats span { font-size: 13px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats-note { font-size: 12px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-section { padding-block: 76px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-section .co-section-heading h2 { font-size: clamp(28px, 3.4vw, 44px); line-height: 1.15; letter-spacing: -1.2px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-section .co-section-heading > p { font-size: 15px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tiers { gap: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier { border-radius: 20px; padding: 30px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 2px; background: linear-gradient(90deg, transparent, var(--pdu-gold) 40%, var(--pdu-gold-deep) 60%, transparent); opacity: .4; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier.featured { border-color: var(--pdu-gold-deep); box-shadow: 0 34px 70px -34px #c99a1d55; background: var(--pdu-card); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier.featured::before { opacity: 1; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier-top { font-size: 11px; letter-spacing: 1.3px; font-weight: 700; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier-top i { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--b-badge); border: 1px solid var(--b-badge-line); color: var(--b-accent); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier > strong { font: 650 72px Manrope, sans-serif; letter-spacing: -3px; color: var(--b-accent); margin: 22px 0 14px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier h3 { font-size: 17px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier p { font-size: 14px; line-height: 1.75; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier-bottom { border-top: 1px solid var(--pdu-line); font-size: 13px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier-bottom b { color: var(--b-accent); font-size: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-note { font-size: 12px !important; color: var(--pdu-muted); }
+
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calculator { border-radius: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calc-input { background: var(--pdu-card); border-right: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calc-input > strong { color: var(--b-accent); font-weight: 700; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page label { font-size: 13px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page input { background: var(--pdu-side); border: 1px solid var(--pdu-line); color: var(--pdu-text); border-radius: 12px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calc-input > p, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-panel > p, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-withdrawal p { font-size: 14px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) #ibBreakdown { padding: 30px 32px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) #ibBreakdown > h3 { font-size: 17px; font-weight: 650; color: var(--pdu-text); margin: 0 0 6px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) #ibBreakdown > p { font-size: 13px; color: var(--pdu-muted); margin-top: 16px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-break-row { border-bottom: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-break-row span { font-size: 14px; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-break-row small { font-size: 12px; color: var(--pdu-muted); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-break-row b { font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-panel { border-radius: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-panel h3 { font-size: 22px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-date-result strong { color: var(--b-accent); font-weight: 700; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-date-result > span, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-date-result small { font-size: 13px; color: var(--pdu-muted); }
+
+/* apply */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply { gap: clamp(32px, 5vw, 70px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply-mark {
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px; height: 76px; width: 96px; border-radius: 22px;
+  background: var(--b-btn); color: #231a02; font: 800 40px Manrope, sans-serif; letter-spacing: -2px; box-shadow: 0 18px 36px -18px #c99a1daa;
+}
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply-mark span { margin: 0; font-size: 0; display: inline-flex; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply h3 { font-size: clamp(24px, 2.6vw, 30px); font-weight: 650; color: var(--pdu-text); margin-top: 24px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply li { border-left: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply li:before { background: var(--pdu-card); border: 1px solid var(--b-badge-line); color: var(--b-accent); width: 26px; height: 26px; left: -14px; font-size: 11px; font-weight: 700; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply li b { font-size: 15px; font-weight: 650; color: var(--pdu-text); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-apply li p { font-size: 14px; color: var(--pdu-muted); }
+
+/* creators photo + overlay labels */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creators { border-radius: 22px; border: 1px solid var(--pdu-line); box-shadow: var(--pdu-shadow); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creators > img { aspect-ratio: 16 / 8; object-position: 50% 60%; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creator-labels { background: linear-gradient(180deg, transparent, #0a0a0ed9 38%, #0a0a0ef5); padding: 90px 30px 28px; gap: 26px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creator-labels span { font-size: 10px; letter-spacing: 1.3px; font-weight: 700; color: #f3cf5a; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creator-labels h3 { font-size: 18px; font-weight: 650; color: #fff; margin: 8px 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creator-labels p { font-size: 13px; line-height: 1.65; color: #d4d6dc; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values { gap: 20px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values article { border-radius: 18px; padding: 26px; border-top: 1px solid var(--pdu-line); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-vi { margin-bottom: 16px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values span { font-size: 12px; font-weight: 700; color: var(--b-accent); display: block; margin-bottom: 6px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values h3 { font-size: 18px; font-weight: 650; color: var(--pdu-text); margin: 0 0 8px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values p, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts p { font-size: 14px; line-height: 1.75; color: var(--pdu-muted); }
+
+/* gifts */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero { border-radius: 22px; border: 1px solid var(--pdu-line); box-shadow: var(--pdu-shadow); background: #0a0a0d; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero img { aspect-ratio: 2.5 / 1; object-position: 62% 50%; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero > div { background: linear-gradient(90deg, #08080bf2 0%, #08080bb8 42%, transparent 78%); padding: clamp(24px, 4vw, 48px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-pill { font-size: 10px; letter-spacing: 1.2px; font-weight: 700; border-color: #f3cf5a66; color: #f3cf5a; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero h3 { font: 650 clamp(26px, 3.4vw, 40px)/1.2 Manrope, sans-serif; color: #fff; letter-spacing: -1px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts { gap: 16px; margin-top: 18px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts article { border-radius: 18px; padding: 24px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gi { margin-bottom: 18px; width: 40px; height: 40px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts span { font-size: 11px; letter-spacing: 1.1px; font-weight: 700; color: var(--b-accent); display: block; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts h3 { font-size: 17px; font-weight: 650; color: var(--pdu-text); margin: 10px 0 10px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-final { border-radius: 20px; border-color: var(--b-badge-line); padding: clamp(24px, 4vw, 36px); }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-final h3 { font-size: clamp(20px, 2.4vw, 24px); font-weight: 650; color: var(--pdu-text); }
+
+/* ---------- motion safety ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts article, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values article, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .button { transition: none; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-tile:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts article:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values article:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-card:hover, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid > button:hover { transform: none; }
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1000px) {
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero { grid-template-columns: 1fr; padding-block: 28px 44px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-about-art, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art { max-width: 620px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-grid.three, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps { grid-template-columns: 1fr 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid { grid-template-columns: 1fr 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-editorial, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-role-panel, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-location-panel, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-form-layout { grid-template-columns: 1fr; gap: 28px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-address-lines { border-left: 0; padding-left: 0; border-top: 1px solid var(--pdu-line); padding-top: 24px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tiers { grid-template-columns: 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts { grid-template-columns: 1fr 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creators > img { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 650px) {
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section { padding-block: 44px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-grid.three, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-steps, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-parameter-grid, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-contact-grid, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-values { grid-template-columns: 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band > div { border-right: 0; border-bottom: 1px solid var(--pdu-line); padding: 0 0 22px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-reward-band > div:last-child { border-bottom: 0; padding-bottom: 0; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-selected-strip > a { margin-left: 0; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-notice { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-section-nav { justify-content: flex-start; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art > div, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card { margin-top: -36px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-company-card { width: calc(100% - 24px); margin-right: 12px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-support-art > div, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-card { margin-inline: 12px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats { grid-template-columns: 1fr 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats > div:nth-child(2) { border-right: 0; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-stats > div:nth-child(-n+2) { border-bottom: 1px solid var(--pdu-line); }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-tier > strong { font-size: 60px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-calc-input { border-right: 0; border-bottom: 1px solid var(--pdu-line); }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) #ibBreakdown { padding: 22px 20px; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creators > img { aspect-ratio: 4 / 3; object-position: 40% 50%; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-creator-labels { position: relative; background: #0a0a0e; padding: 22px 20px; gap: 18px; grid-template-columns: 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero img { aspect-ratio: 1.15 / 1; object-position: 58% 50%; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gift-hero > div { background: linear-gradient(0deg, #08080bf5 10%, #08080b66 75%, transparent); justify-content: flex-end; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-gifts { grid-template-columns: 1fr; }
+  .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-final { flex-direction: column; align-items: flex-start; }
+}
+
+/* guide card must stay a block (base .co-guide-art > div is a flex row) */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art > .co-guide-card { display: block; gap: 0; align-items: normal; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-guide-art > .co-guide-card > div:first-of-type { border-top: 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .co-hero > * { min-width: 0; }
+
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form label, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form label { display: grid; gap: 8px; margin-bottom: 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form select, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form textarea, .ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form select { width: 100%; box-sizing: border-box; padding: 12px 14px; min-width: 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form input { font-size: 14px; padding: 12px 14px; }

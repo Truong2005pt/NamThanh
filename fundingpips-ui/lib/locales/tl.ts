@@ -130,7 +130,7 @@ export const tl: Dict = {
     "title": "Kung ano ang pinapayagan at hindi pinapayagan",
     "shownOnEveryPackage": 'bawat package',
     "allowed": 'Pinapayagan',
-    "notAllowed": 'Hindi pinapayagan',
+    "notAllowed": 'Ipinagbabawal',
     "weekendHolding": 'Paghawak sa weekend',
     "weekendHoldingDesc": 'Isara ang lahat ng posisyon bago ang weekend.',
     "newsTradingEval": "News trading: evaluation",

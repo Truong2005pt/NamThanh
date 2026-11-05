@@ -1,0 +1,266 @@
+/* /contact: photo-led layout built from real photography and plain components */
+.ref-scope .cp-intro { max-width: 1120px; text-align: center; padding-top: 72px; padding-bottom: 56px; display: block; }
+.ref-scope .cp-intro > .eyebrow { display: block; }
+.ref-scope .cp-intro h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.04em; margin: 18px 0 18px; }
+.ref-scope .cp-intro > p { margin: 0 auto; max-width: 600px; font-size: 17px; line-height: 1.65; }
+.ref-scope .cp-intro .cp-channels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 44px 0 0; text-align: left; }
+.ref-scope .cp-channel {
+  display: flex; flex-direction: column; padding: 32px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)) !important; border-radius: 20px; background: transparent;
+}
+.ref-scope .cp-channel-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+.ref-scope .cp-channel-top > svg, .ref-scope .cp-channel-top > .cp-icon { width: 52px; height: 52px; padding: 13px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); border-radius: 14px; box-sizing: border-box; }
+.ref-scope .cp-channel-top > span { font-size: 12px; letter-spacing: 0.14em; font-weight: 600; opacity: 0.7; }
+.ref-scope .cp-channel h2 { font-size: clamp(26px, 2.6vw, 34px); margin: 0 0 12px; text-transform: none; }
+.ref-scope .cp-availability { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 5px 12px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 18px; }
+.ref-scope .cp-availability i { width: 8px; height: 8px; border-radius: 50%; background: #d6b453; }
+.ref-scope .cp-channel > p { margin: 0 0 28px; font-size: 16px; line-height: 1.65; opacity: 0.85; flex: 1; }
+.ref-scope .cp-channel-action {
+  display: flex; align-items: center; justify-content: space-between; width: 100%; height: 56px; padding: 0 22px; border-radius: 14px; font-size: 16px; font-weight: 600;
+  border: 1.5px solid var(--ref-card-line, rgba(255, 255, 255, 0.4)); background: transparent; cursor: pointer; text-decoration: none; box-sizing: border-box;
+}
+.ref-scope .cp-channel:first-child .cp-channel-action { background: #f6c83d; border-color: #f6c83d; }
+.ref-scope .cp-channel:first-child .cp-channel-action, .ref-scope .cp-channel:first-child .cp-channel-action * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cp-intro .cp-quick-help {
+  display: flex; justify-content: center; gap: 10px; margin: 28px auto 0; padding: 16px 22px; max-width: 560px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); border-radius: 14px; font-size: 15px;
+}
+.ref-scope .cp-intro .cp-quick-help a { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+
+.ref-scope .cp-office figure { border-radius: 14px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); min-height: 380px; }
+
+.ref-scope .cp-community { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 44px; padding: 22px; }
+.ref-scope .cp-community-photo { margin: 0; border-radius: 16px; overflow: hidden; aspect-ratio: 7 / 5; position: relative; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); }
+.ref-scope .cp-community-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.ref-scope .cp-socials { gap: 12px; }
+.ref-scope .cp-socials button {
+  width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); background: transparent; color: inherit;
+}
+.ref-scope .cp-socials button svg { display: block !important; width: 20px !important; height: 20px !important; }
+.ref-scope .cp-socials .cp-yt-play { fill: var(--cp-yt-bg, #0c0c0f); }
+:root[data-theme='light'] .ref-scope .cp-socials .cp-yt-play { --cp-yt-bg: #ffffff; fill: #ffffff; }
+
+@media (max-width: 900px) {
+  .ref-scope .cp-intro { padding-top: 40px; }
+  .ref-scope .cp-intro .cp-channels { grid-template-columns: 1fr; }
+  .ref-scope .cp-community { grid-template-columns: 1fr; gap: 22px; }
+}
+
+/* ---- /contact banner ---- */
+.ref-scope .cp-hero { position: relative; overflow: hidden; background: #0b0b0e; }
+.ref-scope .cp-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.ref-scope .cp-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 8, 11, 0.94) 0%, rgba(8, 8, 11, 0.72) 46%, rgba(8, 8, 11, 0.3) 100%); }
+.ref-scope .cp-hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 56px; align-items: center; padding-top: 72px; padding-bottom: 150px; max-width: 1180px; }
+.ref-scope .cp-hero-copy, .ref-scope .cp-hero-copy * { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+.ref-scope .cp-hero-copy h1 { font-size: clamp(40px, 5.2vw, 64px); line-height: 1.06; letter-spacing: -0.04em; margin: 18px 0 18px; }
+.ref-scope .cp-hero-copy > p { max-width: 520px; font-size: 17px; line-height: 1.65; opacity: 0.88; margin: 0 0 30px; }
+.ref-scope .cp-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+.ref-scope .cp-hero-cta > * { display: inline-flex; align-items: center; justify-content: center; height: 54px; padding: 0 26px; border-radius: 14px; font-size: 16px; font-weight: 600; text-decoration: none; cursor: pointer; box-sizing: border-box; }
+.ref-scope .cp-hero-cta .cp-cta-primary { background: #f6c83d; border: 1.5px solid #f6c83d; }
+.ref-scope .cp-hero-copy .cp-cta-primary, .ref-scope .cp-hero-copy .cp-cta-primary * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cp-hero-cta .cp-cta-ghost { background: rgba(255, 255, 255, 0.06); border: 1.5px solid rgba(255, 255, 255, 0.5); }
+
+.ref-scope .cp-widget { justify-self: end; width: min(380px, 100%); border-radius: 22px; background: #ffffff; border: 1px solid rgba(255, 255, 255, 0.4); overflow: hidden; }
+.ref-scope .cp-widget, .ref-scope .cp-widget * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cpw-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid #e7e4dc; }
+.ref-scope .cpw-logo { width: 42px; height: 42px; border-radius: 12px; background: #15151a; display: grid; place-items: center; }
+.ref-scope .cpw-logo img { width: 24px; height: auto; display: block; }
+.ref-scope .cpw-head b { display: block; font-size: 15px; }
+.ref-scope .cpw-head small { display: flex; align-items: center; gap: 6px; font-size: 12.5px; opacity: 0.7; }
+.ref-scope .cpw-head small i { width: 8px; height: 8px; border-radius: 50%; background: #d6b453; }
+.ref-scope .cpw-body { display: grid; gap: 10px; padding: 18px; background: #faf8f4; }
+.ref-scope .cpw-msg { margin: 0; padding: 11px 14px; border-radius: 14px 14px 14px 4px; background: #ffffff; border: 1px solid #e7e4dc; font-size: 14px; line-height: 1.5; max-width: 86%; }
+.ref-scope .cpw-msg.me { justify-self: end; border-radius: 14px 14px 4px 14px; background: #15151a; border-color: #15151a; }
+.ref-scope .cp-widget .cpw-msg.me, .ref-scope .cp-widget .cpw-msg.me * { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
+.ref-scope .cpw-input { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border-top: 1px solid #e7e4dc; font-size: 14px; }
+.ref-scope .cpw-input span { opacity: 0.55; }
+.ref-scope .cpw-input i { width: 34px; height: 34px; border-radius: 10px; background: #f6c83d; }
+
+/* channels slide up over the banner */
+.ref-scope .cp-intro { margin-top: -96px; position: relative; z-index: 2; padding-top: 0; padding-bottom: 40px; }
+.ref-scope .cp-channel { background: #0c0c0f; }
+:root[data-theme='light'] .ref-scope .cp-channel { background: #ffffff; }
+
+@media (max-width: 900px) {
+  .ref-scope .cp-hero-inner { grid-template-columns: 1fr; padding-top: 40px; padding-bottom: 130px; gap: 30px; }
+  .ref-scope .cp-widget { justify-self: stretch; width: 100%; }
+  .ref-scope .cp-hero-shade { background: linear-gradient(180deg, rgba(8, 8, 11, 0.9), rgba(8, 8, 11, 0.7)); }
+}
+
+/* ---- /contact lower sections: three different layouts ---- */
+/* 1. Registered address: full-width photo with an info panel laid over it */
+.ref-scope .cp-office { display: block !important; position: relative; padding: 0 !important; min-height: 470px; overflow: hidden; border-radius: 26px; }
+.ref-scope .cp-office figure { position: absolute !important; inset: 0; margin: 0; border: 0 !important; border-radius: 0 !important; min-height: 0 !important; }
+.ref-scope .cp-office figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ref-scope .cp-office-copy {
+  position: relative; z-index: 1; width: min(440px, calc(100% - 48px)); margin: 28px; padding: 30px 32px !important;
+  background: #0c0c0f; border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.3)); border-radius: 18px;
+}
+:root[data-theme='light'] .ref-scope .cp-office-copy { background: #ffffff; }
+
+/* 2. Company information: open typographic columns, no boxes */
+.ref-scope .cp-company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 72px; margin-top: 8px; }
+.ref-scope .cp-company-grid > * {
+  border: 0 !important; border-top: 2px solid currentColor !important; border-radius: 0 !important; padding: 26px 0 8px !important; background: transparent !important;
+}
+.ref-scope .cp-company-grid h3 { font-size: clamp(24px, 2.4vw, 32px) !important; margin: 0 0 12px; }
+.ref-scope .cp-company-grid .cp-small-icon { display: none; }
+.ref-scope .cp-company-grid > * > span { display: block; padding: 10px 0; border-top: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); font-size: 15px; }
+.ref-scope .cp-company-grid > * > span:first-of-type { margin-top: 14px; }
+
+/* 3. Community: photo banner with the copy on a glass panel */
+.ref-scope .cp-community { display: block !important; position: relative; padding: 0 !important; min-height: 420px; overflow: hidden; border-radius: 26px; }
+.ref-scope .cp-community-photo { position: absolute !important; inset: 0; aspect-ratio: auto !important; border: 0 !important; border-radius: 0 !important; margin: 0; }
+.ref-scope .cp-community-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(270deg, rgba(8, 8, 11, 0.86) 0%, rgba(8, 8, 11, 0.5) 50%, rgba(8, 8, 11, 0.1) 100%); }
+.ref-scope .cp-community > div:last-child {
+  position: relative; z-index: 1; margin: 0 0 0 auto; width: min(480px, 100%); min-height: 420px; padding: 40px 44px !important; display: flex; flex-direction: column; justify-content: center;
+}
+.ref-scope .cp-community > div:last-child, .ref-scope .cp-community > div:last-child * { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+.ref-scope .cp-community .cp-socials button { border-color: rgba(255, 255, 255, 0.6) !important; background: rgba(8, 8, 11, 0.4); }
+
+@media (max-width: 900px) {
+  .ref-scope .cp-office { min-height: 0; }
+  .ref-scope .cp-office { display: flex !important; flex-direction: column; }
+  .ref-scope .cp-office figure { position: relative !important; height: 220px; order: -1; flex: none; }
+  .ref-scope .cp-office-copy { width: auto; margin: -40px 16px 16px; }
+  .ref-scope .cp-company-grid { grid-template-columns: 1fr; }
+  .ref-scope .cp-community > div:last-child { width: 100%; padding: 28px; }
+}
+
+/* banner follows the home-page frame: contained, rounded, not edge-to-edge */
+.ref-scope .cp-hero { width: calc(100% - 32px); max-width: 1344px; margin: 8px auto 0; border-radius: 28px; }
+.ref-scope .cp-hero-inner { padding-left: 48px; padding-right: 48px; padding-top: 64px; padding-bottom: 140px; }
+@media (max-width: 900px) { .ref-scope .cp-hero { width: calc(100% - 20px); border-radius: 20px; } .ref-scope .cp-hero-inner { padding-left: 22px; padding-right: 22px; } }
+
+/* banner sits flush on the page (no overlap) and follows the theme */
+.ref-scope .cp-hero-inner { padding-bottom: 84px; }
+.ref-scope .cp-intro { margin-top: 36px; }
+:root[data-theme='light'] .ref-scope .cp-hero { background: #f4efe3; border: 1px solid rgba(20, 20, 26, 0.18); }
+:root[data-theme='light'] .ref-scope .cp-hero-bg { content: url('/eracex-ref/assets/cp-banner-light.webp'); }
+:root[data-theme='light'] .ref-scope .cp-hero-shade {
+  background: linear-gradient(90deg, rgba(250, 247, 240, 0.94) 0%, rgba(250, 247, 240, 0.74) 48%, rgba(250, 247, 240, 0.28) 100%);
+}
+:root[data-theme='light'] .ref-scope .cp-hero-copy, :root[data-theme='light'] .ref-scope .cp-hero-copy * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+:root[data-theme='light'] .ref-scope .cp-hero-copy .cp-cta-primary, :root[data-theme='light'] .ref-scope .cp-hero-copy .cp-cta-primary * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+:root[data-theme='light'] .ref-scope .cp-hero-cta .cp-cta-ghost { background: rgba(255, 255, 255, 0.7); border-color: rgba(20, 20, 26, 0.5); }
+:root[data-theme='light'] .ref-scope .cp-widget { border-color: rgba(20, 20, 26, 0.18); }
+
+/* ---- banner blended into the page like the home hero: no box, no gap under the header ---- */
+.ref-scope .cp-hero, :root[data-theme='light'] .ref-scope .cp-hero {
+  width: 100%; max-width: none; margin: -88px 0 0; padding-top: 88px; border: 0; border-radius: 0; background: transparent; overflow: visible; position: relative;
+}
+.ref-scope .cp-hero-shade { display: none; }
+.ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
+  position: absolute; inset: 0 0 0 auto; width: min(78%, 1180px); height: 100%; object-fit: cover; object-position: center right;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 42%), linear-gradient(180deg, #000 58%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 42%), linear-gradient(180deg, #000 58%, transparent 100%);
+  mask-composite: intersect;
+}
+.ref-scope .cp-hero-inner { padding-top: 56px; padding-bottom: 72px; }
+.ref-scope .cp-hero-copy, .ref-scope .cp-hero-copy *,
+:root[data-theme='light'] .ref-scope .cp-hero-copy, :root[data-theme='light'] .ref-scope .cp-hero-copy * { color: var(--ref-ink, #15151a) !important; -webkit-text-fill-color: var(--ref-ink, #15151a) !important; }
+.ref-scope .cp-hero-copy .cp-cta-primary, .ref-scope .cp-hero-copy .cp-cta-primary *,
+:root[data-theme='light'] .ref-scope .cp-hero-copy .cp-cta-primary, :root[data-theme='light'] .ref-scope .cp-hero-copy .cp-cta-primary * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cp-hero-cta .cp-cta-ghost { background: transparent; border-color: var(--ref-card-line, rgba(255, 255, 255, 0.4)); }
+.ref-scope .cp-intro { margin-top: 0; }
+@media (max-width: 900px) {
+  .ref-scope .cp-hero-bg { width: 100%; -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 100%); mask-image: linear-gradient(180deg, #000 30%, transparent 100%); opacity: 0.5; }
+}
+
+/* keep the banner inside the fixed 1344px frame (same as header and home hero), edges fade into the page */
+.ref-scope .cp-hero, :root[data-theme='light'] .ref-scope .cp-hero { width: 100%; max-width: 1344px; margin: -88px auto 0; }
+.ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
+  width: min(82%, 1100px);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 40%), linear-gradient(270deg, transparent 0%, #000 16%), linear-gradient(180deg, #000 58%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 40%), linear-gradient(270deg, transparent 0%, #000 16%), linear-gradient(180deg, #000 58%, transparent 100%);
+  mask-composite: intersect, intersect;
+}
+.ref-scope .cp-hero-inner { max-width: none; padding-left: 64px; padding-right: 64px; }
+@media (max-width: 900px) { .ref-scope .cp-hero-inner { padding-left: 22px; padding-right: 22px; } }
+
+/* banner background fills the whole frame (not just the right part), edges fade into the page */
+.ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
+  inset: 0; width: 100%; object-position: 62% center;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 26%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 26%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
+}
+
+/* logo marks sit directly on the surface, no tile behind them */
+.ref-scope .cpw-logo { background: transparent !important; width: auto; height: auto; border-radius: 0; }
+.ref-scope .cpw-logo img { width: 40px; }
+.ref-scope .cp-chat-avatar { background: transparent !important; }
+
+/* ---- live chat: launcher bottom-left, anchored panel ---- */
+.ref-scope .cp-chat-launcher {
+  position: fixed; left: 24px; right: auto; bottom: 24px; z-index: 40; width: 58px; height: 58px; padding: 0; border-radius: 50%; display: grid; place-items: center;
+  background: #f6c83d; border: 0; cursor: pointer; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+.ref-scope .cp-chat-launcher, .ref-scope .cp-chat-launcher * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cp-chat-launcher span { display: none; }
+.ref-scope .cp-chat-launcher svg { display: block !important; width: 26px !important; height: 26px !important; }
+.ref-scope dialog.cp-chat-dialog {
+  position: fixed; inset: auto auto 94px 24px; margin: 0; width: min(380px, calc(100vw - 32px)); max-height: min(560px, calc(100vh - 120px)); padding: 0; overflow: hidden;
+  border: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.3)); border-radius: 20px; background: #ffffff; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+.ref-scope dialog.cp-chat-dialog[open] { display: flex; flex-direction: column; }
+.ref-scope dialog.cp-chat-dialog::backdrop { background: rgba(0, 0, 0, 0.25); }
+.ref-scope dialog.cp-chat-dialog, .ref-scope dialog.cp-chat-dialog * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .cp-chat-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; background: #15151a; border-bottom: 0; }
+.ref-scope dialog.cp-chat-dialog .cp-chat-head, .ref-scope dialog.cp-chat-dialog .cp-chat-head * { color: #f5f5f2 !important; -webkit-text-fill-color: #f5f5f2 !important; }
+.ref-scope .cp-chat-avatar { width: 38px; height: 38px; flex: none; display: grid; place-items: center; }
+.ref-scope .cp-chat-avatar img { width: 30px; height: auto; }
+.ref-scope .cp-chat-who { flex: 1; min-width: 0; }
+.ref-scope .cp-chat-who h2 { margin: 0; font-size: 15px; font-weight: 600; }
+.ref-scope .cp-chat-who span { display: flex; align-items: center; gap: 6px; font-size: 12.5px; opacity: 0.8; }
+.ref-scope .cp-chat-who span i { width: 8px; height: 8px; border-radius: 50%; background: #d6b453; }
+.ref-scope .cp-chat-x { width: 34px; height: 34px; display: grid; place-items: center; border: 0; background: transparent; border-radius: 10px; cursor: pointer; }
+.ref-scope .cp-chat-x:hover { background: rgba(255, 255, 255, 0.12); }
+.ref-scope .cp-chat-x svg { display: block !important; width: 18px !important; height: 18px !important; }
+.ref-scope .cp-chat-content { flex: 1; overflow: auto; padding: 18px; background: #faf8f4; display: grid; gap: 14px; align-content: start; }
+.ref-scope .cp-chat-msg { margin: 0; padding: 12px 14px; max-width: 90%; border-radius: 14px 14px 14px 4px; background: #fff; border: 1px solid #e7e4dc; font-size: 14px; line-height: 1.55; }
+.ref-scope .cp-chat-msg b { display: block; margin-bottom: 2px; }
+.ref-scope .cp-chat-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.ref-scope .cp-chat-topics a { padding: 8px 13px; border: 1px solid #d9d5c9; border-radius: 999px; background: #fff; font-size: 13px; font-weight: 600; text-decoration: none; }
+.ref-scope .cp-chat-topics a:hover { border-color: #15151a; }
+.ref-scope #cpChatStatus { margin: 0; font-size: 13px; line-height: 1.5; }
+.ref-scope .cp-chat-form { display: flex; align-items: flex-end; gap: 10px; padding: 12px 14px; border-top: 1px solid #e7e4dc; background: #fff; }
+.ref-scope .cp-chat-form textarea { flex: 1; resize: none; min-height: 44px; max-height: 110px; padding: 11px 14px; border: 1.5px solid #d9d5c9; border-radius: 12px; font-size: 14px; background: #fff; outline: none; }
+.ref-scope .cp-chat-form textarea:focus { border-color: #15151a; }
+.ref-scope .cp-chat-form button { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border: 0; border-radius: 12px; background: #f6c83d; cursor: pointer; }
+.ref-scope .cp-chat-form button svg { display: block !important; width: 18px !important; height: 18px !important; }
+.ref-scope .cp-page .cp-chat-dialog { inset: auto auto 94px 24px !important; width: min(380px, calc(100vw - 32px)); }
+.ref-scope .cp-chat-dialog::backdrop { backdrop-filter: none; background: rgba(0, 0, 0, 0.2); }
+.ref-scope .cp-chat-launcher { left: auto !important; right: 24px !important; }
+.ref-scope .cp-page .cp-chat-dialog { inset: auto 24px 94px auto !important; }
+
+/* ---- chat polish ---- */
+.ref-scope dialog.cp-chat-dialog { width: min(392px, calc(100vw - 32px)); max-height: min(580px, calc(100vh - 120px)); border-radius: 18px; font-size: 14px; }
+.ref-scope .cp-chat-head { padding: 14px 16px; gap: 12px; }
+.ref-scope .cp-chat-content { padding: 18px 16px; gap: 10px; min-height: 220px; background: #f3f1ec; }
+.ref-scope .cp-chat-msg { font-size: 14px !important; line-height: 1.5 !important; padding: 10px 14px; max-width: 86%; border-radius: 16px 16px 16px 4px; }
+.ref-scope .cp-chat-msg b { display: block; font-size: 14px !important; font-weight: 600; margin: 0 0 2px; }
+.ref-scope .cp-chat-msg.me { justify-self: end; border-radius: 16px 16px 4px 16px; background: #15151a; border-color: #15151a; }
+.ref-scope dialog.cp-chat-dialog .cp-chat-msg.me, .ref-scope dialog.cp-chat-dialog .cp-chat-msg.me * { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
+.ref-scope .cp-chat-topics { gap: 8px; margin-top: 4px; }
+.ref-scope .cp-chat-topics a { padding: 7px 13px; font-size: 13px; }
+.ref-scope .cp-chat-form { align-items: center; padding: 12px 14px; gap: 10px; }
+.ref-scope .cp-chat-form textarea {
+  height: 44px; min-height: 44px; max-height: 44px; padding: 12px 14px; line-height: 20px; overflow: hidden; scrollbar-width: none; border: 1.5px solid #cfcabd; border-radius: 12px; resize: none;
+}
+.ref-scope .cp-chat-form textarea::-webkit-scrollbar { display: none; }
+.ref-scope .cp-chat-form textarea::placeholder { color: #8a8678 !important; -webkit-text-fill-color: #8a8678 !important; opacity: 1; }
+
+/* ---- banner chat card: solid, crisp, same language as the live widget ---- */
+.ref-scope .cp-widget { opacity: 1 !important; width: min(400px, 100%); border-radius: 20px; background: #ffffff; border: 1px solid rgba(20, 20, 26, 0.12); box-shadow: 0 28px 60px rgba(0, 0, 0, 0.4); }
+.ref-scope .cpw-head { padding: 14px 18px; background: #15151a; border-bottom: 0; }
+.ref-scope .cp-widget .cpw-head, .ref-scope .cp-widget .cpw-head * { color: #f5f5f2 !important; -webkit-text-fill-color: #f5f5f2 !important; }
+.ref-scope .cpw-logo { width: 34px; height: 34px; display: grid; place-items: center; }
+.ref-scope .cpw-logo img { width: 30px; }
+.ref-scope .cpw-head b { font-size: 15px; font-weight: 600; }
+.ref-scope .cpw-head small { font-size: 12.5px; opacity: 0.85; }
+.ref-scope .cpw-body { padding: 16px; gap: 10px; background: #f3f1ec; }
+.ref-scope .cpw-msg { font-size: 14px; line-height: 1.5; padding: 10px 14px; border-radius: 16px 16px 16px 4px; max-width: 86%; }
+.ref-scope .cpw-msg.me { border-radius: 16px 16px 4px 16px; }
+.ref-scope .cpw-input { padding: 12px 14px; background: #fff; border-top: 1px solid #e7e4dc; }
+.ref-scope .cpw-input span { flex: 1; height: 44px; display: flex; align-items: center; padding: 0 14px; border: 1.5px solid #cfcabd; border-radius: 12px; font-size: 14px; opacity: 1; color: #8a8678 !important; -webkit-text-fill-color: #8a8678 !important; margin-right: 10px; }
+.ref-scope .cpw-input i { width: 44px; height: 44px; border-radius: 12px; background: #f6c83d; flex: none; }

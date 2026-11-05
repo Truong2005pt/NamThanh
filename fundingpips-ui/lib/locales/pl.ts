@@ -130,7 +130,7 @@ export const pl: Dict = {
     "title": "Co jest dozwolone, a co zabronione",
     "shownOnEveryPackage": 'każdy pakiet',
     "allowed": 'Dozwolone',
-    "notAllowed": 'Niedozwolone',
+    "notAllowed": 'Zabronione',
     "weekendHolding": 'Utrzymywanie pozycji w weekend',
     "weekendHoldingDesc": 'Zamknij wszystkie pozycje przed weekendem.',
     "newsTradingEval": 'Handel w okresie publikacji wiadomości: ocena',

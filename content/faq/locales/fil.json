@@ -1,48 +1,48 @@
 {
   "two": {
-    "title": "Two-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "Dalawang-Hakbang na Hamon — FAQ",
+    "subtitle": "Mga Kundisyon ng Hamon at Funded Account",
     "categories": [
       {
-        "category": "About the Two-Step Challenge",
+        "category": "Tungkol sa Dalawang-Hakbang na Hamon",
         "items": [
           {
-            "q": "What is the Two-Step Challenge?",
+            "q": "Ano ang Dalawang-Hakbang na Hamon?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a two-phase evaluation. Pass Phase 1 and Phase 2, and you move to a Funded account with an 80% profit split."
+                "x": "Ito ay isang dalawang yugtong pagsusuri. Ipasa ang Phase 1 at Phase 2, at lilipat ka sa isang Funded account na may 80% hati sa kita (profit split)."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Aling mga laki ng account ang maaari kong piliin?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Limang laki: $5,000, $10,000, $25,000, $50,000 at $100,000. Ang lahat ng patakaran ay magkaparehong porsyento para sa bawat laki; tanging ang halaga sa dolyar ang nagbabago."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Targets",
+        "category": "Mga Target na Kita",
         "items": [
           {
-            "q": "What profit do I need to pass each phase?",
+            "q": "Anong kita ang kailangan ko upang maipasa ang bawat yugto?",
             "a": [
               {
                 "t": "p",
-                "x": "Phase 1 requires 10% profit. Phase 2 requires 5% profit. The Funded account has no profit target."
+                "x": "Ang Phase 1 ay nangangailangan ng 10% kita. Ang Phase 2 ay nangangailangan ng 5% kita. Ang Funded account ay walang target na kita."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Phase 1 target (10%)",
-                    "Phase 2 target (5%)"
+                    "Laki ng account",
+                    "Target sa Phase 1 (10%)",
+                    "Target sa Phase 2 (5%)"
                   ],
                   [
                     "$5,000",
@@ -76,22 +76,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Mga Limitasyon sa Pagkalugi",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Ano ang mga limitasyon sa pagkalugi?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 5% of your balance at the start of each day, and a Maximum Loss of 10% of the initial account size. Breaching either one ends the account."
+                "x": "Mayroong dalawa: isang Maximum Daily Loss na 5% ng iyong balanse sa simula ng bawat araw, at isang Maximum Loss na 10% ng panimulang laki ng account. Ang paglabag sa alinman ay magtatapos sa account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (5%, at starting balance)",
-                    "Maximum Loss (10%)"
+                    "Laki ng account",
+                    "Maximum Daily Loss (5%, sa panimulang balanse)",
+                    "Pinakamataas na Pagkalugi (10%)"
                   ],
                   [
                     "$5,000",
@@ -122,60 +122,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 5% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Ang mga halaga ng pagkalugi sa itaas ay nalalapat kapag ang iyong balanse ay katumbas ng laki ng account. Ang aktwal na pang-araw-araw na limitasyon ay muling kinakalkula araw-araw bilang 5% ng iyong balanse sa 00:00 UTC."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Nalalapat ba ang mga limitasyon sa pagkalugi sa bawat yugto?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in Phase 1, Phase 2 and on the Funded account."
+                "x": "Oo. Ang parehong mga limitasyon ay nalalapat sa Phase 1, Phase 2 at sa Funded account."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Paano Kinakalkula ang Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Sinusukat ba ang drawdown sa balanse o sa equity?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Sa equity. Ang equity ay ang iyong balanse kasama ang lumulutang (floating) na kita o pagkalugi ng iyong mga bukas na posisyon, kaya ang mga bukas na trade ay ibinibilang sa parehong limitasyon sa bawat sandali."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Paano gumagana ang Maximum Daily Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 5% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Nagsisimula ang araw ng trading sa 00:00 UTC. Ang iyong balanse sa sandaling iyon ay ang panimulang punto para sa araw. Ang iyong pang-araw-araw na limitasyon ay 5% ng panimulang balanseng iyon. Sa buong araw ang iyong equity ay hindi dapat bumaba nang higit sa halagang ito."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $510 (5% × $10,200). During that day your equity must stay above $9,690 ($10,200 − $510), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Halimbawa sa $10,000 na account: sa 00:00 UTC ang iyong balanse ay $10,200, kaya ang iyong pang-araw-araw na limitasyon ay $510 (5% × $10,200). Sa araw na iyon, ang iyong equity ay dapat manatili sa itaas ng $9,690 ($10,200 − $510)."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Paano gumagana ang Maximum Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "Ang antas ng Maximum Loss ay permanente. Kinakalkula ito nang isang beses mula sa iyong paunang balanse at hindi nagbabago, kahit na ikaw ay kumikita. Kung ang iyong equity ay bumaba sa antas na ito, ang account ay mabibigo."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (10%)",
-                    "Equity must stay above"
+                    "Laki ng account",
+                    "Pinakamataas na Pagkalugi (10%)",
+                    "Dapat manatili ang equity sa itaas ng"
                   ],
                   [
                     "$5,000",
@@ -206,57 +206,57 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,000; it does not move up with your profit."
+                "x": "Halimbawa: sa isang $10,000 account pinalago mo ang equity sa $10,800. Ang antas ng Maximum Loss ay mananatili sa $9,000; hindi ito tumataas kasama ng iyong kita."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Paano nagtutulungan ang dalawang limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Ang mga ito ay magkahiwalay na limitasyon na sinusuri nang sabay. Mabibigo ang account kapag naabot ang alinman sa mga ito nang una."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Saan ko makikita ang aking kasalukuyang mga limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Ipinapakita ng iyong dashboard ang live na antas ng parehong limitasyon para sa iyong account."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Mga Araw ng Trading at Limitasyon sa Oras",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Ilang araw ng trading ang kailangan ko?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in Phase 1 and at least 5 in Phase 2. The Funded account has no minimum trading days."
+                "x": "Hindi bababa sa 5 araw ng trading sa Phase 1 at 5 sa Phase 2. Ang Funded account ay walang minimum na araw ng trading."
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "Mayroon bang limitasyon sa oras upang makumpleto ang hamon?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Wala. Walang limitasyon ang panahon ng trading, kaya maaari mong gugulin ang oras na kailangan mo upang maabot ang target na kita, basta't nananatiling aktibo ang account."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Mayroon bang minimum na kinakailangan sa aktibidad?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Oo. Kung walang trade sa iyong account sa loob ng 30 magkakasunod na araw, awtomatikong isasara ang account at hindi ibabalik ang bayad. Nalalapat ito sa bawat yugto, kabilang ang Funded account."
               }
             ]
           }
@@ -266,45 +266,45 @@
         "category": "Funded Account",
         "items": [
           {
-            "q": "What happens after I pass both phases?",
+            "q": "Ano ang mangyayari pagkatapos kong maipasa ang dalawang yugto?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phases (see Trading Conditions)."
+                "x": "Makakatanggap ka ng isang Funded account na may parehong laki. Ang parehong mga limitasyon sa pagkalugi ay mananatili, walang minimum na araw ng trading, at ang leverage ay mas mababa."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Ano ang hati sa kita (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: mananatili sa iyo ang 80% ng kita na iyong nagagawa sa Funded account."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Gaano kadalas ako maaaring humiling ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Sa Funded account maaari kang humiling ng payout tuwing 5 araw."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Mayroon bang pinakamababang halaga ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Oo. Ang minimum na payout ay 1% ng laki ng account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Laki ng account",
+                    "Minimum na payout (1%)"
                   ],
                   [
                     "$5,000",
@@ -331,39 +331,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Mayroon bang pinakamaraming bilang ng mga payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Oo. Ang isang Funded account ay limitado sa 5 payout. Pagkatapos ng ikalimang payout, isasara ang account, at upang magpatuloy sa trading kailangan mong bumili ng bagong hamon."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Mga Kundisyon sa Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Anong leverage ang makukuha ko?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:100 in Phase 1 and Phase 2. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Ang maximum leverage ay 1:100 sa Phase 1 at Phase 2. Sa Funded account, ang maximum leverage ay 1:40."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Yugto",
+                    "Pinakamataas na leverage"
                   ],
                   [
-                    "Phase 1 and Phase 2",
+                    "Phase 1 at Phase 2",
                     "1:100"
                   ],
                   [
-                    "Funded",
+                    "Funded Account",
                     "1:40"
                   ]
                 ]
@@ -371,143 +371,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Maaari ba akong mag-hold ng trade magdamag at sa katapusan ng linggo (weekend)?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in Phase 1, Phase 2 and on the Funded account."
+                "x": "Pinapayagan ang pag-hold magdamag (overnight). Hindi pinapayagan ang pag-hold sa weekend, kaya dapat isara ang mga posisyon bago magsara ang merkado."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Maaari ba akong mag-trade sa oras ng malalaking balita?",
             "a": [
               {
                 "t": "p",
-                "x": "In Phase 1 and Phase 2, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "Sa Phase 1 at 2, oo. Sa Funded account, bawal ang news trading: hindi ka maaaring magbukas o magpatupad ng mga trade sa loob ng 5 minuto bago o pagkatapos ng mga pangunahing balita."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Mga Ipinagbabawal na Kasanayan sa Pag-trade",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Anong mga gawi sa trading ang hindi pinapayagan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Ang anumang pag-trade na nagsasamantala, nag-aabuso, o umiiwas sa mga patakaran ng programa o platform ay ipinagbabawal. Kabilang dito:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Pagsasamantala sa mga error o pagkaantala: paggamit ng mga error sa presyo, maling data, latency, o pagkaantala ng presyo."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Panlabas o naantalang data: pag-trade gamit ang panlabas, naantala, o third-party na data feeds o signal na hindi opisyal na bahagi ng platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging at koordinadong trading: manipulado, mapanlinlang, o koordinadong trading sa pagitan ng mga nauugnay na account, kabilang ang pagbubukas ng magkasalungat na posisyon."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Parehong diskarte sa maraming account: paglalagay ng magkaparehong trade sa parehong oras sa maraming account nang walang nakasulat na pahintulot."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Parehong IP address o device: pag-trade o pag-access sa mga account ng magkakaibang trader mula sa parehong IP address o parehong device."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pamamahala ng account ng third-party: paggamit ng account manager o \"passing service\" upang i-manage ang iyong account. Ang lahat ay dapat personal na gawin ng may-ari ng account."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Mga serbisyo ng signal: paggamit ng mga signal ng trading mula sa mga grupo o provider upang maglagay ng mga trade. Ang lahat ng desisyon ay dapat sa iyo."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: pagsasagawa ng trade bago ang mga order na inilagay sa ibang broker o venue."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Mga bot at awtomatikong pagsasamantala: paggamit ng software, mga bot ng HFT, o mga script na dinisenyo upang manipulahin o lampasan ang mga panuntunan."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Pagbabago ng estilo ng pag-trade pagkatapos pumasa: paggamit ng kapansin-pansing magkaibang mga diskarte o profile ng panganib sa Funded account kumpara sa hamon."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Pagsasamantala sa gap at mga kaganapan: pag-trade na lumilihis sa normal na gawi sa merkado, tulad ng pag-hold ng posisyon upang samantalahin ang mga market gap."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Hindi proporsyonal na panganib: pagbubukas ng mga laki ng posisyon na malinaw na hindi naaayon sa iyong karaniwang trading upang sugalan ang account."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Paglabag sa mga tuntunin ng platform: pag-trade na lumalabag sa mga tuntunin ng platform ng trading o liquidity provider."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in Phase 1 and Phase 2."
+                "x": "News trading sa Funded account: pagbubukas ng trade sa loob ng 5 minuto bago o pagkatapos ng mga pangunahing balita. Pinapayagan ang news trading sa Phase 1 at Phase 2."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Maaari bang mag-trade ang ibang tao sa aking account, o maaari ba akong mag-trade para sa iba?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hindi. Ang iyong account ay para sa iyong personal na paggamit lamang. Hindi mo maaaring payagan ang sinuman na ma-access o i-trade ang iyong account."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Maaari ba akong magkaroon ng higit sa isang account?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Ang bawat trader ay maaaring humawak lamang ng isang account sa ilalim ng programa maliban kung inaprubahan namin nang nakasulat."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Maaari ba akong gumamit ng trade copier?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Maaari kang gumamit ng trade copier para sa sarili mong mga trade. Ang pagkopya ng mga trade mula sa ibang mga trader ay maaaring maging sanhi ng pagtanggi sa iyong payout."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Ano ang mangyayari kapag may natuklasang ipinagbabawal na kasanayan?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Maaari naming ibukod ang mga apektadong trade, tanggihan o kanselahin ang payout, at wakasan ang account at ang iyong paglahok sa programa."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Pagpepresyo",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Magkano ang halaga ng hamon?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Laki ng account",
+                    "Presyo ng hamon"
                   ],
                   [
                     "$5,000",
@@ -538,48 +538,48 @@
     ]
   },
   "one": {
-    "title": "One-Step Challenge — FAQ",
-    "subtitle": "Challenge & Funded Account Conditions",
+    "title": "Isang-Hakbang na Hamon — FAQ",
+    "subtitle": "Mga Kundisyon ng Hamon at Funded Account",
     "categories": [
       {
-        "category": "About the One-Step Challenge",
+        "category": "Tungkol sa Isang-Hakbang na Hamon",
         "items": [
           {
-            "q": "What is the One-Step Challenge?",
+            "q": "Ano ang Isang-Hakbang na Hamon?",
             "a": [
               {
                 "t": "p",
-                "x": "It is a single-phase evaluation. Reach the profit target in one phase, and you move to a Funded account with an 80% profit split."
+                "x": "Ito ay isang solong yugtong pagsusuri. Abutin ang target na kita sa isang yugto, at lilipat ka sa isang Funded account na may 80% hati sa kita."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Aling mga laki ng account ang maaari kong piliin?",
             "a": [
               {
                 "t": "p",
-                "x": "Five sizes: $5,000, $10,000, $25,000, $50,000 and $100,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Limang laki: $5,000, $10,000, $25,000, $50,000 at $100,000. Ang lahat ng patakaran ay magkaparehong porsyento para sa bawat laki; tanging ang halaga sa dolyar ang nagbabago."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Target na Kita",
         "items": [
           {
-            "q": "What profit do I need to pass?",
+            "q": "Anong kita ang kailangan ko upang makapasa?",
             "a": [
               {
                 "t": "p",
-                "x": "The challenge phase requires 10% profit. The Funded account has no profit target."
+                "x": "Ang yugto ng hamon ay nangangailangan ng 10% kita. Ang Funded account ay walang target na kita."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Profit target (10%)"
+                    "Laki ng account",
+                    "Target na kita (10%)"
                   ],
                   [
                     "$5,000",
@@ -608,22 +608,22 @@
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Mga Limitasyon sa Pagkalugi",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Ano ang mga limitasyon sa pagkalugi?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a Maximum Loss of 6% of the initial account size. Breaching either one ends the account."
+                "x": "Mayroong dalawa: isang Maximum Daily Loss na 3% ng iyong panimulang balanse, at isang Maximum Loss na 6% ng panimulang laki ng account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Daily Loss (3%, at starting balance)",
-                    "Maximum Loss (6%)"
+                    "Laki ng account",
+                    "Maximum Daily Loss (3%, sa panimulang balanse)",
+                    "Pinakamataas na Pagkalugi (6%)"
                   ],
                   [
                     "$5,000",
@@ -654,60 +654,60 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses."
+                "x": "Ang aktwal na pang-araw-araw na limitasyon ay muling kinakalkula araw-araw bilang 3% ng iyong balanse sa 00:00 UTC."
               }
             ]
           },
           {
-            "q": "Do the loss limits apply in every phase?",
+            "q": "Nalalapat ba ang mga limitasyon sa pagkalugi sa bawat yugto?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The same limits apply in the challenge phase and on the Funded account."
+                "x": "Oo. Ang parehong mga limitasyon ay nalalapat sa yugto ng hamon at sa Funded account."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Paano Kinakalkula ang Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Sinusukat ba ang drawdown sa balanse o sa equity?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Sa equity. Ang equity ay ang iyong balanse kasama ang lumulutang (floating) na kita o pagkalugi ng iyong mga bukas na posisyon, kaya ang mga bukas na trade ay ibinibilang sa parehong limitasyon sa bawat sandali."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Paano gumagana ang Maximum Daily Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Nagsisimula ang araw sa 00:00 UTC. Ang iyong pang-araw-araw na limitasyon ay 3% ng panimulang balanseng iyon."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Halimbawa sa $10,000 account: sa 00:00 UTC ang balanse ay $10,200, kaya ang limitasyon ay $306. Dapat manatili ang equity sa itaas ng $9,894."
               }
             ]
           },
           {
-            "q": "How does the Maximum Loss work?",
+            "q": "Paano gumagana ang Maximum Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss level is fixed. It is calculated once from your initial balance and never changes, even when you are in profit. If your equity drops to or below this level at any time, the account is failed."
+                "x": "Ang antas ng Maximum Loss ay permanente. Kinakalkula ito nang isang beses mula sa iyong paunang balanse at hindi nagbabago, kahit na ikaw ay kumikita. Kung ang iyong equity ay bumaba sa antas na ito, ang account ay mabibigo."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (6%)",
-                    "Equity must stay above"
+                    "Laki ng account",
+                    "Pinakamataas na Pagkalugi (6%)",
+                    "Dapat manatili ang equity sa itaas ng"
                   ],
                   [
                     "$5,000",
@@ -738,57 +738,57 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account you grow equity to $10,800. The Maximum Loss level stays at $9,400; it does not move up with your profit."
+                "x": "Halimbawa: sa $10,000 account pinalago mo ang equity sa $10,800. Ang Maximum Loss level ay nananatili sa $9,400."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Paano nagtutulungan ang dalawang limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Ang mga ito ay magkahiwalay na limitasyon na sinusuri nang sabay. Mabibigo ang account kapag naabot ang alinman sa mga ito nang una."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Saan ko makikita ang aking kasalukuyang mga limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Ipinapakita ng iyong dashboard ang live na antas ng parehong limitasyon para sa iyong account."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Mga Araw ng Trading at Limitasyon sa Oras",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Ilang araw ng trading ang kailangan ko?",
             "a": [
               {
                 "t": "p",
-                "x": "At least 5 trading days in the challenge phase. The Funded account has no minimum trading days."
+                "x": "Hindi bababa sa 5 araw ng trading sa yugto ng hamon. Ang Funded account ay walang minimum na araw."
               }
             ]
           },
           {
-            "q": "Is there a time limit to complete the challenge?",
+            "q": "Mayroon bang limitasyon sa oras upang makumpleto ang hamon?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The trading period is unlimited, so you can take as long as you need to reach the profit target, provided the account stays active (see below)."
+                "x": "Wala. Walang limitasyon ang panahon ng trading, kaya maaari mong gugulin ang oras na kailangan mo upang maabot ang target na kita, basta't nananatiling aktibo ang account."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Mayroon bang minimum na kinakailangan sa aktibidad?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Oo. Kung walang trade sa iyong account sa loob ng 30 magkakasunod na araw, awtomatikong isasara ang account at hindi ibabalik ang bayad. Nalalapat ito sa bawat yugto, kabilang ang Funded account."
               }
             ]
           }
@@ -798,45 +798,45 @@
         "category": "Funded Account",
         "items": [
           {
-            "q": "What happens after I pass the challenge?",
+            "q": "Ano ang mangyayari pagkatapos kong maipasa ang hamon?",
             "a": [
               {
                 "t": "p",
-                "x": "You receive a Funded account of the same size. The same loss limits stay in place, there is no minimum number of trading days, and leverage is lower than in the challenge phase (see Trading Conditions)."
+                "x": "Makakatanggap ka ng Funded account na may parehong laki. Ang parehong mga limitasyon sa pagkalugi ay mananatili."
               }
             ]
           },
           {
-            "q": "What is the profit split?",
+            "q": "Ano ang hati sa kita (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make on the Funded account."
+                "x": "80% / 20%: mananatili sa iyo ang 80% ng kita na iyong nagagawa sa Funded account."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Gaano kadalas ako maaaring humiling ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "On the Funded account you can request a payout every 5 days."
+                "x": "Sa Funded account maaari kang humiling ng payout tuwing 5 araw."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Mayroon bang pinakamababang halaga ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Oo. Ang minimum na payout ay 1% ng laki ng account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Laki ng account",
+                    "Minimum na payout (1%)"
                   ],
                   [
                     "$5,000",
@@ -863,39 +863,39 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Mayroon bang pinakamaraming bilang ng mga payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. A Funded account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new challenge."
+                "x": "Oo. Ang isang Funded account ay limitado sa 5 payout. Pagkatapos ng ikalimang payout, isasara ang account, at upang magpatuloy sa trading kailangan mong bumili ng bagong hamon."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Mga Kundisyon sa Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Anong leverage ang makukuha ko?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:50 in the challenge phase. On the Funded account maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Ang maximum leverage ay 1:50 sa yugto ng hamon. Sa Funded account, ang maximum leverage ay 1:40."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Phase",
-                    "Maximum leverage"
+                    "Yugto",
+                    "Pinakamataas na leverage"
                   ],
                   [
-                    "Challenge phase",
+                    "Yugto ng hamon",
                     "1:50"
                   ],
                   [
-                    "Funded",
+                    "Funded Account",
                     "1:40"
                   ]
                 ]
@@ -903,143 +903,143 @@
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Maaari ba akong mag-hold ng trade magdamag at sa katapusan ng linggo (weekend)?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend. This applies in the challenge phase and on the Funded account."
+                "x": "Pinapayagan ang overnight holding. Hindi pinapayagan ang weekend holding."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Maaari ba akong mag-trade sa oras ng malalaking balita?",
             "a": [
               {
                 "t": "p",
-                "x": "In the challenge phase, yes. On the Funded account news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central bank announcements, geopolitical events or other high-impact events."
+                "x": "Sa yugto ng hamon, oo. Sa Funded account bawal ang news trading 5 minuto bago at pagkatapos ng balita."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Mga Ipinagbabawal na Kasanayan sa Pag-trade",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Anong mga gawi sa trading ang hindi pinapayagan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Ang anumang pag-trade na nagsasamantala, nag-aabuso, o umiiwas sa mga patakaran ng programa o platform ay ipinagbabawal. Kabilang dito:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Pagsasamantala sa mga error o pagkaantala: paggamit ng mga error sa presyo, maling data, latency, o pagkaantala ng presyo."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Panlabas o naantalang data: pag-trade gamit ang panlabas, naantala, o third-party na data feeds o signal na hindi opisyal na bahagi ng platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging at koordinadong trading: manipulado, mapanlinlang, o koordinadong trading sa pagitan ng mga nauugnay na account, kabilang ang pagbubukas ng magkasalungat na posisyon."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Parehong diskarte sa maraming account: paglalagay ng magkaparehong trade sa parehong oras sa maraming account nang walang nakasulat na pahintulot."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Parehong IP address o device: pag-trade o pag-access sa mga account ng magkakaibang trader mula sa parehong IP address o parehong device."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pamamahala ng account ng third-party: paggamit ng account manager o \"passing service\" upang i-manage ang iyong account. Ang lahat ay dapat personal na gawin ng may-ari ng account."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Mga serbisyo ng signal: paggamit ng mga signal ng trading mula sa mga grupo o provider upang maglagay ng mga trade. Ang lahat ng desisyon ay dapat sa iyo."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: pagsasagawa ng trade bago ang mga order na inilagay sa ibang broker o venue."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Mga bot at awtomatikong pagsasamantala: paggamit ng software, mga bot ng HFT, o mga script na dinisenyo upang manipulahin o lampasan ang mga panuntunan."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Pagbabago ng estilo ng pag-trade pagkatapos pumasa: paggamit ng kapansin-pansing magkaibang mga diskarte o profile ng panganib sa Funded account kumpara sa hamon."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Pagsasamantala sa gap at mga kaganapan: pag-trade na lumilihis sa normal na gawi sa merkado, tulad ng pag-hold ng posisyon upang samantalahin ang mga market gap."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk limits. Market-standard risk management is expected at all times."
+                "x": "Hindi proporsyonal na panganib: pagbubukas ng mga laki ng posisyon na malinaw na hindi naaayon sa iyong karaniwang trading upang sugalan ang account."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Paglabag sa mga tuntunin ng platform: pag-trade na lumalabag sa mga tuntunin ng platform ng trading o liquidity provider."
               },
               {
                 "t": "p",
-                "x": "News trading on the Funded account: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation. News trading is allowed in the challenge phase."
+                "x": "News trading sa Funded account: bawal magbukas ng trade 5 minuto bago o pagkatapos ng balita. Pinapayagan ito sa yugto ng hamon."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Maaari bang mag-trade ang ibang tao sa aking account, o maaari ba akong mag-trade para sa iba?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hindi. Ang iyong account ay para sa iyong personal na paggamit lamang. Hindi mo maaaring payagan ang sinuman na ma-access o i-trade ang iyong account."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Maaari ba akong magkaroon ng higit sa isang account?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Ang bawat trader ay maaaring humawak lamang ng isang account sa ilalim ng programa maliban kung inaprubahan namin nang nakasulat."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Maaari ba akong gumamit ng trade copier?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Maaari kang gumamit ng trade copier para sa sarili mong mga trade. Ang pagkopya ng mga trade mula sa ibang mga trader ay maaaring maging sanhi ng pagtanggi sa iyong payout."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Ano ang mangyayari kapag may natuklasang ipinagbabawal na kasanayan?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Maaari naming ibukod ang mga apektadong trade, tanggihan o kanselahin ang payout, at wakasan ang account at ang iyong paglahok sa programa."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Pagpepresyo",
         "items": [
           {
-            "q": "How much does the challenge cost?",
+            "q": "Magkano ang halaga ng hamon?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Challenge price"
+                    "Laki ng account",
+                    "Presyo ng hamon"
                   ],
                   [
                     "$5,000",
@@ -1070,76 +1070,76 @@
     ]
   },
   "instant": {
-    "title": "Instant Funding — FAQ",
-    "subtitle": "Funded Account Conditions — Instant Funding & Instant Funding Light",
+    "title": "Agarang Pagpopondo — FAQ",
+    "subtitle": "Mga Kundisyon ng Funded Account — Agarang Pagpopondo at Instant Light",
     "categories": [
       {
-        "category": "About Instant Funding",
+        "category": "Tungkol sa Agarang Pagpopondo (Instant Funding)",
         "items": [
           {
-            "q": "What is Instant Funding?",
+            "q": "Ano ang Agarang Pagpopondo (Instant Funding)?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding gives you a Funded account straight away, with no evaluation phase and no profit target. You trade under the account rules from day one and keep 80% of the profit you make."
+                "x": "Ang Agarang Pagpopondo ay nagbibigay sa iyo ng Funded account kaagad, nang walang yugto ng pagsusuri at walang target na kita. Mag-trade mula sa unang araw at panatilihin ang 80% ng kita."
               }
             ]
           },
           {
-            "q": "What is the difference between Instant Funding and Instant Funding Light?",
+            "q": "Ano ang pagkakaiba ng Instant Funding at Instant Funding Light?",
             "a": [
               {
                 "t": "p",
-                "x": "Both have the same loss limits, leverage and payout schedule. Instant Funding Light is available in smaller sizes at a lower price and adds a 25% consistency rule that is checked when you request a payout."
+                "x": "Parehong may parehong mga limitasyon sa pagkalugi, leverage, at iskedyul ng payout. Ang Instant Funding Light ay may mas mababang presyo at nagdaragdag ng 25% consistency rule."
               }
             ]
           },
           {
-            "q": "Which account sizes can I choose?",
+            "q": "Aling mga laki ng account ang maaari kong piliin?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 and $100,000. Instant Funding Light: $5,000, $10,000 and $25,000. All rules are the same percentage for every size; only the dollar amounts change."
+                "x": "Instant Funding: $5,000, $10,000, $25,000, $50,000 at $100,000. Instant Funding Light: $5,000, $10,000 at $25,000."
               }
             ]
           }
         ]
       },
       {
-        "category": "Profit Target",
+        "category": "Target na Kita",
         "items": [
           {
-            "q": "Is there a profit target?",
+            "q": "Mayroon bang target na kita?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no profit target on Instant Funding or Instant Funding Light accounts."
+                "x": "Wala. Walang target na kita sa mga account ng Instant Funding o Instant Funding Light."
               }
             ]
           }
         ]
       },
       {
-        "category": "Loss Limits",
+        "category": "Mga Limitasyon sa Pagkalugi",
         "items": [
           {
-            "q": "What are the loss limits?",
+            "q": "Ano ang mga limitasyon sa pagkalugi?",
             "a": [
               {
                 "t": "p",
-                "x": "There are two: a Maximum Daily Loss of 3% of your balance at the start of each day, and a trailing Maximum Loss of 5% that follows your highest equity. Breaching either one ends the account."
+                "x": "Mayroong dalawa: Maximum Daily Loss na 3% at trailing Maximum Loss na 5% na sumusunod sa iyong pinakamataas na equity."
               },
               {
                 "t": "table",
                 "rows": [
                   [
                     "Account",
-                    "Maximum Daily Loss (3%, at starting",
-                    "Maximum Loss (5%,"
+                    "Maximum Daily Loss (3%, sa panimulang",
+                    "Pinakamataas na Pagkalugi (5%,"
                   ],
                   [
-                    "size",
-                    "balance)",
+                    "laki",
+                    "balanse)",
                     "trailing)"
                   ],
                   [
@@ -1171,51 +1171,51 @@
               },
               {
                 "t": "p",
-                "x": "The daily loss amounts above apply when your balance equals the account size. The actual daily limit is recalculated every day as 3% of your balance at 00:00 UTC, so it grows with your profits and shrinks after losses. The $50,000 and $100,000 sizes are available on Instant Funding only."
+                "x": "Ang pang-araw-araw na limitasyon ay muling kinakalkula araw-araw bilang 3% ng balanse sa 00:00 UTC. Ang $50,000 at $100,000 ay para sa karaniwang Instant Funding lamang."
               }
             ]
           }
         ]
       },
       {
-        "category": "How Drawdown Is Calculated",
+        "category": "Paano Kinakalkula ang Drawdown",
         "items": [
           {
-            "q": "Is drawdown measured on balance or on equity?",
+            "q": "Sinusukat ba ang drawdown sa balanse o sa equity?",
             "a": [
               {
                 "t": "p",
-                "x": "On equity. Equity is your balance plus the floating profit or loss of your open positions, so open trades count towards both loss limits at every moment, not only when you close them."
+                "x": "Sa equity. Ang equity ay ang iyong balanse kasama ang lumulutang (floating) na kita o pagkalugi ng iyong mga bukas na posisyon, kaya ang mga bukas na trade ay ibinibilang sa parehong limitasyon sa bawat sandali."
               }
             ]
           },
           {
-            "q": "How does the Maximum Daily Loss work?",
+            "q": "Paano gumagana ang Maximum Daily Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The trading day starts at 00:00 UTC. Your balance at that moment, from closed trades only, is the starting point for the day. Your daily limit is 3% of that starting balance. During the day your equity, including open positions, must not drop by more than this amount below the starting point. If it does, the account is failed."
+                "x": "Nagsisimula ang araw sa 00:00 UTC. Ang iyong pang-araw-araw na limitasyon ay 3% ng panimulang balanseng iyon."
               },
               {
                 "t": "p",
-                "x": "Example on a $10,000 account: at 00:00 UTC your balance is $10,200, so your daily limit is $306 (3% × $10,200). During that day your equity must stay above $9,894 ($10,200 − $306), even if a trade is still open. At the next 00:00 UTC the starting point and the limit are set again from your balance at that moment."
+                "x": "Halimbawa sa $10,000 account: sa 00:00 UTC ang balanse ay $10,200, kaya ang limitasyon ay $306. Dapat manatili ang equity sa itaas ng $9,894."
               }
             ]
           },
           {
-            "q": "How does the trailing Maximum Loss work?",
+            "q": "Paano gumagana ang trailing Maximum Loss?",
             "a": [
               {
                 "t": "p",
-                "x": "The Maximum Loss is a fixed dollar amount (5% of the initial account size), but its level trails your equity. Every time your equity reaches a new high, the level moves up by the same amount; it never moves down. If your equity drops to or below the level at any time, including on open positions, the account is failed."
+                "x": "Ang Maximum Loss ay sumusunod sa iyong equity pataas ngunit hindi kailanman bumababa. Kung ang iyong equity ay bumaba sa antas na ito, mabibigo ang account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Maximum Loss (5%)",
-                    "Starting level (equity must stay above)"
+                    "Laki ng account",
+                    "Pinakamataas na Pagkalugi (5%)",
+                    "Panimulang antas (dapat manatili sa itaas)"
                   ],
                   [
                     "$5,000",
@@ -1246,105 +1246,105 @@
               },
               {
                 "t": "p",
-                "x": "Example: on a $10,000 account your equity reaches $10,300, so the Maximum Loss level moves up to $9,800 ($10,300 − $500). If your equity later drops to $9,800 or below, including losses on open trades, the account is failed."
+                "x": "Halimbawa: sa $10,000 account umabot ang equity sa $10,300, kaya ang Maximum Loss level ay umaakyat sa $9,800 ($10,300 − $500)."
               }
             ]
           },
           {
-            "q": "Does the Maximum Loss level go down after a payout?",
+            "q": "Bumababa ba ang antas ng Maximum Loss pagkatapos ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "No. The level stays exactly where your trading results moved it and is not lowered after a payout."
+                "x": "Hindi. Ang antas ay nananatili sa pinakamataas na naabot nito at hindi ibinababa pagkatapos ng payout."
               }
             ]
           },
           {
-            "q": "How do the two limits work together?",
+            "q": "Paano nagtutulungan ang dalawang limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "They are separate limits checked at the same time. The account is failed when either one is reached first. A day with a large loss still counts towards the Maximum Loss, so you can reach the Maximum Loss without ever breaking the daily limit."
+                "x": "Ang mga ito ay magkahiwalay na limitasyon na sinusuri nang sabay. Mabibigo ang account kapag naabot ang alinman sa mga ito nang una."
               }
             ]
           },
           {
-            "q": "Where can I see my current limits?",
+            "q": "Saan ko makikita ang aking kasalukuyang mga limitasyon?",
             "a": [
               {
                 "t": "p",
-                "x": "Your dashboard shows the live levels of both limits for your account."
+                "x": "Ipinapakita ng iyong dashboard ang live na antas ng parehong limitasyon para sa iyong account."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Days and Time Limits",
+        "category": "Mga Araw ng Trading at Limitasyon sa Oras",
         "items": [
           {
-            "q": "How many trading days do I need?",
+            "q": "Ilang araw ng trading ang kailangan ko?",
             "a": [
               {
                 "t": "p",
-                "x": "Instant Funding and Instant Funding Light accounts have a minimum of 5 trading days."
+                "x": "Ang mga account ay may minimum na 5 araw ng trading."
               }
             ]
           },
           {
-            "q": "Is there a time limit?",
+            "q": "Mayroon bang limitasyon sa oras?",
             "a": [
               {
                 "t": "p",
-                "x": "No. There is no time limit on the account, provided it stays active (see below)."
+                "x": "Wala. Walang limitasyon sa oras basta't nananatiling aktibo ang account."
               }
             ]
           },
           {
-            "q": "Is there a minimum activity requirement?",
+            "q": "Mayroon bang minimum na kinakailangan sa aktibidad?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. If there are no trades on your account for 30 calendar days in a row, the account is automatically closed and the fee is not refunded. This applies in every phase, including the Funded account, so make sure you place at least one trade within every 30 days."
+                "x": "Oo. Kung walang trade sa iyong account sa loob ng 30 magkakasunod na araw, awtomatikong isasara ang account at hindi ibabalik ang bayad. Nalalapat ito sa bawat yugto, kabilang ang Funded account."
               }
             ]
           }
         ]
       },
       {
-        "category": "Payouts",
+        "category": "Mga Payout",
         "items": [
           {
-            "q": "What is the profit split?",
+            "q": "Ano ang hati sa kita (profit split)?",
             "a": [
               {
                 "t": "p",
-                "x": "80% / 20%: you keep 80% of the profit you make."
+                "x": "80% / 20%: mananatili sa iyo ang 80% ng kita na iyong ginawa."
               }
             ]
           },
           {
-            "q": "How often can I request a payout?",
+            "q": "Gaano kadalas ako maaaring humiling ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "You can request a payout every 14 days."
+                "x": "Maaari kang humiling ng payout tuwing 14 na araw."
               }
             ]
           },
           {
-            "q": "Is there a minimum payout amount?",
+            "q": "Mayroon bang pinakamababang halaga ng payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. The minimum payout is 1% of the account size."
+                "x": "Oo. Ang minimum na payout ay 1% ng laki ng account."
               },
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Minimum payout (1%)"
+                    "Laki ng account",
+                    "Minimum na payout (1%)"
                   ],
                   [
                     "$5,000",
@@ -1371,192 +1371,192 @@
             ]
           },
           {
-            "q": "Is there a maximum number of payouts?",
+            "q": "Mayroon bang pinakamaraming bilang ng mga payout?",
             "a": [
               {
                 "t": "p",
-                "x": "Yes. An Instant Funding account is limited to 5 payouts. After the fifth payout the account is closed, and to continue trading you need to purchase a new account."
+                "x": "Oo. Ang account ay limitado sa 5 payout bago isara."
               }
             ]
           },
           {
-            "q": "What is the consistency rule on Instant Funding Light?",
+            "q": "Ano ang consistency rule sa Instant Funding Light?",
             "a": [
               {
                 "t": "p",
-                "x": "No single trading day may account for more than 25% of your total profit. The rule is checked when you request a payout and applies to Instant Funding Light only; standard Instant Funding has no consistency rule."
+                "x": "Walang isang araw ng trading ang maaaring magkaroon ng higit sa 25% ng iyong kabuuang kita sa pagsusuri ng payout."
               },
               {
                 "t": "p",
-                "x": "Consistency % = (highest single-day profit ÷ total profit) × 100."
+                "x": "Consistency % = (pinakamataas na kita sa isang araw ÷ kabuuang kita) × 100."
               },
               {
                 "t": "p",
-                "x": "Example: your best day made $600 and your total profit is $2,000. Consistency is 30% ($600 ÷ $2,000), which is above 25%, so you cannot request a payout yet. Once your total profit reaches $2,400, the best day is exactly 25% and you can request a payout."
+                "x": "Halimbawa: ang iyong pinakamagandang araw ay kumita ng $600 at ang iyong kabuuang kita ay $2,000. Ang consistency ay 30% ($600 ÷ $2,000), na higit sa 25%, kaya hindi ka pa makakahiling ng payout."
               }
             ]
           }
         ]
       },
       {
-        "category": "Trading Conditions",
+        "category": "Mga Kundisyon sa Trading",
         "items": [
           {
-            "q": "What leverage do I get?",
+            "q": "Anong leverage ang makukuha ko?",
             "a": [
               {
                 "t": "p",
-                "x": "Maximum leverage is 1:40. The leverage for every instrument is shown in the symbol details on the platform."
+                "x": "Ang maximum leverage ay 1:40 para sa lahat ng mga instrumento."
               }
             ]
           },
           {
-            "q": "Can I hold trades overnight and over the weekend?",
+            "q": "Maaari ba akong mag-hold ng trade magdamag at sa katapusan ng linggo (weekend)?",
             "a": [
               {
                 "t": "p",
-                "x": "Overnight holding is allowed. Weekend holding is not allowed, so positions must be closed before the market closes for the weekend."
+                "x": "Pinapayagan ang overnight holding. Bawal ang weekend holding."
               }
             ]
           },
           {
-            "q": "Can I trade during major news releases?",
+            "q": "Maaari ba akong mag-trade sa oras ng malalaking balita?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Instant Funding accounts are Funded accounts, so news trading is not allowed: you may not open or execute trades within 5 minutes before or 5 minutes after major economic news releases, central"
+                "x": "Hindi. Ang mga ito ay mga Funded account, kaya bawal ang news trading 5 minuto bago at pagkatapos ng balita mula sa bangko sentral,"
               },
               {
                 "t": "p",
-                "x": "bank announcements, geopolitical events or other high-impact events."
+                "x": "o iba pang mga kaganapang may mataas na epekto."
               }
             ]
           }
         ]
       },
       {
-        "category": "Forbidden Trading Practices",
+        "category": "Mga Ipinagbabawal na Kasanayan sa Pag-trade",
         "items": [
           {
-            "q": "What trading practices are not allowed?",
+            "q": "Anong mga gawi sa trading ang hindi pinapayagan?",
             "a": [
               {
                 "t": "p",
-                "x": "Any trading that exploits, abuses or circumvents the program, the trading platform or the simulated trading environment is forbidden. This includes, without limitation:"
+                "x": "Ang anumang pag-trade na nagsasamantala, nag-aabuso, o umiiwas sa mga patakaran ng programa o platform ay ipinagbabawal. Kabilang dito:"
               },
               {
                 "t": "p",
-                "x": "Exploiting errors or delays: using pricing errors, data inaccuracies, system malfunctions, latency or delayed price updates, or non-public or insider information, whether knowingly or unknowingly."
+                "x": "Pagsasamantala sa mga error o pagkaantala: paggamit ng mga error sa presyo, maling data, latency, o pagkaantala ng presyo."
               },
               {
                 "t": "p",
-                "x": "External or delayed data: trading on external, delayed, non-standard or third-party data feeds, signals or strategies that are not available within, or not intended for use with, the platform."
+                "x": "Panlabas o naantalang data: pag-trade gamit ang panlabas, naantala, o third-party na data feeds o signal na hindi opisyal na bahagi ng platform."
               },
               {
                 "t": "p",
-                "x": "Hedging and coordinated trading: manipulative, deceptive or coordinated trading, alone or with others, including between related accounts; opening opposing, offsetting or hedged positions at the same time; and any form of account arbitrage against other accounts with us or with any other firm."
+                "x": "Hedging at koordinadong trading: manipulado, mapanlinlang, o koordinadong trading sa pagitan ng mga nauugnay na account, kabilang ang pagbubukas ng magkasalungat na posisyon."
               },
               {
                 "t": "p",
-                "x": "Same strategy across accounts: placing the same or substantially similar trades at the same or nearly the same time across multiple accounts, alone or together with other traders, unless we have approved it in writing in advance."
+                "x": "Parehong diskarte sa maraming account: paglalagay ng magkaparehong trade sa parehong oras sa maraming account nang walang nakasulat na pahintulot."
               },
               {
                 "t": "p",
-                "x": "Same IP address or device: trading or accessing accounts of different traders from the same IP address or the same device. Accounts sharing an IP address or a device are treated as related accounts, and the rules on coordinated trading and multiple accounts apply to them."
+                "x": "Parehong IP address o device: pag-trade o pag-access sa mga account ng magkakaibang trader mula sa parehong IP address o parehong device."
               },
               {
                 "t": "p",
-                "x": "Third-party account management: using any third party, whether a private person, account manager, trading service or \"passing service\", to trade, manage or operate your account. Everything on the account, including trading, order management and payout requests, must be done personally by the account holder."
+                "x": "Pamamahala ng account ng third-party: paggamit ng account manager o \"passing service\" upang i-manage ang iyong account. Ang lahat ay dapat personal na gawin ng may-ari ng account."
               },
               {
                 "t": "p",
-                "x": "Signal services: using trading signals from any signal service, signal group, channel or provider, whether free or paid, to place trades on your account. All trading decisions must be your own."
+                "x": "Mga serbisyo ng signal: paggamit ng mga signal ng trading mula sa mga grupo o provider upang maglagay ng mga trade. Ang lahat ng desisyon ay dapat sa iyo."
               },
               {
                 "t": "p",
-                "x": "Front-running: front-running trades placed elsewhere, including with other brokers, venues or trading accounts."
+                "x": "Front-running: pagsasagawa ng trade bago ang mga order na inilagay sa ibang broker o venue."
               },
               {
                 "t": "p",
-                "x": "Bots and automated exploitation: using software, scripts, algorithms, AI tools, ultra-high- frequency techniques, automated trading systems, mass-order strategies, or third-party and commercially marketed strategies (including those advertised as designed to pass challenges) to manipulate, abuse, circumvent the rules or gain an unfair advantage."
+                "x": "Mga bot at awtomatikong pagsasamantala: paggamit ng software, mga bot ng HFT, o mga script na dinisenyo upang manipulahin o lampasan ang mga panuntunan."
               },
               {
                 "t": "p",
-                "x": "Changing your trading after passing: using materially different strategies, risk profiles or execution behaviour on the Funded account compared with the challenge."
+                "x": "Pagbabago ng estilo ng pag-trade pagkatapos pumasa: paggamit ng kapansin-pansing magkaibang mga diskarte o profile ng panganib sa Funded account kumpara sa hamon."
               },
               {
                 "t": "p",
-                "x": "Gap and event exploitation: trading that materially deviates from normal market practice, such as opening or holding positions to exploit close-to-open gaps or earnings releases (for example holding single-share stock CFDs into an earnings announcement)."
+                "x": "Pagsasamantala sa gap at mga kaganapan: pag-trade na lumilihis sa normal na gawi sa merkado, tulad ng pag-hold ng posisyon upang samantalahin ang mga market gap."
               },
               {
                 "t": "p",
-                "x": "Disproportionate risk: opening position sizes, or a number of positions, materially out of line with your usual trading, where it indicates an attempt to exploit the program or bypass its risk"
+                "x": "Hindi proporsyonal na panganib: pagbubukas ng mga posisyon na hindi naaayon sa iyong karaniwang trading,"
               },
               {
                 "t": "p",
-                "x": "limits. Market-standard risk management is expected at all times."
+                "x": "upang lampasan ang mga limitasyon ng panganib."
               },
               {
                 "t": "p",
-                "x": "Breaching platform or execution terms: trading in breach of the terms of the trading platform, broker, liquidity or execution systems, or in a way that puts those relationships at risk."
+                "x": "Paglabag sa mga tuntunin ng platform: pag-trade na lumalabag sa mga tuntunin ng platform ng trading o liquidity provider."
               },
               {
                 "t": "p",
-                "x": "News trading: opening or executing trades within 5 minutes before or 5 minutes after major economic data, central bank announcements, geopolitical or other high-impact events. Only orders executed inside this window count; a position opened before the window and closed after it is not a violation."
+                "x": "News trading: pagbubukas o pagsasagawa ng trade sa loob ng 5 minutong window bago at pagkatapos ng balita."
               }
             ]
           },
           {
-            "q": "Can someone else trade on my account, or can I trade for others?",
+            "q": "Maaari bang mag-trade ang ibang tao sa aking account, o maaari ba akong mag-trade para sa iba?",
             "a": [
               {
                 "t": "p",
-                "x": "No. Your account is for your personal use only, and everything on it must be done by you as the account holder. You may not let anyone else access, manage or trade your account, whether a private person or a professional service, you may not use signal services to trade it, and you may not trade or manage accounts registered to other users or provide signal, copy-trading or account management services within the program."
+                "x": "Hindi. Ang iyong account ay para sa iyong personal na paggamit lamang. Hindi mo maaaring payagan ang sinuman na ma-access o i-trade ang iyong account."
               }
             ]
           },
           {
-            "q": "Can I have more than one account?",
+            "q": "Maaari ba akong magkaroon ng higit sa isang account?",
             "a": [
               {
                 "t": "p",
-                "x": "Each trader may hold only one account under the program unless we approve otherwise in writing in advance. Accounts of different traders may not be operated from the same IP address or the same device. Additional accounts can be suspended, blocked or permanently restricted. Accounts may not be shared, sold, transferred or given away."
+                "x": "Ang bawat trader ay maaaring humawak lamang ng isang account sa ilalim ng programa maliban kung inaprubahan namin nang nakasulat."
               }
             ]
           },
           {
-            "q": "Can I use a trade copier?",
+            "q": "Maaari ba akong gumamit ng trade copier?",
             "a": [
               {
                 "t": "p",
-                "x": "You can use a trade copier for your own trades. Accounts are checked before payouts, and copying other traders' strategies may result in your payout being denied."
+                "x": "Maaari kang gumamit ng trade copier para sa sarili mong mga trade. Ang pagkopya ng mga trade mula sa ibang mga trader ay maaaring maging sanhi ng pagtanggi sa iyong payout."
               }
             ]
           },
           {
-            "q": "What happens if a forbidden practice is detected?",
+            "q": "Ano ang mangyayari kapag may natuklasang ipinagbabawal na kasanayan?",
             "a": [
               {
                 "t": "p",
-                "x": "We may exclude the affected trades from your results, disregard them when calculating profit or payout eligibility, deny or cancel a payout, and suspend or terminate the account and your participation in the program. Where the practice involves several accounts, related traders or coordinated activity, these measures can apply to all affected accounts, and the allocated capital of those accounts may be reduced."
+                "x": "Maaari naming ibukod ang mga apektadong trade, tanggihan o kanselahin ang payout, at wakasan ang account at ang iyong paglahok sa programa."
               }
             ]
           }
         ]
       },
       {
-        "category": "Pricing",
+        "category": "Pagpepresyo",
         "items": [
           {
-            "q": "How much does it cost?",
+            "q": "Magkano ang halaga nito?",
             "a": [
               {
                 "t": "table",
                 "rows": [
                   [
-                    "Account size",
-                    "Instant Funding",
-                    "Instant Funding Light"
+                    "Laki ng account",
+                    "Agarang Pagpopondo (Instant Funding)",
+                    "Instant Funding Light (Magaang Pagpopondo)"
                   ],
                   [
                     "$5,000",

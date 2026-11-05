@@ -130,7 +130,7 @@ export const hi: Dict = {
     "title": "क्या अनुमत है और क्या नहीं",
     "shownOnEveryPackage": 'हर पैकेज',
     "allowed": 'अनुमत',
-    "notAllowed": 'अनुमत नहीं',
+    "notAllowed": 'निषिद्ध',
     "weekendHolding": 'सप्ताहांत में होल्डिंग',
     "weekendHoldingDesc": 'सप्ताहांत से पहले सभी पोज़ीशन बंद करें।',
     "newsTradingEval": 'न्यूज़ ट्रेडिंग: मूल्यांकन',

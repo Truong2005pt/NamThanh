@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/components/eracex/LanguageContext';
 import { useTheme } from '@/components/eracex/ThemeContext';
-import { BrandLogo } from '@/components/eracex/BrandLogo';
+import { AuthShell, AuthField, AuthGoogle, authInputCls, authPrimaryCls, useAuthCopy } from '@/components/eracex/AuthShell';
 import { Eye, EyeOff, ArrowLeft, CheckCircle2, Lock, X } from 'lucide-react';
 
 interface LoginDictionary {
@@ -437,6 +437,7 @@ export default function LoginPage() {
   const { currentLang } = useLanguage();
   const { theme } = useTheme();
   const d = DICTIONARY[currentLang] || DICTIONARY.en;
+  const a = useAuthCopy();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -462,145 +463,57 @@ export default function LoginPage() {
 
 
   return (
-    <div className="min-h-screen bg-[#fafafa] dark:bg-black text-neutral-900 dark:text-white flex flex-col justify-between items-center p-4 relative font-sans transition-colors duration-200 selection:bg-[#ffc501] selection:text-black">
-      {/* TOP HEADER: ONLY THE BACK BUTTON AS REQUESTED */}
-      <header className="w-full max-w-5xl mx-auto py-4 flex items-center justify-start z-10">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 text-xs font-mono font-bold text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-all shadow-xs"
-        >
-          <ArrowLeft className="w-3.5 h-3.5 text-[#c68a00] dark:text-[#f6bf4a]" />
-          <span>{d.backToHome}</span>
-        </Link>
-      </header>
+    <AuthShell title={a.signInTitle}>
+      {loginSuccess ? (
+        <div className="py-8 text-center space-y-4">
+          <div className="w-14 h-14 rounded-full border-2 border-neutral-900 dark:border-white flex items-center justify-center mx-auto">
+            <CheckCircle2 className="w-7 h-7" />
+          </div>
+          <h2 className="text-xl font-bold">{d.successTitle}</h2>
+          <p className="text-xs text-neutral-600 dark:text-neutral-400">{d.successDesc}</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <AuthField label={a.emailAddress}>
+            <input required type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className={authInputCls} />
+          </AuthField>
 
-      {/* CENTER LOGIN CARD - LOGIN CARD */}
-      <main className="w-full flex items-center justify-center my-auto py-6 z-10">
-        <div className="w-full max-w-[420px] rounded-[28px] bg-white dark:bg-[#0c0d12] border border-neutral-200 dark:border-white/[0.08] p-7 sm:p-9 shadow-xl dark:shadow-2xl relative transition-colors duration-200">
-          
-          {/* LOGO: OFFICIAL ERACEX PROP TRADING */}
-          <div className="flex flex-col items-center justify-center mb-2">
-            <Link href="/" className="transition-transform hover:scale-105 duration-200">
-              <BrandLogo size="lg" showText={true} forceWhiteText={false} />
-            </Link>
+          <AuthField label={d.password}>
+            <div className="relative">
+              <input required type={showPassword ? 'text' : 'password'} autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} className={authInputCls + ' pr-11'} />
+              <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-neutral-900 dark:hover:text-white p-1 cursor-pointer" aria-label={d.password}>
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
+            </div>
+          </AuthField>
 
-            {/* BOLD UPPERCASE TITLE */}
-            <h1 className="text-2xl sm:text-3xl font-black uppercase tracking-wider text-neutral-900 dark:text-white text-center mt-6 mb-6 font-sans">
-              {d.welcome}
-            </h1>
+          <div className="flex items-center justify-between text-xs select-none">
+            <label className="flex items-center gap-2 cursor-pointer text-neutral-700 dark:text-neutral-300">
+              <input type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} className="w-4 h-4 rounded accent-[#ffc501] cursor-pointer" />
+              <span>{d.rememberMe}</span>
+            </label>
+            <Link href="/reset-password" className="font-semibold text-neutral-900 dark:text-white hover:underline">{d.forgotPassword}</Link>
           </div>
 
-          {loginSuccess ? (
-            <div className="py-8 text-center space-y-4 animate-in fade-in zoom-in-95 duration-200">
-              <div className="w-14 h-14 rounded-full bg-[#f6bf4a]/20 border-2 border-[#f6bf4a] text-[#f6bf4a] dark:text-[#f6bf4a] flex items-center justify-center mx-auto shadow-lg">
-                <CheckCircle2 className="w-7 h-7" />
-              </div>
-              <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
-                {d.successTitle}
-              </h2>
-              <p className="text-xs text-neutral-600 dark:text-neutral-400 font-mono">
-                {d.successDesc}
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              
-              {/* EMAIL INPUT WITH IN-FIELD RED ASTERISK */}
-              <div className="relative">
-                <input
-                  required
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full h-12 px-4 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                />
-                {!email && (
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                    {d.email} <span className="text-[#f6bf4a] font-bold">*</span>
-                  </div>
-                )}
-              </div>
+          <button type="submit" disabled={submitting} className={authPrimaryCls}>
+            {submitting ? (
+              <>
+                <div className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                <span>{d.authenticating}</span>
+              </>
+            ) : (
+              <span>{d.loginBtn}</span>
+            )}
+          </button>
 
-              {/* PASSWORD INPUT WITH IN-FIELD RED ASTERISK & EYE TOGGLE */}
-              <div className="relative">
-                <input
-                  required
-                  type={showPassword ? 'text' : 'password'}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full h-12 px-4 pr-11 rounded-xl bg-neutral-50 dark:bg-[#171717] border border-neutral-200 dark:border-white/5 focus:border-[#c68a00] dark:focus:border-[#f6bf4a]/60 text-neutral-900 dark:text-white text-sm outline-none transition-all focus:bg-white dark:focus:bg-[#1a1a1a]"
-                />
-                {!password && (
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-neutral-400 dark:text-neutral-400 select-none">
-                    {d.password} <span className="text-[#f6bf4a] font-bold">*</span>
-                  </div>
-                )}
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 dark:hover:text-white transition-colors p-1"
-                >
-                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                </button>
-              </div>
+          <AuthGoogle divider="before" onClick={() => handleSubmit({ preventDefault() {} } as React.FormEvent)} />
 
-              {/* REMEMBER ME & FORGOT PASSWORD */}
-              <div className="flex items-center justify-between text-xs pt-1 select-none">
-                <label className="flex items-center gap-2 cursor-pointer text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={rememberMe}
-                    onChange={(e) => setRememberMe(e.target.checked)}
-                    className="w-4 h-4 rounded bg-neutral-100 dark:bg-[#171717] border-neutral-300 dark:border-white/20 text-[#c68a00] dark:text-[#f6bf4a] focus:ring-0 focus:ring-offset-0 cursor-pointer accent-[#ffc501]"
-                  />
-                  <span>{d.rememberMe}</span>
-                </label>
-
-                <Link
-                  href="/reset-password"
-                  className="text-[#c68a00] dark:text-[#f6bf4a] hover:underline font-semibold transition-colors"
-                >
-                  {d.forgotPassword}
-                </Link>
-              </div>
-
-              {/* BRAND GOLD LOGIN BUTTON */}
-              <button
-                type="submit"
-                disabled={submitting}
-                className="w-full h-12 rounded-xl text-sm font-extrabold tracking-wide text-black bg-[#ffc501] hover:bg-[#e6b200] active:scale-[0.99] transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75 mt-4"
-              >
-                {submitting ? (
-                  <>
-                    <div className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                    <span>{d.authenticating}</span>
-                  </>
-                ) : (
-                  <span>{d.loginBtn}</span>
-                )}
-              </button>
-
-              {/* FOOTER LINK: DON'T HAVE AN ACCOUNT? CREATE ONE */}
-              <div className="pt-3 text-center text-xs font-medium text-neutral-600 dark:text-white">
-                <span>{d.dontHaveAccount} </span>
-                <Link
-                  href="/sign-up"
-                  className="text-[#c68a00] dark:text-[#f6bf4a] hover:underline font-bold transition-colors ml-1"
-                >
-                  {d.createOne}
-                </Link>
-              </div>
-
-            </form>
-          )}
-
-        </div>
-      </main>
-
-      {/* FOOTER */}
-      <footer className="w-full text-center py-3 text-[11px] font-mono text-neutral-500 dark:text-neutral-500 z-10">
-        <span>© 2026 ERACEX Institutional Proprietary Trading · Client Portal</span>
-      </footer>
-    </div>
+          <p className="pt-2 text-center text-xs text-neutral-600 dark:text-neutral-300">
+            {d.dontHaveAccount}{' '}
+            <Link href="/sign-up" className="font-bold text-neutral-900 dark:text-white hover:underline">{d.createOne}</Link>
+          </p>
+        </form>
+      )}
+    </AuthShell>
   );
 }

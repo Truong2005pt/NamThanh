@@ -14,6 +14,74 @@ const TEXT: Record<string, { title: string; subtitle: string }> = {
     title: 'Chuyển đổi USDT (TetherUS) sang các loại tiền tệ khác',
     subtitle: 'Dễ dàng hoán đổi TetherUS của bạn sang đồng tiền khác trong nháy mắt!',
   },
+  zh: {
+    title: '将 USDT (TetherUS) 兑换为其他货币',
+    subtitle: '随时随地轻松将您的 TetherUS 兑换为其他数字货币！',
+  },
+  ja: {
+    title: 'USDT (TetherUS) を他の通貨に両替',
+    subtitle: 'TetherUS を瞬時に他の仮想通貨と交換できます！',
+  },
+  ko: {
+    title: 'USDT (TetherUS)를 다른 통화로 환전',
+    subtitle: 'TetherUS를 다른 다양한 통화로 빠르고 간편하게 교환하세요!',
+  },
+  es: {
+    title: 'Convierte USDT (TetherUS) a otras monedas',
+    subtitle: '¡Intercambia fácilmente tu TetherUS por otras monedas en un instante!',
+  },
+  pt: {
+    title: 'Converta USDT (TetherUS) para outras moedas',
+    subtitle: 'Troque facilmente seu TetherUS por outras moedas em um instante!',
+  },
+  fr: {
+    title: "Convertir l'USDT (TetherUS) en d'autres devises",
+    subtitle: "Échangez facilement vos TetherUS contre d'autres devises en un instant !",
+  },
+  de: {
+    title: 'USDT (TetherUS) in andere Währungen umtauschen',
+    subtitle: 'Tauschen Sie Ihre TetherUS im Handumdrehen in andere Währungen um!',
+  },
+  it: {
+    title: 'Converti USDT (TetherUS) in altre valute',
+    subtitle: 'Scambia facilmente i tuoi TetherUS con altre valute in un istante!',
+  },
+  pl: {
+    title: 'Wymień USDT (TetherUS) na inne waluty',
+    subtitle: 'Z łatwością wymieniaj swoje TetherUS na inne waluty w mgnieniu oka!',
+  },
+  tr: {
+    title: "USDT'yi (TetherUS) diğer para birimlerine dönüştürün",
+    subtitle: 'TetherUS varlıklarınızı anında diğer para birimleriyle kolayca takas edin!',
+  },
+  id: {
+    title: 'Konversi USDT (TetherUS) ke mata uang lain',
+    subtitle: 'Tukarkan TetherUS Anda ke mata uang lain dengan mudah dalam sekejap!',
+  },
+  th: {
+    title: 'แปลง USDT (TetherUS) เป็นสกุลเงินอื่น',
+    subtitle: 'แลกเปลี่ยน TetherUS ของคุณเป็นสกุลเงินอื่นได้อย่างง่ายดายในพริบตา!',
+  },
+  fil: {
+    title: 'I-convert ang USDT (TetherUS) sa iba pang currency',
+    subtitle: 'Madaling ipagpalit ang iyong TetherUS para sa iba pang mga pera sa isang iglap!',
+  },
+  hi: {
+    title: 'USDT (TetherUS) को अन्य मुद्राओं में बदलें',
+    subtitle: 'आसानी से अपने TetherUS को एक पल में अन्य मुद्राओं में एक्सचेंज करें!',
+  },
+  ru: {
+    title: 'Конвертируйте USDT (TetherUS) в другие валюты',
+    subtitle: 'Легко обменивайте свои TetherUS на другие валюты за считанные секунды!',
+  },
+  ar: {
+    title: 'تحويل USDT (TetherUS) إلى عملات أخرى',
+    subtitle: 'استبدل عملات TetherUS الخاصة بك بعملات أخرى بسهولة وفي لحظات!',
+  },
+  nl: {
+    title: "Converteer USDT (TetherUS) naar andere valuta's",
+    subtitle: 'Wissel uw TetherUS in een oogwenk eenvoudig om voor andere valuta\'s!',
+  },
 };
 
 /** Grid of supported currencies with their logos. `inline` renders it without its own section wrapper. */

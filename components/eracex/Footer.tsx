@@ -286,29 +286,1914 @@ const PAYMENTS: { name: string; enabled: boolean; mark: React.ReactNode }[] = [
 
 type FootCol = { title: string; links: [string, string][] };
 const FOOT_COLS: Record<string, FootCol[]> = {
-  vi: [
-    { title: "Chương trình", links: [["Two-Step", "/pricing"], ["One-Step", "/pricing"], ["Instant Funding", "/pricing"], ["Instant Light", "/pricing"], ["Phí và quy mô tài khoản", "/pricing"]] },
-    { title: "Nền tảng", links: [["Môi trường giao dịch", "/how-it-works"], ["Quy tắc giao dịch", "/rules"], ["Điều kiện thưởng", "/rules"], ["Ví dụ thưởng", "/reviews"], ["Đăng nhập tài khoản", "/login"]] },
-    { title: "Hỗ trợ & cộng đồng", links: [["Câu hỏi thường gặp", "/faq"], ["Liên hệ hỗ trợ", "/contact"], ["Chương trình đại lý", "/affiliate"], ["Giới thiệu ERACEX", "/about"]] },
-    { title: "Pháp lý", links: [["Điều khoản sử dụng", "/terms-and-conditions"], ["Chính sách bảo mật", "/privacy-policy"], ["Phí và hoàn tiền", "/refund-policy"], ["Quốc gia bị hạn chế", "/restricted-jurisdictions"], ["Thông tin quan trọng", "/risk-disclosure"]] },
+  "vi": [
+    {
+      "title": "Chương trình",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Phí và quy mô tài khoản",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Nền tảng",
+      "links": [
+        [
+          "Môi trường giao dịch",
+          "/how-it-works"
+        ],
+        [
+          "Quy tắc giao dịch",
+          "/rules"
+        ],
+        [
+          "Điều kiện thưởng",
+          "/rules"
+        ],
+        [
+          "Ví dụ thưởng",
+          "/reviews"
+        ],
+        [
+          "Đăng nhập tài khoản",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Hỗ trợ & cộng đồng",
+      "links": [
+        [
+          "Câu hỏi thường gặp",
+          "/faq"
+        ],
+        [
+          "Liên hệ hỗ trợ",
+          "/contact"
+        ],
+        [
+          "Chương trình đại lý",
+          "/affiliate"
+        ],
+        [
+          "Giới thiệu ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Pháp lý",
+      "links": [
+        [
+          "Điều khoản sử dụng",
+          "/terms-and-conditions"
+        ],
+        [
+          "Chính sách bảo mật",
+          "/privacy-policy"
+        ],
+        [
+          "Phí và hoàn tiền",
+          "/refund-policy"
+        ],
+        [
+          "Quốc gia bị hạn chế",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Thông tin quan trọng",
+          "/risk-disclosure"
+        ]
+      ]
+    }
   ],
-  en: [
-    { title: "Programs", links: [["Two-Step", "/pricing"], ["One-Step", "/pricing"], ["Instant Funding", "/pricing"], ["Instant Light", "/pricing"], ["Fees and account sizes", "/pricing"]] },
-    { title: "Platform", links: [["Trading environment", "/how-it-works"], ["Trading rules", "/rules"], ["Reward conditions", "/rules"], ["Reward examples", "/reviews"], ["Account login", "/login"]] },
-    { title: "Support & community", links: [["FAQ", "/faq"], ["Contact support", "/contact"], ["Affiliate program", "/affiliate"], ["About ERACEX", "/about"]] },
-    { title: "Legal", links: [["Terms and conditions", "/terms-and-conditions"], ["Privacy policy", "/privacy-policy"], ["Fees and refunds", "/refund-policy"], ["Restricted jurisdictions", "/restricted-jurisdictions"], ["Important information", "/risk-disclosure"]] },
+  "en": [
+    {
+      "title": "Programs",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Fees and account sizes",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Platform",
+      "links": [
+        [
+          "Trading environment",
+          "/how-it-works"
+        ],
+        [
+          "Trading rules",
+          "/rules"
+        ],
+        [
+          "Reward conditions",
+          "/rules"
+        ],
+        [
+          "Reward examples",
+          "/reviews"
+        ],
+        [
+          "Account login",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Support & community",
+      "links": [
+        [
+          "FAQ",
+          "/faq"
+        ],
+        [
+          "Contact support",
+          "/contact"
+        ],
+        [
+          "Affiliate program",
+          "/affiliate"
+        ],
+        [
+          "About ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        [
+          "Terms and conditions",
+          "/terms-and-conditions"
+        ],
+        [
+          "Privacy policy",
+          "/privacy-policy"
+        ],
+        [
+          "Fees and refunds",
+          "/refund-policy"
+        ],
+        [
+          "Restricted jurisdictions",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Important information",
+          "/risk-disclosure"
+        ]
+      ]
+    }
   ],
+  "zh": [
+    {
+      "title": "项目方案",
+      "links": [
+        [
+          "Two-Step 进阶",
+          "/pricing"
+        ],
+        [
+          "One-Step 极速",
+          "/pricing"
+        ],
+        [
+          "Instant 直通",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "费用与账户规模",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "交易平台",
+      "links": [
+        [
+          "交易执行环境",
+          "/how-it-works"
+        ],
+        [
+          "风控交易规则",
+          "/rules"
+        ],
+        [
+          "分润奖励条件",
+          "/rules"
+        ],
+        [
+          "出金案例",
+          "/reviews"
+        ],
+        [
+          "账户登录",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "支持与社区",
+      "links": [
+        [
+          "常见问题解答",
+          "/faq"
+        ],
+        [
+          "联系客服支持",
+          "/contact"
+        ],
+        [
+          "合伙人联盟计划",
+          "/affiliate"
+        ],
+        [
+          "关于 ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "法律与条款",
+      "links": [
+        [
+          "服务条款与规则",
+          "/terms-and-conditions"
+        ],
+        [
+          "隐私保护政策",
+          "/privacy-policy"
+        ],
+        [
+          "费用与退款政策",
+          "/refund-policy"
+        ],
+        [
+          "受限司法管辖区",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "风险披露声明",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "ja": [
+    {
+      "title": "プログラム",
+      "links": [
+        [
+          "Two-Step 評価",
+          "/pricing"
+        ],
+        [
+          "One-Step 高速",
+          "/pricing"
+        ],
+        [
+          "Instant 即時資金",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "料金と口座規模",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "プラットフォーム",
+      "links": [
+        [
+          "取引環境",
+          "/how-it-works"
+        ],
+        [
+          "取引ルール",
+          "/rules"
+        ],
+        [
+          "報酬条件",
+          "/rules"
+        ],
+        [
+          "出金実績・事例",
+          "/reviews"
+        ],
+        [
+          "口座ログイン",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "サポート・コミュニティ",
+      "links": [
+        [
+          "よくある質問 (FAQ)",
+          "/faq"
+        ],
+        [
+          "カスタマーサポート",
+          "/contact"
+        ],
+        [
+          "アフィリエイト",
+          "/affiliate"
+        ],
+        [
+          "ERACEXについて",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "規約・法的情報",
+      "links": [
+        [
+          "利用規約",
+          "/terms-and-conditions"
+        ],
+        [
+          "プライバシーポリシー",
+          "/privacy-policy"
+        ],
+        [
+          "料金と返金ポリシー",
+          "/refund-policy"
+        ],
+        [
+          "利用制限国・地域",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "リスク開示事項",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "es": [
+    {
+      "title": "Programas",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Tarifas y tamaños de cuenta",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Plataforma",
+      "links": [
+        [
+          "Entorno de trading",
+          "/how-it-works"
+        ],
+        [
+          "Reglas de trading",
+          "/rules"
+        ],
+        [
+          "Condiciones de recompensas",
+          "/rules"
+        ],
+        [
+          "Ejemplos de cobros",
+          "/reviews"
+        ],
+        [
+          "Acceso a la cuenta",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Soporte y comunidad",
+      "links": [
+        [
+          "Preguntas frecuentes",
+          "/faq"
+        ],
+        [
+          "Contactar con soporte",
+          "/contact"
+        ],
+        [
+          "Programa de afiliados",
+          "/affiliate"
+        ],
+        [
+          "Sobre ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        [
+          "Términos y condiciones",
+          "/terms-and-conditions"
+        ],
+        [
+          "Política de privacidad",
+          "/privacy-policy"
+        ],
+        [
+          "Tarifas y reembolsos",
+          "/refund-policy"
+        ],
+        [
+          "Jurisdicciones restringidas",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Aviso de riesgo",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "pt": [
+    {
+      "title": "Programas",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Taxas e tamanhos de conta",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Plataforma",
+      "links": [
+        [
+          "Ambiente de negociação",
+          "/how-it-works"
+        ],
+        [
+          "Regras operacionais",
+          "/rules"
+        ],
+        [
+          "Condições de recompensa",
+          "/rules"
+        ],
+        [
+          "Exemplos de saques",
+          "/reviews"
+        ],
+        [
+          "Login na conta",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Suporte & comunidade",
+      "links": [
+        [
+          "Perguntas frequentes",
+          "/faq"
+        ],
+        [
+          "Contatar o suporte",
+          "/contact"
+        ],
+        [
+          "Programa de afiliados",
+          "/affiliate"
+        ],
+        [
+          "Sobre a ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        [
+          "Termos e condições",
+          "/terms-and-conditions"
+        ],
+        [
+          "Política de privacidade",
+          "/privacy-policy"
+        ],
+        [
+          "Taxas e reembolsos",
+          "/refund-policy"
+        ],
+        [
+          "Jurisdições restritas",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Aviso de risco",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "title": "Programmes",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Frais et tailles de compte",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Plateforme",
+      "links": [
+        [
+          "Environnement de trading",
+          "/how-it-works"
+        ],
+        [
+          "Règles de trading",
+          "/rules"
+        ],
+        [
+          "Conditions de récompense",
+          "/rules"
+        ],
+        [
+          "Exemples de retraits",
+          "/reviews"
+        ],
+        [
+          "Connexion compte",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Support & communauté",
+      "links": [
+        [
+          "Foire aux questions",
+          "/faq"
+        ],
+        [
+          "Contacter le support",
+          "/contact"
+        ],
+        [
+          "Programme d'affiliation",
+          "/affiliate"
+        ],
+        [
+          "À propos d'ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Juridique",
+      "links": [
+        [
+          "Conditions générales",
+          "/terms-and-conditions"
+        ],
+        [
+          "Politique de confidentialité",
+          "/privacy-policy"
+        ],
+        [
+          "Frais et remboursements",
+          "/refund-policy"
+        ],
+        [
+          "Juridictions restreintes",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Divulgation des risques",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "de": [
+    {
+      "title": "Programme",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Gebühren & Kontogrößen",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Plattform",
+      "links": [
+        [
+          "Handelsumgebung",
+          "/how-it-works"
+        ],
+        [
+          "Handelsregeln",
+          "/rules"
+        ],
+        [
+          "Auszahlungsbedingungen",
+          "/rules"
+        ],
+        [
+          "Auszahlungsbeispiele",
+          "/reviews"
+        ],
+        [
+          "Konto-Login",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Support & Community",
+      "links": [
+        [
+          "Häufige Fragen (FAQ)",
+          "/faq"
+        ],
+        [
+          "Support kontaktieren",
+          "/contact"
+        ],
+        [
+          "Partnerprogramm",
+          "/affiliate"
+        ],
+        [
+          "Über ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Rechtliches",
+      "links": [
+        [
+          "Allgemeine Geschäftsbedingungen",
+          "/terms-and-conditions"
+        ],
+        [
+          "Datenschutzrichtlinie",
+          "/privacy-policy"
+        ],
+        [
+          "Gebühren & Erstattung",
+          "/refund-policy"
+        ],
+        [
+          "Eingeschränkte Länder",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Risikohinweis",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "it": [
+    {
+      "title": "Programmi",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Tariffe e dimensioni conto",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Piattaforma",
+      "links": [
+        [
+          "Ambiente di trading",
+          "/how-it-works"
+        ],
+        [
+          "Regole di trading",
+          "/rules"
+        ],
+        [
+          "Condizioni di payout",
+          "/rules"
+        ],
+        [
+          "Esempi di prelievo",
+          "/reviews"
+        ],
+        [
+          "Accesso account",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Supporto & community",
+      "links": [
+        [
+          "Domande frequenti (FAQ)",
+          "/faq"
+        ],
+        [
+          "Contatta l'assistenza",
+          "/contact"
+        ],
+        [
+          "Programma di affiliazione",
+          "/affiliate"
+        ],
+        [
+          "Chi siamo (ERACEX)",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Legale",
+      "links": [
+        [
+          "Termini e condizioni",
+          "/terms-and-conditions"
+        ],
+        [
+          "Informativa sulla privacy",
+          "/privacy-policy"
+        ],
+        [
+          "Tariffe e rimborsi",
+          "/refund-policy"
+        ],
+        [
+          "Giurisdizioni con restrizioni",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Informativa sui rischi",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "pl": [
+    {
+      "title": "Programy",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Opłaty i wielkości kont",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Platforma",
+      "links": [
+        [
+          "Środowisko transakcyjne",
+          "/how-it-works"
+        ],
+        [
+          "Zasady handlu",
+          "/rules"
+        ],
+        [
+          "Warunki wypłat",
+          "/rules"
+        ],
+        [
+          "Przykłady wypłat",
+          "/reviews"
+        ],
+        [
+          "Logowanie do konta",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Wsparcie i społeczność",
+      "links": [
+        [
+          "Często zadawane pytania",
+          "/faq"
+        ],
+        [
+          "Kontakt z pomocą techniczną",
+          "/contact"
+        ],
+        [
+          "Program partnerski",
+          "/affiliate"
+        ],
+        [
+          "O ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Kwestie prawne",
+      "links": [
+        [
+          "Regulamin",
+          "/terms-and-conditions"
+        ],
+        [
+          "Polityka prywatności",
+          "/privacy-policy"
+        ],
+        [
+          "Opłaty i zwroty",
+          "/refund-policy"
+        ],
+        [
+          "Kraje objęte ograniczeniami",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Ujawnienie ryzyka",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "tr": [
+    {
+      "title": "Programlar",
+      "links": [
+        [
+          "2 Aşamalı (Two-Step)",
+          "/pricing"
+        ],
+        [
+          "1 Aşamalı (One-Step)",
+          "/pricing"
+        ],
+        [
+          "Anında Fonlama (Instant)",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Ücretler ve hesap boyutları",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Platform",
+      "links": [
+        [
+          "İşlem ortamı",
+          "/how-it-works"
+        ],
+        [
+          "İşlem kuralları",
+          "/rules"
+        ],
+        [
+          "Ödül ve çekim koşulları",
+          "/rules"
+        ],
+        [
+          "Ödeme kanıtları",
+          "/reviews"
+        ],
+        [
+          "Hesap girişi",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Destek & Topluluk",
+      "links": [
+        [
+          "Sıkça Sorulan Sorular",
+          "/faq"
+        ],
+        [
+          "Destek ekibiyle iletişim",
+          "/contact"
+        ],
+        [
+          "Ortaklık (Affiliate)",
+          "/affiliate"
+        ],
+        [
+          "ERACEX Hakkında",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Yasal",
+      "links": [
+        [
+          "Şartlar ve Koşullar",
+          "/terms-and-conditions"
+        ],
+        [
+          "Gizlilik Politikası",
+          "/privacy-policy"
+        ],
+        [
+          "Ücretler ve İade Politikası",
+          "/refund-policy"
+        ],
+        [
+          "Yasaklı Ülkeler",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Risk Bildirimi",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "id": [
+    {
+      "title": "Program",
+      "links": [
+        [
+          "Two-Step (2 Langkah)",
+          "/pricing"
+        ],
+        [
+          "One-Step (1 Langkah)",
+          "/pricing"
+        ],
+        [
+          "Pendanaan Instan",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Biaya dan ukuran akun",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Platform",
+      "links": [
+        [
+          "Lingkungan trading",
+          "/how-it-works"
+        ],
+        [
+          "Aturan trading",
+          "/rules"
+        ],
+        [
+          "Ketentuan reward",
+          "/rules"
+        ],
+        [
+          "Contoh pembayaran",
+          "/reviews"
+        ],
+        [
+          "Login akun",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Dukungan & Komunitas",
+      "links": [
+        [
+          "Tanya Jawab (FAQ)",
+          "/faq"
+        ],
+        [
+          "Hubungi Dukungan",
+          "/contact"
+        ],
+        [
+          "Program Afiliasi",
+          "/affiliate"
+        ],
+        [
+          "Tentang ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Hukum & Legal",
+      "links": [
+        [
+          "Syarat & Ketentuan",
+          "/terms-and-conditions"
+        ],
+        [
+          "Kebijakan Privasi",
+          "/privacy-policy"
+        ],
+        [
+          "Biaya & Pengembalian Dana",
+          "/refund-policy"
+        ],
+        [
+          "Yurisdiksi Dibatasi",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Pengungkapan Risiko",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "th": [
+    {
+      "title": "โปรแกรมประเมิน",
+      "links": [
+        [
+          "Two-Step (2 ขั้นตอน)",
+          "/pricing"
+        ],
+        [
+          "One-Step (1 ขั้นตอน)",
+          "/pricing"
+        ],
+        [
+          "การระดมทุนทันที",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "ค่าธรรมเนียมและขนาดบัญชี",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "แพลตฟอร์ม",
+      "links": [
+        [
+          "สภาพแวดล้อมการเทรด",
+          "/how-it-works"
+        ],
+        [
+          "กฎการเทรด",
+          "/rules"
+        ],
+        [
+          "เงื่อนไขการรับรางวัล",
+          "/rules"
+        ],
+        [
+          "ตัวอย่างการเบิกจ่าย",
+          "/reviews"
+        ],
+        [
+          "เข้าสู่ระบบบัญชี",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "ฝ่ายสนับสนุนและชุมชน",
+      "links": [
+        [
+          "คำถามที่พบบ่อย (FAQ)",
+          "/faq"
+        ],
+        [
+          "ติดต่อฝ่ายสนับสนุน",
+          "/contact"
+        ],
+        [
+          "โปรแกรมตัวแทน (Affiliate)",
+          "/affiliate"
+        ],
+        [
+          "เกี่ยวกับ ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "ข้อกำหนดทางกฎหมาย",
+      "links": [
+        [
+          "ข้อกำหนดและเงื่อนไข",
+          "/terms-and-conditions"
+        ],
+        [
+          "นโยบายความเป็นส่วนตัว",
+          "/privacy-policy"
+        ],
+        [
+          "ค่าธรรมเนียมและการคืนเงิน",
+          "/refund-policy"
+        ],
+        [
+          "ประเทศที่ถูกจำกัด",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "การเปิดเผยความเสี่ยง",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "fil": [
+    {
+      "title": "Mga Programa",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Agarang Pagpopondo",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Mga bayarin at laki ng account",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Plataporma",
+      "links": [
+        [
+          "Kapaligiran sa trading",
+          "/how-it-works"
+        ],
+        [
+          "Mga panuntunan sa trading",
+          "/rules"
+        ],
+        [
+          "Mga kondisyon ng gantimpala",
+          "/rules"
+        ],
+        [
+          "Mga halimbawa ng payout",
+          "/reviews"
+        ],
+        [
+          "Pag-login sa account",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Suporta at Komunidad",
+      "links": [
+        [
+          "Mga Madalas Itanong (FAQ)",
+          "/faq"
+        ],
+        [
+          "Makipag-ugnayan sa suporta",
+          "/contact"
+        ],
+        [
+          "Programang Kaakibat (Affiliate)",
+          "/affiliate"
+        ],
+        [
+          "Tungkol sa ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        [
+          "Mga Tuntunin at Kundisyon",
+          "/terms-and-conditions"
+        ],
+        [
+          "Patakaran sa Pagkapribado",
+          "/privacy-policy"
+        ],
+        [
+          "Mga bayarin at refund",
+          "/refund-policy"
+        ],
+        [
+          "Mga Pinaghihigpitang Lugar",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Pagsisiwalat ng Panganib",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "hi": [
+    {
+      "title": "प्रोग्राम",
+      "links": [
+        [
+          "Two-Step (दो-चरण)",
+          "/pricing"
+        ],
+        [
+          "One-Step (एक-चरण)",
+          "/pricing"
+        ],
+        [
+          "तत्काल फंडिंग (Instant)",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "शुल्क और खाता आकार",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "प्लेटफ़ॉर्म",
+      "links": [
+        [
+          "ट्रेडिंग वातावरण",
+          "/how-it-works"
+        ],
+        [
+          "ट्रेडिंग नियम",
+          "/rules"
+        ],
+        [
+          "इनाम शर्तें",
+          "/rules"
+        ],
+        [
+          "पेआउट उदाहरण",
+          "/reviews"
+        ],
+        [
+          "खाता लॉगिन",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "समर्थन और समुदाय",
+      "links": [
+        [
+          "अक्सर पूछे जाने वाले प्रश्न (FAQ)",
+          "/faq"
+        ],
+        [
+          "सहायता से संपर्क करें",
+          "/contact"
+        ],
+        [
+          "एफिलिएट प्रोग्राम",
+          "/affiliate"
+        ],
+        [
+          "ERACEX के बारे में",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "कानूनी व शर्तें",
+      "links": [
+        [
+          "नियम और शर्तें",
+          "/terms-and-conditions"
+        ],
+        [
+          "गोपनीयता नीति",
+          "/privacy-policy"
+        ],
+        [
+          "शुल्क और धनवापसी",
+          "/refund-policy"
+        ],
+        [
+          "प्रतिबंधित क्षेत्राधिकार",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "जोखिम प्रकटीकरण",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "ko": [
+    {
+      "title": "프로그램",
+      "links": [
+        [
+          "Two-Step (2단계)",
+          "/pricing"
+        ],
+        [
+          "One-Step (1단계)",
+          "/pricing"
+        ],
+        [
+          "즉시 펀딩 (Instant)",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "참가비 및 계정 규모",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "플랫폼",
+      "links": [
+        [
+          "거래 실행 환경",
+          "/how-it-works"
+        ],
+        [
+          "거래 규정",
+          "/rules"
+        ],
+        [
+          "수익 분배 조건",
+          "/rules"
+        ],
+        [
+          "출금 사례",
+          "/reviews"
+        ],
+        [
+          "계정 로그인",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "고객지원 & 커뮤니티",
+      "links": [
+        [
+          "자주 묻는 질문 (FAQ)",
+          "/faq"
+        ],
+        [
+          "고객지원 문의",
+          "/contact"
+        ],
+        [
+          "제휴 파트너십 (IB)",
+          "/affiliate"
+        ],
+        [
+          "ERACEX 소개",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "법적 고지",
+      "links": [
+        [
+          "이용약관",
+          "/terms-and-conditions"
+        ],
+        [
+          "개인정보 처리방침",
+          "/privacy-policy"
+        ],
+        [
+          "환불 정책",
+          "/refund-policy"
+        ],
+        [
+          "제한 국가 목록",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "위험 고지",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "ru": [
+    {
+      "title": "Программы",
+      "links": [
+        [
+          "2-Этапный (Two-Step)",
+          "/pricing"
+        ],
+        [
+          "1-Этапный (One-Step)",
+          "/pricing"
+        ],
+        [
+          "Мгновенное Финансирование",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Тарифы и размеры счетов",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Платформа",
+      "links": [
+        [
+          "Торговая среда",
+          "/how-it-works"
+        ],
+        [
+          "Правила торговли",
+          "/rules"
+        ],
+        [
+          "Условия выплат",
+          "/rules"
+        ],
+        [
+          "Примеры выплат",
+          "/reviews"
+        ],
+        [
+          "Вход в аккаунт",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Поддержка и сообщество",
+      "links": [
+        [
+          "Частые вопросы (FAQ)",
+          "/faq"
+        ],
+        [
+          "Служба поддержки",
+          "/contact"
+        ],
+        [
+          "Партнерская программа",
+          "/affiliate"
+        ],
+        [
+          "О компании ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Юридическая информация",
+      "links": [
+        [
+          "Условия использования",
+          "/terms-and-conditions"
+        ],
+        [
+          "Политика конфиденциальности",
+          "/privacy-policy"
+        ],
+        [
+          "Сборы и возврат средств",
+          "/refund-policy"
+        ],
+        [
+          "Ограниченные юрисдикции",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Предупреждение о рисках",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "ar": [
+    {
+      "title": "البرامج",
+      "links": [
+        [
+          "تحدي المرحلتين",
+          "/pricing"
+        ],
+        [
+          "تحدي المرحلة الواحدة",
+          "/pricing"
+        ],
+        [
+          "التمويل الفوري المباشر",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "الرسوم وأحجام الحسابات",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "المنصة",
+      "links": [
+        [
+          "بيئة التداول",
+          "/how-it-works"
+        ],
+        [
+          "قواعد التداول",
+          "/rules"
+        ],
+        [
+          "شروط المكافآت والأرباح",
+          "/rules"
+        ],
+        [
+          "أمثلة السحوبات",
+          "/reviews"
+        ],
+        [
+          "تسجيل الدخول للحساب",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "الدعم والمجتمع",
+      "links": [
+        [
+          "الأسئلة الشائعة",
+          "/faq"
+        ],
+        [
+          "الاتصال بالدعم",
+          "/contact"
+        ],
+        [
+          "برنامج الشركاء (IB)",
+          "/affiliate"
+        ],
+        [
+          "حول ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "الشؤون القانونية",
+      "links": [
+        [
+          "الشروط والأحكام",
+          "/terms-and-conditions"
+        ],
+        [
+          "سياسة الخصوصية",
+          "/privacy-policy"
+        ],
+        [
+          "الرسوم وسياسة الاسترداد",
+          "/refund-policy"
+        ],
+        [
+          "الدول المحظورة",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "إخلاء المسؤولية عن المخاطر",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ],
+  "nl": [
+    {
+      "title": "Programma's",
+      "links": [
+        [
+          "Two-Step",
+          "/pricing"
+        ],
+        [
+          "One-Step",
+          "/pricing"
+        ],
+        [
+          "Instant Funding",
+          "/pricing"
+        ],
+        [
+          "Instant Light",
+          "/pricing"
+        ],
+        [
+          "Tarieven & accountgroottes",
+          "/pricing"
+        ]
+      ]
+    },
+    {
+      "title": "Platform",
+      "links": [
+        [
+          "Handelsomgeving",
+          "/how-it-works"
+        ],
+        [
+          "Handelsregels",
+          "/rules"
+        ],
+        [
+          "Uitbetalingsvoorwaarden",
+          "/rules"
+        ],
+        [
+          "Uitbetalingsvoorbeelden",
+          "/reviews"
+        ],
+        [
+          "Account inloggen",
+          "/login"
+        ]
+      ]
+    },
+    {
+      "title": "Ondersteuning & community",
+      "links": [
+        [
+          "Veelgestelde vragen",
+          "/faq"
+        ],
+        [
+          "Contact opnemen",
+          "/contact"
+        ],
+        [
+          "Affiliate programma",
+          "/affiliate"
+        ],
+        [
+          "Over ERACEX",
+          "/about"
+        ]
+      ]
+    },
+    {
+      "title": "Juridisch",
+      "links": [
+        [
+          "Algemene voorwaarden",
+          "/terms-and-conditions"
+        ],
+        [
+          "Privacybeleid",
+          "/privacy-policy"
+        ],
+        [
+          "Tarieven & restitutie",
+          "/refund-policy"
+        ],
+        [
+          "Beperkte rechtsgebieden",
+          "/restricted-jurisdictions"
+        ],
+        [
+          "Risicodisclaimer",
+          "/risk-disclosure"
+        ]
+      ]
+    }
+  ]
 };
 
 const DISCLAIMER_TITLE: Record<string, string> = {
-  vi: "Thông tin quan trọng & tuyên bố miễn trừ",
-  en: "Important information & disclaimer",
+  "vi": "Thông tin quan trọng & tuyên bố miễn trừ",
+  "en": "Important information & disclaimer",
+  "zh": "重要信息与免责声明",
+  "ja": "重要事項および免責事項",
+  "es": "Información importante y aviso legal",
+  "pt": "Informações importantes e aviso legal",
+  "fr": "Informations importantes et avertissement",
+  "de": "Wichtige Informationen & Haftungsausschluss",
+  "it": "Informazioni importanti e disclaimer",
+  "pl": "Ważne informacje i zastrzeżenia prawne",
+  "tr": "Önemli Bilgiler ve Sorumluluk Reddi",
+  "id": "Informasi Penting & Penafian",
+  "th": "ข้อมูลสำคัญและข้อจำกัดความรับผิดชอบ",
+  "fil": "Mahalagang Impormasyon at Disclaimer",
+  "hi": "महत्वपूर्ण जानकारी और अस्वीकरण",
+  "ko": "중요 정보 및 법적 면책 고지",
+  "ru": "Важная информация и отказ от ответственности",
+  "ar": "معلومات هامة وإخلاء المسؤولية",
+  "nl": "Belangrijke informatie & disclaimer"
 };
 
 const SLOGAN: Record<string, string> = {
-  vi: "All-in-one — Nền tảng giao dịch",
-  en: "All-in-one — Trading platform",
+  "vi": "All-in-one — Nền tảng giao dịch thế hệ mới",
+  "en": "All-in-one — Next-generation trading platform",
+  "zh": "全方位一体化 — 次世代自营交易平台",
+  "ja": "オールインワン — 次世代プロップトレードプラットフォーム",
+  "es": "Todo en uno — Plataforma de trading de última generación",
+  "pt": "Tudo em um — Plataforma de trading de última geração",
+  "fr": "Tout-en-un — Plateforme de trading de nouvelle génération",
+  "de": "All-in-One — Trading-Plattform der nächsten Generation",
+  "it": "Tutto in uno — Piattaforma di trading di nuova generazione",
+  "pl": "Wszystko w jednym — Platforma handlowa nowej generacji",
+  "tr": "Hepsi bir arada — Yeni nesil işlem platformu",
+  "id": "Semua dalam satu — Platform trading generasi berikutnya",
+  "th": "ครบจบในที่เดียว — แพลตฟอร์มการเทรดยุคใหม่",
+  "fil": "Lahat-sa-isa — Makabagong plataporma sa trading",
+  "hi": "ऑल-इन-वन — अगली पीढ़ी का ट्रेडिंग प्लेटफ़ॉर्म",
+  "ko": "올인원 — 차세대 프랍 트레이딩 플랫폼",
+  "ru": "Все в одном — Торговая платформа нового поколения",
+  "ar": "منصة تداول شاملة من الجيل الجديد",
+  "nl": "Alles-in-één — Handelsplatform van de volgende generatie"
 };
+
 
 export const Footer: React.FC = () => {
   const pathname = usePathname();
@@ -316,15 +2201,9 @@ export const Footer: React.FC = () => {
   const fLinks = FOOTER_EXTRA_DICT[currentLang] || FOOTER_EXTRA_DICT['en'];
   const legalDict = ((disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)[currentLang] || (disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)['en']).links;
 
-  // The legal disclaimers are required on every page, including the sign-in screens.
-  if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup') {
-    return (
-      <footer className="border-t app-border app-surface w-full">
-        <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8">
-          <FooterDisclaimers />
-        </div>
-      </footer>
-    );
+  // Auth screens (login, sign-up, reset password) show no footer at all.
+  if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup' || pathname === '/reset-password') {
+    return null;
   }
 
   return (
@@ -373,7 +2252,10 @@ export const Footer: React.FC = () => {
         <FooterDisclaimers />
 
         {/* PAYMENT METHODS: only the ones switched on in PAYMENTS */}
-        <div className="py-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label="Payment methods">
+        <div className="pt-8 pb-3 text-center text-xs font-semibold uppercase tracking-wider app-text-secondary">
+          {t.footer.paymentMethodsTitle}
+        </div>
+        <div className="pb-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label="Payment methods">
           {PAYMENTS.filter((p) => p.enabled).map((p) => (
             <span key={p.name} title={p.name}>{p.mark}</span>
           ))}

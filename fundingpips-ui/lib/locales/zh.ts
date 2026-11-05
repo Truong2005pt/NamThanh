@@ -130,7 +130,7 @@ export const zh: Dict = {
     "title": "规则准许与违规操作",
     "shownOnEveryPackage": '每个套餐',
     "allowed": '允许',
-    "notAllowed": '不允许',
+    "notAllowed": '禁止',
     "weekendHolding": '周末持仓',
     "weekendHoldingDesc": '周末前平掉所有头寸。',
     "newsTradingEval": '新闻交易：评估阶段',

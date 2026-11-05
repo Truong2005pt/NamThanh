@@ -129,8 +129,8 @@ export const en: Dict = {
   conditions: {
     title: 'What is allowed, and what is not',
     shownOnEveryPackage: 'every package',
-    allowed: 'Allowed',
-    notAllowed: 'Not allowed',
+    allowed: 'Permitted',
+    notAllowed: 'Prohibited',
     weekendHolding: 'Weekend holding',
     weekendHoldingDesc: 'Close all positions before the weekend.',
     newsTradingEval: 'News trading: evaluation',

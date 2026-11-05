@@ -1,0 +1,23 @@
+/* Forms: roomier inputs (they were short and cramped), clear borders, readable labels. */
+.ref-scope .sp-form label, .ref-scope .co-form-layout .sp-form label {
+  display: grid; gap: 8px; margin-bottom: 20px; font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--ref-ink);
+}
+.ref-scope .sp-form input, .ref-scope .sp-form select, .ref-scope .sp-form textarea,
+.ref-scope .co-form-layout .sp-form input, .ref-scope .co-form-layout .sp-form select, .ref-scope .co-form-layout .sp-form textarea {
+  width: 100% !important; box-sizing: border-box; min-height: 54px; padding: 0 18px; border-radius: 12px;
+  font-size: 15px !important; font-weight: 500; line-height: 1.4; background: var(--pdu-side); color: var(--ref-ink);
+  border: 1px solid var(--pdu-line); transition: border-color .2s, background-color .2s;
+}
+:root[data-theme='light'] .ref-scope .sp-form input, :root[data-theme='light'] .ref-scope .sp-form select, :root[data-theme='light'] .ref-scope .sp-form textarea { border-color: #cfc9b6; background: #fff; }
+.ref-scope .sp-form select { padding-right: 40px; }
+.ref-scope .sp-form textarea, .ref-scope .co-form-layout .sp-form textarea { min-height: 170px; padding: 16px 18px; resize: vertical; }
+.ref-scope .sp-form input:focus, .ref-scope .sp-form select:focus, .ref-scope .sp-form textarea:focus { outline: none; border-color: var(--ref-ink); }
+.ref-scope .sp-form-row { gap: 0 24px; }
+.ref-scope .sp-form, .ref-scope .co-form-layout .sp-form { padding: 36px; border-radius: 18px; }
+.ref-scope .sp-form .button { min-height: 54px; padding: 0 32px; font-size: 15px; }
+.ref-scope .sp-form-note { font-size: 13.5px; line-height: 1.6; opacity: .7; }
+@media (max-width: 640px) { .ref-scope .sp-form, .ref-scope .co-form-layout .sp-form { padding: 24px; } .ref-scope .sp-form-row { grid-template-columns: 1fr; } }
+
+/* gold-filled controls keep dark text (the one-colour text rule would turn them white) */
+.ref-scope button[aria-pressed='true'].gold, .ref-scope .tabs button.active, .ref-scope .size-options button.active { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+.ref-scope .sp-model-tabs button[aria-pressed='true'] { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }

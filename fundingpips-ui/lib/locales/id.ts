@@ -130,7 +130,7 @@ export const id: Dict = {
     "title": "Apa yang diperbolehkan dan tidak diperbolehkan",
     "shownOnEveryPackage": 'setiap paket',
     "allowed": 'Diizinkan',
-    "notAllowed": 'Tidak diizinkan',
+    "notAllowed": 'Dilarang',
     "weekendHolding": 'Menahan posisi akhir pekan',
     "weekendHoldingDesc": 'Tutup semua posisi sebelum akhir pekan.',
     "newsTradingEval": 'Trading saat berita: evaluasi',

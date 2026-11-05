@@ -129,8 +129,8 @@ export const ja: Dict = {
   "conditions": {
     "title": "許可される取引と禁止される取引",
     "shownOnEveryPackage": 'すべてのパッケージ',
-    "allowed": '可',
-    "notAllowed": '不可',
+    "allowed": '許可',
+    "notAllowed": '禁止',
     "weekendHolding": '週末のポジション保有',
     "weekendHoldingDesc": '週末前にすべてのポジションを決済してください。',
     "newsTradingEval": 'ニュース取引:評価',

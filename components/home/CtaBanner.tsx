@@ -1,20 +1,24 @@
+"use client";
+
 import { ArrowUpRight, Check } from "lucide-react";
+import { T, useT } from "./i18n";
 
 export function CtaBanner() {
+  const t = useT();
   return (
     <section className="sk-wrap sk-cta-wrap">
         <div className="sk-cta">
           <div className="in">
-            <h2>Sẵn sàng bắt đầu?</h2>
-            <p>Tìm chương trình của bạn.</p>
+            <h2>{t("Sẵn sàng bắt đầu?")}</h2>
+            <p>{t("Tìm chương trình của bạn.")}</p>
             <ul>
-              {["Xem phí, quy mô và điều kiện trước khi bắt đầu", "Bốn chương trình: Two-Step, One-Step, Instant Funding, Instant Light", "Hỗ trợ người dùng"].map((t) => (
-                <li key={t}><Check size={13} strokeWidth={3} />{t}</li>
+              {[T("Xem phí, quy mô và điều kiện trước khi bắt đầu"), T("Bốn chương trình: Two-Step, One-Step, Instant Funding, Instant Light"), "Hỗ trợ người dùng"].map((x) => (
+                <li key={x}><Check size={13} strokeWidth={3} />{t(x)}</li>
               ))}
             </ul>
             <div className="acts">
-              <a className="sk-btn sk-btn-white sk-btn-lg" href="/pricing">Chọn chương trình <ArrowUpRight size={17} /></a>
-              <a className="sk-btn sk-btn-line sk-btn-lg" href="/rules">Xem điều kiện thưởng</a>
+              <a className="sk-btn sk-btn-white sk-btn-lg" href="/pricing">{t("Chọn chương trình")} <ArrowUpRight size={17} /></a>
+              <a className="sk-btn sk-btn-line sk-btn-lg" href="/rules">{t("Xem điều kiện thưởng")}</a>
             </div>
           </div>
           <div className="sk-cta-shot" aria-hidden="true">

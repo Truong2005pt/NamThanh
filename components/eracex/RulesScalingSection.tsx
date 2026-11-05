@@ -24,15 +24,147 @@ export const RulesScalingSection: React.FC = () => {
   };
 
   const highWord = getHighShareWord(currentLang);
-  const L = (vi: string, en: string) => (currentLang === 'vi' ? vi : en);
+  
+  const DAYS_PER_STEP_MAP: Record<string, string> = {
+    vi: '5 ngày / bước',
+    en: '5 days / step',
+    es: '5 días / paso',
+    pt: '5 dias / etapa',
+    fr: '5 jours / étape',
+    de: '5 Tage / Schritt',
+    it: '5 giorni / fase',
+    pl: '5 dni / etap',
+    tr: '5 gün / aşama',
+    id: '5 hari / tahap',
+    th: '5 วัน / ขั้นตอน',
+    fil: '5 araw / yugto',
+    hi: '5 दिन / चरण',
+    ja: '5日 / ステップ',
+    zh: '5天 / 阶段',
+    ko: '5일 / 단계',
+    ru: '5 дней / этап',
+    ar: '5 أيام / مرحلة',
+    nl: '5 dagen / stap',
+  };
+
+  const DAYS_MAP: Record<string, string> = {
+    vi: '5 ngày',
+    en: '5 days',
+    es: '5 días',
+    pt: '5 dias',
+    fr: '5 jours',
+    de: '5 Tage',
+    it: '5 giorni',
+    pl: '5 dni',
+    tr: '5 gün',
+    id: '5 hari',
+    th: '5 วัน',
+    fil: '5 araw',
+    hi: '5 दिन',
+    ja: '5日',
+    zh: '5天',
+    ko: '5일',
+    ru: '5 дней',
+    ar: '5 أيام',
+    nl: '5 dagen',
+  };
+
+  const IN_EVAL_MAP: Record<string, string> = {
+    vi: 'Khi đánh giá',
+    en: 'In evaluation',
+    es: 'En evaluación',
+    pt: 'Na avaliação',
+    fr: 'En évaluation',
+    de: 'In der Evaluierung',
+    it: 'In valutazione',
+    pl: 'W ocenie',
+    tr: 'Değerlendirmede',
+    id: 'Saat evaluasi',
+    th: 'ในช่วงประเมิน',
+    fil: 'Sa pagsusuri',
+    hi: 'मूल्यांकन में',
+    ja: '評価時',
+    zh: '考核期间',
+    ko: '평가 단계',
+    ru: 'На этапе оценки',
+    ar: 'أثناء التقييم',
+    nl: 'In evaluatie',
+  };
+
+  const FORBIDDEN_MAP: Record<string, string> = {
+    vi: 'Cấm',
+    en: 'Forbidden',
+    es: 'Prohibido',
+    pt: 'Proibido',
+    fr: 'Interdit',
+    de: 'Verboten',
+    it: 'Vietato',
+    pl: 'Zabronione',
+    tr: 'Yasak',
+    id: 'Dilarang',
+    th: 'ไม่อนุญาต',
+    fil: 'Bawal',
+    hi: 'प्रतिबंधित',
+    ja: '禁止',
+    zh: '禁止',
+    ko: '금지',
+    ru: 'Запрещено',
+    ar: 'محظور',
+    nl: 'Verboden',
+  };
+
+  const NOT_ALLOWED_MAP: Record<string, string> = {
+    vi: 'Không cho phép',
+    en: 'Not allowed',
+    es: 'No permitido',
+    pt: 'Não permitido',
+    fr: 'Non autorisé',
+    de: 'Nicht erlaubt',
+    it: 'Non consentito',
+    pl: 'Niedozwolone',
+    tr: 'İzin verilmez',
+    id: 'Tidak diizinkan',
+    th: 'ไม่อนุญาต',
+    fil: 'Hindi pinapayagan',
+    hi: 'अनुमति नहीं है',
+    ja: '不可',
+    zh: '不允许',
+    ko: '불가',
+    ru: 'Не разрешено',
+    ar: 'غير مسموح',
+    nl: 'Niet toegestaan',
+  };
+
+  const INSTANT_HEADING_MAP: Record<string, string> = {
+    vi: 'Cấp Vốn Trực Tiếp',
+    en: 'Instant Funding',
+    es: 'Financiación Instantánea',
+    pt: 'Financiamento Instantâneo',
+    fr: 'Financement Instantané',
+    de: 'Sofortige Finanzierung',
+    it: 'Finanziamento Istantaneo',
+    pl: 'Błyskawiczne Finansowanie',
+    tr: 'Anında Fonlama',
+    id: 'Pendanaan Instan',
+    th: 'การระดมทุนทันที',
+    fil: 'Agarang Pagpopondo',
+    hi: 'तत्काल फंडिंग',
+    ja: '即時資金調達',
+    zh: '即时直通注资',
+    ko: '즉시 펀딩',
+    ru: 'Мгновенное Финансирование',
+    ar: 'التمويل الفوري المباشر',
+    nl: 'Directe Financiering',
+  };
+
   const rulesTable = [
     { rule: t.rules.r1Title, goat2p: '10%', rapid1p: '10%', instant: rs.instantEvalText || 'No evaluation phase', note: t.rules.r1Note },
     { rule: t.rules.r2Title, goat2p: '5%', rapid1p: '-', instant: '-', note: t.rules.r2Note },
     { rule: t.rules.r3Title, goat2p: '5% (Equity)', rapid1p: '3% (Equity)', instant: '3% (Equity)', note: t.rules.r3Note },
     { rule: t.rules.r4Title, goat2p: '10% (Equity)', rapid1p: '6% (Equity)', instant: '5% (Trailing)', note: t.rules.r4Note },
-    { rule: t.rules.r5Title, goat2p: L('5 ngày / bước', '5 days / step'), rapid1p: L('5 ngày', '5 days'), instant: rs.instantDaysText || '5 days (withdraw after 14d)', note: t.rules.r5Note },
-    { rule: t.rules.r6Title, goat2p: L('Khi đánh giá', 'In evaluation'), rapid1p: L('Khi đánh giá', 'In evaluation'), instant: L('Cấm', 'Forbidden'), note: t.rules.r6Note },
-    { rule: t.rules.r7Title, goat2p: L('Không cho phép', 'Not allowed'), rapid1p: L('Không cho phép', 'Not allowed'), instant: L('Không cho phép', 'Not allowed'), note: t.rules.r7Note },
+    { rule: t.rules.r5Title, goat2p: DAYS_PER_STEP_MAP[currentLang] || DAYS_PER_STEP_MAP.en, rapid1p: DAYS_MAP[currentLang] || DAYS_MAP.en, instant: rs.instantDaysText || '5 days (withdraw after 14d)', note: t.rules.r5Note },
+    { rule: t.rules.r6Title, goat2p: IN_EVAL_MAP[currentLang] || IN_EVAL_MAP.en, rapid1p: IN_EVAL_MAP[currentLang] || IN_EVAL_MAP.en, instant: FORBIDDEN_MAP[currentLang] || FORBIDDEN_MAP.en, note: t.rules.r6Note },
+    { rule: t.rules.r7Title, goat2p: NOT_ALLOWED_MAP[currentLang] || NOT_ALLOWED_MAP.en, rapid1p: NOT_ALLOWED_MAP[currentLang] || NOT_ALLOWED_MAP.en, instant: NOT_ALLOWED_MAP[currentLang] || NOT_ALLOWED_MAP.en, note: t.rules.r7Note },
     { rule: t.rules.r8Title, goat2p: '1:100 / 1:40', rapid1p: '1:50 / 1:40', instant: '1:40', note: t.rules.r8Note },
     { rule: t.rules.r9Title, goat2p: highWord, rapid1p: highWord, instant: highWord, note: t.rules.r9Note },
   ];
@@ -88,9 +220,9 @@ export const RulesScalingSection: React.FC = () => {
             <thead>
               <tr className="border-b app-border app-subtle text-xs font-mono uppercase tracking-wider">
                 <th className="py-5 px-6 font-bold app-text-secondary">{t.rules.colRule}</th>
-                <th className="py-5 px-6 font-extrabold text-[#c68a00] dark:text-[#ffc501] bg-[#f6bf4a]/10 dark:bg-[#ffc501]/10">Two-Step</th>
-                <th className="py-5 px-6 font-bold app-text-secondary">One-Step</th>
-                <th className="py-5 px-6 font-bold text-[#c68a00] dark:text-[#f6bf4a]">Instant Funding</th>
+                <th className="py-5 px-6 font-extrabold text-[#c68a00] dark:text-[#ffc501] bg-[#f6bf4a]/10 dark:bg-[#ffc501]/10">{t.matrix.tab2Step || 'Two-Step'}</th>
+                <th className="py-5 px-6 font-bold app-text-secondary">{t.matrix.tab1Step || 'One-Step'}</th>
+                <th className="py-5 px-6 font-bold text-[#c68a00] dark:text-[#f6bf4a]">{INSTANT_HEADING_MAP[currentLang] || 'Instant Funding'}</th>
                 <th className="py-5 px-6 font-bold app-text-secondary">{t.rules.colNotes}</th>
               </tr>
             </thead>
