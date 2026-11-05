@@ -264,3 +264,33 @@
 .ref-scope .cpw-input { padding: 12px 14px; background: #fff; border-top: 1px solid #e7e4dc; }
 .ref-scope .cpw-input span { flex: 1; height: 44px; display: flex; align-items: center; padding: 0 14px; border: 1.5px solid #cfcabd; border-radius: 12px; font-size: 14px; opacity: 1; color: #8a8678 !important; -webkit-text-fill-color: #8a8678 !important; margin-right: 10px; }
 .ref-scope .cpw-input i { width: 44px; height: 44px; border-radius: 12px; background: #f6c83d; flex: none; }
+
+/* ---- banner v2: trading-chart laptop photo, smooth edge blend (dark + white theme) ---- */
+.ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
+  object-position: 70% center;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0,0,0,.18) 14%, rgba(0,0,0,.6) 30%, #000 46%),
+    linear-gradient(270deg, transparent 0%, rgba(0,0,0,.5) 7%, #000 18%),
+    linear-gradient(180deg, #000 0%, #000 62%, rgba(0,0,0,.45) 82%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0,0,0,.18) 14%, rgba(0,0,0,.6) 30%, #000 46%),
+    linear-gradient(270deg, transparent 0%, rgba(0,0,0,.5) 7%, #000 18%),
+    linear-gradient(180deg, #000 0%, #000 62%, rgba(0,0,0,.45) 82%, transparent 100%);
+  mask-composite: intersect, intersect;
+}
+:root[data-theme='light'] .ref-scope .cp-hero-bg { filter: saturate(1.08) contrast(1.04); }
+/* white theme: soft wash behind the copy only, so text stays crisp without flattening the photo */
+:root[data-theme='light'] .ref-scope .cp-hero::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(90deg, var(--ref-bg, #fff) 0%, rgba(255,255,255,.55) 30%, rgba(255,255,255,0) 52%);
+}
+.ref-scope .cp-hero-inner { z-index: 1; }
+@media (max-width: 900px) {
+  .ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
+    object-position: 58% center; opacity: .55;
+    -webkit-mask-image: linear-gradient(180deg, #000 20%, transparent 100%); mask-image: linear-gradient(180deg, #000 20%, transparent 100%);
+    -webkit-mask-composite: source-over; mask-composite: add;
+  }
+  :root[data-theme='light'] .ref-scope .cp-hero::before { background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.35)); }
+}
