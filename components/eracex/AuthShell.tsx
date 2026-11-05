@@ -284,7 +284,7 @@ export const AuthShell: React.FC<{ children: React.ReactNode; title?: string; ba
           <div className="relative z-10 flex items-center justify-between gap-4">
             <Link href="/" aria-label="ERACEX"><BrandLogo size="md" showText forceWhiteText /></Link>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 backdrop-blur px-3.5 py-1.5 text-xs font-semibold">
-              <span className="flex gap-0.5">{[0, 1, 2, 3, 4].map((i) => <Star key={i} size={12} fill="currentColor" strokeWidth={0} />)}</span>
+              <span className="flex gap-0.5" style={{ color: '#00b67a' }}>{[0, 1, 2, 3, 4].map((i) => <Star key={i} size={12} fill="#00b67a" color="#00b67a" strokeWidth={0} />)}</span>
               {a.badgeRating}
             </div>
           </div>
