@@ -992,3 +992,42 @@
 
 /* program tabs: the selected tab uses the system gold in both themes (not the dark ink) */
 .home .sk-tabs button.on,[data-theme="dark"] .home .sk-tabs button.on{background:var(--gold);color:var(--ink);box-shadow:0 8px 20px -10px rgba(217,164,6,.7)}
+
+/* ===================== laptop: photo body + crisp app screen warped onto it (see DeskImage.tsx) ===================== */
+.home .sk-desk{--H:500}
+@media(max-width:900px){.home .sk-desk{--H:360}}
+.home .sk-desk .lap{position:absolute;top:0;left:50%;height:100%;transform:translateX(-50%);overflow:hidden}
+.home .sk-desk .lap>img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+.home .lap{--lp-bg:#fbfcfd;--lp-side:#f3f5f8;--lp-card:#fff;--lp-line:#e7eaef;--lp-fg:#12151a;--lp-mute:#737b8a;--lp-act:#e8ecf2}
+.home .lap.dk{--lp-bg:#0e1015;--lp-side:#13151b;--lp-card:#171a21;--lp-line:#252a33;--lp-fg:#f1f3f7;--lp-mute:#8b93a3;--lp-act:#20242d}
+.home .lp-scr{position:absolute;left:0;top:0;width:1000px;height:760px;transform-origin:0 0;display:grid;grid-template-columns:230px 1fr;grid-template-rows:100%;overflow:hidden;border-radius:18px;background:var(--lp-bg);color:var(--lp-fg);font-size:25px;line-height:1.25;text-align:left;font-family:var(--font-dm),system-ui,sans-serif;backface-visibility:hidden}
+.home .lp-scr small{display:block;font-size:20px;font-weight:500;color:var(--lp-mute)}
+.home .lp-scr strong{font-weight:700}
+.home .lp-side{display:flex;flex-direction:column;gap:8px;padding:30px 18px;background:var(--lp-side);border-right:1px solid var(--lp-line);min-width:0}
+.home .lp-logo{display:flex;align-items:center;gap:12px;margin:0 0 26px 6px;font-size:26px;font-weight:800;letter-spacing:.06em}
+.home .lp-logo i{width:34px;height:26px;flex:none;border-radius:4px;background:linear-gradient(180deg,#f2c230 0 30%,transparent 30% 38%,#f2c230 38% 68%,transparent 68% 76%,#f2c230 76%)}
+.home .lp-side>span{padding:14px 16px;border-radius:12px;font-size:22px;font-weight:500;color:var(--lp-mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.home .lp-side>span.on{background:var(--lp-act);color:var(--lp-fg);font-weight:600}
+.home .lp-main{display:flex;flex-direction:column;gap:20px;padding:30px 36px 28px;min-width:0;min-height:0;height:100%}
+.home .lp-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+.home .lp-head h4{margin:6px 0 0;font-size:38px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.home .lp-kpi{text-align:right}
+.home .lp-kpi strong{display:block;margin-top:6px;font-size:32px;color:#2e9e5b;white-space:nowrap}
+.home .lp-grid{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:minmax(0,1fr);gap:22px;flex:1 1 0;min-height:0}
+.home .lp-card{background:var(--lp-card);border:1.5px solid var(--lp-line);border-radius:20px;padding:22px 24px}
+.home .lp-chart{display:flex;flex-direction:column;gap:14px;min-height:0}
+.home .lp-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.home .lp-row strong{font-size:34px;white-space:nowrap}
+.home .lp-chart svg{flex:1 1 0;height:0;width:100%;min-height:60px;overflow:visible}
+.home .lp-side2{display:flex;flex-direction:column;gap:22px}
+.home .lp-side2 .lp-card{flex:1;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.home .lp-side2 strong{font-size:30px;white-space:nowrap}
+.home .lp-side2 u{display:block;height:10px;border-radius:99px;background:var(--lp-line);text-decoration:none;overflow:hidden}
+.home .lp-side2 s{display:block;height:100%;border-radius:99px;background:#f2c230;text-decoration:none}
+.home .lp-tbl{display:flex;flex-direction:column;padding:6px 24px}
+.home .lp-tbl>div{display:grid;grid-template-columns:1.2fr 1fr .8fr;align-items:center;padding:9px 0;font-size:23px;border-bottom:1.5px solid var(--lp-line)}
+.home .lp-tbl>div:last-child{border-bottom:0}
+.home .lp-tbl b{font-weight:700}
+.home .lp-tbl em{font-style:normal;font-weight:600;text-align:right}
+.home .lp-tbl em.up{color:#2e9e5b}.home .lp-tbl em.dn{color:#e5484d}
+.home .lp-notch{position:absolute;left:46.5%;top:0;width:11%;height:3.8%;border-radius:0 0 14px 14px;background:#0a0b0e}
