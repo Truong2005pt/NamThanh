@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="app-bg min-h-screen pt-28">
-      <LegalDocument blocks={blocks as LegalBlock[]} />
+      <LegalDocument blocks={blocks as LegalBlock[]} doc="terms-and-conditions" />
     </div>
   );
 }
