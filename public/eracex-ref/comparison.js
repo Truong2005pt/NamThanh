@@ -1,4 +1,4 @@
-// All program parameters are shared with models in app.js. Explanations follow the supplied FAQs and terms.
+
 function ct(vi,en){let lang=window.eracexLanguage||document.documentElement.lang;try{lang=window.eracexLanguage||localStorage.getItem('eracex-language')||lang}catch{}if(lang!=='en')return vi;const d=window.__eracexDict;if(!d)return en;if(d[en])return d[en];const tp=window.__eracexTpl;if(tp){const nums=[];const k=en.replace(/\$[\d,]+(?:\.\d+)?|\d+(?:[.,]\d+)*(?::\d+)?%?/g,m=>{nums.push(m);return '{'+(nums.length-1)+'}'});if(tp[k])return tp[k].replace(/\{(\d+)\}/g,(_,i)=>nums[Number(i)]??'')}return en}
 const metricKeys=['target','daily','loss','days','period','refund','reward','cycle','leverage','consistency'];
 const metricIcons=['◎','↓','↧','◷','▦','↺','◇','↻','⚖','◈'];

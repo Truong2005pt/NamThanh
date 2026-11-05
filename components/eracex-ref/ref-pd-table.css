@@ -1,28 +1,22 @@
-/* Phase table and size picker, restyled flat and monochrome:
-   neutral label column, small square step markers (no stepper line), and the Funded column as an inverse panel
-   (black in the light theme, off-white in the dark theme) carrying the ERACEX mark. Gold only in the logo and CTA. */
+
 .ref-scope .pd-config {
   --inv-bg: var(--ref-ink);
   --inv-fg: var(--pdu-card);
 }
 
-/* size picker: active size is solid ink, not a gold gradient */
 .ref-scope .pd-config .pd-size-picker button[aria-pressed='true'] { color: var(--pdu-card) !important; background: transparent !important; box-shadow: none !important; }
 .ref-scope .pd-config .pd-size-picker button::before { background: var(--ref-ink) !important; box-shadow: none !important; }
 .ref-scope .pd-config .pd-size-picker button[aria-pressed='true']:hover { color: var(--pdu-card) !important; }
 
-/* card */
 .ref-scope .pd-config .pd-table-scroll { border-radius: 16px; box-shadow: none !important; }
 :root[data-theme='light'] .ref-scope .pd-config .pd-table-scroll { border-color: #d9d4c4; }
 
-/* label column: plain, no tint */
 .ref-scope .pd-config .pd-phase-table thead th:first-child,
 .ref-scope .pd-config .pd-phase-table tbody th,
 .ref-scope .pd-config .pd-stage-groups th:first-child { background: transparent !important; border-right: 0 !important; }
 .ref-scope .pd-config .pd-phase-table tbody th { padding-left: 24px; }
 .ref-scope .pd-config .pd-phase-table tbody th .metric-trigger { color: var(--ref-ink); opacity: .7; font-size: 14px; }
 
-/* header */
 .ref-scope .pd-config .pd-stage-groups th { font-size: 11.5px; font-weight: 600; letter-spacing: 1.3px; text-transform: uppercase; opacity: .6; padding-top: 20px; }
 .ref-scope .pd-config .pd-phase-table .pd-phase-number {
   width: 30px; height: 30px; border-radius: 8px; background: transparent !important; border: 1px solid var(--pdu-line);
@@ -34,14 +28,12 @@
 .ref-scope .pd-config .pd-phase-table thead th strong { font-size: 16px; margin-top: 10px; letter-spacing: -.01em; }
 .ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th { height: 104px !important; }
 
-/* body rows */
 .ref-scope .pd-config .pd-phase-table tbody td { font-size: 15px; height: 54px; }
 .ref-scope .pd-config .pd-phase-table tbody tr + tr th,
 .ref-scope .pd-config .pd-phase-table tbody tr + tr td:not(.pd-funded) { border-top: 1px solid var(--pdu-line); }
 :root[data-theme='light'] .ref-scope .pd-config .pd-phase-table tbody tr + tr th,
 :root[data-theme='light'] .ref-scope .pd-config .pd-phase-table tbody tr + tr td:not(.pd-funded) { border-top-color: #e6e2d3; }
 
-/* Funded column = inverse panel */
 .ref-scope .pd-config .pd-phase-table .pd-funded,
 .ref-scope .pd-config .pd-stage-groups th:last-child { background: var(--inv-bg) !important; box-shadow: none !important; }
 .ref-scope .pd-config .pd-stage-groups th:last-child { color: var(--inv-fg) !important; opacity: 1; }
@@ -51,12 +43,10 @@
 .ref-scope .pd-config .pd-phase-table td.pd-funded { border-top: 1px solid color-mix(in srgb, var(--inv-fg) 18%, transparent) !important; }
 .ref-scope .pd-config .pd-phase-table .pd-funded-logo { display: block; height: 22px; width: auto; margin: 3px auto 0; }
 
-/* flat gold where gold is used */
 .ref-scope .pd-config .pd-cycle-row > button,
 .ref-scope .pd-config .pd-order-bar .button,
 .ref-scope .pd-learning .pd-topic-panel .button { background: #f3c633 !important; background-image: none !important; color: #15151a !important; box-shadow: none !important; }
 
-/* Phones: fit all phases in the card instead of clipping the table */
 @media (max-width: 640px) {
   .ref-scope .pd-config .pd-table-scroll { overflow-x: hidden !important; }
   .ref-scope .pd-config .pd-phase-table { width: 100% !important; min-width: 0 !important; table-layout: fixed !important; }
@@ -79,13 +69,11 @@
   .ref-scope .pd-config .pd-size-picker::-webkit-scrollbar { display: none; }
 }
 
-/* Phones: calmer, balanced page titles */
 @media (max-width: 640px) {
   .ref-scope h1 { font-size: clamp(28px, 8.4vw, 36px) !important; line-height: 1.14 !important; letter-spacing: -.02em !important; text-wrap: balance; }
   .ref-scope h2 { text-wrap: balance; }
 }
 
-/* About: discipline cards stack on phones so the copy gets the full width */
 @media (max-width: 560px) {
   .ref-scope .ab-discipline-grid article { grid-template-columns: 1fr !important; }
   .ref-scope .ab-discipline-grid article > .ab-plan-art,
@@ -93,7 +81,6 @@
   .ref-scope .ab-discipline-grid article > div:first-child { width: 100% !important; }
 }
 
-/* Phones: hero photos on sub pages use the full column width */
 @media (max-width: 760px) {
   .ref-scope .sp-hero .sp-hero-art.pa-hero-photo { width: 100% !important; max-width: none !important; height: 200px !important; }
   .ref-scope .sp-hero .sp-hero-art.pa-hero-photo img { width: 100% !important; height: 100% !important; object-fit: cover; }

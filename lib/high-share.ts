@@ -1,4 +1,4 @@
-// Short, number-free label used wherever the site refers to the profit share in general terms.
+
 const HIGH_SHARE_WORD: Record<string, string> = {
   vi: 'Cao',
   en: 'High',

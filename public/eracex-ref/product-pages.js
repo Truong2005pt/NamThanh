@@ -1,5 +1,5 @@
 let productAmounts=false;
-/* Product layouts share the homepage's model parameters and documented explanations. */
+
 function renderProductDetail(){
  const m=models[selected],two=selected===0,instant=m.instant,light=selected===3;
  const heroArtwork='/assets/eracex-'+programSlugs[selected]+'-v19.webp';

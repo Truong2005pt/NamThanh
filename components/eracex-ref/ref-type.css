@@ -1,6 +1,4 @@
-/* Typography for the concept pages, modelled on fundingpips.com:
-   headings in DM Sans (600, tight tracking), body in Inter at 15px, small text never below 11px.
-   DM Sans has no Vietnamese glyphs, so Vietnamese pages use Be Vietnam Pro for headings instead. */
+
 .ref-scope {
   --ref-head: 'DM Sans', 'Be Vietnam Pro', system-ui, sans-serif;
   --ref-body: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;

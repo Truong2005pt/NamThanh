@@ -1,11 +1,4 @@
-/**
- * Keeps the concept pages monochrome: text is black or white, and nothing glows gold.
- *
- * The page styles come from many stylesheets, so instead of chasing every selector this tags, at runtime,
- * the elements whose computed text colour is gold (`ref-gold-text`) or whose shadows are gold-tinted
- * (`ref-gold-shadow`). ref-mono.css turns those tags into plain ink colour / no shadow. Dark text sitting
- * on a gold fill (buttons, the Funded column) is not gold, so it is left untouched.
- */
+
 
 function parseRgb(value: string): [number, number, number, number] | null {
   const m = value.match(/rgba?\(\s*([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)(?:[ ,/]+([\d.]+%?))?\s*\)/);
@@ -56,7 +49,6 @@ export function applyMono(root: HTMLElement) {
   });
 }
 
-/** Run once now, then again (debounced) whenever the page content or theme changes. Returns a stop function. */
 export function watchMono(root: HTMLElement): () => void {
   let timer: ReturnType<typeof setTimeout> | null = null;
   let running = false;
@@ -73,7 +65,6 @@ export function watchMono(root: HTMLElement): () => void {
     }, 120);
   };
 
-  // Class toggles done above must not retrigger the observer endlessly: watch content, not class changes.
   const mo = new MutationObserver((records) => {
     if (records.every((r) => r.type === 'attributes' && r.attributeName === 'class')) return;
     schedule();

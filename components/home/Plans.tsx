@@ -124,7 +124,7 @@ export function Plans() {
         </table>
       </div>
 
-      {/* phones + tablets: one plan at a time */}
+      {}
       <div className="sk-cmp-m">
         <div className="sizes" role="tablist">
           {p.sizes.map((x, i) => <button key={x} type="button" role="tab" aria-selected={i === sizeIdx} className={i === sizeIdx ? "on" : ""} onClick={() => setSizeIdx(i)}>{usd(x)}</button>)}

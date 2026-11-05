@@ -1,14 +1,11 @@
-/* Motion for the concept pages: state changes fade and ease instead of snapping.
-   Works with the in-place updates from morph.ts (kept elements transition, changed text fades in). */
 
-/* values that change (size, fee, table cells) fade in */
+
 @keyframes ref-flash-in {
   from { opacity: 0.25; transform: translateY(4px); }
   to   { opacity: 1;    transform: none; }
 }
 .ref-scope .ref-flash { animation: ref-flash-in .38s cubic-bezier(.2, .7, .2, 1); }
 
-/* topic panels: the incoming panel rises in, its photo settles */
 @keyframes ref-panel-in {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: none; }
@@ -20,7 +17,6 @@
 .ref-scope .pd-topic-panel:not([hidden]) { animation: ref-panel-in .45s cubic-bezier(.2, .7, .2, 1); }
 .ref-scope .pd-topic-panel:not([hidden]) .pd-editorial-bg { animation: ref-photo-settle .9s cubic-bezier(.2, .7, .2, 1); }
 
-/* size picker: the gold pill fades and scales into place instead of snapping */
 .ref-scope .pd-config .pd-size-picker button { position: relative; isolation: isolate; background: transparent !important; box-shadow: none !important; }
 .ref-scope .pd-config .pd-size-picker button::before {
   content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 999px;
@@ -32,7 +28,6 @@
 .ref-scope .pd-config .pd-size-picker button[aria-pressed='true']::before { opacity: 1; transform: scale(1); }
 .ref-scope .pd-config .pd-size-picker button { transition: color .25s ease; }
 
-/* theme switch: surfaces and borders cross-fade */
 .ref-scope .pd-table-scroll,
 .ref-scope .pd-phase-table th,
 .ref-scope .pd-phase-table td,
@@ -47,10 +42,8 @@
   transition-timing-function: ease;
 }
 
-/* order bar numbers and funded column keep a steady layout while values change */
 .ref-scope .pd-order-bar strong, .ref-scope .pd-phase-table td { font-variant-numeric: tabular-nums; }
 
-/* the table body eases when the size changes (rows keep their place, only values animate) */
 .ref-scope .pd-phase-table tbody td { transition: color .25s ease, background-color .25s ease; }
 
 @media (prefers-reduced-motion: reduce) {

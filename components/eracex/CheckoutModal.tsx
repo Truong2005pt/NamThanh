@@ -566,7 +566,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, p
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [promo, setPromo] = useState('');
-  const [agreed, setAgreed] = useState(false); // never pre-ticked
+  const [agreed, setAgreed] = useState(false); 
   const [showError, setShowError] = useState(false);
   const [orderId, setOrderId] = useState<string | null>(null);
 
@@ -679,7 +679,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, p
               </div>
             </div>
 
-            {/* LEGAL CONSENT: required, unticked by default */}
+            {}
             <div className={`rounded-xl border p-4 ${showError && !agreed ? 'border-red-500 bg-red-500/5' : 'border-neutral-200 dark:border-white/10'}`}>
               <label className="flex items-start gap-3 cursor-pointer text-xs leading-relaxed">
                 <input

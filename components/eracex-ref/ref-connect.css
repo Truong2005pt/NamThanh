@@ -1,4 +1,4 @@
-/* FAQ "Kết nối trọn hành trình": flat two-column panel, feature index on the left, product view on the right. */
+
 .ref-scope .fh-connect {
   --fhc-line: var(--ref-card-line, rgba(255, 255, 255, 0.26));
   --fhc-soft: rgba(255, 255, 255, 0.12);
@@ -22,7 +22,6 @@
 }
 .ref-scope .fhc-radio { position: absolute; opacity: 0; pointer-events: none; width: 1px; height: 1px; }
 
-/* left: index */
 .ref-scope .fhc-left { display: flex; flex-direction: column; justify-content: center; padding: 12px 0; }
 .ref-scope .fhc-item { position: relative; padding: 26px 36px 26px 40px; border-bottom: 1px solid var(--fhc-soft); }
 .ref-scope .fhc-item:last-child { border-bottom: 0; }
@@ -39,7 +38,6 @@
 #fhc0:checked ~ .fhc-left .fhc-item:nth-child(1) p, #fhc1:checked ~ .fhc-left .fhc-item:nth-child(2) p, #fhc2:checked ~ .fhc-left .fhc-item:nth-child(3) p { display: block; }
 #fhc0:checked ~ .fhc-left .fhc-item:nth-child(1) .fh-more, #fhc1:checked ~ .fhc-left .fhc-item:nth-child(2) .fh-more, #fhc2:checked ~ .fhc-left .fhc-item:nth-child(3) .fh-more { display: inline-flex; }
 
-/* right: product view */
 .ref-scope .fhc-right { position: relative; background: var(--fhc-stage); border-left: 1px solid var(--fhc-soft); padding: 40px; display: flex; align-items: center; }
 .ref-scope .fhc-stage { display: none; position: relative; width: 100%; }
 #fhc0:checked ~ .fhc-right .fhc-stage[data-stage='0'],
@@ -54,7 +52,6 @@
 .ref-scope .fhc-app-head b { display: block; font-size: 16px; }
 .ref-scope .fhc-app-head small { display: block; margin-top: 2px; font-size: 12.5px; color: var(--fhc-muted); }
 
-/* charts */
 .ref-scope svg.fhc-svg { display: block !important; width: 100% !important; height: auto !important; max-width: none; overflow: visible; font-family: var(--ref-body); font-variant-numeric: tabular-nums; }
 .ref-scope .fhc-svg .g { stroke: var(--fhc-soft); stroke-width: 1; }
 .ref-scope .fhc-svg .g.base { stroke: var(--fhc-line); }
@@ -80,7 +77,6 @@
 .ref-scope .fhc-table td:last-child { color: var(--fhc-ink); font-weight: 700; font-size: 15px; }
 .ref-scope .fhc-table tr:last-child td { border-bottom: 0; }
 
-/* callout */
 .ref-scope .fhc-float {
   position: absolute; right: 18px; bottom: -34px; width: 200px; padding: 16px 18px; border-radius: 12px;
   background: #0d0e12; border: 1px solid rgba(255, 255, 255, 0.2);
@@ -99,7 +95,6 @@
   .ref-scope .fhc-float { position: static; width: auto; margin-top: 12px; }
 }
 
-/* photo behind the product window (replaces the flat panel) */
 .ref-scope .fhc-right { background-size: cover; background-position: center; }
 #fhc0:checked ~ .fhc-right { background-image: linear-gradient(rgba(10,10,13,0.55), rgba(10,10,13,0.7)), url('/eracex-ref/assets/fh-stage-affiliate.webp'); }
 #fhc1:checked ~ .fhc-right { background-image: linear-gradient(rgba(10,10,13,0.5), rgba(10,10,13,0.68)), url('/eracex-ref/assets/fh-stage-aio.webp'); }
@@ -107,7 +102,6 @@
 :root[data-theme='light'] .ref-scope .fhc-right { background-blend-mode: normal; }
 .ref-scope .fhc-window { box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45); margin-left: 28px; }
 
-/* ---- app-style views ---- */
 .ref-scope .fhc-app-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
 .ref-scope .fhc-seg { display: inline-flex; padding: 3px; border: 1px solid var(--fhc-soft); border-radius: 10px; flex-shrink: 0; }
 .ref-scope .fhc-seg span { padding: 5px 11px; border-radius: 7px; font-size: 12px; font-weight: 600; color: var(--fhc-muted); }
@@ -137,7 +131,6 @@
 .ref-scope .fhc-note { margin: 14px 0 0; font-size: 12px; line-height: 1.5; color: var(--fhc-muted); }
 .ref-scope .fhc-body { padding-bottom: 100px; }
 
-/* ---- trading-terminal view (account tab), dark and light ---- */
 .ref-scope .fhc-stage[data-stage='1'] .fhc-body { padding: 0 0 96px; }
 .ref-scope .fht-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--fhc-soft); }
 .ref-scope .fht-acct { display: flex; align-items: center; gap: 8px; }
@@ -176,7 +169,6 @@
 .ref-scope .fhc-goal > b i { font-style: normal; color: var(--fhc-muted); font-weight: 400; }
 .ref-scope .fhc-goal .fhc-track { height: 5px; }
 
-/* ---- account tab: watchlist panel (top-left third of the terminal) ---- */
 .ref-scope .fhc-stage[data-stage='1'] .fhc-window { max-width: 360px; margin-left: auto; margin-right: auto; }
 .ref-scope .fhc-stage[data-stage='1'] .fhc-body { padding-bottom: 24px; }
 .ref-scope .fht-tabs { display: flex; gap: 4px; }
@@ -193,7 +185,6 @@
 .ref-scope .fht-list td.pos, .ref-scope .fht-list td.neg { font-weight: 600; font-size: 12.5px; }
 .ref-scope .fht-list td.neg { color: #e05563 !important; -webkit-text-fill-color: #e05563 !important; }
 
-/* account tab: real terminal screenshot (top-left crop), dark / light */
 .ref-scope .fhc-stage[data-stage='1'] .fhc-window { max-width: none; margin-left: 28px; margin-right: 0; }
 .ref-scope .fhc-stage[data-stage='1'] .fhc-body { padding: 0; }
 .ref-scope .fht-shot { display: block; width: 100%; height: auto; }

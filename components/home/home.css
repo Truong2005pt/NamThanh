@@ -1,4 +1,4 @@
-/* ERACEX light theme: gold + white. Everything is scoped to .home so the dark build keeps working at /dark */
+
 .home{--bg:#fffdf8;--fg:#1e1a0d;--muted:#6f6850;--border:#efe7cc;--soft:#fff5d4;--soft2:#fffaf0;--gold:#f2c230;--gold-d:#d9a406;--gold-ink:#8a6400;--ink:#241c04;--green:#2e9e5b;
   --shadow:0 1px 2px rgba(70,50,0,.05),0 10px 28px -14px rgba(150,110,0,.28);
   font-family:var(--font-dm),var(--font-sans),system-ui,sans-serif;color:var(--fg);background:var(--bg);line-height:1.55;overflow-x:clip}
@@ -20,7 +20,6 @@
 .home .sk-foot{margin-top:18px;font-size:12.5px;color:var(--muted)}
 .home .sk-card{background:#fff;border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow)}
 
-/* buttons */
 .home .sk-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:14px;font-weight:600;font-size:14.5px;white-space:nowrap;transition:transform .2s,box-shadow .2s,background .2s}
 .home .sk-btn:hover{transform:translateY(-1px)}
 .home .sk-btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 10px 22px -10px rgba(217,164,6,.75)}
@@ -29,10 +28,8 @@
 .home .sk-btn-lg{height:52px;padding:0 26px;font-size:15.5px}
 .home .sk-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
-/* header */
 .home .sk-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:linear-gradient(145deg,#e7b61c,#a97800)}
 
-/* hero */
 .home .sk-hero{position:relative;margin-top:-76px;padding:176px 0 56px;overflow:hidden}
 .home .sk-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 20%}
 .home .sk-hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(255,253,248,.9) 30%,rgba(255,253,248,.25) 62%,transparent 80%),linear-gradient(180deg,transparent 72%,var(--bg))}
@@ -50,7 +47,6 @@
 .home .sk-rate:nth-of-type(1){margin-left:auto}
 .home .sk-stars{display:inline-flex;gap:1px;color:#f2b800}
 
-/* reward panel */
 .home .sk-panel{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid var(--border);border-radius:32px;box-shadow:var(--shadow);overflow:hidden}
 .home .sk-panel-l{padding:52px 48px}
 .home .sk-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
@@ -79,7 +75,6 @@
 .home .sk-reward-total i{flex-basis:100%;height:6px;border-radius:99px;background:rgba(255,255,255,.18);overflow:hidden}
 .home .sk-reward-total u{display:block;height:100%;background:var(--gold);border-radius:99px}
 
-/* journey */
 .home .sk-toggle{display:flex;width:fit-content;margin:30px auto 12px;padding:4px;background:#fff;border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow)}
 .home .sk-toggle button{padding:10px 20px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted)}
 .home .sk-toggle button.on{background:var(--gold);color:var(--ink)}
@@ -123,7 +118,6 @@
 .home .sk-dark-in div b{font-size:16px}
 .home .sk-dark-in small{font-size:12.5px;opacity:.8}
 
-/* plans */
 .home .sk-tabs{display:flex;width:fit-content;max-width:100%;margin:30px auto 0;padding:5px;background:#fff;border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);overflow-x:auto}
 .home .sk-tabs button{padding:10px 24px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap}
 .home .sk-tabs button.on{background:var(--gold);color:var(--ink)}
@@ -193,7 +187,6 @@
 .home .sk-addons .on .sw{background:var(--gold)}
 .home .sk-addons .on .sw::before{transform:translateX(16px)}
 
-/* rewards */
 .home .sk-ledger{margin-top:36px;overflow:hidden}
 .home .sk-ledger .head{display:flex;align-items:center;gap:14px;padding:20px 24px;border-bottom:1px solid var(--border)}
 .home .sk-ledger .head b{display:block;font-size:17px;font-weight:600}
@@ -227,7 +220,6 @@
 .home .sk-pcard .foot small{font-size:11.5px;color:var(--muted)}
 .home .sk-pcard .foot i{margin-left:auto;font-style:normal;font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:7px;background:var(--soft);color:var(--gold-ink);white-space:nowrap}
 
-/* why */
 .home .sk-band{background:linear-gradient(180deg,#fff8e0,#fffdf8)}
 .home .sk-why{display:grid;grid-template-columns:repeat(4,1fr);grid-template-areas:"c0 c1 c2 c3" "bn bn c4 c5" "c6 c7 . .";gap:18px;margin-top:44px;text-align:left}
 .home .sk-why .c0{grid-area:c0}.home .sk-why .c1{grid-area:c1}.home .sk-why .c2{grid-area:c2}.home .sk-why .c3{grid-area:c3}.home .sk-why .c4{grid-area:c4}.home .sk-why .c5{grid-area:c5}.home .sk-why .c6{grid-area:c6}.home .sk-why .c7{grid-area:c7}
@@ -245,7 +237,6 @@
 .home .sk-why-banner h3{margin-top:10px;color:#fff;font-size:26px}
 .home .sk-why-banner p{margin:2px 0 16px;color:#ffd34d;font-weight:600}
 
-/* two-column blocks */
 .home .sk-two{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
 .home .sk-feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 28px}
 .home .sk-feats span{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#fff;border:1px solid var(--border);font-size:13.5px;font-weight:500;box-shadow:var(--shadow)}
@@ -263,7 +254,6 @@
 .home .sk-support .list small{font-size:12.5px;color:var(--muted)}
 .home .sk-support .list>a>svg{color:var(--muted)}
 
-/* faq */
 .home .sk-faq{align-items:start}
 .home .sk-acc{display:grid;gap:12px}
 .home .sk-acc details{overflow:hidden}
@@ -273,7 +263,6 @@
 .home .sk-acc details[open] summary svg{transform:rotate(180deg)}
 .home .sk-acc p{padding:0 22px 20px;font-size:14px;color:var(--muted)}
 
-/* closing */
 .home .sk-cta-wrap{padding-bottom:72px}
 .home .sk-cta{position:relative;border-radius:32px;overflow:hidden;min-height:300px;color:#fff;display:flex;align-items:center}
 .home .sk-cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -283,7 +272,6 @@
 .home .sk-cta p{margin:10px 0 26px;color:#ffd34d;font-weight:600;font-size:18px}
 .home .sk-legal{max-width:760px;font-size:12.5px;color:var(--muted)}
 
-/* responsive */
 @media(max-width:1000px){
   .home .sk-panel{grid-template-columns:1fr}
   .home .sk-panel-r{min-height:480px}
@@ -354,26 +342,21 @@
 .home i,.home em{font-style:normal}
 .home .sk-cmp-m .card{background:#fff}
 
-/* ===================== theme toggle ===================== */
 .home,.home .sk-card,.home .sk-head{transition:background-color .3s,color .3s,border-color .3s}
 
-/* ===================== DARK: black + gold ===================== */
 [data-theme="dark"] .home{--bg:#0a0906;--fg:#f6f1e0;--muted:#a79e84;--border:#2a2412;--soft:#2b2209;--soft2:#15120a;--gold:#f2c230;--gold-d:#d9a406;--gold-ink:#f3cb52;--ink:#1a1403;--green:#47c27a;--card:#13110a;
   --shadow:0 1px 0 rgba(255,255,255,.04) inset,0 18px 40px -20px rgba(0,0,0,.8);color-scheme:dark}
 [data-theme="dark"] .home .sk-card{background:var(--card)}
 
-/* header + buttons */
 [data-theme="dark"] .home .sk-btn-white{background:#1a170c;color:var(--fg);border-color:#33290f}
 [data-theme="dark"] .home .sk-btn-gold{box-shadow:0 10px 26px -10px rgba(242,194,48,.55)}
 
-/* hero */
 [data-theme="dark"] .home .sk-hero-img{filter:brightness(.5) saturate(1.15) contrast(1.08)}
 [data-theme="dark"] .home .sk-hero-fade{background:linear-gradient(90deg,#0a0906 0%,rgba(10,9,6,.9) 30%,rgba(10,9,6,.3) 62%,transparent 82%),linear-gradient(180deg,rgba(10,9,6,.25),transparent 25%,transparent 66%,#0a0906)}
 [data-theme="dark"] .home .sk-hero h1 em{color:var(--gold)}
 [data-theme="dark"] .home .sk-stat i{background:#2b2209;color:var(--gold)}
 [data-theme="dark"] .home .sk-stars{color:var(--gold)}
 
-/* reward panel */
 [data-theme="dark"] .home .sk-panel{background:#100e08}
 [data-theme="dark"] .home .sk-panel-r{background:#1a1507}
 [data-theme="dark"] .home .sk-panel-r>img{filter:brightness(.6) saturate(1.15)}
@@ -382,7 +365,6 @@
 [data-theme="dark"] .home .sk-reward td:last-child{color:var(--gold)}
 [data-theme="dark"] .home .sk-reward-total{background:linear-gradient(135deg,#3a2c06,#6a5010)}
 
-/* journey */
 [data-theme="dark"] .home .sk-toggle,[data-theme="dark"] .home .sk-tabs{background:#13110a;border-color:#2e2713}
 [data-theme="dark"] .home .sk-toggle button.on,[data-theme="dark"] .home .sk-tabs button.on{background:var(--gold);color:var(--ink)}
 [data-theme="dark"] .home .sk-rows a{background:#1a160b}
@@ -393,7 +375,6 @@
 [data-theme="dark"] .home .sk-crit i{border-color:#8a6d1c}
 [data-theme="dark"] .home .sk-dark img{filter:brightness(.8)}
 
-/* plans */
 [data-theme="dark"] .home .sk-cur{background:#13110a}
 [data-theme="dark"] .home .sk-check i{background:#13110a;border-color:#5a4a1c}
 [data-theme="dark"] .home .sk-check input:checked+i{background:var(--gold);border-color:var(--gold);color:var(--ink)}
@@ -415,7 +396,6 @@
 [data-theme="dark"] .home .sk-addons .sw::before{background:#f6f1e0}
 [data-theme="dark"] .home .sk-addons .on .sw{background:var(--gold)}
 
-/* rewards */
 [data-theme="dark"] .home .sk-ledger th{background:#171309}
 [data-theme="dark"] .home .sk-ledger td{border-bottom-color:#211c0e}
 [data-theme="dark"] .home .sk-ledger tbody tr:hover td{background:#1b1608}
@@ -424,7 +404,6 @@
 [data-theme="dark"] .home .sk-pcard:hover{box-shadow:0 22px 44px -18px rgba(242,194,48,.25)}
 [data-theme="dark"] .home .sk-flag{box-shadow:0 0 0 1px rgba(255,255,255,.18),0 2px 6px rgba(0,0,0,.6)}
 
-/* why / tech / support / faq / cta */
 [data-theme="dark"] .home .sk-band{background:linear-gradient(180deg,#14100a,#0a0906)}
 [data-theme="dark"] .home .sk-band2{background:linear-gradient(180deg,#0a0906,#14100a 60%,#0a0906)}
 [data-theme="dark"] .home .sk-why-c i,[data-theme="dark"] .home .sk-feats i,[data-theme="dark"] .home .sk-support .list i{background:#2b2209;color:var(--gold)}
@@ -433,7 +412,6 @@
 [data-theme="dark"] .home .sk-support .list a{background:rgba(19,17,10,.9)}
 [data-theme="dark"] .home .sk-cta::after{background:linear-gradient(95deg,rgba(10,8,2,.92) 0%,rgba(10,8,2,.6) 45%,rgba(10,8,2,.15) 100%)}
 
-/* phones */
 [data-theme="dark"] .home .sk-cmp-m .sizes button{background:#13110a;border-color:#2e2713}
 [data-theme="dark"] .home .sk-cmp-m .sizes button.on{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 [data-theme="dark"] .home .sk-cmp-m .card{background:var(--card)}
@@ -448,32 +426,29 @@
 }
 [data-theme="dark"] .home .sk-mark{background:#ffc400}
 [data-theme="light"] .home .sk-mark{background:#f8c10c}
-/* one logo badge everywhere: solid gold disc + mark (white on light, black on dark) */
+
 .home .sk-mark,.home .sk-pcard .top .logo{background:#f8c10c;color:#fff}
 [data-theme="dark"] .home .sk-mark,[data-theme="dark"] .home .sk-pcard .top .logo{background:#ffc400;color:#050505}
 .home .sk-mark.sm{display:inline-grid;width:20px;height:20px;vertical-align:middle;margin-right:4px}
 .home .sk-pcard .top .logo{width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
 .home .sk-reward-total .sk-mark.sm,.home .sk-win .sk-mark.sm,.home .sk-reward-bar .sk-mark.sm{color:#050505;background:#ffc400}
 .home .sk-mark.sm,[data-theme="dark"] .home .sk-mark.sm{background:#ffc400;color:#050505}
-/* logo only: no disc, gold mark */
+
 .home .sk-mark,.home .sk-mark.sm,.home .sk-pcard .top .logo,[data-theme="dark"] .home .sk-mark,[data-theme="dark"] .home .sk-mark.sm,[data-theme="dark"] .home .sk-pcard .top .logo{background:none;border-radius:0;color:#e9b000}
 [data-theme="dark"] .home .sk-mark,[data-theme="dark"] .home .sk-mark.sm,[data-theme="dark"] .home .sk-pcard .top .logo,.home .sk-reward-total .sk-mark.sm,.home .sk-win .sk-mark.sm,.home .sk-reward-bar .sk-mark.sm,.home .sk-mark.sm{color:#ffc400}
 .home .sk-mark{width:auto;height:auto;display:inline-grid}
 .home .sk-mark.sm{width:auto;height:auto;margin-right:6px}
 .home .sk-pcard .top .logo{width:auto;height:auto}
-/* light theme on white: black mark (matches the supplied black logo) */
+
 [data-theme="light"] .home .sk-pcard .top .logo{color:#050505}
 .home .sk-mark,.home .sk-mark.sm,.home .sk-pcard .top .logo{background:none !important;box-shadow:none !important;border-radius:0 !important}
 
-/* footer */
 @media(max-width:1000px){.home .sk-fgrid{grid-template-columns:repeat(2,1fr)}.home .sk-fbrand{grid-column:1/-1}.home .sk-fcols{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.home .sk-footer{padding:40px 0 24px}.home .sk-fcols{grid-template-columns:1fr}.home .sk-fnote{padding:20px}.home .sk-fbar{flex-direction:column;align-items:flex-start}}
 
-/* ===================== multi-colour accents (gold stays the brand/CTA colour) ===================== */
 .home{--k1:#2f6bff;--k1b:#e6eeff;--k2:#8b4dff;--k2b:#f0e8ff;--k3:#12a874;--k3b:#dff7ee;--k4:#ff5a6e;--k4b:#ffe7ea;--k5:#0fa5c9;--k5b:#dcf5fb;--k6:#ff8a1f;--k6b:#fff0de}
 [data-theme="dark"] .home{--k1:#6d9bff;--k1b:#14213f;--k2:#b18bff;--k2b:#271a45;--k3:#3ddc9f;--k3b:#0f2c22;--k4:#ff7d8d;--k4b:#40161c;--k5:#4cd0ee;--k5b:#0d2c36;--k6:#ffa44d;--k6b:#3a2208}
 
-/* icon tiles cycle through the palette */
 .home .sk-stat:nth-child(6n+1) i,.home .sk-rows a:not(.gold):nth-child(6n+1) i,.home .sk-why-c:nth-child(6n+1) i,.home .sk-feats li:nth-child(6n+1) i,.home .sk-support .list a:nth-child(6n+1) i{background:var(--k1b);color:var(--k1)}
 .home .sk-stat:nth-child(6n+2) i,.home .sk-rows a:not(.gold):nth-child(6n+2) i,.home .sk-why-c:nth-child(6n+2) i,.home .sk-feats li:nth-child(6n+2) i,.home .sk-support .list a:nth-child(6n+2) i{background:var(--k2b);color:var(--k2)}
 .home .sk-stat:nth-child(6n+3) i,.home .sk-rows a:not(.gold):nth-child(6n+3) i,.home .sk-why-c:nth-child(6n+3) i,.home .sk-feats li:nth-child(6n+3) i,.home .sk-support .list a:nth-child(6n+3) i{background:var(--k3b);color:var(--k3)}
@@ -482,7 +457,6 @@
 .home .sk-stat:nth-child(6n) i,.home .sk-rows a:not(.gold):nth-child(6n) i,.home .sk-why-c:nth-child(6n) i,.home .sk-feats li:nth-child(6n) i,.home .sk-support .list a:nth-child(6n) i{background:var(--k6b);color:var(--k6)}
 [data-theme="dark"] .home .sk-stat:nth-child(n) i,[data-theme="dark"] .home .sk-rows a:not(.gold):nth-child(n) i,[data-theme="dark"] .home .sk-why-c:nth-child(n) i,[data-theme="dark"] .home .sk-feats li:nth-child(n) i,[data-theme="dark"] .home .sk-support .list a:nth-child(n) i{filter:none}
 
-/* programme cards: coloured top bar + chip per card */
 .home .sk-pcard:nth-child(4n+1){--pc:var(--k1);--pcb:var(--k1b)}
 .home .sk-pcard:nth-child(4n+2){--pc:var(--k3);--pcb:var(--k3b)}
 .home .sk-pcard:nth-child(4n+3){--pc:var(--k2);--pcb:var(--k2b)}
@@ -491,7 +465,6 @@
 .home .sk-pcard .foot span,.home .sk-pcard .foot em{border-color:var(--pc)}
 .home .sk-pcard::before{background:linear-gradient(90deg,var(--pc),var(--gold))!important}
 
-/* colour-blob backdrops behind sections */
 .home .sk-band,.home .sk-band2{position:relative;overflow:hidden}
 .home .sk-band::before,.home .sk-band2::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.35;pointer-events:none;z-index:0}
 .home .sk-band::before{top:-140px;right:-120px;background:var(--k2)}
@@ -500,7 +473,6 @@
 .home .sk-hero{position:relative}
 .home .sk-hero::after{content:"";position:absolute;right:6%;top:18%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,var(--k4) 0%,transparent 70%);opacity:.22;pointer-events:none}
 
-/* tabs, toggles, ledger rows, buttons */
 .home .sk-sum{border-image:none}
 .home .sk-cur .on,.home .sk-tabs button.on{box-shadow:0 8px 20px -10px var(--k2)}
 .home .sk-ledger tbody tr:nth-child(4n+1) td:first-child{box-shadow:inset 3px 0 0 var(--k1)}
@@ -513,21 +485,18 @@
 .home .sk-addons button:nth-child(4) .ico{background:var(--k2b);color:var(--k2)}
 .home .sk-addons .on .ico{background:var(--gold)!important;color:var(--ink)!important}
 
-/* headline sub-lines and footer social get a gradient accent */
 .home h1 em,.home .sk-sub{background:linear-gradient(90deg,var(--gold-d),#ff8a1f 55%,#ff5a6e);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 [data-theme="dark"] .home h1 em,[data-theme="dark"] .home .sk-sub{background:linear-gradient(90deg,#ffd34d,#ff9a3c 55%,#ff7d8d);-webkit-background-clip:text;background-clip:text}
-/* perf: gradients instead of blur filters */
+
 .home .sk-band::before,.home .sk-band2::before{filter:none;border-radius:0;opacity:.22;width:640px;height:640px}
 .home .sk-band::before{background:radial-gradient(circle,var(--k2) 0%,transparent 65%)}
 .home .sk-band2::before{background:radial-gradient(circle,var(--k5) 0%,transparent 65%)}
 
-/* ===== calmer palette: no smeared gradients, gold only for brand + primary actions ===== */
 .home .sk-band::before,.home .sk-band2::before,.home .sk-hero::after{display:none!important}
 .home h1 em,.home .sk-sub,[data-theme="dark"] .home h1 em,[data-theme="dark"] .home .sk-sub{background:none!important;-webkit-text-fill-color:currentColor;color:var(--gold-ink)}
 .home .sk-pcard::before{background:var(--pc)!important}
 .home .sk-ledger tbody tr td:first-child{box-shadow:none!important}
 
-/* neutral surfaces instead of yellow washes */
 .home{--soft:#f1f3f8;--soft2:#f7f8fb;--border:#e6e8ef}
 [data-theme="dark"] .home{--soft:#1c1f2a;--soft2:#14161d;--border:#262a36}
 .home .sk-cmp .sel{background:#fbf6e4!important;box-shadow:none}
@@ -554,19 +523,17 @@
 [data-theme="dark"] .home .sk-toggle button.on,[data-theme="dark"] .home .sk-tabs button.on{background:var(--fg);color:#0a0906}
 .home .sk-cmp-m .sizes button.on{background:var(--fg);border-color:var(--fg);color:var(--bg)}
 
-/* ===== neutral text + icons (pure white/black, no cream tint) ===== */
 .home{--fg:#0d0d0d;--muted:#5c5f66;--soft:#f1f2f5;--soft2:#f6f7f9;--border:#e4e6ea;--gold-ink:#7a5a00}
 [data-theme="dark"] .home{--fg:#ffffff;--muted:#b4b7bf;--soft:#1b1d23;--soft2:#14161b;--border:#2a2d35;--gold-ink:#ffc400;--card:#101216}
 [data-theme="dark"] .home .sk-card,[data-theme="dark"] .home .sk-cmp-m .card{background:#101216}
 [data-theme="dark"] .home .sk-rows a,[data-theme="dark"] .home .sk-crit li,[data-theme="dark"] .home .sk-addons button,[data-theme="dark"] .home .sk-win .kv div{background:#14161b}
-/* icons: neutral glyph on neutral tile */
+
 .home .sk-stat i,.home .sk-rows a:not(.gold) i,.home .sk-why-c i,.home .sk-feats i,.home .sk-support .list i,.home .sk-addons .ico,.home .sk-stat:nth-child(n) i,.home .sk-rows a:not(.gold):nth-child(n) i,.home .sk-why-c:nth-child(n) i,.home .sk-feats li:nth-child(n) i,.home .sk-support .list a:nth-child(n) i,.home .sk-addons button:nth-child(n) .ico{background:var(--soft)!important;color:var(--fg)!important}
 [data-theme="dark"] .home .sk-stat i,[data-theme="dark"] .home .sk-rows a:not(.gold) i,[data-theme="dark"] .home .sk-why-c i,[data-theme="dark"] .home .sk-feats i,[data-theme="dark"] .home .sk-support .list i{background:#1f2229!important;color:#fff!important}
 .home .sk-cmp tbody th svg,.home .sk-cmp .rl svg,.home .sk-win svg,.home .sk-fnote h4 svg,.home .sk-reward svg,.home .sk-sum svg,.home .sk-cmp-m svg{color:var(--fg)}
 .home .sk-cmp .rl .info,.home .sk-cmp .rl svg.info{color:var(--muted)}
 .home .sk-sub,.home h1 em{color:var(--gold-ink)}
 
-/* small text: neutral. Gold stays only on headline sub-lines + CTA */
 .home{--gold-ink:var(--fg)}
 [data-theme="dark"] .home{--gold-ink:#fff}
 .home .sk-sub,.home h1 em{color:#a87b00}
@@ -577,7 +544,6 @@
 .home .sk-cmp .sel .chip{background:var(--soft);color:var(--fg)}
 .home .sk-btn-gold,.home .sk-btn-gold *{color:#1a1403}
 
-/* app screens: phone frame, light/dark screenshots follow the theme */
 .home .sk-device-stage{display:flex;flex-direction:column;align-items:center;gap:22px;padding:34px 0;border-radius:32px;background:var(--soft2);border:1px solid var(--border)}
 .home .sk-device{width:min(290px,72vw);padding:9px;border-radius:44px;background:#0d0d0f;box-shadow:0 30px 60px -28px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08) inset}
 .home .sk-device-screen{position:relative;aspect-ratio:923/1500;border-radius:36px;overflow:hidden;background:#000}
@@ -592,7 +558,7 @@
 .home .sk-device-tabs button.on{background:var(--fg);color:var(--bg)}
 [data-theme="dark"] .home .sk-device-stage{background:#101216}
 [data-theme="dark"] .home .sk-device{background:#2a2d33}
-/* real iPhone render (nha kho iphone-air): no hand-drawn frame */
+
 .home .sk-device{width:min(340px,80vw);padding:0;border-radius:0;background:none;box-shadow:none;position:relative;aspect-ratio:700/1396}
 .home .sk-device-page{position:absolute;inset:0}
 .home .sk-device-page img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 34px 34px rgba(0,0,0,.28))}
@@ -600,7 +566,6 @@
 .home .sk-device-stage{padding:34px 0 30px;overflow:hidden}
 .home .sk-device{width:min(300px,76vw)}
 
-/* ===== closing banner: brand card, text left, phones rising from the bottom edge and cropped ===== */
 .home .sk-cta{display:grid;grid-template-columns:1.1fr .9fr;align-items:stretch;min-height:400px;border-radius:32px;overflow:hidden;color:#16120a;background:linear-gradient(120deg,#f6c92f 0%,#e9ac0a 100%);box-shadow:0 30px 60px -34px rgba(160,110,0,.6)}
 .home .sk-cta::after{display:none}
 .home .sk-cta img{position:static;inset:auto}
@@ -636,19 +601,15 @@
 .home .sk-cta-shot .ph1{left:44%;bottom:auto;top:26%}
 @media(max-width:900px){.home .sk-cta-shot .ph{width:44%;top:10%}.home .sk-cta-shot .ph0{top:4%}.home .sk-cta-shot .ph1{top:16%}}
 
-
-/* ---- integration with the site shell (Tailwind preflight + global heading rules) ---- */
 .gft-home .home section h2{text-transform:none;font-weight:600;font-size:clamp(28px,3.4vw,44px)}
 @media(max-width:700px){.gft-home .home section h2{font-size:clamp(25px,7vw,32px)}}
 .home svg,.home img{display:inline-block;vertical-align:middle;max-width:none}
 .home img.lt,.home img.dk{display:block}
 
-/* hero banner: about two thirds of the viewport, content centred below the site navbar */
 .home .sk-hero{margin-top:0;display:flex;align-items:center;min-height:66svh;padding:104px 0 64px}
 .home .sk-hero-in{width:100%}
 @media(max-width:700px){.home .sk-hero{min-height:66svh;padding:96px 0 48px}}
 
-/* desktop app: the screen is half hidden, cropped by the card on the right and at the bottom */
 .home .sk-desk{position:relative;height:460px;border-radius:32px;overflow:hidden;background:var(--soft2);border:1px solid var(--border);box-shadow:var(--shadow)}
 .home .sk-desk img{position:absolute;left:7%;top:42px;width:128%;height:auto;max-width:none;filter:drop-shadow(0 34px 40px rgba(0,0,0,.28))}
 .home .sk-desk .dk{display:none}
@@ -660,26 +621,20 @@
 .home .sk-desk img{left:9%;top:56px;width:142%}
 @media(max-width:900px){.home .sk-desk{height:360px}.home .sk-desk img{left:6%;top:36px;width:150%}}
 
-/* reward total: the trophy picture is the background of the block */
 .home .sk-reward-total,[data-theme="dark"] .home .sk-reward-total{min-height:128px;align-content:space-between;background:linear-gradient(90deg,rgba(12,14,46,.88) 0%,rgba(12,14,46,.55) 46%,rgba(12,14,46,.05) 100%),url(/home/reward-trophy.jpg) 84% 34%/cover no-repeat;border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 34px -16px rgba(8,10,40,.7)}
 .home .sk-reward-total i{background:rgba(255,255,255,.22)}
 .home .sk-reward-total{justify-content:flex-start;gap:6px 30px;flex-wrap:wrap}
 .home .sk-reward-total .r{text-align:left}
 .home .sk-reward-total small{opacity:.85}
 
-/* total block straddles the bottom edge of the reward card: half over it, half floating below */
 .home .sk-reward{top:46%;padding-bottom:84px}
 .home .sk-reward-total{position:absolute;left:22px;right:22px;bottom:-62px;z-index:2;box-shadow:0 30px 46px -14px rgba(5,8,36,.75),0 0 0 1px rgba(255,255,255,.16)}
 @media(max-width:700px){.home .sk-panel-r{padding-bottom:96px}}
 
-/* ===================== motion system =====================
-   one easing curve and a few durations; everything below uses them.
-   Entrance of blocks is driven by HomeMotion (.rv -> data-seen); the hero plays CSS keyframes. */
 .home{--ease:cubic-bezier(.22,1,.36,1);--t-fast:.18s;--t-base:.3s;--t-slow:.7s}
 .home .sk-orb{display:none}
 @media(prefers-reduced-motion:reduce){.home .sk-orb{animation:none}}
 
-/* hero intro */
 @keyframes sk-rise{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:none}}
 @keyframes sk-hero-zoom{from{transform:scale(1.07)}to{transform:scale(1)}}
 .home .sk-hero-img{animation:sk-hero-zoom 1.8s var(--ease) both}
@@ -689,19 +644,15 @@
 .home .sk-hero .sk-actions{animation-delay:.27s}
 .home .sk-hero .sk-stats{animation-delay:.42s}
 
-/* entrance of blocks */
 .home .rv{opacity:0;transform:translate3d(0,18px,0);transition:opacity var(--t-slow) var(--ease) calc(var(--rv-i,0) * 70ms),transform var(--t-slow) var(--ease) calc(var(--rv-i,0) * 70ms);will-change:opacity,transform}
 .home .rv[data-seen]{opacity:1;transform:none}
 
-/* progress bar fills when seen */
 .home .sk-reward-total u{transform:scaleX(0);transform-origin:left center;transition:transform 1.2s var(--ease) .35s}
 .home .sk-reward-total[data-seen] u{transform:none}
 
-/* desktop app slides up inside its frame */
 .home .sk-desk img{transform:translateY(34px);transition:transform 1.1s var(--ease) .15s}
 .home .sk-desk[data-seen] img,.home .sk-desk:not(.rv) img{transform:none}
 
-/* interactions */
 .home .sk-btn{transition:transform var(--t-fast) var(--ease),box-shadow var(--t-base) var(--ease),background-color var(--t-base),border-color var(--t-base),color var(--t-base)}
 .home .sk-btn:hover{transform:translateY(-2px)}
 .home .sk-btn:active{transform:translateY(0) scale(.98)}
@@ -715,15 +666,11 @@
 .home .sk-tabs button,.home .sk-toggle button{transition:background-color var(--t-base) var(--ease),color var(--t-base),box-shadow var(--t-base)}
 .home .sk-cmp td,.home .sk-cmp th{transition:background-color var(--t-base)}
 
-/* accordion content eases in */
 @keyframes sk-open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .home details[open]>:not(summary){animation:sk-open .35s var(--ease)}
 .home details summary svg{transition:transform var(--t-base) var(--ease)}
 .home details[open] summary svg{transform:rotate(180deg)}
 
-/* ===================== scale tuned to a reference prop-firm site =====================
-   measured at 1662px: h1 80/600 (-0.04em), h2 36-40/600 (-0.02..-0.03em), body 14px, labels 11-13px,
-   buttons 8px radius, cards 12-24px radius, sections ~80px, container 1344px. */
 .home{--shadow:0 1px 2px rgba(20,20,30,.04),0 10px 28px -16px rgba(20,20,30,.16)}
 .home .sk-wrap{max-width:1280px}
 .home .sk-section{padding-top:80px;padding-bottom:80px}
@@ -761,15 +708,12 @@
   .home .sk-panel-l{padding:28px 20px}
 }
 
-/* hero content sits at the bottom of the banner so the rating row meets the next section */
 .home .sk-hero{align-items:flex-end;padding:104px 0 32px}
 .home .sk-stats{margin-top:56px}
 @media(max-width:700px){.home .sk-hero{padding:96px 0 28px}.home .sk-stats{margin-top:36px}}
 
-/* add-ons: no icon tiles */
 .home .sk-addons button{grid-template-columns:1fr auto}
 
-/* ===================== feature cards: flat, even, modern ===================== */
 .home .sk-why{grid-template-columns:repeat(4,1fr);grid-template-areas:none;gap:16px;margin-top:40px}
 .home .sk-why .sk-why-c,.home .sk-why .sk-why-banner{grid-area:auto}
 .home .sk-why-banner{grid-column:1/-1;order:9;min-height:190px;border-radius:20px}
@@ -785,16 +729,13 @@
 @media(max-width:560px){.home .sk-why{grid-template-columns:1fr}.home .sk-why-c{min-height:0}.home .sk-why-banner{order:9;min-height:170px}.home .sk-why-banner>div{padding:24px}}
 .home .sk-why .sk-why-banner{grid-column:1/-1}
 
-/* ===================== one column: every block shares the navbar/footer container ===================== */
 .home .sk-wrap{max-width:1760px;padding-left:32px;padding-right:32px}
 @media(max-width:640px){.home .sk-wrap{padding-left:16px;padding-right:16px}}
 
-/* hero banner is boxed to that container with soft edges instead of bleeding to the viewport */
 .home .sk-hero{overflow:visible}
 .home .sk-hero-img{left:0;right:0;margin-inline:auto;inset-inline:0;width:min(100%,1760px);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%),linear-gradient(180deg,#000 72%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%),linear-gradient(180deg,#000 72%,transparent 100%);mask-composite:intersect}
 .home .sk-hero-fade{left:0;right:0;margin-inline:auto;width:min(100%,1760px)}
 
-/* proof row: figures on the left, two highlights on the right */
 .home .sk-stats{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;margin-top:48px}
 .home .sk-stats-l,.home .sk-stats-r{display:flex;flex-wrap:wrap;align-items:center;gap:20px 44px}
 .home .sk-stat i,.home .sk-stat:nth-child(n) i{width:auto;height:auto;background:none!important;color:var(--fg)!important}
@@ -806,7 +747,6 @@
 .home .sk-rate a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.home .sk-stats-r{width:100%}}
 
-/* banner keeps one proportion inside the shared frame (no stretching with the window height) */
 .home .sk-hero{width:min(100%,1760px);margin-inline:auto;min-height:0;aspect-ratio:2.2/1;max-height:820px;padding:96px 32px 32px;box-sizing:border-box}
 .home .sk-hero-img{width:100%;object-fit:cover;object-position:78% 38%}
 .home .sk-hero-fade{width:100%}
@@ -815,12 +755,10 @@
 .home .sk-hero{aspect-ratio:2.6/1;min-height:540px;max-height:760px}
 @media(max-width:900px){.home .sk-hero{aspect-ratio:auto}}
 
-/* fixed frame: the same 1344px column as navbar, footer and every page */
 .home .sk-wrap{max-width:1344px}
 .home .sk-hero{width:min(100%,1344px);aspect-ratio:2/1;min-height:540px;max-height:760px}
 @media(max-width:900px){.home .sk-hero{aspect-ratio:auto;min-height:540px}}
 
-/* banner = one fixed card: hard edges, fixed size, nothing moving or fading at the border */
 .home .sk-hero{margin-top:12px;border-radius:24px;overflow:hidden;background:var(--soft2);border:1px solid var(--border)}
 .home .sk-hero-img{animation:none;-webkit-mask-image:none;mask-image:none;transform:none;object-position:78% 38%}
 .home .sk-hero-fade,[data-theme="dark"] .home .sk-hero-fade{background:linear-gradient(90deg,rgba(255,253,248,.97) 0%,rgba(255,253,248,.84) 34%,rgba(255,253,248,0) 68%)}
@@ -828,15 +766,12 @@
 [data-theme="dark"] .home .sk-hero-img{filter:brightness(.85) saturate(1.1)}
 @media(max-width:900px){.home .sk-hero{border-radius:20px;margin-top:8px}.home .sk-hero-fade,[data-theme="dark"] .home .sk-hero-fade{background:linear-gradient(180deg,rgba(255,253,248,.7),rgba(255,253,248,.92) 60%)}[data-theme="dark"] .home .sk-hero-fade{background:linear-gradient(180deg,rgba(10,9,6,.6),rgba(10,9,6,.9) 60%)}}
 
-/* banner card lines up with the content column below it (1280 wide), same left and right edge */
 .home .sk-hero{width:min(calc(100% - 64px),1280px);padding:96px 40px 36px}
 @media(max-width:640px){.home .sk-hero{width:calc(100% - 32px);padding:92px 20px 28px}}
 
-/* banner: square, no border */
 .home .sk-hero,.home .sk-hero-img{border:0;border-radius:0}
 @media(max-width:900px){.home .sk-hero{border-radius:0}}
 
-/* banner background glows in the middle and melts into the page on every side (fixed 1344px box) */
 .home .sk-hero{width:min(100%,1344px);background:none;border:0;border-radius:0;overflow:visible;margin-top:0;padding:96px 32px 36px}
 .home .sk-hero-img{
   -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 11%,#000 89%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 66%,transparent 100%);
@@ -847,21 +782,18 @@
 [data-theme="dark"] .home .sk-hero-fade{background:linear-gradient(90deg,rgba(10,9,6,.96) 0%,rgba(10,9,6,.78) 30%,rgba(10,9,6,0) 64%)}
 @media(max-width:640px){.home .sk-hero{padding:92px 16px 28px}}
 
-/* type: Inter for text and interface, DM Sans for headlines and figures (same pairing as the reference) */
 .home{font-family:var(--font-inter),var(--font-sans),system-ui,sans-serif;font-size:14px}
 .home h1,.home h2,.home h3,.home .sk-sub,.home .sk-stat b,.home .sk-rate b,.home .sk-mini b,.home .sk-reward-h b,.home .sk-reward-total b,.home .sk-excard b,.home .sk-cmp .pr,.home .sk-sum b{font-family:var(--font-dm),var(--font-sans),system-ui,sans-serif}
 .home .sk-p,.home .sk-lead,.home .sk-intro{font-size:15px}
 .home *{font-family:var(--font-inter),var(--font-sans),system-ui,sans-serif}
 .home h1,.home h2,.home h3,.home .sk-sub,.home .sk-stat b,.home .sk-rate b,.home .sk-mini b,.home .sk-reward-h b,.home .sk-reward-total b,.home .sk-excard b,.home .sk-sum b,.home .sk-why-c h3,.home .sk-pcard b{font-family:var(--font-dm),var(--font-sans),system-ui,sans-serif}
 
-/* proof row: three figures + one rating block with five stars underneath */
 .home .sk-rate{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
 .home .sk-rate b{font-size:24px;line-height:1.1}
 .home .sk-rate span{display:block}
 .home .sk-rate .sk-stars{display:flex;gap:3px;margin-top:3px;color:#f2b400}
 .home .sk-rate .sk-stars{color:#00b67a}
 
-/* hero type + proof row, tuned to the reference (DM Sans 600 figures, Inter 11px labels, 8px buttons) */
 .gft-home .home .sk-hero h1{font-weight:600;letter-spacing:-.04em !important;line-height:1.1 !important}
 .home .sk-hero .sk-lead{font-size:16px;line-height:1.6;font-weight:400;max-width:520px}
 .home .sk-hero .sk-btn{border-radius:8px;font-size:14px;font-weight:500}
@@ -876,20 +808,15 @@
 .home .sk-rate{gap:2px}
 .home .sk-rate .sk-stars{margin-top:4px}
 
-/* payout-cycle block: icon tile on the left, figure and label on the right */
 .home .sk-stats-r{gap:20px 48px}
 .home .sk-cycle i,.home .sk-cycle:nth-child(n) i{width:44px;height:44px;border-radius:12px;background:var(--soft)!important;border:1px solid var(--border);display:grid;place-items:center;color:var(--fg)!important}
 .home .sk-cycle b{font-size:24px}
 
-/* laptop with the live app on its screen: picture on the left, text on the right, cropped by its card */
 .home .sk-two-rev{grid-template-columns:1.05fr 1fr}
 .home .sk-desk{position:relative;height:500px;border-radius:24px;overflow:hidden;background:var(--soft2);border:1px solid var(--border);box-shadow:var(--shadow)}
 [data-theme="dark"] .home .sk-desk{background:#101216}
 @media(max-width:900px){.home .sk-two-rev{grid-template-columns:1fr}.home .sk-desk{height:360px;order:2}}
 
-/* app screen (1920 x 1240), colours follow the theme */
-
-/* feature chips that open into details */
 .home .sk-feats-acc{align-items:start}
 .home .sk-feat{background:var(--bg);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);transition:border-color var(--t-base),box-shadow var(--t-base)}
 .home .sk-feat.on{grid-column:1/-1;border-color:color-mix(in srgb,var(--fg) 28%,transparent)}
@@ -904,16 +831,13 @@
 .home .sk-feat.on .body p{padding:2px 16px 16px}
 @media(max-width:560px){.home .sk-feats-acc{grid-template-columns:1fr}}
 
-/* payout cards: no coloured top rule; the amount reads as profit (green) */
 .home .sk-pcard::before{display:none!important}
 .home .sk-pcard strong{color:#12a066}
 [data-theme="dark"] .home .sk-pcard strong{color:#3ddc9f}
 
-/* the mark is always gold (no black version) */
 [data-theme="light"] .home .sk-pcard .top .logo,[data-theme="light"] .home .sk-mark{color:#e9b000}
 [data-theme="dark"] .home .sk-pcard .top .logo,[data-theme="dark"] .home .sk-mark{color:#ffc400}
 
-/* feature list: one quiet accordion column, hairline dividers, nothing re-flows around it */
 .home .sk-feats.sk-feats-acc{display:block;margin:26px 0 28px;border-top:1px solid var(--border)}
 .home .sk-feats-acc .sk-feat{background:none!important;border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;box-shadow:none!important;grid-column:auto}
 .home .sk-feats-acc .sk-feat.on{border-color:var(--border)!important}
@@ -923,10 +847,7 @@
 .home .sk-feats-acc .sk-feat>button:hover span{color:var(--fg)}
 .home .sk-feats-acc .sk-feat .body p{padding:0 2px 0 46px;font-size:13.5px;line-height:1.65;color:var(--muted)}
 .home .sk-feats-acc .sk-feat.on .body p{padding:0 2px 16px 46px}
-/* whole laptop sits inside its card with breathing room (nothing cut at the sides) */
 
-
-/* ===================== why: one framed slider (arrows, dots, auto-advance) ===================== */
 .home .sk-slides{position:relative;margin-top:40px;height:clamp(380px,40vw,520px);overflow:hidden;background:#111;color:#fff}
 .home .sk-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .8s var(--ease),visibility .8s}
 .home .sk-slide.on{opacity:1;visibility:visible}
@@ -947,7 +868,6 @@
 @media(max-width:640px){.home .sk-slides .nav{display:none}.home .sk-slide .cap{bottom:68px}.home .sk-slide .cap p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.home .sk-slide>img{transition:none}}
 
-/* slider captions live in their own bar under the picture, so text never covers the people or objects */
 .home .sk-slides{height:clamp(420px,42vw,560px);background:#0f1115}
 .home .sk-slide>img{inset:0 0 108px 0;width:100%;height:calc(100% - 108px)}
 .home .sk-slide::after{display:none}
@@ -966,7 +886,6 @@
   .home .sk-slide .cap a{grid-column:1;grid-row:3;margin-top:8px}
 }
 
-/* laptop picture fills its card; light and dark renders swap with the theme */
 .home .sk-desk{position:relative;height:500px;border-radius:0;overflow:hidden;background:#f1f2f5;border:0;box-shadow:none}
 .home .sk-desk img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;filter:none;transform:none}
 .home .sk-desk .dk{display:none}
@@ -975,10 +894,9 @@
 [data-theme="dark"] .home .sk-desk .dk{display:block}
 @media(max-width:900px){.home .sk-desk{height:360px}}
 .home .sk-desk{border-radius:24px}
-/* the 5-day highlight shows a bare icon, like the other figures (no tile behind it) */
+
 .home .sk-cycle i,.home .sk-cycle:nth-child(n) i{width:auto;height:auto;background:none!important;border:0!important;border-radius:0;color:var(--fg)!important}
 
-/* ===== pictures follow the theme: dark mode keeps colour and depth (no flat dimming), light mode stays airy ===== */
 .home .sk-dark{border:1px solid rgba(255,255,255,.08)}
 .home .sk-dark::after{background:linear-gradient(160deg,rgba(38,28,6,.74) 0%,rgba(84,62,12,.38) 62%,rgba(0,0,0,.12) 100%)}
 .home .sk-dark img{filter:saturate(1.08) contrast(1.04)}
@@ -990,10 +908,8 @@
 [data-theme="dark"] .home .sk-hero-img{filter:brightness(.9) saturate(1.12) contrast(1.05)}
 .home .sk-hero-img,.home .sk-dark img,.home .sk-panel-r>img,.home .sk-support>img{transition:none}
 
-/* program tabs: the selected tab uses the system gold in both themes (not the dark ink) */
 .home .sk-tabs button.on,[data-theme="dark"] .home .sk-tabs button.on{background:var(--gold);color:var(--ink);box-shadow:0 8px 20px -10px rgba(217,164,6,.7)}
 
-/* ===================== laptop: photo body + crisp app screen warped onto it (see DeskImage.tsx) ===================== */
 .home .sk-desk{--H:500}
 @media(max-width:900px){.home .sk-desk{--H:360}}
 .home .sk-desk .lap{position:absolute;top:0;left:50%;height:100%;transform:translateX(-50%);overflow:hidden}

@@ -10,7 +10,6 @@ export type LegalBlock =
 
 const INDENT = ['pl-0', 'pl-6 sm:pl-8', 'pl-12 sm:pl-16', 'pl-[4.5rem] sm:pl-24', 'pl-24 sm:pl-32'];
 
-/** Translated copies live in /public/legal-i18n/<doc>/<lang>.json (same block structure as the English source) and are fetched on demand. */
 const translationCache = new Map<string, Promise<LegalBlock[] | null>>();
 function loadTranslation(doc: string, lang: string): Promise<LegalBlock[] | null> {
   const key = `${doc}/${lang}`;
@@ -24,10 +23,6 @@ function loadTranslation(doc: string, lang: string): Promise<LegalBlock[] | null
   return p;
 }
 
-/**
- * A policy document straight from the signed Word files: numbering, bold, italics and tables kept as written.
- * `blocks` is the English original; when `doc` is given the document is shown in the visitor's language if a translation exists.
- */
 export const LegalDocument: React.FC<{ blocks: LegalBlock[]; doc?: string }> = ({ blocks: source, doc }) => {
   const { currentLang } = useLanguage();
   const [translated, setTranslated] = useState<{ key: string; blocks: LegalBlock[] } | null>(null);

@@ -61,27 +61,27 @@ export const PageHeroBanner: React.FC<PageHeroBannerProps> = ({
 }) => {
   return (
     <section className="relative flex flex-col justify-center pt-28 pb-14 sm:pt-32 sm:pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-neutral-50 dark:bg-[#060709] border-b border-neutral-200/80 dark:border-white/10 text-neutral-900 dark:text-white w-full transition-colors duration-300">
-      {/* BACKGROUND: GOLD GLOW + FADING GRID */}
+      {}
       <div aria-hidden className="hero-bg" />
 
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10 flex-1 flex flex-col justify-center">
-        
-        {/* 2-COLUMN HERO BANNER */}
+
+        {}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-center my-auto">
-          
-          {/* LEFT COLUMN: TYPOGRAPHY & CONTROLS (7 COLS) */}
+
+          {}
           <div className="lg:col-span-7 text-center lg:text-left reveal-left">
-            {/* MAIN HEADLINE */}
+            {}
             <h1 className="gft-title text-[28px] sm:text-4xl lg:text-5xl font-black leading-[1.1] mb-6 text-neutral-900 dark:text-white drop-shadow-sm">
               {title}
             </h1>
 
-            {/* SUBTITLE */}
+            {}
             <p className="text-base sm:text-xl font-normal leading-relaxed text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto lg:mx-0 mb-8 sm:mb-10">
               {subtitle}
             </p>
 
-            {/* CTAS */}
+            {}
             {(primaryCta || secondaryCta) && (
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-5 mb-8">
                 {primaryCta && (
@@ -107,7 +107,7 @@ export const PageHeroBanner: React.FC<PageHeroBannerProps> = ({
               </div>
             )}
 
-            {/* FEATURE PILLS */}
+            {}
             {features && features.length > 0 && (
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
                 {features.map((feat, idx) => (
@@ -123,14 +123,14 @@ export const PageHeroBanner: React.FC<PageHeroBannerProps> = ({
             )}
           </div>
 
-          {/* RIGHT COLUMN: 3D ILLUSTRATION CARD & FLOATING BADGES (5 COLS) */}
+          {}
           <div className="lg:col-span-5 relative scale-100 lg:scale-105 xl:scale-110 origin-center reveal-right">
             <div className="relative mx-auto max-w-lg lg:max-w-none w-full">
-              
-              {/* MAIN 3D IMAGE CARD: matted frame so dark artwork sits cleanly on both light and dark pages */}
+
+              {}
               <div className="hero-image-frame relative rounded-3xl p-2 sm:p-2.5 group hover-float reveal-scale">
                 <div className="relative rounded-2xl overflow-hidden bg-[#0b0b0d] aspect-[4/3] sm:aspect-[16/11]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  {}
                   <img
                     src={imageSrc}
                     alt={imageAlt}
@@ -140,7 +140,7 @@ export const PageHeroBanner: React.FC<PageHeroBannerProps> = ({
                 </div>
               </div>
 
-              {/* FLOATING BADGE 1 (TOP LEFT) */}
+              {}
               {floatingBadge1 && (
                 <div className="absolute -top-5 -left-5 hidden sm:flex items-center gap-3.5 p-4 sm:p-5 rounded-2xl bg-white/95 dark:bg-black/85 border-2 border-[#f6bf4a]/40 dark:border-[#ffc501]/50 backdrop-blur-xl shadow-xl hover-float transition-all text-neutral-900 dark:text-white animate-float-slow">
                   {floatingBadge1.icon && (
@@ -159,7 +159,7 @@ export const PageHeroBanner: React.FC<PageHeroBannerProps> = ({
                 </div>
               )}
 
-              {/* FLOATING BADGE 2 (BOTTOM RIGHT) */}
+              {}
               {floatingBadge2 && (
                 <div className="absolute -bottom-5 -right-5 hidden sm:flex items-center gap-3.5 p-4 sm:p-5 rounded-2xl bg-white/95 dark:bg-black/85 border-2 border-[#f6bf4a]/40 dark:border-[#f6bf4a]/50 backdrop-blur-xl shadow-xl hover-float transition-all text-neutral-900 dark:text-white animate-float-slow">
                   {floatingBadge2.icon && (

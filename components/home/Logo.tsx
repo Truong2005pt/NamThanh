@@ -1,4 +1,4 @@
-/** ERACEX mark: three slanted bars, geometry traced from the supplied black/white logo artwork. */
+
 export default function Logo({ size = 28, color = "currentColor", className }: { size?: number; color?: string; className?: string }) {
   return (
     <svg viewBox="0 0 801 488" width={size} height={(size * 488) / 801} className={className} role="img" aria-label="ERACEX" fill={color}>

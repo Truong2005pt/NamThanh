@@ -214,7 +214,6 @@ const FOOTER_EXTRA_DICT: Record<string, {
   }
 };
 
-/** Social profiles. Paste the real address into `url`; an empty one renders as a placeholder link. */
 const SOCIALS: { name: string; url: string; icon: React.ReactNode }[] = [
   {
     name: "YouTube",
@@ -259,10 +258,6 @@ const SOCIALS: { name: string; url: string; icon: React.ReactNode }[] = [
   },
 ];
 
-/**
- * Payment marks shown above the copyright line. `enabled` must match what checkout really accepts
- * (card and PayPal today; PayProcc is named in the legal text). Switch a method on only when it is live.
- */
 const word = (t: string, cls = "text-lg font-extrabold tracking-tight") => <span className={`${cls} select-none`}>{t}</span>;
 const PAYMENTS: { name: string; enabled: boolean; mark: React.ReactNode }[] = [
   { name: "Visa", enabled: true, mark: word("VISA", "text-xl font-extrabold italic tracking-tight") },
@@ -2205,14 +2200,12 @@ const SLOGAN: Record<string, string> = {
   "nl": "Alles-in-één — Evaluatie- en financieringsplatform van de volgende generatie"
 };
 
-
 export const Footer: React.FC = () => {
   const pathname = usePathname();
   const { t, currentLang, setLanguage } = useLanguage();
   const fLinks = FOOTER_EXTRA_DICT[currentLang] || FOOTER_EXTRA_DICT['en'];
   const legalDict = ((disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)[currentLang] || (disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)['en']).links;
 
-  // Auth screens (login, sign-up, reset password) show no footer at all.
   if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup' || pathname === '/reset-password') {
     return null;
   }
@@ -2220,7 +2213,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="pt-16 pb-10 border-t app-border app-surface w-full">
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8">
-        {/* BRAND */}
+        {}
         <div className="pb-10">
           <Link href="/" aria-label="ERACEX">
             <BrandLogo size="md" showText={true} />
@@ -2242,7 +2235,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* LINK COLUMNS */}
+        {}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 pb-12 border-b app-border">
           {(FOOT_COLS[currentLang] || FOOT_COLS.en).map((c) => (
             <div key={c.title}>
@@ -2256,13 +2249,13 @@ export const Footer: React.FC = () => {
           ))}
         </div>
 
-        {/* LEGAL DISCLAIMERS (fixed wording supplied by the infrastructure partner) */}
+        {}
         <div className="pt-10">
           <h3 className="text-sm font-semibold app-text">{DISCLAIMER_TITLE[currentLang] || DISCLAIMER_TITLE.en}</h3>
         </div>
         <FooterDisclaimers />
 
-        {/* PAYMENT METHODS: only the ones switched on in PAYMENTS */}
+        {}
         <div className="pt-8 pb-3 text-center text-xs font-semibold uppercase tracking-wider app-text-secondary">
           {t.footer.paymentMethodsTitle}
         </div>
@@ -2272,7 +2265,7 @@ export const Footer: React.FC = () => {
           ))}
         </div>
 
-        {/* BOTTOM BAR: copyright on the left; language and legal links on the right */}
+        {}
         <div className="pt-8 flex flex-col-reverse sm:flex-row sm:items-end justify-between gap-6 text-xs app-text-muted">
           <div className="text-center sm:text-left">{t.footer.copyright}</div>
           <div className="flex flex-col items-center sm:items-end gap-4">

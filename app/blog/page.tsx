@@ -437,7 +437,7 @@ export default function BlogListingPage() {
 
   return (
     <div className="pb-20 app-bg app-text">
-      {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER WITH 3D ILLUSTRATION */}
+      {}
       <PageHeroBanner
         badgeText={d.badge}
         badgeIcon={<BookOpen className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
@@ -481,9 +481,9 @@ export default function BlogListingPage() {
 
       <ImageBand caption="markets" variant="accent" images={[{ src: '/images/trader-phone-laptop.jpg', alt: 'Trading on laptop and phone' }]} />
 
-      {/* 2. CATEGORIES FILTER & ARTICLE LIST (ID: articles) */}
+      {}
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8" id="articles">
-        {/* CATEGORIES */}
+        {}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           {categories.map((c) => (
             <button
@@ -501,7 +501,7 @@ export default function BlogListingPage() {
           ))}
         </div>
 
-        {/* ARTICLES GRID (ALTERNATING SESSION: UNROUNDED / SHARP EDGES) */}
+        {}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredPosts.map((post) => (
             <article

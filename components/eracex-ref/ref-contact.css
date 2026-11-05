@@ -1,4 +1,4 @@
-/* /contact: photo-led layout built from real photography and plain components */
+
 .ref-scope .cp-intro { max-width: 1120px; text-align: center; padding-top: 72px; padding-bottom: 56px; display: block; }
 .ref-scope .cp-intro > .eyebrow { display: block; }
 .ref-scope .cp-intro h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.04em; margin: 18px 0 18px; }
@@ -44,7 +44,6 @@
   .ref-scope .cp-community { grid-template-columns: 1fr; gap: 22px; }
 }
 
-/* ---- /contact banner ---- */
 .ref-scope .cp-hero { position: relative; overflow: hidden; background: #0b0b0e; }
 .ref-scope .cp-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 .ref-scope .cp-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 8, 11, 0.94) 0%, rgba(8, 8, 11, 0.72) 46%, rgba(8, 8, 11, 0.3) 100%); }
@@ -74,7 +73,6 @@
 .ref-scope .cpw-input span { opacity: 0.55; }
 .ref-scope .cpw-input i { width: 34px; height: 34px; border-radius: 10px; background: #f6c83d; }
 
-/* channels slide up over the banner */
 .ref-scope .cp-intro { margin-top: -96px; position: relative; z-index: 2; padding-top: 0; padding-bottom: 40px; }
 .ref-scope .cp-channel { background: #0c0c0f; }
 :root[data-theme='light'] .ref-scope .cp-channel { background: #ffffff; }
@@ -85,8 +83,6 @@
   .ref-scope .cp-hero-shade { background: linear-gradient(180deg, rgba(8, 8, 11, 0.9), rgba(8, 8, 11, 0.7)); }
 }
 
-/* ---- /contact lower sections: three different layouts ---- */
-/* 1. Registered address: full-width photo with an info panel laid over it */
 .ref-scope .cp-office { display: block !important; position: relative; padding: 0 !important; min-height: 470px; overflow: hidden; border-radius: 26px; }
 .ref-scope .cp-office figure { position: absolute !important; inset: 0; margin: 0; border: 0 !important; border-radius: 0 !important; min-height: 0 !important; }
 .ref-scope .cp-office figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -96,7 +92,6 @@
 }
 :root[data-theme='light'] .ref-scope .cp-office-copy { background: #ffffff; }
 
-/* 2. Company information: open typographic columns, no boxes */
 .ref-scope .cp-company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 72px; margin-top: 8px; }
 .ref-scope .cp-company-grid > * {
   border: 0 !important; border-top: 2px solid currentColor !important; border-radius: 0 !important; padding: 26px 0 8px !important; background: transparent !important;
@@ -106,7 +101,6 @@
 .ref-scope .cp-company-grid > * > span { display: block; padding: 10px 0; border-top: 1px solid var(--ref-card-line, rgba(255, 255, 255, 0.26)); font-size: 15px; }
 .ref-scope .cp-company-grid > * > span:first-of-type { margin-top: 14px; }
 
-/* 3. Community: photo banner with the copy on a glass panel */
 .ref-scope .cp-community { display: block !important; position: relative; padding: 0 !important; min-height: 420px; overflow: hidden; border-radius: 26px; }
 .ref-scope .cp-community-photo { position: absolute !important; inset: 0; aspect-ratio: auto !important; border: 0 !important; border-radius: 0 !important; margin: 0; }
 .ref-scope .cp-community-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(270deg, rgba(8, 8, 11, 0.86) 0%, rgba(8, 8, 11, 0.5) 50%, rgba(8, 8, 11, 0.1) 100%); }
@@ -125,12 +119,10 @@
   .ref-scope .cp-community > div:last-child { width: 100%; padding: 28px; }
 }
 
-/* banner follows the home-page frame: contained, rounded, not edge-to-edge */
 .ref-scope .cp-hero { width: calc(100% - 32px); max-width: 1344px; margin: 8px auto 0; border-radius: 28px; }
 .ref-scope .cp-hero-inner { padding-left: 48px; padding-right: 48px; padding-top: 64px; padding-bottom: 140px; }
 @media (max-width: 900px) { .ref-scope .cp-hero { width: calc(100% - 20px); border-radius: 20px; } .ref-scope .cp-hero-inner { padding-left: 22px; padding-right: 22px; } }
 
-/* banner sits flush on the page (no overlap) and follows the theme */
 .ref-scope .cp-hero-inner { padding-bottom: 84px; }
 .ref-scope .cp-intro { margin-top: 36px; }
 :root[data-theme='light'] .ref-scope .cp-hero { background: #f4efe3; border: 1px solid rgba(20, 20, 26, 0.18); }
@@ -143,7 +135,6 @@
 :root[data-theme='light'] .ref-scope .cp-hero-cta .cp-cta-ghost { background: rgba(255, 255, 255, 0.7); border-color: rgba(20, 20, 26, 0.5); }
 :root[data-theme='light'] .ref-scope .cp-widget { border-color: rgba(20, 20, 26, 0.18); }
 
-/* ---- banner blended into the page like the home hero: no box, no gap under the header ---- */
 .ref-scope .cp-hero, :root[data-theme='light'] .ref-scope .cp-hero {
   width: 100%; max-width: none; margin: -88px 0 0; padding-top: 88px; border: 0; border-radius: 0; background: transparent; overflow: visible; position: relative;
 }
@@ -166,7 +157,6 @@
   .ref-scope .cp-hero-bg { width: 100%; -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 100%); mask-image: linear-gradient(180deg, #000 30%, transparent 100%); opacity: 0.5; }
 }
 
-/* keep the banner inside the fixed 1344px frame (same as header and home hero), edges fade into the page */
 .ref-scope .cp-hero, :root[data-theme='light'] .ref-scope .cp-hero { width: 100%; max-width: 1344px; margin: -88px auto 0; }
 .ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
   width: min(82%, 1100px);
@@ -178,19 +168,16 @@
 .ref-scope .cp-hero-inner { max-width: none; padding-left: 64px; padding-right: 64px; }
 @media (max-width: 900px) { .ref-scope .cp-hero-inner { padding-left: 22px; padding-right: 22px; } }
 
-/* banner background fills the whole frame (not just the right part), edges fade into the page */
 .ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
   inset: 0; width: 100%; object-position: 62% center;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 26%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 26%), linear-gradient(270deg, transparent 0%, #000 14%), linear-gradient(180deg, #000 60%, transparent 100%);
 }
 
-/* logo marks sit directly on the surface, no tile behind them */
 .ref-scope .cpw-logo { background: transparent !important; width: auto; height: auto; border-radius: 0; }
 .ref-scope .cpw-logo img { width: 40px; }
 .ref-scope .cp-chat-avatar { background: transparent !important; }
 
-/* ---- live chat: launcher bottom-left, anchored panel ---- */
 .ref-scope .cp-chat-launcher {
   position: fixed; left: 24px; right: auto; bottom: 24px; z-index: 40; width: 58px; height: 58px; padding: 0; border-radius: 50%; display: grid; place-items: center;
   background: #f6c83d; border: 0; cursor: pointer; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
@@ -233,7 +220,6 @@
 .ref-scope .cp-chat-launcher { left: auto !important; right: 24px !important; }
 .ref-scope .cp-page .cp-chat-dialog { inset: auto 24px 94px auto !important; }
 
-/* ---- chat polish ---- */
 .ref-scope dialog.cp-chat-dialog { width: min(392px, calc(100vw - 32px)); max-height: min(580px, calc(100vh - 120px)); border-radius: 18px; font-size: 14px; }
 .ref-scope .cp-chat-head { padding: 14px 16px; gap: 12px; }
 .ref-scope .cp-chat-content { padding: 18px 16px; gap: 10px; min-height: 220px; background: #f3f1ec; }
@@ -250,7 +236,6 @@
 .ref-scope .cp-chat-form textarea::-webkit-scrollbar { display: none; }
 .ref-scope .cp-chat-form textarea::placeholder { color: #8a8678 !important; -webkit-text-fill-color: #8a8678 !important; opacity: 1; }
 
-/* ---- banner chat card: solid, crisp, same language as the live widget ---- */
 .ref-scope .cp-widget { opacity: 1 !important; width: min(400px, 100%); border-radius: 20px; background: #ffffff; border: 1px solid rgba(20, 20, 26, 0.12); box-shadow: 0 28px 60px rgba(0, 0, 0, 0.4); }
 .ref-scope .cpw-head { padding: 14px 18px; background: #15151a; border-bottom: 0; }
 .ref-scope .cp-widget .cpw-head, .ref-scope .cp-widget .cpw-head * { color: #f5f5f2 !important; -webkit-text-fill-color: #f5f5f2 !important; }
@@ -265,7 +250,6 @@
 .ref-scope .cpw-input span { flex: 1; height: 44px; display: flex; align-items: center; padding: 0 14px; border: 1.5px solid #cfcabd; border-radius: 12px; font-size: 14px; opacity: 1; color: #8a8678 !important; -webkit-text-fill-color: #8a8678 !important; margin-right: 10px; }
 .ref-scope .cpw-input i { width: 44px; height: 44px; border-radius: 12px; background: #f6c83d; flex: none; }
 
-/* ---- banner v2: trading-chart laptop photo, smooth edge blend (dark + white theme) ---- */
 .ref-scope .cp-hero-bg, :root[data-theme='light'] .ref-scope .cp-hero-bg {
   object-position: 70% center;
   -webkit-mask-image:
@@ -280,7 +264,7 @@
   mask-composite: intersect, intersect;
 }
 :root[data-theme='light'] .ref-scope .cp-hero-bg { filter: saturate(1.08) contrast(1.04); }
-/* white theme: soft wash behind the copy only, so text stays crisp without flattening the photo */
+
 :root[data-theme='light'] .ref-scope .cp-hero::before {
   content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background: linear-gradient(90deg, var(--ref-bg, #fff) 0%, rgba(255,255,255,.55) 30%, rgba(255,255,255,0) 52%);

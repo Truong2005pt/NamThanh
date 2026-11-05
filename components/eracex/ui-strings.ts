@@ -1,7 +1,5 @@
-// components/eracex/ui-strings.ts
-// Small UI strings (tooltips, aria labels, footer blocks) that are not part of the large dictionaries.
-// 'vi' and 'en' are the source languages; the other 13 are translations. Footer 'extra' blocks exist for the 13 translated languages only
-// (vi/en blocks live in FooterDisclaimers.tsx).
+
+
 export interface UiStr {
   changeLanguage: string; toggleTheme: string; themeAria: string; toDark: string; toLight: string; toggleMenu: string;
   legal: string; payment: string; brand: string; preview: string; programInfo: string;

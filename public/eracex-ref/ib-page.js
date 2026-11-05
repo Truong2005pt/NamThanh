@@ -1,4 +1,4 @@
-/* ERACEX partner policy — monthly marginal brackets, USD. */
+
 const ibState={revenue:30000,date:'2026-11-04'};
 function ibCommission(n){return Math.min(n,10000)*.08+Math.min(Math.max(n-10000,0),15000)*.12+Math.max(n-25000,0)*.18;}
 function ibSection(k,title,desc,body,id=''){return `<section class="ib-section wrap" ${id?`id="${id}"`:''}>${coHeading(k,title,desc)}${body}</section>`;}

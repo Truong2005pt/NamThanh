@@ -1,4 +1,4 @@
-/* Detail dialogs (parameter explanations, previews): centred card, clear header, ink-coloured text, no glow. */
+
 .ref-scope dialog {
   position: fixed; inset: 0; margin: auto; padding: 0; box-sizing: border-box;
   width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 40px); overflow-y: auto;
@@ -58,14 +58,12 @@
 .ref-scope dialog > h2 { margin: 24px 24px 10px !important; }
 .ref-scope dialog .metric-program { margin: 0 24px 20px !important; }
 
-/* The dialog surface follows the theme (an id-level legacy rule kept it dark in the light theme). */
 .ref-scope #metricDialog, .ref-scope #subDialog {
   background: var(--pdu-card) !important; color: var(--ref-ink) !important; border: 1px solid var(--pdu-line) !important;
 }
 :root[data-theme='light'] .ref-scope #metricDialog, :root[data-theme='light'] .ref-scope #subDialog { border-color: #cfc9b6 !important; }
 .ref-scope #metricDialog .dialog-top, .ref-scope #subDialog .dialog-top { background: var(--pdu-card); }
 
-/* Focus rings are neutral, not gold. */
 .ref-scope button:focus-visible, .ref-scope a:focus-visible, .ref-scope summary:focus-visible, .ref-scope input:focus-visible {
   outline: 2px solid var(--ref-ink); outline-offset: 3px;
 }

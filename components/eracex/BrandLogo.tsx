@@ -24,7 +24,6 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   const { currentLang } = useLanguage();
   const isDark = forceWhiteText || theme === 'dark';
 
-  // Kích thước tỷ lệ
   const dimensions = {
     sm: { height: 28, text: 'text-lg', iconW: 32 },
     md: { height: 38, text: 'text-2xl', iconW: 44 },
@@ -32,9 +31,6 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     xl: { height: 60, text: 'text-4xl', iconW: 70 },
   }[size];
 
-  // Màu sắc chuẩn từ logo gốc:
-  // Biểu tượng: Vàng thương hiệu #FFC501
-  // Chữ ERACEX: Trắng #FFFFFF khi ở Dark Theme, Đen #09090D khi ở Light Theme
   const goldColor = '#FFC501';
   const textColor = forceWhiteText ? '#FFFFFF' : (theme === 'light' ? '#09090d' : '#FFFFFF');
   const subTextColor = forceWhiteText ? '#9CA3AF' : (theme === 'light' ? '#64748b' : '#9CA3AF');
@@ -42,7 +38,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   if (useImgFallback) {
     return (
       <div className={`inline-flex items-center gap-3 select-none ${className}`}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        {}
         <img
           src={isDark ? '/brand/logo5.jpg' : '/brand/logo1.jpg'}
           alt="ERACEX Logo"
@@ -53,7 +49,6 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     );
   }
 
-  // Logo lấy trực tiếp từ ảnh chuẩn (public/brand/eracex-mark.png + eracex-wordmark.png, nền trong suốt).
   const textH = { sm: 15, md: 20, lg: 26, xl: 34 }[size];
   const markH = Math.round(textH * 1.38);
   const wordColor = forceWhiteText || theme !== 'light' ? '#FFFFFF' : '#09090D';
@@ -67,7 +62,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       role="img"
       aria-label="ERACEX"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
+      {}
       <img src="/brand/eracex-mark.png" alt="" style={{ height: markH, width: 'auto' }} className="shrink-0" />
       {showText && (
         <span

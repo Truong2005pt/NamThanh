@@ -1,15 +1,13 @@
-// config/plans.ts
-// Challenge products exactly as supplied in the partner's price tables (Two-Step, One-Step, Instant Funding, Instant Funding Light).
-// Change prices or limits here; every pricing widget and the checkout read from this file.
+
 
 export type PlanId = 'two-step' | 'one-step' | 'instant' | 'instant-light';
 
 export interface PlanProduct {
   id: PlanId;
   name: string;
-  /** Account sizes in USD */
+
   sizes: number[];
-  /** Fee per size, same order as `sizes` */
+
   fees: number[];
   profitTarget: string[];
   dailyLoss: string;
@@ -18,7 +16,7 @@ export interface PlanProduct {
   nextWithdrawalDays: string;
   consistencyRule: string;
   maxLeverage: string;
-  /** Leverage once the account is funded */
+
   fundedLeverage: string;
   minWithdrawal: string;
   profitSplit: string;
@@ -108,7 +106,6 @@ export const PLAN_ADDONS = {
   all: 'Profit Split Increase, Drawdown Limits Increase, Minimum Trading Days Decrease, Next Withdrawal Days Decrease, Max Daily Profit Increase',
 };
 
-/** Trading conditions that must be shown on every package. */
 export const PLAN_CONDITIONS = {
   weekendHolding: 'Not allowed',
   weekendHoldingNote: 'Close all positions before the market closes for the weekend.',

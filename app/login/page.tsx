@@ -447,7 +447,6 @@ export default function LoginPage() {
   const [submitting, setSubmitting] = useState(false);
   const [loginSuccess, setLoginSuccess] = useState(false);
 
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) return;
@@ -460,7 +459,6 @@ export default function LoginPage() {
       }, 1500);
     }, 800);
   };
-
 
   return (
     <AuthShell title={a.signInTitle}>

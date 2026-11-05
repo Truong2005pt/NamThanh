@@ -1,4 +1,4 @@
-// lib/blog-data.ts
+
 
 export interface BlogContentSection {
   heading?: string;

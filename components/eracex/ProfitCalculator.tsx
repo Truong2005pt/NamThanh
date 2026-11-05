@@ -10,7 +10,7 @@ export const ProfitCalculator: React.FC = () => {
   const { t } = useLanguage();
   const [capital, setCapital] = useState<number>(100000);
   const [profitPct, setProfitPct] = useState<number>(8);
-  const profitSplit = 0.95; // Up to 95% profit split (GFT model)
+  const profitSplit = 0.95; 
 
   const grossProfit = (capital * profitPct) / 100;
   const traderShare = Math.round(grossProfit * profitSplit);
@@ -33,9 +33,9 @@ export const ProfitCalculator: React.FC = () => {
 
         <div className="p-8 sm:p-12 rounded-3xl border app-border app-surface shadow-2xl relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* CONTROLS (7 COLS) */}
+            {}
             <div className="lg:col-span-7 space-y-8 reveal-left">
-              {/* SELECT CAPITAL */}
+              {}
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <label className="text-sm font-bold uppercase font-mono tracking-wider app-text-secondary">
@@ -63,7 +63,7 @@ export const ProfitCalculator: React.FC = () => {
                 </div>
               </div>
 
-              {/* PROFIT PERCENTAGE SLIDER */}
+              {}
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <label className="text-sm font-bold uppercase font-mono tracking-wider app-text-secondary">
@@ -89,7 +89,7 @@ export const ProfitCalculator: React.FC = () => {
                 </div>
               </div>
 
-              {/* PERKS LIST (CRISP VECTOR ICONS) */}
+              {}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center gap-2.5 p-3 rounded-xl app-subtle border app-border text-xs font-mono hover-float">
                   <GftIcon src="/icons/gft/icon-verified.webp" className="w-4 h-4 text-[#f6bf4a] shrink-0" />
@@ -102,11 +102,11 @@ export const ProfitCalculator: React.FC = () => {
               </div>
             </div>
 
-            {/* LIVE RESULT CARD (5 COLS) WITH REAL PROFIT COINS ILLUSTRATION */}
+            {}
             <div className="lg:col-span-5 p-8 rounded-2xl border border-[#f6bf4a]/30 dark:border-[#ffc501]/40 flex flex-col justify-between app-surface shadow-xl relative overflow-hidden group reveal-right hover-float">
-              {/* SUBTLE BACKGROUND TEXTURE */}
+              {}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-20 pointer-events-none overflow-hidden rounded-bl-full">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                {}
                 <img src="/images/user-illustrations/trading-coins-growth.jpg" alt="" className="w-full h-full object-cover" />
               </div>
 

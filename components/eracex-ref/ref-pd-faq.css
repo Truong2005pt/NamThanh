@@ -1,5 +1,4 @@
-/* Product FAQ: header row on top (title + help card), then the switcher and the questions as two columns of framed cards.
-   Same elements and order as before; only the presentation changes (it was a narrow sticky side column). */
+
 .ref-scope .pd-product-faq {
   display: block; width: calc(100% - 64px); max-width: 1240px; padding: 72px 0 96px; border-top: 1px solid var(--pdu-line);
 }
@@ -29,7 +28,6 @@
 .ref-scope .pd-faq-content { display: block; }
 .ref-scope .pd-faq-scope { margin: 14px 0 20px; font-size: 14px; opacity: .65; }
 
-/* questions: two columns of framed cards */
 .ref-scope #productFaqList { column-count: 2; column-gap: 20px; }
 .ref-scope .pd-faq-item {
   break-inside: avoid; margin: 0 0 14px; border: 1px solid var(--pdu-line); border-radius: 14px; background: var(--pdu-card); overflow: hidden;

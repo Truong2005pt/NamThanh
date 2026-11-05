@@ -9,8 +9,7 @@ export default function Page() {
   const { currentLang } = useLanguage();
   const dict = disclaimersI18n as unknown as Record<string, { blocks: { t: string; x: string }[] }>;
   const data = dict[currentLang] || dict['en'];
-  
-  // Extract Risk Disclosure section (index 2 and 3)
+
   const rawBlocks = (data?.blocks || []).slice(2, 4);
   const blocks: LegalBlock[] = rawBlocks.map((b) => ({
     t: 'p',

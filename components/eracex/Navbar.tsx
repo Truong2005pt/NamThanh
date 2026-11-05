@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileGroup, setMobileGroup] = useState<'products' | 'company' | null>(null);
-  // Desktop: parent tabs also open on hover (with a short grace period so the pointer can reach the panel).
+
   const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hoverOpen = (which: 'products' | 'company') => {
     if (hoverTimer.current) clearTimeout(hoverTimer.current);
@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
       setCompanyDropdownOpen(false);
     }, 180);
   };
-  // Click outside a dropdown closes it.
+
   useEffect(() => {
     const onDown = (e: PointerEvent) => {
       if ((e.target as Element | null)?.closest?.('[data-nav-dropdown]')) return;
@@ -82,14 +82,13 @@ export const Navbar: React.FC = () => {
   const isLight = theme === 'light';
   const currentLangMeta = SUPPORTED_LANGUAGES.find((l) => l.code === currentLang) || SUPPORTED_LANGUAGES[0];
 
-  // Dedicated auth portals (/login, /sign-up) render their own minimal header
   if (pathname === '/login' || pathname === '/sign-up' || pathname === '/signup' || pathname === '/reset-password') {
     return null;
   }
 
   return (
     <header className="fixed top-3 left-0 right-0 z-50 px-3 sm:px-8 pointer-events-none" style={{ fontFamily: "var(--font-inter), var(--font-sans), system-ui, sans-serif" }}>
-      {/* MAIN NAVBAR CONTAINER */}
+      {}
       <div
         className={`pointer-events-auto max-w-[1408px] mx-auto px-3 sm:px-4 py-1.5 sm:py-2 flex items-center justify-between gap-2 sm:gap-4 rounded-xl border backdrop-blur-xl transition-all duration-300 ${
           scrolled
@@ -97,14 +96,14 @@ export const Navbar: React.FC = () => {
             : 'bg-white/90 dark:bg-[#0f1115]/85 border-neutral-200/60 dark:border-white/10 shadow-[0_6px_24px_-14px_rgba(0,0,0,0.2)]'
         }`}
       >
-        {/* LOGO */}
+        {}
         <Link href="/" className="flex items-center shrink-0">
           <BrandLogo size="sm" showText={true} />
         </Link>
 
-        {/* DESKTOP MENU LINKS */}
+        {}
         <nav className="nav-desktop items-center gap-1 xl:gap-2">
-          {/* TRADING DROPDOWN */}
+          {}
           <div data-nav-dropdown className="relative shrink-0" onMouseEnter={() => hoverOpen('products')} onMouseLeave={hoverClose}>
             <button
               type="button"
@@ -120,7 +119,7 @@ export const Navbar: React.FC = () => {
 
             {tradingDropdownOpen && (
               <>
-                
+
                 <div onMouseEnter={() => hoverOpen('products')} className="absolute left-0 top-full mt-2 z-50 w-64 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
                   {PRODUCTS.map((p) => (
                     <Link
@@ -152,7 +151,7 @@ export const Navbar: React.FC = () => {
             {navText.affiliate}
           </Link>
 
-          {/* COMPANY DROPDOWN */}
+          {}
           <div data-nav-dropdown className="relative shrink-0" onMouseEnter={() => hoverOpen('company')} onMouseLeave={hoverClose}>
             <button
               type="button"
@@ -168,7 +167,7 @@ export const Navbar: React.FC = () => {
 
             {companyDropdownOpen && (
               <>
-                
+
                 <div onMouseEnter={() => hoverOpen('company')} className="absolute left-0 top-full mt-2 z-50 w-44 rounded-xl p-2 shadow-xl backdrop-blur-md border bg-white/98 dark:bg-[#141414]/98 border-neutral-200 dark:border-white/15 text-neutral-800 dark:text-neutral-200 shadow-xl dark:shadow-2xl">
                   <Link
                     href="/about"
@@ -197,9 +196,9 @@ export const Navbar: React.FC = () => {
           </Link>
         </nav>
 
-        {/* RIGHT ACTION BUTTONS */}
+        {}
         <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
-          {/* LANGUAGE SELECTOR */}
+          {}
           <div className="relative">
             <button
               type="button"

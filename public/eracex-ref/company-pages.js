@@ -1,4 +1,4 @@
-/* Menu-level ERACEX pages. Product parameters and FAQ answers remain shared. */
+
 const companyName='ERACEX F.Z.E';
 const AR=lu('arrow-up-right',14,'co-ar');
 const coPhoto=(src,alt,w,h)=>`<figure class="co-photo"><img src="/eracex-ref/assets/${src}.webp" alt="${alt}" width="${w}" height="${h}" decoding="async"></figure>`;

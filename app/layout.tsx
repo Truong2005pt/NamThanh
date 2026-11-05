@@ -88,19 +88,19 @@ export default function RootLayout({
         <ThemeProvider>
           <LanguageProvider>
             <ScrollRevealProvider>
-              {/* GLOBAL HEADER NAVBAR */}
+              {}
               <Navbar />
 
-              {/* DYNAMIC PAGE CONTENT */}
+              {}
               <main className="flex-1 gft-home">
                 <NoLabelGlobal />
                 {children}
               </main>
 
-              {/* GLOBAL FOOTER */}
+              {}
               <Footer />
 
-              {/* GLOBAL COOKIE BANNER & REF ATTRIBUTION */}
+              {}
               <CookieBanner />
             </ScrollRevealProvider>
           </LanguageProvider>

@@ -3,12 +3,6 @@
 import { useT } from "./i18n";
 import Logo from "./Logo";
 
-/**
- * Laptop photo (body, keyboard, bezel) with the app drawn on its screen as real HTML/SVG, warped with a CSS
- * perspective matrix onto the screen's four corners. The labels are vector text, so they stay sharp at any size and
- * follow the language and the light/dark theme. The matrices map a 1000x760 screen onto each photo's screen quad
- * (light photo 690x490, dark photo 1024x765).
- */
 const SCREENS = [
   { cls: "lt", src: "/home/laptop-light.webp", w: 690, h: 490, m: "matrix3d(0.4207048,-0.05742455,0,0.00013242,0.00634045,0.40742121,0,0.00001216,0,0,1,0,30,88,0,1)" },
   { cls: "dk", src: "/home/laptop-dark.webp", w: 1024, h: 765, m: "matrix3d(0.64152562,-0.08890245,0,0.0001416,0.0070664,0.6199644,0,0.0000092,0,0,1,0,48,130,0,1)" },
@@ -71,7 +65,7 @@ export function DeskImage() {
     <div className="sk-desk" role="img" aria-label="ERACEX">
       {SCREENS.map((s) => (
         <div key={s.cls} className={`lap ${s.cls}`} style={{ aspectRatio: `${s.w} / ${s.h}`, ["--iw" as string]: s.w, ["--ih" as string]: s.h }} aria-hidden>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src={s.src} alt="" loading="lazy" draggable={false} />
           <div className="lp-scr" style={{ transform: `scale(calc(var(--H) / var(--ih))) ${s.m}` }}><Screen /></div>
         </div>

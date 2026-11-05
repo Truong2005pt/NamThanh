@@ -201,13 +201,11 @@ export const authInputCls =
 export const authPrimaryCls =
   'w-full h-11 rounded-lg text-sm font-bold text-black bg-[#ffc501] hover:bg-[#e6b200] active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70';
 
-/** Localised copy for the auth screens (labels, titles, left panel). */
 export function useAuthCopy() {
   const { currentLang } = useLanguage();
   return AUTH_COPY[currentLang] || AUTH_COPY.en;
 }
 
-/** Label above a field. */
 export const AuthField: React.FC<{ label: string; required?: boolean; optional?: string; children: React.ReactNode; className?: string }> = ({ label, required, optional, children, className = '' }) => (
   <div className={className}>
     <label className={authLabelCls}>
@@ -228,7 +226,6 @@ const GoogleMark = () => (
   </svg>
 );
 
-/** "Continue with Google" button plus the OR divider. */
 export const AuthGoogle: React.FC<{ onClick?: () => void; divider?: 'after' | 'before' }> = ({ onClick, divider = 'after' }) => {
   const c = useAuthCopy();
   const or = (
@@ -256,7 +253,6 @@ export const AuthGoogle: React.FC<{ onClick?: () => void; divider?: 'after' | 'b
 
 const FEED = PAYOUTS.slice(0, 3);
 
-/** Auth screens: brand panel on desktop (lg+) for login/sign-up, form column everywhere; reset password is a single centred column. */
 export const AuthShell: React.FC<{ children: React.ReactNode; title?: string; backLabel?: string }> = ({ children, title }) => {
   const { currentLang } = useLanguage();
   const { theme, toggleTheme } = useTheme();
@@ -277,7 +273,7 @@ export const AuthShell: React.FC<{ children: React.ReactNode; title?: string; ba
     <div className={`min-h-screen bg-white dark:bg-black text-neutral-900 dark:text-white font-sans ${split ? 'xl:grid xl:grid-cols-2' : ''}`}>
       {split && (
         <aside className="hidden xl:flex relative bg-black text-white overflow-hidden min-h-screen flex-col justify-between p-10 2xl:p-14">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/eracex-ref/assets/auth-panel.webp" alt="" className="absolute inset-0 w-full h-full object-cover object-[50%_55%]" />
           <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/10 to-black/85" />
           <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/10 to-transparent" />

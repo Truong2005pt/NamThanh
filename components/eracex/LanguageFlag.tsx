@@ -21,7 +21,6 @@ import NL from 'country-flag-icons/react/3x2/NL';
 
 type FlagComponent = typeof GB;
 
-// Language code -> country flag. Real SVG flags: emoji flags render as letters ("VN") on Windows.
 const FLAG_BY_LANG: Record<string, FlagComponent> = {
   en: GB,
   es: ES,

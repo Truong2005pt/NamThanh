@@ -1,18 +1,15 @@
-/* Monochrome pass: text is black (light theme) or white (dark theme); no gold glows or shadows.
-   Elements are tagged at runtime by mono.ts (gold text -> ref-gold-text, gold shadows -> ref-gold-shadow). */
+
 .ref-scope { --ref-ink: #f5f5f2; }
 :root[data-theme='light'] .ref-scope { --ref-ink: #15151a; }
 
 .ref-scope .ref-gold-text { color: var(--ref-ink) !important; -webkit-text-fill-color: var(--ref-ink) !important; }
 .ref-scope .ref-gold-shadow { box-shadow: none !important; text-shadow: none !important; filter: none !important; }
 
-/* gradient-filled text (reward amounts) becomes plain ink */
 .ref-scope .pd-statement > strong {
   background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important;
   -webkit-text-fill-color: var(--ref-ink) !important; color: var(--ref-ink) !important;
 }
 
-/* no gold glows, accent lines or tinted halos on cards */
 .ref-scope .pd-statement::before, .ref-scope .pd-statement::after { display: none !important; }
 .ref-scope .pd-statement.is-featured { box-shadow: none !important; }
 .ref-scope .pd-config .pd-size-picker button::before { box-shadow: none !important; }
@@ -20,7 +17,6 @@
 .ref-scope .pd-order-bar .button, .ref-scope .pd-learning .pd-topic-panel .button { box-shadow: none !important; }
 .ref-scope .pd-table-scroll, .ref-scope .pd-statement { box-shadow: none !important; }
 
-/* Clear frames for the three "Trade on your own terms" cards (shadows are gone, so the border carries the shape). */
 .ref-scope .pd-benefits { gap: 20px; }
 .ref-scope .pd-benefit {
   background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 18px; overflow: hidden;
@@ -31,7 +27,6 @@
 :root[data-theme='light'] .ref-scope .pd-benefit-art { border-bottom-color: #d9d4c4; }
 .ref-scope .pd-benefit-copy { padding: 22px 24px 26px; }
 
-/* Same clear frame on other card groups that relied on shadows. */
 :root[data-theme='light'] .ref-scope .pd-statement { border-color: #d9d4c4; }
 :root[data-theme='light'] .ref-scope .ib-tier,
 :root[data-theme='light'] .ref-scope .ib-panel,
@@ -39,7 +34,6 @@
 :root[data-theme='light'] .ref-scope .sp-card,
 :root[data-theme='light'] .ref-scope .pa-rule { border-color: #d9d4c4; }
 
-/* FAQ group switcher: a framed segmented control (both options visibly boxed). */
 .ref-scope .pd-faq-groups {
   display: inline-flex; gap: 6px; padding: 5px; border-radius: 14px; flex-wrap: wrap;
   background: var(--pdu-pill); border: 1px solid var(--pdu-line);
@@ -61,8 +55,6 @@
 }
 .ref-scope .pd-faq-groups button:focus-visible { outline: 2px solid var(--ref-ink); outline-offset: 2px; }
 
-/* Benefit artwork fills its frame exactly: same ratio box, image covers it, no blending or edge fade
-   (the old mask and blend left the image's own background mismatched with the frame). */
 .ref-scope .pd-benefit-art.pd-art-themed {
   height: auto !important; aspect-ratio: 6 / 5; padding: 0; background: none !important; display: block; overflow: hidden;
 }
@@ -72,28 +64,23 @@
   -webkit-mask-image: none !important; mask-image: none !important; mix-blend-mode: normal !important;
 }
 
-/* ---- One text colour everywhere ----
-   All text is the ink colour (black in the light theme, white in the dark theme). Gold never colours text.
-   Text that sits on a filled surface (gold buttons/chips, the inverse Funded panel) keeps its own contrast colour. */
 .ref-scope :where(h1, h2, h3, h4, h5, h6, p, span, small, strong, b, em, i, a, li, td, th, label, summary, dt, dd, button, div, figcaption, blockquote, legend, input, textarea, select, option) {
   color: var(--ref-ink) !important;
   -webkit-text-fill-color: var(--ref-ink) !important;
 }
 .ref-scope ::placeholder { color: var(--ref-ink) !important; opacity: .5; -webkit-text-fill-color: var(--ref-ink) !important; }
 
-/* text on gold fills stays dark */
 .ref-scope .button, .ref-scope .button *,
 .ref-scope .pd-cycle-row > button, .ref-scope .pd-cycle-row > button *,
 .ref-scope .pd-learning .pd-topic-panel .button, .ref-scope .pd-learning .pd-topic-panel .button * {
   color: #15151a !important; -webkit-text-fill-color: #15151a !important;
 }
-/* text on ink-filled surfaces uses the opposite colour */
+
 .ref-scope .pd-config .pd-size-picker button[aria-pressed='true'], .ref-scope .pd-config .pd-size-picker button[aria-pressed='true'] * {
   color: var(--pdu-card) !important; -webkit-text-fill-color: var(--pdu-card) !important;
 }
-/* topic panels sit on photos: always white */
+
 .ref-scope .pd-topic-panel, .ref-scope .pd-topic-panel :where(h3, p, span, small, a) { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
 .ref-scope .pd-topic-panel .button, .ref-scope .pd-topic-panel .button * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
 
-/* labels removed by nolabel.ts */
 .ref-scope [hidden]{display:none!important}

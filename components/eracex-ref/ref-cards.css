@@ -1,4 +1,4 @@
-/* About, Contact, FAQ: every card has a clearly visible frame. */
+
 .ref-scope[data-page='about'], .ref-scope[data-page='contact'], .ref-scope[data-page='faq'] {
   --ref-card-line: rgba(255, 255, 255, 0.26);
 }
@@ -17,7 +17,7 @@
 .ref-scope .fh-support > *, .ref-scope .sp-faq-item, .ref-scope .ab-company-card, .ref-scope .co-company-card {
   border: 1px solid var(--ref-card-line) !important;
 }
-/* dividers inside cards */
+
 .ref-scope .ab-table-wrap table th, .ref-scope .ab-table-wrap table td,
 .ref-scope .fh-reward-rows > *, .ref-scope .cp-company-grid dl > div {
   border-color: var(--ref-card-line) !important;
@@ -25,11 +25,9 @@
 
 .ref-scope .cp-company-grid > * { border-radius: 18px; padding: 28px; }
 
-/* About hero card: keep the photo below the copy so the text stays readable */
 .ref-scope .ab-hero-tech-visual { inset: 290px 0 56px; }
 .ref-scope .ab-hero-tech-visual img { mask-image: linear-gradient(transparent, #000 28%, #000 88%, transparent); }
 
-/* FAQ hero: desk photo as background (dark theme) */
 :root:not([data-theme='light']) .ref-scope .fh-hero {
   background-image:
     linear-gradient(90deg, rgba(8, 8, 10, 0.78) 0%, rgba(8, 8, 10, 0.5) 52%, rgba(8, 8, 10, 0.72) 100%),
@@ -39,7 +37,6 @@
 }
 :root:not([data-theme='light']) .ref-scope .fh-hero .fh-candle { display: none; }
 
-/* FAQ hero, light theme: bright version of the same photo */
 :root[data-theme='light'] .ref-scope .fh-hero {
   background-image:
     linear-gradient(90deg, rgba(250, 248, 244, 0.72) 0%, rgba(250, 248, 244, 0.3) 55%, rgba(250, 248, 244, 0.5) 100%),
@@ -49,7 +46,6 @@
 }
 :root[data-theme='light'] .ref-scope .fh-hero .fh-candle { display: none; }
 
-/* FAQ knowledge cards: topic photos instead of icon tiles */
 .ref-scope .fh-knowledge-art { background-size: cover; background-position: center; }
 .ref-scope .fh-knowledge-art::before, .ref-scope .fh-knowledge-art::after { display: none; }
 .ref-scope .fh-knowledge-art > svg, .ref-scope .fh-knowledge-art > i { display: none; }
@@ -61,7 +57,6 @@
 .ref-scope .fh-knowledge-card:nth-child(2) .fh-knowledge-art { background-image: linear-gradient(rgba(8,8,10,0.05), rgba(8,8,10,0.35)), url('/eracex-ref/assets/fh-guide-trailing.webp'); }
 .ref-scope .fh-knowledge-card:nth-child(3) .fh-knowledge-art { background-image: linear-gradient(rgba(8,8,10,0.05), rgba(8,8,10,0.35)), url('/eracex-ref/assets/fh-guide-reward.webp'); }
 
-/* Affiliate "Cùng phát triển" banner: lighter photo, copy always white (it sits on the photo in both themes) */
 .ref-scope .ib-gift-hero img { filter: brightness(1.45) contrast(1.04); }
 .ref-scope:is([data-page='affiliate']) .ib-gift-hero > div {
   background: linear-gradient(90deg, rgba(8, 8, 11, 0.72) 0%, rgba(8, 8, 11, 0.4) 46%, transparent 80%);
@@ -74,7 +69,6 @@
 }
 .ref-scope .ib-gift-hero h3 { font-family: var(--ref-head) !important; font-weight: 600; }
 
-/* About page, light theme: the concept's dark bands become light champagne surfaces so the (black) copy stays readable */
 :root[data-theme='light'] .ref-scope .ab-hero {
   background: radial-gradient(ellipse at 50% 18%, rgba(214, 180, 83, 0.3), transparent 65%), linear-gradient(#f7f1e0, #faf8f4) !important;
 }
@@ -91,13 +85,12 @@
 :root[data-theme='light'] .ref-scope .ab-discipline-band article,
 :root[data-theme='light'] .ref-scope .ab-discipline-band .ab-plan,
 :root[data-theme='light'] .ref-scope .ab-discipline-band .ab-habit { background: #ffffff !important; }
-/* copy that sits on a photo stays white in both themes */
+
 .ref-scope .ab-uae-photo, .ref-scope .ab-uae-photo * { color: #fff !important; -webkit-text-fill-color: #fff !important; }
 :root[data-theme='light'] .ref-scope .ab-location-copy { background: linear-gradient(#f7f1e0, #ffffff) !important; color: #15151a !important; }
 :root[data-theme='light'] .ref-scope .ab-next > * { background: #ffffff !important; color: #15151a !important; }
 :root[data-theme='light'] .ref-scope .ab-next > *:last-child { background: linear-gradient(#f7f1e0, #ffffff) !important; }
 
-/* About "Kỷ luật tích lũy mỗi ngày": real objects (compass = preparation, hourglass = daily accumulation) instead of mock UI tiles */
 .ref-scope .ab-plan-art, .ref-scope .ab-habit-art {
   transform: none !important; padding: 0 !important; background-size: cover !important; background-position: center !important;
   border: 1px solid var(--ref-card-line) !important; border-radius: 16px !important; box-shadow: none !important;
@@ -109,7 +102,6 @@
 :root[data-theme='light'] .ref-scope .ab-plan-art { background: #fff url('/eracex-ref/assets/ab-compass.webp') center / cover no-repeat !important; }
 :root[data-theme='light'] .ref-scope .ab-habit-art { background: #fff url('/eracex-ref/assets/ab-hourglass.webp') center / cover no-repeat !important; }
 
-/* About page: flat surfaces, no gold wash */
 .ref-scope[data-page='about'] { --flat-band: #101013; --flat-card: #17171b; }
 :root[data-theme='light'] .ref-scope[data-page='about'] { --flat-band: #f4f2ee; --flat-card: #ffffff; }
 .ref-scope[data-page='about'] .ab-hero,
@@ -135,7 +127,6 @@
 }
 .ref-scope[data-page='about'] .ab-hero, .ref-scope[data-page='about'] .ab-discipline-band, .ref-scope[data-page='about'] .ab-company-band { border-color: var(--ref-card-line) !important; }
 
-/* About "Connected technology": photo stage with a glass account card (replaces the tilted mock-up) */
 .ref-scope .ab-platform-art.ab-photo-stage {
   position: relative; width: 100%; min-height: 0; aspect-ratio: 15 / 11; border-radius: 20px; overflow: hidden; display: block;
   border: 1px solid var(--ref-card-line); background: #0b0b0e; transform: none; perspective: none;

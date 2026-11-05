@@ -1,4 +1,4 @@
-// lib/i18n.ts
+
 export interface LanguageMeta {
   code: string;
   name: string;
@@ -6,7 +6,6 @@ export interface LanguageMeta {
   flag: string;
 }
 
-// Languages the client asked for (15). Korean, Russian, Arabic and Dutch dictionaries exist but are not offered.
 const ENABLED_LANGUAGE_CODES = ['en', 'es', 'pt', 'hi', 'vi', 'id', 'fr', 'de', 'it', 'pl', 'tr', 'th', 'fil', 'ja', 'zh'];
 
 const ALL_LANGUAGES: LanguageMeta[] = [

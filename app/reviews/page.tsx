@@ -586,10 +586,9 @@ es: {
     ctaBtn2: 'Read Program Rules',
   };
 
-
   return (
     <div className="pb-16 app-bg app-text">
-      {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER WITH 3D ILLUSTRATION */}
+      {}
       <PageHeroBanner
         badgeText={d.badgeText}
         badgeIcon={<Award className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
@@ -678,9 +677,8 @@ es: {
         </div>
       </section>
 
-      {/* 2.5 CORE REVIEWS CARDS */}
+      {}
       <ReviewsSection />
-
 
       <ImageBand caption="markets" variant="wide" maxWidth={900} images={[{ src: '/images/market-city-chart.jpg', alt: 'Global markets' }]} />
 

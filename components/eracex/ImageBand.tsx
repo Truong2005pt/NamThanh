@@ -8,14 +8,14 @@ export type ImageBandCaption = 'rules' | 'simulated' | 'discipline' | 'risk' | '
 
 interface ImageBandProps {
   variant?: ImageBandVariant;
-  /** wide: one image. duo: two portrait images. device: ignored (iMac mockup in both themes). */
+
   images?: { src: string; alt: string }[];
   className?: string;
-  /** Render only the image block (for pages that already provide their own container and spacing). */
+
   inline?: boolean;
-  /** wide: cap the width (px) for lower-resolution artwork. */
+
   maxWidth?: number;
-  /** Short line shown under the image so a picture never stands alone between sections. */
+
   caption?: ImageBandCaption;
 }
 
@@ -39,7 +39,6 @@ const CAPTIONS: Record<string, Record<ImageBandCaption, string>> = {
 
 const frame = 'rounded-3xl overflow-hidden border app-border bg-black shadow-xl hover-float';
 
-/** Image block with a short caption underneath, so a picture never sits alone between two text sections. */
 export const ImageBand: React.FC<ImageBandProps> = ({ variant = 'wide', images = [], className = '', inline = false, maxWidth, caption }) => {
   const { currentLang } = useLanguage();
   const text = caption ? (CAPTIONS[currentLang] || CAPTIONS.en)[caption] : '';
@@ -48,7 +47,7 @@ export const ImageBand: React.FC<ImageBandProps> = ({ variant = 'wide', images =
     <>
       {variant === 'wide' && images[0] && (
         <div className={`${frame} reveal-scale mx-auto`} style={maxWidth ? { maxWidth } : undefined}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src={images[0].src} alt={images[0].alt} loading="lazy" className="w-full h-auto block" />
         </div>
       )}
@@ -57,7 +56,7 @@ export const ImageBand: React.FC<ImageBandProps> = ({ variant = 'wide', images =
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
           {images.slice(0, 2).map((img, i) => (
             <div key={img.src} className={`${frame} reveal-up stagger-${i + 1}`}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              {}
               <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-auto block" />
             </div>
           ))}
@@ -67,22 +66,22 @@ export const ImageBand: React.FC<ImageBandProps> = ({ variant = 'wide', images =
       {variant === 'accent' && images[0] && (
         <div className="relative max-w-3xl mx-auto reveal-scale">
           <div className={frame}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+            {}
             <img src={images[0].src} alt={images[0].alt} loading="lazy" className="w-full h-auto block" />
           </div>
-          {/* cut-out accents overlapping the photo */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
+          {}
           <img src="/images/arrow-gold.png" alt="" aria-hidden="true" loading="lazy" className="absolute -top-6 -right-2 sm:-top-10 sm:-right-8 w-20 sm:w-32 h-auto drop-shadow-2xl pointer-events-none select-none" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/images/coins-cash.png" alt="" aria-hidden="true" loading="lazy" className="absolute -bottom-6 -left-2 sm:-bottom-10 sm:-left-8 w-20 sm:w-32 h-auto drop-shadow-2xl pointer-events-none select-none" />
         </div>
       )}
 
       {variant === 'device' && (
         <div className="max-w-[1000px] mx-auto reveal-scale">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/app-showcase/mockup/imac-prop-dark.webp" alt="ERACEX dashboard" loading="lazy" className="w-full h-auto hidden dark:block" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/app-showcase/mockup/imac-prop-light.webp" alt="ERACEX dashboard" loading="lazy" className="w-full h-auto dark:hidden" />
         </div>
       )}

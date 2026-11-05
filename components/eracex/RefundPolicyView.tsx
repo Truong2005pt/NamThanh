@@ -25,8 +25,8 @@ export const RefundPolicyView: React.FC = () => {
   return (
     <div className="min-h-screen py-10">
       <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-8 space-y-12">
-        
-        {/* HEADER */}
+
+        {}
         <section className="text-center space-y-4 pt-6">
           <h1 className="gft-title text-2xl sm:text-4xl font-black tracking-tight text-neutral-900 dark:text-white">
             {rp.title}
@@ -41,7 +41,7 @@ export const RefundPolicyView: React.FC = () => {
           </div>
         </section>
 
-        {/* 3 HIGHLIGHT CARDS */}
+        {}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-3xl border border-[#f6bf4a]/30 bg-[#f6bf4a]/10 space-y-3 shadow-xs">
             <div className="w-10 h-10 rounded-xl bg-[#f6bf4a]/20 text-[#c68a00] dark:text-[#f6bf4a] flex items-center justify-center font-bold">
@@ -74,9 +74,9 @@ export const RefundPolicyView: React.FC = () => {
           </div>
         </section>
 
-        {/* DETAILED LEGAL SECTIONS */}
+        {}
         <section className="p-8 sm:p-12 rounded-3xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/[0.02] space-y-8 text-xs sm:text-sm leading-relaxed text-neutral-600 dark:text-neutral-300 shadow-sm">
-          
+
           <div className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
               <FileText className="w-5 h-5 text-[#c68a00] dark:text-[#ffc501]" />
@@ -124,7 +124,7 @@ export const RefundPolicyView: React.FC = () => {
             )}
           </div>
 
-          {/* QUICK LINKS */}
+          {}
           <div className="pt-6 border-t border-neutral-200 dark:border-white/10 flex flex-wrap gap-4 text-xs font-bold text-[#c68a00] dark:text-[#ffc501]">
             <Link href="/terms" className="hover:underline flex items-center gap-1">
               <span>{rp.linkTerms}</span>

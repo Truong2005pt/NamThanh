@@ -1,5 +1,4 @@
-/* "Understand every step" section: editorial photo panel + topic switcher.
-   Left-aligned copy over a directional shade, solid gold call to action, flat tab bar with thumbnails. */
+
 
 .ref-scope .pd-learning {
   --lp-card: #101014;
@@ -16,7 +15,6 @@
   --lp-thumb-line: #e2dcc8;
 }
 
-/* ---- panel ---- */
 .ref-scope .pd-learning .pd-topic-panel {
   min-height: 460px; padding: 56px clamp(28px, 5vw, 64px);
   justify-content: flex-start; align-items: center; text-align: left; border-radius: 22px;
@@ -50,7 +48,6 @@
 }
 .ref-scope .pd-learning .pd-topic-panel .button:hover { background: linear-gradient(135deg, #ffe07a, #f6cf47); color: #231a02; transform: translateY(-2px); }
 
-/* ---- tab bar ---- */
 .ref-scope .pd-learning .pd-topic-tabs {
   width: 100%; max-width: none; margin: 14px 0 0; gap: 14px; position: static;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -97,17 +94,14 @@
   .ref-scope .pd-learning .pd-topic-tabs button::after { transition: none; }
 }
 
-/* legacy text-shadow (made for text over photos) removed from the flat tab labels */
 .ref-scope .pd-learning .pd-topic-tabs .pd-thumb-label,
 .ref-scope .pd-learning .pd-topic-tabs .pd-thumb-label small { text-shadow: none; }
 
-/* Stock photo of the workspace panel: keep the desk and lamp in frame. */
 .ref-scope .pd-learning .pd-topic-panel[data-topic-panel='1'] .pd-editorial-bg { object-position: 50% 24%; }
 .ref-scope .pd-learning .pd-topic-panel[data-topic-panel='1']::before {
   background: linear-gradient(90deg, #08080bdd 0%, #08080b99 32%, #08080b33 60%, transparent 82%), linear-gradient(0deg, #08080b66, transparent 40%);
 }
 
-/* Stock photos of the other two topic panels. */
 .ref-scope .pd-learning .pd-topic-panel[data-topic-panel='0'] .pd-editorial-bg { object-position: 50% 30%; }
 .ref-scope .pd-learning .pd-topic-panel[data-topic-panel='2'] .pd-editorial-bg { object-position: 50% 35%; }
 .ref-scope .pd-learning .pd-topic-panel[data-topic-panel='2']::before {

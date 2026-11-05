@@ -379,7 +379,7 @@ export default function PricingPage() {
 
   return (
     <div className="pb-16 app-bg app-text">
-      {/* 1. DEDICATED FULL-VIEWPORT HERO BANNER */}
+      {}
       <PageHeroBanner
         badgeText={d.badgeText}
         badgeIcon={<BadgeDollarSign className="w-4 h-4 text-[#c68a00] dark:text-[#ffc501]" />}
@@ -420,7 +420,7 @@ export default function PricingPage() {
       {/* 2. CORE PRICING COMPONENT */}
       <ChallengePricing />
 
-      {/* 2.5 REAL TRADERS WHO PASSED & 100% FEE REFUND PROOFS */}
+      {}
 
       <ImageBand caption="simulated" variant="wide" images={[{ src: '/images/eracex-f1-banner.jpg', alt: 'ERACEX Trusted by Traders' }]} />
 
@@ -461,7 +461,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* FAQ SECTION EMBEDDED */}
+      {}
       <FaqSection />
     </div>
   );

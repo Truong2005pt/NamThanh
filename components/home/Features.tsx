@@ -37,7 +37,6 @@ const FEATS = [
   },
 ] as const;
 
-/** Six feature chips; each opens a short explanation underneath (one open at a time). */
 export function Features() {
   const t = useT();
   const [open, setOpen] = useState<number | null>(null);

@@ -6,11 +6,9 @@ import { usePathname } from 'next/navigation';
 const MANUAL = '.reveal-up, .reveal-down, .reveal-left, .reveal-right, .reveal-scale, [data-reveal]';
 const REVEAL_CLASSES = ['reveal-up', 'reveal-left', 'reveal-right', 'reveal-scale', 'is-revealed'];
 
-// Elements that already move on their own (3D, floating, hover lifts, positioned overlays) are left alone.
 const SKIP_CLASS = /(^|\s)(reveal-|animate-|hover-float|scale-|rotate-|-?translate-|sticky|fixed|absolute)/;
 const SKIP_ANCESTOR = 'nav, footer, header, [role="dialog"], [data-no-reveal], canvas, .fixed';
 
-/** Selectors that get an entrance animation automatically, with the effect to use. */
 type Effect = 'reveal-up' | 'reveal-left' | 'reveal-right' | 'reveal-scale';
 const AUTO: Array<{ selector: string; effect: Effect; stagger?: boolean }> = [
   { selector: 'h1, h2', effect: 'reveal-up' },
@@ -29,7 +27,7 @@ function tagElements(root: ParentNode): HTMLElement[] {
       if (SKIP_CLASS.test(el.className?.toString() || '')) return;
       if (el.closest(SKIP_ANCESTOR)) return;
       if (el.style.transform || el.style.opacity) return;
-      // Never nest: if an ancestor already animates, the child rides along with it.
+
       const parent = el.parentElement;
       if (parent && parent.closest(`[data-auto], ${MANUAL}`)) return;
       const rect = el.getBoundingClientRect();
@@ -41,7 +39,7 @@ function tagElements(root: ParentNode): HTMLElement[] {
       if (stagger) {
         const siblings = Array.from(el.parentElement?.children ?? []);
         index = Math.max(siblings.indexOf(el), 0);
-        // Two-column rows slide in from their own side; wider grids rise one after another.
+
         const columns = el.parentElement
           ? getComputedStyle(el.parentElement).gridTemplateColumns.split(' ').filter(Boolean).length
           : 0;
@@ -63,9 +61,6 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // The entrance animations are a short fade and slide, so they stay on even when the OS reports
-    // "reduce motion" (Windows VMs and remote desktops switch that on by default and the site would look static).
-    // ?motion=off turns them off for anyone who wants a still page.
     const motionOff = new URLSearchParams(window.location.search).get('motion') === 'off';
     if (!motionOff) document.documentElement.setAttribute('data-motion', 'on');
     const prefersReducedMotion = motionOff;
@@ -75,7 +70,7 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
     }
 
     const settle = (el: HTMLElement) => {
-      // After the entrance finishes hand the element back to its own hover/transform styles.
+
       if (!el.dataset.auto) return;
       window.setTimeout(() => {
         el.classList.remove(...REVEAL_CLASSES);
@@ -91,7 +86,7 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Very tall blocks can never be 18% visible, so for them the first sliver on screen is enough.
+
           const tall = entry.boundingClientRect.height * 0.18 > window.innerHeight * 0.85;
           if (entry.isIntersecting && (entry.intersectionRatio >= 0.18 || tall)) {
             reveal(entry.target);
@@ -99,7 +94,7 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
           }
         });
       },
-      // Play only once the element is clearly on screen: it must be 18% visible and clear the bottom 12% of the viewport.
+
       { root: null, rootMargin: '0px 0px -12% 0px', threshold: [0, 0.18] }
     );
 
@@ -118,8 +113,6 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
       });
     };
 
-    // Blocks at the very end of the page can never clear the "bottom 12%" margin, so once the reader
-    // has reached the bottom, whatever is on screen plays.
     let ticking = false;
     const onScroll = () => {
       if (ticking) return;
@@ -142,7 +135,6 @@ export const ScrollRevealProvider: React.FC<{ children: React.ReactNode }> = ({ 
 
     const timer = window.setTimeout(observeElements, 100);
 
-    // Content that appears later (tabs, accordions, language switch) animates in too.
     let pending: number | undefined;
     const mutations = new MutationObserver(() => {
       window.clearTimeout(pending);

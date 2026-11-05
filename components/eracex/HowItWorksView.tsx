@@ -25,7 +25,6 @@ import {
 import { ImageBand } from '@/components/eracex/ImageBand';
 import { CryptoCurrencyGrid } from './CryptoCurrencyGrid';
 
-
 const HOW_IT_WORKS_CAPITAL_DICT: Record<string, {
   title: string;
   ownCapital: string;
@@ -193,8 +192,8 @@ export const HowItWorksView: React.FC = () => {
   return (
     <div className="min-h-screen py-10">
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 space-y-16">
-        
-        {/* HERO BANNER */}
+
+        {}
         <section className="relative rounded-3xl overflow-hidden border border-neutral-200/80 dark:border-white/10 bg-white dark:bg-[#0b0b0d] p-6 sm:p-10 lg:p-14 text-center space-y-6 shadow-sm dark:shadow-2xl">
           <h1 className="gft-title text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.1] max-w-4xl mx-auto text-neutral-900 dark:text-white">
             {hw.heroTitle1}{' '}
@@ -236,7 +235,7 @@ export const HowItWorksView: React.FC = () => {
           </div>
 
           <div className="space-y-8">
-            {/* STEP 1 */}
+            {}
             <div className="p-8 sm:p-12 rounded-none border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/[0.02] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hover:border-[#f6bf4a]/40 transition-all shadow-sm dark:shadow-none">
               <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
                 <div className="w-14 h-14 rounded-none bg-[#f6bf4a]/15 text-[#c68a00] dark:text-[#ffc501] flex items-center justify-center font-black text-2xl font-mono">
@@ -280,7 +279,7 @@ export const HowItWorksView: React.FC = () => {
               </div>
             </div>
 
-            {/* STEP 2 */}
+            {}
             <div className="p-8 sm:p-12 rounded-3xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/[0.02] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hover:border-[#f6bf4a]/40 transition-all shadow-sm dark:shadow-none">
               <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#f6bf4a]/15 text-[#c68a00] dark:text-[#f6bf4a] flex items-center justify-center font-black text-2xl font-mono">
@@ -328,7 +327,7 @@ export const HowItWorksView: React.FC = () => {
               </div>
             </div>
 
-            {/* STEP 3 */}
+            {}
             <div className="p-8 sm:p-12 rounded-none border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/[0.02] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hover:border-[#f6bf4a]/40 transition-all shadow-sm dark:shadow-none">
               <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
                 <div className="w-14 h-14 rounded-none bg-[#f6bf4a]/15 text-[#c68a00] dark:text-[#f6bf4a] flex items-center justify-center font-black text-2xl font-mono">
@@ -368,7 +367,7 @@ export const HowItWorksView: React.FC = () => {
               </div>
             </div>
 
-            {/* STEP 4 */}
+            {}
             <div className="p-8 sm:p-12 rounded-3xl border border-[#f6bf4a]/40 bg-white dark:bg-[#0b0b0d] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-lg dark:shadow-2xl">
               <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#f6bf4a]/20 text-[#c68a00] dark:text-[#ffc501] flex items-center justify-center font-black text-2xl font-mono">
@@ -417,7 +416,7 @@ export const HowItWorksView: React.FC = () => {
 
         <CryptoCurrencyGrid inline />
 
-        {/* MORE CAPITAL, NOT BETTER RETURNS */}
+        {}
         <section className="p-8 sm:p-12 rounded-none border border-[#f6bf4a]/30 bg-[#f6bf4a]/10 text-center space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black text-neutral-900 dark:text-white">
             {cap.title}
@@ -438,7 +437,7 @@ export const HowItWorksView: React.FC = () => {
           </div>
         </section>
 
-        {/* PROFIT CALCULATOR */}
+        {}
         <ProfitCalculator />
 
       </div>

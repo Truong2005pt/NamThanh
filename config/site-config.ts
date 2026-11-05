@@ -1,6 +1,4 @@
-// config/site-config.ts
-// TỆP CẤU HÌNH DUY NHẤT (Điều 3.7 Hợp đồng)
-// Khách hàng có thể dễ dàng thay đổi giá, liên kết đối tác, mã gói tại đây mà không cần sửa giao diện.
+
 
 export interface ChallengePackage {
   id: string;
@@ -52,7 +50,6 @@ export const SITE_CONFIG: SiteConfig = {
     supportEmail: 'support@eracex.com',
   },
 
-  // Đường dẫn nội bộ hệ thống ERACEX (Không liên kết ra ngoài)
   partnerUrls: {
     login: '/pricing',
     register: '/pricing',
@@ -67,7 +64,6 @@ export const SITE_CONFIG: SiteConfig = {
     avgPayoutHours: '1%',
   },
 
-  // Two-Step (xem config/plans.ts)
   twoPhaseChallenges: [
     {
       id: '2p-5k',
@@ -147,7 +143,6 @@ export const SITE_CONFIG: SiteConfig = {
     },
   ],
 
-  // One-Step
   onePhaseChallenges: [
     {
       id: '1p-5k',
@@ -227,7 +222,6 @@ export const SITE_CONFIG: SiteConfig = {
     },
   ],
 
-  // Instant Funding
   instantFundingChallenges: [
     {
       id: 'if-5k',
@@ -307,7 +301,6 @@ export const SITE_CONFIG: SiteConfig = {
     },
   ],
 
-  // Instant Funding Light (giữ tên trường cũ để TypeScript không đổi)
   payLaterChallenges: [
     {
       id: 'pl-5k',

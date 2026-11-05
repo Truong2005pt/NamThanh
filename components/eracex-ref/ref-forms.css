@@ -1,4 +1,4 @@
-/* Forms: roomier inputs (they were short and cramped), clear borders, readable labels. */
+
 .ref-scope .sp-form label, .ref-scope .co-form-layout .sp-form label {
   display: grid; gap: 8px; margin-bottom: 20px; font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--ref-ink);
 }
@@ -18,6 +18,5 @@
 .ref-scope .sp-form-note { font-size: 13.5px; line-height: 1.6; opacity: .7; }
 @media (max-width: 640px) { .ref-scope .sp-form, .ref-scope .co-form-layout .sp-form { padding: 24px; } .ref-scope .sp-form-row { grid-template-columns: 1fr; } }
 
-/* gold-filled controls keep dark text (the one-colour text rule would turn them white) */
 .ref-scope button[aria-pressed='true'].gold, .ref-scope .tabs button.active, .ref-scope .size-options button.active { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
 .ref-scope .sp-model-tabs button[aria-pressed='true'] { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }

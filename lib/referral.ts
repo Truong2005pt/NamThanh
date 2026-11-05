@@ -1,4 +1,4 @@
-// lib/referral.ts
+
 import Cookies from 'js-cookie';
 import { SITE_CONFIG } from '@/config/site-config';
 
@@ -12,7 +12,7 @@ export function getStoredRefCode(): string | null {
 
 export function saveRefCode(code: string): void {
   if (typeof window === 'undefined') return;
-  // Lưu trong 90 ngày
+
   Cookies.set(REF_COOKIE_KEY, code.trim(), { expires: 90, path: '/' });
 }
 
@@ -35,7 +35,7 @@ export function syncReferralFromUrl(): string | null {
     const params = new URLSearchParams(window.location.search);
     const ref = params.get('ref') || params.get('ib');
     if (ref) {
-      // Chỉ lưu nếu chưa từ chối cookie
+
       if (Cookies.get(COOKIE_CONSENT_KEY) !== 'declined') {
         saveRefCode(ref);
       }
@@ -47,9 +47,6 @@ export function syncReferralFromUrl(): string | null {
   return getStoredRefCode();
 }
 
-/**
- * Xây dựng liên kết thanh toán nội bộ, tự động gắn mã gói và mã giới thiệu
- */
 export function buildPartnerCheckoutUrl(packageCode: string): string {
   const base = SITE_CONFIG.partnerUrls.checkoutBase || '/pricing';
   const ref = getStoredRefCode();

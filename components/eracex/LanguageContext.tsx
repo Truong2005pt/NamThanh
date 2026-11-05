@@ -16,11 +16,11 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Start from the server default; the effect below applies ?lang= / saved / browser language after mount.
+
   const [currentLang, setCurrentLangState] = useState<string>('vi');
 
   useEffect(() => {
-    // 1. Kiểm tra query param ?lang= (ưu tiên cao nhất)
+
     if (typeof window !== 'undefined') {
       try {
         const params = new URLSearchParams(window.location.search);
@@ -41,7 +41,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setCurrentLangState(saved);
       document.documentElement.lang = saved;
     } else {
-      // Tự động nhận diện ngôn ngữ trình duyệt
+
       const navLang = navigator.language?.toLowerCase() || '';
       let detected = 'en';
       if (navLang.startsWith('vi')) {
@@ -54,7 +54,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       document.documentElement.lang = detected;
     }
 
-    // Lắng nghe thay đổi từ các tab khác
     const handleStorage = (e: StorageEvent) => {
       if (e.key === 'eracex_lang' && e.newValue && SUPPORTED_LANGUAGES.some((l) => l.code === e.newValue)) {
         setCurrentLangState(e.newValue);

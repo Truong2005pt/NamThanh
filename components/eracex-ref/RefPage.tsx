@@ -30,17 +30,6 @@ import './ref-contact.css';
 import './ref-faq-page.css';
 import './ref-no-motion.css';
 
-/**
- * Hosts one page of the ERACEX concept site (programs, rules, rewards, faq, about, ...).
- *
- * The concept pages are built by a set of plain scripts (public/eracex-ref/*.js) that render into
- * `#subMain`. They are loaded once, then run against this component's root element through a
- * scoped `document` / `window`, so their listeners, observers and timers are confined to this page
- * and removed again on unmount. Styles live in ref-scope.css (every selector prefixed .ref-scope,
- * regenerate with scripts/scope-ref-css.mjs).
- */
-
-/** Same script set and order the concept site loads for each kind of page. */
 function scriptsFor(route: string): string[] {
   const list = ['lucide-icons', 'program-data', 'comparison', 'ecosystem', 'sub-pages-data'];
   if (route.startsWith('programs/')) list.push('product-faq');
@@ -108,7 +97,7 @@ export function RefPage({ route }: { route: string }) {
     let cancelled = false;
     const cleanups: Array<() => void> = [];
 
-    try { localStorage.setItem('eracex-language', lang); } catch { /* storage unavailable */ }
+    try { localStorage.setItem('eracex-language', lang); } catch {  }
 
     const needDict = currentLang !== 'vi' && currentLang !== 'en';
     const dictReady: Promise<Record<string, string> | null> = needDict
@@ -195,19 +184,18 @@ export function RefPage({ route }: { route: string }) {
 
       const mainEl = root.querySelector('#subMain') as HTMLElement;
       mainEl.innerHTML = '';
-      // Re-renders patch the DOM in place (no flash, images and focus survive).
+
       cleanups.push(installMorph(mainEl));
       cleanups.push(watchMono(root));
       cleanups.push(watchNoLabel(root));
       try {
-        // eslint-disable-next-line no-new-func
+
         const run = new Function('document', 'window', 'MutationObserver', 'setInterval', 'setTimeout', source);
         run(fakeDoc, fakeWin, ScopedObserver, scopedInterval, scopedTimeout);
       } catch (err) {
         console.error('[eracex-ref] failed to run page scripts', err);
       }
 
-      // Internal links navigate client-side instead of reloading the document.
       const onLink = (e: MouseEvent) => {
         if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
         const a = (e.target as Element).closest('a[href]') as HTMLAnchorElement | null;

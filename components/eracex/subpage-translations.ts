@@ -1,4 +1,4 @@
-// components/eracex/subpage-translations.ts
+
 
 export interface SubpageTranslations {
   contact: {

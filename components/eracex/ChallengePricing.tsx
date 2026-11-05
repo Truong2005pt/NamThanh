@@ -1231,15 +1231,15 @@ export const ChallengePricing: React.FC = () => {
     <section className="py-20 sm:py-28 relative overflow-hidden app-bg" id="get-funded">
       <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-8 relative z-10">
         <div className="relative text-center max-w-3xl mx-auto mb-10">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/images/coins-cash.png" alt="" aria-hidden="true" loading="lazy" className="hidden lg:block absolute -left-44 -top-6 w-28 h-auto drop-shadow-2xl pointer-events-none select-none" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {}
           <img src="/images/arrow-gold.png" alt="" aria-hidden="true" loading="lazy" className="hidden lg:block absolute -right-40 -top-4 w-28 h-auto drop-shadow-2xl pointer-events-none select-none" />
           <h2 className="app-text mb-4">{c.title}</h2>
           <p className="text-base sm:text-lg leading-relaxed app-text-secondary max-w-2xl mx-auto">{c.subtitle}</p>
         </div>
 
-        {/* PRODUCT TABS */}
+        {}
         <div role="tablist" className="mx-auto mb-8 flex w-full max-w-fit flex-wrap items-center justify-center gap-1.5 rounded-2xl border app-border app-surface p-1.5">
           {PLAN_PRODUCTS.map((p) => {
             const progName = c.programNames[p.id] || p.name;
@@ -1265,7 +1265,7 @@ export const ChallengePricing: React.FC = () => {
           })}
         </div>
 
-        {/* PLAN: one panel. Left = size, price and the two headline terms, right = the remaining rules as a plain list */}
+        {}
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] rounded-2xl border app-border app-surface overflow-hidden">
           <div className="p-7 sm:p-9 flex flex-col app-subtle lg:border-r app-border">
             <div className="text-[11px] font-bold uppercase tracking-[0.18em] app-text-muted">{c.rows.type}</div>
@@ -1329,13 +1329,13 @@ export const ChallengePricing: React.FC = () => {
           </dl>
         </div>
 
-        {/* FOOTNOTES */}
+        {}
         <div className="mt-4 space-y-1.5 text-[11px] leading-relaxed app-text-muted">
           <p>* {c.footnotes.leverage}</p>
           <p>** {c.footnotes.withdrawal}</p>
         </div>
 
-        {/* TRADING CONDITIONS (required on every package) */}
+        {}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="md:col-span-3 flex items-center gap-2 text-sm font-black app-text">
             {c.conditionsTitle}
@@ -1354,7 +1354,7 @@ export const ChallengePricing: React.FC = () => {
           ))}
         </div>
 
-        {/* ADD-ONS */}
+        {}
         <div className="mt-8 p-5 rounded-2xl card-surface text-sm space-y-3">
           <div>
             <div className="font-bold app-text mb-1">{c.addonsOptional}</div>

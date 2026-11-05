@@ -1,8 +1,7 @@
-/* Support hub — renders from the shared ERACEX program and FAQ content. */
+
 function fhIcon(kind){const paths={search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/>',model:'<path d="M4 18V10m6 8V5m6 13V9m4 9H2"/>',shield:'<path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6l8-3Z"/><path d="m8 12 3 3 5-6"/>',book:'<path d="M3 4h7l2 2 2-2h7v15h-7l-2 2-2-2H3Z"/><path d="M12 6v15"/>',reward:'<rect x="3" y="6" width="18" height="14" rx="3"/><path d="M3 10h18m-6 5h3M8 3h8"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',link:'<path d="m9 15 6-6m-8 3-2 2a4 4 0 0 0 6 6l3-3m-4-10 3-3a4 4 0 0 1 6 6l-2 2"/>',tech:'<rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8m-4-4v4M7 8h4m-4 4h10"/>',mail:'<rect x="3" y="5" width="18" height="15" rx="2"/><path d="m3 6 9 7 9-7"/>',chat:'<path d="M4 4h16v13H9l-5 4Z"/><path d="M8 9h8m-8 4h5"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]||paths.book}</svg>`;}
 function fhHead(k,h,p=''){return `<div class="fh-heading"><div><span class="eyebrow">${k}</span><h2>${h}</h2></div>${p?'<p>'+p+'</p>':''}</div>`;}
 function fhArticle(key,label,cls='fh-more'){return `<button type="button" class="${cls}" data-help-article="${key}">${label}<span>↗</span></button>`;}
-
 
 function fhcTerminal(){
  return '<img class="fht-shot fht-dark" src="/eracex-ref/assets/fh-terminal-dark.webp" alt=""><img class="fht-shot fht-light" src="/eracex-ref/assets/fh-terminal-light.webp" alt="">';

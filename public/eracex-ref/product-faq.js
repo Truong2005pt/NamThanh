@@ -1,4 +1,4 @@
-/* Product FAQ uses the same documented explanations and general FAQ as the site. */
+
 let productFaqGroup='program';
 function productFaqEntries(){
  const m=models[selected],money=usd(size);

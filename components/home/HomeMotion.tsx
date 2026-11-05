@@ -2,14 +2,6 @@
 
 import { useEffect } from 'react';
 
-/**
- * One consistent entrance system for the home page: a short fade and rise, siblings staggered,
- * played once when the block is clearly on screen. The hero uses CSS keyframes instead (it is
- * already visible on first paint). The site-wide reveal provider is switched off for `.home`
- * through `data-no-reveal`, so nothing animates twice.
- *
- * Add `?motion=off` to the URL for a still page.
- */
 const TARGETS = [
   'section h2',
   'section .sk-sub',
@@ -44,7 +36,7 @@ export function HomeMotion() {
     const staged: HTMLElement[] = [];
 
     root.querySelectorAll<HTMLElement>(TARGETS).forEach((el) => {
-      if (el.closest('.sk-hero') || el.parentElement?.closest('.rv')) return; // children ride with their parent
+      if (el.closest('.sk-hero') || el.parentElement?.closest('.rv')) return; 
       const peers = Array.from(el.parentElement?.children ?? []).filter((c) => sameKind(c, el));
       const step = Math.min(Math.max(peers.indexOf(el), 0), MAX_STEPS);
       el.style.setProperty('--rv-i', String(step));
@@ -54,7 +46,7 @@ export function HomeMotion() {
 
     const settle = (el: HTMLElement, step: number) =>
       window.setTimeout(() => {
-        el.classList.remove('rv'); // hand the element back to its own hover/transform styles
+        el.classList.remove('rv'); 
         el.style.removeProperty('--rv-i');
       }, 800 + step * STEP_MS);
 
@@ -71,7 +63,6 @@ export function HomeMotion() {
     );
     staged.forEach((el) => io.observe(el));
 
-    // progress bars fill when they come into view
     const fills = root.querySelectorAll<HTMLElement>('.sk-reward-total');
     const fio = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.setAttribute('data-seen', ''); fio.unobserve(e.target); } }), { threshold: 0.6 });
     fills.forEach((el) => fio.observe(el));

@@ -5,7 +5,7 @@ const englishText={"Thông Tin Chương Trình":"Program Information","Tiếp Th
  try {current=localStorage.getItem('eracex-language')==='en'?'en':'vi';}catch{}
  window.eracexLanguage=current;
  const textState=new WeakMap(),attributeState=new WeakMap();
- /* the page strips "mô phỏng / minh họa / demo" from the Vietnamese text before translation runs, so index the stripped spelling too */
+
  for(const [vi,en] of Object.entries(englishText)){const s=vi.replace(/\s*(?:mô\s+phỏng|minh\s+họa)/gi,'').replace(/\s{2,}/g,' ').replace(/\s+([,.;:])/g,'$1').trim();if(s&&s!==vi&&!englishText[s])englishText[s]=en;}
  const fragments=Object.entries(englishText).filter(([a])=>a.length>1&&a!=='vì').sort((a,b)=>b[0].length-a[0].length);
  function translate(source){
@@ -15,7 +15,7 @@ const englishText={"Thông Tin Chương Trình":"Program Information","Tiếp Th
   if(current==='vi')return source;
   if(englishText[source])return englishText[source];
   let result=source;
-  // Protect completed translations so smaller phrases cannot modify them again.
+
   const values=[];
   for(const [vi,en] of fragments){if(result.includes(vi)){const token='\u0001'+values.length+'\u0002';result=result.split(vi).join(token);values.push(en);}}
   result=result.replace(/\u0001(\d+)\u0002/g,(_,i)=>values[Number(i)]);
@@ -52,7 +52,7 @@ const englishText={"Thông Tin Chương Trình":"Program Information","Tiếp Th
   document.querySelectorAll('.language-select').forEach(s=>s.value=current);
   observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','title','data-label']});
  }
- // Capture the user's choice before any page-specific rerender or select synchronization.
+
  document.addEventListener('change',e=>{
   if(!e.target.matches('.language-select'))return;
   current=e.target.value==='en'?'en':'vi';

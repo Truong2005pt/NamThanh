@@ -1,11 +1,4 @@
-// lib/auth-api.ts
-// Password reset client. The site is static: accounts, OTP e-mails and passwords live in the partner system.
-// Set NEXT_PUBLIC_AUTH_API_URL to the partner auth base URL. The partner implements three JSON endpoints:
-//   POST {base}/password-reset/request  { email }                 -> 200  (sends a one-time code to that e-mail)
-//   POST {base}/password-reset/verify   { email, otp }            -> 200  { resetToken }
-//   POST {base}/password-reset/confirm  { resetToken, password }  -> 200
-// Any non-2xx answer is shown to the user as an error. Without the base URL nothing is sent and an error is raised,
-// so the flow never pretends to have sent an e-mail.
+
 
 export const AUTH_API_BASE = (process.env.NEXT_PUBLIC_AUTH_API_URL || '').replace(/\/$/, '');
 

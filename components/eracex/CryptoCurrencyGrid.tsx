@@ -84,7 +84,6 @@ const TEXT: Record<string, { title: string; subtitle: string }> = {
   },
 };
 
-/** Grid of supported currencies with their logos. `inline` renders it without its own section wrapper. */
 export const CryptoCurrencyGrid: React.FC<{ inline?: boolean; className?: string }> = ({ inline = false, className = '' }) => {
   const { currentLang } = useLanguage();
   const c = TEXT[currentLang] || TEXT.en;
@@ -98,7 +97,7 @@ export const CryptoCurrencyGrid: React.FC<{ inline?: boolean; className?: string
       <ul className="mt-10 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-x-3 gap-y-8">
         {COINS.map(([slug, label]) => (
           <li key={slug} className="group flex flex-col items-center text-center gap-2.5 min-w-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+            {}
             <img
               src={`/images/crypto/${slug}.png`}
               alt=""

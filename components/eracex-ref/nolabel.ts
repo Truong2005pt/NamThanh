@@ -1,8 +1,4 @@
-/**
- * Removes the "minh họa" / "illustrative" wording from the concept pages.
- * Standalone tags (the whole text is just that word) are hidden; inside a sentence the word is dropped.
- * Runs on the rendered text so it covers both languages and every script, and is idempotent.
- */
+
 
 const WORD = '(?:minh\\s+họa|ilustr\\w*|illustr\\w*|ilustrativ\\w*|ilustra[cç]\\w*|ilustracj\\w*|ilustracyjn\\w*|illustrati\\w*|illustriert\\w*|ilustrasi\\w*|ilustratif|illustrative|illustrated|illustration|mô\\s+phỏng|demo|simulated|simulation|simulations|simulad[oa]s?|simulaci[oó]n(?:es)?|simul[ée]e?s?|simulation|simuliert(?:e[nrms]?)?|simulat[oiae]|simulazion[ei]|simulasi|sim[uü]le|sim[uü]lasyon|symulacyjn\\w*|gesimuleerd\\w*|จำลอง|シミュレーション|デモ|模擬|模拟|演示|सिमुलेटेड|सिम्युलेट\\w*|सिम्युलेशन|डेमो|symulowan\\w*)';
 const DISCLAIMER = /demo|bản duyệt|design review|dữ liệu mẫu|sample data|hồ sơ mẫu|không phải (?:là )?(?:dịch vụ đầu tư|lời chứng thực|cam kết|giao diện hệ thống|hệ thống thật|bằng chứng|khoản chi trả|lịch sử chi trả|tiền nạp)|chưa kết nối|hình (?:ảnh )?(?:theo chủ đề|thiết kế)|not (?:an? )?(?:investment|income|actual|testimonial|payout|evidence|live)|no investment services|thematic|không xác nhận|does not confirm|không theo dõi tài khoản thật|not live account|không phải (?:khoản )?vốn|không bảo đảm|không đảm bảo|phí tham gia là phí dịch vụ|participation fees are service fees|not a guarantee|no guarantee|not guaranteed|không cam kết|no income guarantee|không phải lời khuyên|not financial advice|chưa phải|bố cục đề xuất|design proposal|not announced|not connected|support agents are not|chưa được công bố|không gửi dữ liệu|không nhập mật khẩu|no data is sent|does not send data|do not enter passwords/i;
@@ -20,7 +16,6 @@ function clean(text: string): string {
     .trim();
 }
 
-/** Base reward share is shown as an 80–90% range; calculation examples (with × or =) keep the exact 80%. */
 function widenRate(value: string): string {
   if (!/80\s?%/.test(value) || /[×=]/.test(value)) return value;
   return value
@@ -30,7 +25,6 @@ function widenRate(value: string): string {
 
 const ATTRS = ['alt', 'title', 'aria-label', 'placeholder'];
 
-/** Same wording filter for text that lives in attributes (image alt, tooltips, aria labels). */
 function cleanAttributes(root: Node) {
   if (!(root instanceof Element) && !(root instanceof Document)) return;
   const re = new RegExp(WORD, 'i');

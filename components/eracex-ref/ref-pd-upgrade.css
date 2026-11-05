@@ -1,6 +1,4 @@
-/* Program pages: account-size picker, phase table, reward cycle and order bar.
-   Layout follows the clean "white card" comparison style; colours stay on the ERACEX palette:
-   light = white + gold, dark = black + gold. */
+
 
 .ref-scope {
   --pdu-gold: #f3c633;
@@ -31,7 +29,6 @@
   --pdu-funded-line: #ffffff66;
 }
 
-/* ---- size picker: one rounded track, active size filled with gold ---- */
 .ref-scope .pd-config .pd-size-picker {
   display: flex; width: fit-content; max-width: 100%; margin: 0 auto 26px;
   gap: 2px; padding: 5px; border-radius: 999px; overflow-x: auto;
@@ -48,7 +45,6 @@
   box-shadow: 0 6px 18px -8px #c99a1daa;
 }
 
-/* ---- phase table card ---- */
 .ref-scope .pd-config .pd-table-scroll {
   background: var(--pdu-card); border: 1px solid var(--pdu-line); border-radius: 20px;
   box-shadow: var(--pdu-shadow); overflow: hidden;
@@ -56,7 +52,7 @@
 .ref-scope .pd-config .pd-phase-table { border-collapse: separate; border-spacing: 0; width: 100%; background: transparent; }
 .ref-scope .pd-config .pd-phase-table th,
 .ref-scope .pd-config .pd-phase-table td { border: 0; color: var(--pdu-text); background: transparent; }
-/* label column */
+
 .ref-scope .pd-config .pd-phase-table thead th:first-child,
 .ref-scope .pd-config .pd-phase-table tbody th { background: var(--pdu-side); border-right: 1px solid var(--pdu-line); text-align: left; }
 .ref-scope .pd-config .pd-phase-table tbody th .metric-trigger { color: var(--pdu-muted); font-weight: 500; }
@@ -65,7 +61,6 @@
 .ref-scope .pd-config .pd-phase-table tbody tr + tr th,
 .ref-scope .pd-config .pd-phase-table tbody tr + tr td:not(.pd-funded) { border-top: 1px solid color-mix(in srgb, var(--pdu-line) 55%, transparent); }
 
-/* stage header */
 .ref-scope .pd-config .pd-stage-groups th { font-size: 12px; font-weight: 600; letter-spacing: .3px; color: var(--pdu-muted); text-align: center; padding-top: 18px; background: transparent; }
 .ref-scope .pd-config .pd-stage-groups th:first-child { background: var(--pdu-side); }
 .ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th { text-align: center; vertical-align: top; padding: 10px 12px 18px; }
@@ -74,7 +69,6 @@
 .ref-scope .pd-config .pd-phase-table thead th small { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--pdu-muted); }
 .ref-scope .pd-config .pd-phase-table thead th:first-child strong { font-size: 24px; margin-top: 4px; letter-spacing: -.5px; }
 
-/* numbered circles joined by a line (phase 1 --- phase 2) */
 .ref-scope .pd-config .pd-phase-table .pd-evaluation { position: relative; }
 .ref-scope .pd-config .pd-phase-table .pd-phase-number {
   display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto; border-radius: 50%;
@@ -88,7 +82,6 @@
 .ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(2)::after { left: calc(50% + 24px); right: 0; }
 .ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) .pd-evaluation:nth-child(3)::before { right: calc(50% + 24px); left: 0; }
 
-/* funded column: the accent of the card */
 .ref-scope .pd-config .pd-phase-table .pd-funded { background: var(--pdu-funded); color: var(--pdu-funded-text); border-left: 0; }
 .ref-scope .pd-config .pd-phase-table td.pd-funded { font-weight: 700; border-top: 1px solid var(--pdu-funded-line); color: var(--pdu-funded-text); }
 .ref-scope .pd-config .pd-phase-table th.pd-funded strong,
@@ -100,7 +93,6 @@
 }
 .ref-scope .pd-config .pd-stage-groups th:last-child { background: var(--pdu-funded); color: var(--pdu-funded-text); }
 
-/* ---- reward cycle chip row ---- */
 .ref-scope .pd-config .pd-cycle-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 22px 0 6px; flex-wrap: wrap; }
 .ref-scope .pd-config .pd-cycle-row > span { font-size: 15px; font-weight: 500; color: var(--pdu-text); }
 .ref-scope .pd-config .pd-cycle-row > button {
@@ -109,7 +101,6 @@
 }
 .ref-scope .pd-config .pd-cycle-row > small { font-size: 12px; color: var(--pdu-muted); background: var(--pdu-pill); border: 1px solid var(--pdu-line); padding: 6px 12px; border-radius: 999px; }
 
-/* ---- order bar ---- */
 .ref-scope .pd-config .pd-order-bar { border-top: 1px solid var(--pdu-line); margin-top: 18px; padding-top: 26px; align-items: center; }
 .ref-scope .pd-config .pd-order-bar span { color: var(--pdu-muted); font-size: 13px; }
 .ref-scope .pd-config .pd-order-bar strong { color: var(--pdu-text); font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -1.4px; font-weight: 700; }
@@ -128,7 +119,6 @@
   .ref-scope .pd-config .pd-phase-table thead th:first-child strong { font-size: 19px; }
 }
 
-/* ---- polish: header cell carries no duplicate size, no captions under phase names ---- */
 .ref-scope .pd-config .pd-phase-table thead tr:nth-child(2) th:first-child > * {
   position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
 }

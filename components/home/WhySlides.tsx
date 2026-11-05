@@ -5,10 +5,8 @@ import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { WHY } from "./data";
 import { useT } from "./i18n";
 
-/** Seconds each slide stays before the next one fades in. */
 const SECONDS = 6;
 
-/** One stock photo (Pexels licence) and one anchor per point, in the same order as WHY. */
 const SLIDES = [
   { img: "/home/stock/s0.jpg", pos: "50% 40%", href: "#configure" },
   { img: "/home/stock/s1.jpg", pos: "50% 22%", href: "#configure" },
@@ -20,7 +18,6 @@ const SLIDES = [
   { img: "/home/stock/s7.jpg", pos: "50% 40%", href: "#faq" },
 ] as const;
 
-/** A single framed slider: arrows, dots, and a new point every few seconds. Hover or focus pauses it. */
 export function WhySlides() {
   const t = useT();
   const [k, setK] = useState(0);
@@ -53,7 +50,7 @@ export function WhySlides() {
         const s = SLIDES[i];
         return (
           <div key={title} className={"sk-slide" + (i === k ? " on" : "")} aria-hidden={i !== k}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+            {}
             <img src={s.img} alt="" style={{ objectPosition: s.pos }} loading={i === 0 ? "eager" : "lazy"} />
             <div className="cap">
               <h3>{t(title)}</h3>

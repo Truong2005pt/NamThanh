@@ -7,7 +7,7 @@ import { Star, BadgeCheck, ShieldCheck, UserRound } from 'lucide-react';
 
 export const ReviewsSection: React.FC = () => {
   const { currentLang } = useLanguage();
-  
+
   const [selectedCert, setSelectedCert] = useState<{
     img: string;
     trader: string;
@@ -385,8 +385,8 @@ export const ReviewsSection: React.FC = () => {
   return (
     <section className="py-20 sm:py-24 relative app-bg" id="reviews">
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
-        
-        {/* HEADER SECTION */}
+
+        {}
         <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16 reveal-up">
           <h2 className="text-3xl sm:text-5xl font-black tracking-normal app-text mb-4">
             {t.headerTitle}
@@ -399,7 +399,7 @@ export const ReviewsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* 3 REVIEWS CARDS WITH REAL TRADER PORTRAITS & CERTIFICATES */}
+        {}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {reviews.map((rev, idx) => (
             <div
@@ -407,7 +407,7 @@ export const ReviewsSection: React.FC = () => {
               className={`p-7 sm:p-8 rounded-3xl border app-border app-surface flex flex-col justify-between hover:border-[#f6bf4a]/50 dark:hover:border-[#ffc501]/50 transition-all duration-300 shadow-xl hover-float reveal-up stagger-${idx + 1}`}
             >
               <div>
-                {/* TRADER HEADER WITH REAL PORTRAIT */}
+                {}
                 <div className="flex items-center gap-4 mb-5">
                   <div className="relative shrink-0">
                     <div className="w-16 h-16 rounded-2xl border-2 border-[#f6bf4a]/40 dark:border-[#ffc501]/50 shadow-md app-subtle flex items-center justify-center text-[#c68a00] dark:text-[#f6bf4a]">
@@ -428,7 +428,7 @@ export const ReviewsSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* 5 CRISP GOLD STARS & SPEED */}
+                {}
                 <div className="flex items-center justify-between mb-3 py-1.5 border-y app-border">
                   <div className="flex items-center gap-1">
                     {[...Array(rev.rating)].map((_, i) => (
@@ -449,7 +449,7 @@ export const ReviewsSection: React.FC = () => {
 
               </div>
 
-              {/* FOOTER BADGE WITH CRISP VECTOR VERIFIED ICON */}
+              {}
               <div className="mt-4 pt-4 border-t app-border flex items-center justify-between text-xs font-mono">
                 <span className="text-[#f6bf4a] font-bold flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-[#f6bf4a] shrink-0" />

@@ -219,7 +219,7 @@ export default function BlogPostDetailPage() {
 
   return (
     <article className="pt-28 pb-20 app-bg app-text">
-      {/* BREADCRUMB */}
+      {}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <div className="flex items-center gap-2 text-xs font-mono app-text-muted mb-6">
           <Link href="/" className="hover:text-[#ffc501]">{t.nav.home}</Link>
@@ -238,7 +238,7 @@ export default function BlogPostDetailPage() {
         </Link>
       </div>
 
-      {/* ARTICLE HEADER */}
+      {}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight mb-6 app-text">
           {post.title}
@@ -261,15 +261,15 @@ export default function BlogPostDetailPage() {
         </div>
       </div>
 
-      {/* ARTICLE BODY */}
+      {}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 rounded-3xl border app-border-gold app-surface shadow-2xl mb-12">
-          {/* EXCERPT CALLOUT */}
+          {}
           <div className="p-5 rounded-2xl app-subtle border border-[#f6bf4a]/30 dark:border-[#f6bf4a]/20 font-medium text-base sm:text-lg italic leading-relaxed mb-8 text-[#c68a00] dark:text-[#ffc501]">
             &ldquo;{post.excerpt}&rdquo;
           </div>
 
-          {/* CONTENT SECTIONS */}
+          {}
           <div className="space-y-8 text-base leading-relaxed app-text-secondary">
             {post.content.map((sec, idx) => (
               <div key={idx} className="space-y-4">
@@ -285,7 +285,7 @@ export default function BlogPostDetailPage() {
             ))}
           </div>
 
-          {/* IN-ARTICLE CTA BOX */}
+          {}
           <div className="mt-12 p-8 rounded-2xl border app-border bg-[#ffc501]/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-bold app-text mb-1">

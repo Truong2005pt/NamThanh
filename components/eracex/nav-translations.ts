@@ -1,4 +1,4 @@
-// components/eracex/nav-translations.ts
+
 export interface NavTranslationItem {
   trading: string;
   howItWorks: string;

@@ -45,13 +45,8 @@ export interface GftIconProps {
   strokeWidth?: number;
 }
 
-/**
- * Standard, human-crafted vector icon mappings.
- * Replaces all blurry/pixelated/AI-looking raster webp icons
- * with crisp, pixel-perfect, scalable Lucide SVG vector icons.
- */
 const ICON_MAP: Record<string, LucideIcon> = {
-  // Checks & Verification
+
   'check': Check,
   'icon-check': Check,
   'icon-check.webp': Check,
@@ -63,7 +58,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'icon-shield': ShieldCheck,
   'icon-shield.webp': ShieldCheck,
 
-  // Growth, Trends & Risk
   'boost-up': TrendingUp,
   'icon-boost-up': TrendingUp,
   'icon-boost-up.webp': TrendingUp,
@@ -75,7 +69,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'icon-loss-maximum': AlertTriangle,
   'icon-loss-maximum.webp': AlertTriangle,
 
-  // Money, Coins & Payouts
   'coins': Coins,
   'icon-coins': Coins,
   'icon-coins.webp': Coins,
@@ -93,7 +86,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'icon-split.webp': Percent,
   'dollar': DollarSign,
 
-  // Time & Scheduling
   'clock': Clock,
   'icon-clock': Clock,
   'icon-clock.webp': Clock,
@@ -101,7 +93,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'icon-calendar': Calendar,
   'icon-calendar.webp': Calendar,
 
-  // Objectives, Target & Trophies
   'target': Target,
   'icon-target': Target,
   'icon-target.webp': Target,
@@ -111,7 +102,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'icon-thropy-outline.webp': Trophy,
   'award': Award,
 
-  // Speed, Code & Latency
   'lightning': Zap,
   'icon-lightning': Zap,
   'icon-lightning.webp': Zap,
@@ -126,7 +116,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   'fast-foward-icon': FastForward,
   'fast-foward-icon.webp': FastForward,
 
-  // Community, News & Ratings
   'people': Users,
   'icon-people': Users,
   'icon-people.webp': Users,
@@ -173,7 +162,7 @@ export const GftIcon: React.FC<GftIconProps> = ({
   // Fallback for real SVGs (like country flags or brand logos)
   if (src) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
+
       <img
         src={src}
         alt={alt}
