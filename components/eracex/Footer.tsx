@@ -9,6 +9,7 @@ import { SITE_CONFIG } from '@/config/site-config';
 import { ChevronDown, Globe } from 'lucide-react';
 import { SUPPORTED_LANGUAGES } from '@/lib/i18n';
 import { FooterDisclaimers } from './FooterDisclaimers';
+import { getUiStr } from './ui-strings';
 import disclaimersI18n from '@/content/legal/footer-disclaimers-i18n.json';
 
 const FOOTER_EXTRA_DICT: Record<string, {
@@ -2265,7 +2266,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 pb-3 text-center text-xs font-semibold uppercase tracking-wider app-text-secondary">
           {t.footer.paymentMethodsTitle}
         </div>
-        <div className="pb-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label="Payment methods">
+        <div className="pb-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label={getUiStr(currentLang).payment}>
           {PAYMENTS.filter((p) => p.enabled).map((p) => (
             <span key={p.name} title={p.name}>{p.mark}</span>
           ))}

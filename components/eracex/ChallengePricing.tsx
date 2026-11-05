@@ -806,8 +806,8 @@ const TEXT: Record<string, ChallengeTextItem> = {
     "title": "Piliin ang Iyong Challenge",
     "subtitle": "Apat na programa, limang laki ng account. Bawat package ay nagpapakita ng kumpletong patakaran bago ka magbayad.",
     "programNames": {
-      "two-step": "Two-Step Option",
-      "one-step": "One-Step Option",
+      "two-step": "Opsyong Two-Step",
+      "one-step": "Opsyong One-Step",
       "instant": "Instant Funding",
       "instant-light": "Instant Funding Light"
     },
@@ -820,7 +820,7 @@ const TEXT: Record<string, ChallengeTextItem> = {
       "days": "Minimum na Araw ng Trading",
       "withdrawal": "Mga araw bago ang susunod na withdrawal",
       "consistency": "Patakaran sa consistency",
-      "leverage": "Max Leverage*",
+      "leverage": "Pinakamataas na Leverage*",
       "minWithdrawal": "Minimum na Withdrawal**",
       "split": "Hatian sa Tubo"
     },

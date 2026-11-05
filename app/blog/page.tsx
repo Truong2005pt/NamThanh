@@ -302,7 +302,7 @@ const DICTIONARY: Record<string, BlogDictionary> = {
       "f3Text": "Simulated Trading",
       "badge1Tag": "PANANALIKSIK",
       "badge1Val": "Mga Patakaran at Panganib",
-      "badge2Tag": "RISK MODEL",
+      "badge2Tag": "MODELO NG RISK",
       "badge2Val": "Simulated Trading",
       "allCategory": "Lahat ng Artikulo",
       "catRisk": "Pamamahala ng Panganib",

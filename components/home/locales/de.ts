@@ -185,7 +185,7 @@ const L: Record<string, string> = {
   "Vì sao chọn ERACEX": "Warum ERACEX",
   "Vì sao chọn ERACEX?": "Warum ERACEX?",
   "Ví dụ phép tính: $2,803.00 × 80% = $2,242.40.": "Rechenbeispiel: $2,803.00 × 80% = $2,242.40.",
-  "Vòng 1: 10% · Vòng 2: 5%": "Phase 1: 10% · Phase 2: 5%",
+  "Vòng 1: 10% · Vòng 2: 5%": "Phase 1: 10 % · Phase 2: 5 %",
   "Vòng {n}": "Phase {n}",
   "Vương quốc Anh": "Vereinigtes Königreich",
   "Xem gói và phí": "Pakete und Gebühren ansehen",

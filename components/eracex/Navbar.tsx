@@ -9,6 +9,7 @@ import { useLanguage } from './LanguageContext';
 import { SUPPORTED_LANGUAGES } from '@/lib/i18n';
 import { LanguageFlag } from './LanguageFlag';
 import { getNavTranslations } from './nav-translations';
+import { getUiStr } from './ui-strings';
 import { SITE_CONFIG } from '@/config/site-config';
 import { 
   Sun, 
@@ -22,6 +23,7 @@ export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const { currentLang, setLanguage, t } = useLanguage();
+  const ui = getUiStr(currentLang);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileGroup, setMobileGroup] = useState<'products' | 'company' | null>(null);
@@ -203,7 +205,7 @@ export const Navbar: React.FC = () => {
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
               className="flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all border bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-200 text-neutral-800 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-white"
-              title="Change Language"
+              title={ui.changeLanguage}
               aria-label={currentLangMeta.nativeName}
             >
               <LanguageFlag code={currentLangMeta.code} className="w-6 h-4" />
@@ -244,8 +246,8 @@ export const Navbar: React.FC = () => {
             type="button"
             onClick={toggleTheme}
             className="p-1.5 sm:p-2 rounded-lg border transition-all bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-300 text-neutral-800 hover:text-black dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-[#f6bf4a]"
-            title={isLight ? 'Chuyển sang Chế độ Tối' : 'Chuyển sang Chế độ Sáng'}
-            aria-label="Chuyển đổi giao diện sáng tối"
+            title={isLight ? ui.toDark : ui.toLight}
+            aria-label={ui.themeAria}
           >
             {isLight ? <Moon className="w-4 h-4 text-neutral-800" /> : <Sun className="w-4 h-4 text-[#f6bf4a]" />}
           </button>
@@ -271,7 +273,7 @@ export const Navbar: React.FC = () => {
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="nav-mobile-toggle p-1.5 sm:p-2 rounded-xl border transition-all bg-neutral-100 hover:bg-neutral-200 border-neutral-300 text-neutral-800 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-[#f6bf4a] cursor-pointer"
-            aria-label="Toggle navigation menu"
+            aria-label={ui.toggleMenu}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>

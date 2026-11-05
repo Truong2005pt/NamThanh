@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/components/eracex/LanguageContext';
+import { getUiStr } from '@/components/eracex/ui-strings';
 import { installMorph } from './morph';
 import { watchMono } from './mono';
 import { watchNoLabel } from './nolabel';
@@ -255,7 +256,7 @@ export function RefPage({ route }: { route: string }) {
       </dialog>
       <dialog id="subDialog" aria-labelledby="subDialogTitle">
         <div className="dialog-top">
-          <span className="eyebrow">ERACEX / BẢN XEM TRƯỚC</span>
+          <span className="eyebrow">{getUiStr(currentLang).preview}</span>
           <button type="button" data-close-sub aria-label="Đóng">×</button>
         </div>
         <h2 id="subDialogTitle" />

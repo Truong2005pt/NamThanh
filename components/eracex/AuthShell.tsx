@@ -9,6 +9,7 @@ import { BrandLogo } from './BrandLogo';
 import { useTheme } from './ThemeContext';
 import { AUTH_COPY } from './auth-copy';
 import { useT } from '../home/i18n';
+import { getUiStr } from './ui-strings';
 import { PAYOUTS } from '../home/data';
 
 const COPY: Record<string, { slogan: string; sub: string; back: string; login: string; signup: string; points: string[] }> = {
@@ -327,7 +328,7 @@ export const AuthShell: React.FC<{ children: React.ReactNode; title?: string; ba
         <button
           type="button"
           onClick={toggleTheme}
-          aria-label="Toggle theme"
+          aria-label={getUiStr(currentLang).toggleTheme}
           className="absolute top-5 right-5 sm:right-8 w-9 h-9 grid place-items-center rounded-lg border border-neutral-300 dark:border-white/25 text-neutral-800 dark:text-white cursor-pointer"
         >
           {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}

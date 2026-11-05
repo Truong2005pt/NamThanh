@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { useTheme } from './ThemeContext';
+import { useLanguage } from './LanguageContext';
+import { getUiStr } from './ui-strings';
 
 interface BrandLogoProps {
   className?: string;
@@ -19,6 +21,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   forceWhiteText = false,
 }) => {
   const { theme } = useTheme();
+  const { currentLang } = useLanguage();
   const isDark = forceWhiteText || theme === 'dark';
 
   // Kích thước tỷ lệ
@@ -60,7 +63,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     <div
       className={`inline-flex items-center select-none transition-all duration-300 shrink-0 whitespace-nowrap ${className}`}
       style={{ gap: Math.round(textH * 0.5) }}
-      title="ERACEX Proprietary Trading Firm"
+      title={getUiStr(currentLang).brand}
       role="img"
       aria-label="ERACEX"
     >
