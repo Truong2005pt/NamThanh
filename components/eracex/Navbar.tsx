@@ -61,13 +61,121 @@ export const Navbar: React.FC = () => {
 
   const navText = getNavTranslations(currentLang);
   const vi = currentLang === 'vi';
-  const productsLabel = vi ? 'Sản phẩm' : 'Products';
+  const NAV_PROD: Record<string, string[]> = {
+    "vi": [
+      "Sản phẩm",
+      "Hai vòng đánh giá",
+      "Một vòng đánh giá",
+      "Không qua đánh giá",
+      "Không qua đánh giá · Light"
+    ],
+    "en": [
+      "Products",
+      "Two evaluation phases",
+      "One evaluation phase",
+      "No evaluation",
+      "No evaluation · Light"
+    ],
+    "de": [
+      "Produkte",
+      "Zwei Bewertungsphasen",
+      "Eine Bewertungsphase",
+      "Ohne Bewertung",
+      "Ohne Bewertung · Light"
+    ],
+    "es": [
+      "Productos",
+      "Dos fases de evaluación",
+      "Una fase de evaluación",
+      "Sin evaluación",
+      "Sin evaluación · Light"
+    ],
+    "fil": [
+      "Mga produkto",
+      "Dalawang yugto ng pagsusuri",
+      "Isang yugto ng pagsusuri",
+      "Walang pagsusuri",
+      "Walang pagsusuri · Light"
+    ],
+    "fr": [
+      "Produits",
+      "Deux phases d'évaluation",
+      "Une phase d'évaluation",
+      "Sans évaluation",
+      "Sans évaluation · Light"
+    ],
+    "hi": [
+      "उत्पाद",
+      "दो मूल्यांकन चरण",
+      "एक मूल्यांकन चरण",
+      "बिना मूल्यांकन",
+      "बिना मूल्यांकन · Light"
+    ],
+    "id": [
+      "Produk",
+      "Dua fase evaluasi",
+      "Satu fase evaluasi",
+      "Tanpa evaluasi",
+      "Tanpa evaluasi · Light"
+    ],
+    "it": [
+      "Prodotti",
+      "Due fasi di valutazione",
+      "Una fase di valutazione",
+      "Senza valutazione",
+      "Senza valutazione · Light"
+    ],
+    "ja": [
+      "製品",
+      "2段階の評価",
+      "1段階の評価",
+      "評価なし",
+      "評価なし · Light"
+    ],
+    "pl": [
+      "Produkty",
+      "Dwa etapy oceny",
+      "Jeden etap oceny",
+      "Bez oceny",
+      "Bez oceny · Light"
+    ],
+    "pt": [
+      "Produtos",
+      "Duas fases de avaliação",
+      "Uma fase de avaliação",
+      "Sem avaliação",
+      "Sem avaliação · Light"
+    ],
+    "th": [
+      "ผลิตภัณฑ์",
+      "การประเมินสองรอบ",
+      "การประเมินหนึ่งรอบ",
+      "ไม่มีการประเมิน",
+      "ไม่มีการประเมิน · Light"
+    ],
+    "tr": [
+      "Ürünler",
+      "İki değerlendirme aşaması",
+      "Tek değerlendirme aşaması",
+      "Değerlendirmesiz",
+      "Değerlendirmesiz · Light"
+    ],
+    "zh": [
+      "产品",
+      "两阶段评估",
+      "单阶段评估",
+      "无需评估",
+      "无需评估 · Light"
+    ]
+  };
+  const np = NAV_PROD[currentLang] || NAV_PROD.en;
+  const productsLabel = np[0];
   const programInfoLabel = getUiStr(currentLang).programInfo;
   const PRODUCTS = [
-    { href: '/programs/two-step', name: 'Two-Step', sub: vi ? 'Hai vòng đánh giá' : 'Two evaluation phases' },
-    { href: '/programs/one-step', name: 'One-Step', sub: vi ? 'Một vòng đánh giá' : 'One evaluation phase' },
-    { href: '/programs/instant-funding', name: 'Instant Funding', sub: vi ? 'Không qua đánh giá' : 'No evaluation' },
-    { href: '/programs/instant-light', name: 'Instant Light', sub: vi ? 'Không qua đánh giá · Light' : 'No evaluation · Light' },
+    { href: '/programs/two-step', name: 'Two-Step', sub: np[1] },
+    { href: '/programs/one-step', name: 'One-Step', sub: np[2] },
+    { href: '/programs/instant-funding', name: 'Instant Funding', sub: np[3] },
+    { href: '/programs/instant-light', name: 'Instant Light', sub: np[4] },
   ];
 
   useEffect(() => {
