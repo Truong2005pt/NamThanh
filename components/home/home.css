@@ -947,3 +947,11 @@
 .home .lp-tbl em{font-style:normal;font-weight:600;text-align:right}
 .home .lp-tbl em.up{color:#2e9e5b}.home .lp-tbl em.dn{color:#e5484d}
 .home .lp-notch{position:absolute;left:46.5%;top:0;width:11%;height:3.8%;border-radius:0 0 14px 14px;background:#0a0b0e}
+
+.home .sk-eyebrow{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:12px}
+.home .sk-h2-2 span{color:var(--muted)}
+
+
+.home .sk-eyebrow{display:flex;align-items:center;gap:10px;width:fit-content;padding:7px 15px;border:1px solid color-mix(in srgb,var(--gold-ink) 30%,transparent);border-radius:999px;background:color-mix(in srgb,var(--gold-ink) 8%,transparent);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:16px}
+.home .sk-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+.home .sk-eyebrow.sk-center{margin-inline:auto}

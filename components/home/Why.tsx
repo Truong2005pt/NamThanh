@@ -8,6 +8,7 @@ export function Why() {
   return (
     <section className="sk-band">
       <div className="sk-wrap sk-section">
+        <div className="sk-eyebrow sk-center">{`03 / ${t("Lý do chọn ERACEX")}`}</div>
         <h2 className="sk-center">{t("Vì sao chọn ERACEX?")}</h2>
         <p className="sk-sub sk-center">{t("Nhà giao dịch yêu thích.")}</p>
         <p className="sk-intro sk-center">{t("Lựa chọn rõ ràng. Công nghệ liền mạch. Kỷ luật làm nền tảng.")}</p>

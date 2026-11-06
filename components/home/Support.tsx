@@ -12,6 +12,7 @@ export function Support() {
       <div className="sk-wrap sk-section">
         <div className="sk-two">
           <div>
+            <div className="sk-eyebrow">{`05 / ${t("Đồng hành cùng bạn")}`}</div>
             <h2>{t("Bạn có câu hỏi?")}</h2>
             <p className="sk-sub">{t("ERACEX có hỗ trợ.")}</p>
             <p className="sk-lead2">{t("Hỗ trợ người dùng")}</p>

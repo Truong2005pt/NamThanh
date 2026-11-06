@@ -36,7 +36,7 @@ export const FooterDisclaimers: React.FC = () => {
   const blocks = [...data.blocks, ...(EXTRA[currentLang] || getUiStr(currentLang).extra || EXTRA.en)];
 
   return (
-    <section aria-label={getUiStr(currentLang).legal} className="w-full pt-6 pb-10 border-b app-border">
+    <section id="legal-info" aria-label={getUiStr(currentLang).legal} className="w-full pt-6 pb-10 border-b app-border">
       <div className="space-y-2.5 text-xs leading-relaxed app-text-muted">
         {blocks.map((b, i) =>
           b.t === 'h4' ? (

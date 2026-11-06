@@ -11,6 +11,7 @@ export function Hero() {
       <img className="sk-hero-img" src={IMG("hero")} alt="" />
       <div className="sk-hero-fade" />
       <div className="sk-wrap sk-hero-in">
+        <div className="sk-eyebrow">{t("Dành cho người giao dịch có kỷ luật")}</div>
         <h1>{t("Kỹ năng. Kỷ luật.")} <em>{t("Bản lĩnh.")}</em></h1>
         <p className="sk-lead">{t("Lựa chọn chương trình giao dịch phù hợp với bạn. Xem phí tham gia, mục tiêu đánh giá và điều kiện yêu cầu thưởng trước khi bắt đầu.")}</p>
         <div className="sk-actions">

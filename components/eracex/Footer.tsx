@@ -298,23 +298,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Phí và quy mô tài khoản",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -323,7 +323,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Môi trường giao dịch",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Quy tắc giao dịch",
@@ -331,11 +331,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Điều kiện thưởng",
-          "/rules"
+          "/rewards"
         ],
         [
-          "Ví dụ thưởng",
-          "/reviews"
+          "Ví dụ thưởng mô phỏng",
+          "/#rewards"
         ],
         [
           "Đăng nhập tài khoản",
@@ -355,7 +355,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
           "/contact"
         ],
         [
-          "Chương trình đại lý",
+          "Tiếp Thị IB",
           "/affiliate"
         ],
         [
@@ -369,15 +369,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Điều khoản sử dụng",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Chính sách bảo mật",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Phí và hoàn tiền",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Quốc gia bị hạn chế",
@@ -385,7 +385,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Thông tin quan trọng",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -396,23 +396,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Fees and account sizes",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -421,7 +421,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Trading environment",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Trading rules",
@@ -429,11 +429,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Reward conditions",
-          "/rules"
+          "/rewards"
         ],
         [
           "Reward examples",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Account login",
@@ -467,15 +467,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Terms and conditions",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Privacy policy",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Fees and refunds",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Restricted jurisdictions",
@@ -483,7 +483,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Important information",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -494,23 +494,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step 进阶",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step 极速",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant 直通",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "费用与账户规模",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -519,7 +519,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "交易执行环境",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "风控交易规则",
@@ -527,11 +527,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "分润奖励条件",
-          "/rules"
+          "/rewards"
         ],
         [
           "出金案例",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "账户登录",
@@ -565,15 +565,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "服务条款与规则",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "隐私保护政策",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "费用与退款政策",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "受限司法管辖区",
@@ -581,7 +581,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "风险披露声明",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -592,23 +592,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step 評価",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step 高速",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant 即時資金",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "料金と口座規模",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -617,7 +617,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "取引環境",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "取引ルール",
@@ -625,11 +625,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "報酬条件",
-          "/rules"
+          "/rewards"
         ],
         [
           "出金実績・事例",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "口座ログイン",
@@ -663,15 +663,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "利用規約",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "プライバシーポリシー",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "料金と返金ポリシー",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "利用制限国・地域",
@@ -679,7 +679,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "リスク開示事項",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -690,23 +690,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Tarifas y tamaños de cuenta",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -715,7 +715,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Entorno de trading",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Reglas de trading",
@@ -723,11 +723,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Condiciones de recompensas",
-          "/rules"
+          "/rewards"
         ],
         [
           "Ejemplos de cobros",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Acceso a la cuenta",
@@ -761,15 +761,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Términos y condiciones",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Política de privacidad",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Tarifas y reembolsos",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Jurisdicciones restringidas",
@@ -777,7 +777,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Aviso de riesgo",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -788,23 +788,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Taxas e tamanhos de conta",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -813,7 +813,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Ambiente de negociação",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Regras operacionais",
@@ -821,11 +821,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Condições de recompensa",
-          "/rules"
+          "/rewards"
         ],
         [
           "Exemplos de saques",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Login na conta",
@@ -859,15 +859,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Termos e condições",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Política de privacidade",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Taxas e reembolsos",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Jurisdições restritas",
@@ -875,7 +875,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Aviso de risco",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -886,23 +886,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Frais et tailles de compte",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -911,7 +911,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Environnement de trading",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Règles de trading",
@@ -919,11 +919,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Conditions de récompense",
-          "/rules"
+          "/rewards"
         ],
         [
           "Exemples de retraits",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Connexion compte",
@@ -957,15 +957,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Conditions générales",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Politique de confidentialité",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Frais et remboursements",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Juridictions restreintes",
@@ -973,7 +973,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Divulgation des risques",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -984,23 +984,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Gebühren & Kontogrößen",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1009,7 +1009,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Handelsumgebung",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Handelsregeln",
@@ -1017,11 +1017,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Auszahlungsbedingungen",
-          "/rules"
+          "/rewards"
         ],
         [
           "Auszahlungsbeispiele",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Konto-Login",
@@ -1055,15 +1055,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Allgemeine Geschäftsbedingungen",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Datenschutzrichtlinie",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Gebühren & Erstattung",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Eingeschränkte Länder",
@@ -1071,7 +1071,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Risikohinweis",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1082,23 +1082,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Tariffe e dimensioni conto",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1107,7 +1107,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Ambiente di trading",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Regole di trading",
@@ -1115,11 +1115,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Condizioni di payout",
-          "/rules"
+          "/rewards"
         ],
         [
           "Esempi di prelievo",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Accesso account",
@@ -1153,15 +1153,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Termini e condizioni",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Informativa sulla privacy",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Tariffe e rimborsi",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Giurisdizioni con restrizioni",
@@ -1169,7 +1169,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Informativa sui rischi",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1180,23 +1180,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Opłaty i wielkości kont",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1205,7 +1205,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Środowisko transakcyjne",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Zasady handlu",
@@ -1213,11 +1213,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Warunki wypłat",
-          "/rules"
+          "/rewards"
         ],
         [
           "Przykłady wypłat",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Logowanie do konta",
@@ -1251,15 +1251,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Regulamin",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Polityka prywatności",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Opłaty i zwroty",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Kraje objęte ograniczeniami",
@@ -1267,7 +1267,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Ujawnienie ryzyka",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1278,23 +1278,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "2 Aşamalı (Two-Step)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "1 Aşamalı (One-Step)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Anında Fonlama (Instant)",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Ücretler ve hesap boyutları",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1303,7 +1303,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "İşlem ortamı",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "İşlem kuralları",
@@ -1311,11 +1311,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Ödül ve çekim koşulları",
-          "/rules"
+          "/rewards"
         ],
         [
           "Ödeme kanıtları",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Hesap girişi",
@@ -1349,15 +1349,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Şartlar ve Koşullar",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Gizlilik Politikası",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Ücretler ve İade Politikası",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Yasaklı Ülkeler",
@@ -1365,7 +1365,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Risk Bildirimi",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1376,23 +1376,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step (2 Langkah)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step (1 Langkah)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Pendanaan Instan",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Biaya dan ukuran akun",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1401,7 +1401,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Lingkungan trading",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Aturan trading",
@@ -1409,11 +1409,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Ketentuan reward",
-          "/rules"
+          "/rewards"
         ],
         [
           "Contoh pembayaran",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Login akun",
@@ -1447,15 +1447,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Syarat & Ketentuan",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Kebijakan Privasi",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Biaya & Pengembalian Dana",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Yurisdiksi Dibatasi",
@@ -1463,7 +1463,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Pengungkapan Risiko",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1474,23 +1474,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step (2 ขั้นตอน)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step (1 ขั้นตอน)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "การระดมทุนทันที",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "ค่าธรรมเนียมและขนาดบัญชี",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1499,7 +1499,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "สภาพแวดล้อมการเทรด",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "กฎการเทรด",
@@ -1507,11 +1507,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "เงื่อนไขการรับรางวัล",
-          "/rules"
+          "/rewards"
         ],
         [
           "ตัวอย่างการเบิกจ่าย",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "เข้าสู่ระบบบัญชี",
@@ -1545,15 +1545,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "ข้อกำหนดและเงื่อนไข",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "นโยบายความเป็นส่วนตัว",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "ค่าธรรมเนียมและการคืนเงิน",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "ประเทศที่ถูกจำกัด",
@@ -1561,7 +1561,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "การเปิดเผยความเสี่ยง",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1572,23 +1572,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Agarang Pagpopondo",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Mga bayarin at laki ng account",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1597,7 +1597,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Kapaligiran sa trading",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Mga panuntunan sa trading",
@@ -1605,11 +1605,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Mga kondisyon ng gantimpala",
-          "/rules"
+          "/rewards"
         ],
         [
           "Mga halimbawa ng payout",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Pag-login sa account",
@@ -1643,15 +1643,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Mga Tuntunin at Kundisyon",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Patakaran sa Pagkapribado",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Mga bayarin at refund",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Mga Pinaghihigpitang Lugar",
@@ -1659,7 +1659,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Pagsisiwalat ng Panganib",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1670,23 +1670,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step (दो-चरण)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step (एक-चरण)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "तत्काल फंडिंग (Instant)",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "शुल्क और खाता आकार",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1695,7 +1695,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "ट्रेडिंग वातावरण",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "ट्रेडिंग नियम",
@@ -1703,11 +1703,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "इनाम शर्तें",
-          "/rules"
+          "/rewards"
         ],
         [
           "पेआउट उदाहरण",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "खाता लॉगिन",
@@ -1741,15 +1741,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "नियम और शर्तें",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "गोपनीयता नीति",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "शुल्क और धनवापसी",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "प्रतिबंधित क्षेत्राधिकार",
@@ -1757,7 +1757,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "जोखिम प्रकटीकरण",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1768,23 +1768,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step (2단계)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step (1단계)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "즉시 펀딩 (Instant)",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "참가비 및 계정 규모",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1793,7 +1793,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "거래 실행 환경",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "거래 규정",
@@ -1801,11 +1801,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "수익 분배 조건",
-          "/rules"
+          "/rewards"
         ],
         [
           "출금 사례",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "계정 로그인",
@@ -1839,15 +1839,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "이용약관",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "개인정보 처리방침",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "환불 정책",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "제한 국가 목록",
@@ -1855,7 +1855,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "위험 고지",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1866,23 +1866,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "2-Этапный (Two-Step)",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "1-Этапный (One-Step)",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Мгновенное Финансирование",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Тарифы и размеры счетов",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1891,7 +1891,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Торговая среда",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Правила торговли",
@@ -1899,11 +1899,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Условия выплат",
-          "/rules"
+          "/rewards"
         ],
         [
           "Примеры выплат",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Вход в аккаунт",
@@ -1937,15 +1937,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Условия использования",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Политика конфиденциальности",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Сборы и возврат средств",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Ограниченные юрисдикции",
@@ -1953,7 +1953,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Предупреждение о рисках",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -1964,23 +1964,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "تحدي المرحلتين",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "تحدي المرحلة الواحدة",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "التمويل الفوري المباشر",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "الرسوم وأحجام الحسابات",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -1989,7 +1989,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "بيئة التداول",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "قواعد التداول",
@@ -1997,11 +1997,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "شروط المكافآت والأرباح",
-          "/rules"
+          "/rewards"
         ],
         [
           "أمثلة السحوبات",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "تسجيل الدخول للحساب",
@@ -2035,15 +2035,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "الشروط والأحكام",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "سياسة الخصوصية",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "الرسوم وسياسة الاسترداد",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "الدول المحظورة",
@@ -2051,7 +2051,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "إخلاء المسؤولية عن المخاطر",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -2062,23 +2062,23 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Two-Step",
-          "/pricing"
+          "/programs/two-step"
         ],
         [
           "One-Step",
-          "/pricing"
+          "/programs/one-step"
         ],
         [
           "Instant Funding",
-          "/pricing"
+          "/programs/instant-funding"
         ],
         [
           "Instant Light",
-          "/pricing"
+          "/programs/instant-light"
         ],
         [
           "Tarieven & accountgroottes",
-          "/pricing"
+          "/programs"
         ]
       ]
     },
@@ -2087,7 +2087,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Handelsomgeving",
-          "/how-it-works"
+          "/technology"
         ],
         [
           "Handelsregels",
@@ -2095,11 +2095,11 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Uitbetalingsvoorwaarden",
-          "/rules"
+          "/rewards"
         ],
         [
           "Uitbetalingsvoorbeelden",
-          "/reviews"
+          "/#rewards"
         ],
         [
           "Account inloggen",
@@ -2133,15 +2133,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Algemene voorwaarden",
-          "/terms-and-conditions"
+          "/terms"
         ],
         [
           "Privacybeleid",
-          "/privacy-policy"
+          "/privacy"
         ],
         [
           "Tarieven & restitutie",
-          "/refund-policy"
+          "/fees"
         ],
         [
           "Beperkte rechtsgebieden",
@@ -2149,7 +2149,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Risicodisclaimer",
-          "/risk-disclosure"
+          "#legal-info"
         ]
       ]
     }
@@ -2200,9 +2200,108 @@ const SLOGAN: Record<string, string> = {
   "nl": "Alles-in-één — Evaluatie- en financieringsplatform van de volgende generatie"
 };
 
+const FOOT_BAND: Record<string, [string, string, string]> = {
+  "vi": [
+    "Đánh giá",
+    "Quy tắc theo chương trình",
+    "Về đầu trang"
+  ],
+  "en": [
+    "Evaluation",
+    "Program rules",
+    "Back to top"
+  ],
+  "zh": [
+    "评估",
+    "按计划规则",
+    "返回顶部"
+  ],
+  "ja": [
+    "評価",
+    "プログラム別ルール",
+    "ページ上部へ"
+  ],
+  "es": [
+    "Evaluación",
+    "Reglas por programa",
+    "Volver arriba"
+  ],
+  "pt": [
+    "Avaliação",
+    "Regras por programa",
+    "Voltar ao topo"
+  ],
+  "fr": [
+    "Évaluation",
+    "Règles par programme",
+    "Haut de page"
+  ],
+  "de": [
+    "Evaluierung",
+    "Regeln je Programm",
+    "Nach oben"
+  ],
+  "it": [
+    "Valutazione",
+    "Regole per programma",
+    "Torna su"
+  ],
+  "pl": [
+    "Ocena",
+    "Zasady programu",
+    "Do góry"
+  ],
+  "tr": [
+    "Değerlendirme",
+    "Programa özel kurallar",
+    "Başa dön"
+  ],
+  "id": [
+    "Evaluasi",
+    "Aturan per program",
+    "Kembali ke atas"
+  ],
+  "th": [
+    "การประเมิน",
+    "กฎตามโปรแกรม",
+    "กลับขึ้นด้านบน"
+  ],
+  "fil": [
+    "Pagsusuri",
+    "Mga tuntunin ng programa",
+    "Bumalik sa itaas"
+  ],
+  "hi": [
+    "मूल्यांकन",
+    "प्रोग्राम के अनुसार नियम",
+    "ऊपर जाएँ"
+  ],
+  "ko": [
+    "평가",
+    "프로그램별 규칙",
+    "맨 위로"
+  ],
+  "ru": [
+    "Оценка",
+    "Правила программы",
+    "Наверх"
+  ],
+  "ar": [
+    "التقييم",
+    "قواعد حسب البرنامج",
+    "العودة إلى الأعلى"
+  ],
+  "nl": [
+    "Evaluatie",
+    "Regels per programma",
+    "Naar boven"
+  ]
+};
+
 export const Footer: React.FC = () => {
   const pathname = usePathname();
   const { t, currentLang, setLanguage } = useLanguage();
+  const band = FOOT_BAND[currentLang] || FOOT_BAND.en;
   const fLinks = FOOTER_EXTRA_DICT[currentLang] || FOOTER_EXTRA_DICT['en'];
   const legalDict = ((disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)[currentLang] || (disclaimersI18n as unknown as Record<string, { links: Record<string, string> }>)['en']).links;
 
@@ -2219,6 +2318,11 @@ export const Footer: React.FC = () => {
             <BrandLogo size="md" showText={true} />
           </Link>
           <p className="mt-4 text-sm font-medium app-text">{SLOGAN[currentLang] || SLOGAN.en}</p>
+          <address className="mt-4 not-italic text-xs leading-6 app-text-secondary flex flex-col">
+            <strong className="app-text">ERACEX F.Z.E</strong>
+            <span>C1 Building, Ajman Free Zone, Ajman, United Arab Emirates</span>
+            <span>B.C. 1309328</span>
+          </address>
           <div className="mt-5 flex items-center gap-4">
             {SOCIALS.map((x) => (
               <a
@@ -2227,9 +2331,9 @@ export const Footer: React.FC = () => {
                 {...(x.url ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 aria-label={x.name}
                 title={x.name}
-                className="app-text-secondary hover:text-black dark:hover:text-white transition-colors"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border app-border app-text-secondary hover:text-black dark:hover:text-white hover:border-[#f3c633] transition-colors"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">{x.icon}</svg>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">{x.icon}</svg>
               </a>
             ))}
           </div>
@@ -2239,7 +2343,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 pb-12 border-b app-border">
           {(FOOT_COLS[currentLang] || FOOT_COLS.en).map((c) => (
             <div key={c.title}>
-              <div className="text-sm font-semibold app-text mb-4">{c.title}</div>
+              <div className="text-sm font-semibold text-[#a87b00] dark:text-[#f3c633] mb-4">{c.title}</div>
               <ul className="space-y-2.5 text-sm app-text-secondary">
                 {c.links.map(([label, href]) => (
                   <li key={label}><Link href={href} className="hover:text-black dark:hover:text-white transition-colors">{label}</Link></li>
@@ -2251,7 +2355,7 @@ export const Footer: React.FC = () => {
 
         {}
         <div className="pt-10">
-          <h3 className="text-sm font-semibold app-text">{DISCLAIMER_TITLE[currentLang] || DISCLAIMER_TITLE.en}</h3>
+          <h3 className="text-base font-semibold text-[#a87b00] dark:text-[#f3c633]">{DISCLAIMER_TITLE[currentLang] || DISCLAIMER_TITLE.en}</h3>
         </div>
         <FooterDisclaimers />
 
@@ -2265,6 +2369,9 @@ export const Footer: React.FC = () => {
           ))}
         </div>
 
+        <div className="py-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.16em] app-text-muted" aria-hidden="true">
+          <span>{band[0]}</span><span className="text-[#a87b00] dark:text-[#f3c633]">◇</span><span>{band[1]}</span><span className="text-[#a87b00] dark:text-[#f3c633]">◇</span><span>ERACEX</span>
+        </div>
         {}
         <div className="pt-8 flex flex-col-reverse sm:flex-row sm:items-end justify-between gap-6 text-xs app-text-muted">
           <div className="text-center sm:text-left">{t.footer.copyright}</div>
@@ -2295,6 +2402,9 @@ export const Footer: React.FC = () => {
                   {label}
                 </Link>
               ))}
+              <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
+                {band[2]} ↑
+              </button>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ export function Tech() {
       <div className="sk-two sk-two-rev">
         <DeskImage />
         <div>
+          <div className="sk-eyebrow">{`04 / ${t("Công nghệ all-in-one")}`}</div>
           <h2>{t("Trọn hành trình")}</h2>
           <p className="sk-sub">{t("Một hệ sinh thái.")}</p>
           <p className="sk-lead2">{t("All-in-one — Tất cả trong một.")}</p>

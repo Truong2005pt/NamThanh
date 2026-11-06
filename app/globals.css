@@ -626,14 +626,14 @@ html.light {
 }
 
 .gft-title,
-.gft-home section h2 {
+.gft-home section h2:where(:not(.ref-scope *)) {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: -0.025em !important;
   line-height: 1.02;
 }
 
-.gft-home section h2 {
+.gft-home section h2:where(:not(.ref-scope *)) {
   font-size: clamp(1.75rem, 3.4vw, 3rem);
   line-height: 1.1;
   text-wrap: balance;
@@ -662,7 +662,7 @@ html.light .hero-image-frame {
   box-shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.35);
 }
 
-.gft-home section h2.showcase-title {
+.gft-home section h2.showcase-title:where(:not(.ref-scope *)) {
   font-size: clamp(1.75rem, 3.4vw, 3rem);
   line-height: 1.1;
 }

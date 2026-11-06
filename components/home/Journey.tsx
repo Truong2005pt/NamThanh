@@ -20,8 +20,8 @@ export function Journey() {
   ];
   return (
     <section className="sk-wrap sk-section" id="how">
-      <h2 className="sk-center">{t("Bắt đầu như thế nào?")}</h2>
-      <p className="sk-sub sk-center">{t("Hành trình của bạn qua ba bước.")}</p>
+      <div className="sk-eyebrow sk-center">{`01 / ${t("Cách tham gia")}`}</div>
+      <h2 className="sk-center sk-h2-2">{t("Hành trình của bạn")}<br /><span>{t("Bắt đầu như thế nào?")}</span></h2>
       <div className="sk-toggle">
         <button className={assessed ? "on" : ""} onClick={() => !assessed && setProgram("two")}>{t("Có vòng đánh giá")}</button>
         <button className={!assessed ? "on" : ""} onClick={() => assessed && setProgram("instant")}>{t("Không qua đánh giá")}</button>

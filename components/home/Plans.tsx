@@ -66,6 +66,7 @@ export function Plans() {
 
   return (
     <section className="sk-wrap sk-section" id="configure">
+      <div className="sk-eyebrow sk-center">{`02 / ${t("Chương trình ERACEX")}`}</div>
       <h2 className="sk-center">{t("Một lựa chọn phù hợp")}</h2>
       <p className="sk-sub sk-center">{t("Một hành trình rõ ràng.")}</p>
       <p className="sk-intro sk-center">{t("So sánh bốn chương trình. Chọn quy mô và xem phí tham gia.")}</p>

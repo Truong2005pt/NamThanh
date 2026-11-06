@@ -84,3 +84,6 @@
 .ref-scope .pd-topic-panel .button, .ref-scope .pd-topic-panel .button * { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
 
 .ref-scope [hidden]{display:none!important}
+
+/* labels laid over dark photos keep light ink */
+.ref-scope .ib-bonus-badge, .ref-scope .ib-bonus-badge *, .ref-scope .ib-start-image > span { color: #e7ce7c !important; -webkit-text-fill-color: #e7ce7c !important; }
