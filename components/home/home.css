@@ -977,7 +977,6 @@
 @keyframes sk-marq-l{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes sk-marq-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @media(max-width:700px){.home .sk-prow .sk-pcard{width:240px}}
-@media(prefers-reduced-motion:reduce){.home .sk-pmarq{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.home .sk-prow{animation:none!important}}
 
 /* Nền tối: cột đang chọn của bảng so sánh dùng màu vàng nâu chuẩn (trái #6a5826, phải #42371b). Nền sáng giữ nguyên. */
 [data-theme="dark"] .home .sk-cmp .sel{background:linear-gradient(90deg,#6a5826,#42371b)!important}
