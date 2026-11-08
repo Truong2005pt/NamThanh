@@ -34,8 +34,8 @@
 .home .sk-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 20%}
 .home .sk-hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(255,253,248,.9) 30%,rgba(255,253,248,.25) 62%,transparent 80%),linear-gradient(180deg,transparent 72%,var(--bg))}
 .home .sk-hero-in{position:relative}
-.home .sk-hero h1{font-size:clamp(34px,5vw,72px);line-height:1.04;white-space:nowrap}
-.home .sk-hero h1 em{font-style:normal;color:var(--gold-ink)}
+.home .sk-hero h1{font-size:clamp(30px,4.1vw,60px);line-height:1.08;text-transform:uppercase;letter-spacing:-.01em}
+.home .sk-hero h1 em{font-style:normal;color:var(--gold-ink);display:block}
 .home .sk-lead{margin-top:22px;max-width:540px;font-size:clamp(16px,1.3vw,19px);color:var(--muted)}
 .home .sk-stats{display:flex;flex-wrap:wrap;align-items:center;gap:26px 44px;margin-top:72px}
 .home .sk-stat{display:flex;align-items:center;gap:12px}
@@ -314,7 +314,7 @@
   .home .sk-section{padding-top:60px;padding-bottom:60px}
   .home h2{font-size:clamp(25px,7vw,32px)}
   .home .sk-hero{padding:130px 0 40px}
-  .home .sk-hero h1{font-size:clamp(24px,7.4vw,36px)}
+  .home .sk-hero h1{font-size:clamp(24px,7.2vw,38px)}
   .home .sk-hero-fade{background:linear-gradient(180deg,rgba(255,253,248,.55),rgba(255,253,248,.9) 55%,var(--bg))}
   .home .sk-stats{margin-top:44px;gap:20px 28px}
   .home .sk-rate:nth-of-type(1){margin-left:0}
@@ -955,3 +955,29 @@
 .home .sk-eyebrow{display:flex;align-items:center;gap:10px;width:fit-content;padding:7px 15px;border:1px solid color-mix(in srgb,var(--gold-ink) 30%,transparent);border-radius:999px;background:color-mix(in srgb,var(--gold-ink) 8%,transparent);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:16px}
 .home .sk-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
 .home .sk-eyebrow.sk-center{margin-inline:auto}
+
+/* Khung "Mỗi 5 ngày": bỏ icon trái, thêm dấu kiểm cạnh chữ nhỏ, huy hiệu mũi tên góc trên phải, rê chuột thì khung hiện đoạn giải thích. */
+.home .sk-cycle{position:relative;cursor:default;outline:none}
+.home .sk-cycle b{display:flex;align-items:center;gap:8px}
+.home .sk-cycle .sk-cycle-go{display:grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--gold);color:var(--ink);font-size:0;flex:none;transition:transform .2s}
+.home .sk-cycle:hover .sk-cycle-go,.home .sk-cycle:focus-visible .sk-cycle-go{transform:translate(2px,-2px)}
+.home .sk-cycle{display:grid;align-items:center}
+.home .sk-cycle>.sk-cycle-main,.home .sk-cycle>.sk-cycle-more{grid-area:1/1;transition:opacity .2s}
+.home .sk-cycle .sk-cycle-more{margin:0;width:min(320px,80vw);font-size:13.5px;line-height:1.5;color:var(--fg);opacity:0;visibility:hidden}
+.home .sk-cycle:hover .sk-cycle-main,.home .sk-cycle:focus-within .sk-cycle-main,.home .sk-cycle:focus-visible .sk-cycle-main{opacity:0}
+.home .sk-cycle:hover .sk-cycle-more,.home .sk-cycle:focus-within .sk-cycle-more,.home .sk-cycle:focus-visible .sk-cycle-more{opacity:1;visibility:visible}
+
+/* Hai hàng thẻ thưởng chạy vô tận: hàng trên trái sang phải, hàng dưới phải sang trái. Mỗi nửa gồm 3 bản sao nên vòng lặp nối liền. */
+.home .sk-pmarq{margin-top:32px;display:grid;gap:18px;overflow:hidden;padding:14px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.home .sk-prow{display:flex;width:max-content;will-change:transform}
+.home .sk-prow .sk-pcard{flex:none;width:280px;margin-right:18px}
+.home .sk-prow.to-right{animation:sk-marq-r 50s linear infinite}
+.home .sk-prow.to-left{animation:sk-marq-l 50s linear infinite}
+.home .sk-pmarq:hover .sk-prow{animation-play-state:paused}
+@keyframes sk-marq-l{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes sk-marq-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media(max-width:700px){.home .sk-prow .sk-pcard{width:240px}}
+@media(prefers-reduced-motion:reduce){.home .sk-pmarq{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.home .sk-prow{animation:none!important}}
+
+/* Nền tối: cột đang chọn của bảng so sánh dùng màu vàng nâu chuẩn (trái #6a5826, phải #42371b). Nền sáng giữ nguyên. */
+[data-theme="dark"] .home .sk-cmp .sel{background:linear-gradient(90deg,#6a5826,#42371b)!important}

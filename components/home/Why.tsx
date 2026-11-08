@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import { WhySlides } from "./WhySlides";
 import { useT } from "./i18n";
 
@@ -13,7 +14,9 @@ export function Why() {
         <p className="sk-sub sk-center">{t("Nhà giao dịch yêu thích.")}</p>
         <p className="sk-intro sk-center">{t("Lựa chọn rõ ràng. Công nghệ liền mạch. Kỷ luật làm nền tảng.")}</p>
         <WhySlides />
-        <p className="sk-foot sk-center">{t("Instant Light có quy mô tối đa $25K. Chu kỳ yêu cầu không phải thời gian tiền về.")}</p>
+        <div style={{ marginTop: 28, display: "flex", justifyContent: "center" }}>
+          <a className="sk-btn sk-btn-gold sk-btn-lg" href="#configure">{t("Nhận Cấp Vốn")} <ArrowUpRight size={17} /></a>
+        </div>
       </div>
     </section>
   );

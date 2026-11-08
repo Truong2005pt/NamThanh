@@ -2178,26 +2178,48 @@ const DISCLAIMER_TITLE: Record<string, string> = {
   "nl": "Belangrijke informatie & disclaimer"
 };
 
-const SLOGAN: Record<string, string> = {
-  "vi": "All-in-one — Nền tảng đánh giá & cấp vốn thế hệ mới",
-  "en": "All-in-one — Next-generation evaluation & funding platform",
-  "zh": "全方位一体化 — 次世代评估与资金支持平台",
-  "ja": "オールインワン — 次世代の評価・資金提供プラットフォーム",
-  "es": "Todo en uno — Plataforma de evaluación y financiación de nueva generación",
-  "pt": "Tudo em um — Plataforma de avaliação e financiamento de nova geração",
-  "fr": "Tout-en-un — Plateforme d'évaluation et de financement nouvelle génération",
-  "de": "All-in-One — Evaluierungs- und Finanzierungsplattform der nächsten Generation",
-  "it": "Tutto in uno — Piattaforma di valutazione e finanziamento di nuova generazione",
-  "pl": "Wszystko w jednym — Platforma oceny i finansowania nowej generacji",
-  "tr": "Hepsi bir arada — Yeni nesil değerlendirme ve fonlama platformu",
-  "id": "Semua dalam satu — Platform evaluasi & pendanaan generasi berikutnya",
-  "th": "ครบจบในที่เดียว — แพลตฟอร์มประเมินและสนับสนุนเงินทุนยุคใหม่",
-  "fil": "Lahat-sa-isa — Makabagong plataporma sa pagsusuri at pagpopondo",
-  "hi": "ऑल-इन-वन — अगली पीढ़ी का मूल्यांकन और फंडिंग प्लेटफ़ॉर्म",
-  "ko": "올인원 — 차세대 평가 및 펀딩 플랫폼",
-  "ru": "Все в одном — Платформа оценки и финансирования нового поколения",
-  "ar": "الكل في واحد — منصة تقييم وتمويل من الجيل الجديد",
-  "nl": "Alles-in-één — Evaluatie- en financieringsplatform van de volgende generatie"
+const FOOT_TITLE: Record<string, string> = {
+  "en": "The all-in-one prop firm",
+  "de": "Die All-in-One-Prop-Firm",
+  "es": "La prop firm todo en uno",
+  "fil": "Ang all-in-one na prop firm",
+  "fr": "La prop firm tout-en-un",
+  "hi": "ऑल-इन-वन प्रॉप फर्म",
+  "id": "Prop firm serba ada",
+  "it": "La prop firm tutto in uno",
+  "ja": "オールインワン・プロップファーム",
+  "pl": "Kompleksowa firma prop",
+  "pt": "A prop firm completa",
+  "th": "พร็อพเฟิร์มครบวงจร",
+  "tr": "Hepsi bir arada prop firma",
+  "zh": "一站式自营交易公司",
+  "vi": "Hệ sinh thái prop firm trọn gói",
+  "ko": "올인원 프롭 펌",
+  "ru": "Проп-фирма «всё в одном»",
+  "ar": "شركة التداول الملكية الشاملة",
+  "nl": "De alles-in-één propfirma"
+};
+
+const FOOT_SUB: Record<string, string> = {
+  "en": "One ecosystem. Every market. Direct funding.",
+  "de": "Ein Ökosystem. Jeder Markt. Direkte Finanzierung.",
+  "es": "Un ecosistema. Todos los mercados. Financiación directa.",
+  "fil": "Isang ecosystem. Bawat merkado. Direktang pondo.",
+  "fr": "Un écosystème. Tous les marchés. Financement direct.",
+  "hi": "एक इकोसिस्टम। हर बाज़ार। सीधी फंडिंग।",
+  "id": "Satu ekosistem. Setiap pasar. Pendanaan langsung.",
+  "it": "Un ecosistema. Ogni mercato. Finanziamento diretto.",
+  "ja": "ひとつのエコシステム。あらゆる市場。 ダイレクト・ファンディング。",
+  "pl": "Jeden ekosystem. Każdy rynek. Bezpośrednie finansowanie.",
+  "pt": "Um ecossistema. Todos os mercados. Financiamento direto.",
+  "th": "ระบบนิเวศเดียว ทุกตลาด การสนับสนุนเงินทุนโดยตรง",
+  "tr": "Tek ekosistem. Her piyasa. Doğrudan fonlama.",
+  "zh": "一个生态系统。所有市场。 直接注资。",
+  "vi": "Một hệ sinh thái. Mọi thị trường. Cấp vốn trực tiếp.",
+  "ko": "하나의 생태계. 모든 시장. 직접 펀딩.",
+  "ru": "Одна экосистема. Любой рынок. Прямое финансирование.",
+  "ar": "منظومة واحدة. كل الأسواق. تمويل مباشر.",
+  "nl": "Eén ecosysteem. Elke markt. Directe financiering."
 };
 
 const FOOT_BAND: Record<string, [string, string, string]> = {
@@ -2317,12 +2339,8 @@ export const Footer: React.FC = () => {
           <Link href="/" aria-label="ERACEX">
             <BrandLogo size="md" showText={true} />
           </Link>
-          <p className="mt-4 text-sm font-medium app-text">{SLOGAN[currentLang] || SLOGAN.en}</p>
-          <address className="mt-4 not-italic text-xs leading-6 app-text-secondary flex flex-col">
-            <strong className="app-text">ERACEX F.Z.E</strong>
-            <span>C1 Building, Ajman Free Zone, Ajman, United Arab Emirates</span>
-            <span>B.C. 1309328</span>
-          </address>
+          <p className="mt-4 text-base sm:text-lg font-extrabold uppercase tracking-wide app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
+          <p className="mt-1.5 text-xs font-medium uppercase tracking-wider app-text-secondary">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
           <div className="mt-5 flex items-center gap-4">
             {SOCIALS.map((x) => (
               <a

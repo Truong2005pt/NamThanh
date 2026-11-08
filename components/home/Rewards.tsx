@@ -18,7 +18,7 @@ export function Rewards() {
         <div className="head"><div><b>{t("Bảng thưởng")}</b><small>{t("Thời điểm hiển thị theo UTC+7")}</small></div></div>
         <div className="scroll">
           <table>
-            <thead><tr><th>{t("Thời điểm")}</th><th>{t("Người nhận")}</th><th>{t("Thưởng (USD)")}</th><th>{t("Quốc gia")}</th><th>{t("Chương trình")}</th><th>{t("Quy mô")}</th></tr></thead>
+            <thead><tr><th>{t("Thời điểm")}</th><th>{t("Người nhận")}</th><th>{t("Thưởng (USD)")}</th><th>{t("Quốc gia")}</th><th>{t("Loại tài khoản")}</th><th>{t("Quy mô tài khoản")}</th></tr></thead>
             <tbody>
               {PAYOUTS.map((x) => (
                 <tr key={x.id}>
@@ -36,15 +36,19 @@ export function Rewards() {
         <p className="foot">{t("Số tiền bằng 80% lợi nhuận đủ điều kiện; bấm mã hồ sơ để xem phép tính tương ứng.")}</p>
       </div>
 
-      <div className="sk-pgrid">
-        {PAYOUTS.map((x) => (
-          <a key={x.id} href="#ledger" className="sk-card sk-pcard">
-            <div className="top"><span className="logo sk-mark"><Logo size={24} color="currentColor" /></span><em>{x.program}</em></div>
-            <small>{t("THƯỞNG")}</small>
-            <strong>{x.amount}</strong>
-            <span className="sz">{t("Quy mô")} {x.size}</span>
-            <div className="foot"><Flag country={x.country} /><div><b>{x.name}</b><small>{t(x.country)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
-          </a>
+      <div className="sk-pmarq" aria-label={t("Bảng thưởng")}>
+        {[PAYOUTS.slice(0, 4), PAYOUTS.slice(4, 8)].map((row, r) => (
+          <div key={r} className={"sk-prow " + (r === 0 ? "to-right" : "to-left")}>
+            {Array.from({ length: 6 }, (_, c) => row.map((x) => (
+              <a key={c + x.id} href="#ledger" className="sk-card sk-pcard" aria-hidden={c > 0} tabIndex={c > 0 ? -1 : 0}>
+                <div className="top"><span className="logo sk-mark"><Logo size={24} color="currentColor" /></span><em>{x.program}</em></div>
+                <small>{t("THƯỞNG")}</small>
+                <strong>{x.amount}</strong>
+                <span className="sz">{t("Quy mô")} {x.size}</span>
+                <div className="foot"><Flag country={x.country} /><div><b>{x.name}</b><small>{t(x.country)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
+              </a>
+            ))).flat()}
+          </div>
         ))}
       </div>
     </section>
