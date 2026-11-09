@@ -11,7 +11,6 @@ export function RewardPanel() {
     <section className="sk-wrap sk-section-tight">
       <div className="sk-panel">
         <div className="sk-panel-l">
-          <div className="sk-eyebrow">{t("Thưởng theo kết quả")}</div>
           <h2>{t("Hiểu rõ điều kiện")}</h2>
           <p className="sk-sub">{t("Chủ động hành trình.")}</p>
           <p className="sk-p">{t("Chọn chương trình phù hợp, giao dịch trong giới hạn và gửi yêu cầu thưởng khi đáp ứng đầy đủ quy định. Các điều kiện quan trọng được trình bày trước khi bạn bắt đầu.")}</p>

@@ -35,13 +35,13 @@
 :root[data-theme='light'] .ref-scope .pd-config .pd-phase-table tbody tr + tr td:not(.pd-funded) { border-top-color: #e6e2d3; }
 
 .ref-scope .pd-config .pd-phase-table .pd-funded,
-.ref-scope .pd-config .pd-stage-groups th:last-child { background: var(--inv-bg) !important; box-shadow: none !important; }
-.ref-scope .pd-config .pd-stage-groups th:last-child { color: var(--inv-fg) !important; opacity: 1; }
+.ref-scope .pd-config .pd-stage-groups th:last-child { background: linear-gradient(120deg, #e6c76e, #f1dda0) !important; box-shadow: none !important; }
+.ref-scope .pd-config .pd-stage-groups th:last-child { color: #4c3d15 !important; opacity: 1; }
 .ref-scope .pd-config .pd-phase-table th.pd-funded strong,
 .ref-scope .pd-config .pd-phase-table th.pd-funded small,
-.ref-scope .pd-config .pd-phase-table td.pd-funded { color: var(--inv-fg) !important; -webkit-text-fill-color: var(--inv-fg) !important; }
-.ref-scope .pd-config .pd-phase-table td.pd-funded { border-top: 1px solid color-mix(in srgb, var(--inv-fg) 18%, transparent) !important; }
-.ref-scope .pd-config .pd-phase-table .pd-funded-logo { display: block; height: 22px; width: auto; margin: 3px auto 0; }
+.ref-scope .pd-config .pd-phase-table td.pd-funded { color: #4c3d15 !important; -webkit-text-fill-color: #4c3d15 !important; }
+.ref-scope .pd-config .pd-phase-table td.pd-funded { border-top: 1px solid rgba(76, 61, 21, .18) !important; }
+.ref-scope .pd-config .pd-phase-table .pd-funded-logo { display: block; height: 22px; width: auto; margin: 3px auto 0; filter: brightness(0) opacity(.72); }
 
 .ref-scope .pd-config .pd-cycle-row > button,
 .ref-scope .pd-config .pd-order-bar .button,

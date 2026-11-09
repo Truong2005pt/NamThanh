@@ -66,7 +66,6 @@ export function Plans() {
 
   return (
     <section className="sk-wrap sk-section" id="configure">
-      <div className="sk-eyebrow sk-center">{`02 / ${t("Chương trình ERACEX")}`}</div>
       <h2 className="sk-center">{t("Một lựa chọn phù hợp")}</h2>
       <p className="sk-sub sk-center">{t("Một hành trình rõ ràng.")}</p>
       <p className="sk-intro sk-center">{t("So sánh bốn chương trình. Chọn quy mô và xem phí tham gia.")}</p>
@@ -154,7 +153,7 @@ export function Plans() {
         <div className="sk-card sk-sum">
           <div><small>{t("LỰA CHỌN CỦA BẠN")}</small><b>{p.name}</b><span>{usd(size)}</span></div>
           <div className="price"><small>{t("Phí tham gia một lần")}</small><strong>{fmt(total)} <em>USD</em></strong>{total !== fee && <s>{fmt(fee)}</s>}</div>
-          <a className="sk-btn sk-btn-gold" href="/pricing">{t("Xem gói đã chọn")} <ArrowUpRight size={15} /></a>
+          <a className="sk-btn sk-btn-gold" href="/sign-up">{t("Nhận Cấp Vốn")} <ArrowUpRight size={15} /></a>
         </div>
         <div className="sk-card sk-addons" role="group" aria-label={t("Tiện ích bổ sung tùy chọn")}>
           <p>{t("Tiện ích bổ sung tùy chọn")}</p>

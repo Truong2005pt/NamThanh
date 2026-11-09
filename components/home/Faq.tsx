@@ -10,7 +10,6 @@ export function Faq() {
     <section className="sk-wrap sk-section" id="faq">
       <div className="sk-two sk-faq">
         <div>
-          <div className="sk-eyebrow">{`06 / ${t("Câu hỏi thường gặp")}`}</div>
           <h2>{t("Hiểu thêm")}</h2>
           <p className="sk-sub">{t("Chọn chắc hơn.")}</p>
           <p className="sk-p">{t("Những câu hỏi cần làm rõ trước khi tham gia một chương trình.")}</p>

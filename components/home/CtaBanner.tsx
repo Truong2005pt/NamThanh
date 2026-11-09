@@ -9,7 +9,6 @@ export function CtaBanner() {
     <section className="sk-wrap sk-cta-wrap">
         <div className="sk-cta">
           <div className="in">
-            <div className="sk-eyebrow">{t("Hành trình bắt đầu từ một lựa chọn")}</div>
             <h2>{t("Sẵn sàng bắt đầu?")}</h2>
             <p>{t("Tìm chương trình của bạn.")}</p>
             <ul>

@@ -9,7 +9,6 @@ export function Rewards() {
   const t = useT();
   return (
     <section className="sk-wrap sk-section" id="rewards">
-      <div className="sk-eyebrow sk-center">{t("Góc nhìn về thưởng")}</div>
       <h2 className="sk-center">{t("Mỗi hành trình")}</h2>
       <p className="sk-sub sk-center">{t("Một kết quả riêng.")}</p>
       <p className="sk-intro sk-center">{t("Khám phá cách trình bày khoản thưởng theo từng chương trình. Chọn một thẻ để xem quy mô tài khoản và phép tính.")}</p>

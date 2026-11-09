@@ -34,7 +34,7 @@
 .home .sk-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 20%}
 .home .sk-hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(255,253,248,.9) 30%,rgba(255,253,248,.25) 62%,transparent 80%),linear-gradient(180deg,transparent 72%,var(--bg))}
 .home .sk-hero-in{position:relative}
-.home .sk-hero h1{font-size:clamp(30px,4.1vw,60px);line-height:1.08;text-transform:uppercase;letter-spacing:-.01em}
+.home .sk-hero h1{font-size:clamp(30px,4.1vw,60px);line-height:1.08;text-transform:none;letter-spacing:-.01em}
 .home .sk-hero h1 em{font-style:normal;color:var(--gold-ink);display:block}
 .home .sk-lead{margin-top:22px;max-width:540px;font-size:clamp(16px,1.3vw,19px);color:var(--muted)}
 .home .sk-stats{display:flex;flex-wrap:wrap;align-items:center;gap:26px 44px;margin-top:72px}
@@ -980,3 +980,11 @@
 
 /* Nền tối: cột đang chọn của bảng so sánh dùng màu vàng nâu chuẩn (trái #6a5826, phải #42371b). Nền sáng giữ nguyên. */
 [data-theme="dark"] .home .sk-cmp .sel{background:linear-gradient(90deg,#6a5826,#42371b)!important}
+.home .sk-stats-r{margin-left:auto;justify-content:flex-end}
+.home .sk-cycle{justify-items:end}
+.home .sk-cycle .sk-cycle-main{text-align:right}
+.home .sk-cycle .sk-cycle-main b{justify-content:flex-end}
+.home .sk-cycle .sk-cycle-more{text-align:right}
+.home .sk-cycle{display:block}
+.home .sk-cycle .sk-cycle-more{position:absolute;right:0;top:50%;transform:translateY(-50%);width:max(100%,min(320px,80vw))}
+.home .sk-stats-r{gap:20px 40px}

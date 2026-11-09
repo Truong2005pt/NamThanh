@@ -2339,8 +2339,8 @@ export const Footer: React.FC = () => {
           <Link href="/" aria-label="ERACEX">
             <BrandLogo size="md" showText={true} />
           </Link>
-          <p className="mt-4 text-base sm:text-lg font-extrabold uppercase tracking-wide app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
-          <p className="mt-1.5 text-xs font-medium uppercase tracking-wider app-text-secondary">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
+          <p className="mt-4 text-sm font-extrabold uppercase tracking-wide app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
+          <p className="mt-1 text-sm font-normal capitalize app-text-secondary opacity-80">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
           <div className="mt-5 flex items-center gap-4">
             {SOCIALS.map((x) => (
               <a
@@ -2377,20 +2377,11 @@ export const Footer: React.FC = () => {
         </div>
         <FooterDisclaimers />
 
-        {}
-        <div className="pt-8 pb-3 text-center text-xs font-semibold uppercase tracking-wider app-text-secondary">
-          {t.footer.paymentMethodsTitle}
-        </div>
-        <div className="pb-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label={getUiStr(currentLang).payment}>
-          {PAYMENTS.filter((p) => p.enabled).map((p) => (
+        <div className="py-8 border-b app-border flex flex-wrap items-center justify-center gap-x-10 gap-y-4 app-text-muted opacity-75" aria-label={getUiStr(currentLang).payment}>
+          {["Skrill", "PayPal", "Mastercard", "Visa", "Bitcoin", "Apple Pay", "Google Pay", "Neteller", "AstroPay"].map((n) => PAYMENTS.find((p) => p.name === n)).filter((p): p is NonNullable<typeof p> => !!p).map((p) => (
             <span key={p.name} title={p.name}>{p.mark}</span>
           ))}
         </div>
-
-        <div className="py-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.16em] app-text-muted" aria-hidden="true">
-          <span>{band[0]}</span><span className="text-[#a87b00] dark:text-[#f3c633]">◇</span><span>{band[1]}</span><span className="text-[#a87b00] dark:text-[#f3c633]">◇</span><span>ERACEX</span>
-        </div>
-        {}
         <div className="pt-8 flex flex-col-reverse sm:flex-row sm:items-end justify-between gap-6 text-xs app-text-muted">
           <div className="text-center sm:text-left">{t.footer.copyright}</div>
           <div className="flex flex-col items-center sm:items-end gap-4">
