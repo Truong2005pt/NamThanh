@@ -344,3 +344,9 @@
 .ref-scope .pg-num, .ref-scope .pg-from { color: #fff !important; -webkit-text-fill-color: #fff !important; }
 .ref-scope .pg-from small { color: rgba(255,255,255,.78) !important; -webkit-text-fill-color: rgba(255,255,255,.78) !important; }
 .ref-scope .pg-from b { color: #f6d35a !important; -webkit-text-fill-color: #f6d35a !important; }
+
+/* creators photo captions: always light text on the dark overlay, in both themes */
+.ref-scope .ib-creator-labels span, .ref-scope .ib-creator-labels h3, .ref-scope .ib-creator-labels p { background: transparent !important; box-shadow: none !important; -webkit-text-fill-color: currentColor !important; }
+.ref-scope .ib-creator-labels span { color: #f3cf5a !important; }
+.ref-scope .ib-creator-labels h3 { color: #ffffff !important; }
+.ref-scope .ib-creator-labels p { color: #d4d6dc !important; }

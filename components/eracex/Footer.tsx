@@ -2384,7 +2384,18 @@ export const Footer: React.FC = () => {
         </div>
         <div className="pt-8 flex flex-col-reverse sm:flex-row sm:items-end justify-between gap-6 text-xs app-text-muted">
           <div className="text-center sm:text-left">{t.footer.copyright}</div>
-          <div className="flex flex-col items-center sm:items-end gap-4">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
+            {[
+              ['/terms-and-conditions', legalDict.terms],
+              ['/funded-terms', legalDict.fundedTerms],
+              ['/privacy-policy', legalDict.privacy],
+              ['/client-privacy-policy', legalDict.clientPrivacy],
+              ['/restricted-jurisdictions', legalDict.restricted],
+            ].map(([href, label]) => (
+              <Link key={href} href={href} className="hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
+                {label}
+              </Link>
+            ))}
             <label className="relative inline-flex items-center gap-2 cursor-pointer font-medium app-text-secondary">
               <Globe className="w-4 h-4" aria-hidden="true" />
               <select
@@ -2399,22 +2410,6 @@ export const Footer: React.FC = () => {
               </select>
               <ChevronDown className="w-3.5 h-3.5 absolute right-0 pointer-events-none" aria-hidden="true" />
             </label>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-              {[
-                ['/terms-and-conditions', legalDict.terms],
-                ['/funded-terms', legalDict.fundedTerms],
-                ['/privacy-policy', legalDict.privacy],
-                ['/client-privacy-policy', legalDict.clientPrivacy],
-                ['/restricted-jurisdictions', legalDict.restricted],
-              ].map(([href, label]) => (
-                <Link key={href} href={href} className="hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
-                  {label}
-                </Link>
-              ))}
-              <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
-                {band[2]} ↑
-              </button>
-            </div>
           </div>
         </div>
       </div>

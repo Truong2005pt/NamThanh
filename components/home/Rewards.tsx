@@ -1,15 +1,18 @@
 "use client";
 
-import { PAYOUTS } from "./data";
 import { Flag } from "./Flag";
 import Logo from "./Logo";
 import { useState } from "react";
 import { useT } from "./i18n";
-import { ProofDialog, type ProofItem } from "./Dialogs";
+import { ProofDialog, useL, type ProofItem } from "./Dialogs";
+import { countryName, useLivePayouts, type LivePayout } from "./livePayouts";
 
 export function Rewards() {
   const t = useT();
   const [proof, setProof] = useState<ProofItem | null>(null);
+  const { lang, L } = useL();
+  const PAYOUTS = useLivePayouts(8);
+  const cname = (x: LivePayout) => (x.cc ? countryName(x.cc, lang) : t(x.country));
   return (
     <section className="sk-wrap sk-section" id="rewards">
       <h2 className="sk-center">{t("Mỗi hành trình")}</h2>
@@ -17,7 +20,7 @@ export function Rewards() {
       <p className="sk-intro sk-center">{t("Khám phá cách trình bày khoản thưởng theo từng chương trình. Chọn một thẻ để xem quy mô tài khoản và phép tính.")}</p>
 
       <div className="sk-card sk-ledger" id="ledger">
-        <div className="head"><div><b>{t("Bảng thưởng")}</b><small>{t("Thời điểm hiển thị theo UTC+7")}</small></div></div>
+        <div className="head"><div><b>{t("Bảng thưởng")}</b><small>{t("Thời điểm hiển thị theo UTC+7")} · {L("Dữ liệu minh họa", "Illustrative data")}</small></div></div>
         <div className="scroll">
           <table>
             <thead><tr><th>{t("Thời điểm")}</th><th>{t("Người nhận")}</th><th>{t("Thưởng (USD)")}</th><th>{t("Quốc gia")}</th><th>{t("Loại tài khoản")}</th><th>{t("Quy mô tài khoản")}</th></tr></thead>
@@ -25,9 +28,9 @@ export function Rewards() {
               {PAYOUTS.map((x) => (
                 <tr key={x.id}>
                   <td>{x.when}</td>
-                  <td><button type="button" className="sk-pf" onClick={() => setProof(x)}><b>{x.name}</b><small>{x.id}</small></button></td>
+                  <td><button type="button" className="sk-pf" onClick={() => setProof({ ...x, country: cname(x) })}><b>{x.name}</b><small>{x.id}</small></button></td>
                   <td className="amt">{x.amount}</td>
-                  <td><span className="ctry"><Flag country={x.country} />{t(x.country)}</span></td>
+                  <td><span className="ctry"><Flag country={x.country} cc={x.cc} />{cname(x)}</span></td>
                   <td>{x.program}</td>
                   <td>{x.size}</td>
                 </tr>
@@ -42,12 +45,12 @@ export function Rewards() {
         {[PAYOUTS.slice(0, 4), PAYOUTS.slice(4, 8)].map((row, r) => (
           <div key={r} className={"sk-prow " + (r === 0 ? "to-right" : "to-left")}>
             {Array.from({ length: 6 }, (_, c) => row.map((x) => (
-              <a key={c + x.id} href="#ledger" className="sk-card sk-pcard" aria-hidden={c > 0} tabIndex={c > 0 ? -1 : 0} onClick={(e) => { e.preventDefault(); setProof(x); }}>
+              <a key={c + x.id} href="#ledger" className="sk-card sk-pcard" aria-hidden={c > 0} tabIndex={c > 0 ? -1 : 0} onClick={(e) => { e.preventDefault(); setProof({ ...x, country: cname(x) }); }}>
                 <div className="top"><span className="logo sk-mark"><Logo size={24} color="currentColor" /></span><em>{x.program}</em></div>
                 <small>{t("THƯỞNG")}</small>
                 <strong>{x.amount}</strong>
                 <span className="sz">{t("Quy mô")} {x.size}</span>
-                <div className="foot"><Flag country={x.country} /><div><b>{x.name}</b><small>{t(x.country)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
+                <div className="foot"><Flag country={x.country} cc={x.cc} /><div><b>{x.name}</b><small>{cname(x)}</small></div><i>{t("Hồ sơ")} {x.id}</i></div>
               </a>
             ))).flat()}
           </div>

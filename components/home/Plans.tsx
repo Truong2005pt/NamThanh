@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Award, ArrowUpRight, X, CalendarCheck, CalendarClock, CalendarMinus, Check, Info, ListChecks, Receipt, Scale, ShieldAlert, Timer, TrendingUp } from "lucide-react";
+import { Award, ArrowUpRight, Plus, X, CalendarCheck, CalendarClock, CalendarMinus, Check, Info, ListChecks, Receipt, Scale, ShieldAlert, Timer, TrendingUp } from "lucide-react";
 import { PROGRAMS, usd } from "./data";
 import { useSelection } from "./SelectionContext";
 import { money } from "./utils";
@@ -11,10 +11,30 @@ import { metricView, type MetricKey } from "./metrics";
 
 type Row = { icon: typeof Award; label: string; tip: string; v: string; n?: string; pct?: boolean; mk: MetricKey };
 
+const CURRENCIES = [
+  { code: "USD", flag: "us", sym: "$", rate: 1 },
+  { code: "EUR", flag: "eu", sym: "€", rate: 0.92 },
+  { code: "GBP", flag: "gb", sym: "£", rate: 0.79 },
+  { code: "AUD", flag: "au", sym: "A$", rate: 1.52 },
+  { code: "SGD", flag: "sg", sym: "S$", rate: 1.34 },
+  { code: "JPY", flag: "jp", sym: "¥", rate: 150 },
+  { code: "AED", flag: "ae", sym: "AED ", rate: 3.67 },
+  { code: "VND", flag: "vn", sym: "₫", rate: 25000 },
+] as const;
+
 export function Plans() {
   const t = useT();
   const { program: p, sizeIdx, size, fee, setProgram, setSizeIdx } = useSelection();
   const [showAmt, setShowAmt] = useState(false);
+  const [curCode, setCurCode] = useState<(typeof CURRENCIES)[number]["code"]>("USD");
+  const [moreCur, setMoreCur] = useState(false);
+  const cur = CURRENCIES.find((c) => c.code === curCode) || CURRENCIES[0];
+  const cv = (n: number) => {
+    if (cur.code === "USD") return "$" + (Number.isInteger(n) ? n.toLocaleString("en-US") : n.toFixed(2));
+    const v = n * cur.rate;
+    const r = cur.code === "JPY" || cur.code === "VND" ? Math.round(v / (cur.code === "VND" ? 1000 : 10)) * (cur.code === "VND" ? 1000 : 10) : Math.round(v);
+    return cur.sym + r.toLocaleString("en-US");
+  };
   const [addons, setAddons] = useState([false, false]);
   const [tip, setTip] = useState<number | null>(null);
   const { currentLang } = useLanguage();
@@ -113,13 +133,27 @@ export function Plans() {
       <p className="sk-pintro sk-center">{t(p.intro)}</p>
 
       <div className="sk-ctrl">
-        <span className="sk-cur">USD <small>{t("Đô la Mỹ")}</small></span>
-        <label className="sk-check">
+        <div className="sk-curs" role="group" aria-label={L("Tiền tệ hiển thị", "Display currency")}>
+          {CURRENCIES.slice(0, 3).map((c) => (
+            <button key={c.code} type="button" className={c.code === curCode ? "on" : ""} aria-pressed={c.code === curCode} onClick={() => setCurCode(c.code)}>
+              <span className={`fi fis fi-${c.flag} sk-flag`} aria-hidden />{c.code}
+            </button>
+          ))}
+          {(moreCur ? CURRENCIES.slice(3) : []).map((c) => (
+            <button key={c.code} type="button" className={c.code === curCode ? "on" : ""} aria-pressed={c.code === curCode} onClick={() => setCurCode(c.code)}>
+              <span className={`fi fis fi-${c.flag} sk-flag`} aria-hidden />{c.code}
+            </button>
+          ))}
+          <button type="button" className="more" aria-expanded={moreCur} onClick={() => setMoreCur((v) => !v)}>
+            <Plus size={15} />{moreCur ? L("Thu gọn", "Show less") : L("Hiển thị thêm", "Show more")}
+          </button>
+        </div>
+        <label className="sk-switch">
           <input type="checkbox" checked={showAmt} onChange={(e) => setShowAmt(e.target.checked)} />
-          <i aria-hidden><Check size={12} strokeWidth={3.5} /></i> {t("Hiển thị số tiền")}
+          <i aria-hidden /> {t("Hiển thị số tiền")}
         </label>
-        <span className="sk-hint">{t("Rê chuột hoặc chạm vào tiêu chí để xem giải thích")}</span>
       </div>
+      {cur.code !== "USD" && <p className="sk-curnote">{L("Quy đổi tham khảo theo tỷ giá gần đúng. Phí tham gia chính thức tính bằng USD.", "Indicative conversion at approximate rates. The official participation fee is charged in USD.")}</p>}
 
       <div className="sk-card sk-table-wrap" ref={scroller}>
         <table className="sk-cmp">
@@ -148,10 +182,10 @@ export function Plans() {
               );
             })}
             <tr className="fee">
-              <th>{t("Phí tham gia một lần")} <small>USD</small></th>
+              <th>{t("Phí tham gia một lần")} <small>{cur.code}</small></th>
               {p.fees.map((f, i) => (
                 <td key={i} className={i === sizeIdx ? "sel" : ""}>
-                  <b>{usd(f)}</b>
+                  <b>{cv(f)}</b>
                   <button onClick={() => setSizeIdx(i)}>{t("Chọn gói")} <ArrowUpRight size={14} /></button>
                 </td>
               ))}
@@ -179,7 +213,7 @@ export function Plans() {
               );
             })}
           </ul>
-          <div className="fee"><div><small>{t("Phí tham gia một lần")} · USD</small><b>{usd(fee)}</b></div><button type="button" className="sk-btn sk-btn-gold" onClick={() => document.querySelector(".sk-sum")?.scrollIntoView({ behavior: "smooth", block: "center" })}>{t("Chọn gói")} <ArrowUpRight size={15} /></button></div>
+          <div className="fee"><div><small>{t("Phí tham gia một lần")} · {cur.code}</small><b>{cv(fee)}</b></div><button type="button" className="sk-btn sk-btn-gold" onClick={() => document.querySelector(".sk-sum")?.scrollIntoView({ behavior: "smooth", block: "center" })}>{t("Chọn gói")} <ArrowUpRight size={15} /></button></div>
         </div>
       </div>
 
@@ -188,7 +222,7 @@ export function Plans() {
       <div className="sk-sumwrap">
         <div className="sk-card sk-sum">
           <div><small>{t("LỰA CHỌN CỦA BẠN")}</small><b>{p.name}</b><span>{usd(size)}</span></div>
-          <div className="price"><small>{t("Phí tham gia một lần")}</small><strong>{fmt(total)} <em>USD</em></strong>{total !== fee && <s>{fmt(fee)}</s>}</div>
+          <div className="price"><small>{t("Phí tham gia một lần")}</small><strong>{cv(total)} <em>{cur.code}</em></strong>{total !== fee && <s>{cv(fee)}</s>}</div>
           <a className="sk-btn sk-btn-gold" href="/sign-up">{t("Nhận Cấp Vốn")} <ArrowUpRight size={15} /></a>
         </div>
         <div className="sk-card sk-addons" role="group" aria-label={t("Tiện ích bổ sung tùy chọn")}>
@@ -196,7 +230,7 @@ export function Plans() {
           <div>
             {([[T("Tăng tỷ lệ chia lợi nhuận"), "10%"], [T("Tăng giới hạn drawdown"), "1%"]] as const).map(([tt, v], i) => (
               <button type="button" key={tt} className={addons[i] ? "on" : ""} aria-pressed={addons[i]} onClick={() => setAddons((a) => a.map((x, k) => (k === i ? !x : x)))}>
-                <span className="tx"><b>{t(tt)} <i>{v}</i></b><small>{t("+20% phí bổ sung")} <em>(+{fmt(fee * 0.2)})</em></small></span>
+                <span className="tx"><b>{t(tt)} <i>{v}</i></b><small>{t("+20% phí bổ sung")} <em>(+{cv(fee * 0.2)})</em></small></span>
                 <span className="sw" aria-hidden />
               </button>
             ))}

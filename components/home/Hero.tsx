@@ -27,7 +27,7 @@ export function Hero() {
           <div className="sk-stats-l">
             <div className="sk-stat"><i><Trophy size={22} /></i><div><b>$5M+</b><span>{t("Tổng thưởng đã chi trả")}</span></div></div>
             <div className="sk-stat"><i><Users size={22} /></i><div><b>100K+</b><span>{t("Người giao dịch toàn cầu")}</span></div></div>
-            <div className="sk-stat"><i><Globe size={22} /></i><div><b>180+</b><span>{t("Quốc gia được phục vụ")}</span><button type="button" className="sk-terr" onClick={() => setTerr(true)}>{L("Xem khu vực hạn chế", "View restricted regions")} <ArrowUpRight size={11} /></button></div></div>
+            <div className="sk-stat"><i><Globe size={22} /></i><div><b>180+<button type="button" className="sk-terr" aria-label={L("Xem khu vực hạn chế", "View restricted regions")} onClick={() => setTerr(true)}><ArrowUpRight size={14} /></button></b><span>{t("Quốc gia được phục vụ")}</span></div></div>
           </div>
           <div className="sk-stats-r">
             <div className="sk-rate">
