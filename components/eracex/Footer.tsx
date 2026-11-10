@@ -2339,8 +2339,8 @@ export const Footer: React.FC = () => {
           <Link href="/" aria-label="ERACEX">
             <BrandLogo size="md" showText={true} />
           </Link>
-          <p className="mt-4 text-sm font-extrabold uppercase tracking-wide app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
-          <p className="mt-1 text-sm font-normal capitalize app-text-secondary opacity-80">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
+          <p className="mt-4 text-sm font-semibold uppercase app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
+          <p className="mt-1 text-sm font-normal app-text-secondary">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
           <div className="mt-5 flex items-center gap-4">
             {SOCIALS.map((x) => (
               <a

@@ -21,12 +21,12 @@ export function Plans() {
   const rows: Row[] = [
     { icon: TrendingUp, label: T("Mục tiêu lợi nhuận"), tip: T("Mức lợi nhuận cần đạt trong mỗi vòng đánh giá, tính theo quy mô tài khoản."), v: p.target, pct: true },
     { icon: CalendarMinus, label: T("Mức lỗ tối đa hàng ngày"), tip: T("Mức lỗ tối đa cho phép trong một ngày giao dịch, tính theo số dư lúc 00:00 UTC."), v: p.daily, pct: true },
-    { icon: ShieldAlert, label: T("Mức lỗ tối đa"), tip: T("Tổng mức lỗ tối đa cho phép. Chạm ngưỡng này, tài khoản sẽ bị đóng."), v: p.max, n: p.maxNote, pct: true },
-    { icon: CalendarCheck, label: T("Số ngày giao dịch tối thiểu"), tip: T("Số ngày có hoạt động giao dịch tối thiểu cần đáp ứng."), v: p.minDays, n: p.minNote },
-    { icon: Timer, label: T("Thời gian giao dịch"), tip: T("Không giới hạn thời gian hoàn thành, nhưng cần duy trì hoạt động theo quy tắc."), v: T(T("Không giới hạn")), n: T(T("Duy trì hoạt động")) },
-    { icon: Receipt, label: T("Hoàn phí"), tip: T("Áp dụng theo điều khoản chương trình; không hoàn phí tự động."), v: T("Theo điều khoản"), n: T("Không hoàn tự động") },
+    { icon: ShieldAlert, label: T("Mức lỗ tối đa"), tip: T("Tổng mức lỗ tối đa cho phép. Chạm ngưỡng này, tài khoản sẽ bị đóng."), v: p.max, pct: true },
+    { icon: CalendarCheck, label: T("Số ngày giao dịch tối thiểu"), tip: T("Số ngày có hoạt động giao dịch tối thiểu cần đáp ứng."), v: p.minDays },
+    { icon: Timer, label: T("Thời gian giao dịch"), tip: T("Không giới hạn thời gian hoàn thành, nhưng cần duy trì hoạt động theo quy tắc."), v: T(T("Không giới hạn")) },
+    { icon: Receipt, label: T("Hoàn phí"), tip: T("Áp dụng theo điều khoản chương trình; không hoàn phí tự động."), v: T("Theo điều khoản") },
     { icon: Award, label: T("Phần thưởng"), tip: T("Tỷ lệ thưởng cơ bản trên kết quả đủ điều kiện."), v: "80%" },
-    { icon: CalendarClock, label: T("Chu kỳ yêu cầu thưởng"), tip: T("Chu kỳ gửi yêu cầu thưởng; không phải cam kết thời gian tiền về."), v: p.cycle, n: p.cycleNote },
+    { icon: CalendarClock, label: T("Chu kỳ yêu cầu thưởng"), tip: T("Chu kỳ gửi yêu cầu thưởng; không phải cam kết thời gian tiền về."), v: p.cycle },
     { icon: Scale, label: T("Đòn bẩy tối đa"), tip: T("Đòn bẩy tối đa áp dụng cho tài khoản, kèm mức khi đã Funded."), v: p.leverage, n: p.leverageNote },
   ];
   if (p.extra) rows.push({ icon: ListChecks, label: p.extra[0], tip: t("Quy tắc áp dụng cho {name}, ở mức {v}.", { name: p.name, v: p.extra[1] }), v: p.extra[1] });
@@ -104,7 +104,7 @@ export function Plans() {
                   <th>
                     <span className="rl" tabIndex={0}>
                       <Icon size={16} strokeWidth={1.6} /><u>{t(r.label)}</u><Info size={13} className="info" />
-                      <span className="tip" role="tooltip">{t(r.tip)}</span>
+                      <span className="tip" role="tooltip" data-keep-label>{t(r.tip)}</span>
                     </span>
                   </th>
                   {p.sizes.map((s, i) => <td key={s} className={i === sizeIdx ? "sel" : ""}>{cell(r, s)}</td>)}
