@@ -60,18 +60,18 @@ export const LegalDocument: React.FC<{ blocks: LegalBlock[]; doc?: string }> = (
   const eyebrow = EYEBROW[currentLang] || EYEBROW.en;
   const slug = (n: number) => `sec-${n}`;
   return (
-    <article className="legal-doc max-w-[1344px] mx-auto px-4 sm:px-8 py-12 sm:py-20 app-text-secondary">
-      <header className="max-w-3xl">
+    <article className="legal-doc w-full max-w-[1344px] mx-auto px-4 sm:px-8 py-10 sm:py-14 app-text-secondary">
+      <header>
         <p className="ld-eyebrow">{eyebrow}</p>
         {first && first.t === 'p' && (
           <h1 className="ld-title app-text mt-4" dangerouslySetInnerHTML={{ __html: first.x.replace(/<\/?b>/g, '') }} />
         )}
       </header>
-      <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
+      <div className="mt-10 grid gap-6 lg:gap-8 lg:grid-cols-[minmax(0,200px)_minmax(0,1fr)]">
         <aside className="ld-meta order-1 lg:order-none text-sm">
           {meta && <p dangerouslySetInnerHTML={{ __html: meta }} />}
         </aside>
-        <div className="max-w-3xl min-w-0 space-y-4">
+        <div className="min-w-0 space-y-4">
           {rest.map((b, i) => {
             if (b.t === 'table') {
               return (
