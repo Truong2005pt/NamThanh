@@ -3,7 +3,7 @@
     "blocks": [
       {
         "t": "h4",
-        "x": "Tuyên Bố Miễn Trừ Dịch Vụ Đầu Tư"
+        "x": "Tuyên bố miễn trừ dịch vụ đầu tư"
       },
       {
         "t": "p",
@@ -11,7 +11,7 @@
       },
       {
         "t": "h4",
-        "x": "Cảnh Báo Rủi Ro"
+        "x": "Cảnh báo rủi ro"
       },
       {
         "t": "p",
@@ -19,7 +19,7 @@
       },
       {
         "t": "h4",
-        "x": "Mối Quan Hệ & Đơn Vị Cung Cấp Dịch Vụ"
+        "x": "Mối quan hệ & đơn vị cung cấp dịch vụ"
       },
       {
         "t": "p",
@@ -27,7 +27,7 @@
       },
       {
         "t": "h4",
-        "x": "Chính Sách Phí & Hoàn Tiền"
+        "x": "Chính sách phí & hoàn tiền"
       },
       {
         "t": "p",
@@ -43,11 +43,11 @@
       }
     ],
     "links": {
-      "terms": "Điều Khoản & Điều Kiện",
-      "fundedTerms": "Quy Định Tài Khoản Cấp Vốn",
-      "privacy": "Chính Sách Quyền Riêng Tư",
-      "clientPrivacy": "Chính Sách Riêng Tư Khách Hàng",
-      "restricted": "Khu Vực Pháp Lý Bị Hạn Chế"
+      "terms": "Điều khoản & điều kiện",
+      "fundedTerms": "Quy định tài khoản cấp vốn",
+      "privacy": "Chính sách quyền riêng tư",
+      "clientPrivacy": "Chính sách riêng tư khách hàng",
+      "restricted": "Khu vực pháp lý bị hạn chế"
     }
   },
   "en": {

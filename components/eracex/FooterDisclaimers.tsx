@@ -18,7 +18,7 @@ const EXTRA: Record<string, DisclaimerBlock[]> = {
   vi: [
     { t: 'h4', x: 'Thông tin doanh nghiệp và phạm vi phục vụ' },
     { t: 'p', x: `ERACEX F.Z.E là công ty phát triển thương hiệu ERACEX và giới thiệu các chương trình đánh giá giao dịch. Địa chỉ theo hồ sơ: ${ADDRESS} · B.C. 1309328. Việc cung cấp và vận hành chương trình được thực hiện cùng đối tác công nghệ theo các điều khoản áp dụng. Phạm vi tham gia phụ thuộc điều kiện quốc gia, vùng lãnh thổ và xác minh.` },
-    { t: 'h4', x: 'Khu Vực Bị Hạn Chế (Restricted Jurisdictions)' },
+    { t: 'h4', x: 'Khu vực bị hạn chế (Restricted Jurisdictions)' },
     { t: 'p', x: 'Dịch vụ không cung cấp cho công dân hoặc cư dân thuộc: Afghanistan, Belarus, Cuba, Dải Gaza, Iran, Libya, Myanmar, Nga, Nam Sudan, Triều Tiên, Syria, Venezuela và các khu vực Crimea, Donetsk, Luhansk, Kherson, Zaporizhzhia, Sevastopol. Mọi hành vi cố tình sử dụng VPN hoặc công cụ ẩn danh để lách rào cản khu vực đều bị nghiêm cấm.' },
   ],
   en: [
