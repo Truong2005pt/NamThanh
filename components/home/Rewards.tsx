@@ -3,10 +3,13 @@
 import { PAYOUTS } from "./data";
 import { Flag } from "./Flag";
 import Logo from "./Logo";
+import { useState } from "react";
 import { useT } from "./i18n";
+import { ProofDialog, type ProofItem } from "./Dialogs";
 
 export function Rewards() {
   const t = useT();
+  const [proof, setProof] = useState<ProofItem | null>(null);
   return (
     <section className="sk-wrap sk-section" id="rewards">
       <h2 className="sk-center">{t("Mỗi hành trình")}</h2>
@@ -22,7 +25,7 @@ export function Rewards() {
               {PAYOUTS.map((x) => (
                 <tr key={x.id}>
                   <td>{x.when}</td>
-                  <td><b>{x.name}</b><small>{x.id}</small></td>
+                  <td><button type="button" className="sk-pf" onClick={() => setProof(x)}><b>{x.name}</b><small>{x.id}</small></button></td>
                   <td className="amt">{x.amount}</td>
                   <td><span className="ctry"><Flag country={x.country} />{t(x.country)}</span></td>
                   <td>{x.program}</td>
@@ -39,7 +42,7 @@ export function Rewards() {
         {[PAYOUTS.slice(0, 4), PAYOUTS.slice(4, 8)].map((row, r) => (
           <div key={r} className={"sk-prow " + (r === 0 ? "to-right" : "to-left")}>
             {Array.from({ length: 6 }, (_, c) => row.map((x) => (
-              <a key={c + x.id} href="#ledger" className="sk-card sk-pcard" aria-hidden={c > 0} tabIndex={c > 0 ? -1 : 0}>
+              <a key={c + x.id} href="#ledger" className="sk-card sk-pcard" aria-hidden={c > 0} tabIndex={c > 0 ? -1 : 0} onClick={(e) => { e.preventDefault(); setProof(x); }}>
                 <div className="top"><span className="logo sk-mark"><Logo size={24} color="currentColor" /></span><em>{x.program}</em></div>
                 <small>{t("THƯỞNG")}</small>
                 <strong>{x.amount}</strong>
@@ -50,6 +53,7 @@ export function Rewards() {
           </div>
         ))}
       </div>
+      {proof && <ProofDialog item={proof} onClose={() => setProof(null)} />}
     </section>
   );
 }

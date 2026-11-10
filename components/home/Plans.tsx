@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Award, ArrowUpRight, CalendarCheck, CalendarClock, CalendarMinus, Check, Info, ListChecks, Receipt, Scale, ShieldAlert, Timer, TrendingUp } from "lucide-react";
+import { Award, ArrowUpRight, X, CalendarCheck, CalendarClock, CalendarMinus, Check, Info, ListChecks, Receipt, Scale, ShieldAlert, Timer, TrendingUp } from "lucide-react";
 import { PROGRAMS, usd } from "./data";
 import { useSelection } from "./SelectionContext";
 import { money } from "./utils";
 import { T, useT, widenRate } from "./i18n";
+import { useLanguage } from "@/components/eracex/LanguageContext";
+import { metricView, type MetricKey } from "./metrics";
 
-type Row = { icon: typeof Award; label: string; tip: string; v: string; n?: string; pct?: boolean };
+type Row = { icon: typeof Award; label: string; tip: string; v: string; n?: string; pct?: boolean; mk: MetricKey };
 
 export function Plans() {
   const t = useT();
@@ -15,21 +17,56 @@ export function Plans() {
   const [showAmt, setShowAmt] = useState(false);
   const [addons, setAddons] = useState([false, false]);
   const [tip, setTip] = useState<number | null>(null);
+  const { currentLang } = useLanguage();
+  const L = (vi: string, en: string) => (currentLang === "vi" ? vi : en);
+  const [pop, setPop] = useState<{ k: MetricKey; left: number; top: number; w: number } | null>(null);
+  const [dlg, setDlg] = useState<MetricKey | null>(null);
+  const popTimer = useRef<number | null>(null);
+  const showPop = (k: MetricKey, el: HTMLElement) => {
+    if (popTimer.current) window.clearTimeout(popTimer.current);
+    const r = el.getBoundingClientRect();
+    const w = Math.min(320, window.innerWidth - 24);
+    const left = Math.max(12, Math.min(r.left, window.innerWidth - w - 12));
+    const above = r.top > 190;
+    setPop({ k, left, top: above ? r.top - 10 : r.bottom + 10, w });
+    setPopAbove(above);
+  };
+  const hidePop = () => {
+    if (popTimer.current) window.clearTimeout(popTimer.current);
+    popTimer.current = window.setTimeout(() => setPop(null), 180);
+  };
+  const keepPop = () => { if (popTimer.current) window.clearTimeout(popTimer.current); };
+  const [popAbove, setPopAbove] = useState(true);
+  useEffect(() => {
+    const off = () => setPop(null);
+    window.addEventListener("scroll", off, true);
+    window.addEventListener("resize", off);
+    return () => { window.removeEventListener("scroll", off, true); window.removeEventListener("resize", off); };
+  }, []);
+  useEffect(() => {
+    if (!dlg) return;
+    const k = (e: KeyboardEvent) => { if (e.key === "Escape") setDlg(null); };
+    document.addEventListener("keydown", k);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", k); document.body.style.overflow = prev; };
+  }, [dlg]);
+  const view = (k: MetricKey) => metricView(k, p, size, currentLang);
   const total = fee * (1 + 0.2 * addons.filter(Boolean).length);
   const fmt = (n: number) => "$" + (Number.isInteger(n) ? n : n.toFixed(2));
 
   const rows: Row[] = [
-    { icon: TrendingUp, label: T("Mục tiêu lợi nhuận"), tip: T("Mức lợi nhuận cần đạt trong mỗi vòng đánh giá, tính theo quy mô tài khoản."), v: p.target, pct: true },
-    { icon: CalendarMinus, label: T("Mức lỗ tối đa hàng ngày"), tip: T("Mức lỗ tối đa cho phép trong một ngày giao dịch, tính theo số dư lúc 00:00 UTC."), v: p.daily, pct: true },
-    { icon: ShieldAlert, label: T("Mức lỗ tối đa"), tip: T("Tổng mức lỗ tối đa cho phép. Chạm ngưỡng này, tài khoản sẽ bị đóng."), v: p.max, pct: true },
-    { icon: CalendarCheck, label: T("Số ngày giao dịch tối thiểu"), tip: T("Số ngày có hoạt động giao dịch tối thiểu cần đáp ứng."), v: p.minDays },
-    { icon: Timer, label: T("Thời gian giao dịch"), tip: T("Không giới hạn thời gian hoàn thành, nhưng cần duy trì hoạt động theo quy tắc."), v: T(T("Không giới hạn")) },
-    { icon: Receipt, label: T("Hoàn phí"), tip: T("Áp dụng theo điều khoản chương trình; không hoàn phí tự động."), v: T("Theo điều khoản") },
-    { icon: Award, label: T("Phần thưởng"), tip: T("Tỷ lệ thưởng cơ bản trên kết quả đủ điều kiện."), v: "80%" },
-    { icon: CalendarClock, label: T("Chu kỳ yêu cầu thưởng"), tip: T("Chu kỳ gửi yêu cầu thưởng; không phải cam kết thời gian tiền về."), v: p.cycle },
-    { icon: Scale, label: T("Đòn bẩy tối đa"), tip: T("Đòn bẩy tối đa áp dụng cho tài khoản, kèm mức khi đã Funded."), v: p.leverage, n: p.leverageNote },
+    { mk: "target", icon: TrendingUp, label: T("Mục tiêu lợi nhuận"), tip: T("Mức lợi nhuận cần đạt trong mỗi vòng đánh giá, tính theo quy mô tài khoản."), v: p.target, pct: true },
+    { mk: "daily", icon: CalendarMinus, label: T("Mức lỗ tối đa hàng ngày"), tip: T("Mức lỗ tối đa cho phép trong một ngày giao dịch, tính theo số dư lúc 00:00 UTC."), v: p.daily, pct: true },
+    { mk: "loss", icon: ShieldAlert, label: T("Mức lỗ tối đa"), tip: T("Tổng mức lỗ tối đa cho phép. Chạm ngưỡng này, tài khoản sẽ bị đóng."), v: p.max, pct: true },
+    { mk: "days", icon: CalendarCheck, label: T("Số ngày giao dịch tối thiểu"), tip: T("Số ngày có hoạt động giao dịch tối thiểu cần đáp ứng."), v: p.minDays },
+    { mk: "period", icon: Timer, label: T("Thời gian giao dịch"), tip: T("Không giới hạn thời gian hoàn thành, nhưng cần duy trì hoạt động theo quy tắc."), v: T(T("Không giới hạn")) },
+    { mk: "refund", icon: Receipt, label: T("Hoàn phí"), tip: T("Áp dụng theo điều khoản chương trình; không hoàn phí tự động."), v: T("Theo điều khoản") },
+    { mk: "reward", icon: Award, label: T("Phần thưởng"), tip: T("Tỷ lệ thưởng cơ bản trên kết quả đủ điều kiện."), v: "80%" },
+    { mk: "cycle", icon: CalendarClock, label: T("Chu kỳ yêu cầu thưởng"), tip: T("Chu kỳ gửi yêu cầu thưởng; không phải cam kết thời gian tiền về."), v: p.cycle },
+    { mk: "leverage", icon: Scale, label: T("Đòn bẩy tối đa"), tip: T("Đòn bẩy tối đa áp dụng cho tài khoản, kèm mức khi đã Funded."), v: p.leverage, n: p.leverageNote },
   ];
-  if (p.extra) rows.push({ icon: ListChecks, label: p.extra[0], tip: t("Quy tắc áp dụng cho {name}, ở mức {v}.", { name: p.name, v: p.extra[1] }), v: p.extra[1] });
+  if (p.extra) rows.push({ mk: "consistency", icon: ListChecks, label: p.extra[0], tip: t("Quy tắc áp dụng cho {name}, ở mức {v}.", { name: p.name, v: p.extra[1] }), v: p.extra[1] });
 
   const amount = (v: string, s: number) => {
     const m = v.match(/^(\d+(?:[.,]\d+)?)%$/);
@@ -102,9 +139,8 @@ export function Plans() {
               return (
                 <tr key={r.label}>
                   <th>
-                    <span className="rl" tabIndex={0}>
+                    <span className="rl" tabIndex={0} onMouseEnter={(e) => showPop(r.mk, e.currentTarget)} onMouseLeave={hidePop} onFocus={(e) => showPop(r.mk, e.currentTarget)} onBlur={hidePop} onClick={(e) => showPop(r.mk, e.currentTarget)}>
                       <Icon size={16} strokeWidth={1.6} /><u>{t(r.label)}</u><Info size={13} className="info" />
-                      <span className="tip" role="tooltip" data-keep-label>{t(r.tip)}</span>
                     </span>
                   </th>
                   {p.sizes.map((s, i) => <td key={s} className={i === sizeIdx ? "sel" : ""}>{cell(r, s)}</td>)}
@@ -138,7 +174,7 @@ export function Plans() {
                 <li key={r.label}>
                   <button type="button" className="lbl" aria-expanded={tip === k} onClick={() => setTip(tip === k ? null : k)}><Icon size={16} strokeWidth={1.6} /><span>{t(r.label)}</span><Info size={13} /></button>
                   <div className="val">{cell(r, size)}</div>
-                  {tip === k && <p className="tipm">{t(r.tip)}</p>}
+                  {tip === k && <p className="tipm">{view(r.mk).short} <button type="button" className="more" onClick={() => setDlg(r.mk)}>{L("Hiển thị thêm", "Show more")} <ArrowUpRight size={13} /></button></p>}
                 </li>
               );
             })}
@@ -167,6 +203,38 @@ export function Plans() {
           </div>
         </div>
       </div>
+
+      {pop && (
+        <div className="sk-mpop" role="tooltip" style={{ left: pop.left, top: pop.top, width: pop.w, transform: popAbove ? "translateY(-100%)" : "none" }} onMouseEnter={keepPop} onMouseLeave={hidePop}>
+          <p>{view(pop.k).short}</p>
+          <button type="button" onClick={() => { setDlg(pop.k); setPop(null); }}>{L("Hiển thị thêm", "Show more")} <ArrowUpRight size={13} /></button>
+        </div>
+      )}
+      {dlg && (() => {
+        const v = view(dlg);
+        return (
+          <div className="sk-mdlg" role="presentation" onMouseDown={(e) => { if (e.target === e.currentTarget) setDlg(null); }}>
+            <div className="box" role="dialog" aria-modal="true" aria-label={v.label}>
+              <div className="top"><span>{`ERACEX / ${L("Thông số chương trình", "Program parameters")}`}</span><button type="button" aria-label={L("Đóng", "Close")} onClick={() => setDlg(null)}><X size={16} /></button></div>
+              <h3>{v.label}</h3>
+              <small className="prog">{p.name} · {usd(size)}</small>
+              <div className="vis">
+                <em>{L("THÔNG SỐ ĐANG XEM", "CURRENT PARAMETER")}</em>
+                {v.value.map(([a, b], i) => <div key={i} className="val">{a && <span>{a}</span>}<strong>{b}</strong></div>)}
+                <small>{v.note}</small>
+                {v.diagram.length > 0 && (
+                  <div className="dia">
+                    {v.diagram.map(([a, b, w]) => <div key={a}><span>{a}</span><b>{b}</b><i style={{ width: `${w}%` }} /></div>)}
+                    <small>{L("Sơ đồ giải thích phép tính, không phải kết quả giao dịch", "Calculation diagram, not a trading result")}</small>
+                  </div>
+                )}
+              </div>
+              <div className="txt">{v.body.map((x, i) => <p key={i}>{widenRate(x)}</p>)}</div>
+              <p className="src">{L("Tham chiếu tài liệu", "Document reference")}: {v.source}</p>
+            </div>
+          </div>
+        );
+      })()}
     </section>
   );
 }
