@@ -714,3 +714,20 @@ html.theme-switching,
 html.theme-switching *,
 html.theme-switching *::before,
 html.theme-switching *::after{transition:none !important}
+
+
+/* Legal documents: one typographic scale for every document (Inter body, DM Sans headings) */
+.legal-doc{font-family:var(--font-inter),var(--font-sans),system-ui,sans-serif;font-size:16px;line-height:1.75}
+.legal-doc .ld-title{font-family:var(--font-dm),var(--font-inter),var(--font-sans),sans-serif;font-size:clamp(28px,5vw,36px);font-weight:500;line-height:1.25;letter-spacing:-.01em;text-transform:none;text-align:left}
+.legal-doc .ld-h2{font-family:var(--font-dm),var(--font-inter),var(--font-sans),sans-serif;font-size:clamp(20px,3.4vw,24px);font-weight:500;line-height:1.33}
+.legal-doc .ld-h2 b,.legal-doc b.ld-h2{font-weight:700}
+.legal-doc .ld-sub{font-size:16px;font-weight:700;line-height:1.75}
+.legal-doc .ld-table{font-size:14px;line-height:1.7}
+.legal-doc p,.legal-doc li,.legal-doc td{font-size:16px;line-height:1.75}
+.legal-doc .ld-table td{font-size:14px}
+
+.legal-doc p,.legal-doc li,.legal-doc td,.legal-doc span,.legal-doc b,.legal-doc strong{font-family:var(--font-inter),var(--font-sans),system-ui,sans-serif}
+.legal-doc .ld-h2,.legal-doc .ld-h2 span,.legal-doc .ld-h2 b,.legal-doc .ld-title{font-family:var(--font-dm),var(--font-inter),var(--font-sans),sans-serif}
+.legal-doc .ld-eyebrow{font-size:14px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;line-height:20px;opacity:.7;margin:0}
+.legal-doc .ld-meta p{font-size:14px;line-height:24px;opacity:.75;margin:0}
+.legal-doc h2.ld-h2{margin:0}

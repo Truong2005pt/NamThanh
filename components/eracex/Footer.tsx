@@ -369,15 +369,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Điều khoản sử dụng",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Chính sách bảo mật",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Phí và hoàn tiền",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Quốc gia bị hạn chế",
@@ -467,15 +467,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Terms and conditions",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Privacy policy",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Fees and refunds",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Restricted jurisdictions",
@@ -565,15 +565,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "服务条款与规则",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "隐私保护政策",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "费用与退款政策",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "受限司法管辖区",
@@ -663,15 +663,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "利用規約",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "プライバシーポリシー",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "料金と返金ポリシー",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "利用制限国・地域",
@@ -761,15 +761,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Términos y condiciones",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Política de privacidad",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Tarifas y reembolsos",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Jurisdicciones restringidas",
@@ -859,15 +859,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Termos e condições",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Política de privacidade",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Taxas e reembolsos",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Jurisdições restritas",
@@ -957,15 +957,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Conditions générales",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Politique de confidentialité",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Frais et remboursements",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Juridictions restreintes",
@@ -1055,15 +1055,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Allgemeine Geschäftsbedingungen",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Datenschutzrichtlinie",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Gebühren & Erstattung",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Eingeschränkte Länder",
@@ -1153,15 +1153,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Termini e condizioni",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Informativa sulla privacy",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Tariffe e rimborsi",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Giurisdizioni con restrizioni",
@@ -1251,15 +1251,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Regulamin",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Polityka prywatności",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Opłaty i zwroty",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Kraje objęte ograniczeniami",
@@ -1349,15 +1349,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Şartlar ve Koşullar",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Gizlilik Politikası",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Ücretler ve İade Politikası",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Yasaklı Ülkeler",
@@ -1447,15 +1447,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Syarat & Ketentuan",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Kebijakan Privasi",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Biaya & Pengembalian Dana",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Yurisdiksi Dibatasi",
@@ -1545,15 +1545,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "ข้อกำหนดและเงื่อนไข",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "นโยบายความเป็นส่วนตัว",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "ค่าธรรมเนียมและการคืนเงิน",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "ประเทศที่ถูกจำกัด",
@@ -1643,15 +1643,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Mga Tuntunin at Kundisyon",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Patakaran sa Pagkapribado",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Mga bayarin at refund",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Mga Pinaghihigpitang Lugar",
@@ -1741,15 +1741,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "नियम और शर्तें",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "गोपनीयता नीति",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "शुल्क और धनवापसी",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "प्रतिबंधित क्षेत्राधिकार",
@@ -1839,15 +1839,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "이용약관",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "개인정보 처리방침",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "환불 정책",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "제한 국가 목록",
@@ -1937,15 +1937,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Условия использования",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Политика конфиденциальности",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Сборы и возврат средств",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Ограниченные юрисдикции",
@@ -2035,15 +2035,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "الشروط والأحكام",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "سياسة الخصوصية",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "الرسوم وسياسة الاسترداد",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "الدول المحظورة",
@@ -2133,15 +2133,15 @@ const FOOT_COLS: Record<string, FootCol[]> = {
       "links": [
         [
           "Algemene voorwaarden",
-          "/terms"
+          "/terms-and-conditions"
         ],
         [
           "Privacybeleid",
-          "/privacy"
+          "/privacy-policy"
         ],
         [
           "Tarieven & restitutie",
-          "/fees"
+          "/refund-policy"
         ],
         [
           "Beperkte rechtsgebieden",
@@ -2402,7 +2402,7 @@ export const Footer: React.FC = () => {
                 value={currentLang}
                 onChange={(e) => setLanguage(e.target.value)}
                 aria-label="Language"
-                className="appearance-none bg-transparent pr-5 outline-none cursor-pointer"
+                className="appearance-none bg-transparent pr-5 outline-none cursor-pointer [field-sizing:content] [text-align-last:right]"
               >
                 {SUPPORTED_LANGUAGES.map((l) => (
                   <option key={l.code} value={l.code} className="text-black">{l.nativeName}</option>

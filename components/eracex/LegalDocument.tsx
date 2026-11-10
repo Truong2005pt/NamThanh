@@ -23,6 +23,8 @@ function normalizeHeading(html: string): string {
   return (m[1] || '') + out.charAt(0).toUpperCase() + out.slice(1) + (m[3] || '');
 }
 
+const EYEBROW: Record<string, string> = { vi: 'Pháp lý', en: 'Legal', es: 'Legal', pt: 'Jurídico', hi: 'कानूनी', id: 'Hukum', fr: 'Juridique', de: 'Rechtliches', it: 'Legale', pl: 'Prawne', tr: 'Hukuki', th: 'กฎหมาย', fil: 'Legal', ja: '法的情報', zh: '法律' };
+
 const INDENT = ['pl-0', 'pl-6 sm:pl-8', 'pl-12 sm:pl-16', 'pl-[4.5rem] sm:pl-24', 'pl-24 sm:pl-32'];
 
 const translationCache = new Map<string, Promise<LegalBlock[] | null>>();
@@ -50,52 +52,71 @@ export const LegalDocument: React.FC<{ blocks: LegalBlock[]; doc?: string }> = (
     return () => { alive = false; };
   }, [doc, currentLang]);
   const blocks = doc && currentLang !== 'en' && translated?.key === `${doc}/${currentLang}` ? translated.blocks : source;
-  const [first, ...rest] = blocks;
+  const [first, ...afterTitle] = blocks;
+  // Page meta ("Last updated: ...") moves to the side column, like a reference legal page.
+  const metaIdx = afterTitle.findIndex((b, k) => k < 4 && b.t === 'p' && !b.center && b.x.replace(/<[^>]+>/g, '').length <= 90 && /20\d\d/.test(b.x));
+  const meta = metaIdx >= 0 ? (afterTitle[metaIdx] as { t: 'p'; x: string }).x : null;
+  const rest = metaIdx >= 0 ? afterTitle.filter((_, k) => k !== metaIdx) : afterTitle;
+  const eyebrow = EYEBROW[currentLang] || EYEBROW.en;
+  const slug = (n: number) => `sec-${n}`;
   return (
-    <article className="legal-doc max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-sm sm:text-[15px] leading-relaxed app-text-secondary">
-      {first && first.t === 'p' && (
-        <h1 className="gft-title text-2xl sm:text-4xl font-black app-text mb-8 text-center" dangerouslySetInnerHTML={{ __html: first.x.replace(/<\/?b>/g, '') }} />
-      )}
-      <div className="space-y-3">
-        {rest.map((b, i) => {
-          if (b.t === 'table') {
+    <article className="legal-doc max-w-[1344px] mx-auto px-4 sm:px-8 py-12 sm:py-20 app-text-secondary">
+      <header className="max-w-3xl">
+        <p className="ld-eyebrow">{eyebrow}</p>
+        {first && first.t === 'p' && (
+          <h1 className="ld-title app-text mt-4" dangerouslySetInnerHTML={{ __html: first.x.replace(/<\/?b>/g, '') }} />
+        )}
+      </header>
+      <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
+        <aside className="ld-meta order-1 lg:order-none text-sm">
+          {meta && <p dangerouslySetInnerHTML={{ __html: meta }} />}
+        </aside>
+        <div className="max-w-3xl min-w-0 space-y-4">
+          {rest.map((b, i) => {
+            if (b.t === 'table') {
+              return (
+                <div key={i} className="overflow-x-auto my-4 rounded-xl border app-border">
+                  <table className="ld-table w-full text-left">
+                    <tbody>
+                      {b.rows.map((r, ri) => (
+                        <tr key={ri} className="border-b app-border last:border-0 align-top">
+                          {r.map((c, ci) => (
+                            <td key={ci} className={`p-3 ${ci === 0 ? 'font-bold app-text w-1/4' : ''}`}>{c}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            }
+            if (b.t === 'li') {
+              const heading = b.lvl === 0 && /^<b>.*<\/b>$/.test(b.x);
+              if (heading) {
+                return (
+                  <h2 key={i} id={slug(i)} className="ld-h2 app-text pt-8 !mb-0 scroll-mt-28">
+                    {b.label && <span className="tabular-nums mr-2">{b.label}</span>}
+                    <span dangerouslySetInnerHTML={{ __html: normalizeHeading(b.x) }} />
+                  </h2>
+                );
+              }
+              return (
+                <div key={i} className={`flex gap-3 ${INDENT[Math.min(b.lvl, INDENT.length - 1)]}`}>
+                  <span className="shrink-0 tabular-nums app-text-muted">{b.label}</span>
+                  <span dangerouslySetInnerHTML={{ __html: b.x }} />
+                </div>
+              );
+            }
+            const boldOnly = /^<b>[^<]+<\/b>$/.test(b.x);
             return (
-              <div key={i} className="overflow-x-auto my-4 rounded-xl border app-border">
-                <table className="w-full text-left text-xs sm:text-sm">
-                  <tbody>
-                    {b.rows.map((r, ri) => (
-                      <tr key={ri} className="border-b app-border last:border-0 align-top">
-                        {r.map((c, ci) => (
-                          <td key={ci} className={`p-3 ${ci === 0 ? 'font-bold app-text w-1/4' : ''}`}>{c}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <p
+                key={i}
+                className={`${b.center && !boldOnly ? 'text-center' : ''} ${boldOnly ? 'ld-sub pt-4 app-text' : ''}`.trim()}
+                dangerouslySetInnerHTML={{ __html: boldOnly ? normalizeHeading(b.x) : b.x }}
+              />
             );
-          }
-          if (b.t === 'li') {
-            const heading = b.lvl === 0 && /^<b>.*<\/b>$/.test(b.x);
-            return (
-              <div key={i} className={`flex gap-3 ${INDENT[Math.min(b.lvl, INDENT.length - 1)]} ${heading ? 'pt-6' : ''}`}>
-                <span className={`shrink-0 tabular-nums ${heading ? 'font-black app-text' : 'app-text-muted'}`}>{b.label}</span>
-                <span
-                  className={heading ? 'text-base sm:text-lg app-text' : ''}
-                  dangerouslySetInnerHTML={{ __html: heading ? normalizeHeading(b.x) : b.x }}
-                />
-              </div>
-            );
-          }
-          const boldOnly = /^<b>[^<]+<\/b>$/.test(b.x);
-          return (
-            <p
-              key={i}
-              className={`${b.center ? 'text-center' : ''} ${boldOnly ? 'pt-4 text-base sm:text-lg font-bold app-text' : ''}`.trim()}
-              dangerouslySetInnerHTML={{ __html: boldOnly ? normalizeHeading(b.x) : b.x }}
-            />
-          );
-        })}
+          })}
+        </div>
       </div>
     </article>
   );

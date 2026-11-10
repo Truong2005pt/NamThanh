@@ -31,7 +31,7 @@ const inter = Inter({
 });
 
 const dmSans = DM_Sans({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-dm',
   fallback: ['sans-serif'],
