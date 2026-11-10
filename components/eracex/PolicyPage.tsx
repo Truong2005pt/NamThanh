@@ -54,42 +54,32 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ vi, en, dict }) => {
   const contactText = CONTACT_LABEL[currentLang] || CONTACT_LABEL['en'];
 
   return (
-    <div className="min-h-screen py-10 app-bg app-text">
-      <div className="w-full max-w-[900px] mx-auto px-4 sm:px-8 space-y-10">
-        <section className="text-center space-y-4 pt-6">
-          <h1 className="gft-title text-2xl sm:text-4xl font-black tracking-tight text-neutral-900 dark:text-white">
-            {c.title}
-          </h1>
-          <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-            {c.subtitle}
-          </p>
-        </section>
-
-        <section className="space-y-8">
+    <div className="app-bg min-h-screen pt-28">
+      <article className="legal-doc w-full max-w-[1344px] mx-auto px-4 sm:px-8 py-10 sm:py-14 app-text-secondary">
+        <header className="mb-10">
+          <h1 className="ld-title app-text">{c.title}</h1>
+          <p className="ld-metaline mt-3">{c.subtitle}</p>
+        </header>
+        <div className="min-w-0 space-y-4">
           {c.sections.map((s, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-3xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/[0.02] space-y-3"
-            >
-              <h2 className="font-bold text-lg text-neutral-900 dark:text-white">
-                {i + 1}. {s.heading}
+            <React.Fragment key={i}>
+              <h2 className="ld-h2 app-text pt-8">
+                <span className="tabular-nums mr-2">{i + 1}.</span>
+                {s.heading}
               </h2>
               {s.body.map((p, j) => (
-                <p key={j} className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
-                  {p}
-                </p>
+                <p key={j}>{p}</p>
               ))}
-            </div>
+            </React.Fragment>
           ))}
-        </section>
-
-        <section className="text-center text-xs font-mono text-neutral-500 dark:text-neutral-400 pb-6">
-          {SITE_CONFIG.brand.supportEmail} ·{' '}
-          <Link href="/contact" className="hover:underline text-[#c68a00] dark:text-[#ffc501] font-bold">
-            {contactText}
-          </Link>
-        </section>
-      </div>
+          <p className="pt-8 text-sm">
+            {SITE_CONFIG.brand.supportEmail} ·{' '}
+            <Link href="/contact" className="hover:underline text-[#c68a00] dark:text-[#ffc501] font-bold">
+              {contactText}
+            </Link>
+          </p>
+        </div>
+      </article>
     </div>
   );
 };
