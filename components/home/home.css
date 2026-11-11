@@ -1092,3 +1092,8 @@
 .home .sk-band>.sk-wrap .sk-btn-gold,.home .sk-band2>.sk-wrap .sk-btn-gold{background:#111!important;color:#fff!important;border-color:#111!important}
 .home .sk-band2>.sk-wrap .sk-btn-white{background:#fff!important;color:#111!important}
 .home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}
+/* Yellow panels line up with the content column (same edges as the other sections) */
+.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{max-width:1280px;width:calc(100% - 64px)}
+@media(max-width:640px){.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}}
+.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{max-width:1216px;width:calc(100% - 128px)}
+@media(max-width:640px){.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}}
