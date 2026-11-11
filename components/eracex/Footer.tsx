@@ -2349,6 +2349,7 @@ export const Footer: React.FC = () => {
                 {...(x.url ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 aria-label={x.name}
                 title={x.name}
+                {...(x.url ? {} : { "aria-disabled": true, onClick: (e: React.MouseEvent) => e.preventDefault() })}
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border app-border app-text-secondary hover:text-white hover:border-[#ffc501] transition-colors"
               >
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">{x.icon}</svg>

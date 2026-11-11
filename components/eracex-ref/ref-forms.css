@@ -20,3 +20,32 @@
 
 .ref-scope button[aria-pressed='true'].gold, .ref-scope .tabs button.active, .ref-scope .size-options button.active { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
 .ref-scope .sp-model-tabs button[aria-pressed='true'] { color: #15151a !important; -webkit-text-fill-color: #15151a !important; }
+
+/* Form spacing: even rhythm between rows, label→field and the submit button */
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form label,
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .ib-page .sp-form label { gap: 12px; margin-bottom: 28px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form .sp-form-row { margin-bottom: 0; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form .sp-form-note { margin: 0 0 24px; }
+.ref-scope:is([data-page='program-information'],[data-page='about'],[data-page='contact'],[data-page='affiliate']) .sp-form .button { margin-top: 0; }
+.ref-scope .sp-form .sp-form-status:empty { display: none; }
+.ref-scope .sp-form .sp-form-status { margin-top: 16px; }
+
+/* IB creators image: always show the whole picture at its native ratio (scales with the viewport, never cropped) */
+:root:not(.zz) .ref-scope:is([data-page='affiliate']) .ib-creators > img {
+  aspect-ratio: 1983 / 793 !important; height: auto !important; width: 100% !important;
+  object-fit: contain !important; object-position: 50% 50% !important;
+}
+
+/* Affiliate milestone cards: rows adapt to the card width (container query), never wrap awkwardly */
+.ref-scope .ib-bonus-copy dl { container-type: inline-size; }
+.ref-scope .ib-bonus-copy dl > div,
+.ref-scope .ib-bonus-copy dl > .ib-bonus-target { flex-wrap: wrap; align-items: baseline; column-gap: 8px; row-gap: 2px; }
+.ref-scope .ib-bonus-copy dt { gap: 9px; flex: 0 0 168px; }
+.ref-scope .ib-bonus-copy dt::after { margin-left: -9px; }
+.ref-scope .ib-bonus-copy dd { flex: 1 1 120px; min-width: 0; white-space: normal !important; overflow-wrap: anywhere; }
+@container (max-width: 380px) {
+  .ref-scope .ib-bonus-copy dl > div,
+  .ref-scope .ib-bonus-copy dl > .ib-bonus-target { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; row-gap: 3px; }
+  .ref-scope .ib-bonus-copy dt { flex: none; }
+  .ref-scope .ib-bonus-copy dd, .ref-scope .ib-bonus-copy dl > .ib-bonus-target dd { flex: none; padding-left: 17px; font-size: 16px !important; font-weight: 700 !important; }
+}

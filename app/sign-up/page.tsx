@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/components/eracex/LanguageContext';
@@ -446,18 +446,24 @@ export default function SignUpPage() {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  const confirmRef = useRef<HTMLInputElement>(null);
+  useEffect(() => { confirmRef.current?.setCustomValidity(confirm && confirm !== password ? a.mismatch : ''); }, [confirm, password, a.mismatch]);
+  const timers = useRef<number[]>([]);
+  useEffect(() => () => { timers.current.forEach(window.clearTimeout); }, []);
+
   const handleSubmit = (e: React.FormEvent, viaGoogle = false) => {
     e.preventDefault();
+    if (submitting) return;
     if (!viaGoogle && (!firstName || !lastName || !email || !password || password !== confirm || !country || !dob || !agreeTerms || !agreeName)) return;
 
     setSubmitting(true);
-    setTimeout(() => {
+    timers.current.push(window.setTimeout(() => {
       setSubmitting(false);
       setSuccess(true);
-      setTimeout(() => {
+      timers.current.push(window.setTimeout(() => {
         router.push('/pricing');
-      }, 1500);
-    }, 900);
+      }, 1500));
+    }, 900));
   };
 
   return (
@@ -521,7 +527,7 @@ export default function SignUpPage() {
                 </div>
               </AuthField>
               <AuthField label={a.confirmPassword} required>
-                <input required type={showPassword ? 'text' : 'password'} autoComplete="new-password" value={confirm} onChange={(e) => setConfirm(e.target.value)} className={authInputCls} />
+                <input ref={confirmRef} required type={showPassword ? 'text' : 'password'} autoComplete="new-password" value={confirm} onChange={(e) => setConfirm(e.target.value)} className={authInputCls} />
               </AuthField>
             </div>
             {confirm && confirm !== password && <p role="alert" className="-mt-2 text-xs font-semibold text-red-500">{a.mismatch}</p>}

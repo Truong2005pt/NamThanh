@@ -1,0 +1,76 @@
+/* Instant Funding / Instant Light: yellow gradient hero from the design reference */
+
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) {
+ --sp-bg:#FFFFFF;--sp-panel:#FFFFFF;--sp-panel2:#FFF9E8;--sp-line:#E5E5E5;
+ --sp-text:#171717;--sp-muted:#525252;--sp-gold:#8A6500;
+ --bg:#FFFFFF;--surface:#FFF9E8;--text:#171717;--muted:#525252;--border:#E5E5E5;--yellow:#F5C518;
+ background:#FFFFFF;color:#171717;
+}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .preview-bar {background:#FFF9E8;color:#525252}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .sp-breadcrumb {position:relative;z-index:1}
+.pd-instant-hero {
+ margin-top:-74px;
+ padding:138px 28px 58px;
+ min-height:610px;
+ background:radial-gradient(ellipse at 78% 0%,#F5C518 0%,#FFE584 24%,#FFF3BD 43%,#FFFFFF 78%);
+ text-align:center;
+ color:#171717;
+}
+.pd-instant-hero.is-light {background:radial-gradient(ellipse at 24% 0%,#F5C518 0%,#FFE584 24%,#FFF3BD 43%,#FFFFFF 78%)}
+.pd-instant-inner {max-width:1200px;margin-inline:auto}
+.pd-instant-brand {font-size:11px;font-weight:600;letter-spacing:.18em;color:#525252;margin:0 0 24px}
+.pd-instant-hero h1 {margin:0;font-family:Manrope,'Be Vietnam Pro',sans-serif;line-height:1;font-weight:650}
+.pd-instant-prefix {display:block;font-size:clamp(17px,2.1vw,29px);letter-spacing:.55em;padding-left:.55em;font-weight:550;margin-bottom:13px;color:#171717}
+.pd-instant-word {display:block;font-size:clamp(62px,11.4vw,166px);letter-spacing:.18em;padding-left:.18em;line-height:1.08;background:linear-gradient(110deg,#171717,#8A6500);background-clip:text;-webkit-background-clip:text;color:transparent}
+.is-light .pd-instant-word {letter-spacing:.38em;padding-left:.38em}
+.pd-instant-description {max-width:670px;margin:22px auto 26px;font-size:15px;line-height:1.8;color:#525252}
+.pd-instant-cta {display:inline-flex;gap:25px;align-items:center;justify-content:center;padding:15px 24px;border-radius:9px;background:#171717;color:#FFFFFF;font-size:14px;font-weight:650;text-decoration:none;transition:background .2s,transform .2s}
+.pd-instant-cta:hover {background:#353535;transform:translateY(-2px)}
+.pd-instant-cta:focus-visible {outline:2px solid #8A6500;outline-offset:5px}
+.pd-instant-facts {display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:38px}
+.pd-instant-facts>span {display:inline-flex;align-items:center;gap:8px;background:#FFF3BD;border:1px solid #E7D79A;border-radius:999px;padding:10px 15px;font-size:11px;line-height:1.5;color:#171717}
+.pd-instant-facts i {font-style:normal;color:#8A6500;font-size:15px}
+.pd-instant-note {font-size:10px;color:#525252;margin:20px 0 0}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-config {padding-top:38px}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-funded {background:#FFF3BD;color:#171717}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-phase-table thead .pd-funded {background:#F5C518;color:#171717}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-phase-table .pd-funded small {color:#525252}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-phase-number {background:#171717;color:#F5C518}
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]) .pd-size-picker button[aria-pressed="true"] {background:#F5C518;color:#171717;border-color:#D5AD20}
+@media(max-width:760px){
+ .pd-instant-hero{margin-top:-64px;padding:112px 20px 44px;min-height:540px}
+ .pd-instant-brand{font-size:9px;margin-bottom:28px}
+ .pd-instant-word{font-size:clamp(44px,10.8vw,82px);letter-spacing:.09em;padding-left:.09em}
+ .pd-instant-prefix{font-size:19px;letter-spacing:.4em;padding-left:.4em;margin-bottom:14px}
+ .is-light .pd-instant-word{font-size:clamp(60px,16vw,108px);letter-spacing:.2em;padding-left:.2em}
+ .pd-instant-description{font-size:13px;max-width:510px;margin-top:26px}
+ .pd-instant-facts{gap:8px;margin-top:28px}
+ .pd-instant-facts>span{font-size:10px;padding:8px 11px}
+ .pd-instant-note{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.pd-instant-cta{transition:none}}
+
+/* One-Step / Two-Step hero: photo from the design drive, left and right edges dissolve into the page */
+.ref-scope .pd-hero-fade{border:0!important;box-shadow:none!important;background:none!important;border-radius:0!important;aspect-ratio:auto!important;height:auto!important;position:relative!important;inset:auto!important;transform:none!important}
+.ref-scope .pd-hero-fade::before,.ref-scope .pd-hero-fade::after{display:none!important;content:none!important}
+.ref-scope .pd-hero-fade .pd-photo-shade,.ref-scope .pd-hero-fade .pd-hero-badge,.ref-scope .pd-hero-fade .pd-hero-product,.ref-scope .pd-hero-fade .pd-hero-tools{display:none!important}
+.ref-scope .pd-hero-fade>img.pd-fade-img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;border-radius:0!important;animation:none!important;mix-blend-mode:normal!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%)}
+.ref-scope .pd-visual:has(.pd-hero-fade){height:auto!important;min-height:0!important;aspect-ratio:auto!important;width:100%!important;max-width:1100px;isolation:auto!important}
+.ref-scope .pd-visual:has(.pd-hero-fade) .pd-art-caption,.ref-scope .pd-intro:has(.pd-hero-fade) .pd-intro-copy>.eyebrow{display:none!important}
+.ref-scope a.pd-instant-cta,.ref-scope a.pd-instant-cta:visited{color:#fff!important;-webkit-text-fill-color:#fff}
+.ref-scope .pd-instant-cta svg{stroke:#fff}
+.ref-scope .pd-instant-word{background:linear-gradient(110deg,#171717,#8A6500)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important}
+.ref-scope .pd-instant-hero{display:block;position:relative;z-index:0}
+.ref-scope .pd-instant-note{display:block!important}
+.ref-scope .pd-instant-cta *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.ref-scope a.pd-instant-cta{-webkit-text-fill-color:#fff!important}
+/* Soft, wide side dissolve (eased stops) so the photo melts into the page */
+.ref-scope .pd-hero-fade>img.pd-fade-img{-webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.04) 3%,rgba(0,0,0,.16) 8%,rgba(0,0,0,.4) 14%,rgba(0,0,0,.72) 21%,rgba(0,0,0,.93) 28%,#000 34%,#000 66%,rgba(0,0,0,.93) 72%,rgba(0,0,0,.72) 79%,rgba(0,0,0,.4) 86%,rgba(0,0,0,.16) 92%,rgba(0,0,0,.04) 97%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.04) 3%,rgba(0,0,0,.16) 8%,rgba(0,0,0,.4) 14%,rgba(0,0,0,.72) 21%,rgba(0,0,0,.93) 28%,#000 34%,#000 66%,rgba(0,0,0,.93) 72%,rgba(0,0,0,.72) 79%,rgba(0,0,0,.4) 86%,rgba(0,0,0,.16) 92%,rgba(0,0,0,.04) 97%,transparent 100%)}
+:root[data-theme='light'] .ref-scope .pd-hero-fade>img.pd-fade-img{mix-blend-mode:multiply!important}
+/* Hero starts at the very top: cancel the 88px page padding at every width (no white strip above the yellow) */
+.ref-scope .pd-instant-hero{margin-top:-88px!important;padding-top:150px}
+@media(max-width:760px){.ref-scope .pd-instant-hero{padding-top:124px}}
+@media(max-width:760px){.ref-scope .pd-instant-description{margin-top:34px}}
+
+/* Dark theme mirrors the light design: whole Instant page keeps the light palette and dark ink */
+.ref-scope:is([data-page$="instant-funding"],[data-page$="instant-light"]){--ref-ink:#171717}

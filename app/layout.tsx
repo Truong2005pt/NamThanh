@@ -105,6 +105,14 @@ export default function RootLayout({
             </ScrollRevealProvider>
           </LanguageProvider>
         </ThemeProvider>
+        {/* LiveAgent chat button: ERACEX Chat 1 (placed just before </body>) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://eracex.ladesk.com/scripts/track.js',
+function(e){ LiveAgent.createButton('wi3nob28', e); });`,
+          }}
+        />
       </body>
     </html>
   );

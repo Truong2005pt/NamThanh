@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/components/eracex/LanguageContext';
@@ -447,17 +447,21 @@ export default function LoginPage() {
   const [submitting, setSubmitting] = useState(false);
   const [loginSuccess, setLoginSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const timers = useRef<number[]>([]);
+  useEffect(() => () => { timers.current.forEach(window.clearTimeout); }, []);
+
+  const handleSubmit = (e: React.FormEvent, viaGoogle = false) => {
     e.preventDefault();
-    if (!email || !password) return;
+    if (submitting) return;
+    if (!viaGoogle && (!email || !password)) return;
     setSubmitting(true);
-    setTimeout(() => {
+    timers.current.push(window.setTimeout(() => {
       setSubmitting(false);
       setLoginSuccess(true);
-      setTimeout(() => {
+      timers.current.push(window.setTimeout(() => {
         router.push('/pricing');
-      }, 1500);
-    }, 800);
+      }, 1500));
+    }, 800));
   };
 
   return (
@@ -504,7 +508,7 @@ export default function LoginPage() {
             )}
           </button>
 
-          <AuthGoogle divider="before" onClick={() => handleSubmit({ preventDefault() {} } as React.FormEvent)} />
+          <AuthGoogle divider="before" onClick={() => handleSubmit({ preventDefault() {} } as React.FormEvent, true)} />
 
           <p className="pt-2 text-center text-xs text-neutral-600 dark:text-neutral-300">
             {d.dontHaveAccount}{' '}

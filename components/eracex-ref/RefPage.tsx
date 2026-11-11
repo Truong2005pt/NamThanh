@@ -13,6 +13,7 @@ import './ref-overrides.css';
 import './ref-pd-upgrade.css';
 import './ref-pd-statements.css';
 import './ref-pd-learning.css';
+import './ref-instant.css';
 import './ref-motion.css';
 import './ref-pages-a.css';
 import './ref-pages-b.css';

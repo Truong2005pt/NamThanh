@@ -391,7 +391,7 @@ export default function PricingPage() {
         ]}
         primaryCta={{
           label: d.primaryCta,
-          href: '#pricing',
+          href: '#get-funded',
           icon: <Zap className="w-5 h-5" />,
         }}
         secondaryCta={{

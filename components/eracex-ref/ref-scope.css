@@ -346,3 +346,19 @@
 .ref-scope .ib-bonus-rule{max-width:1000px;margin:18px auto 0;padding:14px 18px;border:1px solid #e1ded2;border-left:3px solid #f5c518;border-radius:12px;background:#fffdf6;font-size:14px;line-height:1.7;color:var(--sp-text)}
 .ref-scope .ib-bonus-rule b{color:#8a6400}
 .ref-scope .ib-bonus-copy dl{margin-top:0!important}.ref-scope .ib-bonus-copy h3{margin-bottom:14px}
+/* Milestone cards: wider grid, fixed label column, single-line rows equal across all four cards */
+.ref-scope .ib-bonus-grid{max-width:1120px}
+.ref-scope .ib-bonus-note,.ref-scope .ib-bonus-rule{max-width:1120px}
+.ref-scope .ib-bonus-copy{padding:22px 24px 24px}
+.ref-scope .ib-bonus-copy dl>div,.ref-scope .ib-bonus-copy dl>.ib-bonus-target{gap:8px}
+.ref-scope .ib-bonus-copy dt{flex:0 0 168px;white-space:nowrap}
+.ref-scope .ib-bonus-copy dd{flex:1;min-width:0}
+@media(min-width:760px){.ref-scope .ib-bonus-copy dd{white-space:nowrap}}
+@media(max-width:760px){.ref-scope .ib-bonus-copy dt{flex-basis:150px}}
+/* Milestone cards on phones: label above value in every row, so rows read the same in all four cards */
+@media(max-width:550px){
+  .ref-scope .ib-bonus-copy dl>div,.ref-scope .ib-bonus-copy dl>.ib-bonus-target{flex-direction:column;align-items:flex-start;gap:2px}
+  .ref-scope .ib-bonus-copy dt{flex:none}
+  .ref-scope .ib-bonus-copy dd{white-space:normal}
+  .ref-scope .ib-bonus-copy dl{gap:12px!important}
+}
