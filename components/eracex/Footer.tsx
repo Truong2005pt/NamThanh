@@ -2332,7 +2332,7 @@ export const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="pt-16 pb-10 border-t app-border app-surface w-full">
+    <footer data-theme="dark" className="footer-dark dark pt-16 pb-10 border-t app-border app-surface w-full">
       <div className="w-full max-w-[1344px] mx-auto px-4 sm:px-8">
         {}
         <div className="pb-10">

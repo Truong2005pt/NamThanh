@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" data-theme="dark" className={`${beVietnamPro.variable} ${dmSans.variable} ${inter.variable} dark`} suppressHydrationWarning>
+    <html lang="vi" data-theme="light" className={`${beVietnamPro.variable} ${dmSans.variable} ${inter.variable} light`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,7 +69,7 @@ export default function RootLayout({
                   var urlParams = new URLSearchParams(window.location.search);
                   var queryTheme = urlParams.get('theme');
                   var saved = localStorage.getItem('eracex_theme');
-                  var theme = (queryTheme === 'light' || queryTheme === 'dark') ? queryTheme : ((saved === 'light' || saved === 'dark') ? saved : 'dark');
+                  var theme = 'light';
                   document.documentElement.setAttribute('data-theme', theme);
                   if (theme === 'dark') {
                     document.documentElement.classList.add('dark');

@@ -17,7 +17,7 @@ const ThemeContext = createContext<ThemeContextType>({
 });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setThemeState] = useState<ThemeMode>('dark');
+  const [theme, setThemeState] = useState<ThemeMode>('light');
   const [mounted, setMounted] = useState(false);
 
   const syncDOMTheme = useCallback((mode: ThemeMode) => {
@@ -53,12 +53,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [syncDOMTheme]);
 
   useEffect(() => {
-    let initial: ThemeMode = 'dark';
+    let initial: ThemeMode = 'light';
     try {
       const queryTheme = new URLSearchParams(window.location.search).get('theme') as ThemeMode | null;
       const saved = localStorage.getItem('eracex_theme') as ThemeMode | null;
-      if (queryTheme === 'dark' || queryTheme === 'light') initial = queryTheme;
-      else if (saved === 'dark' || saved === 'light') initial = saved;
+      void queryTheme; void saved;
     } catch (e) {}
     applyTheme(initial);
     setMounted(true);

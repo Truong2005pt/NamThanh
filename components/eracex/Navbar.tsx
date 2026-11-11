@@ -348,16 +348,7 @@ export const Navbar: React.FC = () => {
             )}
           </div>
 
-          {/* THEME TOGGLE */}
-          <button
-            type="button"
-            onClick={toggleTheme}
-            className="p-1.5 sm:p-2 rounded-lg border transition-all bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-300 text-neutral-800 hover:text-black dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-[#f6bf4a]"
-            title={isLight ? ui.toDark : ui.toLight}
-            aria-label={ui.themeAria}
-          >
-            {isLight ? <Moon className="w-4 h-4 text-neutral-800" /> : <Sun className="w-4 h-4 text-[#f6bf4a]" />}
-          </button>
+
 
           {/* LOG IN BUTTON (DEDICATED PAGE) */}
           <Link
