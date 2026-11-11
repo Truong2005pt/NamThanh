@@ -1097,3 +1097,6 @@
 @media(max-width:640px){.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}}
 .home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{max-width:1216px;width:calc(100% - 128px)}
 @media(max-width:640px){.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}}
+/* Yellow panels span the full content frame, same edges as the CTA banner and the panels above and below */
+.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{max-width:1280px;width:calc(100% - 64px)}
+@media(max-width:640px){.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}}
