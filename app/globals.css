@@ -746,3 +746,5 @@ html[data-theme="light"] footer.footer-dark .app-text{color:#fff !important}
 html[data-theme="light"] footer.footer-dark .app-text-secondary{color:rgba(255,255,255,.65) !important}
 html[data-theme="light"] footer.footer-dark .app-text-muted{color:rgba(255,255,255,.45) !important}
 html[data-theme="light"] footer.footer-dark .app-border{border-color:rgba(255,255,255,.08) !important}
+html[data-theme="light"] footer.footer-dark [class*="text-[#ffc501]"]{color:#ffc501 !important}
+html[data-theme="light"] footer.footer-dark a:hover{color:#fff !important}

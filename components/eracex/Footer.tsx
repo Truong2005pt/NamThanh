@@ -221,7 +221,7 @@ const SOCIALS: { name: string; url: string; icon: React.ReactNode }[] = [
     icon: (
       <g>
         <path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77C22 15.2 22 12 22 12s0-3.2-.4-4.8z" />
-        <path className="fill-white dark:fill-[#0f1115]" d="M10 15l5-3-5-3z" />
+        <path className="fill-[#09090d]" d="M10 15l5-3-5-3z" />
       </g>
     ),
   },
@@ -2337,7 +2337,7 @@ export const Footer: React.FC = () => {
         {}
         <div className="pb-10">
           <Link href="/" aria-label="ERACEX">
-            <BrandLogo size="md" showText={true} />
+            <BrandLogo size="md" showText={true} forceWhiteText />
           </Link>
           <p className="mt-4 text-sm font-semibold uppercase app-text">{FOOT_TITLE[currentLang] || FOOT_TITLE.en}</p>
           <p className="mt-1 text-sm font-normal app-text-secondary">{FOOT_SUB[currentLang] || FOOT_SUB.en}</p>
@@ -2349,7 +2349,7 @@ export const Footer: React.FC = () => {
                 {...(x.url ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 aria-label={x.name}
                 title={x.name}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border app-border app-text-secondary hover:text-black dark:hover:text-white hover:border-[#f3c633] transition-colors"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border app-border app-text-secondary hover:text-white hover:border-[#ffc501] transition-colors"
               >
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">{x.icon}</svg>
               </a>
@@ -2361,10 +2361,10 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 pb-12 border-b app-border">
           {(FOOT_COLS[currentLang] || FOOT_COLS.en).map((c) => (
             <div key={c.title}>
-              <div className="text-sm font-semibold text-[#a87b00] dark:text-[#f3c633] mb-4">{c.title}</div>
+              <div className="text-sm font-semibold text-[#ffc501] mb-4">{c.title}</div>
               <ul className="space-y-2.5 text-sm app-text-secondary">
                 {c.links.map(([label, href]) => (
-                  <li key={label}><Link href={href} className="hover:text-black dark:hover:text-white transition-colors">{label}</Link></li>
+                  <li key={label}><Link href={href} className="hover:text-white transition-colors">{label}</Link></li>
                 ))}
               </ul>
             </div>
@@ -2373,7 +2373,7 @@ export const Footer: React.FC = () => {
 
         {}
         <div className="pt-10">
-          <h3 className="text-base font-semibold text-[#a87b00] dark:text-[#f3c633]">{DISCLAIMER_TITLE[currentLang] || DISCLAIMER_TITLE.en}</h3>
+          <h3 className="text-base font-semibold text-[#ffc501]">{DISCLAIMER_TITLE[currentLang] || DISCLAIMER_TITLE.en}</h3>
         </div>
         <FooterDisclaimers />
 
@@ -2392,7 +2392,7 @@ export const Footer: React.FC = () => {
               ['/client-privacy-policy', legalDict.clientPrivacy],
               ['/restricted-jurisdictions', legalDict.restricted],
             ].map(([href, label]) => (
-              <Link key={href} href={href} className="hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
+              <Link key={href} href={href} className="hover:text-white transition-colors whitespace-nowrap">
                 {label}
               </Link>
             ))}
