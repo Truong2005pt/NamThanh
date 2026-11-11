@@ -361,7 +361,7 @@ export const Navbar: React.FC = () => {
 
           {/* LOG IN BUTTON (DEDICATED PAGE) */}
           <Link
-            href="/login"
+            href="https://prop.eracex.com/login"
             className="hidden sm:inline-flex items-center px-4 py-2 rounded-xl text-xs xl:text-sm font-bold border transition-all text-neutral-800 bg-neutral-100/90 hover:bg-neutral-200/90 border-neutral-300 shadow-xs dark:text-white dark:bg-white/10 dark:hover:bg-white/20 dark:border-white/15 dark:shadow-sm cursor-pointer whitespace-nowrap"
           >
             {navText.login}
@@ -369,7 +369,7 @@ export const Navbar: React.FC = () => {
 
           {/* GET FUNDED BUTTON */}
           <a
-            href="#get-funded"
+            href="https://prop.eracex.com/register/new"
             className="hidden sm:inline-flex items-center px-4 xl:px-5 py-2 rounded-xl text-xs xl:text-sm font-black btn-gold shadow-md sm:shadow-lg hover:scale-105 transition-all whitespace-nowrap"
           >
             {navText.getFunded}
@@ -446,14 +446,14 @@ export const Navbar: React.FC = () => {
 
           <div className="pt-4 border-t border-neutral-200 dark:border-white/10 flex flex-col gap-3">
             <Link
-              href="/login"
+              href="https://prop.eracex.com/login"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-3 rounded-xl font-bold text-sm transition-colors border bg-neutral-100 hover:bg-neutral-200 text-neutral-900 border-neutral-300 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:border-white/15 cursor-pointer block"
             >
               {navText.login}
             </Link>
             <Link
-              href="/sign-up"
+              href="https://prop.eracex.com/register/new"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-3 rounded-xl btn-gold text-black font-black text-sm block"
             >

@@ -223,7 +223,7 @@ export function Plans() {
         <div className="sk-card sk-sum">
           <div><small>{t("LỰA CHỌN CỦA BẠN")}</small><b>{p.name}</b><span>{usd(size)}</span></div>
           <div className="price"><small>{t("Phí tham gia một lần")}</small><strong>{cv(total)} <em>{cur.code}</em></strong>{total !== fee && <s>{cv(fee)}</s>}</div>
-          <a className="sk-btn sk-btn-gold" href="/sign-up">{t("Nhận Cấp Vốn")} <ArrowUpRight size={15} /></a>
+          <a className="sk-btn sk-btn-gold" href="https://prop.eracex.com/register/new">{t("Nhận Cấp Vốn")} <ArrowUpRight size={15} /></a>
         </div>
         <div className="sk-card sk-addons" role="group" aria-label={t("Tiện ích bổ sung tùy chọn")}>
           <p>{t("Tiện ích bổ sung tùy chọn")}</p>

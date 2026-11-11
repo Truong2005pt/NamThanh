@@ -14,7 +14,7 @@ export function Why() {
         <p className="sk-intro sk-center">{t("Lựa chọn rõ ràng. Công nghệ liền mạch. Kỷ luật làm nền tảng.")}</p>
         <WhySlides />
         <div style={{ marginTop: 28, display: "flex", justifyContent: "center" }}>
-          <a className="sk-btn sk-btn-gold sk-btn-lg" href="#configure">{t("Nhận Cấp Vốn")} <ArrowUpRight size={17} /></a>
+          <a className="sk-btn sk-btn-gold sk-btn-lg" href="https://prop.eracex.com/register/new">{t("Nhận Cấp Vốn")} <ArrowUpRight size={17} /></a>
         </div>
       </div>
     </section>

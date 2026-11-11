@@ -339,7 +339,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Đăng nhập tài khoản",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -437,7 +437,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Account login",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -535,7 +535,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "账户登录",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -633,7 +633,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "口座ログイン",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -731,7 +731,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Acceso a la cuenta",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -829,7 +829,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Login na conta",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -927,7 +927,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Connexion compte",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1025,7 +1025,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Konto-Login",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1123,7 +1123,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Accesso account",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1221,7 +1221,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Logowanie do konta",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1319,7 +1319,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Hesap girişi",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1417,7 +1417,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Login akun",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1515,7 +1515,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "เข้าสู่ระบบบัญชี",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1613,7 +1613,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Pag-login sa account",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1711,7 +1711,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "खाता लॉगिन",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1809,7 +1809,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "계정 로그인",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -1907,7 +1907,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Вход в аккаунт",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -2005,7 +2005,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "تسجيل الدخول للحساب",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
@@ -2103,7 +2103,7 @@ const FOOT_COLS: Record<string, FootCol[]> = {
         ],
         [
           "Account inloggen",
-          "/login"
+          "https://prop.eracex.com/login"
         ]
       ]
     },
