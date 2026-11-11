@@ -327,3 +327,12 @@
 @media(max-width:550px){.ref-scope .ib-bonus-copy dl>div{grid-template-columns:none}.ref-scope .ib-bonus-copy dd{text-align:left}}
 .ref-scope .ib-bonus-copy dl>div:first-child{min-height:60px}
 .ref-scope .ib-start-image::after{background:linear-gradient(180deg,rgba(8,10,13,.10) 0,transparent 30%)}
+/* Creators banner: light photo, captions sit on a light strip under the image */
+.ref-scope .ib-creators{background:#fffdf8}
+.ref-scope .ib-creators>img{aspect-ratio:1983/793!important;object-fit:cover;object-position:50% 50%!important;width:100%;display:block}
+.ref-scope .ib-creators .ib-creator-labels{position:relative!important;inset:auto!important;background:#fffdf8!important;padding:22px 30px 26px!important;gap:26px!important;grid-template-columns:repeat(3,1fr)!important}
+.ref-scope .ib-creators .ib-creator-labels span{color:#8a6400!important}
+.ref-scope .ib-creators .ib-creator-labels h3{color:#1a1503!important}
+.ref-scope .ib-creators .ib-creator-labels p{color:#5b5640!important}
+.ref-scope .ib-creators .ib-creator-labels>div{border-bottom:0!important;padding-bottom:0!important}
+@media(max-width:760px){.ref-scope .ib-creators>img{aspect-ratio:16/10!important;object-position:50% 50%!important}.ref-scope .ib-creators .ib-creator-labels{grid-template-columns:1fr!important;padding:18px 20px!important;gap:16px!important}}
