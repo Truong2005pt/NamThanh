@@ -1083,3 +1083,12 @@
 .home .sk-ctrl .sk-switch{margin-left:auto}
 /* currency chip: thin, even outline */
 .home .sk-curs button.on{border-color:color-mix(in srgb,var(--fg) 70%,transparent);box-shadow:none}
+
+/* Yellow panels: "Why choose" and "Have a question" sit in a rounded yellow card */
+.home .sk-band,.home .sk-band2{background:var(--bg)!important;padding:24px 0}
+.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{background:#f5c518;border-radius:28px;padding-left:clamp(20px,3vw,40px);padding-right:clamp(20px,3vw,40px);color:#1a1503}
+.home .sk-band>.sk-wrap .sk-sub,.home .sk-band2>.sk-wrap .sk-sub{color:#1a1503}
+.home .sk-band>.sk-wrap .sk-intro,.home .sk-band>.sk-wrap .sk-p,.home .sk-band2>.sk-wrap .sk-p,.home .sk-band2>.sk-wrap .sk-lead2{color:#3d3208}
+.home .sk-band>.sk-wrap .sk-btn-gold,.home .sk-band2>.sk-wrap .sk-btn-gold{background:#111!important;color:#fff!important;border-color:#111!important}
+.home .sk-band2>.sk-wrap .sk-btn-white{background:#fff!important;color:#111!important}
+.home .sk-band>.sk-wrap,.home .sk-band2>.sk-wrap{width:calc(100% - 32px)}
