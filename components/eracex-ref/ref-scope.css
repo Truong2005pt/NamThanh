@@ -337,3 +337,4 @@
 .ref-scope .ib-creators .ib-creator-labels>div{border-bottom:0!important;padding-bottom:0!important}
 @media(max-width:760px){.ref-scope .ib-creators>img{aspect-ratio:16/10!important;object-position:50% 50%!important}.ref-scope .ib-creators .ib-creator-labels{grid-template-columns:1fr!important;padding:18px 20px!important;gap:16px!important}}
 .ref-scope .ib-bonus-image{background:#f6f6f8}.ref-scope .ib-bonus-image::after{background:linear-gradient(180deg,rgba(8,10,13,.08) 0,transparent 30%)}.ref-scope .ib-bonus-image img{object-fit:cover}
+.ref-scope .ib-bonus-image{border-bottom:1px solid #e1ded2}
