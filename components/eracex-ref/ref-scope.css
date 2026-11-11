@@ -326,3 +326,4 @@
 .ref-scope .ib-bonus-target dd{font:600 15px var(--ref-inter,inherit)!important;color:var(--sp-gold)!important;letter-spacing:0}
 @media(max-width:550px){.ref-scope .ib-bonus-copy dl>div{grid-template-columns:none}.ref-scope .ib-bonus-copy dd{text-align:left}}
 .ref-scope .ib-bonus-copy dl>div:first-child{min-height:60px}
+.ref-scope .ib-start-image::after{background:linear-gradient(180deg,rgba(8,10,13,.10) 0,transparent 30%)}
